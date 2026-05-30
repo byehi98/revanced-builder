@@ -105,9 +105,9 @@ remove-rv-integrations-checks = false
 patches-source = "GitLab:Paresh-Maheshwari/paresh-patches"
 cli-source = "MorpheApp/morphe-cli"
 rv-brand = "paresh"
-# patches-version = "dev"
-# apkmirror-dlurl = "https://www.apkmirror.com/apk/true-software-scandinavia-ab/truecaller-caller-id-block/"
-uptodown-dlurl = "https://truecaller.en.uptodown.com/android"
+patches-version = "dev"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/true-software-scandinavia-ab/truecaller-caller-id-block/"
+# uptodown-dlurl = "https://truecaller.en.uptodown.com/android"
 
 # [Fing]
 # patches-source = "GitLab:Paresh-Maheshwari/paresh-patches"
