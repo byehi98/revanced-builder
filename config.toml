@@ -1,74 +1,102 @@
-enable-module-update = true # set this to false if you do not want to receive updates for the module
 parallel-jobs = 1
-
-# add 'enabled = false' for not patching a specific app or remove it from the config
-# see https://github.com/j-hc/revanced-magisk-module/blob/main/CONFIG.md for more detailed explanations
-
-# you can use rvmm-config-gen to generate a config
-
-[YouTube]
-build-mode = "both"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
-uptodown-dlurl = "https://youtube.en.uptodown.com/android"
-archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
+dpi = "nodpi anydpi"
+remove-rv-integrations-checks = false
+# see https://github.com/nvbangg/Patches-APK-Builder/blob/main/CONFIG.md for more detailed explanations
 
 [YouTube-Morphe]
-app-name = "YouTube"
 patches-source = "MorpheApp/morphe-patches"
 cli-source = "MorpheApp/morphe-cli"
-rv-brand = "Morphe"
-build-mode = "both"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
+app-name = "youtube"
+rv-brand = "morphe"
 uptodown-dlurl = "https://youtube.en.uptodown.com/android"
-archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
 
-[Music]
-build-mode = "both"
-arch = "both"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
-uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
-archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.youtube.music"
-
-[Music-Morphe]
-app-name = "Music"
+[YouTube-Music-Morphe]
 patches-source = "MorpheApp/morphe-patches"
 cli-source = "MorpheApp/morphe-cli"
-rv-brand = "Morphe"
-build-mode = "both"
-arch = "both"
+app-name = "youtube-music"
+rv-brand = "morphe"
+arch = "arm64-v8a"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
 uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
-archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.youtube.music"
+
+[YouTube-Morphe-Dev]
+patches-source = "MorpheApp/morphe-patches"
+cli-source = "MorpheApp/morphe-cli"
+app-name = "youtube-dev"
+rv-brand = "morphe"
+patches-version = "dev"
+uptodown-dlurl = "https://youtube.en.uptodown.com/android"
+
+[YouTube-Music-Morphe-Dev]
+patches-source = "MorpheApp/morphe-patches"
+cli-source = "MorpheApp/morphe-cli"
+app-name = "youtube-music-dev"
+rv-brand = "morphe"
+arch = "arm64-v8a"
+patches-version = "dev"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
+uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
+
+[Google-Photos-Morphe]
+patches-source = "RookieEnough/De-ReVanced"
+cli-source = "MorpheApp/morphe-cli"
+rv-brand = "de-revanced"
+uptodown-dlurl = "https://google-photos.en.uptodown.com/android"
+
+[Telegram]
+patches-source = "Aunali321/ReVancedExperiments"
+cli-source = "ReVanced/revanced-cli"
+uptodown-dlurl = "https://telegram-google-play-version.en.uptodown.com/android"
+
+[X-Twitter]
+patches-source = "crimera/piko"
+brand = "piko"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/x-corp/twitter"
+uptodown-dlurl = "https://twitter.en.uptodown.com/android"
+version = "11.81.0-release.0"
 
 [Reddit-Morphe]
-app-name = "Reddit"
-rv-brand = "Morphe"
-build-mode = "both"
 patches-source = "MorpheApp/morphe-patches"
 cli-source = "MorpheApp/morphe-cli"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/redditinc/reddit/"
-archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.reddit.frontpage"
+rv-brand = "morphe"
 uptodown-dlurl = "https://reddit-official-app.en.uptodown.com/android"
-dpi = "120-640dpi"
 
-[Twitter]
-patches-source = "crimera/piko"
+[Reddit-Morphe-Dev]
+patches-source = "MorpheApp/morphe-patches"
 cli-source = "MorpheApp/morphe-cli"
-rv-brand = "Piko"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/x-corp/twitter/"
-archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.twitter.android"
-build-mode = "module"
-version = "11.81.0-release.0"
-include-stock = "split"
+rv-brand = "morphe-dev"
+patches-version = "dev"
+uptodown-dlurl = "https://reddit-official-app.en.uptodown.com/android"
 
-[GooglePhotos]
-build-mode = "both"
-arch = "both"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/photos/"
-uptodown-dlurl = "https://google-photos.en.uptodown.com/android"
-archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.photos"
+[Reddit-Adobo-Dev]
+patches-source = "jkennethcarino/adobo"
+cli-source = "MorpheApp/morphe-cli"
+rv-brand = "adobo-dev"
+patches-version = "dev"
+uptodown-dlurl = "https://reddit-official-app.en.uptodown.com/android"
 
-[Twitch]
-enabled = false
-apkmirror-dlurl = "https://www.apkmirror.com/apk/twitch-interactive-inc/twitch/"
-uptodown-dlurl = "https://twitch.en.uptodown.com/android"
+[Cricbuzz-Morphe]
+cli-source = "MorpheApp/morphe-cli"
+patches-source = "RookieEnough/De-ReVanced"
+uptodown-dlurl = "https://cricbuzz-cricket-scores-and-news.en.uptodown.com/android"
+
+[WPS-Office]
+patches-source = "hoo-dles/morphe-patches"
+cli-source = "MorpheApp/morphe-cli"
+rv-brand = "hoo-dles"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/wps-software-pte-ltd/wps-office-pdf/"
+uptodown-dlurl = "https://wps-office.en.uptodown.com/android"
+
+[Wallcraft]
+patches-source = "hoo-dles/morphe-patches"
+cli-source = "MorpheApp/morphe-cli"
+rv-brand = "hoo-dles"
+uptodown-dlurl = "https://wallpaperscraft.en.uptodown.com/android"
+
+[JioTV]
+patches-source = "rabilrbl/fluffy-patches"
+cli-source = "MorpheApp/morphe-cli"
+rv-brand = "fluffy"
+patches-version = "dev"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/jio-platforms-limited/jiotv-live-sports-movies-shows/"
+uptodown-dlurl = "https://jiotv.en.uptodown.com/android"

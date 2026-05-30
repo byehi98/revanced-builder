@@ -6,4 +6,6 @@ test*
 /logs
 build.md
 cmpr
-*-temporary-files
+__pycache__/
+build.json
+/.direnv
