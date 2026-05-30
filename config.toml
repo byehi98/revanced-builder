@@ -3,103 +3,103 @@ dpi = "nodpi anydpi"
 remove-rv-integrations-checks = false
 # see https://github.com/nvbangg/Patches-APK-Builder/blob/main/CONFIG.md for more detailed explanations
 
-[YouTube-Morphe]
-patches-source = "MorpheApp/morphe-patches"
-cli-source = "MorpheApp/morphe-cli"
-app-name = "youtube"
-rv-brand = "morphe"
-uptodown-dlurl = "https://youtube.en.uptodown.com/android"
+# [YouTube-Morphe]
+# patches-source = "MorpheApp/morphe-patches"
+# cli-source = "MorpheApp/morphe-cli"
+# app-name = "youtube"
+# rv-brand = "morphe"
+# uptodown-dlurl = "https://youtube.en.uptodown.com/android"
 
-[YouTube-Music-Morphe]
-patches-source = "MorpheApp/morphe-patches"
-cli-source = "MorpheApp/morphe-cli"
-app-name = "youtube-music"
-rv-brand = "morphe"
-arch = "arm64-v8a"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
-uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
+# [YouTube-Music-Morphe]
+# patches-source = "MorpheApp/morphe-patches"
+# cli-source = "MorpheApp/morphe-cli"
+# app-name = "youtube-music"
+# rv-brand = "morphe"
+# arch = "arm64-v8a"
+# apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
+# uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
 
-[YouTube-Morphe-Dev]
-patches-source = "MorpheApp/morphe-patches"
-cli-source = "MorpheApp/morphe-cli"
-app-name = "youtube-dev"
-rv-brand = "morphe"
-patches-version = "dev"
-uptodown-dlurl = "https://youtube.en.uptodown.com/android"
+# [YouTube-Morphe-Dev]
+# patches-source = "MorpheApp/morphe-patches"
+# cli-source = "MorpheApp/morphe-cli"
+# app-name = "youtube-dev"
+# rv-brand = "morphe"
+# patches-version = "dev"
+# uptodown-dlurl = "https://youtube.en.uptodown.com/android"
 
-[YouTube-Music-Morphe-Dev]
-patches-source = "MorpheApp/morphe-patches"
-cli-source = "MorpheApp/morphe-cli"
-app-name = "youtube-music-dev"
-rv-brand = "morphe"
-arch = "arm64-v8a"
-patches-version = "dev"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
-uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
+# [YouTube-Music-Morphe-Dev]
+# patches-source = "MorpheApp/morphe-patches"
+# cli-source = "MorpheApp/morphe-cli"
+# app-name = "youtube-music-dev"
+# rv-brand = "morphe"
+# arch = "arm64-v8a"
+# patches-version = "dev"
+# apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
+# uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
 
-[Google-Photos-Morphe]
-patches-source = "RookieEnough/De-ReVanced"
-cli-source = "MorpheApp/morphe-cli"
-rv-brand = "de-revanced"
-uptodown-dlurl = "https://google-photos.en.uptodown.com/android"
+# [Google-Photos-Morphe]
+# patches-source = "RookieEnough/De-ReVanced"
+# cli-source = "MorpheApp/morphe-cli"
+# rv-brand = "de-revanced"
+# uptodown-dlurl = "https://google-photos.en.uptodown.com/android"
 
-[Telegram]
-patches-source = "Aunali321/ReVancedExperiments"
-cli-source = "ReVanced/revanced-cli"
-uptodown-dlurl = "https://telegram-google-play-version.en.uptodown.com/android"
+# [Telegram]
+# patches-source = "Aunali321/ReVancedExperiments"
+# cli-source = "ReVanced/revanced-cli"
+# uptodown-dlurl = "https://telegram-google-play-version.en.uptodown.com/android"
 
-[X-Twitter]
-patches-source = "crimera/piko"
-brand = "piko"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/x-corp/twitter"
-uptodown-dlurl = "https://twitter.en.uptodown.com/android"
-version = "11.81.0-release.0"
+# [X-Twitter]
+# patches-source = "crimera/piko"
+# brand = "piko"
+# apkmirror-dlurl = "https://www.apkmirror.com/apk/x-corp/twitter"
+# uptodown-dlurl = "https://twitter.en.uptodown.com/android"
+# version = "11.81.0-release.0"
 
-[Reddit-Morphe]
-patches-source = "MorpheApp/morphe-patches"
-cli-source = "MorpheApp/morphe-cli"
-rv-brand = "morphe"
-uptodown-dlurl = "https://reddit-official-app.en.uptodown.com/android"
+# [Reddit-Morphe]
+# patches-source = "MorpheApp/morphe-patches"
+# cli-source = "MorpheApp/morphe-cli"
+# rv-brand = "morphe"
+# uptodown-dlurl = "https://reddit-official-app.en.uptodown.com/android"
 
-[Reddit-Morphe-Dev]
-patches-source = "MorpheApp/morphe-patches"
-cli-source = "MorpheApp/morphe-cli"
-rv-brand = "morphe-dev"
-patches-version = "dev"
-uptodown-dlurl = "https://reddit-official-app.en.uptodown.com/android"
+# [Reddit-Morphe-Dev]
+# patches-source = "MorpheApp/morphe-patches"
+# cli-source = "MorpheApp/morphe-cli"
+# rv-brand = "morphe-dev"
+# patches-version = "dev"
+# uptodown-dlurl = "https://reddit-official-app.en.uptodown.com/android"
 
-[Reddit-Adobo-Dev]
-patches-source = "jkennethcarino/adobo"
-cli-source = "MorpheApp/morphe-cli"
-rv-brand = "adobo-dev"
-patches-version = "dev"
-uptodown-dlurl = "https://reddit-official-app.en.uptodown.com/android"
+# [Reddit-Adobo-Dev]
+# patches-source = "jkennethcarino/adobo"
+# cli-source = "MorpheApp/morphe-cli"
+# rv-brand = "adobo-dev"
+# patches-version = "dev"
+# uptodown-dlurl = "https://reddit-official-app.en.uptodown.com/android"
 
-[Cricbuzz-Morphe]
-cli-source = "MorpheApp/morphe-cli"
-patches-source = "RookieEnough/De-ReVanced"
-uptodown-dlurl = "https://cricbuzz-cricket-scores-and-news.en.uptodown.com/android"
+# [Cricbuzz-Morphe]
+# cli-source = "MorpheApp/morphe-cli"
+# patches-source = "RookieEnough/De-ReVanced"
+# uptodown-dlurl = "https://cricbuzz-cricket-scores-and-news.en.uptodown.com/android"
 
-[WPS-Office]
-patches-source = "hoo-dles/morphe-patches"
-cli-source = "MorpheApp/morphe-cli"
-rv-brand = "hoo-dles"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/wps-software-pte-ltd/wps-office-pdf/"
-uptodown-dlurl = "https://wps-office.en.uptodown.com/android"
+# [WPS-Office]
+# patches-source = "hoo-dles/morphe-patches"
+# cli-source = "MorpheApp/morphe-cli"
+# rv-brand = "hoo-dles"
+# apkmirror-dlurl = "https://www.apkmirror.com/apk/wps-software-pte-ltd/wps-office-pdf/"
+# uptodown-dlurl = "https://wps-office.en.uptodown.com/android"
 
-[Wallcraft]
-patches-source = "hoo-dles/morphe-patches"
-cli-source = "MorpheApp/morphe-cli"
-rv-brand = "hoo-dles"
-uptodown-dlurl = "https://wallpaperscraft.en.uptodown.com/android"
+# [Wallcraft]
+# patches-source = "hoo-dles/morphe-patches"
+# cli-source = "MorpheApp/morphe-cli"
+# rv-brand = "hoo-dles"
+# uptodown-dlurl = "https://wallpaperscraft.en.uptodown.com/android"
 
-[JioTV]
-patches-source = "rabilrbl/fluffy-patches"
-cli-source = "MorpheApp/morphe-cli"
-rv-brand = "fluffy"
-patches-version = "dev"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/jio-platforms-limited/jiotv-live-sports-movies-shows/"
-uptodown-dlurl = "https://jiotv.en.uptodown.com/android"
+# [JioTV]
+# patches-source = "rabilrbl/fluffy-patches"
+# cli-source = "MorpheApp/morphe-cli"
+# rv-brand = "fluffy"
+# patches-version = "dev"
+# apkmirror-dlurl = "https://www.apkmirror.com/apk/jio-platforms-limited/jiotv-live-sports-movies-shows/"
+# uptodown-dlurl = "https://jiotv.en.uptodown.com/android"
 
 [Truecaller]
 patches-source = "GitLab:Paresh-Maheshwari/paresh-patches"
