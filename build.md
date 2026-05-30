@@ -1,6 +1,8 @@
 Cricbuzz-Morphe: 6.24.01  
+Fing: 12.11.9  
 Google-Photos-Morphe: 7.78.0.920664585  
 JioTV: 7.1.7  
+Lumina: 1.0.2.3  
 Reddit-Adobo-Dev: 2026.21.0  
 Reddit-Morphe: 2026.14.0  
 Reddit-Morphe-Dev: 2026.14.0  
@@ -23,6 +25,9 @@ Patches: Aunali321/patches-2.0.0.rvp
 
 Patches: crimera/patches-3.4.0.mpp  
 [Changelog](https://github.com/crimera/piko/releases/tag/v3.4.0)
+
+Patches: Paresh-Maheshwari/patches-1.17.0.mpp  
+[Changelog](https://gitlab.com/Paresh-Maheshwari/paresh-patches/-/releases/v1.17.0)
 
 Patches: hoo-dles/patches-1.34.0.mpp  
 [Changelog](https://github.com/hoo-dles/morphe-patches/releases/tag/v1.34.0)
