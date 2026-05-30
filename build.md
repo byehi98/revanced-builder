@@ -1,6 +1,7 @@
 Fing: 12.11.9  
 JioTV: 7.1.7  
 Lumina: 1.0.2.3  
+SoundCloud: 2026.04.27-release  
 Wallcraft: 3.61.01  
 
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
