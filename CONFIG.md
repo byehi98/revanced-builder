@@ -21,8 +21,10 @@ compression-level = 9                # module zip compression level
 remove-rv-integrations-checks = true # remove checks from the revanced integrations
 dpi = "nodpi anydpi 120-640dpi"      # dpi packages to be searched in order. default: "nodpi anydpi"
 
-patches-source = "revanced/revanced-patches" # where to fetch patches bundle from. default: "revanced/revanced-patches"
-cli-source = "ReVanced/revanced-cli"             # where to fetch cli from. default: "ReVanced/revanced-cli"
+patches-source = "revanced/revanced-patches" # where to fetch patches bundle from. default: "revanced/revanced-patches". Supports GitLab by prefixing with 'GitLab:' (e.g., 'GitLab:user/repo')
+patches-sources = "revanced/revanced-patches" # alias for patches-source
+cli-source = "ReVanced/revanced-cli"             # where to fetch cli from. default: "ReVanced/revanced-cli". Supports GitLab as well.
+cli-sources = "ReVanced/revanced-cli"            # alias for cli-source
 # options like cli-source can also set per app
 rv-brand = "ReVanced Extended" # rebrand from 'ReVanced' to something different. default: "ReVanced"
 
