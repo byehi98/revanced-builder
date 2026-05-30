@@ -57,8 +57,9 @@ java() { env -i java --enable-native-access=ALL-UNNAMED "$@"; }
 
 get_prebuilts() {
 	local cli_src=$1 cli_ver=$2 patches_src=$3 patches_ver=$4
-	pr "Getting prebuilts (${patches_src%/*})" >&2
-	local cl_dir=${patches_src%/*}
+	local patches_src_name=${patches_src#GitLab:}
+	pr "Getting prebuilts ($patches_src_name)" >&2
+	local cl_dir=${patches_src_name%/*}
 	cl_dir=${TEMP_DIR}/${cl_dir,,}-rv
 	[ -d "$cl_dir" ] || mkdir "$cl_dir"
 
@@ -513,8 +514,9 @@ get_apkmirror_vers() {
 }
 get_apkmirror_pkg_name() { sed -n 's;.*id=\(.*\)" class="accent_color.*;\1;p' <<<"$__APKMIRROR_RESP__"; }
 get_apkmirror_resp() {
-	__APKMIRROR_RESP__=$(req "${1}" -) || return 1
-	__APKMIRROR_CAT__="${1##*/}"
+	local url="${1%/}"
+	__APKMIRROR_RESP__=$(req "${url}" -) || return 1
+	__APKMIRROR_CAT__="${url##*/}"
 }
 
 # -------------------- uptodown --------------------
@@ -522,7 +524,7 @@ get_uptodown_resp() {
 	__UPTODOWN_RESP__=$(req "${1}/versions" -) || return 1
 	__UPTODOWN_RESP_PKG__=$(req "${1}/download" -) || return 1
 }
-get_uptodown_vers() { $HTMLQ --text ".version" <<<"$__UPTODOWN_RESP__"; }
+get_uptodown_vers() { $HTMLQ --text ".version" <<<"$__UPTODOWN_RESP__" | awk '{$1=$1}1' | grep -E '^[0-9]' || :; }
 dl_uptodown() {
 	local uptodown_dlurl=$1 version=$2 output=$3 arch=$4 _dpi=$5
 	if [ "$arch" = "arm-v7a" ]; then arch="armeabi-v7a"; fi
