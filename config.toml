@@ -48,14 +48,6 @@ remove-rv-integrations-checks = false
 # cli-source = "ReVanced/revanced-cli"
 # uptodown-dlurl = "https://telegram-google-play-version.en.uptodown.com/android"
 
-[X-Twitter]
-patches-source = "crimera/piko"
-brand = "piko"
-patches-version = "dev"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/x-corp/twitter"
-uptodown-dlurl = "https://twitter.en.uptodown.com/android"
-# version = "11.81.0-release.0"
-
 # [Reddit-Morphe]
 # patches-source = "MorpheApp/morphe-patches"
 # cli-source = "MorpheApp/morphe-cli"
@@ -87,6 +79,14 @@ uptodown-dlurl = "https://twitter.en.uptodown.com/android"
 # rv-brand = "hoo-dles"
 # apkmirror-dlurl = "https://www.apkmirror.com/apk/wps-software-pte-ltd/wps-office-pdf/"
 # uptodown-dlurl = "https://wps-office.en.uptodown.com/android"
+
+[X-Twitter]
+patches-source = "crimera/piko"
+brand = "piko"
+patches-version = "dev"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/x-corp/twitter"
+uptodown-dlurl = "https://twitter.en.uptodown.com/android"
+# version = "11.81.0-release.0"
 
 [Wallcraft]
 patches-source = "hoo-dles/morphe-patches"
@@ -126,7 +126,7 @@ rv-brand = "paresh"
 uptodown-dlurl = "https://lumina-walls.en.uptodown.com/android"
 
 [SoundCloud]
-patches-source = "GitLab:Paresh-Maheshwari/paresh-patches"
+patches-source = "hoo-dles/morphe-patches"
 cli-source = "MorpheApp/morphe-cli"
 rv-brand = "paresh"
 # patches-version = "dev"
