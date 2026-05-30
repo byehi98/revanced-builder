@@ -124,3 +124,10 @@ cli-source = "MorpheApp/morphe-cli"
 rv-brand = "paresh"
 # patches-version = "dev"
 uptodown-dlurl = "https://lumina-walls.en.uptodown.com/android"
+
+[SoundCloud]
+patches-source = "GitLab:Paresh-Maheshwari/paresh-patches"
+cli-source = "MorpheApp/morphe-cli"
+rv-brand = "paresh"
+# patches-version = "dev"
+uptodown-dlurl = "https://soundcloud.en.uptodown.com/android"
