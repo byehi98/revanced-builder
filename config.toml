@@ -73,13 +73,6 @@ remove-rv-integrations-checks = false
 # patches-source = "RookieEnough/De-ReVanced"
 # uptodown-dlurl = "https://cricbuzz-cricket-scores-and-news.en.uptodown.com/android"
 
-# [WPS-Office]
-# patches-source = "hoo-dles/morphe-patches"
-# cli-source = "MorpheApp/morphe-cli"
-# rv-brand = "hoo-dles"
-# apkmirror-dlurl = "https://www.apkmirror.com/apk/wps-software-pte-ltd/wps-office-pdf/"
-# uptodown-dlurl = "https://wps-office.en.uptodown.com/android"
-
 # [X-Twitter]
 # patches-source = "crimera/piko"
 # brand = "piko"
@@ -110,6 +103,14 @@ patches-version = "dev"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/true-software-scandinavia-ab/truecaller-caller-id-block/"
 # uptodown-dlurl = "https://truecaller.en.uptodown.com/android"
 
+[Truecaller]
+patches-source = "binarymend/morphe-patches"
+cli-source = "MorpheApp/morphe-cli"
+rv-brand = "binarymend"
+# patches-version = "dev"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/true-software-scandinavia-ab/truecaller-caller-id-block/"
+# uptodown-dlurl = "https://truecaller.en.uptodown.com/android"
+
 [Fing]
 patches-source = "GitLab:Paresh-Maheshwari/paresh-patches"
 cli-source = "MorpheApp/morphe-cli"
@@ -134,9 +135,56 @@ rv-brand = "paresh"
 uptodown-dlurl = "https://soundcloud.en.uptodown.com/android"
 
 [ProtonVPN]
+patches-source = "hoo-dles/morphe-patches"
+cli-source = "MorpheApp/morphe-cli"
+rv-brand = "paresh"
+patches-version = "dev"
+# uptodown-dlurl = "https://protonvpn.en.uptodown.com/android"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/proton-technologies-ag/protonvpn-free-vpn-secure-unlimited-fdroid-version/"
+
+[WPS-Office]
+patches-source = "hoo-dles/morphe-patches"
+cli-source = "MorpheApp/morphe-cli"
+rv-brand = "hoo-dles"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/wps-software-pte-ltd/wps-office-pdf/"
+uptodown-dlurl = "https://wps-office.en.uptodown.com/android"
+
+[Tumblr]
+patches-source = "RookieEnough/De-Vanced"
+cli-source = "MorpheApp/morphe-cli"
+# dpi = "120-640dpi"
+rv-brand = "De-Vanced"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/tumblr-inc/tumblr/"
+uptodown-dlurl = "https://tumblr.en.uptodown.com/android"
+
+[Trakt]
+patches-source = "IMXEren/mix-patches"
+cli-source = "MorpheApp/morphe-cli"
+# dpi = "120-640dpi"
+rv-brand = "IMXEren"
+# apkmirror-dlurl = "https://www.apkmirror.com/apk/trakt/trakt/"
+uptodown-dlurl = "https://trakt.en.uptodown.com/android"
+
+[Telegram]
 patches-source = "GitLab:Paresh-Maheshwari/paresh-patches"
 cli-source = "MorpheApp/morphe-cli"
 rv-brand = "paresh"
-# patches-version = "dev"
-# uptodown-dlurl = "https://protonvpn.en.uptodown.com/android"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/proton-technologies-ag/protonvpn-free-vpn-secure-unlimited-fdroid-version/"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/telegram-fz-llc/telegram-web-version/"
+
+[Solid-Explorer]
+patches-source = "hoo-dles/morphe-patches"
+cli-source = "MorpheApp/morphe-cli"
+rv-brand = "hoo-dles"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/neatbytes/solid-explorer-file-manager/"
+
+[Solid-Explorer]
+patches-source = "hoo-dles/morphe-patches"
+cli-source = "MorpheApp/morphe-cli"
+rv-brand = "hoo-dles"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/neatbytes/solid-explorer-file-manager/"
+
+[Eyecon]
+patches-source = "GitLab:Paresh-Maheshwari/paresh-patches"
+cli-source = "MorpheApp/morphe-cli"
+rv-brand = "paresh"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/eyecon-phone-dialer-contacts/eyecon-caller-id-spam-block/"
