@@ -1,6 +1,7 @@
 Fing: 12.12.0  
 JioTV: 7.1.7  
 Lumina: 1.0.2.3  
+ProtonVPN: 5.18.46.0  
 SoundCloud: 2026.04.27-release  
 Truecaller: 26.10.6  
 Wallcraft: 3.61.01  
