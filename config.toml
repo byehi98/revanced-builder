@@ -80,12 +80,12 @@ remove-rv-integrations-checks = false
 # apkmirror-dlurl = "https://www.apkmirror.com/apk/wps-software-pte-ltd/wps-office-pdf/"
 # uptodown-dlurl = "https://wps-office.en.uptodown.com/android"
 
-[X-Twitter]
-patches-source = "crimera/piko"
-brand = "piko"
-patches-version = "dev"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/x-corp/twitter"
-uptodown-dlurl = "https://twitter.en.uptodown.com/android"
+# [X-Twitter]
+# patches-source = "crimera/piko"
+# brand = "piko"
+# patches-version = "dev"
+# apkmirror-dlurl = "https://www.apkmirror.com/apk/x-corp/twitter"
+# uptodown-dlurl = "https://twitter.en.uptodown.com/android"
 # version = "11.81.0-release.0"
 
 [Wallcraft]
@@ -114,6 +114,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/true-software-scandinavia-ab/tr
 patches-source = "GitLab:Paresh-Maheshwari/paresh-patches"
 cli-source = "MorpheApp/morphe-cli"
 rv-brand = "paresh"
+# dpi = "120-640dpi"
 # patches-version = "dev"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/fing-limited/fing-network-tools/"
 uptodown-dlurl = "https://fing-network-tools.en.uptodown.com/android"
@@ -131,3 +132,10 @@ cli-source = "MorpheApp/morphe-cli"
 rv-brand = "paresh"
 # patches-version = "dev"
 uptodown-dlurl = "https://soundcloud.en.uptodown.com/android"
+
+[ProtonVPN]
+patches-source = "GitLab:Paresh-Maheshwari/paresh-patches"
+cli-source = "MorpheApp/morphe-cli"
+rv-brand = "paresh"
+# patches-version = "dev"
+uptodown-dlurl = "https://protonvpn.en.uptodown.com/android"
