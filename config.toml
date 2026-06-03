@@ -103,7 +103,7 @@ patches-version = "dev"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/true-software-scandinavia-ab/truecaller-caller-id-block/"
 # uptodown-dlurl = "https://truecaller.en.uptodown.com/android"
 
-[Truecaller]
+[Truecaller-binarymend]
 patches-source = "binarymend/morphe-patches"
 cli-source = "MorpheApp/morphe-cli"
 rv-brand = "binarymend"
@@ -170,12 +170,6 @@ patches-source = "GitLab:Paresh-Maheshwari/paresh-patches"
 cli-source = "MorpheApp/morphe-cli"
 rv-brand = "paresh"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/telegram-fz-llc/telegram-web-version/"
-
-[Solid-Explorer]
-patches-source = "hoo-dles/morphe-patches"
-cli-source = "MorpheApp/morphe-cli"
-rv-brand = "hoo-dles"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/neatbytes/solid-explorer-file-manager/"
 
 [Solid-Explorer]
 patches-source = "hoo-dles/morphe-patches"
