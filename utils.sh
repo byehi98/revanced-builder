@@ -286,10 +286,16 @@ config_update() {
 _req() {
 	local ip="$1" op="$2"
 	shift 2
-	[ -z "$ip" ] && return 1
+	if [ -z "$ip" ]; then
+		epr "Error: empty URL passed to _req"
+		return 1
+	fi
 	local dlp="$op"
 	if [ "$op" != - ]; then
-		[ -z "$op" ] && return 1
+		if [ -z "$op" ]; then
+			epr "Error: empty output path passed to _req"
+			return 1
+		fi
 		if [ -f "$op" ]; then return; fi
 		dlp="$(dirname "$op")/tmp.$(basename "$op")"
 		if [ -f "$dlp" ]; then
@@ -305,16 +311,20 @@ _req() {
 		mv -f "$dlp" "$op"
 	fi
 }
-req() { _req "$1" "$2" -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" -H "Accept-Language: en-US,en;q=0.9"; }
+if [ "${GITHUB_ACTIONS-}" = "true" ]; then
+	req() { _req "$1" "$2" -H "User-Agent: APKUpdater-v3.0.3" -H "Accept: */*"; }
+else
+	req() { _req "$1" "$2" -H "User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:108.0) Gecko/20100101 Firefox/108.0"; }
+fi
 gh_req() {
-	if [ "$GH_HEADER" ]; then
+	if [ "${GH_HEADER-}" ]; then
 		_req "$1" "$2" -H "$GH_HEADER"
 	else
 		_req "$1" "$2"
 	fi
 }
 gl_req() {
-	if [ "$GL_HEADER" ]; then
+	if [ "${GL_HEADER-}" ]; then
 		_req "$1" "$2" -H "$GL_HEADER"
 	else
 		_req "$1" "$2"
@@ -323,7 +333,7 @@ gl_req() {
 gh_dl() {
 	if [ ! -f "$1" ]; then
 		pr "Getting '$1' from '$2'"
-		if [ "$GH_HEADER" ]; then
+		if [ "${GH_HEADER-}" ]; then
 			_req "$2" "$1" -H "$GH_HEADER" -H "Accept: application/octet-stream"
 		else
 			_req "$2" "$1" -H "Accept: application/octet-stream"
@@ -333,7 +343,7 @@ gh_dl() {
 gl_dl() {
 	if [ ! -f "$1" ]; then
 		pr "Getting '$1' from '$2'"
-		if [ "$GL_HEADER" ]; then
+		if [ "${GL_HEADER-}" ]; then
 			_req "$2" "$1" -H "$GL_HEADER"
 		else
 			_req "$2" "$1"
