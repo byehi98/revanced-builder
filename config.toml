@@ -81,12 +81,6 @@ remove-rv-integrations-checks = false
 # uptodown-dlurl = "https://twitter.en.uptodown.com/android"
 # version = "11.81.0-release.0"
 
-[Wallcraft]
-patches-source = "hoo-dles/morphe-patches"
-cli-source = "MorpheApp/morphe-cli"
-rv-brand = "hoo-dles"
-uptodown-dlurl = "https://wallpaperscraft.en.uptodown.com/android"
-
 # [JioTV]
 # patches-source = "rabilrbl/fluffy-patches"
 # cli-source = "MorpheApp/morphe-cli"
@@ -94,6 +88,12 @@ uptodown-dlurl = "https://wallpaperscraft.en.uptodown.com/android"
 # patches-version = "dev"
 # # apkmirror-dlurl = "https://www.apkmirror.com/apk/jio-platforms-limited/jiotv-live-sports-movies-shows/"
 # uptodown-dlurl = "https://jiotv.en.uptodown.com/android"
+
+[Wallcraft]
+patches-source = "hoo-dles/morphe-patches"
+cli-source = "MorpheApp/morphe-cli"
+rv-brand = "hoo-dles"
+uptodown-dlurl = "https://wallpaperscraft.en.uptodown.com/android"
 
 [Truecaller]
 patches-source = "GitLab:Paresh-Maheshwari/paresh-patches"
@@ -182,3 +182,9 @@ patches-source = "GitLab:Paresh-Maheshwari/paresh-patches"
 cli-source = "MorpheApp/morphe-cli"
 rv-brand = "paresh"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/eyecon-phone-dialer-contacts/eyecon-caller-id-spam-block/"
+
+[Lyfta]
+patches-source = "hoo-dles/morphe-patches"
+cli-source = "MorpheApp/morphe-cli"
+rv-brand = "hoo-dles"
+uptodown-dlurl = "https://lyfta-gym-workout-tracker-log.en.uptodown.com/android"
