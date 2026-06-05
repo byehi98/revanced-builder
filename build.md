@@ -1,6 +1,7 @@
 Eyecon: 4.2026.04.05.1300  
 Fing: 12.12.0  
 Lumina: 1.0.2.3  
+Lyfta: 1.551  
 ProtonVPN: 5.17.72.0  
 Solid-Explorer: 3.4.1  
 SoundCloud: 2026.04.27-release  
@@ -20,11 +21,11 @@ Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and
 Patches: binarymend/patches-1.3.1.mpp  
 [Changelog](https://github.com/binarymend/morphe-patches/releases/tag/v1.3.1)
 
-Patches: hoo-dles/patches-1.35.0-dev.1.mpp  
-[Changelog](https://github.com/hoo-dles/morphe-patches/releases/tag/v1.35.0-dev.1)
-
 Patches: hoo-dles/patches-1.34.0.mpp  
 [Changelog](https://github.com/hoo-dles/morphe-patches/releases/tag/v1.34.0)
+
+Patches: hoo-dles/patches-1.35.0-dev.1.mpp  
+[Changelog](https://github.com/hoo-dles/morphe-patches/releases/tag/v1.35.0-dev.1)
 
 Patches: IMXEren/patches-1.2.0.mpp  
 [Changelog](https://github.com/IMXEren/mix-patches/releases/tag/v1.2.0)
