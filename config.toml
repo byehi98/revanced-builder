@@ -87,13 +87,13 @@ cli-source = "MorpheApp/morphe-cli"
 rv-brand = "hoo-dles"
 uptodown-dlurl = "https://wallpaperscraft.en.uptodown.com/android"
 
-[JioTV]
-patches-source = "rabilrbl/fluffy-patches"
-cli-source = "MorpheApp/morphe-cli"
-rv-brand = "fluffy"
-patches-version = "dev"
-# apkmirror-dlurl = "https://www.apkmirror.com/apk/jio-platforms-limited/jiotv-live-sports-movies-shows/"
-uptodown-dlurl = "https://jiotv.en.uptodown.com/android"
+# [JioTV]
+# patches-source = "rabilrbl/fluffy-patches"
+# cli-source = "MorpheApp/morphe-cli"
+# rv-brand = "fluffy"
+# patches-version = "dev"
+# # apkmirror-dlurl = "https://www.apkmirror.com/apk/jio-platforms-limited/jiotv-live-sports-movies-shows/"
+# uptodown-dlurl = "https://jiotv.en.uptodown.com/android"
 
 [Truecaller]
 patches-source = "GitLab:Paresh-Maheshwari/paresh-patches"
