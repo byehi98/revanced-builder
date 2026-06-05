@@ -42,8 +42,5 @@ Patches: Paresh-Maheshwari/patches-1.18.1-dev.1.mpp
 Patches: Paresh-Maheshwari/patches-1.18.1-dev.1.mpp  
 [Changelog](https://gitlab.com/Paresh-Maheshwari/paresh-patches/-/releases/v1.18.1-dev.1)
 
-Patches: rabilrbl/patches-1.0.0-dev.19.mpp  
-[Changelog](https://github.com/rabilrbl/fluffy-patches/releases/tag/v1.0.0-dev.19)
-
 Patches: RookieEnough/patches-1.0.4.mpp  
 [Changelog](https://github.com/RookieEnough/De-Vanced/releases/tag/v1.0.4)  
