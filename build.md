@@ -1,3 +1,4 @@
+Camera: 5.4.0  
 Eyecon: 4.2026.04.05.1300  
 Fing: 12.12.0  
 Lumina: 1.0.2.3  
@@ -31,6 +32,9 @@ Patches: IMXEren/patches-1.2.0.mpp
 [Changelog](https://github.com/IMXEren/mix-patches/releases/tag/v1.2.0)
 
 CLI: MorpheApp/morphe-cli-1.9.0-all.jar  
+Patches: kiraio-moe/patches-1.0.0.mpp  
+[Changelog](https://github.com/kiraio-moe/Lain-Patches/releases/tag/v1.0.0)
+
 Patches: Paresh-Maheshwari/patches-1.18.1-dev.1.mpp  
 [Changelog](https://gitlab.com/Paresh-Maheshwari/paresh-patches/-/releases/v1.18.1-dev.1)
 
