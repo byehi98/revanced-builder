@@ -3,6 +3,7 @@ Eyecon: 4.2026.04.05.1300
 Fing: 12.12.0  
 Lumina: 1.0.2.3  
 Lyfta: 1.551  
+M-Indicator: 18.0.352  
 MacroFactor: 5.7.8  
 ProtonVPN: 5.17.72.0  
 Solid-Explorer: 3.4.1  
@@ -49,4 +50,7 @@ Patches: Paresh-Maheshwari/patches-1.18.1-dev.1.mpp
 [Changelog](https://gitlab.com/Paresh-Maheshwari/paresh-patches/-/releases/v1.18.1-dev.1)
 
 Patches: RookieEnough/patches-1.0.4.mpp  
-[Changelog](https://github.com/RookieEnough/De-Vanced/releases/tag/v1.0.4)  
+[Changelog](https://github.com/RookieEnough/De-Vanced/releases/tag/v1.0.4)
+
+Patches: rushiranpise/patches-1.5.0-dev.7.mpp  
+[Changelog](https://github.com/rushiranpise/morphe-patches/releases/tag/v1.5.0-dev.7)  
