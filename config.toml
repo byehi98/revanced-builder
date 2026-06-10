@@ -194,3 +194,9 @@ patches-source = "kiraio-moe/Lain-Patches"
 cli-source = "MorpheApp/morphe-cli"
 rv-brand = "lain"
 uptodown-dlurl = "https://camera-fv-5-lite.en.uptodown.com/android"
+
+[MacroFactor]
+patches-source = "hoo-dles/morphe-patches"
+cli-source = "MorpheApp/morphe-cli"
+rv-brand = "hoo-dles"
+uptodown-dlurl = "https://macrofactor-diet-sidekick-and-macro-tracker.en.uptodown.com/android"
