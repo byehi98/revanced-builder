@@ -1,4 +1,11 @@
+Lyfta: 1.551  
 M-Indicator: 18.0.352  
+MacroFactor: 5.7.8  
+ProtonVPN: 5.17.72.0  
+Solid-Explorer: 3.4.1  
+SoundCloud: 2026.04.27-release  
+WPS-Office: 18.24  
+Wallcraft: 3.61.01  
 
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
@@ -6,15 +13,16 @@ Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and
 [revanced-magisk-module](https://github.com/j-hc/revanced-magisk-module)
   
 CLI: MorpheApp/morphe-cli-1.9.1-all.jar  
-Patches: rushiranpise/patches-1.5.0.mpp  
-[Changelog](https://github.com/rushiranpise/morphe-patches/releases/tag/v1.5.0)  
+Patches: hoo-dles/patches-1.35.1.mpp  
+[Changelog](https://github.com/hoo-dles/morphe-patches/releases/tag/v1.35.1)
+
+Patches: rushiranpise/patches-1.6.0-dev.3.mpp  
+[Changelog](https://github.com/rushiranpise/morphe-patches/releases/tag/v1.6.0-dev.3)  
 
 Skipped:  
 Patches: kiraio-moe/patches-1.0.0.mpp  
 Patches: Paresh-Maheshwari/patches-1.18.1-dev.1.mpp  
-Patches: hoo-dles/patches-1.35.0.mpp  
-Patches: hoo-dles/patches-1.35.1-dev.1.mpp  
 Patches: IMXEren/patches-1.2.0.mpp  
 Patches: Paresh-Maheshwari/patches-1.18.1-dev.1.mpp  
 Patches: binarymend/patches-1.3.1.mpp  
-Patches: RookieEnough/patches-1.0.4.mpp    
+Patches: RookieEnough/patches-1.0.4.mpp      
