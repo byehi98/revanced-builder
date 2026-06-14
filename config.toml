@@ -127,13 +127,6 @@ rv-brand = "paresh"
 # patches-version = "dev"
 uptodown-dlurl = "https://lumina-walls.en.uptodown.com/android"
 
-[SoundCloud]
-patches-source = "hoo-dles/morphe-patches"
-cli-source = "MorpheApp/morphe-cli"
-rv-brand = "paresh"
-# patches-version = "dev"
-uptodown-dlurl = "https://soundcloud.en.uptodown.com/android"
-
 [ProtonVPN]
 patches-source = "hoo-dles/morphe-patches"
 cli-source = "MorpheApp/morphe-cli"
@@ -207,3 +200,24 @@ cli-source = "MorpheApp/morphe-cli"
 rv-brand = "rushiranpise"
 patches-version = "dev"
 uptodown-dlurl = "https://m-indicator.en.uptodown.com/android"
+
+[SoundCloud-hoo-dles]
+patches-source = "hoo-dles/morphe-patches"
+cli-source = "MorpheApp/morphe-cli"
+rv-brand = "hoo-dles"
+# patches-version = "dev"
+uptodown-dlurl = "https://soundcloud.en.uptodown.com/android"
+
+[SoundCloud-RookieEnough]
+patches-source = "RookieEnough/De-Vanced"
+cli-source = "MorpheApp/morphe-cli"
+rv-brand = "de-vanced"
+# patches-version = "dev"
+uptodown-dlurl = "https://soundcloud.en.uptodown.com/android"
+
+[SoundCloud-kondratjev]
+patches-source = "kondratjev/morphe-patches"
+cli-source = "MorpheApp/morphe-cli"
+rv-brand = "kondratjev"
+# patches-version = "dev"
+uptodown-dlurl = "https://soundcloud.en.uptodown.com/android"
