@@ -221,3 +221,10 @@ cli-source = "MorpheApp/morphe-cli"
 rv-brand = "kondratjev"
 # patches-version = "dev"
 uptodown-dlurl = "https://soundcloud.en.uptodown.com/android"
+
+[NZB360]
+patches-source = "rushiranpise/morphe-patches"
+cli-source = "MorpheApp/morphe-cli"
+rv-brand = "rushiranpise"
+patches-version = "dev"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/kevin-foreman/nzb360/"
