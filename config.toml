@@ -228,3 +228,10 @@ cli-source = "MorpheApp/morphe-cli"
 rv-brand = "rushiranpise"
 patches-version = "dev"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/kevin-foreman/nzb360/"
+
+[Backdrops]
+patches-source = "BholeyKaBhakt/android-patches-xtra"
+cli-source = "MorpheApp/morphe-cli"
+rv-brand = "xtra"
+patches-version = "dev"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/backdrops/backdrops-wallpapers/"
