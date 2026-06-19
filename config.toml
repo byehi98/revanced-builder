@@ -235,3 +235,19 @@ cli-source = "MorpheApp/morphe-cli"
 rv-brand = "xtra"
 patches-version = "dev"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/backdrops/backdrops-wallpapers/"
+
+[YouTube-Morphe]
+patches-source = "MorpheApp/morphe-patches"
+cli-source = "MorpheApp/morphe-cli"
+app-name = "youtube"
+rv-brand = "morphe"
+uptodown-dlurl = "https://youtube.en.uptodown.com/android"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube/"
+patcher-args = """
+    -e 'MaterialYou' \
+    -e 'Return YouTube Username' \
+    -e 'Custom branding icon for YouTube' -OappIcon='mmt_turquoise' -OchangeSplashIcon='true' -OrestoreOldSplashAnimation='true' \
+    -e 'Custom header for YouTube' -OcustomHeader='custom_branding_icon' \
+    -e 'Theme' -OdarkThemeBackgroundColor=@android:color/black \
+    -e 'Settings for YouTube' -OrvxSettingsLabel='Revanced Extended' -OinsertPosition=@string/about_key
+    """
