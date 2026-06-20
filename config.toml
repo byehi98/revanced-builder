@@ -37,12 +37,6 @@ remove-rv-integrations-checks = false
 # apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
 # uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
 
-# [Google-Photos-Morphe]
-# patches-source = "RookieEnough/De-ReVanced"
-# cli-source = "MorpheApp/morphe-cli"
-# rv-brand = "de-revanced"
-# uptodown-dlurl = "https://google-photos.en.uptodown.com/android"
-
 # [Telegram]
 # patches-source = "Aunali321/ReVancedExperiments"
 # cli-source = "ReVanced/revanced-cli"
@@ -67,11 +61,6 @@ remove-rv-integrations-checks = false
 # rv-brand = "adobo-dev"
 # patches-version = "dev"
 # uptodown-dlurl = "https://reddit-official-app.en.uptodown.com/android"
-
-# [Cricbuzz-Morphe]
-# cli-source = "MorpheApp/morphe-cli"
-# patches-source = "RookieEnough/De-ReVanced"
-# uptodown-dlurl = "https://cricbuzz-cricket-scores-and-news.en.uptodown.com/android"
 
 # [X-Twitter]
 # patches-source = "crimera/piko"
@@ -141,14 +130,6 @@ cli-source = "MorpheApp/morphe-cli"
 rv-brand = "hoo-dles"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/wps-software-pte-ltd/wps-office-pdf/"
 uptodown-dlurl = "https://wps-office.en.uptodown.com/android"
-
-[Tumblr]
-patches-source = "RookieEnough/De-Vanced"
-cli-source = "MorpheApp/morphe-cli"
-# dpi = "120-640dpi"
-rv-brand = "De-Vanced"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/tumblr-inc/tumblr/"
-uptodown-dlurl = "https://tumblr.en.uptodown.com/android"
 
 [Trakt]
 patches-source = "IMXEren/mix-patches"
@@ -257,3 +238,129 @@ patches-source = "cesbar/zpatches"
 cli-source = "MorpheApp/morphe-cli"
 rv-brand = "cesbar"
 uptodown-dlurl = "https://minesweeper-the-clean-one.en.uptodown.com/android"
+
+[AdGuard]
+patches-source = "hoo-dles/morphe-patches"
+cli-source = "MorpheApp/morphe-cli"
+rv-brand = "hoo-dles"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/adguard-software-limited/adguard/"
+
+[Autosync]
+patches-source = "BholeyKaBhakt/android-patches-xtra"
+cli-source = "MorpheApp/morphe-cli"
+rv-brand = "hoo-dles"
+uptodown-dlurl = "https://autosync.en.uptodown.com/android"
+
+[CalcNote]
+patches-source = "binarymend/morphe-patches"
+cli-source = "MorpheApp/morphe-cli"
+rv-brand = "hoo-dles"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/burton999/calcnote-notepad-calculator/"
+
+[CamScanner]
+patches-source = "hoo-dles/morphe-patches"
+cli-source = "MorpheApp/morphe-cli"
+rv-brand = "hoo-dles"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/intsig-pte/camscanner-phone-pdf-creator/"
+
+[Cricbuzz]
+patches-source = "RookieEnough/De-ReVanced"
+cli-source = "MorpheApp/morphe-cli"
+rv-brand = "RookieEnough"
+uptodown-dlurl = "https://cricbuzz-cricket-scores-and-news.en.uptodown.com/android"
+
+[CREX]
+patches-source = "GitLab:Paresh-Maheshwari/paresh-patches"
+cli-source = "MorpheApp/morphe-cli"
+rv-brand = "paresh"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/cricket-exchange/cricket-exchange-live-score-analysis/"
+
+[Document-Scanner]
+patches-source = "GitLab:Paresh-Maheshwari/paresh-patches"
+cli-source = "MorpheApp/morphe-cli"
+rv-brand = "paresh"
+patches-version = "dev"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/lufick/document-scanner-pdf-creator/"
+
+[Google-Photos]
+patches-source = "RookieEnough/De-ReVanced"
+cli-source = "MorpheApp/morphe-cli"
+rv-brand = "de-revanced"
+patches-version = "dev"
+uptodown-dlurl = "https://google-photos.en.uptodown.com/android"
+
+[Hidden-Settings]
+patches-source = "kiraio-moe/Lain-Patches"
+cli-source = "MorpheApp/morphe-cli"
+rv-brand = "lain"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/yunus-ceyhan/hidden-settings-miui-hyperos/"
+
+[Icon-Pack-Studio]
+patches-source = "RookieEnough/De-ReVanced"
+cli-source = "MorpheApp/morphe-cli"
+rv-brand = "RookieEnough"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/smart-launcher-team/icon-pack-studio/"
+
+[IMDb]
+patches-source = "jkennethcarino/adobo"
+cli-source = "MorpheApp/morphe-cli"
+rv-brand = "adobo"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/imdb/imdb-imdb/"
+
+[Irplus]
+patches-source = "RookieEnough/De-Vanced"
+cli-source = "MorpheApp/morphe-cli"
+rv-brand = "RookieEnough"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/binarymode/irplus-infrared-remote/"
+
+[Killapps]
+patches-source = "rushiranpise/morphe-patches"
+cli-source = "MorpheApp/morphe-cli"
+rv-brand = "rushiranpise"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/appdev-quebec/killapps-close-all-apps-running/"
+
+[Letterboxd]
+patches-source = "RookieEnough/De-Vanced"
+cli-source = "MorpheApp/morphe-cli"
+rv-brand = "RookieEnough"
+uptodown-dlurl = "https://letterboxd.en.uptodown.com/android"
+
+[Netguard]
+patches-source = "rushiranpise/morphe-patches"
+cli-source = "MorpheApp/morphe-cli"
+rv-brand = "rushiranpise"
+patches-version = "dev"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/marcel-bokhorst/netguard-no-root-firewall/"
+
+[NetMonster]
+patches-source = "rushiranpise/morphe-patches"
+cli-source = "MorpheApp/morphe-cli"
+rv-brand = "rushiranpise"
+patches-version = "dev"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/michal-mrocek/netmonster/"
+
+[Symfonium]
+patches-source = "binarymend/morphe-patches"
+cli-source = "MorpheApp/morphe-cli"
+rv-brand = "binarymend"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/tolriq/symfonium-music-player-cast/"
+
+[Tasker]
+patches-source = "rushiranpise/morphe-patches"
+cli-source = "MorpheApp/morphe-cli"
+rv-brand = "rushiranpise"
+patches-version = "dev"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/joaomgcd/tasker/"
+
+[Tumblr]
+patches-source = "RookieEnough/De-Vanced"
+cli-source = "MorpheApp/morphe-cli"
+rv-brand = "RookieEnough"
+patches-version = "dev"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/tumblr-inc/tumblr/"
+
+[UFO-VPN]
+patches-source = "BholeyKaBhakt/android-patches-xtra"
+cli-source = "MorpheApp/morphe-cli"
+rv-brand = "BholeyKaBhakt"
+uptodown-dlurl = "https://com-ufovpn-connect-velnet.en.uptodown.com/android/"
