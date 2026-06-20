@@ -6,6 +6,7 @@ Lumina: 1.0.2.3
 Lyfta: 1.551  
 M-Indicator: 18.0.352  
 MacroFactor: 5.7.8  
+Minesweeper: 1.21.1  
 NZB360: 23.4  
 ProtonVPN: 5.17.72.0  
 Solid-Explorer: 3.4.1  
@@ -32,6 +33,9 @@ Patches: BholeyKaBhakt/patches-2.12.0-dev.1.mpp
 
 Patches: binarymend/patches-1.3.1.mpp  
 [Changelog](https://github.com/binarymend/morphe-patches/releases/tag/v1.3.1)
+
+Patches: cesbar/patches-1.5.1.mpp  
+[Changelog](https://github.com/cesbar/zpatches/releases/tag/v1.5.1)
 
 Patches: hoo-dles/patches-1.36.0.mpp  
 [Changelog](https://github.com/hoo-dles/morphe-patches/releases/tag/v1.36.0)
