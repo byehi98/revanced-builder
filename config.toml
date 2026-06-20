@@ -251,3 +251,9 @@ patcher-args = """
     -e 'Theme' -OdarkThemeBackgroundColor=@android:color/black \
     -e 'Settings for YouTube' -OrvxSettingsLabel='Revanced Extended' -OinsertPosition=@string/about_key
     """
+
+[Minesweeper]
+patches-source = "cesbar/zpatches"
+cli-source = "MorpheApp/morphe-cli"
+rv-brand = "cesbar"
+uptodown-dlurl = "https://minesweeper-the-clean-one.en.uptodown.com/android"
