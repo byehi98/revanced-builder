@@ -358,9 +358,3 @@ cli-source = "MorpheApp/morphe-cli"
 rv-brand = "RookieEnough"
 patches-version = "dev"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/tumblr-inc/tumblr/"
-
-[UFO-VPN]
-patches-source = "BholeyKaBhakt/android-patches-xtra"
-cli-source = "MorpheApp/morphe-cli"
-rv-brand = "BholeyKaBhakt"
-uptodown-dlurl = "https://com-ufovpn-connect-velnet.en.uptodown.com/android/"
