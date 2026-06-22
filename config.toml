@@ -358,3 +358,10 @@ cli-source = "MorpheApp/morphe-cli"
 rv-brand = "RookieEnough"
 patches-version = "dev"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/tumblr-inc/tumblr/"
+
+[Arrow-Puzzle]
+patches-source = "durgesh0505/chiggi_morphe_patches"
+cli-source = "MorpheApp/morphe-cli"
+rv-brand = "durgesh0505"
+# patches-version = "dev"
+uptodown-dlurl = "https://arrow-puzzle.en.uptodown.com/android"
