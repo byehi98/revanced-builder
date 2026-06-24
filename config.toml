@@ -349,6 +349,21 @@ cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "lain"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/yunus-ceyhan/hidden-settings-miui-hyperos/"
 
+# ==============================================================================
+# durgesh0505/chiggi_morphe_patches
+# ==============================================================================
+
+[Arrow-Puzzle]
+patches-source  = "durgesh0505/chiggi_morphe_patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "durgesh0505"
+uptodown-dlurl  = "https://arrow-puzzle.en.uptodown.com/android"
+
+[Crazygames]
+patches-source  = "durgesh0505/chiggi_morphe_patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "durgesh0505"
+uptodown-dlurl  = "https://crazygames.en.uptodown.com/android"
 
 # ==============================================================================
 # Single Target Repositories (Unique Sources)
@@ -366,13 +381,6 @@ patches-source  = "cesbar/zpatches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "cesbar"
 uptodown-dlurl  = "https://minesweeper-the-clean-one.en.uptodown.com/android"
-
-# durgesh0505/chiggi_morphe_patches
-[Arrow-Puzzle]
-patches-source  = "durgesh0505/chiggi_morphe_patches"
-cli-source      = "MorpheApp/morphe-cli"
-rv-brand        = "durgesh0505"
-uptodown-dlurl  = "https://arrow-puzzle.en.uptodown.com/android"
 
 # IMXEren/mix-patches
 [Trakt]
