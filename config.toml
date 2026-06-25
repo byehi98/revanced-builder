@@ -139,6 +139,12 @@ cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "hoo-dles"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/proton-technologies-ag/protonvpn-free-vpn-secure-unlimited-fdroid-version/"
 
+[Google-News-hoo-dles]
+patches-source  = "hoo-dles/morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "hoo-dles"
+uptodown-dlurl = "https://google-play-newsstand.en.uptodown.com/android"
+
 [Solid-Explorer]
 patches-source  = "hoo-dles/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
@@ -168,6 +174,13 @@ uptodown-dlurl  = "https://wps-office.en.uptodown.com/android"
 # ==============================================================================
 # rushiranpise/morphe-patches
 # ==============================================================================
+
+[Accuweather]
+patches-source  = "rushiranpise/morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "rushiranpise"
+patches-version = "dev"
+uptodown-dlurl = "https://accuweather.en.uptodown.com/android/download"
 
 [Killapps]
 patches-source  = "rushiranpise/morphe-patches"
@@ -224,6 +237,12 @@ rv-brand        = "rushiranpise"
 patches-version = "dev"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/joaomgcd/tasker/"
 
+[Windscribe]
+patches-source  = "rushiranpise/morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "rushiranpise"
+patches-version = "dev"
+uptodown-dlurl = "https://windscribe.en.uptodown.com/android"
 
 # ==============================================================================
 # RookieEnough repositories (De-Vanced / De-ReVanced)
@@ -238,9 +257,15 @@ uptodown-dlurl  = "https://cricbuzz-cricket-scores-and-news.en.uptodown.com/andr
 [Google-Photos]
 patches-source  = "RookieEnough/De-ReVanced"
 cli-source      = "MorpheApp/morphe-cli"
-rv-brand        = "de-revanced"
+rv-brand        = "RookieEnough"
 patches-version = "dev"
 uptodown-dlurl  = "https://google-photos.en.uptodown.com/android"
+
+[Google-News-RookieEnough]
+patches-source  = "RookieEnough/De-ReVanced"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "RookieEnough"
+uptodown-dlurl = "https://google-play-newsstand.en.uptodown.com/android"
 
 [Icon-Pack-Studio]
 patches-source  = "RookieEnough/De-ReVanced"
@@ -263,7 +288,7 @@ uptodown-dlurl  = "https://letterboxd.en.uptodown.com/android"
 [SoundCloud-RookieEnough]
 patches-source  = "RookieEnough/De-Vanced"
 cli-source      = "MorpheApp/morphe-cli"
-rv-brand        = "de-vanced"
+rv-brand        = "RookieEnough"
 uptodown-dlurl  = "https://soundcloud.en.uptodown.com/android"
 
 [Tumblr]
@@ -273,7 +298,6 @@ rv-brand        = "RookieEnough"
 patches-version = "dev"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/tumblr-inc/tumblr/"
 
-
 # ==============================================================================
 # binarymend/morphe-patches
 # ==============================================================================
@@ -281,7 +305,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/tumblr-inc/tumblr/"
 [CalcNote]
 patches-source  = "binarymend/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
-rv-brand        = "hoo-dles"
+rv-brand        = "binarymend"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/burton999/calcnote-notepad-calculator/"
 
 [Symfonium]
@@ -304,7 +328,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/true-software-scandinavia-ab/tr
 [Autosync]
 patches-source  = "BholeyKaBhakt/android-patches-xtra"
 cli-source      = "MorpheApp/morphe-cli"
-rv-brand        = "hoo-dles"
+rv-brand        = "xtra"
 uptodown-dlurl  = "https://autosync.en.uptodown.com/android"
 
 [Backdrops]
@@ -373,6 +397,7 @@ uptodown-dlurl  = "https://crazygames.en.uptodown.com/android"
 [Telegram]
 patches-source  = "Aunali321/ReVancedExperiments"
 cli-source      = "ReVanced/revanced-cli"
+rv-brand        = "Aunali321"
 uptodown-dlurl  = "https://telegram-google-play-version.en.uptodown.com/android"
 
 # cesbar/zpatches
@@ -388,6 +413,14 @@ patches-source  = "IMXEren/mix-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "IMXEren"
 uptodown-dlurl  = "https://trakt.en.uptodown.com/android"
+
+# browzomje/browzomje-patches
+[Pinterest]
+patches-source  = "browzomje/browzomje-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "browzomje"
+# patches-version = "dev"
+uptodown-dlurl = "https://pinterest.en.uptodown.com/android"
 
 # kondratjev/morphe-patches
 [SoundCloud-kondratjev]
