@@ -25,7 +25,7 @@ app-name        = "youtube"
 patches-source  = "MorpheApp/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "morphe"
-uptodown-dlurl  = "https://youtube.en.uptodown.com/android"
+apkmirror-dlurl  = "https://www.apkmirror.com/apk/google-inc/youtube/"
 
 [YouTube-Morphe-Dev]
 app-name        = "youtube-dev"
@@ -220,7 +220,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/kevin-foreman/nzb360/"
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/proton-technologies-ag/protonvpn-free-vpn-secure-unlimited-fdroid-version/"
+# apkmirror-dlurl = "https://www.apkmirror.com/apk/proton-technologies-ag/protonvpn-free-vpn-secure-unlimited-fdroid-version/"
 uptodown-dlurl  = "https://protonvpn.en.uptodown.com/android"
 
 [Psiphon]
