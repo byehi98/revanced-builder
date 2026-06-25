@@ -1,28 +1,28 @@
 AdGuard: 4.12.81  
 Autosync: 7.5.10  
-Accuweather: 21.1.11-1-rc  
 Arrow-Puzzle: 1.7.0  
+Accuweather: 21.1.11-1-rc  
 Backdrops: 6.1.2  
-CREX: 26.04.05  
-Camera: 5.4.0  
 CalcNote: 2.25.107  
+Camera: 5.4.0  
+CREX: 26.04.05  
 Crazygames: 1.6.7  
 Cricbuzz: 6.24.01  
 Document-Scanner: 6.8.18  
-CamScanner: 7.15.5.2604080000  
-Google-News-RookieEnough: 5.108.0.644447823  
 Eyecon: 4.2026.04.05.1300  
+CamScanner: 7.15.5.2604080000  
 Fing: 12.12.0  
+Google-News-RookieEnough: 5.108.0.644447823  
 Google-News-hoo-dles: 5.161.0.931240252  
 Google-Photos: 7.82.0.936266860  
+IMDb: 9.3.2  
 Hidden-Settings: 7.34  
 Icon-Pack-Studio: 2.2 build 016  
-IMDb: 9.3.2  
 Irplus: 1.9.13  
 Killapps: 1.57.9  
 Lumina: 1.0.2.3  
-Lyfta: 1.551  
 Letterboxd: 3.5.6  
+Lyfta: 1.551  
 M-Indicator: 18.0.352  
 Minesweeper: 1.21.1  
 NZB360: 23.5  
@@ -41,18 +41,18 @@ SoundCloud-hoo-dles: 2026.04.27-release
 SoundCloud-kondratjev: 2026.06.03-release  
 Symfonium: 14.0.0  
 Tasker: 6.6.20  
-Telegram: 12.8.3  
 Telegram-Paresh: 12.6.4  
+Telegram: 12.8.3  
 Trakt: 3.4.1  
-WPS-Office: 18.24  
 Truecaller: 26.10.6  
+WPS-Office: 18.24  
 Tumblr: 45.1.0.113  
 Truecaller-binarymend: 26.12.5  
 YouTube-Morphe: 20.51.39  
 YouTube-Morphe-Dev: 20.51.39  
 Windscribe: 4.1.2274  
-YouTube-Music-Morphe: 9.15.51  
 Wallcraft: 3.61.01  
+YouTube-Music-Morphe: 9.15.51  
 YouTube-Music-Morphe-Dev: 9.15.51  
 
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
