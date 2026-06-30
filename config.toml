@@ -26,6 +26,7 @@ patches-source  = "MorpheApp/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "morphe"
 apkmirror-dlurl  = "https://www.apkmirror.com/apk/google-inc/youtube/"
+uptodown-dlurl  = "https://youtube.en.uptodown.com/android"
 
 [YouTube-Morphe-Dev]
 app-name        = "youtube-dev"
@@ -33,6 +34,7 @@ patches-source  = "MorpheApp/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "morphe"
 patches-version = "dev"
+apkmirror-dlurl  = "https://www.apkmirror.com/apk/google-inc/youtube/"
 uptodown-dlurl  = "https://youtube.en.uptodown.com/android"
 
 [YouTube-Music-Morphe]
@@ -151,12 +153,6 @@ cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "hoo-dles"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/neatbytes/solid-explorer-file-manager/"
 
-[SoundCloud-hoo-dles]
-patches-source  = "hoo-dles/morphe-patches"
-cli-source      = "MorpheApp/morphe-cli"
-rv-brand        = "hoo-dles"
-uptodown-dlurl  = "https://soundcloud.en.uptodown.com/android"
-
 [Wallcraft]
 patches-source  = "hoo-dles/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
@@ -229,13 +225,6 @@ cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
 patches-version = "dev"
 uptodown-dlurl  = "https://psiphon-pro.en.uptodown.com/android"
-
-[Tasker]
-patches-source  = "rushiranpise/morphe-patches"
-cli-source      = "MorpheApp/morphe-cli"
-rv-brand        = "rushiranpise"
-patches-version = "dev"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/joaomgcd/tasker/"
 
 [Windscribe]
 patches-source  = "rushiranpise/morphe-patches"
@@ -414,13 +403,6 @@ cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "cesbar"
 uptodown-dlurl  = "https://minesweeper-the-clean-one.en.uptodown.com/android"
 
-# IMXEren/mix-patches
-[Trakt]
-patches-source  = "IMXEren/mix-patches"
-cli-source      = "MorpheApp/morphe-cli"
-rv-brand        = "IMXEren"
-uptodown-dlurl  = "https://trakt.en.uptodown.com/android"
-
 # browzomje/browzomje-patches
 [Pinterest]
 patches-source  = "browzomje/browzomje-patches"
@@ -429,9 +411,9 @@ rv-brand        = "browzomje"
 # patches-version = "dev"
 uptodown-dlurl = "https://pinterest.en.uptodown.com/android"
 
-# kondratjev/morphe-patches
-[SoundCloud-kondratjev]
-patches-source  = "kondratjev/morphe-patches"
+# arandomhooman/hoomans-morphe-patches
+[Poweramp]
+patches-source  = "arandomhooman/hoomans-morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
-rv-brand        = "kondratjev"
-uptodown-dlurl  = "https://soundcloud.en.uptodown.com/android"
+rv-brand        = "hoomans"
+uptodown-dlurl  = "https://poweramp-music-player.en.uptodown.com/android"
