@@ -1,61 +1,7 @@
-parallel-jobs = 4
+parallel-jobs = 10
 dpi = "nodpi anydpi"
 remove-rv-integrations-checks = false
 # see https://github.com/nvbangg/Patches-APK-Builder/blob/main/CONFIG.md for more detailed explanations
-
-# ==============================================================================
-# MorpheApp/morphe-patches
-# ==============================================================================
-
-[Reddit-Morphe]
-patches-source  = "MorpheApp/morphe-patches"
-cli-source      = "MorpheApp/morphe-cli"
-rv-brand        = "morphe"
-uptodown-dlurl  = "https://reddit-official-app.en.uptodown.com/android"
-
-[Reddit-Morphe-Dev]
-patches-source  = "MorpheApp/morphe-patches"
-cli-source      = "MorpheApp/morphe-cli"
-rv-brand        = "morphe-dev"
-patches-version = "dev"
-uptodown-dlurl  = "https://reddit-official-app.en.uptodown.com/android"
-
-[YouTube-Morphe]
-app-name        = "youtube"
-patches-source  = "MorpheApp/morphe-patches"
-cli-source      = "MorpheApp/morphe-cli"
-rv-brand        = "morphe"
-apkmirror-dlurl  = "https://www.apkmirror.com/apk/google-inc/youtube/"
-uptodown-dlurl  = "https://youtube.en.uptodown.com/android"
-
-[YouTube-Morphe-Dev]
-app-name        = "youtube-dev"
-patches-source  = "MorpheApp/morphe-patches"
-cli-source      = "MorpheApp/morphe-cli"
-rv-brand        = "morphe"
-patches-version = "dev"
-apkmirror-dlurl  = "https://www.apkmirror.com/apk/google-inc/youtube/"
-uptodown-dlurl  = "https://youtube.en.uptodown.com/android"
-
-[YouTube-Music-Morphe]
-app-name        = "youtube-music"
-arch            = "arm64-v8a"
-patches-source  = "MorpheApp/morphe-patches"
-cli-source      = "MorpheApp/morphe-cli"
-rv-brand        = "morphe"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
-uptodown-dlurl  = "https://youtube-music.en.uptodown.com/android"
-
-[YouTube-Music-Morphe-Dev]
-app-name        = "youtube-music-dev"
-arch            = "arm64-v8a"
-patches-source  = "MorpheApp/morphe-patches"
-cli-source      = "MorpheApp/morphe-cli"
-rv-brand        = "morphe"
-patches-version = "dev"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
-uptodown-dlurl  = "https://youtube-music.en.uptodown.com/android"
-
 
 # ==============================================================================
 # GitLab:Paresh-Maheshwari/paresh-patches
@@ -107,11 +53,11 @@ patches-version = "dev"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/true-software-scandinavia-ab/truecaller-caller-id-block/"
 
 
-# ==============================================================================
-# hoo-dles/morphe-patches
-# ==============================================================================
+==============================================================================
+hoo-dles/morphe-patches
+==============================================================================
 
-[AdGuard]
+[AdGuard-hoo-dles]
 patches-source  = "hoo-dles/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "hoo-dles"
@@ -134,6 +80,13 @@ patches-source  = "hoo-dles/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "hoo-dles"
 uptodown-dlurl  = "https://macrofactor-diet-sidekick-and-macro-tracker.en.uptodown.com/android"
+
+[Mimo]
+patches-source  = "hoo-dles/morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "hoo-dles"
+# patches-version = "dev"
+uptodown-dlurl = "https://mimo.en.uptodown.com/android"
 
 [ProtonVPN-Hoodles]
 patches-source  = "hoo-dles/morphe-patches"
@@ -171,12 +124,25 @@ uptodown-dlurl  = "https://wps-office.en.uptodown.com/android"
 # rushiranpise/morphe-patches
 # ==============================================================================
 
+[AdGuard-rushiranpise]
+patches-source  = "rushiranpise/morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "rushiranpise"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/adguard-software-limited/adguard/"
+
 [Accuweather]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
 patches-version = "dev"
 uptodown-dlurl = "https://accuweather.en.uptodown.com/android/download"
+
+[Greenify]
+patches-source  = "rushiranpise/morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "rushiranpise"
+# patches-version = "dev"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/oasis-feng/greenify/"
 
 [Killapps]
 patches-source  = "rushiranpise/morphe-patches"
@@ -190,6 +156,13 @@ cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
 patches-version = "dev"
 uptodown-dlurl  = "https://m-indicator.en.uptodown.com/android"
+
+[Ml-Manager]
+patches-source  = "rushiranpise/morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "rushiranpise"
+# patches-version = "dev"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/javier-santos-v/ml-manager-apk-extractor/"
 
 [Netguard]
 patches-source  = "rushiranpise/morphe-patches"
@@ -237,11 +210,24 @@ uptodown-dlurl = "https://windscribe.en.uptodown.com/android"
 # RookieEnough repositories (De-Vanced / De-ReVanced)
 # ==============================================================================
 
+[Amazon-Music]
+patches-source  = "RookieEnough/De-Vanced"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "RookieEnough"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/amazon-mobile-llc/amazon-music-discover-songs/"
+uptodown-dlurl  = "https://amazon-mp3.en.uptodown.com/android"
+
 [Cricbuzz]
 patches-source  = "RookieEnough/De-ReVanced"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "RookieEnough"
 uptodown-dlurl  = "https://cricbuzz-cricket-scores-and-news.en.uptodown.com/android"
+
+[GMX-Mail]
+patches-source  = "RookieEnough/De-Vanced"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "RookieEnough"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/gmx/gmx-mail/"
 
 [Google-Photos]
 patches-source  = "RookieEnough/De-ReVanced"
@@ -314,6 +300,12 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/true-software-scandinavia-ab/tr
 # BholeyKaBhakt/android-patches-xtra
 # ==============================================================================
 
+[Automate]
+patches-source  = "BholeyKaBhakt/android-patches-xtra"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "xtra"
+apkmirror-dlurl  = "https://www.apkmirror.com/apk/llamalab/automate-llamalab/"
+
 [Autosync]
 patches-source  = "BholeyKaBhakt/android-patches-xtra"
 cli-source      = "MorpheApp/morphe-cli"
@@ -349,6 +341,12 @@ uptodown-dlurl  = "https://reddit-official-app.en.uptodown.com/android"
 # ==============================================================================
 # kiraio-moe/Lain-Patches
 # ==============================================================================
+
+[AudioRelay]
+patches-source  = "kiraio-moe/Lain-Patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "lain"
+uptodown-dlurl  = "https://audiorelay.en.uptodown.com/android"
 
 [Camera]
 patches-source  = "kiraio-moe/Lain-Patches"
@@ -386,6 +384,22 @@ rv-brand        = "durgesh0505"
 uptodown-dlurl  = "https://crazygames.en.uptodown.com/android"
 
 # ==============================================================================
+# arandomhooman/hoomans-morphe-patches
+# ==============================================================================
+
+[Poweramp]
+patches-source  = "arandomhooman/hoomans-morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "hoomans"
+uptodown-dlurl  = "https://poweramp-music-player.en.uptodown.com/android"
+
+[FolderSync]
+patches-source  = "arandomhooman/hoomans-morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "hoomans"
+uptodown-dlurl  = "https://foldersync-lite.en.uptodown.com/android"
+
+# ==============================================================================
 # Single Target Repositories (Unique Sources)
 # ==============================================================================
 
@@ -411,9 +425,10 @@ rv-brand        = "browzomje"
 # patches-version = "dev"
 uptodown-dlurl = "https://pinterest.en.uptodown.com/android"
 
-# arandomhooman/hoomans-morphe-patches
-[Poweramp]
-patches-source  = "arandomhooman/hoomans-morphe-patches"
+# wchill/patcheddit
+[Lemmy-Sync]
+patches-source  = "wchill/patcheddit"
 cli-source      = "MorpheApp/morphe-cli"
-rv-brand        = "hoomans"
-uptodown-dlurl  = "https://poweramp-music-player.en.uptodown.com/android"
+rv-brand        = "patcheddit"
+# patches-version = "dev"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/sync-apps-ltd/sync-for-lemmy/"
