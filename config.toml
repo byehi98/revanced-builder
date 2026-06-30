@@ -52,10 +52,9 @@ rv-brand        = "paresh"
 patches-version = "dev"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/true-software-scandinavia-ab/truecaller-caller-id-block/"
 
-
-==============================================================================
-hoo-dles/morphe-patches
-==============================================================================
+# ==============================================================================
+# hoo-dles/morphe-patches
+# ==============================================================================
 
 [AdGuard-hoo-dles]
 patches-source  = "hoo-dles/morphe-patches"
