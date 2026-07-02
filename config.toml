@@ -398,6 +398,12 @@ cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "hoomans"
 uptodown-dlurl  = "https://foldersync-lite.en.uptodown.com/android"
 
+[Advanced-Download-Manager]
+patches-source  = "arandomhooman/hoomans-morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "hoomans"
+apkmirror-dlurl  = "https://www.apkmirror.com/apk/admtorrent/advanced-download-manager/"
+
 # ==============================================================================
 # Single Target Repositories (Unique Sources)
 # ==============================================================================
@@ -431,3 +437,10 @@ cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "patcheddit"
 # patches-version = "dev"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/sync-apps-ltd/sync-for-lemmy/"
+
+# prathxmOp/prathxm-patches
+[Chess-com]
+patches-source  = "prathxmOp/prathxm-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "Prathxm"
+apkmirror-dlurl  = "https://www.apkmirror.com/apk/chess-com/chess-play-learn/"
