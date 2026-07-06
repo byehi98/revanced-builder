@@ -503,9 +503,16 @@ dl_apkmirror() {
 
 	if [ "$arch" = "arm-v7a" ]; then arch="armeabi-v7a"; fi
 	local resp node app_table apkmname dlurl=""
-	apkmname=$($HTMLQ "h1.marginZero" --text <<<"$__APKMIRROR_RESP__")
-	apkmname="${apkmname,,}" apkmname="${apkmname// /-}" apkmname="${apkmname//[^a-z0-9-]/}"
-	url="${url}/${apkmname}-${version//./-}-release/"
+	local release_url=""
+	release_url=$(grep -oP "href=\"(/apk/[^\"]*-${version//./-}-release/)\"" <<<"$__APKMIRROR_RESP__" | head -1 | cut -d'"' -f2)
+	if [ -n "$release_url" ]; then
+		url="https://www.apkmirror.com${release_url}"
+	else
+		apkmname=$($HTMLQ "h1.marginZero" --text <<<"$__APKMIRROR_RESP__")
+		apkmname="${apkmname,,}" apkmname="${apkmname//./-}" apkmname="${apkmname//+/-}" apkmname="${apkmname//_/-}" apkmname="${apkmname// /-}" apkmname="${apkmname//[^a-z0-9-]/}"
+		apkmname=$(echo "$apkmname" | tr -s '-')
+		url="${url}/${apkmname}-${version//./-}-release/"
+	fi
 	resp=$(req "$url" -) || return 1
 	node=$($HTMLQ "div.table-row.headerFont:nth-last-child(1)" -r "span:nth-child(n+3)" <<<"$resp")
 	if [ "$node" ]; then
