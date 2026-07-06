@@ -463,6 +463,8 @@ apkmirror_search() {
 	local apparch=('universal' 'noarch' 'arm64-v8a + armeabi-v7a')
 	if [ "$arch" != all ]; then
 		apparch+=("$arch")
+	else
+		apparch+=("arm64-v8a" "armeabi-v7a")
 	fi
 
 	local appdpi=("nodpi" "anydpi")
@@ -564,6 +566,8 @@ dl_uptodown() {
 	local apparch=('arm64-v8a, armeabi-v7a, x86_64' 'arm64-v8a, armeabi-v7a, x86, x86_64' 'arm64-v8a, armeabi-v7a')
 	if [ "$arch" != all ]; then
 		apparch+=("$arch")
+	else
+		apparch+=("arm64-v8a" "armeabi-v7a")
 	fi
 
 	local op resp data_code
@@ -572,7 +576,7 @@ dl_uptodown() {
 	local is_bundle=false
 	for i in {1..20}; do
 		resp=$(req "${uptodown_dlurl}/apps/${data_code}/versions/${i}" -)
-		if ! op=$(jq -e -r ".data | map(select(.version == \"${version}\")) | .[0]" <<<"$resp"); then
+		if ! op=$(jq -e -r ".data | map(select(.version == \"${version}\" or (.version | startswith(\"${version}-\")))) | .[0]" <<<"$resp"); then
 			continue
 		fi
 		if [ "$(jq -e -r ".kindFile" <<<"$op")" = "xapk" ]; then is_bundle=true; fi
