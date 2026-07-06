@@ -219,7 +219,7 @@ remove-rv-integrations-checks = false
 # patches-source  = "RookieEnough/De-ReVanced"
 # cli-source      = "MorpheApp/morphe-cli"
 # rv-brand        = "RookieEnough"
-# apkmirror-dlurl = "https://www.apkmirror.com/apk/adobe/photoshop-mix/"
+# # apkmirror-dlurl = "https://www.apkmirror.com/apk/adobe/photoshop-mix/"
 # uptodown-dlurl  = "https://adobe-photoshop-mix.en.uptodown.com/android"
 
 # [Amazon-Music]
