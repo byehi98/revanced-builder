@@ -859,6 +859,8 @@ build_rv() {
 			fi
 		fi
 
+		zip -qF "$stock_apk_to_patch" --out "${stock_apk_to_patch}.fixed" >/dev/null 2>&1 && mv -f "${stock_apk_to_patch}.fixed" "$stock_apk_to_patch"
+
 		local apk_output="${BUILD_DIR}/${app_name_l}-${rv_brand_f}-v${version_f}-${arch_f}.apk"
 		if [ "${NORB:-}" != true ] || { [ ! -f "$patched_apk" ] && [ ! -f "$apk_output" ]; }; then
 			if ! patch_apk "$stock_apk_to_patch" "$patched_apk" "${patcher_args[*]}" "${args[cli]}" "${args[ptjar]}"; then
