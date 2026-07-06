@@ -1,28 +1,31 @@
-AdGuard-rushiranpise: 4.14.68  
 AdGuard-hoo-dles: 4.12.81  
+AdGuard-rushiranpise: 4.14.68  
+Adobe-Photoshop-Mix: 2.6.346  
 Advanced-Download-Manager: 14.0.39  
 Accuweather: 21.1.12-2-rc  
 AudioRelay: 0.26.1  
-Arrow-Puzzle: 1.7.0  
 Automate: 1.51.1  
-Amazon-Music: 26.21.1  
+Arrow-Puzzle: 1.7.0  
+Amazon-Music: 26.22.0  
 Autosync: 7.5.10  
 Backdrops: 6.1.2  
 CREX: 26.04.05  
 Camera: 5.4.0  
 CalcNote: 2.25.107  
+Chess-com: 4.9.49  
+Cloudflare-Warp: 6.38.7  
 Crazygames: 1.6.7  
 Cricbuzz: 6.24.01  
+CamScanner: 7.15.5.2604080000  
 Eyecon: 4.2026.04.05.1300  
 Document-Scanner: 6.8.18  
-CamScanner: 7.15.5.2604080000  
 Fing: 12.12.0  
 Google-News-RookieEnough: 5.108.0.644447823  
 FolderSync: 4.9.3  
 GMX-Mail: 9.10.0  
 Google-News-hoo-dles: 5.161.0.931240252  
-Google-Photos: 7.82.0.937646388  
 Greenify: 5.1.1  
+Google-Photos: 7.82.0.937646388  
 Hidden-Settings: 7.34  
 IMDb: 9.3.2  
 Icon-Pack-Studio: 2.2 build 016  
@@ -31,33 +34,33 @@ Killapps: 1.57.9
 Lemmy-Sync: v24.03.26-14:56  
 Lumina: 1.0.2.3  
 Letterboxd: 3.5.6  
-Lyfta: 1.551  
 M-Indicator: 18.0.356  
+Lyfta: 1.551  
 MacroFactor: 5.7.8  
 Minesweeper: 1.21.1  
 Ml-Manager: 5.0  
-Mimo: 9.11  
 NZB360: 23.5  
-Netguard: 2.335  
+Mimo: 9.11  
 NetMonster: 3.4.1  
-Poweramp: build-1025-bundle-play  
+Netguard: 2.335  
 ProtonVPN-Hoodles: 5.17.72.0  
+Poweramp: build-1025-bundle-play  
 Psiphon: 479  
 ProtonVPN-Rushiranpise: 5.19.16.0  
 Solid-Explorer: 3.4.1  
 Pinterest: 14.23.0  
 SoundCloud-RookieEnough: 2025.05.27-release  
 Symfonium: 14.0.0  
+Telegram: 12.8.3  
 Super-Proxy: 3.2.2  
 Telegram-Paresh: 12.6.4  
-Telegram: 12.8.3  
 Reddit-Adobo-Dev: 2026.25.0  
-Truecaller: 26.10.6  
 WPS-Office: 18.24  
+Truecaller: 26.10.6  
 Tumblr: 45.1.0.113  
 Truecaller-binarymend: 26.12.5  
-Windscribe: 4.1.2284  
 Wallcraft: 3.61.01  
+Windscribe: 4.1.2284  
 
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
@@ -120,7 +123,7 @@ Patches: prathxmOp/patches-1.9.4.mpp
 [Changelog](https://github.com/prathxmOp/prathxm-patches/releases/tag/v1.9.4)
 
 Patches: RookieEnough/patches-1.0.4.mpp  
-[Changelog](https://github.com/RookieEnough/De-Vanced/releases/tag/v1.0.4)
+[Changelog](https://github.com/RookieEnough/De-ReVanced/releases/tag/v1.0.4)
 
 CLI: MorpheApp/morphe-cli-1.9.1-all.jar  
 Patches: rushiranpise/patches-1.10.0.mpp  
