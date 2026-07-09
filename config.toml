@@ -168,20 +168,6 @@ rv-brand        = "rushiranpise"
 # patches-version = "dev"
 uptodown-dlurl  = "https://m-indicator.en.uptodown.com/android"
 
-[Ml-Manager]
-patches-source  = "rushiranpise/morphe-patches"
-cli-source      = "MorpheApp/morphe-cli"
-rv-brand        = "rushiranpise"
-# patches-version = "dev"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/javier-santos-v/ml-manager-apk-extractor/"
-
-[Netguard]
-patches-source  = "rushiranpise/morphe-patches"
-cli-source      = "MorpheApp/morphe-cli"
-rv-brand        = "rushiranpise"
-patches-version = "dev"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/marcel-bokhorst/netguard-no-root-firewall/"
-
 [NZB360]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
