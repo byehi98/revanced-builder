@@ -1,4 +1,4 @@
-parallel-jobs = 5
+parallel-jobs = 1
 dpi = "nodpi anydpi"
 remove-rv-integrations-checks = false
 # see https://github.com/nvbangg/Patches-APK-Builder/blob/main/CONFIG.md for more detailed explanations
@@ -181,13 +181,6 @@ cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
 patches-version = "dev"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/marcel-bokhorst/netguard-no-root-firewall/"
-
-[NetMonster]
-patches-source  = "rushiranpise/morphe-patches"
-cli-source      = "MorpheApp/morphe-cli"
-rv-brand        = "rushiranpise"
-patches-version = "dev"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/michal-mrocek/netmonster/"
 
 [NZB360]
 patches-source  = "rushiranpise/morphe-patches"
