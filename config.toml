@@ -1,4 +1,4 @@
-parallel-jobs = 5
+parallel-jobs = 1
 dpi = "nodpi anydpi"
 remove-rv-integrations-checks = false
 # see https://github.com/nvbangg/Patches-APK-Builder/blob/main/CONFIG.md for more detailed explanations
@@ -17,20 +17,20 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/cricket-exchange/cricket-exchan
 patches-source  = "GitLab:Paresh-Maheshwari/paresh-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "paresh"
-patches-version = "dev"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/lufick/document-scanner-pdf-creator/"
+# patches-version = "dev"
+uptodown-dlurl = "https://doc-scanner.en.uptodown.com/android"
 
 [Eyecon]
 patches-source  = "GitLab:Paresh-Maheshwari/paresh-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "paresh"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/eyecon-phone-dialer-contacts/eyecon-caller-id-spam-block/"
+uptodown-dlurl = "https://eyecon-phone-dialer-and-cont-eyecon.en.uptodown.com/android"
 
 [Fing]
 patches-source  = "GitLab:Paresh-Maheshwari/paresh-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "paresh"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/fing-limited/fing-network-tools/"
+# apkmirror-dlurl = "https://www.apkmirror.com/apk/fing-limited/fing-network-tools/"
 uptodown-dlurl  = "https://fing-network-tools.en.uptodown.com/android"
 
 [Lumina]
@@ -39,22 +39,34 @@ cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "paresh"
 uptodown-dlurl  = "https://lumina-walls.en.uptodown.com/android"
 
+[MacroDroid]
+patches-source  = "GitLab:Paresh-Maheshwari/paresh-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "paresh"
+uptodown-dlurl = "https://macrodroid.en.uptodown.com/android"
+
 [Telegram-Paresh]
 patches-source  = "GitLab:Paresh-Maheshwari/paresh-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "paresh"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/telegram-fz-llc/telegram-web-version/"
+uptodown-dlurl = "https://telegram.en.uptodown.com/android"
 
 [Truecaller]
 patches-source  = "GitLab:Paresh-Maheshwari/paresh-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "paresh"
 patches-version = "dev"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/true-software-scandinavia-ab/truecaller-caller-id-block/"
+apkmirror-dlurl = "https://truecaller.en.uptodown.com/android"
 
 # ==============================================================================
 # hoo-dles/morphe-patches
 # ==============================================================================
+
+[Cloudflare-Warp]
+patches-source  = "rushiranpise/morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "rushiranpise"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/cloudflare/1-1-1-1-faster-safer-internet/"
 
 [AdGuard-hoo-dles]
 patches-source  = "hoo-dles/morphe-patches"
@@ -133,7 +145,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/adguard-software-limited/adguar
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
-patches-version = "dev"
+# patches-version = "dev"
 uptodown-dlurl = "https://accuweather.en.uptodown.com/android/download"
 
 [Greenify]
@@ -208,6 +220,13 @@ uptodown-dlurl = "https://windscribe.en.uptodown.com/android"
 # ==============================================================================
 # RookieEnough repositories (De-Vanced / De-ReVanced)
 # ==============================================================================
+
+[Adobe-Photoshop-Mix]
+patches-source  = "RookieEnough/De-ReVanced"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "RookieEnough"
+# apkmirror-dlurl = "https://www.apkmirror.com/apk/adobe/photoshop-mix/"
+uptodown-dlurl  = "https://adobe-photoshop-mix.en.uptodown.com/android"
 
 [Amazon-Music]
 patches-source  = "RookieEnough/De-Vanced"
@@ -443,4 +462,5 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/sync-apps-ltd/sync-for-lemmy/"
 patches-source  = "prathxmOp/prathxm-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "Prathxm"
-apkmirror-dlurl  = "https://www.apkmirror.com/apk/chess-com/chess-play-learn/"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/chess-com/chess-play-learn/"
+uptodown-dlurl 	= "https://chess-play-and-learn.en.uptodown.com/android"
