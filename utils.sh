@@ -463,6 +463,8 @@ apkmirror_search() {
 	local apparch=('universal' 'noarch' 'arm64-v8a + armeabi-v7a')
 	if [ "$arch" != all ]; then
 		apparch+=("$arch")
+	else
+		apparch+=("arm64-v8a" "armeabi-v7a")
 	fi
 
 	local appdpi=("nodpi" "anydpi")
@@ -564,6 +566,8 @@ dl_uptodown() {
 	local apparch=('arm64-v8a, armeabi-v7a, x86_64' 'arm64-v8a, armeabi-v7a, x86, x86_64' 'arm64-v8a, armeabi-v7a')
 	if [ "$arch" != all ]; then
 		apparch+=("$arch")
+	else
+		apparch+=("arm64-v8a" "armeabi-v7a")
 	fi
 
 	local op resp data_code
