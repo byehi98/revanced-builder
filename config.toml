@@ -1,4 +1,4 @@
-parallel-jobs = 5
+parallel-jobs = 1
 dpi = "nodpi anydpi"
 remove-rv-integrations-checks = false
 # see https://github.com/nvbangg/Patches-APK-Builder/blob/main/CONFIG.md for more detailed explanations
@@ -56,7 +56,7 @@ patches-source  = "GitLab:Paresh-Maheshwari/paresh-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "paresh"
 patches-version = "dev"
-apkmirror-dlurl = "https://truecaller.en.uptodown.com/android"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/true-software-scandinavia-ab/truecaller-caller-id-block/"
 
 # ==============================================================================
 # hoo-dles/morphe-patches
@@ -165,7 +165,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/appdev-quebec/killapps-close-al
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
-patches-version = "dev"
+# patches-version = "dev"
 uptodown-dlurl  = "https://m-indicator.en.uptodown.com/android"
 
 [Ml-Manager]
@@ -193,7 +193,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/michal-mrocek/netmonster/"
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
-patches-version = "dev"
+# patches-version = "dev"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/kevin-foreman/nzb360/"
 
 [ProtonVPN-Rushiranpise]
@@ -207,26 +207,19 @@ uptodown-dlurl  = "https://protonvpn.en.uptodown.com/android"
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
-patches-version = "dev"
+# patches-version = "dev"
 uptodown-dlurl  = "https://psiphon-pro.en.uptodown.com/android"
 
 [Windscribe]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
-patches-version = "dev"
+# patches-version = "dev"
 uptodown-dlurl = "https://windscribe.en.uptodown.com/android"
 
 # ==============================================================================
 # RookieEnough repositories (De-Vanced / De-ReVanced)
 # ==============================================================================
-
-[Adobe-Photoshop-Mix]
-patches-source  = "RookieEnough/De-ReVanced"
-cli-source      = "MorpheApp/morphe-cli"
-rv-brand        = "RookieEnough"
-# apkmirror-dlurl = "https://www.apkmirror.com/apk/adobe/photoshop-mix/"
-uptodown-dlurl  = "https://adobe-photoshop-mix.en.uptodown.com/android"
 
 [Amazon-Music]
 patches-source  = "RookieEnough/De-Vanced"
