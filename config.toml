@@ -187,6 +187,12 @@ rv-brand        = "rushiranpise"
 # patches-version = "dev"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/kevin-foreman/nzb360/"
 
+[MovieBox]
+patches-source  = "rushiranpise/morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "rushiranpise"
+uptodown-dlurl = "https://com-community-oneroom.en.uptodown.com/android"
+
 [ProtonVPN-Rushiranpise]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
