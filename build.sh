@@ -134,7 +134,7 @@ for table_name in $(toml_get_table_names); do
 		module_prop_name_b=${app_args[module_prop_name]}
 		app_args[module_prop_name]="${module_prop_name_b}-arm64"
 		idx=$((idx + 1))
-		build_rv "$(declare -p app_args)" &
+		run_build_rv_bg "$(declare -p app_args)" "${app_args[table]}" &
 		app_args[table]="$table_name (arm-v7a)"
 		app_args[arch]="arm-v7a"
 		app_args[module_prop_name]="${module_prop_name_b}-arm"
@@ -143,7 +143,7 @@ for table_name in $(toml_get_table_names); do
 			idx=$((idx - 1))
 		fi
 		idx=$((idx + 1))
-		build_rv "$(declare -p app_args)" &
+		run_build_rv_bg "$(declare -p app_args)" "${app_args[table]}" &
 	else
 		if [ "${app_args[arch]}" = "arm64-v8a" ]; then
 			app_args[module_prop_name]="${app_args[module_prop_name]}-arm64"
@@ -151,7 +151,7 @@ for table_name in $(toml_get_table_names); do
 			app_args[module_prop_name]="${app_args[module_prop_name]}-arm"
 		fi
 		idx=$((idx + 1))
-		build_rv "$(declare -p app_args)" &
+		run_build_rv_bg "$(declare -p app_args)" "${app_args[table]}" &
 	fi
 done
 wait

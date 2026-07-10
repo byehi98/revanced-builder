@@ -953,3 +953,27 @@ description=${4}" >"${6}/module.prop"
 
 	if [ "$ENABLE_MODULE_UPDATE" = true ]; then echo "updateJson=${5}" >>"${6}/module.prop"; fi
 }
+
+run_build_rv_bg() {
+	local app_args_str=$1
+	local table_name=$2
+	local table_name_f=${table_name// /-}
+	table_name_f=${table_name_f//\//-}
+	local log_file="${TEMP_DIR}/build_${table_name_f}_$$.${RANDOM}.log"
+
+	build_rv "$app_args_str" > "$log_file" 2>&1
+	local ret=$?
+
+	local lock_dir="${TEMP_DIR}/print_lock.dir"
+	while ! mkdir "$lock_dir" 2>/dev/null; do
+		sleep 0.2
+	done
+
+	echo -e "\n\033[0;34m=== Logs for ${table_name} ===\033[0m"
+	cat "$log_file"
+	
+	rm -r "$lock_dir" 2>/dev/null || :
+	rm "$log_file" 2>/dev/null || :
+
+	return $ret
+}
