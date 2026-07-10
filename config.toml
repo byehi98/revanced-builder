@@ -201,13 +201,6 @@ rv-brand        = "rushiranpise"
 # patches-version = "dev"
 uptodown-dlurl  = "https://psiphon-pro.en.uptodown.com/android"
 
-[Windscribe]
-patches-source  = "rushiranpise/morphe-patches"
-cli-source      = "MorpheApp/morphe-cli"
-rv-brand        = "rushiranpise"
-# patches-version = "dev"
-uptodown-dlurl = "https://windscribe.en.uptodown.com/android"
-
 # ==============================================================================
 # RookieEnough repositories (De-Vanced / De-ReVanced)
 # ==============================================================================
