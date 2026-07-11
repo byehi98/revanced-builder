@@ -141,6 +141,12 @@ uptodown-dlurl  = "https://wps-office.en.uptodown.com/android"
 # rushiranpise/morphe-patches
 # ==============================================================================
 
+[Amoledpix]
+patches-source  = "rushiranpise/morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "rushiranpise"
+apkpure-dlurl   = "https://apkpure.net/4k-wallpapers-amoledpix/com.androholic.amoledpix"
+
 [AdGuard-rushiranpise]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
@@ -199,6 +205,12 @@ cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
 # apkmirror-dlurl = "https://www.apkmirror.com/apk/proton-technologies-ag/protonvpn-free-vpn-secure-unlimited-fdroid-version/"
 uptodown-dlurl  = "https://protonvpn.en.uptodown.com/android"
+
+[Pocket-Prep]
+patches-source  = "rushiranpise/morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "rushiranpise"
+apkpure-dlurl = "https://apkpure.net/it-cybersecurity-pocket-prep/com.pocketprep.android.itcybersecurity"
 
 [Psiphon]
 patches-source  = "rushiranpise/morphe-patches"

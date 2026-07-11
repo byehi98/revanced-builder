@@ -5,7 +5,7 @@ CWD=$(pwd)
 TEMP_DIR="temp"
 BIN_DIR="bin"
 BUILD_DIR="build"
-DL_SRCS=("direct" "archive" "apkmirror" "uptodown")
+DL_SRCS=("direct" "archive" "apkmirror" "uptodown" "apkpure")
 
 if [ "${GITHUB_TOKEN-}" ]; then GH_HEADER="Authorization: token ${GITHUB_TOKEN}"; else GH_HEADER=; fi
 if [ "${GL_TOKEN-}" ]; then GL_HEADER="PRIVATE-TOKEN: ${GL_TOKEN}"; else GL_HEADER=; fi
@@ -629,6 +629,77 @@ dl_uptodown() {
 	fi
 }
 get_uptodown_pkg_name() { $HTMLQ --text "tr.full:nth-child(1) > td:nth-child(3)" <<<"$__UPTODOWN_RESP_PKG__"; }
+
+# -------------------- apkpure --------------------
+get_apkpure_resp() {
+	local url="${1%/}"
+	url="${url%/versions}"
+	url="${url%/download}"
+	url="${url%/}"
+	__APKPURE_RESP__=$(req "${url}/versions" -) || return 1
+	__APKPURE_URL__="$url"
+}
+get_apkpure_pkg_name() {
+	local pkg
+	pkg=$($HTMLQ "li.dt-version-item" --attribute data-dt-package-name <<<"$__APKPURE_RESP__" | head -n 1)
+	if [ -n "$pkg" ]; then
+		echo "$pkg"
+	else
+		echo "${__APKPURE_URL__##*/}"
+	fi
+}
+get_apkpure_vers() {
+	local vers
+	vers=$($HTMLQ "li.dt-version-item" --attribute data-dt-version <<<"$__APKPURE_RESP__" | awk '{$1=$1}1')
+	if [ "$__AAV__" = false ]; then
+		echo "$vers" | grep -iv "\(beta\|alpha\)" || :
+	else
+		echo "$vers"
+	fi
+}
+dl_apkpure() {
+	local url=$1 version=$2 output=$3 arch=$4 _dpi=$5
+	url="${url%/}"
+	url="${url%/versions}"
+	url="${url%/download}"
+	url="${url%/}"
+
+	local is_bundle=false
+	local version_node
+	version_node=$($HTMLQ "li.dt-version-item[data-dt-version='${version}']" <<<"$__APKPURE_RESP__")
+	if [ "$version_node" ]; then
+		local file_type
+		file_type=$($HTMLQ "span.apk-type-tag" --attribute data-tag <<<"$version_node")
+		if [ "${file_type,,}" = "xapk" ]; then
+			is_bundle=true
+		fi
+	fi
+
+	local dl_page_resp
+	dl_page_resp=$(req "${url}/download/${version}" -) || return 1
+
+	local dl_url
+	dl_url=$($HTMLQ "a#download_link" --attribute href <<<"$dl_page_resp" | head -n 1) || return 1
+	if [ -z "$dl_url" ]; then
+		dl_url=$($HTMLQ "a" --attribute href <<<"$dl_page_resp" | grep -m1 -E "d\.apkpure\.net/b/(APK|XAPK)/") || return 1
+	fi
+
+	if [ -z "$dl_url" ]; then
+		epr "ERROR: Could not find direct download link on APKPure download page"
+		return 1
+	fi
+
+	if [[ "$dl_url" == //* ]]; then
+		dl_url="https:${dl_url}"
+	fi
+
+	if [ "$is_bundle" = true ]; then
+		req "$dl_url" "${output}.apkm" || return 1
+		merge_splits "${output}.apkm" "${output}"
+	else
+		req "$dl_url" "${output}" || return 1
+	fi
+}
 
 # -------------------- archive --------------------
 dl_archive() {
