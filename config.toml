@@ -166,6 +166,12 @@ cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/apkmirror/apkmirror-installer-official/"
 
+[CamScanner-rushiranpise]
+patches-source  = "rushiranpise/morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "rushiranpise"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/intsig-pte/camscanner-phone-pdf-creator/"
+
 [Greenify]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
@@ -236,12 +242,6 @@ cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "RookieEnough"
 uptodown-dlurl  = "https://cricbuzz-cricket-scores-and-news.en.uptodown.com/android"
 
-[GMX-Mail]
-patches-source  = "RookieEnough/De-Vanced"
-cli-source      = "MorpheApp/morphe-cli"
-rv-brand        = "RookieEnough"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/gmx/gmx-mail/"
-
 [Google-Photos]
 patches-source  = "RookieEnough/De-ReVanced"
 cli-source      = "MorpheApp/morphe-cli"
@@ -279,13 +279,6 @@ cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "RookieEnough"
 uptodown-dlurl  = "https://soundcloud.en.uptodown.com/android"
 
-[Tumblr]
-patches-source  = "RookieEnough/De-Vanced"
-cli-source      = "MorpheApp/morphe-cli"
-rv-brand        = "RookieEnough"
-patches-version = "dev"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/tumblr-inc/tumblr/"
-
 # ==============================================================================
 # binarymend/morphe-patches
 # ==============================================================================
@@ -318,12 +311,6 @@ patches-source  = "BholeyKaBhakt/android-patches-xtra"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "xtra"
 apkmirror-dlurl  = "https://www.apkmirror.com/apk/llamalab/automate-llamalab/"
-
-[Autosync]
-patches-source  = "BholeyKaBhakt/android-patches-xtra"
-cli-source      = "MorpheApp/morphe-cli"
-rv-brand        = "xtra"
-uptodown-dlurl  = "https://autosync.en.uptodown.com/android"
 
 [Backdrops]
 patches-source  = "BholeyKaBhakt/android-patches-xtra"
@@ -406,12 +393,6 @@ cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "hoomans"
 uptodown-dlurl  = "https://poweramp-music-player.en.uptodown.com/android"
 
-[FolderSync]
-patches-source  = "arandomhooman/hoomans-morphe-patches"
-cli-source      = "MorpheApp/morphe-cli"
-rv-brand        = "hoomans"
-uptodown-dlurl  = "https://foldersync-lite.en.uptodown.com/android"
-
 [Advanced-Download-Manager]
 patches-source  = "arandomhooman/hoomans-morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
@@ -421,13 +402,6 @@ apkmirror-dlurl  = "https://www.apkmirror.com/apk/admtorrent/advanced-download-m
 # ==============================================================================
 # bufferk/morphe-patches
 # ==============================================================================
-
-[Medium]
-patches-source  = "bufferk/morphe-patches"
-cli-source      = "MorpheApp/morphe-cli"
-rv-brand        = "bufferk"
-# patches-version = "dev"
-uptodown-dlurl = "https://medium.en.uptodown.com/android"
 
 [Truecaller-bufferk]
 patches-source  = "bufferk/morphe-patches"
@@ -446,21 +420,6 @@ patches-source  = "Aunali321/ReVancedExperiments"
 cli-source      = "ReVanced/revanced-cli"
 rv-brand        = "Aunali321"
 uptodown-dlurl  = "https://telegram-google-play-version.en.uptodown.com/android"
-
-# cesbar/zpatches
-[Minesweeper]
-patches-source  = "cesbar/zpatches"
-cli-source      = "MorpheApp/morphe-cli"
-rv-brand        = "cesbar"
-uptodown-dlurl  = "https://minesweeper-the-clean-one.en.uptodown.com/android"
-
-# browzomje/browzomje-patches
-[Pinterest]
-patches-source  = "browzomje/browzomje-patches"
-cli-source      = "MorpheApp/morphe-cli"
-rv-brand        = "browzomje"
-# patches-version = "dev"
-uptodown-dlurl = "https://pinterest.en.uptodown.com/android"
 
 # wchill/patcheddit
 [Lemmy-Sync]
