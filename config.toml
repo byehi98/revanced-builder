@@ -11,39 +11,39 @@ remove-rv-integrations-checks = false
 patches-source  = "GitLab:Paresh-Maheshwari/paresh-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "paresh"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/cricket-exchange/cricket-exchange-live-score-analysis/"
+apkeep-dlurl 	= "in.cricketexchange.app.cricketexchange"
 
 [Document-Scanner]
 patches-source  = "GitLab:Paresh-Maheshwari/paresh-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "paresh"
 # patches-version = "dev"
-uptodown-dlurl = "https://doc-scanner.en.uptodown.com/android"
+apkeep-dlurl = "com.cv.docscanner"
 
 [Eyecon]
 patches-source  = "GitLab:Paresh-Maheshwari/paresh-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "paresh"
-uptodown-dlurl = "https://eyecon-phone-dialer-and-cont-eyecon.en.uptodown.com/android"
+apkeep-dlurl 	= "com.eyecon.global"
 
 [Fing]
 patches-source  = "GitLab:Paresh-Maheshwari/paresh-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "paresh"
 # apkmirror-dlurl = "https://www.apkmirror.com/apk/fing-limited/fing-network-tools/"
-uptodown-dlurl  = "https://fing-network-tools.en.uptodown.com/android"
+apkeep-dlurl  	= "com.overlook.android.fing"
 
 [Lumina]
 patches-source  = "GitLab:Paresh-Maheshwari/paresh-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "paresh"
-uptodown-dlurl  = "https://lumina-walls.en.uptodown.com/android"
+apkeep-dlurl  = "com.lumina.wallpapers"
 
 [MacroDroid]
 patches-source  = "GitLab:Paresh-Maheshwari/paresh-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "paresh"
-uptodown-dlurl = "https://macrodroid.en.uptodown.com/android"
+apkeep-dlurl 	= "com.arlosoft.macrodroid"
 
 [MX-Player-Pro]
 patches-source  = "GitLab:Paresh-Maheshwari/paresh-patches"
@@ -62,7 +62,7 @@ patches-source  = "GitLab:Paresh-Maheshwari/paresh-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "paresh"
 patches-version = "dev"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/true-software-scandinavia-ab/truecaller-caller-id-block/"
+apkeep-dlurl 	= "com.truecaller"
 
 # ==============================================================================
 # hoo-dles/morphe-patches
@@ -84,26 +84,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/adguard-software-limited/adguar
 patches-source  = "hoo-dles/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "hoo-dles"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/intsig-pte/camscanner-phone-pdf-creator/"
-
-[Lyfta]
-patches-source  = "hoo-dles/morphe-patches"
-cli-source      = "MorpheApp/morphe-cli"
-rv-brand        = "hoo-dles"
-uptodown-dlurl  = "https://lyfta-gym-workout-tracker-log.en.uptodown.com/android"
-
-[MacroFactor]
-patches-source  = "hoo-dles/morphe-patches"
-cli-source      = "MorpheApp/morphe-cli"
-rv-brand        = "hoo-dles"
-uptodown-dlurl  = "https://macrofactor-diet-sidekick-and-macro-tracker.en.uptodown.com/android"
-
-[Mimo]
-patches-source  = "hoo-dles/morphe-patches"
-cli-source      = "MorpheApp/morphe-cli"
-rv-brand        = "hoo-dles"
-# patches-version = "dev"
-uptodown-dlurl = "https://mimo.en.uptodown.com/android"
+apkeep-dlurl 	= "com.intsig.camscanner"
 
 [ProtonVPN-Hoodles]
 patches-source  = "hoo-dles/morphe-patches"
@@ -115,26 +96,25 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/proton-technologies-ag/protonvp
 patches-source  = "hoo-dles/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "hoo-dles"
-uptodown-dlurl = "https://google-play-newsstand.en.uptodown.com/android"
+apkeep-dlurl 	= "com.google.android.apps.magazines"
 
 [Solid-Explorer]
 patches-source  = "hoo-dles/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "hoo-dles"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/neatbytes/solid-explorer-file-manager/"
+apkeep-dlurl 	= "pl.solidexplorer2"
 
 [Wallcraft]
 patches-source  = "hoo-dles/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "hoo-dles"
-uptodown-dlurl  = "https://wallpaperscraft.en.uptodown.com/android"
+apkeep-dlurl 	= "com.wallpaperscraft.wallpaper"
 
 [WPS-Office]
 patches-source  = "hoo-dles/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "hoo-dles"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/wps-software-pte-ltd/wps-office-pdf/"
-uptodown-dlurl  = "https://wps-office.en.uptodown.com/android"
+apkeep-dlurl 	= "cn.wps.moffice_eng"
 
 
 # ==============================================================================
@@ -145,7 +125,7 @@ uptodown-dlurl  = "https://wps-office.en.uptodown.com/android"
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
-apkpure-dlurl   = "https://apkpure.net/4k-wallpapers-amoledpix/com.androholic.amoledpix"
+apkeep-dlurl   	= "com.androholic.amoledpix"
 
 [AdGuard-rushiranpise]
 patches-source  = "rushiranpise/morphe-patches"
@@ -158,19 +138,19 @@ patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
 # patches-version = "dev"
-uptodown-dlurl = "https://accuweather.en.uptodown.com/android/download"
+apkeep-dlurl 	= "com.accuweather.android"
 
 [Apkmirror-Installer]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/apkmirror/apkmirror-installer-official/"
+apkeep-dlurl 	= "com.apkmirror.helper.prod"
 
 [CamScanner-rushiranpise]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/intsig-pte/camscanner-phone-pdf-creator/"
+apkeep-dlurl 	= "com.intsig.camscanner"
 
 [Greenify]
 patches-source  = "rushiranpise/morphe-patches"
@@ -183,21 +163,21 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/oasis-feng/greenify/"
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/appdev-quebec/killapps-close-all-apps-running/"
+apkeep-dlurl 	= "com.tafayor.killall"
 
 [M-Indicator]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
 # patches-version = "dev"
-uptodown-dlurl  = "https://m-indicator.en.uptodown.com/android"
+apkeep-dlurl  	= "com.mobond.mindicator"
 
 [NZB360]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
 # patches-version = "dev"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/kevin-foreman/nzb360/"
+apkeep-dlurl 	= "com.kevinforeman.nzb360"
 
 [MovieBox]
 patches-source  = "rushiranpise/morphe-patches"
@@ -216,7 +196,7 @@ uptodown-dlurl  = "https://protonvpn.en.uptodown.com/android"
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
-apkpure-dlurl = "https://apkpure.net/it-cybersecurity-pocket-prep/com.pocketprep.android.itcybersecurity"
+apkeep-dlurl 	= "com.pocketprep.android.itcybersecurity"
 
 [Psiphon]
 patches-source  = "rushiranpise/morphe-patches"
@@ -234,7 +214,7 @@ patches-source  = "RookieEnough/De-Vanced"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "RookieEnough"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/amazon-mobile-llc/amazon-music-discover-songs/"
-uptodown-dlurl  = "https://amazon-mp3.en.uptodown.com/android"
+apkeep-dlurl  	= "com.amazon.mp3"
 
 [Cricbuzz]
 patches-source  = "RookieEnough/De-ReVanced"
@@ -246,38 +226,38 @@ uptodown-dlurl  = "https://cricbuzz-cricket-scores-and-news.en.uptodown.com/andr
 patches-source  = "RookieEnough/De-ReVanced"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "RookieEnough"
-patches-version = "dev"
-uptodown-dlurl  = "https://google-photos.en.uptodown.com/android"
+# patches-version = "dev"
+apkeep-dlurl  	= "com.google.android.apps.photos"
 
 [Google-News-RookieEnough]
 patches-source  = "RookieEnough/De-ReVanced"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "RookieEnough"
-uptodown-dlurl = "https://google-play-newsstand.en.uptodown.com/android"
+apkeep-dlurl 	= "com.google.android.apps.magazines"
 
 [Icon-Pack-Studio]
 patches-source  = "RookieEnough/De-ReVanced"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "RookieEnough"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/smart-launcher-team/icon-pack-studio/"
+apkeep-dlurl 	= "ginlemon.iconpackstudio"
 
 [Irplus]
 patches-source  = "RookieEnough/De-Vanced"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "RookieEnough"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/binarymode/irplus-infrared-remote/"
+apkeep-dlurl	= "net.binarymode.android.irplus"
 
 [Letterboxd]
 patches-source  = "RookieEnough/De-Vanced"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "RookieEnough"
-uptodown-dlurl  = "https://letterboxd.en.uptodown.com/android"
+apkeep-dlurl  	= "com.letterboxd.letterboxd"
 
 [SoundCloud-RookieEnough]
 patches-source  = "RookieEnough/De-Vanced"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "RookieEnough"
-uptodown-dlurl  = "https://soundcloud.en.uptodown.com/android"
+apkeep-dlurl  	= "com.soundcloud.android"
 
 # ==============================================================================
 # binarymend/morphe-patches
@@ -287,20 +267,19 @@ uptodown-dlurl  = "https://soundcloud.en.uptodown.com/android"
 patches-source  = "binarymend/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "binarymend"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/burton999/calcnote-notepad-calculator/"
+apkeep-dlurl 	= "com.burton999.notecal"
 
 [Symfonium]
 patches-source  = "binarymend/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "binarymend"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/tolriq/symfonium-music-player-cast/"
+apkeep-dlurl = "app.symfonik.music.player"
 
 [Truecaller-binarymend]
 patches-source  = "binarymend/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "binarymend"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/true-software-scandinavia-ab/truecaller-caller-id-block/"
-
 
 # ==============================================================================
 # BholeyKaBhakt/android-patches-xtra
@@ -310,32 +289,26 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/true-software-scandinavia-ab/tr
 patches-source  = "BholeyKaBhakt/android-patches-xtra"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "xtra"
-apkmirror-dlurl  = "https://www.apkmirror.com/apk/llamalab/automate-llamalab/"
+apkeep-dlurl 	= "com.llamalab.automate"
 
 [Backdrops]
 patches-source  = "BholeyKaBhakt/android-patches-xtra"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "xtra"
 patches-version = "dev"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/backdrops/backdrops-wallpapers/"
+apkeep-dlurl 	= "com.backdrops.wallpapers"
 
 
 # ==============================================================================
 # jkennethcarino/adobo
 # ==============================================================================
 
-[IMDb]
-patches-source  = "jkennethcarino/adobo"
-cli-source      = "MorpheApp/morphe-cli"
-rv-brand        = "adobo"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/imdb/imdb-imdb/"
-
-[Reddit-Adobo-Dev]
+[Reddit-Adobo]
 patches-source  = "jkennethcarino/adobo"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "adobo-dev"
-patches-version = "dev"
-uptodown-dlurl  = "https://reddit-official-app.en.uptodown.com/android"
+# patches-version = "dev"
+apkeep-dlurl  	= "com.reddit.frontpage"
 
 
 # ==============================================================================
@@ -346,13 +319,13 @@ uptodown-dlurl  = "https://reddit-official-app.en.uptodown.com/android"
 patches-source  = "kiraio-moe/Lain-Patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "lain"
-uptodown-dlurl  = "https://audiorelay.en.uptodown.com/android"
+apkeep-dlurl 	= "com.azefsw.audioconnect"
 
 [Camera]
 patches-source  = "kiraio-moe/Lain-Patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "lain"
-uptodown-dlurl  = "https://camera-fv-5-lite.en.uptodown.com/android"
+apkeep-dlurl  	= "com.flavionet.android.camera.lite"
 
 [Hidden-Settings]
 patches-source  = "kiraio-moe/Lain-Patches"
@@ -375,13 +348,7 @@ uptodown-dlurl = "https://com-scheler-superproxy.en.uptodown.com/android/downloa
 patches-source  = "durgesh0505/chiggi_morphe_patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "durgesh0505"
-uptodown-dlurl  = "https://arrow-puzzle.en.uptodown.com/android"
-
-[Crazygames]
-patches-source  = "durgesh0505/chiggi_morphe_patches"
-cli-source      = "MorpheApp/morphe-cli"
-rv-brand        = "durgesh0505"
-uptodown-dlurl  = "https://crazygames.en.uptodown.com/android"
+apkeep-dlurl  	= "com.easybrain.arrow.puzzle.game"
 
 # ==============================================================================
 # arandomhooman/hoomans-morphe-patches
@@ -397,7 +364,7 @@ uptodown-dlurl  = "https://poweramp-music-player.en.uptodown.com/android"
 patches-source  = "arandomhooman/hoomans-morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "hoomans"
-apkmirror-dlurl  = "https://www.apkmirror.com/apk/admtorrent/advanced-download-manager/"
+apkeep-dlurl  	= "com.dv.adm"
 
 # ==============================================================================
 # bufferk/morphe-patches
@@ -408,7 +375,7 @@ patches-source  = "bufferk/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "bufferk"
 # patches-version = "dev"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/true-software-scandinavia-ab/truecaller-caller-id-block/"
+apkeep-dlurl 	= "com.truecaller"
 
 # ==============================================================================
 # Single Target Repositories (Unique Sources)
@@ -427,7 +394,7 @@ patches-source  = "wchill/patcheddit"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "patcheddit"
 # patches-version = "dev"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/sync-apps-ltd/sync-for-lemmy/"
+apkeep-dlurl 	= "io.syncapps.lemmy_sync"
 
 # prathxmOp/prathxm-patches
 [Chess-com]

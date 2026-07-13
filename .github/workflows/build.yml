@@ -50,6 +50,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: $GITHUB_REPOSITORY
           NEXT_VER_CODE: ${{ steps.next_ver_code.outputs.NEXT_VER_CODE }}
+          APK_KEEP_TOKEN: ${{ secrets.APK_KEEP_TOKEN }}
+          APK_KEEP_EMAIL: ${{ secrets.APK_KEEP_EMAIL }}
 
       - name: Get output
         id: get_output

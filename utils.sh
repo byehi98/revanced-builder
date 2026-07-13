@@ -5,7 +5,7 @@ CWD=$(pwd)
 TEMP_DIR="temp"
 BIN_DIR="bin"
 BUILD_DIR="build"
-DL_SRCS=("direct" "archive" "apkmirror" "uptodown" "apkpure")
+DL_SRCS=("direct" "archive" "apkmirror" "uptodown" "apkpure" "apkeep")
 
 if [ "${GITHUB_TOKEN-}" ]; then GH_HEADER="Authorization: token ${GITHUB_TOKEN}"; else GH_HEADER=; fi
 if [ "${GL_TOKEN-}" ]; then GL_HEADER="PRIVATE-TOKEN: ${GL_TOKEN}"; else GL_HEADER=; fi
@@ -739,6 +739,68 @@ dl_direct() {
 get_direct_vers() { cut -d- -f2 <<<"$__DIRECT_APKNAME__"; }
 get_direct_pkg_name() { cut -d- -f1 <<<"$__DIRECT_APKNAME__"; }
 get_direct_resp() { __DIRECT_APKNAME__=$(awk -F/ '{print $NF}' <<<"$1"); }
+
+# -------------------- apkeep --------------------
+dl_apkeep() {
+	local pkg=$1 version=${2// /-} output=$3 arch=$4 _dpi=$5
+	local email="${APK_KEEP_EMAIL:-}"
+	local token="${APK_KEEP_TOKEN:-}"
+
+	if ! command -v apkeep >/dev/null 2>&1; then
+		epr "apkeep is not installed or not in PATH. Are you in the nix shell?"
+		return 1
+	fi
+	local apkeep_bin="apkeep"
+
+	local target_ver=""
+	if [ "$version" ] && [ "$version" != "latest" ]; then
+		target_ver="@${version}"
+	fi
+
+	local out_dir="${TEMP_DIR}/${pkg}_apkeep"
+	rm -rf "$out_dir"
+	mkdir -p "$out_dir"
+	
+	pr "Running apkeep for $pkg..."
+	if [ -z "$email" ] || [ -z "$token" ]; then
+		wpr "Note: building without credentials"
+		if ! "$apkeep_bin" -a "${pkg}${target_ver}" "$out_dir"; then
+			epr "apkeep failed to download $pkg"
+			return 1
+		fi
+	else
+		if ! "$apkeep_bin" -a "${pkg}${target_ver}" -d google-play -e "$email" -t "$token" -o split_apk=true "$out_dir"; then
+			epr "apkeep failed to download $pkg"
+			return 1
+		fi
+	fi
+	
+	local apk_file xapk_file downloaded_dir
+	apk_file=$(find "$out_dir" -maxdepth 1 -name "*.apk" | head -n 1)
+	xapk_file=$(find "$out_dir" -maxdepth 1 -name "*.xapk" | head -n 1)
+	downloaded_dir=$(find "$out_dir" -maxdepth 1 -mindepth 1 -type d | head -n 1)
+	
+	if [ -n "$apk_file" ]; then
+		mv -f "$apk_file" "$output"
+	elif [ -n "$xapk_file" ]; then
+		mv -f "$xapk_file" "${output}.apkm"
+		merge_splits "${output}.apkm" "${output}"
+		rm -f "${output}.apkm"
+	elif [ -n "$downloaded_dir" ]; then
+		(
+			cd "$downloaded_dir" || exit 1
+			zip -0rq "${CWD}/${output}.apkm" . || exit 1
+		) || return 1
+		merge_splits "${output}.apkm" "${output}"
+		rm -f "${output}.apkm"
+	else
+		epr "Could not find downloaded files in $out_dir"
+		return 1
+	fi
+}
+get_apkeep_vers() { echo "latest"; }
+get_apkeep_pkg_name() { echo "$__APKEEP_PKG_NAME__"; }
+get_apkeep_resp() { __APKEEP_PKG_NAME__="$1"; }
 # --------------------------------------------------
 
 patch_apk() {

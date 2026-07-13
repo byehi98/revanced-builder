@@ -37,6 +37,7 @@
             coreutils
             findutils
             gnugrep
+            apkeep
           ];
 
           shellHook = ''
