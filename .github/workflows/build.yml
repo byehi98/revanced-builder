@@ -25,6 +25,18 @@ jobs:
           fetch-depth: 0
           submodules: true
 
+      - name: Setup WARP
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y wireguard-tools
+          curl -fsSL -o wgcf https://github.com/ViRb3/wgcf/releases/download/v2.2.22/wgcf_2.2.22_linux_amd64
+          chmod +x wgcf
+          for i in {1..3}; do ./wgcf register --accept-tos && break || sleep 5; done
+          ./wgcf generate
+          sudo cp wgcf-profile.conf /etc/wireguard/wgcf.conf
+          sudo wg-quick up wgcf
+          curl -s https://cloudflare.com/cdn-cgi/trace
+
       - name: Update config
         if: ${{ inputs.from_ci }}
         run: |
