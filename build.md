@@ -1,13 +1,13 @@
 AdGuard-hoo-dles: 4.12.81  
 AdGuard-rushiranpise: 4.14.68  
-Accuweather: 21.1.13-1-rc  
 Advanced-Download-Manager: 14.0.39  
+Accuweather: 21.1.13-1-rc  
 Amoledpix: 7.2  
 Apkmirror-Installer: 2.0.3  
 AudioRelay: latest  
 Arrow-Puzzle: 1.7.0  
-Amazon-Music: 26.22.1  
 Automate: 1.51.1  
+Amazon-Music: 26.22.1  
 Backdrops: 6.1.2  
 CalcNote: 2.25.107  
 CREX: 26.04.05  
@@ -15,32 +15,39 @@ Camera: 5.4.0
 Chess-com: 4.10.0  
 CamScanner-hoo-dles: 7.20.0.2606230000  
 Cloudflare-Warp: 6.38.7  
-Cricbuzz: 6.24.01  
 CamScanner-rushiranpise: 7.20.5.2606250000  
+Cricbuzz: 6.24.01  
+Dailyhunt: 33.5.4  
 Document-Scanner: 6.8.18  
-Fing: 12.12.0  
-Google-News-RookieEnough: 5.108.0.644447823  
 Eyecon: 4.2026.04.05.1300  
+Google-News-RookieEnough: 5.108.0.644447823  
+Fing: 12.12.0  
 Google-News-hoo-dles: 5.161.0.931240252  
 Greenify: 5.1.1  
-Icon-Pack-Studio: 2.2 build 016  
-Irplus: latest  
-Google-Photos: latest  
 Hidden-Settings: 7.34  
+Irplus: latest  
+Icon-Pack-Studio: 2.2 build 016  
 Killapps: 1.57.9  
-Lumina: 1.0.2.3  
+Google-Photos: latest  
 Lemmy-Sync: latest  
-Letterboxd: latest  
-M-Indicator: 18.0.356  
+Lumina: 1.0.2.3  
 MX-Player-Pro: 1.93.4  
 MacroDroid: 5.62.11  
+M-Indicator: 18.0.356  
+Medium: 4.5.1302097  
+Letterboxd: latest  
 MovieBox: 3.0.16.0709.03  
+Mega: 16.9(261881039)(3c7e30562a)  
+NYT-Crossword: 6.33.1  
 NZB360: 23.5  
+Photomath: latest  
+Playit: 2.7.50.12  
+ProtonVPN-Hoodles: 5.17.72.0  
 Pocket-Prep: 3.27.2  
 Poweramp: build-1025-bundle-play  
-ProtonVPN-Hoodles: 5.17.72.0  
 Psiphon: 479  
 ProtonVPN-Rushiranpise: 5.19.16.0  
+RS-File-Manager: 2.3.0.4  
 SoundCloud-RookieEnough: 2025.05.27-release  
 Solid-Explorer: 3.4.1  
 Super-Proxy: 3.2.2  
@@ -48,11 +55,18 @@ Symfonium: 14.0.0
 Telegram: 12.8.3  
 Telegram-Paresh: 12.8.3  
 Reddit-Adobo: latest  
+TeraBox: 4.20.1  
+Unimote: 1.8.1  
 Truecaller: 26.10.6  
 Truecaller-bufferk: 26.10.6  
 Wallcraft: 3.61.01  
-Truecaller-binarymend: 26.12.5  
+Yatri: 5.0.4  
+YouTube-Morphe: 20.51.39  
+YouTube-Music-Morphe: 9.15.51  
 WPS-Office: 18.24  
+YouTube-Morphe-Dev: 20.51.39  
+YouTube-Music-Morphe-Dev: 9.15.51  
+iLovePDF: latest  
 
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
@@ -86,6 +100,12 @@ Patches: jkennethcarino/patches-1.2.0.mpp
 
 Patches: kiraio-moe/patches-1.3.0.mpp  
 [Changelog](https://github.com/kiraio-moe/Lain-Patches/releases/tag/v1.3.0)
+
+Patches: MorpheApp/patches-1.34.0.mpp  
+[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.34.0)
+
+Patches: MorpheApp/patches-1.35.0-dev.2.mpp  
+[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.35.0-dev.2)
 
 Patches: Paresh-Maheshwari/patches-1.19.0.mpp  
 [Changelog](https://gitlab.com/Paresh-Maheshwari/paresh-patches/-/releases/v1.19.0)
