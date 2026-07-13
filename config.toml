@@ -233,13 +233,13 @@ apkeep-dlurl  	= "com.google.android.apps.photos"
 patches-source  = "RookieEnough/De-ReVanced"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "RookieEnough"
-apkeep-dlurl 	= "com.google.android.apps.magazines"
+uptodown-dlurl = "https://google-play-newsstand.en.uptodown.com/android"
 
 [Icon-Pack-Studio]
 patches-source  = "RookieEnough/De-ReVanced"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "RookieEnough"
-apkeep-dlurl 	= "ginlemon.iconpackstudio"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/smart-launcher-team/icon-pack-studio/"
 
 [Irplus]
 patches-source  = "RookieEnough/De-Vanced"
