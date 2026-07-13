@@ -25,6 +25,12 @@ jobs:
           fetch-depth: 0
           submodules: true
 
+      - name: Install apkeep
+        run: |
+          curl -sL https://github.com/EFForg/apkeep/releases/latest/download/apkeep-x86_64-unknown-linux-gnu -o apkeep
+          chmod +x apkeep
+          sudo mv apkeep /usr/local/bin/apkeep
+
       - name: Update config
         if: ${{ inputs.from_ci }}
         run: |
