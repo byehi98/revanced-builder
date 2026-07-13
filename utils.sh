@@ -316,6 +316,10 @@ if [ "${GITHUB_ACTIONS-}" = "true" ]; then
 else
 	req() { _req "$1" "$2" -H "User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:108.0) Gecko/20100101 Firefox/108.0"; }
 fi
+
+apkpure_req() {
+	_req "$1" "$2" -H "User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:108.0) Gecko/20100101 Firefox/108.0" -H "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8"
+}
 gh_req() {
 	if [ "${GH_HEADER-}" ]; then
 		_req "$1" "$2" -H "$GH_HEADER"
@@ -636,7 +640,7 @@ get_apkpure_resp() {
 	url="${url%/versions}"
 	url="${url%/download}"
 	url="${url%/}"
-	__APKPURE_RESP__=$(req "${url}/versions" -) || return 1
+	__APKPURE_RESP__=$(apkpure_req "${url}/versions" -) || return 1
 	__APKPURE_URL__="$url"
 }
 get_apkpure_pkg_name() {
@@ -676,7 +680,7 @@ dl_apkpure() {
 	fi
 
 	local dl_page_resp
-	dl_page_resp=$(req "${url}/download/${version}" -) || return 1
+	dl_page_resp=$(apkpure_req "${url}/download/${version}" -) || return 1
 
 	local dl_url
 	dl_url=$($HTMLQ "a#download_link" --attribute href <<<"$dl_page_resp" | head -n 1) || return 1
@@ -694,10 +698,10 @@ dl_apkpure() {
 	fi
 
 	if [ "$is_bundle" = true ]; then
-		req "$dl_url" "${output}.apkm" || return 1
+		apkpure_req "$dl_url" "${output}.apkm" || return 1
 		merge_splits "${output}.apkm" "${output}"
 	else
-		req "$dl_url" "${output}" || return 1
+		apkpure_req "$dl_url" "${output}" || return 1
 	fi
 }
 
