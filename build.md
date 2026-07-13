@@ -1,10 +1,10 @@
-AdGuard-rushiranpise: 4.14.68  
 AdGuard-hoo-dles: 4.12.81  
+AdGuard-rushiranpise: 4.14.68  
 Apkmirror-Installer: 2.0.3  
-Accuweather: 21.1.13-1-rc  
 Advanced-Download-Manager: 14.0.39  
-AudioRelay: 0.26.1  
+Accuweather: 21.1.13-1-rc  
 Automate: 1.51.1  
+AudioRelay: 0.26.1  
 Arrow-Puzzle: 1.7.0  
 Amazon-Music: 26.22.1  
 Backdrops: 6.1.2  
@@ -12,15 +12,15 @@ CalcNote: 2.25.107
 CREX: 26.04.05  
 Camera: 5.4.0  
 Chess-com: 4.10.0  
-CamScanner-hoo-dles: 7.20.0.2606230000  
 Cloudflare-Warp: 6.38.7  
-Crazygames: 1.6.7  
+CamScanner-hoo-dles: 7.20.0.2606230000  
 Cricbuzz: 6.24.01  
+Crazygames: 1.6.7  
 CamScanner-rushiranpise: 7.20.5.2606250000  
 Document-Scanner: 6.8.18  
 Eyecon: 4.2026.04.05.1300  
-Fing: 12.12.0  
 Google-News-RookieEnough: 5.108.0.644447823  
+Fing: 12.12.0  
 Google-News-hoo-dles: 5.161.0.931240252  
 Google-Photos: 7.83.0.943371825  
 Greenify: 5.1.1  
@@ -34,26 +34,26 @@ Lumina: 1.0.2.3
 Letterboxd: 3.5.6  
 MX-Player-Pro: 1.93.4  
 M-Indicator: 18.0.356  
-MacroDroid: 5.62.11  
 Lyfta: 1.551  
+MacroDroid: 5.62.11  
 MovieBox: 3.0.16.0709.03  
 NZB360: 23.5  
-MacroFactor: 5.7.8  
 Mimo: 9.11  
+MacroFactor: 5.7.8  
 ProtonVPN-Hoodles: 5.17.72.0  
 Poweramp: build-1025-bundle-play  
 Psiphon: 479  
 ProtonVPN-Rushiranpise: 5.19.16.0  
 Solid-Explorer: 3.4.1  
-SoundCloud-RookieEnough: 2025.05.27-release  
 Super-Proxy: 3.2.2  
+SoundCloud-RookieEnough: 2025.05.27-release  
 Symfonium: 14.0.0  
-Telegram-Paresh: 12.8.3  
 Telegram: 12.8.3  
+Telegram-Paresh: 12.8.3  
 WPS-Office: 18.24  
 Truecaller-binarymend: 26.12.5  
-Reddit-Adobo-Dev: 2026.25.0  
 Wallcraft: 3.61.01  
+Reddit-Adobo-Dev: 2026.25.0  
 
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
