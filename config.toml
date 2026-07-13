@@ -4,6 +4,36 @@ remove-rv-integrations-checks = false
 # see https://github.com/nvbangg/Patches-APK-Builder/blob/main/CONFIG.md for more detailed explanations
 
 # ==============================================================================
+# MorpheApp/morphe-patches
+# ==============================================================================
+
+[YouTube-Morphe]
+patches-source 	= "MorpheApp/morphe-patches"
+cli-source 		= "MorpheApp/morphe-cli"
+rv-brand 			= "morphe"
+apkeep-dlurl 		= "com.google.android.youtube"
+
+[YouTube-Morphe-Dev]
+patches-source 	= "MorpheApp/morphe-patches"
+cli-source 		= "MorpheApp/morphe-cli"
+rv-brand 			= "morphe"
+patches-version 	= "dev"
+apkeep-dlurl 		= "com.google.android.youtube"
+
+[YouTube-Music-Morphe]
+patches-source 	= "MorpheApp/morphe-patches"
+cli-source 		= "MorpheApp/morphe-cli"
+rv-brand 			= "morphe"
+apkeep-dlurl 		= "com.google.android.apps.youtube.music"
+
+[YouTube-Music-Morphe-Dev]
+patches-source 	= "MorpheApp/morphe-patches"
+cli-source 		= "MorpheApp/morphe-cli"
+rv-brand 			= "morphe"
+patches-version 	= "dev"
+apkeep-dlurl 		= "com.google.android.apps.youtube.music"
+
+# ==============================================================================
 # GitLab:Paresh-Maheshwari/paresh-patches
 # ==============================================================================
 
@@ -67,12 +97,6 @@ apkeep-dlurl 	= "com.truecaller"
 # ==============================================================================
 # hoo-dles/morphe-patches
 # ==============================================================================
-
-[Cloudflare-Warp]
-patches-source  = "rushiranpise/morphe-patches"
-cli-source      = "MorpheApp/morphe-cli"
-rv-brand        = "rushiranpise"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/cloudflare/1-1-1-1-faster-safer-internet/"
 
 [AdGuard-hoo-dles]
 patches-source  = "hoo-dles/morphe-patches"
@@ -152,6 +176,18 @@ cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
 apkeep-dlurl 	= "com.intsig.camscanner"
 
+[Cloudflare-Warp]
+patches-source  = "rushiranpise/morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "rushiranpise"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/cloudflare/1-1-1-1-faster-safer-internet/"
+
+[Dailyhunt]
+patches-source  = "rushiranpise/morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "rushiranpise"
+apkeep-dlurl	= "com.eterno"
+
 [Greenify]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
@@ -179,11 +215,23 @@ rv-brand        = "rushiranpise"
 # patches-version = "dev"
 apkeep-dlurl 	= "com.kevinforeman.nzb360"
 
+[Mega]
+patches-source  = "rushiranpise/morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "rushiranpise"
+apkeep-dlurl	= "mega.privacy.android.app"
+
 [MovieBox]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
 uptodown-dlurl = "https://com-community-oneroom.en.uptodown.com/android"
+
+[NYT-Crossword]
+patches-source  = "rushiranpise/morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "rushiranpise"
+apkeep-dlurl	= "com.nytimes.crossword"
 
 [ProtonVPN-Rushiranpise]
 patches-source  = "rushiranpise/morphe-patches"
@@ -198,12 +246,42 @@ cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
 apkeep-dlurl 	= "com.pocketprep.android.itcybersecurity"
 
+[Playit]
+patches-source  = "rushiranpise/morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "rushiranpise"
+apkeep-dlurl	= "com.playit.videoplayer"
+
 [Psiphon]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
 # patches-version = "dev"
 uptodown-dlurl  = "https://psiphon-pro.en.uptodown.com/android"
+
+[RS-File-Manager]
+patches-source  = "rushiranpise/morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "rushiranpise"
+apkeep-dlurl	= "com.rs.explorer.filemanager"
+
+[TeraBox]
+patches-source  = "rushiranpise/morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "rushiranpise"
+apkeep-dlurl	= "com.dubox.drive"
+
+[Unimote]
+patches-source  = "rushiranpise/morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "rushiranpise"
+apkeep-dlurl	= "sensustech.universal.tv.remote.control"
+
+[Yatri]
+patches-source  = "rushiranpise/morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "rushiranpise"
+apkeep-dlurl 	  = "com.yatrirailways.yatri"
 
 # ==============================================================================
 # RookieEnough repositories (De-Vanced / De-ReVanced)
@@ -252,6 +330,12 @@ patches-source  = "RookieEnough/De-Vanced"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "RookieEnough"
 apkeep-dlurl  	= "com.letterboxd.letterboxd"
+
+[Photomath]
+patches-source  = "RookieEnough/De-ReVanced"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "RookieEnough"
+apkeep-dlurl	= "com.microblink.photomath"
 
 [SoundCloud-RookieEnough]
 patches-source  = "RookieEnough/De-Vanced"
@@ -327,6 +411,12 @@ cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "lain"
 apkeep-dlurl  	= "com.flavionet.android.camera.lite"
 
+[iLovePDF]
+patches-source  = "kiraio-moe/Lain-Patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "lain"
+apkeep-dlurl	= "com.ilovepdf.www"
+
 [Hidden-Settings]
 patches-source  = "kiraio-moe/Lain-Patches"
 cli-source      = "MorpheApp/morphe-cli"
@@ -369,6 +459,12 @@ apkeep-dlurl  	= "com.dv.adm"
 # ==============================================================================
 # bufferk/morphe-patches
 # ==============================================================================
+
+[Medium]
+patches-source  = "bufferk/morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "bufferk"
+apkeep-dlurl	= "com.medium.reader"
 
 [Truecaller-bufferk]
 patches-source  = "bufferk/morphe-patches"
