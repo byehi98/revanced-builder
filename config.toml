@@ -11,6 +11,7 @@ remove-rv-integrations-checks = false
 patches-source 	= "MorpheApp/morphe-patches"
 cli-source 		= "MorpheApp/morphe-cli"
 rv-brand 			= "morphe"
+uptodown-dlurl = "https://youtube.en.uptodown.com/android"
 apkeep-dlurl 		= "com.google.android.youtube"
 
 [YouTube-Morphe-Dev]
@@ -18,19 +19,22 @@ patches-source 	= "MorpheApp/morphe-patches"
 cli-source 		= "MorpheApp/morphe-cli"
 rv-brand 			= "morphe"
 patches-version 	= "dev"
+uptodown-dlurl = "https://youtube.en.uptodown.com/android"
 apkeep-dlurl 		= "com.google.android.youtube"
 
 [YouTube-Music-Morphe]
 patches-source 	= "MorpheApp/morphe-patches"
 cli-source 		= "MorpheApp/morphe-cli"
-rv-brand 			= "morphe"
-apkeep-dlurl 		= "com.google.android.apps.youtube.music"
+rv-brand		= "morphe"
+uptodown-dlurl = "https://youtube.en.uptodown.com/android"
+apkeep-dlurl 	= "com.google.android.apps.youtube.music"
 
 [YouTube-Music-Morphe-Dev]
 patches-source 	= "MorpheApp/morphe-patches"
 cli-source 		= "MorpheApp/morphe-cli"
 rv-brand 			= "morphe"
 patches-version 	= "dev"
+uptodown-dlurl = "https://youtube.en.uptodown.com/android"
 apkeep-dlurl 		= "com.google.android.apps.youtube.music"
 
 # ==============================================================================
@@ -358,12 +362,6 @@ patches-source  = "binarymend/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "binarymend"
 apkeep-dlurl = "app.symfonik.music.player"
-
-[Truecaller-binarymend]
-patches-source  = "binarymend/morphe-patches"
-cli-source      = "MorpheApp/morphe-cli"
-rv-brand        = "binarymend"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/true-software-scandinavia-ab/truecaller-caller-id-block/"
 
 # ==============================================================================
 # BholeyKaBhakt/android-patches-xtra
