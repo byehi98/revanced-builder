@@ -287,9 +287,9 @@ cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
 apkeep-dlurl 	  = "com.yatrirailways.yatri"
 
-==============================================================================
-RookieEnough repositories (De-Vanced / De-ReVanced)
-==============================================================================
+# ==============================================================================
+# RookieEnough repositories (De-Vanced / De-ReVanced)
+# ==============================================================================
 
 [Cricbuzz]
 patches-source  = "RookieEnough/De-ReVanced"
