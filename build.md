@@ -1,65 +1,65 @@
 AdGuard-hoo-dles: 4.12.81  
-AdGuard-rushiranpise: 4.14.68  
 Accuweather: 21.1.13-1-rc  
+AdGuard-rushiranpise: 4.14.68  
 Advanced-Download-Manager: 14.0.39  
 Amoledpix: 7.2  
 Apkmirror-Installer: 2.0.3  
 AudioRelay: 0.26.1  
-Arrow-Puzzle: 1.7.0  
 Automate: 1.51.1  
+Arrow-Puzzle: 1.7.0  
 Backdrops: 6.1.2  
 CalcNote: 2.25.107  
-Camera: 5.4.0  
 CREX: 26.04.05  
 CamScanner-hoo-dles: 7.20.0.2606230000  
-Chess-com: 4.10.0  
 CamScanner-rushiranpise: 7.20.5.2606250000  
-Cloudflare-Warp: 6.38.7  
+Camera: 5.4.0  
+Chess-com: 4.10.0  
+Cloudflare-Warp: 6.38.8  
 Cricbuzz: 6.24.01  
 Dailyhunt: 33.5.4  
 Document-Scanner: 6.8.18  
-Fing: 12.12.0  
-Google-News-hoo-dles: 5.161.0.931240252  
 Eyecon: 4.2026.04.05.1300  
+Fing: 12.12.0  
 Greenify: 5.1.1  
+Google-News-hoo-dles: 5.161.0.931240252  
 Hidden-Settings: 7.34  
-Killapps: 1.57.9  
 Icon-Pack-Studio: 2.2 build 016  
-Lumina: 1.0.2.3  
-MX-Player-Pro: 1.93.4  
-M-Indicator: 18.0.356  
+Killapps: 1.57.9  
 Lemmy-Sync: latest  
+Lumina: 1.0.2.3  
+M-Indicator: 18.0.356  
+MX-Player-Pro: 1.93.4  
 MacroDroid: 5.62.11  
-MovieBox: 3.0.16.0709.03  
 Medium: 4.5.1302097  
+MovieBox: 3.0.16.0709.03  
 Mega: 16.9(261881039)(3c7e30562a)  
-NYT-Crossword: 6.33.1  
 NZB360: 23.5  
-ProtonVPN-Hoodles: 5.17.72.0  
+NYT-Crossword: 6.34.0  
 Playit: 2.7.50.12  
 Pocket-Prep: 3.27.2  
+ProtonVPN-Hoodles: 5.17.72.0  
 Poweramp: build-1025-bundle-play  
 Psiphon: 479  
-ProtonVPN-Rushiranpise: 5.19.16.0  
+ProtonVPN-Rushiranpise: 5.19.43.0  
 RS-File-Manager: 2.3.0.4  
 Solid-Explorer: 3.4.1  
+Reddit-Adobo: 2026.28.0  
 SoundCloud-RookieEnough: 2025.05.27-release  
 Super-Proxy: 3.2.2  
 Symfonium: 14.0.0  
 Telegram-Paresh: 12.8.3  
-Reddit-Adobo: 2026.28.0  
 Telegram: 12.9.0  
-Truecaller: 26.10.6  
-Unimote: 1.8.1  
-Truecaller-bufferk: 26.10.6  
-YouTube-Morphe: 20.51.39  
-Wallcraft: 3.61.01  
-Yatri: 5.0.4  
 TeraBox: 4.20.1  
-YouTube-Morphe-Dev: 20.51.39  
+Truecaller: 26.10.6  
+Truecaller-bufferk: 26.10.6  
+Unimote: 1.8.1  
+Wallcraft: 3.61.01  
 WPS-Office: 18.24  
-YouTube-Music-Morphe: 20.51.39  
-YouTube-Music-Morphe-Dev: 20.51.39  
+Yatri: 5.0.5  
+YouTube-Morphe: 20.51.39  
+YouTube-Morphe-Dev: 21.04.223  
+YouTube-Music-Morphe: 9.15.51  
+YouTube-Music-Morphe-Dev: 9.15.51  
 iLovePDF: 4.0.1  
 
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
@@ -125,8 +125,8 @@ Patches: MorpheApp/patches-1.34.0.mpp
 [Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.34.0)
 
 CLI: MorpheApp/morphe-desktop-1.11.0-all.jar  
-Patches: MorpheApp/patches-1.35.0-dev.5.mpp  
-[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.35.0-dev.5)
+Patches: MorpheApp/patches-1.35.0-dev.6.mpp  
+[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.35.0-dev.6)
 
 CLI: MorpheApp/morphe-desktop-1.11.0-all.jar  
 CLI: MorpheApp/morphe-desktop-1.11.0-all.jar  
@@ -153,8 +153,8 @@ Patches: RookieEnough/patches-1.0.4.mpp
 CLI: MorpheApp/morphe-desktop-1.11.0-all.jar  
 CLI: MorpheApp/morphe-desktop-1.11.0-all.jar  
 CLI: MorpheApp/morphe-desktop-1.11.0-all.jar  
-Patches: rushiranpise/patches-1.12.0.mpp  
-[Changelog](https://github.com/rushiranpise/morphe-patches/releases/tag/v1.12.0)
+Patches: rushiranpise/patches-1.13.0.mpp  
+[Changelog](https://github.com/rushiranpise/morphe-patches/releases/tag/v1.13.0)
 
 CLI: MorpheApp/morphe-desktop-1.11.0-all.jar  
 CLI: MorpheApp/morphe-desktop-1.11.0-all.jar  
