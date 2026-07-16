@@ -336,6 +336,54 @@ rv-brand        = "RookieEnough"
 apkeep-dlurl  	= "com.soundcloud.android"
 
 # ==============================================================================
+# MiguelNinja19/miguel-morphe-patches
+# ==============================================================================
+
+[Anger-of-Stick-5]
+patches-source  	= "MiguelNinja19/miguel-morphe-patches"
+cli-source      	= "MorpheApp/morphe-cli"
+rv-brand        	= "MiguelNinja19"
+version 			= "latest"
+apkeep-dlurl 		= "jpark.AOS5"
+
+[Climb]
+patches-source  	= "MiguelNinja19/miguel-morphe-patches"
+cli-source      	= "MorpheApp/morphe-cli"
+rv-brand        	= "MiguelNinja19"
+version 			= "latest"
+uptodown-dlurl 	= "https://climb-free.en.uptodown.com/android"
+
+[CubeX-Solver]
+patches-source  	= "MiguelNinja19/miguel-morphe-patches"
+cli-source      	= "MorpheApp/morphe-cli"
+rv-brand        	= "MiguelNinja19"
+version 			= "latest"
+apkeep-dlurl		= "diozz.cubex"
+
+[Hunter-Assassin]
+patches-source  = "MiguelNinja19/miguel-morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "MiguelNinja19"
+version 		= "latest"
+apkeep-dlurl 	= "com.rubygames.assassin"
+
+[Plants-vs-Zombies-FREE]
+patches-source  = "MiguelNinja19/miguel-morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "MiguelNinja19"
+version 		= "latest"
+apkeep-dlurl 	= "com.ea.game.pvzfree_row"
+
+[The-Battle-of-Polytopia]
+patches-source  = "MiguelNinja19/miguel-morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "MiguelNinja19"
+version 		= "latest"
+uptodown-dlurl 	= "https://polytopia.en.uptodown.com/android"
+
+
+
+# ==============================================================================
 # binarymend/morphe-patches
 # ==============================================================================
 
