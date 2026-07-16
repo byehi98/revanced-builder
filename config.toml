@@ -1,4 +1,4 @@
-parallel-jobs = 5
+parallel-jobs = 2
 dpi = "nodpi anydpi"
 remove-rv-integrations-checks = false
 # see https://github.com/nvbangg/Patches-APK-Builder/blob/main/CONFIG.md for more detailed explanations
@@ -11,30 +11,26 @@ remove-rv-integrations-checks = false
 patches-source 	= "MorpheApp/morphe-patches"
 cli-source 		= "MorpheApp/morphe-cli"
 rv-brand 			= "morphe"
-uptodown-dlurl = "https://youtube.en.uptodown.com/android"
 apkeep-dlurl 		= "com.google.android.youtube"
 
 [YouTube-Morphe-Dev]
-patches-source 	= "MorpheApp/morphe-patches"
-cli-source 		= "MorpheApp/morphe-cli"
+patches-source 		= "MorpheApp/morphe-patches"
+cli-source 			= "MorpheApp/morphe-cli"
 rv-brand 			= "morphe"
 patches-version 	= "dev"
-uptodown-dlurl = "https://youtube.en.uptodown.com/android"
 apkeep-dlurl 		= "com.google.android.youtube"
 
 [YouTube-Music-Morphe]
 patches-source 	= "MorpheApp/morphe-patches"
 cli-source 		= "MorpheApp/morphe-cli"
 rv-brand		= "morphe"
-uptodown-dlurl = "https://youtube.en.uptodown.com/android"
 apkeep-dlurl 	= "com.google.android.apps.youtube.music"
 
 [YouTube-Music-Morphe-Dev]
-patches-source 	= "MorpheApp/morphe-patches"
-cli-source 		= "MorpheApp/morphe-cli"
+patches-source 		= "MorpheApp/morphe-patches"
+cli-source 			= "MorpheApp/morphe-cli"
 rv-brand 			= "morphe"
 patches-version 	= "dev"
-uptodown-dlurl = "https://youtube.en.uptodown.com/android"
 apkeep-dlurl 		= "com.google.android.apps.youtube.music"
 
 # ==============================================================================
@@ -458,11 +454,11 @@ rv-brand        = "bufferk"
 apkeep-dlurl	= "com.medium.reader"
 
 [Truecaller-bufferk]
-patches-source  = "bufferk/morphe-patches"
-cli-source      = "MorpheApp/morphe-cli"
-rv-brand        = "bufferk"
-# patches-version = "dev"
-apkeep-dlurl 	= "com.truecaller"
+patches-source  	= "bufferk/morphe-patches"
+cli-source      	= "MorpheApp/morphe-cli"
+rv-brand        	= "bufferk"
+# patches-version 	= "dev"
+apkeep-dlurl 		= "com.truecaller"
 
 # ==============================================================================
 # Single Target Repositories (Unique Sources)
