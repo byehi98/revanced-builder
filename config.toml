@@ -1,4 +1,4 @@
-parallel-jobs = 5
+parallel-jobs = 1
 dpi = "nodpi anydpi"
 remove-rv-integrations-checks = false
 # see https://github.com/nvbangg/Patches-APK-Builder/blob/main/CONFIG.md for more detailed explanations
