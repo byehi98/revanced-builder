@@ -1,0 +1,320 @@
+name: Matrix Build Modules
+on:
+  workflow_dispatch:
+  workflow_call:
+    inputs:
+      from_ci:
+        type: boolean
+        required: false
+        default: true
+
+jobs:
+  prepare_matrix:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.extract_matrix.outputs.matrix }}
+      next_ver_code: ${{ steps.next_ver_code.outputs.NEXT_VER_CODE }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+          submodules: true
+
+      - name: Install tools
+        run: sudo apt-get install -y jq curl
+
+      - name: Update config
+        if: ${{ inputs.from_ci }}
+        run: |
+          if git checkout origin/update build.md; then
+            UPDATE_CFG=$(./build.sh config.toml --config-update)
+            if [ "$UPDATE_CFG" ]; then
+              echo "$UPDATE_CFG" > config.json
+            fi
+          fi
+
+      - name: Extract Matrix
+        id: extract_matrix
+        run: |
+          source utils.sh
+          set_prebuilts
+          if [ -f config.json ]; then
+            toml_prep config.json
+          else
+            toml_prep config.toml
+          fi
+          DEF_PATCH_SRC=$(jq -r 'to_entries | map(select(.value | type != "object")) | from_entries | ."patches-source" // ."patches-sources" // "ReVanced/revanced-patches"' <<< "$__TOML__")
+          MATRIX=$(jq -c --arg def "$DEF_PATCH_SRC" '[to_entries[] | select(.value | type == "object") | select(.value.enabled != "false" and .value.enabled != false) | .value."patches-source" // .value."patches-sources" // $def] | unique' <<< "$__TOML__")
+          echo "matrix=$MATRIX" >> "$GITHUB_OUTPUT"
+
+      - name: Get next version code
+        id: next_ver_code
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          TAG=$(gh release list -L 1 | awk -F '\t' '{print $3}')
+          if [ -z "$TAG" ]; then TAG=0; fi
+          echo "NEXT_VER_CODE=$((TAG + 1))" >> $GITHUB_OUTPUT
+
+      - name: Upload base config and changelog
+        uses: actions/upload-artifact@v4
+        with:
+          name: base-config
+          path: |
+            config.json
+            config.toml
+            build.md
+          if-no-files-found: ignore
+
+  build_matrix:
+    needs: prepare_matrix
+    permissions: write-all
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        patches_source: ${{ fromJson(needs.prepare_matrix.outputs.matrix) }}
+    steps:
+      - uses: actions/setup-java@v5
+        with:
+          distribution: "zulu"
+          java-version: "21"
+
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+          submodules: true
+
+      - name: Download base config
+        uses: actions/download-artifact@v4
+        with:
+          name: base-config
+          
+      - name: Restore base config
+        run: |
+          if [ -f config.json ]; then
+             echo "Using generated config.json"
+          fi
+
+      - name: Install apkeep
+        run: |
+          curl -sL https://github.com/EFForg/apkeep/releases/latest/download/apkeep-x86_64-unknown-linux-gnu -o apkeep
+          chmod +x apkeep
+          sudo mv apkeep /usr/local/bin/apkeep
+
+      - name: Prepare Matrix Config
+        run: |
+          source utils.sh
+          set_prebuilts
+          if [ -f config.json ]; then
+            toml_prep config.json
+          else
+            toml_prep config.toml
+          fi
+          DEF_PATCH_SRC=$(jq -r 'to_entries | map(select(.value | type != "object")) | from_entries | ."patches-source" // ."patches-sources" // "ReVanced/revanced-patches"' <<< "$__TOML__")
+          jq -c --arg ps "${{ matrix.patches_source }}" --arg def "$DEF_PATCH_SRC" '
+            to_entries |
+            map(
+              if .value | type == "object" then
+                if ((.value."patches-source" // .value."patches-sources" // $def) == $ps) then
+                  .
+                else
+                  .value.enabled = false | .
+                end
+              else
+                .
+              end
+            ) | from_entries
+          ' <<< "$__TOML__" > config_matrix.json
+
+      - name: Build modules/APKs
+        run: ./build.sh config_matrix.json
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: $GITHUB_REPOSITORY
+          NEXT_VER_CODE: ${{ needs.prepare_matrix.outputs.next_ver_code }}
+          APK_KEEP_TOKEN: ${{ secrets.APK_KEEP_TOKEN }}
+          APK_KEEP_EMAIL: ${{ secrets.APK_KEEP_EMAIL }}
+        continue-on-error: true
+
+      - name: Generate Job Report
+        id: job_report
+        run: |
+          echo "## Matrix Build Report (${{ matrix.patches_source }})" > job_report.md
+          echo "" >> job_report.md
+          
+          echo "### Attempted Apps:" >> job_report.md
+          jq -r 'to_entries[] | select(.value | type == "object" and (.value.enabled // true) != false) | "- " + .key' config_matrix.json >> job_report.md
+          
+          echo "### Successfully Built Files:" >> job_report.md
+          if [ -d "build" ] && [ "$(ls -A build)" ]; then
+            ls -1 build/ | sed 's/^/- /' >> job_report.md
+          else
+            echo "None" >> job_report.md
+          fi
+          
+          echo "" >> job_report.md
+          if [ -f build.md ]; then
+            cat build.md >> job_report.md
+          fi
+          
+      - name: Upload matrix artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-artifacts-${{ strategy.job-index }}
+          path: build/*
+          if-no-files-found: ignore
+
+      - name: Upload job report
+        uses: actions/upload-artifact@v4
+        with:
+          name: job-report-${{ strategy.job-index }}
+          path: job_report.md
+
+  release:
+    needs: [prepare_matrix, build_matrix]
+    if: always()
+    permissions: write-all
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Download all artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: all_artifacts
+
+      - name: Aggregate Reports
+        run: |
+          echo "# Build Report" > final_report.md
+          for dir in all_artifacts/job-report-*/; do
+            if [ -d "$dir" ] && [ -f "${dir}job_report.md" ]; then
+              cat "${dir}job_report.md" >> final_report.md
+              echo "" >> final_report.md
+              echo "---" >> final_report.md
+            fi
+          done
+
+      - name: Prepare release files
+        run: |
+          mkdir -p release_files
+          for dir in all_artifacts/build-artifacts-*/; do
+            if [ -d "$dir" ]; then
+              cp -r "$dir"* release_files/ 2>/dev/null || true
+            fi
+          done
+          if [ -f "all_artifacts/base-config/build.md" ]; then
+            cp "all_artifacts/base-config/build.md" build.md
+          fi
+
+      - name: Upload release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TAG: ${{ needs.prepare_matrix.outputs.next_ver_code }}
+        run: |
+          if [ -z "$(ls -A release_files)" ]; then
+            echo "No files to release!"
+            exit 0
+          fi
+          
+          BODY=$(cat final_report.md)
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            gh release edit "$TAG" --title "Release" --notes "$BODY"
+            gh release upload "$TAG" release_files/* --clobber
+          else
+            gh release create "$TAG" release_files/* --title "Release" --notes "$BODY"
+          fi
+
+      - name: Update modules changelog and update json
+        id: update_config
+        run: |
+          if [ -z "$(ls -A release_files 2>/dev/null)" ]; then
+            exit 0
+          fi
+          git checkout -f update || git switch --discard-changes --orphan update
+          
+          get_update_json() {
+            echo "{
+            \"version\": \"$1\",
+            \"versionCode\": ${{ needs.prepare_matrix.outputs.next_ver_code }},
+            \"zipUrl\": \"$2\",
+            \"changelog\": \"https://raw.githubusercontent.com/$GITHUB_REPOSITORY/update/build.md\"
+          }"
+          }
+
+          cd release_files || exit 1
+          for OUTPUT in *module*.zip; do
+            [ "$OUTPUT" = "*module*.zip" ] && continue
+            ZIP_S=$(unzip -p "$OUTPUT" module.prop 2>/dev/null || echo "")
+            if ! UPDATE_JSON=$(echo "$ZIP_S" | grep updateJson); then continue; fi
+            UPDATE_JSON="${UPDATE_JSON##*/}"
+            VER=$(echo "$ZIP_S" | grep version=)
+            VER="${VER##*=}"
+            DLURL="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/releases/download/${{ needs.prepare_matrix.outputs.next_ver_code }}/${OUTPUT}"
+            get_update_json "$VER" "$DLURL" >"../$UPDATE_JSON"
+          done
+          cd ..
+
+          find . -maxdepth 1 -name "*-update.json" | grep . || : >dummy-update.json
+
+      - name: Commit module json changes
+        run: |
+          if [ -z "$(ls -A release_files 2>/dev/null)" ]; then
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+      
+          git add build.md *-update.json
+      
+          if ! git diff --cached --quiet; then
+            git commit -m "Bump version ${{ needs.prepare_matrix.outputs.next_ver_code }}"
+            git push origin HEAD:update
+          else
+            echo "no changes!"
+          fi
+
+      - name: Report to Telegram
+        env:
+          TG_TOKEN: ${{ secrets.TG_TOKEN }}
+        if: env.TG_TOKEN != null
+        run: |
+          if [ -z "$(ls -A release_files 2>/dev/null)" ]; then
+            exit 0
+          fi
+          cd release_files || exit 1
+
+          TG_CHAT="@rvc_magisk"
+          NL=$'\n'
+          APKS=""
+          MODULES=""
+          for OUTPUT in *; do
+            [ -e "$OUTPUT" ] || continue
+            DL_URL="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/releases/download/${{ needs.prepare_matrix.outputs.next_ver_code }}/${OUTPUT}"
+            if [[ $OUTPUT = *.apk ]]; then
+              APKS+="${NL}📦[${OUTPUT}](${DL_URL})"
+            elif [[ $OUTPUT = *.zip ]]; then
+              MODULES+="${NL}📦[${OUTPUT}](${DL_URL})"
+            fi
+          done
+          MODULES=${MODULES#"$NL"}
+          APKS=${APKS#"$NL"}
+
+          MSG="*New build!*
+
+          *▼ Download Links:*
+          Modules:
+          ${MODULES}
+
+          APKs:
+          ${APKS}
+          "
+          echo "'$MSG'"
+          MSG=${MSG:0:9450}
+          POST="https://api.telegram.org/bot${TG_TOKEN}/sendMessage"
+          curl -X POST --data-urlencode "parse_mode=Markdown" --data-urlencode "disable_web_page_preview=true" --data-urlencode "text=${MSG}" --data-urlencode "chat_id=${TG_CHAT}" "$POST"
