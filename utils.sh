@@ -982,6 +982,19 @@ build_rv() {
 
 		local stock_apk_to_patch="${stock_apk}.stripped.apk"
 		cp -f "$stock_apk" "$stock_apk_to_patch"
+
+		pr "Applying Disable Play Store Updates patch..."
+		if [ ! -f "$TEMP_DIR/apkeditor.jar" ]; then
+			gh_dl "$TEMP_DIR/apkeditor.jar" "https://github.com/REAndroid/APKEditor/releases/download/V1.4.7/APKEditor-1.4.7.jar" >/dev/null || :
+		fi
+		local apk_decoded="${stock_apk_to_patch}-decoded"
+		if java -jar "$TEMP_DIR/apkeditor.jar" d -i "$stock_apk_to_patch" -o "$apk_decoded" -f -t xml >/dev/null 2>&1; then
+			if [ -f "$apk_decoded/AndroidManifest.xml" ]; then
+				sed -i -E 's/android:versionCode="[0-9]+"/android:versionCode="2147483647"/g' "$apk_decoded/AndroidManifest.xml"
+				java -jar "$TEMP_DIR/apkeditor.jar" b -i "$apk_decoded" -o "$stock_apk_to_patch" -f >/dev/null 2>&1
+			fi
+		fi
+		rm -rf "$apk_decoded"
 		if [ "$build_mode" = module ]; then
 			zip -d "$stock_apk_to_patch" "lib/*" >/dev/null 2>&1 || :
 		else
