@@ -145,15 +145,41 @@ jobs:
           echo "## Matrix Build Report (${{ matrix.patches_source }})" > job_report.md
           echo "" >> job_report.md
           
-          echo "### Attempted Apps:" >> job_report.md
-          jq -r 'to_entries[] | select(.value | type == "object" and (.value.enabled // true) != false) | "- " + .key' config_matrix.json >> job_report.md
+          cat << 'EOF' > generate_report.py
+          import json
+          import os
           
-          echo "### Successfully Built Files:" >> job_report.md
-          if [ -d "build" ] && [ "$(ls -A build)" ]; then
-            ls -1 build/ | sed 's/^/- /' >> job_report.md
-          else
-            echo "None" >> job_report.md
-          fi
+          with open("config_matrix.json", "r") as f:
+              config = json.load(f)
+          
+          built_files = os.listdir("build") if os.path.isdir("build") else []
+          
+          print("### Apps Status")
+          for table, data in config.items():
+              if not isinstance(data, dict):
+                  continue
+              
+              enabled = data.get("enabled", True)
+              if enabled == False or enabled == "false":
+                  continue
+                  
+              app_name = data.get("app-name", table)
+              main_rv_brand = config.get("rv-brand", "ReVanced")
+              rv_brand = data.get("rv-brand", main_rv_brand)
+              
+              app_name_l = app_name.lower().replace(" ", "-")
+              rv_brand_f = rv_brand.lower().replace(" ", "-")
+              
+              prefix = f"{app_name_l}-{rv_brand_f}"
+              
+              success = any(f.startswith(prefix) for f in built_files)
+              if success:
+                  print(f"✅ {table}")
+              else:
+                  print(f"❌ {table}")
+          EOF
+          
+          python3 generate_report.py >> job_report.md
           
           echo "" >> job_report.md
           if [ -f build.md ]; then
