@@ -16,7 +16,7 @@ jobs:
       next_ver_code: ${{ steps.next_ver_code.outputs.NEXT_VER_CODE }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           fetch-depth: 0
           submodules: true
@@ -58,7 +58,7 @@ jobs:
           echo "NEXT_VER_CODE=$((TAG + 1))" >> $GITHUB_OUTPUT
 
       - name: Upload base config and changelog
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: base-config
           path: |
@@ -82,13 +82,13 @@ jobs:
           java-version: "21"
 
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           fetch-depth: 0
           submodules: true
 
       - name: Download base config
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           name: base-config
           
@@ -198,14 +198,14 @@ jobs:
           python3 generate_report.py "${{ matrix.patches_source }}" "$GITHUB_REPOSITORY" "${{ needs.prepare_matrix.outputs.next_ver_code }}" > job_report_rows.md
           
       - name: Upload matrix artifacts
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: build-artifacts-${{ strategy.job-index }}
           path: build/*
           if-no-files-found: ignore
 
       - name: Upload job report
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: job-report-${{ strategy.job-index }}
           path: job_report_rows.md
@@ -217,12 +217,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           fetch-depth: 0
 
       - name: Download all artifacts
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           path: all_artifacts
 
