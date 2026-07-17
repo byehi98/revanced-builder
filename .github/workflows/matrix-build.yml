@@ -155,6 +155,9 @@ jobs:
           built_files = os.listdir("build") if os.path.isdir("build") else []
           
           print("### Apps Status")
+          print("| Status | Config | App | Files Generated |")
+          print("| :---: | :--- | :--- | :--- |")
+          
           for table, data in config.items():
               if not isinstance(data, dict):
                   continue
@@ -172,11 +175,12 @@ jobs:
               
               prefix = f"{app_name_l}-{rv_brand_f}"
               
-              success = any(f.startswith(prefix) for f in built_files)
-              if success:
-                  print(f"✅ {table}")
-              else:
-                  print(f"❌ {table}")
+              matching_files = [f for f in built_files if f.startswith(prefix)]
+              success = len(matching_files) > 0
+              status = "✅" if success else "❌"
+              files_str = "<br>".join([f"`{f}`" for f in matching_files]) if success else "-"
+              
+              print(f"| {status} | `{table}` | {app_name} | {files_str} |")
           EOF
           
           python3 generate_report.py >> job_report.md
