@@ -142,21 +142,19 @@ jobs:
       - name: Generate Job Report
         id: job_report
         run: |
-          echo "## Matrix Build Report (${{ matrix.patches_source }})" > job_report.md
-          echo "" >> job_report.md
-          
           cat << 'EOF' > generate_report.py
           import json
           import os
+          import sys
+          
+          patches_source = sys.argv[1]
+          repository = sys.argv[2]
+          tag = sys.argv[3]
           
           with open("config_matrix.json", "r") as f:
               config = json.load(f)
           
           built_files = os.listdir("build") if os.path.isdir("build") else []
-          
-          print("### Apps Status")
-          print("| Status | Config | App | Files Generated |")
-          print("| :---: | :--- | :--- | :--- |")
           
           for table, data in config.items():
               if not isinstance(data, dict):
@@ -178,17 +176,26 @@ jobs:
               matching_files = [f for f in built_files if f.startswith(prefix)]
               success = len(matching_files) > 0
               status = "✅" if success else "❌"
-              files_str = "<br>".join([f"`{f}`" for f in matching_files]) if success else "-"
               
-              print(f"| {status} | `{table}` | {app_name} | {files_str} |")
+              if success:
+                  file_links = []
+                  for f in matching_files:
+                      url = f"https://github.com/{repository}/releases/download/{tag}/{f}"
+                      if f.endswith(".apk"):
+                          file_links.append(f"[APK]({url})")
+                      elif f.endswith(".zip"):
+                          file_links.append(f"[Module]({url})")
+                      else:
+                          file_links.append(f"[File]({url})")
+                  links_str = " ".join(file_links)
+                  app_display = f"{app_name} ({links_str})"
+              else:
+                  app_display = app_name
+              
+              print(f"| `{patches_source}` | {status} | `{table}` | {app_display} |")
           EOF
           
-          python3 generate_report.py >> job_report.md
-          
-          echo "" >> job_report.md
-          if [ -f build.md ]; then
-            cat build.md >> job_report.md
-          fi
+          python3 generate_report.py "${{ matrix.patches_source }}" "$GITHUB_REPOSITORY" "${{ needs.prepare_matrix.outputs.next_ver_code }}" > job_report_rows.md
           
       - name: Upload matrix artifacts
         uses: actions/upload-artifact@v4
@@ -201,7 +208,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: job-report-${{ strategy.job-index }}
-          path: job_report.md
+          path: job_report_rows.md
 
   release:
     needs: [prepare_matrix, build_matrix]
@@ -222,13 +229,19 @@ jobs:
       - name: Aggregate Reports
         run: |
           echo "# Build Report" > final_report.md
+          echo "### Apps Status" >> final_report.md
+          echo "| Patches Source | Status | Config | App |" >> final_report.md
+          echo "| :--- | :---: | :--- | :--- |" >> final_report.md
           for dir in all_artifacts/job-report-*/; do
-            if [ -d "$dir" ] && [ -f "${dir}job_report.md" ]; then
-              cat "${dir}job_report.md" >> final_report.md
-              echo "" >> final_report.md
-              echo "---" >> final_report.md
+            if [ -d "$dir" ] && [ -f "${dir}job_report_rows.md" ]; then
+              cat "${dir}job_report_rows.md" >> final_report.md
             fi
           done
+          echo "" >> final_report.md
+          if [ -f "all_artifacts/base-config/build.md" ]; then
+            echo "### Changelog" >> final_report.md
+            cat "all_artifacts/base-config/build.md" >> final_report.md
+          fi
 
       - name: Prepare release files
         run: |
