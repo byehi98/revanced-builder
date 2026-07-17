@@ -1,9 +1,10 @@
 Anger-of-Stick-5: latest  
-Climb: 6.0.0  
-CubeX-Solver: latest  
 Hunter-Assassin: latest  
-Plants-vs-Zombies-FREE: latest  
+CubeX-Solver: latest  
+Plants-vs-Zombies: latest  
+Climb: 6.0.0  
 The-Battle-of-Polytopia: 2.17.2.16299  
+Zombie-Catchers: latest  
 
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
@@ -11,9 +12,10 @@ Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and
 [revanced-magisk-module](https://github.com/j-hc/revanced-magisk-module)
   
 CLI: MorpheApp/morphe-desktop-1.11.0-all.jar  
-Patches: MiguelNinja19/patches-1.11.0.mpp  
-[Changelog](https://github.com/MiguelNinja19/miguel-morphe-patches/releases/tag/v1.11.0)
+Patches: MiguelNinja19/patches-1.11.9.mpp  
+[Changelog](https://github.com/MiguelNinja19/miguel-morphe-patches/releases/tag/v1.11.9)
 
+CLI: MorpheApp/morphe-desktop-1.11.0-all.jar  
 CLI: MorpheApp/morphe-desktop-1.11.0-all.jar  
 CLI: MorpheApp/morphe-desktop-1.11.0-all.jar  
 CLI: MorpheApp/morphe-desktop-1.11.0-all.jar  
