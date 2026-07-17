@@ -996,7 +996,7 @@ build_rv() {
 			fi
 		fi
 
-		local stock_apk_to_patch="${stock_apk}.stripped.apk"
+		local stock_apk_to_patch="${patched_apk}.stripped.apk"
 		cp -f "$stock_apk" "$stock_apk_to_patch"
 
 		pr "Applying Disable Play Store Updates patch..."
