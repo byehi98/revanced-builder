@@ -747,8 +747,17 @@ dl_apkeep() {
 	local email="${APK_KEEP_EMAIL:-}"
 	local token="${APK_KEEP_TOKEN:-}"
 
+	if [ -f "$output" ]; then return 0; fi
+	local lock_file="${output}.lock"
+	if [ -f "$lock_file" ]; then
+		while [ -f "$lock_file" ]; do sleep 1; done
+		if [ -f "$output" ]; then return 0; fi
+	fi
+	touch "$lock_file"
+
 	if ! command -v apkeep >/dev/null 2>&1; then
 		epr "apkeep is not installed or not in PATH. Are you in the nix shell?"
+		rm -f "$lock_file"
 		return 1
 	fi
 	local apkeep_bin="apkeep"
@@ -758,7 +767,7 @@ dl_apkeep() {
 		target_ver="@${version}"
 	fi
 
-	local out_dir="${TEMP_DIR}/${pkg}_apkeep"
+	local out_dir="${TEMP_DIR}/${pkg}_apkeep_$$_${RANDOM}"
 	rm -rf "$out_dir"
 	mkdir -p "$out_dir"
 	
@@ -767,11 +776,13 @@ dl_apkeep() {
 		wpr "Note: building without credentials"
 		if ! "$apkeep_bin" -a "${pkg}${target_ver}" "$out_dir"; then
 			epr "apkeep failed to download $pkg"
+			rm -rf "$out_dir" "$lock_file"
 			return 1
 		fi
 	else
 		if ! "$apkeep_bin" -a "${pkg}${target_ver}" -d google-play -e "$email" -t "$token" -o split_apk=true "$out_dir"; then
 			epr "apkeep failed to download $pkg"
+			rm -rf "$out_dir" "$lock_file"
 			return 1
 		fi
 	fi
@@ -788,16 +799,21 @@ dl_apkeep() {
 		merge_splits "${output}.apkm" "${output}"
 		rm -f "${output}.apkm"
 	elif [ -n "$downloaded_dir" ]; then
-		(
+		if ! (
 			cd "$downloaded_dir" || exit 1
 			zip -0rq "${CWD}/${output}.apkm" . || exit 1
-		) || return 1
+		); then
+			rm -rf "$out_dir" "$lock_file"
+			return 1
+		fi
 		merge_splits "${output}.apkm" "${output}"
 		rm -f "${output}.apkm"
 	else
 		epr "Could not find downloaded files in $out_dir"
+		rm -rf "$out_dir" "$lock_file"
 		return 1
 	fi
+	rm -rf "$out_dir" "$lock_file"
 }
 get_apkeep_vers() { echo "latest"; }
 get_apkeep_pkg_name() { echo "$__APKEEP_PKG_NAME__"; }
