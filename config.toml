@@ -367,7 +367,7 @@ rv-brand        = "MiguelNinja19"
 version 		= "latest"
 apkeep-dlurl 	= "com.rubygames.assassin"
 
-[Plants-vs-Zombies-FREE]
+[Plants-vs-Zombies]
 patches-source  = "MiguelNinja19/miguel-morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "MiguelNinja19"
@@ -381,7 +381,12 @@ rv-brand        = "MiguelNinja19"
 version 		= "latest"
 uptodown-dlurl 	= "https://polytopia.en.uptodown.com/android"
 
-
+[Zombie-Catchers]
+patches-source  = "MiguelNinja19/miguel-morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "MiguelNinja19"
+version 		= "latest"
+apkeep-dlurl 	= "fi.twomenandadog.zombiecatchers"
 
 # ==============================================================================
 # binarymend/morphe-patches
