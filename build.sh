@@ -157,6 +157,11 @@ for table_name in $(toml_get_table_names); do
 done
 wait
 rm -rf temp/tmp.*
+has_failures=0
+if [ -f "$TEMP_DIR/some_job_failed" ]; then
+	has_failures=1
+	rm -f "$TEMP_DIR/some_job_failed"
+fi
 if [ -z "$(ls -A1 "${BUILD_DIR}")" ]; then abort "All builds failed."; fi
 
 log "\nInstall [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs"
@@ -171,3 +176,8 @@ if [ -n "$SKIPPED" ]; then
 fi
 
 pr "Done"
+
+if [ "$has_failures" -eq 1 ]; then
+	epr "One or more builds failed!"
+	exit 1
+fi

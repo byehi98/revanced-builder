@@ -887,7 +887,7 @@ build_rv() {
 
 	if [ -z "$pkg_name" ]; then
 		epr "empty pkg name, not building ${table}."
-		return 0
+		return 1
 	fi
 	pr "Package name of '${table}' is '$pkg_name'"
 	local list_patches
@@ -897,7 +897,7 @@ build_rv() {
 		if ! version=$(get_patch_last_supported_ver "$list_patches" "$pkg_name" \
 			"${args[included_patches]}" "${args[excluded_patches]}" "${args[exclusive_patches]}"); then
 			epr "get_patch_last_supported_ver failed '$list_patches'"
-			return
+			return 1
 		elif [ -z "$version" ]; then get_latest_ver=true; fi
 	elif isoneof "$version_mode" latest beta; then
 		get_latest_ver=true
@@ -913,7 +913,7 @@ build_rv() {
 	fi
 	if [ -z "$version" ]; then
 		epr "empty version, not building ${table}."
-		return 0
+		return 1
 	fi
 
 	if [ "$mode_arg" = module ]; then
@@ -946,7 +946,7 @@ build_rv() {
 		done
 		if [ ! -f "$stock_apk" ]; then
 			epr "Stock apk not found ($stock_apk)"
-			return 0
+			return 1
 		fi
 	fi
 
@@ -957,14 +957,14 @@ build_rv() {
 		for a in "${stock_apk}"-zip/*.apk; do
 			if ! sig_op=$(check_sig "$a" "$pkg_name" 2>&1); then
 				epr "Not building $table, apk signature mismatch '$a': $sig_op"
-				return 0
+				return 1
 			fi
 		done
 		rm -rf "${stock_apk}-zip" || :
 	else
 		if ! sig_op=$(check_sig "$stock_apk" "$pkg_name" 2>&1); then
 			epr "Not building $table, apk signature mismatch '$stock_apk': $sig_op"
-			return 0
+			return 1
 		fi
 	fi
 	log "${table}: ${version}"
@@ -1041,7 +1041,7 @@ build_rv() {
 		if [ "${NORB:-}" != true ] || { [ ! -f "$patched_apk" ] && [ ! -f "$apk_output" ]; }; then
 			if ! patch_apk "$stock_apk_to_patch" "$patched_apk" "${patcher_args[*]}" "${args[cli]}" "${args[ptjar]}"; then
 				epr "Building '${table}' failed!"
-				return 0
+				return 1
 			fi
 		fi
 		rm "$stock_apk_to_patch"
@@ -1079,7 +1079,7 @@ build_rv() {
 			elif [ "${args[include_stock]}" = "split" ]; then
 				if [ ! -f "${stock_apk}.apkm" ]; then
 					epr "Cannot include as 'split' because stock apk of $table_name is not a bundle"
-					return 0
+					return 1
 				fi
 				if [ "$arch" = "arm64-v8a" ]; then
 					unzip -j "${stock_apk}.apkm" '*.apk' -x '*x86_64.apk' -x '*x86.apk' -x '*armeabi_v7a.apk' -d "${base_template}/stock/" >/dev/null 2>&1
@@ -1147,6 +1147,10 @@ run_build_rv_bg() {
 	
 	rm -r "$lock_dir" 2>/dev/null || :
 	rm "$log_file" 2>/dev/null || :
+
+	if [ $ret -ne 0 ]; then
+		touch "$TEMP_DIR/some_job_failed"
+	fi
 
 	return $ret
 }
