@@ -1,9 +1,14 @@
 Anger-of-Stick-5: latest  
 Hunter-Assassin: latest  
 CubeX-Solver: latest  
-Plants-vs-Zombies: latest  
 Climb: 6.0.0  
+Medium: 4.5.1302097  
+Plants-vs-Zombies: latest  
+YouTube-Morphe-Dev: 21.04.223  
 The-Battle-of-Polytopia: 2.17.2.16299  
+Super-Proxy: 3.2.2  
+Truecaller-bufferk: 26.10.6  
+YouTube-Music-Morphe-Dev: 9.15.51  
 Zombie-Catchers: latest  
 
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
@@ -12,14 +17,28 @@ Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and
 [revanced-magisk-module](https://github.com/j-hc/revanced-magisk-module)
   
 CLI: MorpheApp/morphe-desktop-1.11.0-all.jar  
-Patches: MiguelNinja19/patches-1.11.9.mpp  
-[Changelog](https://github.com/MiguelNinja19/miguel-morphe-patches/releases/tag/v1.11.9)
+Patches: bufferk/patches-1.7.1.mpp  
+[Changelog](https://github.com/bufferk/morphe-patches/releases/tag/v1.7.1)
+
+CLI: MorpheApp/morphe-desktop-1.11.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.11.0-all.jar  
+Patches: kiraio-moe/patches-1.4.0-dev.2.mpp  
+[Changelog](https://github.com/kiraio-moe/Lain-Patches/releases/tag/v1.4.0-dev.2)
+
+CLI: MorpheApp/morphe-desktop-1.11.0-all.jar  
+Patches: MiguelNinja19/patches-1.11.12.mpp  
+[Changelog](https://github.com/MiguelNinja19/miguel-morphe-patches/releases/tag/v1.11.12)
 
 CLI: MorpheApp/morphe-desktop-1.11.0-all.jar  
 CLI: MorpheApp/morphe-desktop-1.11.0-all.jar  
 CLI: MorpheApp/morphe-desktop-1.11.0-all.jar  
 CLI: MorpheApp/morphe-desktop-1.11.0-all.jar  
 CLI: MorpheApp/morphe-desktop-1.11.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.11.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.11.0-all.jar  
+Patches: MorpheApp/patches-1.36.0-dev.1.mpp  
+[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.36.0-dev.1)
+
 CLI: MorpheApp/morphe-desktop-1.11.0-all.jar    
 
 Skipped:  
@@ -35,11 +54,8 @@ Patches: binarymend/patches-1.3.1.mpp
 Patches: prathxmOp/patches-1.13.0.mpp  
 Patches: RookieEnough/patches-1.0.4.mpp  
 Patches: wchill/patches-1.4.0.mpp  
-Patches: bufferk/patches-1.6.11.mpp  
 Patches: jkennethcarino/patches-1.3.0-dev.9.mpp  
 Patches: RookieEnough/patches-1.0.4.mpp  
-Patches: kiraio-moe/patches-1.4.0-dev.1.mpp  
 Patches: Aunali321/patches-2.0.0.rvp  
 Patches: Paresh-Maheshwari/patches-1.19.0.mpp  
-Patches: MorpheApp/patches-1.35.0.mpp  
 Patches: MorpheApp/patches-1.35.0.mpp    
