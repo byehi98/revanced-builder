@@ -316,11 +316,10 @@ jobs:
             exit 0
           fi
           
-          BODY=$(cat final_report.md)
           if gh release view "$TAG" >/dev/null 2>&1; then
-            gh release edit "$TAG" --title "Release" --notes "$BODY"
+            gh release edit "$TAG" --title "Release" --notes-file final_report.md
           else
-            gh release create "$TAG" --title "Release" --notes "$BODY"
+            gh release create "$TAG" --title "Release" --notes-file final_report.md
           fi
           
           # Upload files in batches to avoid 'Argument list too long' error
