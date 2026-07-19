@@ -890,9 +890,6 @@ build_rv() {
 		return 1
 	fi
 	pr "Package name of '${table}' is '$pkg_name'"
-	mkdir -p "$TEMP_DIR/pkg_names"
-	echo "{\"$app_name_l\": \"$pkg_name\"}" > "$TEMP_DIR/pkg_names/${app_name_l}.json"
-
 	local list_patches
 	list_patches=$(patches_list "$cli_jar" "$patches_jar" "$pkg_name") || return 1
 	local get_latest_ver=false
