@@ -130,7 +130,10 @@ jobs:
           ' <<< "$__TOML__" > config_matrix.json
 
       - name: Build modules/APKs
-        run: ./build.sh config_matrix.json
+        run: |
+          ./build.sh config_matrix.json
+          mkdir -p build/pkg_names
+          cp temp/pkg_names/*.json build/pkg_names/ 2>/dev/null || true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: $GITHUB_REPOSITORY
@@ -251,6 +254,11 @@ jobs:
               cp -r "$dir"* release_files/ 2>/dev/null || true
             fi
           done
+          # Aggregate all package ID JSONs into one file
+          if ls release_files/pkg_names/*.json 1> /dev/null 2>&1; then
+            jq -s 'add' release_files/pkg_names/*.json > release_files/package_ids.json
+            rm -r release_files/pkg_names
+          fi
           if [ -f "all_artifacts/base-config/build.md" ]; then
             cp "all_artifacts/base-config/build.md" build.md
           fi

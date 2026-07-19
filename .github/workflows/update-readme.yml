@@ -46,9 +46,17 @@ jobs:
               release_data = json.loads(release_info)
               tag = release_data["tagName"]
               built_files = [a["name"] for a in release_data["assets"]]
+              
+              if "package_ids.json" in built_files:
+                  subprocess.check_call(["gh", "release", "download", tag, "-p", "package_ids.json", "--clobber"])
+                  with open("package_ids.json", "r") as pf:
+                      package_ids = json.load(pf)
+              else:
+                  package_ids = {}
           except Exception:
               tag = ""
               built_files = []
+              package_ids = {}
               
           repository = os.environ.get("GITHUB_REPOSITORY", "")
           
@@ -97,7 +105,20 @@ jobs:
               else:
                   app_display = app_name
               
-              obtainium_json = json.dumps({"url": f"https://github.com/{repository}", "name": app_name}, separators=(',', ':'))
+              dummy_id = package_ids.get(app_name_l, f"app.revanced.builder.{app_name_l}")
+              author = repository.split('/')[0] if '/' in repository else "Unknown"
+              additional_settings = json.dumps({
+                  "apkFilterRegEx": prefix,
+                  "autoApkFilterByArch": True
+              }, separators=(',', ':'))
+              
+              obtainium_json = json.dumps({
+                  "id": dummy_id,
+                  "url": f"https://github.com/{repository}",
+                  "author": author,
+                  "name": app_name,
+                  "additionalSettings": additional_settings
+              }, separators=(',', ':'))
               encoded_json = urllib.parse.quote(obtainium_json)
               obtainium_link = f"https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/{encoded_json}"
               obtainium_badge = f"[![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)]({obtainium_link})"
