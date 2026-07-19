@@ -177,6 +177,7 @@ jobs:
               success = len(matching_files) > 0
               status = "✅" if success else "❌"
               
+              obtainium_link = ""
               if success:
                   file_links = []
                   for f in matching_files:
@@ -189,10 +190,59 @@ jobs:
                           file_links.append(f"[File]({url})")
                   links_str = " ".join(file_links)
                   app_display = f"{app_name} ({links_str})"
+                  import urllib.parse
+                  import json as json_mod
+                  additionalSettings = {
+                      "includePrereleases": False,
+                      "fallbackToOlderReleases": True,
+                      "filterReleaseTitlesByRegEx": "",
+                      "filterReleaseNotesByRegEx": "",
+                      "verifyLatestTag": False,
+                      "sortMethodChoice": "date",
+                      "useLatestAssetDateAsReleaseDate": False,
+                      "releaseTitleAsVersion": False,
+                      "trackOnly": False,
+                      "versionExtractionRegEx": "",
+                      "matchGroupToUse": "",
+                      "versionDetection": False,
+                      "releaseDateAsVersion": False,
+                      "useVersionCodeAsOSVersion": False,
+                      "apkFilterRegEx": f"^{prefix}.*\\.apk$",
+                      "invertAPKFilter": False,
+                      "autoApkFilterByArch": True,
+                      "appName": app_name,
+                      "appAuthor": "",
+                      "shizukuPretendToBeGooglePlay": False,
+                      "allowInsecure": False,
+                      "exemptFromBackgroundUpdates": False,
+                      "skipUpdateNotifications": False,
+                      "about": "",
+                      "refreshBeforeDownload": False,
+                      "includeZips": False,
+                      "zippedApkFilterRegEx": "",
+                      "dontSortReleasesList": False,
+                      "github-creds": ""
+                  }
+                  
+                  obtainium_config = {
+                      "id": data.get("pkg-name") or data.get("apkeep-dlurl") or f"com.revanced.{app_name_l}",
+                      "url": f"https://github.com/{repository}",
+                      "author": repository.split('/')[0] if '/' in repository else "",
+                      "name": app_name,
+                      "preferredApkIndex": 0,
+                      "additionalSettings": json_mod.dumps(additionalSettings, separators=(',', ':')),
+                      "overrideSource": "GitHub"
+                  }
+                  
+                  obtainium_json = json_mod.dumps(obtainium_config, separators=(',', ':'))
+                  obtainium_uri = f"obtainium://app/{urllib.parse.quote(obtainium_json)}"
+                  redirect_url = f"https://apps.obtainium.imranr.dev/redirect?r={urllib.parse.quote(obtainium_uri)}"
+                  
+                  obtainium_link = f"[Obtainium]({redirect_url})"
               else:
                   app_display = app_name
               
-              print(f"| `{patches_source}` | {status} | `{table}` | {app_display} |")
+              print(f"| `{patches_source}` | {status} | `{table}` | {app_display} | {obtainium_link} |")
           EOF
           
           python3 generate_report.py "${{ matrix.patches_source }}" "$GITHUB_REPOSITORY" "${{ needs.prepare_matrix.outputs.next_ver_code }}" > job_report_rows.md
@@ -230,8 +280,8 @@ jobs:
         run: |
           echo "# Build Report" > final_report.md
           echo "### Apps Status" >> final_report.md
-          echo "| Patches Source | Status | Config | App |" >> final_report.md
-          echo "| :--- | :---: | :--- | :--- |" >> final_report.md
+          echo "| Patches Source | Status | Config | App | Obtainium |" >> final_report.md
+          echo "| :--- | :---: | :--- | :--- | :---: |" >> final_report.md
           for dir in all_artifacts/job-report-*/; do
             if [ -d "$dir" ] && [ -f "${dir}job_report_rows.md" ]; then
               cat "${dir}job_report_rows.md" >> final_report.md

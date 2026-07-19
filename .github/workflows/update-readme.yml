@@ -50,8 +50,8 @@ jobs:
               
           repository = os.environ.get("GITHUB_REPOSITORY", "")
           
-          print("| Patches Source | Status | Config | App |")
-          print("| :--- | :---: | :--- | :--- |")
+          print("| Patches Source | Status | Config | App | Obtainium |")
+          print("| :--- | :---: | :--- | :--- | :---: |")
           
           # Handle potential structure of toml_prep output
           # the output of toml_prep json can have values directly in config root or nested.
@@ -80,6 +80,7 @@ jobs:
               
               patches_source = data.get("patches-source") or data.get("patches-sources") or def_patch_src
               
+              obtainium_link = ""
               if success and tag:
                   file_links = []
                   for f in matching_files:
@@ -92,10 +93,60 @@ jobs:
                           file_links.append(f"[File]({url})")
                   links_str = " ".join(file_links)
                   app_display = f"{app_name} ({links_str})"
+                  
+                  import urllib.parse
+                  import json as json_mod
+                  additionalSettings = {
+                      "includePrereleases": False,
+                      "fallbackToOlderReleases": True,
+                      "filterReleaseTitlesByRegEx": "",
+                      "filterReleaseNotesByRegEx": "",
+                      "verifyLatestTag": False,
+                      "sortMethodChoice": "date",
+                      "useLatestAssetDateAsReleaseDate": False,
+                      "releaseTitleAsVersion": False,
+                      "trackOnly": False,
+                      "versionExtractionRegEx": "",
+                      "matchGroupToUse": "",
+                      "versionDetection": False,
+                      "releaseDateAsVersion": False,
+                      "useVersionCodeAsOSVersion": False,
+                      "apkFilterRegEx": f"^{prefix}.*\\.apk$",
+                      "invertAPKFilter": False,
+                      "autoApkFilterByArch": True,
+                      "appName": app_name,
+                      "appAuthor": "",
+                      "shizukuPretendToBeGooglePlay": False,
+                      "allowInsecure": False,
+                      "exemptFromBackgroundUpdates": False,
+                      "skipUpdateNotifications": False,
+                      "about": "",
+                      "refreshBeforeDownload": False,
+                      "includeZips": False,
+                      "zippedApkFilterRegEx": "",
+                      "dontSortReleasesList": False,
+                      "github-creds": ""
+                  }
+                  
+                  obtainium_config = {
+                      "id": data.get("pkg-name") or data.get("apkeep-dlurl") or f"com.revanced.{app_name_l}",
+                      "url": f"https://github.com/{repository}",
+                      "author": repository.split('/')[0] if '/' in repository else "",
+                      "name": app_name,
+                      "preferredApkIndex": 0,
+                      "additionalSettings": json_mod.dumps(additionalSettings, separators=(',', ':')),
+                      "overrideSource": "GitHub"
+                  }
+                  
+                  obtainium_json = json_mod.dumps(obtainium_config, separators=(',', ':'))
+                  obtainium_uri = f"obtainium://app/{urllib.parse.quote(obtainium_json)}"
+                  redirect_url = f"https://apps.obtainium.imranr.dev/redirect?r={urllib.parse.quote(obtainium_uri)}"
+                  
+                  obtainium_link = f"[Obtainium]({redirect_url})"
               else:
                   app_display = app_name
               
-              print(f"| `{patches_source}` | {status} | `{table}` | {app_display} |")
+              print(f"| `{patches_source}` | {status} | `{table}` | {app_display} | {obtainium_link} |")
           EOF
           
           python3 generate_table.py > table.md
