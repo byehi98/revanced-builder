@@ -562,7 +562,7 @@ apkeep-dlurl 		= "com.truecaller"
 # Single Target Repositories (Unique Sources)
 # ==============================================================================
 
-Aunali321/ReVancedExperiments
+# Aunali321/ReVancedExperiments
 [Telegram]
 patches-source  = "Aunali321/ReVancedExperiments"
 cli-source      = "ReVanced/revanced-cli"
