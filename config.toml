@@ -367,6 +367,13 @@ rv-brand        = "MiguelNinja19"
 version 		= "latest"
 apkeep-dlurl 	= "com.rubygames.assassin"
 
+[Oddmar]
+patches-source  = "MiguelNinja19/miguel-morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "MiguelNinja19"
+version 		= "latest"
+apkeep-dlurl 	= "com.mobge.Oddmar"
+
 [Plants-vs-Zombies]
 patches-source  = "MiguelNinja19/miguel-morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
@@ -480,6 +487,12 @@ cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "durgesh0505"
 apkeep-dlurl  	= "com.easybrain.arrow.puzzle.game"
 
+[JioTV]
+patches-source  	= "durgesh0505/chiggi_morphe_patches"
+cli-source      	= "MorpheApp/morphe-cli"
+rv-brand        	= "durgesh0505"
+uptodown-dlurl  	= "https://jiotv.en.uptodown.com/android"
+
 # ==============================================================================
 # arandomhooman/hoomans-morphe-patches
 # ==============================================================================
@@ -499,6 +512,12 @@ apkeep-dlurl  	= "com.dv.adm"
 # ==============================================================================
 # bufferk/morphe-patches
 # ==============================================================================
+
+[Brave]
+patches-source  = "bufferk/morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "bufferk"
+uptodown-dlurl	= "https://brave-software-brave.en.uptodown.com/android"
 
 [Medium]
 patches-source  = "bufferk/morphe-patches"
