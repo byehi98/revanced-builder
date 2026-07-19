@@ -1,4 +1,5 @@
 YouTube-Morphe-Dev: 21.04.223  
+Arrow-Puzzle: 1.7.0  
 YouTube-Music-Morphe-Dev: 9.15.51  
 Reddit-Morphe-Dev: 2026.14.0  
 
@@ -8,8 +9,12 @@ Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and
 [revanced-magisk-module](https://github.com/j-hc/revanced-magisk-module)
   
 CLI: MorpheApp/morphe-desktop-1.11.0-all.jar  
-Patches: MorpheApp/patches-1.36.0-dev.3.mpp  
-[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.36.0-dev.3)
+Patches: durgesh0505/patches-1.15.1.mpp  
+[Changelog](https://github.com/durgesh0505/chiggi_morphe_patches/releases/tag/v1.15.1)
+
+CLI: MorpheApp/morphe-desktop-1.11.0-all.jar  
+Patches: MorpheApp/patches-1.36.0-dev.4.mpp  
+[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.36.0-dev.4)
 
 CLI: MorpheApp/morphe-desktop-1.11.0-all.jar  
 CLI: MorpheApp/morphe-desktop-1.11.0-all.jar    
@@ -17,9 +22,9 @@ CLI: MorpheApp/morphe-desktop-1.11.0-all.jar
 Skipped:  
 Patches: rushiranpise/patches-1.13.1.mpp  
 Patches: hoo-dles/patches-1.39.0.mpp  
+Patches: RookieEnough/patches-1.0.4.mpp  
 Patches: arandomhooman/patches-1.43.0.mpp  
 Patches: MiguelNinja19/patches-1.12.1.mpp  
-Patches: durgesh0505/patches-1.15.0.mpp  
 Patches: kiraio-moe/patches-1.3.0.mpp  
 Patches: BholeyKaBhakt/patches-2.12.0.mpp  
 Patches: BholeyKaBhakt/patches-2.12.0.mpp  
@@ -31,7 +36,6 @@ Patches: RookieEnough/patches-1.0.4.mpp
 Patches: wchill/patches-1.4.0.mpp  
 Patches: jkennethcarino/patches-1.3.0-dev.11.mpp  
 Patches: MorpheApp/patches-1.35.0.mpp    
-Patches: RookieEnough/patches-1.0.4.mpp  
 Patches: kiraio-moe/patches-1.4.0-dev.2.mpp  
 Patches: Aunali321/patches-2.0.0.rvp  
 Patches: Paresh-Maheshwari/patches-1.19.0.mpp    
