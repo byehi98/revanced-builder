@@ -518,13 +518,6 @@ cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "durgesh0505"
 apkeep-dlurl  	= "com.easybrain.arrow.puzzle.game"
 
-[JioTV]
-pkg-name 			= "com.jio.media.jiotvplus"
-patches-source  	= "durgesh0505/chiggi_morphe_patches"
-cli-source      	= "MorpheApp/morphe-cli"
-rv-brand        	= "durgesh0505"
-uptodown-dlurl  	= "https://jiotv.en.uptodown.com/android"
-
 # ==============================================================================
 # arandomhooman/hoomans-morphe-patches
 # ==============================================================================
