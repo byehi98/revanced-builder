@@ -142,7 +142,8 @@ jobs:
                   obtainium_uri = f"obtainium://app/{urllib.parse.quote(obtainium_json)}"
                   redirect_url = f"https://apps.obtainium.imranr.dev/redirect?r={urllib.parse.quote(obtainium_uri)}"
                   
-                  obtainium_link = f"[Obtainium]({redirect_url})"
+                  obtainium_badge = "https://img.shields.io/badge/Obtainium-Add-blue?style=flat-square&logo=obtainium&logoColor=%23FFFFFF"
+                  obtainium_link = f"[![Obtainium]({obtainium_badge})]({redirect_url})"
               else:
                   app_display = app_name
               
