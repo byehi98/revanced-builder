@@ -1,0 +1,121 @@
+name: Update README Build Status
+
+on:
+  push:
+  workflow_run:
+    workflows: ["Matrix Build Modules"]
+    types:
+      - completed
+  workflow_dispatch:
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    permissions: write-all
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      
+      - name: Install tools
+        run: sudo apt-get install -y jq curl
+        
+      - name: Generate config.json
+        run: |
+          source utils.sh
+          set_prebuilts
+          toml_prep config.toml
+          echo "$__TOML__" > config.json
+
+      - name: Generate Build Status Table
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          cat << 'EOF' > generate_table.py
+          import json
+          import sys
+          import subprocess
+          import os
+          
+          with open("config.json", "r") as f:
+              config = json.load(f)
+              
+          try:
+              release_info = subprocess.check_output(["gh", "release", "view", "--json", "tagName,assets"]).decode("utf-8")
+              release_data = json.loads(release_info)
+              tag = release_data["tagName"]
+              built_files = [a["name"] for a in release_data["assets"]]
+          except Exception:
+              tag = ""
+              built_files = []
+              
+          repository = os.environ.get("GITHUB_REPOSITORY", "")
+          
+          print("| Patches Source | Status | Config | App |")
+          print("| :--- | :---: | :--- | :--- |")
+          
+          # Handle potential structure of toml_prep output
+          # the output of toml_prep json can have values directly in config root or nested.
+          def_patch_src = config.get("patches-source") or config.get("patches-sources") or "ReVanced/revanced-patches"
+          
+          for table, data in config.items():
+              if not isinstance(data, dict):
+                  continue
+              
+              enabled = data.get("enabled", True)
+              if enabled == False or enabled == "false":
+                  continue
+                  
+              app_name = data.get("app-name", table)
+              main_rv_brand = config.get("rv-brand", "ReVanced")
+              rv_brand = data.get("rv-brand", main_rv_brand)
+              
+              app_name_l = app_name.lower().replace(" ", "-")
+              rv_brand_f = rv_brand.lower().replace(" ", "-")
+              
+              prefix = f"{app_name_l}-{rv_brand_f}"
+              
+              matching_files = [f for f in built_files if f.startswith(prefix)]
+              success = len(matching_files) > 0
+              status = "✅" if success else "❌"
+              
+              patches_source = data.get("patches-source") or data.get("patches-sources") or def_patch_src
+              
+              if success and tag:
+                  file_links = []
+                  for f in matching_files:
+                      url = f"https://github.com/{repository}/releases/download/{tag}/{f}"
+                      if f.endswith(".apk"):
+                          file_links.append(f"[APK]({url})")
+                      elif f.endswith(".zip"):
+                          file_links.append(f"[Module]({url})")
+                      else:
+                          file_links.append(f"[File]({url})")
+                  links_str = " ".join(file_links)
+                  app_display = f"{app_name} ({links_str})"
+              else:
+                  app_display = app_name
+              
+              print(f"| `{patches_source}` | {status} | `{table}` | {app_display} |")
+          EOF
+          
+          python3 generate_table.py > table.md
+          
+          awk '
+          BEGIN { p = 1 }
+          /<!-- BUILD_STATUS_START -->/ { print; system("cat table.md"); p = 0 }
+          /<!-- BUILD_STATUS_END -->/ { p = 1 }
+          p { print }
+          ' README.md > README.md.tmp
+          mv README.md.tmp README.md
+          
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          if ! git diff --cached --quiet; then
+            git commit -m "docs: update build status table [skip ci]"
+            git push
+          else
+            echo "no changes to README.md"
+          fi
