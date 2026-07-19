@@ -25,7 +25,7 @@ This project is an extensive ReVanced builder that can create Magisk modules and
 2. **Configuration Parsing:** The script parses `config.toml` to determine build parameters (compression, parallel jobs, etc.).
 3. **Prebuilt Acquisition:** Fetches the latest (or specified) ReVanced CLI and patches JARs from GitHub or GitLab.
 4. **App Processing:** For each enabled app in `config.toml`:
-    - Finds the correct APK version (from APKMirror, Uptodown, APKPure, APKeep, archive, or direct).
+    - Finds the correct APK version (from APKMirror, Uptodown, APKPure, APKCombo, APKeep, archive, or direct).
     - Downloads the APK.
     - Applies patches using ReVanced CLI.
     - Packages the result as an APK or Magisk module.

@@ -5,7 +5,7 @@ CWD=$(pwd)
 TEMP_DIR="temp"
 BIN_DIR="bin"
 BUILD_DIR="build"
-DL_SRCS=("direct" "archive" "apkmirror" "uptodown" "apkpure" "apkeep")
+DL_SRCS=("direct" "archive" "apkmirror" "uptodown" "apkpure" "apkcombo" "apkeep")
 
 if [ "${GITHUB_TOKEN-}" ]; then GH_HEADER="Authorization: token ${GITHUB_TOKEN}"; else GH_HEADER=; fi
 if [ "${GL_TOKEN-}" ]; then GL_HEADER="PRIVATE-TOKEN: ${GL_TOKEN}"; else GL_HEADER=; fi
@@ -630,6 +630,53 @@ dl_uptodown() {
 	fi
 }
 get_uptodown_pkg_name() { $HTMLQ --text "tr.full:nth-child(1) > td:nth-child(3)" <<<"$__UPTODOWN_RESP_PKG__"; }
+
+# -------------------- apkcombo --------------------
+get_apkcombo_resp() {
+	local url="${1%/}"
+	url="${url%/versions}"
+	url="${url%/download}"
+	url="${url%/}"
+	__APKCOMBO_URL__="$url"
+	__APKCOMBO_RESP__=$(req "${__APKCOMBO_URL__}/versions/" -) || return 1
+}
+
+get_apkcombo_pkg_name() {
+	local p="${__APKCOMBO_URL__%/}"
+	echo "${p##*/}"
+}
+
+get_apkcombo_vers() {
+	$HTMLQ "ul.list-versions li a .vername" --text <<<"$__APKCOMBO_RESP__" | awk '{print $NF}'
+}
+
+dl_apkcombo() {
+	local url=$1 version=$2 output=$3 arch=$4 dpi=$5
+	local dl_page_path=""
+	dl_page_path=$($HTMLQ "ul.list-versions li a.ver-item" --attribute href <<<"$__APKCOMBO_RESP__" | grep -m1 "$version")
+	
+	if [ -z "$dl_page_path" ]; then
+		epr "ERROR: version $version not found in apkcombo"
+		return 1
+	fi
+	
+	local dl_page_resp
+	dl_page_resp=$(req "https://apkcombo.com${dl_page_path}" -) || return 1
+	
+	local dl_url=""
+	dl_url=$($HTMLQ "a.variant" --attribute href <<<"$dl_page_resp" | grep "r2?u=" | head -n 1)
+	
+	if [ -z "$dl_url" ]; then
+		epr "ERROR: Could not find direct download link on apkcombo download page"
+		return 1
+	fi
+	
+	if [[ "$dl_url" == /* ]]; then
+		dl_url="https://apkcombo.com${dl_url}"
+	fi
+	
+	req "$dl_url" "$output"
+}
 
 # -------------------- apkpure --------------------
 get_apkpure_resp() {

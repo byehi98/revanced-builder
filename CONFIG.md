@@ -6,6 +6,7 @@ Adding another revanced app is as easy as this:
 apkmirror-dlurl = "https://www.apkmirror.com/apk/inc/app"
 # or uptodown-dlurl = "https://app.en.uptodown.com/android"
 # or apkpure-dlurl = "https://apkpure.net/app-slug/package.name"
+# or apkcombo-dlurl = "https://apkcombo.com/app-slug/package.name"
 ```
 
 > [!WARNING]

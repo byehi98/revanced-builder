@@ -301,24 +301,30 @@ apkeep-dlurl 	  = "com.yatrirailways.yatri"
 # RookieEnough repositories (De-Vanced / De-ReVanced)
 # ==============================================================================
 
+[Adobe-Photoshop-Mix]
+patches-source  = "RookieEnough/De-ReVanced"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "RookieEnough"
+apkeep-dlurl  	= "com.adobe.photoshopmix"
+
 [Cricbuzz]
 patches-source  = "RookieEnough/De-ReVanced"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "RookieEnough"
 uptodown-dlurl  = "https://cricbuzz-cricket-scores-and-news.en.uptodown.com/android"
 
-# [Google-Photos]
-# patches-source  = "RookieEnough/De-ReVanced"
-# cli-source      = "MorpheApp/morphe-cli"
-# rv-brand        = "RookieEnough"
-# # patches-version = "dev"
-# apkeep-dlurl  	= "com.google.android.apps.photos"
+[Google-Photos]
+patches-source  = "RookieEnough/De-ReVanced"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "RookieEnough"
+# patches-version = "dev"
+apkeep-dlurl  	= "com.google.android.apps.photos"
 
-# [Google-News-RookieEnough]
-# patches-source  = "RookieEnough/De-ReVanced"
-# cli-source      = "MorpheApp/morphe-cli"
-# rv-brand        = "RookieEnough"
-# uptodown-dlurl = "https://google-play-newsstand.en.uptodown.com/android"
+[Google-News-RookieEnough]
+patches-source  = "RookieEnough/De-ReVanced"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "RookieEnough"
+uptodown-dlurl = "https://google-play-newsstand.en.uptodown.com/android"
 
 [Icon-Pack-Studio]
 patches-source  = "RookieEnough/De-ReVanced"
@@ -326,23 +332,23 @@ cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "RookieEnough"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/smart-launcher-team/icon-pack-studio/"
 
-# [Irplus]
-# patches-source  = "RookieEnough/De-Vanced"
-# cli-source      = "MorpheApp/morphe-cli"
-# rv-brand        = "RookieEnough"
-# apkeep-dlurl	= "net.binarymode.android.irplus"
+[Irplus]
+patches-source  = "RookieEnough/De-Vanced"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "RookieEnough"
+apkeep-dlurl	= "net.binarymode.android.irplus"
 
-# [Letterboxd]
-# patches-source  = "RookieEnough/De-Vanced"
-# cli-source      = "MorpheApp/morphe-cli"
-# rv-brand        = "RookieEnough"
-# apkeep-dlurl  	= "com.letterboxd.letterboxd"
+[Letterboxd]
+patches-source  = "RookieEnough/De-Vanced"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "RookieEnough"
+apkeep-dlurl  	= "com.letterboxd.letterboxd"
 
-# [Photomath]
-# patches-source  = "RookieEnough/De-ReVanced"
-# cli-source      = "MorpheApp/morphe-cli"
-# rv-brand        = "RookieEnough"
-# apkeep-dlurl	= "com.microblink.photomath"
+[Photomath]
+patches-source  = "RookieEnough/De-ReVanced"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "RookieEnough"
+apkeep-dlurl	= "com.microblink.photomath"
 
 [SoundCloud-RookieEnough]
 patches-source  = "RookieEnough/De-Vanced"
