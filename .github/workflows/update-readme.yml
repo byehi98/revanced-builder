@@ -1,7 +1,8 @@
 name: Update README Build Status
 
 on:
-  push:
+  release:
+    types: [published]
   workflow_run:
     workflows: ["Matrix Build Modules"]
     types:
@@ -35,6 +36,7 @@ jobs:
           import sys
           import subprocess
           import os
+          import urllib.parse
           
           with open("config.json", "r") as f:
               config = json.load(f)
@@ -50,8 +52,8 @@ jobs:
               
           repository = os.environ.get("GITHUB_REPOSITORY", "")
           
-          print("| Patches Source | Status | Config | App |")
-          print("| :--- | :---: | :--- | :--- |")
+          print("| Patches Source | Status | Config | App | Obtainium |")
+          print("| :--- | :---: | :--- | :--- | :---: |")
           
           # Handle potential structure of toml_prep output
           # the output of toml_prep json can have values directly in config root or nested.
@@ -95,7 +97,12 @@ jobs:
               else:
                   app_display = app_name
               
-              print(f"| `{patches_source}` | {status} | `{table}` | {app_display} |")
+              obtainium_json = json.dumps({"url": f"https://github.com/{repository}", "name": app_name}, separators=(',', ':'))
+              encoded_json = urllib.parse.quote(obtainium_json)
+              obtainium_link = f"https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/{encoded_json}"
+              obtainium_badge = f"[![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)]({obtainium_link})"
+              
+              print(f"| `{patches_source}` | {status} | `{table}` | {app_display} | {obtainium_badge} |")
           EOF
           
           python3 generate_table.py > table.md
