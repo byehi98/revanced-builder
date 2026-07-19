@@ -41,7 +41,6 @@ Get the [latest CI release](https://github.com/j-hc/revanced-magisk-module/relea
 | `kiraio-moe/Lain-Patches` | ❌ | `Hidden-Settings` | Hidden-Settings |
 | `MiguelNinja19/miguel-morphe-patches` | ❌ | `Hunter-Assassin` | Hunter-Assassin |
 | `RookieEnough/De-ReVanced` | ✅ | `Icon-Pack-Studio` | Icon-Pack-Studio ([APK](https://github.com/byehi98/revanced-builder/releases/download/106/icon-pack-studio-rookieenough-v2.2build016-all.apk)) |
-| `durgesh0505/chiggi_morphe_patches` | ❌ | `JioTV` | JioTV |
 | `rushiranpise/morphe-patches` | ❌ | `Killapps` | Killapps |
 | `wchill/patcheddit` | ✅ | `Lemmy-Sync` | Lemmy-Sync ([APK](https://github.com/byehi98/revanced-builder/releases/download/106/lemmy-sync-patcheddit-vlatest-all.apk)) |
 | `GitLab:Paresh-Maheshwari/paresh-patches` | ❌ | `Lumina` | Lumina |
