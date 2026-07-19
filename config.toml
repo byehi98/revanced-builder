@@ -374,7 +374,6 @@ version 			= "latest"
 apkeep-dlurl 		= "jpark.AOS5"
 
 [Climb]
-# pkg-name 			= "com.IvanAF.ClimbAMIYPfree"
 patches-source  	= "MiguelNinja19/miguel-morphe-patches"
 cli-source      	= "MorpheApp/morphe-cli"
 rv-brand        	= "MiguelNinja19"
@@ -410,7 +409,6 @@ version 		= "latest"
 apkeep-dlurl 	= "com.ea.game.pvzfree_row"
 
 [The-Battle-of-Polytopia]
-pkg-name 		= "air.com.midjiwan.polytopia"
 patches-source  = "MiguelNinja19/miguel-morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "MiguelNinja19"
@@ -564,9 +562,8 @@ apkeep-dlurl 		= "com.truecaller"
 # Single Target Repositories (Unique Sources)
 # ==============================================================================
 
-# Aunali321/ReVancedExperiments
+Aunali321/ReVancedExperiments
 [Telegram]
-pkg-name 		= "org.telegram.messenger"
 patches-source  = "Aunali321/ReVancedExperiments"
 cli-source      = "ReVanced/revanced-cli"
 rv-brand        = "Aunali321"
