@@ -208,7 +208,7 @@ jobs:
               print(f"| `{patches_source}` | {status} | `{table}` | {app_display} |")
               
           os.makedirs("build/pkg_names", exist_ok=True)
-          file_name = patches_source.replace('/', '_') + '.json'
+          file_name = re.sub(r'[^a-zA-Z0-9_-]', '_', patches_source) + '.json'
           with open(f"build/pkg_names/{file_name}", "w") as f:
               json.dump(package_ids, f)
           EOF
