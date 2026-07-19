@@ -319,10 +319,12 @@ jobs:
           BODY=$(cat final_report.md)
           if gh release view "$TAG" >/dev/null 2>&1; then
             gh release edit "$TAG" --title "Release" --notes "$BODY"
-            gh release upload "$TAG" release_files/* --clobber
           else
-            gh release create "$TAG" release_files/* --title "Release" --notes "$BODY"
+            gh release create "$TAG" --title "Release" --notes "$BODY"
           fi
+          
+          # Upload files in batches to avoid 'Argument list too long' error
+          find release_files -type f -print0 | xargs -0 -n 10 gh release upload "$TAG" --clobber
 
       - name: Update modules changelog and update json
         id: update_config
