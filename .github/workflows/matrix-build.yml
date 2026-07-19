@@ -98,11 +98,12 @@ jobs:
              echo "Using generated config.json"
           fi
 
-      - name: Install apkeep
+      - name: Install tools
         run: |
           curl -sL https://github.com/EFForg/apkeep/releases/latest/download/apkeep-x86_64-unknown-linux-gnu -o apkeep
           chmod +x apkeep
           sudo mv apkeep /usr/local/bin/apkeep
+          sudo apt-get install -y aapt
 
       - name: Prepare Matrix Config
         run: |
@@ -130,10 +131,7 @@ jobs:
           ' <<< "$__TOML__" > config_matrix.json
 
       - name: Build modules/APKs
-        run: |
-          ./build.sh config_matrix.json
-          mkdir -p build/pkg_names
-          cp temp/pkg_names/*.json build/pkg_names/ 2>/dev/null || true
+        run: ./build.sh config_matrix.json
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: $GITHUB_REPOSITORY
@@ -149,6 +147,8 @@ jobs:
           import json
           import os
           import sys
+          import subprocess
+          import re
           
           patches_source = sys.argv[1]
           repository = sys.argv[2]
@@ -158,6 +158,7 @@ jobs:
               config = json.load(f)
           
           built_files = os.listdir("build") if os.path.isdir("build") else []
+          package_ids = {}
           
           for table, data in config.items():
               if not isinstance(data, dict):
@@ -180,12 +181,21 @@ jobs:
               success = len(matching_files) > 0
               status = "✅" if success else "❌"
               
+              
               if success:
                   file_links = []
                   for f in matching_files:
                       url = f"https://github.com/{repository}/releases/download/{tag}/{f}"
                       if f.endswith(".apk"):
                           file_links.append(f"[APK]({url})")
+                          # extract package id
+                          try:
+                              out = subprocess.check_output(["aapt", "dump", "badging", os.path.join("build", f)]).decode("utf-8")
+                              m = re.search(r"package: name='([^']+)'", out)
+                              if m:
+                                  package_ids[app_name_l] = m.group(1)
+                          except Exception:
+                              pass
                       elif f.endswith(".zip"):
                           file_links.append(f"[Module]({url})")
                       else:
@@ -196,6 +206,10 @@ jobs:
                   app_display = app_name
               
               print(f"| `{patches_source}` | {status} | `{table}` | {app_display} |")
+              
+          os.makedirs("build/pkg_names", exist_ok=True)
+          with open(f"build/pkg_names/job_pkgs.json", "w") as f:
+              json.dump(package_ids, f)
           EOF
           
           python3 generate_report.py "${{ matrix.patches_source }}" "$GITHUB_REPOSITORY" "${{ needs.prepare_matrix.outputs.next_ver_code }}" > job_report_rows.md
