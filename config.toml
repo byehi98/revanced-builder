@@ -513,6 +513,7 @@ uptodown-dlurl = "https://com-scheler-superproxy.en.uptodown.com/android/downloa
 # ==============================================================================
 
 [Arrow-Puzzle]
+pkg-name 		= "com.easybrain.arrow.puzzle.game"
 patches-source  = "durgesh0505/chiggi_morphe_patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "durgesh0505"
