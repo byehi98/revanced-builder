@@ -24,6 +24,7 @@ apkeep-dlurl 		= "com.google.android.youtube"
 patches-source 	= "MorpheApp/morphe-patches"
 cli-source 		= "MorpheApp/morphe-cli"
 rv-brand		= "morphe"
+uptodown-dlurl  = "https://youtube-music.en.uptodown.com/android"
 apkeep-dlurl 	= "com.google.android.apps.youtube.music"
 
 [YouTube-Music-Morphe-Dev]
@@ -31,6 +32,7 @@ patches-source 		= "MorpheApp/morphe-patches"
 cli-source 			= "MorpheApp/morphe-cli"
 rv-brand 			= "morphe-dev"
 patches-version 	= "dev"
+uptodown-dlurl  = "https://youtube-music.en.uptodown.com/android"
 apkeep-dlurl 		= "com.google.android.apps.youtube.music"
 
 [Reddit-Morphe]
