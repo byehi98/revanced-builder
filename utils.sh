@@ -48,7 +48,7 @@ wpr() {
 }
 abort() {
 	epr "ABORT: ${1-}"
-	rm -rf ./${TEMP_DIR}/*tmp.* ./${TEMP_DIR}/*/*tmp.* ./${TEMP_DIR}/*-temporary-files ./*-temporary-files
+	rm -rf ./${TEMP_DIR}/*tmp.* ./${TEMP_DIR}/*/*tmp.* ./${TEMP_DIR}/*-temporary-files ./*-temporary-files ./${TEMP_DIR}/print_lock.dir
 	trap - SIGTERM SIGINT EXIT
 	kill -- -$$ 2>/dev/null
 	exit 1
@@ -891,10 +891,19 @@ patch_apk() {
 check_sig() {
 	local file=$1 pkg_name=$2
 	local sig
-	if grep -q "$pkg_name" sig.txt; then
-		sig=$(java -jar "$APKSIGNER" verify --print-certs "$file" | grep ^Signer | grep SHA-256 | tail -1 | awk '{print $NF}')
-		echo "$pkg_name signature: ${sig}"
-		grep -qFx "$sig $pkg_name" sig.txt
+	sig=$(java -jar "$APKSIGNER" verify --print-certs "$file" | grep ^Signer | grep SHA-256 | tail -1 | awk '{print $NF}')
+	
+	touch sig.txt
+	if grep -q " ${pkg_name}$" sig.txt; then
+		# Package is known, strictly verify
+		if ! grep -qFx "$sig $pkg_name" sig.txt; then
+			echo "Signature mismatch for $pkg_name! Expected signature from sig.txt, but got: $sig" >&2
+			return 1
+		fi
+	else
+		# Package is unknown, Trust On First Use (TOFU)
+		echo "$sig $pkg_name" >> sig.txt
+		echo "Trust On First Use: Automatically saved signature for $pkg_name to sig.txt" >&2
 	fi
 }
 
@@ -1004,6 +1013,7 @@ build_rv() {
 		for a in "${stock_apk}"-zip/*.apk; do
 			if ! sig_op=$(check_sig "$a" "$pkg_name" 2>&1); then
 				epr "Not building $table, apk signature mismatch '$a': $sig_op"
+				rm -rf "${stock_apk}.apkm" "${stock_apk}-zip"
 				return 1
 			fi
 		done
@@ -1011,6 +1021,7 @@ build_rv() {
 	else
 		if ! sig_op=$(check_sig "$stock_apk" "$pkg_name" 2>&1); then
 			epr "Not building $table, apk signature mismatch '$stock_apk': $sig_op"
+			rm -f "$stock_apk"
 			return 1
 		fi
 	fi

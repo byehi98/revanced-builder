@@ -1,4 +1,4 @@
-parallel-jobs = 5
+parallel-jobs = 4
 dpi = "nodpi anydpi"
 remove-rv-integrations-checks = false
 # see https://github.com/nvbangg/Patches-APK-Builder/blob/main/CONFIG.md for more detailed explanations
@@ -37,7 +37,7 @@ apkeep-dlurl 		= "com.google.android.apps.youtube.music"
 patches-source 	= "MorpheApp/morphe-patches"
 cli-source 		= "MorpheApp/morphe-cli"
 rv-brand		= "morphe"
-# uptodown-dlurl  = "https://reddit-official-app.en.uptodown.com/android"
+uptodown-dlurl  = "https://reddit-official-app.en.uptodown.com/android"
 apkeep-dlurl  	= "com.reddit.frontpage"
 
 [Reddit-Morphe-Dev]
@@ -45,7 +45,7 @@ patches-source 	= "MorpheApp/morphe-patches"
 cli-source 		= "MorpheApp/morphe-cli"
 rv-brand		= "morphe-dev"
 patches-version = "dev"
-# uptodown-dlurl  = "https://reddit-official-app.en.uptodown.com/android"
+uptodown-dlurl  = "https://reddit-official-app.en.uptodown.com/android"
 apkeep-dlurl  	= "com.reddit.frontpage"
 
 # ==============================================================================
@@ -117,6 +117,7 @@ apkeep-dlurl 	= "com.truecaller"
 patches-source  = "hoo-dles/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "hoo-dles"
+apkeep-dlurl 	= "com.adguard.android"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/adguard-software-limited/adguard/"
 
 [CamScanner-hoo-dles]
@@ -129,13 +130,13 @@ apkeep-dlurl 	= "com.intsig.camscanner"
 patches-source  = "hoo-dles/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "hoo-dles"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/proton-technologies-ag/protonvpn-free-vpn-secure-unlimited-fdroid-version/"
+uptodown-dlurl  = "https://protonvpn.en.uptodown.com/android"
 
 [Google-News-hoo-dles]
 patches-source  = "hoo-dles/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "hoo-dles"
-apkeep-dlurl 	= "com.google.android.apps.magazines"
+uptodown-dlurl 	= "https://google-play-newsstand.en.uptodown.com/android"
 
 [Solid-Explorer]
 patches-source  = "hoo-dles/morphe-patches"
@@ -169,6 +170,7 @@ apkeep-dlurl   	= "com.androholic.amoledpix"
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
+apkeep-dlurl 	= "com.adguard.android"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/adguard-software-limited/adguard/"
 
 [Accuweather]
@@ -324,7 +326,7 @@ apkeep-dlurl  	= "com.google.android.apps.photos"
 patches-source  = "RookieEnough/De-ReVanced"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "RookieEnough"
-uptodown-dlurl = "https://google-play-newsstand.en.uptodown.com/android"
+uptodown-dlurl 	= "https://google-play-newsstand.en.uptodown.com/android"
 
 [Icon-Pack-Studio]
 patches-source  = "RookieEnough/De-ReVanced"

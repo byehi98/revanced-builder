@@ -27,6 +27,7 @@ This project is an extensive ReVanced builder that can create Magisk modules and
 4. **App Processing:** For each enabled app in `config.toml`:
     - Finds the correct APK version (from APKMirror, Uptodown, APKPure, APKCombo, APKeep, archive, or direct).
     - Downloads the APK.
+    - Verifies the APK signature against `sig.txt`. If the package is missing from `sig.txt`, it employs Trust On First Use (TOFU) and automatically saves the signature for future verification. Unverified APKs are deleted and the build aborted.
     - Applies patches using ReVanced CLI.
     - Packages the result as an APK or Magisk module.
 
