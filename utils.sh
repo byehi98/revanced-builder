@@ -664,7 +664,7 @@ dl_apkcombo() {
 	dl_page_resp=$(req "https://apkcombo.com${dl_page_path}" -) || return 1
 	
 	local dl_url=""
-	dl_url=$($HTMLQ "a.variant" --attribute href <<<"$dl_page_resp" | grep "r2?u=" | head -n 1)
+	dl_url=$($HTMLQ "a.variant" --attribute href <<<"$dl_page_resp" | grep -E "(r2|d)\?u=" | head -n 1)
 	
 	if [ -z "$dl_url" ]; then
 		epr "ERROR: Could not find direct download link on apkcombo download page"
