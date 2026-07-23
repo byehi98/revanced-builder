@@ -638,7 +638,7 @@ get_apkcombo_resp() {
 	url="${url%/download}"
 	url="${url%/}"
 	__APKCOMBO_URL__="$url"
-	__APKCOMBO_RESP__=$(req "${__APKCOMBO_URL__}/versions/" -) || return 1
+	__APKCOMBO_RESP__=$(_req "${__APKCOMBO_URL__}/versions/" - -H "User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:108.0) Gecko/20100101 Firefox/108.0") || return 1
 }
 
 get_apkcombo_pkg_name() {
@@ -661,7 +661,7 @@ dl_apkcombo() {
 	fi
 	
 	local dl_page_resp
-	dl_page_resp=$(req "https://apkcombo.com${dl_page_path}" -) || return 1
+	dl_page_resp=$(_req "https://apkcombo.com${dl_page_path}" - -H "User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:108.0) Gecko/20100101 Firefox/108.0") || return 1
 	
 	local dl_url=""
 	dl_url=$($HTMLQ "a.variant" --attribute href <<<"$dl_page_resp" | grep -E "(r2|d)\?u=" | head -n 1)
@@ -675,7 +675,7 @@ dl_apkcombo() {
 		dl_url="https://apkcombo.com${dl_url}"
 	fi
 	
-	req "$dl_url" "$output"
+	_req "$dl_url" "$output" -H "User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:108.0) Gecko/20100101 Firefox/108.0"
 }
 
 # -------------------- apkpure --------------------
