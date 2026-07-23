@@ -638,7 +638,8 @@ get_apkcombo_resp() {
 	url="${url%/download}"
 	url="${url%/}"
 	__APKCOMBO_URL__="$url"
-	__APKCOMBO_RESP__=$(_req "${__APKCOMBO_URL__}/versions/" - -H "User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:108.0) Gecko/20100101 Firefox/108.0") || return 1
+	local tr_url="https://translate.google.com/website?sl=auto&tl=en&hl=en&client=webapp&u=${__APKCOMBO_URL__}/versions/"
+	__APKCOMBO_RESP__=$(_req "$tr_url" - -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64)") || return 1
 }
 
 get_apkcombo_pkg_name() {
@@ -654,14 +655,20 @@ dl_apkcombo() {
 	local url=$1 version=$2 output=$3 arch=$4 dpi=$5
 	local dl_page_path=""
 	dl_page_path=$($HTMLQ "ul.list-versions li a.ver-item" --attribute href <<<"$__APKCOMBO_RESP__" | grep -m1 "$version")
+	dl_page_path=$(echo "$dl_page_path" | sed 's/[?&]_x_tr.*//g' | sed 's/https:\/\/apkcombo-com.translate.goog//g')
 	
 	if [ -z "$dl_page_path" ]; then
 		epr "ERROR: version $version not found in apkcombo"
 		return 1
 	fi
 	
+	if [[ "$dl_page_path" != /* ]]; then
+		dl_page_path="/${dl_page_path}"
+	fi
+	
 	local dl_page_resp
-	dl_page_resp=$(_req "https://apkcombo.com${dl_page_path}" - -H "User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:108.0) Gecko/20100101 Firefox/108.0") || return 1
+	local tr_dl_url="https://translate.google.com/website?sl=auto&tl=en&hl=en&client=webapp&u=https://apkcombo.com${dl_page_path}"
+	dl_page_resp=$(_req "$tr_dl_url" - -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64)") || return 1
 	
 	local dl_url=""
 	dl_url=$($HTMLQ "a.variant" --attribute href <<<"$dl_page_resp" | grep -E "(r2|d)\?u=" | head -n 1)
@@ -671,11 +678,18 @@ dl_apkcombo() {
 		return 1
 	fi
 	
-	if [[ "$dl_url" == /* ]]; then
+	local direct_url=""
+	direct_url=$(echo "$dl_url" | grep -oP '(?<=\?u=)[^&]+' | base64 -d 2>/dev/null)
+	
+	if [[ "$direct_url" == http* ]]; then
+		dl_url="$direct_url"
+	elif [[ "$dl_url" == /* ]]; then
 		dl_url="https://apkcombo.com${dl_url}"
+	else
+		dl_url=$(echo "$dl_url" | sed 's/&_x_tr.*//g' | sed 's/apkcombo-com.translate.goog/apkcombo.com/g')
 	fi
 	
-	_req "$dl_url" "$output" -H "User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:108.0) Gecko/20100101 Firefox/108.0"
+	_req "$dl_url" "$output" -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
 }
 
 # -------------------- apkpure --------------------
