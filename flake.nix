@@ -11,7 +11,7 @@
       let
         pkgs = import nixpkgs { inherit system; };
 
-        # utils.sh defines: java() { env -i java "$@"; }
+        # utils.sh defines: java() { env -i PATH="$PATH" HOME="$HOME" java ...; }
         # GNU env -i replaces its own environ before execvp, so the
         # fallback search path (/usr/local/bin:/bin:/usr/bin) is used
         # instead of the nix-shell PATH. This wrapper preserves PATH
