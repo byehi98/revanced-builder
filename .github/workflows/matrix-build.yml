@@ -104,6 +104,7 @@ jobs:
           chmod +x apkeep
           sudo mv apkeep /usr/local/bin/apkeep
           sudo apt-get install -y aapt
+          pipx install gplaydl
 
       - name: Prepare Matrix Config
         run: |

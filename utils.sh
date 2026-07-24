@@ -5,7 +5,7 @@ CWD=$(pwd)
 TEMP_DIR="temp"
 BIN_DIR="bin"
 BUILD_DIR="build"
-DL_SRCS=("direct" "archive" "apkmirror" "uptodown" "apkpure" "apkcombo" "apkeep")
+DL_SRCS=("direct" "archive" "apkmirror" "uptodown" "apkpure" "apkcombo" "apkeep" "gplaydl")
 
 if [ "${GITHUB_TOKEN-}" ]; then GH_HEADER="Authorization: token ${GITHUB_TOKEN}"; else GH_HEADER=; fi
 if [ "${GL_TOKEN-}" ]; then GL_HEADER="PRIVATE-TOKEN: ${GL_TOKEN}"; else GL_HEADER=; fi
@@ -879,6 +879,70 @@ dl_apkeep() {
 get_apkeep_vers() { echo "latest"; }
 get_apkeep_pkg_name() { echo "$__APKEEP_PKG_NAME__"; }
 get_apkeep_resp() { __APKEEP_PKG_NAME__="$1"; }
+
+# -------------------- gplaydl --------------------
+dl_gplaydl() {
+	local pkg=$1 version=${2// /-} output=$3 arch=$4 _dpi=$5
+	
+	if ! command -v gplaydl >/dev/null 2>&1; then
+		if command -v pipx >/dev/null 2>&1; then
+			pr "Installing gplaydl via pipx..."
+			pipx install gplaydl || return 1
+		elif command -v pip >/dev/null 2>&1; then
+			pr "Installing gplaydl via pip..."
+			pip install --break-system-packages gplaydl || pip install gplaydl || return 1
+		else
+			epr "gplaydl is not installed and pip/pipx is not available."
+			return 1
+		fi
+	fi
+	
+	if [ -d "$HOME/.local/bin" ] && [[ ":$PATH:" != *":$HOME/.local/bin:"* ]]; then
+		export PATH="$HOME/.local/bin:$PATH"
+	fi
+	
+	local target_ver=""
+	if [ -n "$version" ] && [ "$version" != "latest" ] && [ "$version" != "auto" ]; then
+		if [[ "$version" =~ ^[0-9]+$ ]]; then
+			target_ver="-v $version"
+		else
+			wpr "gplaydl requires an integer versionCode (e.g. '12345'), but got versionName '$version'. Downloading latest instead."
+		fi
+	fi
+	
+	local target_arch=""
+	if [[ "$arch" == "armeabi-v7a" ]]; then
+		target_arch="-a armv7"
+	elif [[ "$arch" == "arm64-v8a" ]]; then
+		target_arch="-a arm64"
+	fi
+	
+	local out_dir="${TEMP_DIR}/${pkg}_gplaydl_$$_${RANDOM}"
+	rm -rf "$out_dir"
+	mkdir -p "$out_dir"
+	
+	pr "Running gplaydl for $pkg..."
+	if ! gplaydl download "$pkg" $target_ver $target_arch --no-splits --no-extras -o "$out_dir"; then
+		epr "gplaydl failed to download $pkg"
+		rm -rf "$out_dir"
+		return 1
+	fi
+	
+	local apk_file
+	apk_file=$(find "$out_dir" -maxdepth 1 -name "*.apk" | head -n 1)
+	if [ -n "$apk_file" ]; then
+		mv -f "$apk_file" "$output"
+		rm -rf "$out_dir"
+		return 0
+	else
+		epr "gplaydl did not output an APK for $pkg"
+		rm -rf "$out_dir"
+		return 1
+	fi
+}
+get_gplaydl_vers() { echo "latest"; }
+get_gplaydl_pkg_name() { echo "$__GPLAYDL_PKG_NAME__"; }
+get_gplaydl_resp() { __GPLAYDL_PKG_NAME__="$1"; }
 # --------------------------------------------------
 
 patch_apk() {

@@ -38,6 +38,7 @@
             findutils
             gnugrep
             apkeep
+            pipx
           ];
 
           shellHook = ''
