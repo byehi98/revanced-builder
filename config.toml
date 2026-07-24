@@ -159,6 +159,12 @@ apkeep-dlurl 	= "cn.wps.moffice_eng"
 # rushiranpise/morphe-patches
 # ==============================================================================
 
+[AccuBattery]
+patches-source  = "rushiranpise/morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "rushiranpise"
+apkeep-dlurl	= "com.digibites.accubattery"
+
 [Amoledpix]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
@@ -195,6 +201,12 @@ patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/cloudflare/1-1-1-1-faster-safer-internet/"
+
+[Charge-Meter]
+patches-source  = "rushiranpise/morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "rushiranpise"
+apkeep-dlurl	= "dev.km.android.chargemeter"
 
 [Dailyhunt]
 patches-source  = "rushiranpise/morphe-patches"
@@ -235,17 +247,41 @@ cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
 apkeep-dlurl	= "mega.privacy.android.app"
 
+[MobiOffice]
+patches-source  = "rushiranpise/morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "rushiranpise"
+apkeep-dlurl 	= "com.mobisystems.office"
+
 [MovieBox]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
 uptodown-dlurl = "https://com-community-oneroom.en.uptodown.com/android"
 
+[Network-Guru]
+patches-source  = "rushiranpise/morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "rushiranpise"
+apkeep-dlurl = "com.paget96.netspeedindicator"
+
 [NYT-Crossword]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
 apkeep-dlurl	= "com.nytimes.crossword"
+
+[Octi]
+patches-source  = "rushiranpise/morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "rushiranpise"
+apkeep-dlurl 	= "eu.darken.octi"
+
+[Opera-News]
+patches-source  = "rushiranpise/morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "rushiranpise"
+apkeep-dlurl	= "com.opera.app.news"
 
 [ProtonVPN-Rushiranpise]
 patches-source  = "rushiranpise/morphe-patches"
@@ -273,17 +309,35 @@ rv-brand        = "rushiranpise"
 # patches-version = "dev"
 uptodown-dlurl  = "https://psiphon-pro.en.uptodown.com/android"
 
+[qBitConnect]
+patches-source  = "rushiranpise/morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "rushiranpise"
+apkeep-dlurl	= "com.bluematter.qbitconnect"
+
 [RS-File-Manager]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
 apkeep-dlurl	= "com.rs.explorer.filemanager"
 
+[Send-Files-To-TV]
+patches-source  = "rushiranpise/morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "rushiranpise"
+apkeep-dlurl	= "com.yablio.sendfilestotv"
+
 [TeraBox]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
 apkeep-dlurl	= "com.dubox.drive"
+
+[Torrent-Search]
+patches-source  = "rushiranpise/morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "rushiranpise"
+apkeep-dlurl	= "torrent.search.revolutionv2"
 
 [Unimote]
 patches-source  = "rushiranpise/morphe-patches"
@@ -507,6 +561,12 @@ patches-source  = "durgesh0505/chiggi_morphe_patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "durgesh0505"
 apkeep-dlurl  	= "com.easybrain.arrow.puzzle.game"
+
+[Does-Not-Commute]
+patches-source  = "durgesh0505/chiggi_morphe_patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "durgesh0505"
+apkeep-dlurl  	= "com.mediocre.commute"
 
 # ==============================================================================
 # arandomhooman/hoomans-morphe-patches
