@@ -5,7 +5,7 @@ This project is an extensive ReVanced builder that can create Magisk modules and
 ## Tech Stack
 - **Primary Language:** Bash
 - **Environment Management:** Nix (`flake.nix`, `flake.lock`)
-- **Key Dependencies:** OpenJDK 17, `jq`, `zip`, `curl`/`wget`, `aapt2`, `apksigner`, `apkeep`
+- **Key Dependencies:** OpenJDK 21, `jq`, `zip`, `curl`/`wget`, `aapt2`, `apksigner`, `apkeep`
 - **Configuration:** TOML (`config.toml`)
 
 ## Project Structure

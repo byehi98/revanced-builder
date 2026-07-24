@@ -27,7 +27,7 @@
         devShells.default = pkgs.mkShell {
           packages = with pkgs; [
             envWrapper
-            jdk17
+            jdk21
             jq
             zip
             unzip
@@ -41,7 +41,7 @@
           ];
 
           shellHook = ''
-            export JAVA_HOME="${pkgs.jdk17}/lib/openjdk"
+            export JAVA_HOME="${pkgs.jdk21}/lib/openjdk"
           '';
         };
       });
