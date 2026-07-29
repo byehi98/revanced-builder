@@ -662,7 +662,7 @@ dl_uptodown() {
 	local is_bundle=false
 	local UA="User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
 	for i in {1..20}; do
-		resp=$(_cf_get "${uptodown_dlurl}/apps/${data_code}/versions/${i}")
+		resp=$(_req "${uptodown_dlurl}/apps/${data_code}/versions/${i}" - -H "$UA")
 		if ! op=$(jq -e -r ".data | map(select(.version == \"${version}\")) | .[0]" <<<"$resp"); then
 			continue
 		fi
@@ -676,7 +676,7 @@ dl_uptodown() {
 	local data_version files node_arch="" data_file_id node_class
 	data_version=$($HTMLQ '.button.variants' --attribute data-version <<<"$resp") || return 1
 	if [ "$data_version" ]; then
-		files=$(_cf_get "${uptodown_dlurl%/*}/app/${data_code}/version/${data_version}/files" | jq -e -r .content) || return 1
+		files=$(_req "${uptodown_dlurl%/*}/app/${data_code}/version/${data_version}/files" - -H "$UA" | jq -e -r .content) || return 1
 		for ((n = 1; n < 12; n += 1)); do
 			node_class=$($HTMLQ -w -t ".content > :nth-child($n)" --attribute class <<<"$files") || return 1
 			if [ "$node_class" != "variant" ]; then
