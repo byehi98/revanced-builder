@@ -635,7 +635,7 @@ get_apkmirror_vers() {
 get_apkmirror_pkg_name() { sed -n 's;.*id=\(.*\)" class="accent_color.*;\1;p' <<<"$__APKMIRROR_RESP__"; }
 get_apkmirror_resp() {
 	local url="${1%/}"
-	__APKMIRROR_RESP__=$(_cf_get "${url}") || return 1
+	__APKMIRROR_RESP__=$(_cf_get "${url}/") || return 1
 	__APKMIRROR_CAT__="${url##*/}"
 }
 
