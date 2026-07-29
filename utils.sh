@@ -372,14 +372,16 @@ _cf_get() {
 }
 
 req() {
+  local arg1="$1" arg2="$2"
+  shift 2
   if [ -n "${CF_COOKIES:-}" ] && [ -n "${CF_UA:-}" ]; then
-    _req "$1" "$2" -H "User-Agent: $CF_UA" -H "Cookie: $CF_COOKIES"
+    _req "$arg1" "$arg2" "$@" -H "User-Agent: $CF_UA" -H "Cookie: $CF_COOKIES"
   elif [ -n "${CF_COOKIES:-}" ]; then
-    _req "$1" "$2" -H "User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:108.0) Gecko/20100101 Firefox/108.0" -H "Cookie: $CF_COOKIES"
+    _req "$arg1" "$arg2" "$@" -H "User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:108.0) Gecko/20100101 Firefox/108.0" -H "Cookie: $CF_COOKIES"
   elif [ -n "${CF_UA:-}" ]; then
-    _req "$1" "$2" -H "User-Agent: $CF_UA"
+    _req "$arg1" "$arg2" "$@" -H "User-Agent: $CF_UA"
   else
-    _req "$1" "$2" -H "User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:108.0) Gecko/20100101 Firefox/108.0"
+    _req "$arg1" "$arg2" "$@" -H "User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:108.0) Gecko/20100101 Firefox/108.0"
   fi
 }
 gh_req() {
@@ -599,14 +601,15 @@ dl_apkmirror() {
 		if [ -z "$dlurl" ]; then return 1; fi
 		resp=$(_cf_get "$dlurl")
 	fi
-	url=$(echo "$resp" | $HTMLQ --base https://www.apkmirror.com --attribute href "a.btn") || return 1
-	url=$(_cf_get "$url" | $HTMLQ --base https://www.apkmirror.com --attribute href "span > a[rel = nofollow]") || return 1
+	local referer_url
+	referer_url=$(echo "$resp" | $HTMLQ --base https://www.apkmirror.com --attribute href "a.btn") || return 1
+	url=$(_cf_get "$referer_url" | $HTMLQ --base https://www.apkmirror.com --attribute href "span > a[rel = nofollow]") || return 1
 
 	if [ "$is_bundle" = true ]; then
-		req "$url" "${output}.apkm" || return 1
+		req "$url" "${output}.apkm" -e "$referer_url" || return 1
 		merge_splits "${output}.apkm" "${output}"
 	else
-		req "$url" "${output}" || return 1
+		req "$url" "${output}" -e "$referer_url" || return 1
 	fi
 }
 get_apkmirror_vers() {
