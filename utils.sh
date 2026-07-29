@@ -311,7 +311,77 @@ _req() {
 		mv -f "$dlp" "$op"
 	fi
 }
-req() { _req "$1" "$2" -H "User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:108.0) Gecko/20100101 Firefox/108.0"; }
+_cf_get() {
+	local url=$1
+	local attempt
+	local max_retries=3
+	
+	export CF_COOKIES=""
+	export CF_UA=""
+	
+	if [ "${GITHUB_ACTIONS:-false}" = "true" ]; then
+		# Try trawl on 8191
+		for attempt in $(seq 1 $max_retries); do
+			local response status html
+			response=$(curl -s -X POST "http://localhost:8191/scrape" \
+				-H 'Content-Type: application/json' \
+				-d "{\"url\":\"$url\",\"maxTimeout\":60000,\"skipHttp\":true}") || true
+			status=$(echo "$response" | jq -r '.statusCode // empty')
+			if [[ "$status" == "200" ]]; then
+				html=$(echo "$response" | jq -r '.html // empty')
+				if [[ -n "$html" && "$html" != *"Attention Required!"* && "$html" != *"Just a moment..."* && "$html" != *"Please Wait... | Cloudflare"* && "$html" != *"Verify you are human"* ]]; then
+					CF_COOKIES=$(echo "$response" | jq -r '[.cookies[] | .name + "=" + .value] | join("; ")')
+					CF_UA=$(echo "$response" | jq -r '.userAgent // empty')
+					export CF_COOKIES CF_UA
+					echo "$html"
+					return 0
+				fi
+			fi
+			sleep 5
+		done
+		
+		# Try cloudflarebypassforscraping on 8000
+		for attempt in $(seq 1 $max_retries); do
+			local response_file headers_file http_code
+			response_file=$(mktemp)
+			headers_file=$(mktemp)
+			http_code=$(curl -s -o "$response_file" -w '%{http_code}' \
+			    -D "$headers_file" \
+				-G --data-urlencode "url=$url"\
+				--max-time 30 \
+				"http://localhost:8000/html") || true
+			if [[ "$http_code" == "200" ]]; then
+				local html
+				html=$(cat "$response_file")
+				if [[ -n "$html" ]]; then
+					CF_COOKIES=$(grep -i '^x-cf-bypasser-cookies:' "$headers_file" 2>/dev/null | cut -d':' -f2- | xargs)
+					CF_UA=$(grep -i '^x-cf-bypasser-user-agent:' "$headers_file" 2>/dev/null | cut -d':' -f2- | xargs)
+					export CF_COOKIES CF_UA
+					echo "$html"
+					rm -f "$response_file" "$headers_file"
+					return 0
+				fi
+			fi
+			rm -f "$response_file" "$headers_file"
+			sleep 5
+		done
+	fi
+
+	# fallback
+	req "$url" -
+}
+
+req() {
+  if [ -n "${CF_COOKIES:-}" ] && [ -n "${CF_UA:-}" ]; then
+    _req "$1" "$2" -H "User-Agent: $CF_UA" -H "Cookie: $CF_COOKIES"
+  elif [ -n "${CF_COOKIES:-}" ]; then
+    _req "$1" "$2" -H "User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:108.0) Gecko/20100101 Firefox/108.0" -H "Cookie: $CF_COOKIES"
+  elif [ -n "${CF_UA:-}" ]; then
+    _req "$1" "$2" -H "User-Agent: $CF_UA"
+  else
+    _req "$1" "$2" -H "User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:108.0) Gecko/20100101 Firefox/108.0"
+  fi
+}
 gh_req() {
 	if [ "${GH_HEADER-}" ]; then
 		_req "$1" "$2" -H "$GH_HEADER"
@@ -558,15 +628,14 @@ get_apkmirror_vers() {
 get_apkmirror_pkg_name() { sed -n 's;.*id=\(.*\)" class="accent_color.*;\1;p' <<<"$__APKMIRROR_RESP__"; }
 get_apkmirror_resp() {
 	local url="${1%/}"
-	__APKMIRROR_RESP__=$(req "${url}" -) || return 1
+	__APKMIRROR_RESP__=$(_cf_get "${url}") || return 1
 	__APKMIRROR_CAT__="${url##*/}"
 }
 
 # -------------------- uptodown --------------------
 get_uptodown_resp() {
-	local UA="User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
-	__UPTODOWN_RESP__=$(_req "${1}/versions" - -H "$UA") || return 1
-	__UPTODOWN_RESP_PKG__=$(_req "${1}/download" - -H "$UA") || return 1
+	__UPTODOWN_RESP__=$(_cf_get "${1}/versions") || return 1
+	__UPTODOWN_RESP_PKG__=$(_cf_get "${1}/download") || return 1
 }
 get_uptodown_vers() { $HTMLQ --text ".version" <<<"$__UPTODOWN_RESP__" | awk '{$1=$1}1' | grep -E '^[0-9]' || :; }
 dl_uptodown() {
