@@ -568,8 +568,9 @@ get_apkmirror_resp() {
 
 # -------------------- uptodown --------------------
 get_uptodown_resp() {
-	__UPTODOWN_RESP__=$(req "${1}/versions" -) || return 1
-	__UPTODOWN_RESP_PKG__=$(req "${1}/download" -) || return 1
+	local UA="User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+	__UPTODOWN_RESP__=$(_req "${1}/versions" - -H "$UA") || return 1
+	__UPTODOWN_RESP_PKG__=$(_req "${1}/download" - -H "$UA") || return 1
 }
 get_uptodown_vers() { $HTMLQ --text ".version" <<<"$__UPTODOWN_RESP__" | awk '{$1=$1}1' | grep -E '^[0-9]' || :; }
 dl_uptodown() {
@@ -587,8 +588,9 @@ dl_uptodown() {
 	data_code=$($HTMLQ "#detail-app-name" --attribute data-code <<<"$__UPTODOWN_RESP__")
 	local versionURL=""
 	local is_bundle=false
+	local UA="User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
 	for i in {1..20}; do
-		resp=$(req "${uptodown_dlurl}/apps/${data_code}/versions/${i}" -)
+		resp=$(_req "${uptodown_dlurl}/apps/${data_code}/versions/${i}" - -H "$UA")
 		if ! op=$(jq -e -r ".data | map(select(.version == \"${version}\")) | .[0]" <<<"$resp"); then
 			continue
 		fi
@@ -597,12 +599,12 @@ dl_uptodown() {
 	done
 	if [ -z "$versionURL" ]; then return 1; fi
 	versionURL=$(jq -e -r '.url + "/" + .extraURL + "/" + (.versionID | tostring)' <<<"$versionURL")
-	resp=$(req "$versionURL" -) || return 1
+	resp=$(_req "$versionURL" - -H "$UA") || return 1
 
 	local data_version files node_arch="" data_file_id node_class
 	data_version=$($HTMLQ '.button.variants' --attribute data-version <<<"$resp") || return 1
 	if [ "$data_version" ]; then
-		files=$(req "${uptodown_dlurl%/*}/app/${data_code}/version/${data_version}/files" - | jq -e -r .content) || return 1
+		files=$(_req "${uptodown_dlurl%/*}/app/${data_code}/version/${data_version}/files" - -H "$UA" | jq -e -r .content) || return 1
 		for ((n = 1; n < 12; n += 1)); do
 			node_class=$($HTMLQ -w -t ".content > :nth-child($n)" --attribute class <<<"$files") || return 1
 			if [ "$node_class" != "variant" ]; then
@@ -615,7 +617,7 @@ dl_uptodown() {
 			file_type=$($HTMLQ -w -t ".content > :nth-child($n) > .v-file > span" <<<"$files") || return 1
 			if [ "$file_type" = "xapk" ]; then is_bundle=true; else is_bundle=false; fi
 			data_file_id=$($HTMLQ ".content > :nth-child($n) > .v-report" --attribute data-file-id <<<"$files") || return 1
-			resp=$(req "${uptodown_dlurl}/download/${data_file_id}-x" -)
+			resp=$(_req "${uptodown_dlurl}/download/${data_file_id}-x" - -H "$UA")
 			break
 		done
 		if [ $n -eq 12 ]; then return 1; fi
@@ -623,10 +625,10 @@ dl_uptodown() {
 	local data_url
 	data_url=$($HTMLQ "#detail-download-button" --attribute data-url <<<"$resp") || return 1
 	if [ $is_bundle = true ]; then
-		req "https://dw.uptodown.com/dwn/${data_url}" "$output.apkm" || return 1
+		_req "https://dw.uptodown.com/dwn/${data_url}" "$output.apkm" -H "$UA" || return 1
 		merge_splits "${output}.apkm" "${output}"
 	else
-		req "https://dw.uptodown.com/dwn/${data_url}" "$output"
+		_req "https://dw.uptodown.com/dwn/${data_url}" "$output" -H "$UA"
 	fi
 }
 get_uptodown_pkg_name() { $HTMLQ --text "tr.full:nth-child(1) > td:nth-child(3)" <<<"$__UPTODOWN_RESP_PKG__"; }
