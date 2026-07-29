@@ -585,7 +585,7 @@ dl_apkmirror() {
 		apkmname=$(echo "$apkmname" | tr -s '-')
 		url="${url}/${apkmname}-${version//./-}-release/"
 	fi
-	resp=$(req "$url" -) || return 1
+	resp=$(_cf_get "$url") || return 1
 	node=$($HTMLQ "div.table-row.headerFont:nth-last-child(1)" -r "span:nth-child(n+3)" <<<"$resp")
 	if [ "$node" ]; then
 		for type in APK BUNDLE; do
@@ -597,10 +597,10 @@ dl_apkmirror() {
 			fi
 		done
 		if [ -z "$dlurl" ]; then return 1; fi
-		resp=$(req "$dlurl" -)
+		resp=$(_cf_get "$dlurl")
 	fi
 	url=$(echo "$resp" | $HTMLQ --base https://www.apkmirror.com --attribute href "a.btn") || return 1
-	url=$(req "$url" - | $HTMLQ --base https://www.apkmirror.com --attribute href "span > a[rel = nofollow]") || return 1
+	url=$(_cf_get "$url" | $HTMLQ --base https://www.apkmirror.com --attribute href "span > a[rel = nofollow]") || return 1
 
 	if [ "$is_bundle" = true ]; then
 		req "$url" "${output}.apkm" || return 1
@@ -611,7 +611,7 @@ dl_apkmirror() {
 }
 get_apkmirror_vers() {
 	local vers apkm_resp
-	apkm_resp=$(req "https://www.apkmirror.com/uploads/?appcategory=${__APKMIRROR_CAT__}" -)
+	apkm_resp=$(_cf_get "https://www.apkmirror.com/uploads/?appcategory=${__APKMIRROR_CAT__}")
 	vers=$(sed -n 's;.*Version:</span><span class="infoSlide-value">\(.*\) </span>.*;\1;p' <<<"$apkm_resp" | awk '{$1=$1}1')
 	if [ "$__AAV__" = false ]; then
 		local IFS=$'\n'
@@ -655,7 +655,7 @@ dl_uptodown() {
 	local is_bundle=false
 	local UA="User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
 	for i in {1..20}; do
-		resp=$(_req "${uptodown_dlurl}/apps/${data_code}/versions/${i}" - -H "$UA")
+		resp=$(_cf_get "${uptodown_dlurl}/apps/${data_code}/versions/${i}")
 		if ! op=$(jq -e -r ".data | map(select(.version == \"${version}\")) | .[0]" <<<"$resp"); then
 			continue
 		fi
@@ -664,12 +664,12 @@ dl_uptodown() {
 	done
 	if [ -z "$versionURL" ]; then return 1; fi
 	versionURL=$(jq -e -r '.url + "/" + .extraURL + "/" + (.versionID | tostring)' <<<"$versionURL")
-	resp=$(_req "$versionURL" - -H "$UA") || return 1
+	resp=$(_cf_get "$versionURL") || return 1
 
 	local data_version files node_arch="" data_file_id node_class
 	data_version=$($HTMLQ '.button.variants' --attribute data-version <<<"$resp") || return 1
 	if [ "$data_version" ]; then
-		files=$(_req "${uptodown_dlurl%/*}/app/${data_code}/version/${data_version}/files" - -H "$UA" | jq -e -r .content) || return 1
+		files=$(_cf_get "${uptodown_dlurl%/*}/app/${data_code}/version/${data_version}/files" | jq -e -r .content) || return 1
 		for ((n = 1; n < 12; n += 1)); do
 			node_class=$($HTMLQ -w -t ".content > :nth-child($n)" --attribute class <<<"$files") || return 1
 			if [ "$node_class" != "variant" ]; then
@@ -682,7 +682,7 @@ dl_uptodown() {
 			file_type=$($HTMLQ -w -t ".content > :nth-child($n) > .v-file > span" <<<"$files") || return 1
 			if [ "$file_type" = "xapk" ]; then is_bundle=true; else is_bundle=false; fi
 			data_file_id=$($HTMLQ ".content > :nth-child($n) > .v-report" --attribute data-file-id <<<"$files") || return 1
-			resp=$(_req "${uptodown_dlurl}/download/${data_file_id}-x" - -H "$UA")
+			resp=$(_cf_get "${uptodown_dlurl}/download/${data_file_id}-x")
 			break
 		done
 		if [ $n -eq 12 ]; then return 1; fi
@@ -690,10 +690,10 @@ dl_uptodown() {
 	local data_url
 	data_url=$($HTMLQ "#detail-download-button" --attribute data-url <<<"$resp") || return 1
 	if [ $is_bundle = true ]; then
-		_req "https://dw.uptodown.com/dwn/${data_url}" "$output.apkm" -H "$UA" || return 1
+		req "https://dw.uptodown.com/dwn/${data_url}" "$output.apkm" || return 1
 		merge_splits "${output}.apkm" "${output}"
 	else
-		_req "https://dw.uptodown.com/dwn/${data_url}" "$output" -H "$UA"
+		req "https://dw.uptodown.com/dwn/${data_url}" "$output"
 	fi
 }
 get_uptodown_pkg_name() { $HTMLQ --text "tr.full:nth-child(1) > td:nth-child(3)" <<<"$__UPTODOWN_RESP_PKG__"; }

@@ -17,11 +17,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup NextDNS
-        run: |
-          sudo sed -i 's/#DNS=/DNS=45.90.28.0 45.90.30.0/' /etc/systemd/resolved.conf
-          sudo systemctl restart systemd-resolved
-      
+
       - name: Install tools
         run: sudo apt-get install -y jq curl
         
