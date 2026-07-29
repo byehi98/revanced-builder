@@ -641,8 +641,8 @@ get_apkmirror_resp() {
 
 # -------------------- uptodown --------------------
 get_uptodown_resp() {
-	__UPTODOWN_RESP__=$(_cf_get "${1}/versions") || return 1
-	__UPTODOWN_RESP_PKG__=$(_cf_get "${1}/download") || return 1
+	__UPTODOWN_RESP__=$(req "${1}/versions" -) || return 1
+	__UPTODOWN_RESP_PKG__=$(req "${1}/download" -) || return 1
 }
 get_uptodown_vers() { $HTMLQ --text ".version" <<<"$__UPTODOWN_RESP__" | awk '{$1=$1}1' | grep -E '^[0-9]' || :; }
 dl_uptodown() {
@@ -671,7 +671,7 @@ dl_uptodown() {
 	done
 	if [ -z "$versionURL" ]; then return 1; fi
 	versionURL=$(jq -e -r '.url + "/" + .extraURL + "/" + (.versionID | tostring)' <<<"$versionURL")
-	resp=$(_cf_get "$versionURL") || return 1
+	resp=$(_req "$versionURL" - -H "$UA") || return 1
 
 	local data_version files node_arch="" data_file_id node_class
 	data_version=$($HTMLQ '.button.variants' --attribute data-version <<<"$resp") || return 1
@@ -689,7 +689,7 @@ dl_uptodown() {
 			file_type=$($HTMLQ -w -t ".content > :nth-child($n) > .v-file > span" <<<"$files") || return 1
 			if [ "$file_type" = "xapk" ]; then is_bundle=true; else is_bundle=false; fi
 			data_file_id=$($HTMLQ ".content > :nth-child($n) > .v-report" --attribute data-file-id <<<"$files") || return 1
-			resp=$(_cf_get "${uptodown_dlurl}/download/${data_file_id}-x")
+			resp=$(_req "${uptodown_dlurl}/download/${data_file_id}-x" - -H "$UA")
 			break
 		done
 		if [ $n -eq 12 ]; then return 1; fi
