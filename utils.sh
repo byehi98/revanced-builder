@@ -311,11 +311,7 @@ _req() {
 		mv -f "$dlp" "$op"
 	fi
 }
-if [ "${GITHUB_ACTIONS-}" = "true" ]; then
-	req() { _req "$1" "$2" -H "User-Agent: APKUpdater-v3.0.3" -H "Accept: */*"; }
-else
-	req() { _req "$1" "$2" -H "User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:108.0) Gecko/20100101 Firefox/108.0"; }
-fi
+req() { _req "$1" "$2" -H "User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:108.0) Gecko/20100101 Firefox/108.0"; }
 gh_req() {
 	if [ "${GH_HEADER-}" ]; then
 		_req "$1" "$2" -H "$GH_HEADER"
