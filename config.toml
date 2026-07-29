@@ -545,13 +545,6 @@ cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "lain"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/yunus-ceyhan/hidden-settings-miui-hyperos/"
 
-[Super-Proxy]
-patches-source  = "kiraio-moe/Lain-Patches"
-cli-source      = "MorpheApp/morphe-cli"
-rv-brand        = "lain"
-patches-version = "dev"
-uptodown-dlurl = "https://com-scheler-superproxy.en.uptodown.com/android/download"
-
 # ==============================================================================
 # durgesh0505/chiggi_morphe_patches
 # ==============================================================================
