@@ -605,11 +605,15 @@ dl_apkmirror() {
 	referer_url=$(echo "$resp" | $HTMLQ --base https://www.apkmirror.com --attribute href "a.btn") || return 1
 	url=$(_cf_get "$referer_url" | $HTMLQ --base https://www.apkmirror.com --attribute href "span > a[rel = nofollow]") || return 1
 
+	local cookie_args=()
+	[ -n "${CF_COOKIES:-}" ] && cookie_args=(--header "Cookie: $CF_COOKIES")
+	local ua="${CF_UA:-Mozilla/5.0 (X11; Linux x86_64; rv:108.0) Gecko/20100101 Firefox/108.0}"
+
 	if [ "$is_bundle" = true ]; then
-		req "$url" "${output}.apkm" -e "$referer_url" || return 1
+		wget -nv -O "${output}.apkm" --header="User-Agent: $ua" --referer="$referer_url" "${cookie_args[@]}" --timeout=300 "$url" || return 1
 		merge_splits "${output}.apkm" "${output}"
 	else
-		req "$url" "${output}" -e "$referer_url" || return 1
+		wget -nv -O "${output}" --header="User-Agent: $ua" --referer="$referer_url" "${cookie_args[@]}" --timeout=300 "$url" || return 1
 	fi
 }
 get_apkmirror_vers() {
