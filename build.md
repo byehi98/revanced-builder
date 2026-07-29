@@ -4,8 +4,8 @@ Accuweather: 21.1.13-1-rc
 AdGuard-hoo-dles: 4.12.81  
 AdGuard-rushiranpise: 4.14.68  
 Advanced-Download-Manager: 14.0.39  
-Anger-of-Stick-5: latest  
 Amoledpix: 7.2  
+Anger-of-Stick-5: latest  
 Apkmirror-Installer: 2.0.3  
 AudioRelay: 0.26.1  
 Arrow-Puzzle: 1.7.0  
@@ -24,49 +24,49 @@ Cricbuzz: 6.24.01
 Cloudflare-Warp: 6.38.8  
 CubeX-Solver: latest  
 Dailyhunt: 34.0.4  
-Does-Not-Commute: 1.5.5  
 Document-Scanner: 6.8.18  
+Does-Not-Commute: 1.5.5  
 Eyecon: 4.2026.04.05.1300  
 Fing: 12.12.0  
 Freejobalert: 1.0.0  
 Google-News-RookieEnough: 5.108.0.644447823  
 Google-News-hoo-dles: 5.161.0.931240252  
 Greenify: 5.1.1  
+Hunter-Assassin: latest  
 Google-Photos: latest  
 Irplus: latest  
-Hunter-Assassin: latest  
-Icon-Pack-Studio: 2.2 build 016  
-Killapps: 1.57.9  
 Hidden-Settings: 7.34  
+Killapps: 1.57.9  
+Icon-Pack-Studio: 2.2 build 016  
 Lemmy-Sync: latest  
 Lumina: 1.0.2.3  
-M-Indicator: 18.0.356  
 Letterboxd: latest  
+M-Indicator: 18.0.356  
 MacroDroid: 5.62.11  
-Medium: 4.5.1302097  
 MX-Player-Pro: 1.93.4  
+Medium: 4.5.1302097  
 MovieBox: 3.0.16.0709.03  
-NZB360: 24.1  
 Mega: 16.10(261970902)(8daeddaf4d)  
+NZB360: 24.1  
 NYT-Crossword: 6.35.0  
 MobiOffice: 16.4.60095  
 Network-Guru: 1.9-beta5  
 Octi: 1.1.0-rc0  
 Oddmar: latest  
-Photomath: latest  
 Opera-News: 14.1.2254.83278  
+Photomath: latest  
 Plants-vs-Zombies: latest  
 Playit: 2.7.50.12  
 Pocket-Prep: 3.28.0  
 Poweramp: build-1025-bundle-play  
 ProtonVPN-Hoodles: 5.17.72.0  
 Psiphon: 479  
-RS-File-Manager: 2.3.0.4  
 ProtonVPN-Rushiranpise: 5.19.61.0  
+RS-File-Manager: 2.3.0.4  
 Reddit-Morphe: 2026.14.0  
 Reddit-Morphe-Dev: 2026.14.0  
-Reddit-Adobo: 2026.29.0  
 Send-Files-To-TV: 1.4.22  
+Reddit-Adobo: 2026.29.0  
 Solid-Explorer: 3.4.1  
 SoundCloud-RookieEnough: 2025.05.27-release  
 Telegram-Paresh: 12.9.1  
@@ -87,8 +87,8 @@ WPS-Office: 18.24
 YouTube-Music-Morphe: 9.15.51  
 YouTube-Music-Morphe-Dev: 9.15.51  
 Zombie-Catchers: latest  
-iLovePDF: 4.0.1  
 qBitConnect: 2.0.5  
+iLovePDF: 4.0.1  
 
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
