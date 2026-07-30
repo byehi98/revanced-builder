@@ -25,7 +25,7 @@ jobs:
             echo "SHOULD_BUILD=1" >> $GITHUB_OUTPUT
           else
             UPDATE_CFG=$(./build.sh config.toml --config-update)
-            if [ "$UPDATE_CFG" ]; then
+            if [[ "$UPDATE_CFG" != *"[-] No updates found"* ]] && [ -n "$UPDATE_CFG" ]; then
               echo "'$UPDATE_CFG'"
               echo "SHOULD_BUILD=1" >> $GITHUB_OUTPUT
             else

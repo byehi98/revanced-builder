@@ -13,6 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       matrix: ${{ steps.extract_matrix.outputs.matrix }}
+      has_matrix: ${{ steps.extract_matrix.outputs.has_matrix }}
       next_ver_code: ${{ steps.next_ver_code.outputs.NEXT_VER_CODE }}
     steps:
       - name: Checkout
@@ -24,36 +25,32 @@ jobs:
       - name: Install tools
         run: sudo apt-get install -y jq curl
 
-      - name: Update config
-        if: ${{ inputs.from_ci }}
-        run: |
-          if git checkout origin/update build.md; then
-            UPDATE_CFG=$(./build.sh config.toml --config-update)
-            if [ "$UPDATE_CFG" ]; then
-              echo "$UPDATE_CFG" > config.json
-            fi
-          fi
+
 
       - name: Extract Matrix
         id: extract_matrix
         run: |
           source utils.sh
           set_prebuilts
-          if [ -f config.json ]; then
-            toml_prep config.json
-          else
-            toml_prep config.toml
-          fi
+          toml_prep config.toml
+          
           DEF_PATCH_SRC=$(jq -r 'to_entries | map(select(.value | type != "object")) | from_entries | ."patches-source" // ."patches-sources" // "ReVanced/revanced-patches"' <<< "$__TOML__")
           MATRIX=$(jq -c --arg def "$DEF_PATCH_SRC" '[to_entries[] | select(.value | type == "object") | select(.value.enabled != "false" and .value.enabled != false) | .value."patches-source" // .value."patches-sources" // $def] | unique' <<< "$__TOML__")
-          echo "matrix=$MATRIX" >> "$GITHUB_OUTPUT"
+          
+          if [ "$MATRIX" == "[]" ] || [ -z "$MATRIX" ]; then
+             echo "has_matrix=false" >> "$GITHUB_OUTPUT"
+             echo "matrix=[]" >> "$GITHUB_OUTPUT"
+          else
+             echo "has_matrix=true" >> "$GITHUB_OUTPUT"
+             echo "matrix=$MATRIX" >> "$GITHUB_OUTPUT"
+          fi
 
       - name: Get next version code
         id: next_ver_code
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          TAG=$(gh release list -L 1 | awk -F '\t' '{print $3}')
+          TAG=$(gh release list -L 1 | awk -F '\t' '{print $3}' 2>/dev/null || echo "")
           if [ -z "$TAG" ]; then TAG=0; fi
           echo "NEXT_VER_CODE=$((TAG + 1))" >> $GITHUB_OUTPUT
 
@@ -62,13 +59,13 @@ jobs:
         with:
           name: base-config
           path: |
-            config.json
             config.toml
             build.md
           if-no-files-found: ignore
 
   build_matrix:
     needs: prepare_matrix
+    if: needs.prepare_matrix.outputs.has_matrix == 'true'
     permissions: write-all
     runs-on: ubuntu-latest
     strategy:
@@ -92,11 +89,7 @@ jobs:
         with:
           name: base-config
 
-      - name: Restore base config
-        run: |
-          if [ -f config.json ]; then
-             echo "Using generated config.json"
-          fi
+
 
       - name: Install tools
         run: |
@@ -110,11 +103,7 @@ jobs:
         run: |
           source utils.sh
           set_prebuilts
-          if [ -f config.json ]; then
-            toml_prep config.json
-          else
-            toml_prep config.toml
-          fi
+          toml_prep config.toml
           DEF_PATCH_SRC=$(jq -r 'to_entries | map(select(.value | type != "object")) | from_entries | ."patches-source" // ."patches-sources" // "ReVanced/revanced-patches"' <<< "$__TOML__")
           jq -c --arg ps "${{ matrix.patches_source }}" --arg def "$DEF_PATCH_SRC" '
             to_entries |
@@ -135,7 +124,7 @@ jobs:
         run: ./build.sh config_matrix.json
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITHUB_REPOSITORY: $GITHUB_REPOSITORY
+          GITHUB_REPOSITORY: ${{ github.repository }}
           NEXT_VER_CODE: ${{ needs.prepare_matrix.outputs.next_ver_code }}
           APK_KEEP_TOKEN: ${{ secrets.APK_KEEP_TOKEN }}
           APK_KEEP_EMAIL: ${{ secrets.APK_KEEP_EMAIL }}
@@ -214,7 +203,7 @@ jobs:
               json.dump(package_ids, f)
           EOF
 
-          python3 generate_report.py "${{ matrix.patches_source }}" "$GITHUB_REPOSITORY" "${{ needs.prepare_matrix.outputs.next_ver_code }}" > job_report_rows.md
+          python3 generate_report.py "${{ matrix.patches_source }}" "${{ github.repository }}" "${{ needs.prepare_matrix.outputs.next_ver_code }}" > job_report_rows.md
 
       - name: Upload matrix artifacts
         uses: actions/upload-artifact@v7
@@ -231,12 +220,12 @@ jobs:
 
   release:
     needs: [prepare_matrix, build_matrix]
-    if: always()
+    if: always() && needs.prepare_matrix.outputs.has_matrix == 'true'
     permissions: write-all
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v7
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
@@ -310,7 +299,7 @@ jobs:
             \"version\": \"$1\",
             \"versionCode\": ${{ needs.prepare_matrix.outputs.next_ver_code }},
             \"zipUrl\": \"$2\",
-            \"changelog\": \"https://raw.githubusercontent.com/$GITHUB_REPOSITORY/update/build.md\"
+            \"changelog\": \"https://raw.githubusercontent.com/${{ github.repository }}/update/build.md\"
           }"
           }
 
@@ -322,7 +311,7 @@ jobs:
             UPDATE_JSON="${UPDATE_JSON##*/}"
             VER=$(echo "$ZIP_S" | grep version=)
             VER="${VER##*=}"
-            DLURL="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/releases/download/${{ needs.prepare_matrix.outputs.next_ver_code }}/${OUTPUT}"
+            DLURL="${{ github.server_url }}/${{ github.repository }}/releases/download/${{ needs.prepare_matrix.outputs.next_ver_code }}/${OUTPUT}"
             get_update_json "$VER" "$DLURL" >"../$UPDATE_JSON"
           done
           cd ..
@@ -362,7 +351,7 @@ jobs:
           MODULES=""
           for OUTPUT in *; do
             [ -e "$OUTPUT" ] || continue
-            DL_URL="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/releases/download/${{ needs.prepare_matrix.outputs.next_ver_code }}/${OUTPUT}"
+            DL_URL="${{ github.server_url }}/${{ github.repository }}/releases/download/${{ needs.prepare_matrix.outputs.next_ver_code }}/${OUTPUT}"
             if [[ $OUTPUT = *.apk ]]; then
               APKS+="${NL}📦[${OUTPUT}](${DL_URL})"
             elif [[ $OUTPUT = *.zip ]]; then
