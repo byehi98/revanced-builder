@@ -143,6 +143,12 @@ cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "hoo-dles"
 apkeep-dlurl 	= "pl.solidexplorer2"
 
+[Showly]
+patches-source  = "hoo-dles/morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "hoo-dles"
+apkeep-dlurl 	= "com.michaldrabik.showly2"
+
 [Wallcraft]
 patches-source  = "hoo-dles/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
@@ -504,6 +510,12 @@ rv-brand        = "xtra"
 patches-version = "dev"
 apkeep-dlurl 	= "com.backdrops.wallpapers"
 
+[Speedtest]
+patches-source  = "BholeyKaBhakt/android-patches-xtra"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "xtra"
+apkeep-dlurl 	= "org.zwanoo.android.speedtest"
+
 # ==============================================================================
 # jkennethcarino/adobo
 # ==============================================================================
@@ -645,3 +657,19 @@ cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "Prathxm"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/chess-com/chess-play-learn/"
 uptodown-dlurl 	= "https://chess-play-and-learn.en.uptodown.com/android"
+
+# IMXEren/mix-patches
+[Trakt]
+patches-source  = "IMXEren/mix-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "IMXEren"
+# patches-version = "dev"
+apkeep-dlurl 	= "tv.trakt.trakt"
+
+# cesbar/zpatches
+[Solitaire]
+patches-source  = "cesbar/zpatches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "cesbar"
+# patches-version = "dev"
+apkeep-dlurl 	= "ee.dustland.android.solitaire"
