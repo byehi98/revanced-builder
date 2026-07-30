@@ -34,8 +34,7 @@ jobs:
           set_prebuilts
           toml_prep config.toml
           
-          DEF_PATCH_SRC=$(jq -r 'to_entries | map(select(.value | type != "object")) | from_entries | ."patches-source" // ."patches-sources" // "ReVanced/revanced-patches"' <<< "$__TOML__")
-          MATRIX=$(jq -c --arg def "$DEF_PATCH_SRC" '[to_entries[] | select(.value | type == "object") | select(.value.enabled != "false" and .value.enabled != false) | .value."patches-source" // .value."patches-sources" // $def] | unique' <<< "$__TOML__")
+          MATRIX=$(jq -c '[to_entries[] | select(.value | type == "object") | select(.value.enabled != "false" and .value.enabled != false) | .key] | unique' <<< "$__TOML__")
           
           if [ "$MATRIX" == "[]" ] || [ -z "$MATRIX" ]; then
              echo "has_matrix=false" >> "$GITHUB_OUTPUT"
@@ -71,7 +70,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        patches_source: ${{ fromJson(needs.prepare_matrix.outputs.matrix) }}
+        app_name: ${{ fromJson(needs.prepare_matrix.outputs.matrix) }}
     steps:
       - uses: actions/setup-java@v5
         with:
@@ -104,12 +103,11 @@ jobs:
           source utils.sh
           set_prebuilts
           toml_prep config.toml
-          DEF_PATCH_SRC=$(jq -r 'to_entries | map(select(.value | type != "object")) | from_entries | ."patches-source" // ."patches-sources" // "ReVanced/revanced-patches"' <<< "$__TOML__")
-          jq -c --arg ps "${{ matrix.patches_source }}" --arg def "$DEF_PATCH_SRC" '
+          jq -c --arg app "${{ matrix.app_name }}" '
             to_entries |
             map(
               if .value | type == "object" then
-                if ((.value."patches-source" // .value."patches-sources" // $def) == $ps) then
+                if (.key == $app) then
                   .
                 else
                   .value.enabled = false | .
@@ -140,7 +138,7 @@ jobs:
           import subprocess
           import re
 
-          patches_source = sys.argv[1]
+          app_key = sys.argv[1]
           repository = sys.argv[2]
           tag = sys.argv[3]
 
@@ -154,10 +152,14 @@ jobs:
               if not isinstance(data, dict):
                   continue
 
+              if table != app_key:
+                  continue
+
               enabled = data.get("enabled", True)
               if enabled == False or enabled == "false":
                   continue
 
+              patches_source = data.get("patches-source", data.get("patches-sources", config.get("patches-source", config.get("patches-sources", "ReVanced/revanced-patches"))))
               app_name = data.get("app-name", table)
               main_rv_brand = config.get("rv-brand", "ReVanced")
               rv_brand = data.get("rv-brand", main_rv_brand)
@@ -198,12 +200,12 @@ jobs:
               print(f"| `{patches_source}` | {status} | `{table}` | {app_display} |")
 
           os.makedirs("build/pkg_names", exist_ok=True)
-          file_name = re.sub(r'[^a-zA-Z0-9_-]', '_', patches_source) + '.json'
+          file_name = re.sub(r'[^a-zA-Z0-9_-]', '_', app_key) + '.json'
           with open(f"build/pkg_names/{file_name}", "w") as f:
               json.dump(package_ids, f)
           EOF
 
-          python3 generate_report.py "${{ matrix.patches_source }}" "${{ github.repository }}" "${{ needs.prepare_matrix.outputs.next_ver_code }}" > job_report_rows.md
+          python3 generate_report.py "${{ matrix.app_name }}" "${{ github.repository }}" "${{ needs.prepare_matrix.outputs.next_ver_code }}" > job_report_rows.md
 
       - name: Upload matrix artifacts
         uses: actions/upload-artifact@v7
