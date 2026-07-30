@@ -46,6 +46,7 @@ jobs:
           curl -sL https://github.com/EFForg/apkeep/releases/latest/download/apkeep-x86_64-unknown-linux-gnu -o apkeep
           chmod +x apkeep
           sudo mv apkeep /usr/local/bin/apkeep
+          sudo apt-get install -y aapt
           pipx install gplaydl
 
       - name: Update config
@@ -84,6 +85,56 @@ jobs:
           cat build.md >> "$GITHUB_OUTPUT"
           echo "${DELIM}" >> "$GITHUB_OUTPUT"
           cp -f build.md build.tmp
+      
+      - name: Generate package_ids.json
+        run: |
+          source utils.sh
+          if [ -f config.json ]; then
+            toml_prep config.json
+          else
+            toml_prep config.toml
+          fi
+          echo "$__TOML__" > config_full.json
+          
+          cat << 'EOF' > gen_pkg_ids.py
+          import json
+          import os
+          import subprocess
+          import re
+          
+          with open("config_full.json", "r") as f:
+              config = json.load(f)
+              
+          package_ids = {}
+          built_files = os.listdir("build")
+          
+          for table, data in config.items():
+              if not isinstance(data, dict):
+                  continue
+              app_name = data.get("app-name", table)
+              app_name_l = app_name.lower().replace(" ", "-")
+              
+              main_rv_brand = config.get("rv-brand", "ReVanced")
+              rv_brand = data.get("rv-brand", main_rv_brand)
+              rv_brand_f = rv_brand.lower().replace(" ", "-")
+              
+              prefix = f"{app_name_l}-{rv_brand_f}"
+              
+              for f in built_files:
+                  if f.startswith(prefix) and f.endswith(".apk"):
+                      try:
+                          out = subprocess.check_output(["aapt", "dump", "badging", os.path.join("build", f)]).decode("utf-8")
+                          m = re.search(r"package: name='([^']+)'", out)
+                          if m:
+                              package_ids[app_name_l] = m.group(1)
+                      except Exception:
+                          pass
+                      break
+                      
+          with open("build/package_ids.json", "w") as f:
+              json.dump(package_ids, f)
+          EOF
+          python3 gen_pkg_ids.py
       
       - name: Upload release
         env:

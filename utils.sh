@@ -303,7 +303,7 @@ _req() {
 			return
 		fi
 	fi
-	if ! curl -L -c "$TEMP_DIR/cookie.txt" -b "$TEMP_DIR/cookie.txt" --connect-timeout 10 --retry 3 --fail -s -S "$@" "$ip" -o "$dlp"; then
+	if ! curl -L -c "$TEMP_DIR/cookie.txt" -b "$TEMP_DIR/cookie.txt" --connect-timeout 15 --retry 5 --retry-all-errors --retry-delay 5 --fail -s -S "$@" "$ip" -o "$dlp"; then
 		epr "Request failed: $ip"
 		return 1
 	fi
@@ -641,8 +641,12 @@ get_apkmirror_resp() {
 
 # -------------------- uptodown --------------------
 get_uptodown_resp() {
-	__UPTODOWN_RESP__=$(req "${1}/versions" -) || return 1
-	__UPTODOWN_RESP_PKG__=$(req "${1}/download" -) || return 1
+	if [ "${GITHUB_ACTIONS:-false}" = "true" ]; then
+		sleep $((RANDOM % 15))
+	fi
+	local UA="User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+	__UPTODOWN_RESP__=$(_req "${1}/versions" - -H "$UA") || return 1
+	__UPTODOWN_RESP_PKG__=$(_req "${1}/download" - -H "$UA") || return 1
 }
 get_uptodown_vers() { $HTMLQ --text ".version" <<<"$__UPTODOWN_RESP__" | awk '{$1=$1}1' | grep -E '^[0-9]' || :; }
 dl_uptodown() {
@@ -662,6 +666,7 @@ dl_uptodown() {
 	local is_bundle=false
 	local UA="User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
 	for i in {1..20}; do
+		sleep 1
 		resp=$(_req "${uptodown_dlurl}/apps/${data_code}/versions/${i}" - -H "$UA")
 		if ! op=$(jq -e -r ".data | map(select(.version == \"${version}\")) | .[0]" <<<"$resp"); then
 			continue
@@ -697,10 +702,10 @@ dl_uptodown() {
 	local data_url
 	data_url=$($HTMLQ "#detail-download-button" --attribute data-url <<<"$resp") || return 1
 	if [ $is_bundle = true ]; then
-		req "https://dw.uptodown.com/dwn/${data_url}" "$output.apkm" || return 1
+		_req "https://dw.uptodown.com/dwn/${data_url}" "$output.apkm" -H "$UA" || return 1
 		merge_splits "${output}.apkm" "${output}"
 	else
-		req "https://dw.uptodown.com/dwn/${data_url}" "$output"
+		_req "https://dw.uptodown.com/dwn/${data_url}" "$output" -H "$UA" || return 1
 	fi
 }
 get_uptodown_pkg_name() { $HTMLQ --text "tr.full:nth-child(1) > td:nth-child(3)" <<<"$__UPTODOWN_RESP_PKG__"; }
@@ -1051,6 +1056,9 @@ check_sig() {
 }
 
 build_rv() {
+	if [ "${GITHUB_ACTIONS:-false}" = "true" ]; then
+		sleep $((RANDOM % 15))
+	fi
 	eval "declare -A args=${1#*=}"
 	local version="" pkg_name=""
 	local mode_arg=${args[build_mode]} version_mode=${args[version]}
