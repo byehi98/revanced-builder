@@ -320,6 +320,19 @@ _cf_get() {
 	export CF_UA=""
 	
 	if [ "${GITHUB_ACTIONS:-false}" = "true" ]; then
+		if [ -z "$(docker ps -q -f name=redis_service 2>/dev/null)" ]; then
+			wpr "Starting Cloudflare bypass containers on-demand..."
+			docker run -d --name redis_service -p 6379:6379 redis:alpine >/dev/null 2>&1 || true
+			docker run -d --name trawl_service -p 8191:8191 -e REDIS_URL=redis://host.docker.internal:6379 --add-host=host.docker.internal:host-gateway --shm-size=1gb ghcr.io/germondai/trawl:latest >/dev/null 2>&1 || true
+			docker run -d --name cloudflare_service -p 8000:8000 ghcr.io/sarperavci/cloudflarebypassforscraping:latest >/dev/null 2>&1 || true
+			local wait_time=0
+			while ! curl -s http://localhost:8000/ >/dev/null; do
+				sleep 2
+				wait_time=$((wait_time + 2))
+				if [ $wait_time -ge 30 ]; then break; fi
+			done
+		fi
+		
 		# Try trawl on 8191
 		for attempt in $(seq 1 $max_retries); do
 			local response status html
