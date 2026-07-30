@@ -89,6 +89,7 @@ jobs:
       - name: Generate package_ids.json
         run: |
           source utils.sh
+          set_prebuilts
           if [ -f config.json ]; then
             toml_prep config.json
           else
