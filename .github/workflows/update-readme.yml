@@ -4,7 +4,7 @@ on:
   release:
     types: [published]
   workflow_run:
-    workflows: ["Matrix Build Modules"]
+    workflows: ["Matrix Build Modules", "CI", "Build Modules"]
     types:
       - completed
   workflow_dispatch:
