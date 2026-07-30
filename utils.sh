@@ -914,14 +914,38 @@ dl_apkeep() {
 	pr "Running apkeep for $pkg..."
 	if [ -z "$email" ] || [ -z "$token" ]; then
 		wpr "Note: building without credentials"
-		if ! "$apkeep_bin" -a "${pkg}${target_ver}" "$out_dir"; then
-			epr "apkeep failed to download $pkg"
+		local max_retries=3
+		local retry_count=0
+		local success=false
+		while [ $retry_count -lt $max_retries ]; do
+			if "$apkeep_bin" -a "${pkg}${target_ver}" "$out_dir"; then
+				success=true
+				break
+			fi
+			wpr "apkeep failed to download $pkg, retrying in 20 seconds... ($((retry_count + 1))/$max_retries)"
+			sleep 20
+			retry_count=$((retry_count + 1))
+		done
+		if [ "$success" = false ]; then
+			epr "apkeep failed to download $pkg after $max_retries attempts"
 			rm -rf "$out_dir" "$lock_file"
 			return 1
 		fi
 	else
-		if ! "$apkeep_bin" -a "${pkg}${target_ver}" -d google-play -e "$email" -t "$token" -o split_apk=true "$out_dir"; then
-			epr "apkeep failed to download $pkg"
+		local max_retries=3
+		local retry_count=0
+		local success=false
+		while [ $retry_count -lt $max_retries ]; do
+			if "$apkeep_bin" -a "${pkg}${target_ver}" -d google-play -e "$email" -t "$token" -o split_apk=true "$out_dir"; then
+				success=true
+				break
+			fi
+			wpr "apkeep failed to download $pkg with credentials, retrying in 20 seconds... ($((retry_count + 1))/$max_retries)"
+			sleep 20
+			retry_count=$((retry_count + 1))
+		done
+		if [ "$success" = false ]; then
+			epr "apkeep failed to download $pkg after $max_retries attempts"
 			rm -rf "$out_dir" "$lock_file"
 			return 1
 		fi
