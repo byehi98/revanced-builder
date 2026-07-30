@@ -218,7 +218,7 @@ config_update() {
 				upped+=("$table_name")
 				prcfg=true
 			else
-				if ! grep -q "^${table_name}:" build.md; then
+				if ! grep -q "^${table_name}:" build.md || { [ -f README.md ] && grep -q " ❌ | \`${table_name}\`" README.md; }; then
 					upped+=("$table_name")
 					prcfg=true
 				fi
@@ -276,7 +276,7 @@ config_update() {
 					prcfg=true
 					upped+=("$table_name")
 				else
-					if ! grep -q "^${table_name}:" build.md; then
+					if ! grep -q "^${table_name}:" build.md || { [ -f README.md ] && grep -q " ❌ | \`${table_name}\`" README.md; }; then
 						prcfg=true
 						upped+=("$table_name")
 					fi
