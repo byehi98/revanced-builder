@@ -214,7 +214,15 @@ config_update() {
 		PATCHES_SRC=$(toml_get "$t" patches-sources) || PATCHES_SRC=$(toml_get "$t" patches-source) || PATCHES_SRC=$DEF_PATCHES_SRC
 		PATCHES_VER=$(toml_get "$t" patches-version) || PATCHES_VER=$DEF_PATCHES_VER
 		if [[ -v sources["$PATCHES_SRC/$PATCHES_VER"] ]]; then
-			if [ "${sources["$PATCHES_SRC/$PATCHES_VER"]}" = 1 ]; then upped+=("$table_name"); fi
+			if [ "${sources["$PATCHES_SRC/$PATCHES_VER"]}" = 1 ]; then
+				upped+=("$table_name")
+				prcfg=true
+			else
+				if ! grep -q "^${table_name}:" build.md; then
+					upped+=("$table_name")
+					prcfg=true
+				fi
+			fi
 		else
 			sources["$PATCHES_SRC/$PATCHES_VER"]=0
 			local rv_rel
@@ -268,6 +276,10 @@ config_update() {
 					prcfg=true
 					upped+=("$table_name")
 				else
+					if ! grep -q "^${table_name}:" build.md; then
+						prcfg=true
+						upped+=("$table_name")
+					fi
 					echo "$OP" >>"$TEMP_DIR"/skipped
 				fi
 			fi
@@ -1221,7 +1233,6 @@ build_rv() {
 			return 1
 		fi
 	fi
-	log "${table}: ${version}"
 
 	local microg_patch
 	microg_patch=$(grep "^Name: " <<<"$list_patches" | grep -i "gmscore\|microg" || :) microg_patch=${microg_patch#*: }
@@ -1354,6 +1365,7 @@ build_rv() {
 		popd >/dev/null || :
 		pr "Built ${table} (root): '${BUILD_DIR}/${module_output}'"
 	done
+	log "${table}: ${version}"
 }
 
 list_args() { tr -d '\t\r' <<<"$1" | tr -s ' ' | sed 's/" "/"\n"/g' | sed 's/\([^"]\)"\([^"]\)/\1'\''\2/g' | grep -v '^$' || :; }
