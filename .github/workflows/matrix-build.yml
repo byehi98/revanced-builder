@@ -73,7 +73,6 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
-      max-parallel: 3
       matrix:
         patches_source: ${{ fromJson(needs.prepare_matrix.outputs.matrix) }}
     steps:
@@ -92,7 +91,7 @@ jobs:
         uses: actions/download-artifact@v8
         with:
           name: base-config
-          
+
       - name: Restore base config
         run: |
           if [ -f config.json ]; then
@@ -151,39 +150,39 @@ jobs:
           import sys
           import subprocess
           import re
-          
+
           patches_source = sys.argv[1]
           repository = sys.argv[2]
           tag = sys.argv[3]
-          
+
           with open("config_matrix.json", "r") as f:
               config = json.load(f)
-          
+
           built_files = os.listdir("build") if os.path.isdir("build") else []
           package_ids = {}
-          
+
           for table, data in config.items():
               if not isinstance(data, dict):
                   continue
-              
+
               enabled = data.get("enabled", True)
               if enabled == False or enabled == "false":
                   continue
-                  
+
               app_name = data.get("app-name", table)
               main_rv_brand = config.get("rv-brand", "ReVanced")
               rv_brand = data.get("rv-brand", main_rv_brand)
-              
+
               app_name_l = app_name.lower().replace(" ", "-")
               rv_brand_f = rv_brand.lower().replace(" ", "-")
-              
+
               prefix = f"{app_name_l}-{rv_brand_f}"
-              
+
               matching_files = [f for f in built_files if f.startswith(prefix)]
               success = len(matching_files) > 0
               status = "✅" if success else "❌"
-              
-              
+
+
               if success:
                   file_links = []
                   for f in matching_files:
@@ -206,17 +205,17 @@ jobs:
                   app_display = f"{app_name} ({links_str})"
               else:
                   app_display = app_name
-              
+
               print(f"| `{patches_source}` | {status} | `{table}` | {app_display} |")
-              
+
           os.makedirs("build/pkg_names", exist_ok=True)
           file_name = re.sub(r'[^a-zA-Z0-9_-]', '_', patches_source) + '.json'
           with open(f"build/pkg_names/{file_name}", "w") as f:
               json.dump(package_ids, f)
           EOF
-          
+
           python3 generate_report.py "${{ matrix.patches_source }}" "$GITHUB_REPOSITORY" "${{ needs.prepare_matrix.outputs.next_ver_code }}" > job_report_rows.md
-          
+
       - name: Upload matrix artifacts
         uses: actions/upload-artifact@v7
         with:
@@ -289,7 +288,7 @@ jobs:
             echo "No files to release!"
             exit 0
           fi
-          
+
           BODY=$(cat final_report.md)
           if gh release view "$TAG" >/dev/null 2>&1; then
             gh release edit "$TAG" --title "Release" --notes "$BODY"
@@ -305,7 +304,7 @@ jobs:
             exit 0
           fi
           git checkout -f update || git switch --discard-changes --orphan update
-          
+
           get_update_json() {
             echo "{
             \"version\": \"$1\",
@@ -337,9 +336,9 @@ jobs:
           fi
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-      
+
           git add build.md *-update.json
-      
+
           if ! git diff --cached --quiet; then
             git commit -m "Bump version ${{ needs.prepare_matrix.outputs.next_ver_code }}"
             git push origin HEAD:update
