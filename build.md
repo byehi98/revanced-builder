@@ -1,6 +1,11 @@
-Smashit: 1.5.14  
-Freejobalert: 1.0.0  
-Truecloud: 4.6.5.13  
+CubeX-Solver: latest  
+Anger-of-Stick-5: latest  
+Hunter-Assassin: latest  
+Oddmar: latest  
+Plants-vs-Zombies: latest  
+Zombie-Catchers: latest  
+Climb: 6.0.0  
+The-Battle-of-Polytopia: 2.17.2.16299  
 
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
@@ -8,9 +13,14 @@ Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and
 [revanced-magisk-module](https://github.com/j-hc/revanced-magisk-module)
   
 CLI: MorpheApp/morphe-desktop-1.12.0-all.jar  
-Patches: byehi98/patches-1.2.0.mpp  
-[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.2.0)
+Patches: MiguelNinja19/patches-1.13.5.mpp  
+[Changelog](https://github.com/MiguelNinja19/miguel-morphe-patches/releases/tag/v1.13.5)
 
+CLI: MorpheApp/morphe-desktop-1.12.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.12.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.12.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.12.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.12.0-all.jar  
 CLI: MorpheApp/morphe-desktop-1.12.0-all.jar  
 CLI: MorpheApp/morphe-desktop-1.12.0-all.jar    
 
@@ -26,8 +36,6 @@ Patches: RookieEnough/patches-1.0.4.mpp
 Advanced-Download-Manager: 14.0.39  
 Patches: arandomhooman/patches-1.43.4.mpp  
 Amoledpix: 7.2  
-Anger-of-Stick-5: latest  
-Patches: MiguelNinja19/patches-1.13.4.mpp  
 Apkmirror-Installer: 2.0.3  
 Arrow-Puzzle: 1.7.0  
 Patches: durgesh0505/patches-1.18.0.mpp  
@@ -51,22 +59,21 @@ Camera: 5.4.0
 Charge-Meter: 2.9.7  
 Chess-com: 4.10.0  
 Patches: prathxmOp/patches-1.13.0.mpp  
-Climb: 6.0.0  
 Cloudflare-Warp: 6.38.8  
 Cricbuzz: 6.24.01  
-CubeX-Solver: latest  
 Dailyhunt: 34.0.4  
 Document-Scanner: 6.8.18  
 Does-Not-Commute: 1.5.5  
 Eyecon: 4.2026.04.05.1300  
 Fing: 12.12.0  
 FolderSync: 4.9.3  
+Freejobalert: 1.0.0  
+Patches: byehi98/patches-1.2.0.mpp  
 Google-News-RookieEnough: 5.108.0.644447823  
 Google-News-hoo-dles: 5.161.0.931240252  
 Google-Photos: latest  
 Greenify: 5.1.1  
 Hidden-Settings: 7.34  
-Hunter-Assassin: latest  
 Icon-Pack-Studio: 2.2 build 016  
 Irplus: latest  
 Patches: RookieEnough/patches-1.0.4.mpp  
@@ -88,11 +95,9 @@ NYT-Crossword: 6.35.0
 NZB360: 24.1  
 Network-Guru: 1.9-beta5  
 Octi: 1.1.0-rc0  
-Oddmar: latest  
 Opera-News: 14.1.2254.83278  
 Parallel-Space-Pro: 4.0.9123  
 Photomath: latest  
-Plants-vs-Zombies: latest  
 Playit: 2.7.50.12  
 Pocket-Prep: 3.28.0  
 Poweramp: build-1025-bundle-play  
@@ -108,6 +113,7 @@ Reddit-Morphe-Dev: 2026.14.0
 Patches: MorpheApp/patches-1.38.0-dev.3.mpp  
 Send-Files-To-TV: 1.4.22  
 Showly: 3.70.0  
+Smashit: 1.5.14  
 Solid-Explorer: 3.4.1  
 Solitaire: 1.20.3  
 SoundCloud-RookieEnough: 2025.05.27-release  
@@ -117,7 +123,6 @@ Telegram: 12.9.1
 Patches: Aunali321/patches-2.0.0.rvp  
 Telegram-Paresh: 12.9.1  
 TeraBox: 4.20.1  
-The-Battle-of-Polytopia: 2.17.2.16299  
 Torrent-Search: 2.3.3  
 Trakt: 3.13.0  
 Patches: IMXEren/patches-1.4.1.mpp  
@@ -132,6 +137,5 @@ YouTube-Morphe: 21.04.223
 YouTube-Morphe-Dev: 21.04.223  
 YouTube-Music-Morphe: 9.15.51  
 YouTube-Music-Morphe-Dev: 9.15.51  
-Zombie-Catchers: latest  
 iLovePDF: 4.0.1  
-qBitConnect: 2.0.5        
+qBitConnect: 2.0.5          
