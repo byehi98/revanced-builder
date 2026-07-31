@@ -655,6 +655,13 @@ rv-brand        = "okish"
 patches-version = "dev"
 apkeep-dlurl 	= "com.freejobalert"
 
+[Smashit]
+patches-source  = "byehi98/okish-morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "okish"
+patches-version = "dev"
+apkeep-dlurl 	= "com.mediocre.smashhit"
+
 # ==============================================================================
 # cesbar/zpatches
 # ==============================================================================
