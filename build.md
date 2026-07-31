@@ -1,18 +1,8 @@
-CubeX-Solver: latest  
-Anger-of-Stick-5: latest  
-Oddmar: latest  
-Hunter-Assassin: latest  
-Showly: 3.70.0  
-Plants-vs-Zombies: latest  
-Solitaire: 1.20.3  
-Climb: 6.0.0  
-Speedtest: 7.0.4  
-Trakt: 3.13.0  
-The-Battle-of-Polytopia: 2.17.2.16299  
-Zombie-Catchers: latest  
-Reddit-Morphe-Dev: 2026.14.0  
-YouTube-Music-Morphe-Dev: 9.15.51  
-YouTube-Morphe-Dev: 21.04.223  
+Block-Puzzle: 6.0  
+Minesweeper: 1.21.3  
+Parallel-Space-Pro: 4.0.9123  
+FolderSync: 4.9.3  
+Block-Blast: 10.4.3  
 
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
@@ -20,35 +10,16 @@ Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and
 [revanced-magisk-module](https://github.com/j-hc/revanced-magisk-module)
   
 CLI: MorpheApp/morphe-desktop-1.12.0-all.jar  
-Patches: BholeyKaBhakt/patches-2.12.0.mpp  
-[Changelog](https://github.com/BholeyKaBhakt/android-patches-xtra/releases/tag/v2.12.0)
+Patches: arandomhooman/patches-1.43.4.mpp  
+[Changelog](https://github.com/arandomhooman/hoomans-morphe-patches/releases/tag/v1.43.4)
 
 CLI: MorpheApp/morphe-desktop-1.12.0-all.jar  
 Patches: cesbar/patches-1.8.0.mpp  
 [Changelog](https://github.com/cesbar/zpatches/releases/tag/v1.8.0)
 
 CLI: MorpheApp/morphe-desktop-1.12.0-all.jar  
-Patches: hoo-dles/patches-1.39.0.mpp  
-[Changelog](https://github.com/hoo-dles/morphe-patches/releases/tag/v1.39.0)
-
-CLI: MorpheApp/morphe-desktop-1.12.0-all.jar  
-Patches: IMXEren/patches-1.4.1.mpp  
-[Changelog](https://github.com/IMXEren/mix-patches/releases/tag/v1.4.1)
-
-CLI: MorpheApp/morphe-desktop-1.12.0-all.jar  
-Patches: MiguelNinja19/patches-1.13.4.mpp  
-[Changelog](https://github.com/MiguelNinja19/miguel-morphe-patches/releases/tag/v1.13.4)
-
-CLI: MorpheApp/morphe-desktop-1.12.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.12.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.12.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.12.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.12.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.12.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.12.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.12.0-all.jar  
-Patches: MorpheApp/patches-1.38.0-dev.3.mpp  
-[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.38.0-dev.3)
+Patches: rushiranpise/patches-1.15.1.mpp  
+[Changelog](https://github.com/rushiranpise/morphe-patches/releases/tag/v1.15.1)
 
 CLI: MorpheApp/morphe-desktop-1.12.0-all.jar  
 CLI: MorpheApp/morphe-desktop-1.12.0-all.jar    
@@ -65,6 +36,7 @@ Patches: RookieEnough/patches-1.0.4.mpp
 Advanced-Download-Manager: 14.0.39  
 Patches: arandomhooman/patches-1.43.4.mpp  
 Amoledpix: 7.2  
+Anger-of-Stick-5: latest  
 Patches: MiguelNinja19/patches-1.13.4.mpp  
 Apkmirror-Installer: 2.0.3  
 Arrow-Puzzle: 1.7.0  
@@ -87,8 +59,10 @@ Camera: 5.4.0
 Charge-Meter: 2.9.7  
 Chess-com: 4.10.0  
 Patches: prathxmOp/patches-1.13.0.mpp  
+Climb: 6.0.0  
 Cloudflare-Warp: 6.38.8  
 Cricbuzz: 6.24.01  
+CubeX-Solver: latest  
 Dailyhunt: 34.0.4  
 Document-Scanner: 6.8.18  
 Does-Not-Commute: 1.5.5  
@@ -101,6 +75,7 @@ Google-News-hoo-dles: 5.161.0.931240252
 Google-Photos: latest  
 Greenify: 5.1.1  
 Hidden-Settings: 7.34  
+Hunter-Assassin: latest  
 Icon-Pack-Studio: 2.2 build 016  
 Irplus: latest  
 Patches: RookieEnough/patches-1.0.4.mpp  
@@ -114,14 +89,17 @@ MX-Player-Pro: 1.93.4
 MacroDroid: 5.62.11  
 Medium: 4.5.1302097  
 Mega: 16.10(261970902)(8daeddaf4d)  
+Patches: cesbar/patches-1.8.0.mpp  
 MobiOffice: 16.4.60095  
 MovieBox: 3.0.16.0709.03  
 NYT-Crossword: 6.35.0  
 NZB360: 24.1  
 Network-Guru: 1.9-beta5  
 Octi: 1.1.0-rc0  
+Oddmar: latest  
 Opera-News: 14.1.2254.83278  
 Photomath: latest  
+Plants-vs-Zombies: latest  
 Playit: 2.7.50.12  
 Pocket-Prep: 3.28.0  
 Poweramp: build-1025-bundle-play  
@@ -133,17 +111,22 @@ Reddit-Adobo: 2026.29.0
 Patches: jkennethcarino/patches-1.3.0-dev.13.mpp  
 Reddit-Morphe: 2026.14.0  
 Patches: MorpheApp/patches-1.37.0.mpp  
+Reddit-Morphe-Dev: 2026.14.0  
 Patches: MorpheApp/patches-1.38.0-dev.3.mpp  
 Send-Files-To-TV: 1.4.22  
+Showly: 3.70.0  
 Solid-Explorer: 3.4.1  
-Patches: cesbar/patches-1.8.0.mpp  
+Solitaire: 1.20.3  
 SoundCloud-RookieEnough: 2025.05.27-release  
+Speedtest: 7.0.4  
 Symfonium: 14.0.0  
 Telegram: 12.9.1  
 Patches: Aunali321/patches-2.0.0.rvp  
 Telegram-Paresh: 12.9.1  
 TeraBox: 4.20.1  
+The-Battle-of-Polytopia: 2.17.2.16299  
 Torrent-Search: 2.3.3  
+Trakt: 3.13.0  
 Patches: IMXEren/patches-1.4.1.mpp  
 Truecaller: 26.10.6  
 Patches: Paresh-Maheshwari/patches-1.19.1-dev.1.mpp  
@@ -155,6 +138,9 @@ WPS-Office: 18.24
 Wallcraft: 3.61.01  
 Yatri: 5.0.5  
 YouTube-Morphe: 21.04.223  
+YouTube-Morphe-Dev: 21.04.223  
 YouTube-Music-Morphe: 9.15.51  
+YouTube-Music-Morphe-Dev: 9.15.51  
+Zombie-Catchers: latest  
 iLovePDF: 4.0.1  
-qBitConnect: 2.0.5    
+qBitConnect: 2.0.5      
