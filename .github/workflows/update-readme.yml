@@ -61,11 +61,29 @@ jobs:
               
           repository = os.environ.get("GITHUB_REPOSITORY", "")
           
+          with open("README.md", "r") as rfile:
+              readme_lines = rfile.readlines()
+              
+          old_data = {}
+          in_table = False
+          for line in readme_lines:
+              if "<!-- BUILD_STATUS_START -->" in line:
+                  in_table = True
+                  continue
+              if "<!-- BUILD_STATUS_END -->" in line:
+                  break
+              if in_table and line.startswith("|") and not line.startswith("| Patches") and not line.startswith("| :---"):
+                  parts = [p.strip() for p in line.split("|")]
+                  if len(parts) >= 6:
+                      config_table = parts[3].strip("`")
+                      old_data[config_table] = {
+                          "status": parts[2],
+                          "app_display": parts[4]
+                      }
+
           print("| Patches Source | Status | Config | App | Obtainium |")
           print("| :--- | :---: | :--- | :--- | :---: |")
           
-          # Handle potential structure of toml_prep output
-          # the output of toml_prep json can have values directly in config root or nested.
           def_patch_src = config.get("patches-source") or config.get("patches-sources") or "ReVanced/revanced-patches"
           
           for table, data in config.items():
@@ -87,11 +105,10 @@ jobs:
               
               matching_files = [f for f in built_files if f.startswith(prefix)]
               success = len(matching_files) > 0
-              status = "✅" if success else "❌"
-              
               patches_source = data.get("patches-source") or data.get("patches-sources") or def_patch_src
               
               if success and tag:
+                  status = "✅"
                   file_links = []
                   for f in matching_files:
                       url = f"https://github.com/{repository}/releases/download/{tag}/{f}"
@@ -104,7 +121,13 @@ jobs:
                   links_str = " ".join(file_links)
                   app_display = f"{app_name} ({links_str})"
               else:
-                  app_display = app_name
+                  old_info = old_data.get(table)
+                  if old_info and old_info["status"] == "✅":
+                      status = "✅"
+                      app_display = old_info["app_display"]
+                  else:
+                      status = "❌"
+                      app_display = app_name
               
               dummy_id = package_ids.get(app_name_l, f"app.revanced.builder.{app_name_l}")
               author = repository.split('/')[0] if '/' in repository else "Unknown"
