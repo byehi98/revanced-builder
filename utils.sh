@@ -210,7 +210,10 @@ config_update() {
 		if [ -z "$table_name" ]; then continue; fi
 		t=$(toml_get_table "$table_name")
 		enabled=$(toml_get "$t" enabled) || enabled=true
-		if [ "$enabled" = "false" ]; then continue; fi
+		if [ "$enabled" = "false" ]; then
+			grep -m1 "^${table_name}:" build.md >>"$TEMP_DIR"/skipped 2>/dev/null || true
+			continue
+		fi
 		PATCHES_SRC=$(toml_get "$t" patches-sources) || PATCHES_SRC=$(toml_get "$t" patches-source) || PATCHES_SRC=$DEF_PATCHES_SRC
 		PATCHES_VER=$(toml_get "$t" patches-version) || PATCHES_VER=$DEF_PATCHES_VER
 		if [[ -v sources["$PATCHES_SRC/$PATCHES_VER"] ]]; then
@@ -221,6 +224,8 @@ config_update() {
 				if ! grep -q "^${table_name}:" build.md || { [ -f README.md ] && grep -q " ❌ | \`${table_name}\`" README.md; }; then
 					upped+=("$table_name")
 					prcfg=true
+				else
+					grep -m1 "^${table_name}:" build.md >>"$TEMP_DIR"/skipped 2>/dev/null || true
 				fi
 			fi
 		else
@@ -279,6 +284,8 @@ config_update() {
 					if ! grep -q "^${table_name}:" build.md || { [ -f README.md ] && grep -q " ❌ | \`${table_name}\`" README.md; }; then
 						prcfg=true
 						upped+=("$table_name")
+					else
+						grep -m1 "^${table_name}:" build.md >>"$TEMP_DIR"/skipped 2>/dev/null || true
 					fi
 					echo "$OP" >>"$TEMP_DIR"/skipped
 				fi

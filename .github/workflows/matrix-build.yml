@@ -72,6 +72,7 @@ jobs:
             config.json
             config.toml
             build.md
+            temp/skipped
           if-no-files-found: ignore
 
   build_matrix:
