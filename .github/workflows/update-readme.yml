@@ -28,6 +28,9 @@ jobs:
           toml_prep config.toml
           echo "$__TOML__" > config.json
 
+      - name: Fetch build.md
+        run: wget https://raw.githubusercontent.com/${{ github.repository }}/update/build.md -O build.md || touch build.md
+
       - name: Generate Build Status Table
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -66,23 +69,49 @@ jobs:
               
           old_data = {}
           in_table = False
+          has_patch_ver_col = False
           for line in readme_lines:
               if "<!-- BUILD_STATUS_START -->" in line:
                   in_table = True
                   continue
               if "<!-- BUILD_STATUS_END -->" in line:
                   break
+              if in_table and line.startswith("|") and "Patches Source" in line and "Patch Version" in line:
+                  has_patch_ver_col = True
+                  continue
               if in_table and line.startswith("|") and not line.startswith("| Patches") and not line.startswith("| :---"):
                   parts = [p.strip() for p in line.split("|")]
-                  if len(parts) >= 6:
+                  if has_patch_ver_col and len(parts) >= 7:
+                      config_table = parts[4].strip("`")
+                      old_data[config_table] = {
+                          "patch_ver": parts[2].strip("`") if parts[2] != "Unknown" else "Unknown",
+                          "status": parts[3],
+                          "app_display": parts[5]
+                      }
+                  elif not has_patch_ver_col and len(parts) >= 6:
                       config_table = parts[3].strip("`")
                       old_data[config_table] = {
+                          "patch_ver": "Unknown",
                           "status": parts[2],
                           "app_display": parts[4]
                       }
 
-          print("| Patches Source | Status | Config | App | Obtainium |")
-          print("| :--- | :---: | :--- | :--- | :---: |")
+          patch_versions = {}
+          try:
+              with open("build.md", "r") as bf:
+                  for line in bf:
+                      line = line.strip()
+                      if line.startswith("Patches: "):
+                          parts = line.split("Patches: ")[1].split("/")
+                          if len(parts) >= 2:
+                              author = parts[0].lower()
+                              filename = parts[1].strip()
+                              patch_versions[author] = filename
+          except Exception:
+              pass
+
+          print("| Patches Source | Patch Version | Status | Config | App | Obtainium |")
+          print("| :--- | :--- | :---: | :--- | :--- | :---: |")
           
           def_patch_src = config.get("patches-source") or config.get("patches-sources") or "ReVanced/revanced-patches"
           
@@ -107,6 +136,12 @@ jobs:
               success = len(matching_files) > 0
               patches_source = data.get("patches-source") or data.get("patches-sources") or def_patch_src
               
+              if patches_source.startswith("GitLab:"):
+                  src_author = patches_source.split(":")[1].split("/")[0].lower()
+              else:
+                  src_author = patches_source.split("/")[0].lower()
+              patch_ver = patch_versions.get(src_author)
+
               if success and tag:
                   status = "✅"
                   file_links = []
@@ -120,14 +155,20 @@ jobs:
                           file_links.append(f"[File]({url})")
                   links_str = " ".join(file_links)
                   app_display = f"{app_name} ({links_str})"
+                  if not patch_ver:
+                      patch_ver = "Unknown"
               else:
                   old_info = old_data.get(table)
                   if old_info and old_info["status"] == "✅":
                       status = "✅"
                       app_display = old_info["app_display"]
+                      if not patch_ver or patch_ver == "Unknown":
+                          patch_ver = old_info["patch_ver"]
                   else:
                       status = "❌"
                       app_display = app_name
+                      if not patch_ver:
+                          patch_ver = old_info["patch_ver"] if old_info else "Unknown"
               
               dummy_id = package_ids.get(app_name_l, f"app.revanced.builder.{app_name_l}")
               author = repository.split('/')[0] if '/' in repository else "Unknown"
@@ -147,7 +188,9 @@ jobs:
               obtainium_link = f"https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/{encoded_json}"
               obtainium_badge = f"[![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)]({obtainium_link})"
               
-              print(f"| `{patches_source}` | {status} | `{table}` | {app_display} | {obtainium_badge} |")
+              patch_ver_display = f"`{patch_ver}`" if patch_ver != "Unknown" else "Unknown"
+              
+              print(f"| `{patches_source}` | {patch_ver_display} | {status} | `{table}` | {app_display} | {obtainium_badge} |")
           EOF
           
           python3 generate_table.py > table.md
