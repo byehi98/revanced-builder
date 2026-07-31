@@ -74,6 +74,7 @@ jobs:
             build.md
             temp/skipped
           if-no-files-found: ignore
+          retention-days: 1
 
   build_matrix:
     needs: prepare_matrix
@@ -233,12 +234,14 @@ jobs:
           name: build-artifacts-${{ strategy.job-index }}
           path: build/
           if-no-files-found: ignore
+          retention-days: 1
 
       - name: Upload job report
         uses: actions/upload-artifact@v7
         with:
           name: job-report-${{ strategy.job-index }}
           path: job_report_rows.md
+          retention-days: 1
 
   release:
     needs: [prepare_matrix, build_matrix]
@@ -396,3 +399,9 @@ jobs:
           MSG=${MSG:0:9450}
           POST="https://api.telegram.org/bot${TG_TOKEN}/sendMessage"
           curl -X POST --data-urlencode "parse_mode=Markdown" --data-urlencode "disable_web_page_preview=true" --data-urlencode "text=${MSG}" --data-urlencode "chat_id=${TG_CHAT}" "$POST"
+
+      - name: Clear older runs
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh run list -L400 --json databaseId -q '.[].databaseId' | tail -n+10 | xargs -IID gh api "repos/$GITHUB_REPOSITORY/actions/runs/ID" -X DELETE || :
