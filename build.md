@@ -1,8 +1,6 @@
-Block-Puzzle: 6.0  
-Minesweeper: 1.21.3  
-Parallel-Space-Pro: 4.0.9123  
-FolderSync: 4.9.3  
-Block-Blast: 10.4.3  
+Smashit: 1.5.14  
+Freejobalert: 1.0.0  
+Truecloud: 4.6.5.13  
 
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
@@ -10,16 +8,8 @@ Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and
 [revanced-magisk-module](https://github.com/j-hc/revanced-magisk-module)
   
 CLI: MorpheApp/morphe-desktop-1.12.0-all.jar  
-Patches: arandomhooman/patches-1.43.4.mpp  
-[Changelog](https://github.com/arandomhooman/hoomans-morphe-patches/releases/tag/v1.43.4)
-
-CLI: MorpheApp/morphe-desktop-1.12.0-all.jar  
-Patches: cesbar/patches-1.8.0.mpp  
-[Changelog](https://github.com/cesbar/zpatches/releases/tag/v1.8.0)
-
-CLI: MorpheApp/morphe-desktop-1.12.0-all.jar  
-Patches: rushiranpise/patches-1.15.1.mpp  
-[Changelog](https://github.com/rushiranpise/morphe-patches/releases/tag/v1.15.1)
+Patches: byehi98/patches-1.2.0.mpp  
+[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.2.0)
 
 CLI: MorpheApp/morphe-desktop-1.12.0-all.jar  
 CLI: MorpheApp/morphe-desktop-1.12.0-all.jar    
@@ -47,6 +37,8 @@ Automate: 1.51.1
 Patches: BholeyKaBhakt/patches-2.12.0.mpp  
 Backdrops: 6.1.2  
 Patches: BholeyKaBhakt/patches-2.12.0.mpp  
+Block-Blast: 10.4.3  
+Block-Puzzle: 6.0  
 Brave: 1.92.140  
 Patches: bufferk/patches-1.8.0.mpp  
 CREX: 26.04.05  
@@ -68,8 +60,7 @@ Document-Scanner: 6.8.18
 Does-Not-Commute: 1.5.5  
 Eyecon: 4.2026.04.05.1300  
 Fing: 12.12.0  
-Freejobalert: 1.0.0  
-Patches: byehi98/patches-1.1.0.mpp  
+FolderSync: 4.9.3  
 Google-News-RookieEnough: 5.108.0.644447823  
 Google-News-hoo-dles: 5.161.0.931240252  
 Google-Photos: latest  
@@ -89,6 +80,7 @@ MX-Player-Pro: 1.93.4
 MacroDroid: 5.62.11  
 Medium: 4.5.1302097  
 Mega: 16.10(261970902)(8daeddaf4d)  
+Minesweeper: 1.21.3  
 Patches: cesbar/patches-1.8.0.mpp  
 MobiOffice: 16.4.60095  
 MovieBox: 3.0.16.0709.03  
@@ -98,6 +90,7 @@ Network-Guru: 1.9-beta5
 Octi: 1.1.0-rc0  
 Oddmar: latest  
 Opera-News: 14.1.2254.83278  
+Parallel-Space-Pro: 4.0.9123  
 Photomath: latest  
 Plants-vs-Zombies: latest  
 Playit: 2.7.50.12  
@@ -131,8 +124,6 @@ Patches: IMXEren/patches-1.4.1.mpp
 Truecaller: 26.10.6  
 Patches: Paresh-Maheshwari/patches-1.19.1-dev.1.mpp  
 Truecaller-bufferk: 26.10.6  
-Truecloud: 4.6.5.13  
-Patches: byehi98/patches-1.1.0.mpp  
 Unimote: 1.8.1  
 WPS-Office: 18.24  
 Wallcraft: 3.61.01  
@@ -143,4 +134,4 @@ YouTube-Music-Morphe: 9.15.51
 YouTube-Music-Morphe-Dev: 9.15.51  
 Zombie-Catchers: latest  
 iLovePDF: 4.0.1  
-qBitConnect: 2.0.5      
+qBitConnect: 2.0.5        
