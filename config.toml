@@ -196,6 +196,18 @@ cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
 apkeep-dlurl 	= "com.apkmirror.helper.prod"
 
+[Block-Blast]
+patches-source  = "rushiranpise/morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "rushiranpise"
+apkeep-dlurl 	= "com.block.juggle"
+
+[Block-Puzzle]
+patches-source  = "rushiranpise/morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "rushiranpise"
+apkeep-dlurl 	= "game.puzzle.blockpuzzle"
+
 [CamScanner-rushiranpise]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
@@ -288,6 +300,12 @@ patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
 apkeep-dlurl	= "com.opera.app.news"
+
+[Parallel-Space-Pro]
+patches-source  = "rushiranpise/morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "rushiranpise"
+apkeep-dlurl 	= "com.parallel.space.pro"
 
 [ProtonVPN-Rushiranpise]
 patches-source  = "rushiranpise/morphe-patches"
@@ -577,6 +595,12 @@ apkeep-dlurl  	= "com.mediocre.commute"
 # arandomhooman/hoomans-morphe-patches
 # ==============================================================================
 
+[FolderSync]
+patches-source  = "arandomhooman/hoomans-morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "hoomans"
+apkeep-dlurl  	= "dk.tacit.android.foldersync.lite"
+
 [Poweramp]
 patches-source  = "arandomhooman/hoomans-morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
@@ -632,6 +656,24 @@ patches-version = "dev"
 apkeep-dlurl 	= "com.freejobalert"
 
 # ==============================================================================
+# cesbar/zpatches
+# ==============================================================================
+
+[Solitaire]
+patches-source  = "cesbar/zpatches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "cesbar"
+# patches-version = "dev"
+apkeep-dlurl 	= "ee.dustland.android.solitaire"
+
+[Minesweeper]
+patches-source  = "cesbar/zpatches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "cesbar"
+# patches-version = "dev"
+apkeep-dlurl 	= "ee.dustland.android.minesweeper"
+
+# ==============================================================================
 # Single Target Repositories (Unique Sources)
 # ==============================================================================
 
@@ -665,11 +707,3 @@ cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "IMXEren"
 # patches-version = "dev"
 apkeep-dlurl 	= "tv.trakt.trakt"
-
-# cesbar/zpatches
-[Solitaire]
-patches-source  = "cesbar/zpatches"
-cli-source      = "MorpheApp/morphe-cli"
-rv-brand        = "cesbar"
-# patches-version = "dev"
-apkeep-dlurl 	= "ee.dustland.android.solitaire"
