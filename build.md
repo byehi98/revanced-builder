@@ -1,4 +1,5 @@
-Truecloud: 4.6.5.13  
+Minesweeper: 1.21.3  
+Solitaire: 1.20.3  
 
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
@@ -6,8 +7,10 @@ Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and
 [revanced-magisk-module](https://github.com/j-hc/revanced-magisk-module)
   
 CLI: MorpheApp/morphe-desktop-1.12.0-all.jar  
-Patches: byehi98/patches-1.2.0.mpp  
-[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.2.0)  
+Patches: cesbar/patches-1.8.0.mpp  
+[Changelog](https://github.com/cesbar/zpatches/releases/tag/v1.8.0)
+
+CLI: MorpheApp/morphe-desktop-1.12.0-all.jar    
 
 Skipped:  
 AccuBattery: 2.1.8  
@@ -105,7 +108,6 @@ Send-Files-To-TV: 1.4.22
 Showly: 3.70.0  
 Smashit: 1.5.14  
 Solid-Explorer: 3.4.1  
-Solitaire: 1.20.3  
 SoundCloud-RookieEnough: 2025.05.27-release  
 Speedtest: 7.0.4  
 Symfonium: 14.0.0  
@@ -120,6 +122,7 @@ Patches: IMXEren/patches-1.4.1.mpp
 Truecaller: 26.10.6  
 Patches: Paresh-Maheshwari/patches-1.19.1-dev.1.mpp  
 Truecaller-bufferk: 26.10.6  
+Truecloud: 4.6.5.13  
 Patches: byehi98/patches-1.2.0.mpp  
 Unimote: 1.8.1  
 WPS-Office: 18.24  
@@ -131,4 +134,4 @@ YouTube-Music-Morphe: 9.15.51
 YouTube-Music-Morphe-Dev: 9.15.51  
 Zombie-Catchers: latest  
 iLovePDF: 4.0.1  
-qBitConnect: 2.0.5            
+qBitConnect: 2.0.5              
