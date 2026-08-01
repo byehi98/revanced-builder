@@ -1,13 +1,11 @@
-Smashit: 1.5.14  
-Swordigo: 1.4.12  
 Freejobalert: 1.0.0  
+Swordigo: 1.4.12  
+Smashit: 1.5.14  
+Jetpack-Joyride: 1.104.1  
 Truecloud: 4.6.5.13  
 Reddit-Morphe-Dev: 2026.14.0  
-Reddit-Morphe: 2026.14.0  
-YouTube-Music-Morphe: 9.15.51  
 YouTube-Music-Morphe-Dev: 9.15.51  
 YouTube-Morphe-Dev: 21.04.223  
-YouTube-Morphe: 21.04.223  
 
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
@@ -15,19 +13,17 @@ Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and
 [revanced-magisk-module](https://github.com/j-hc/revanced-magisk-module)
   
 CLI: MorpheApp/morphe-desktop-1.12.0-all.jar  
-Patches: byehi98/patches-1.3.0.mpp  
-[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.3.0)
+Patches: byehi98/patches-1.4.0.mpp  
+[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.4.0)
 
 CLI: MorpheApp/morphe-desktop-1.12.0-all.jar  
 CLI: MorpheApp/morphe-desktop-1.12.0-all.jar  
 CLI: MorpheApp/morphe-desktop-1.12.0-all.jar  
 CLI: MorpheApp/morphe-desktop-1.12.0-all.jar  
-Patches: MorpheApp/patches-1.38.0.mpp  
-[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.38.0)
+CLI: MorpheApp/morphe-desktop-1.12.0-all.jar  
+Patches: MorpheApp/patches-1.38.1-dev.1.mpp  
+[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.38.1-dev.1)
 
-CLI: MorpheApp/morphe-desktop-1.12.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.12.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.12.0-all.jar  
 CLI: MorpheApp/morphe-desktop-1.12.0-all.jar  
 CLI: MorpheApp/morphe-desktop-1.12.0-all.jar    
 
@@ -119,6 +115,8 @@ Psiphon: 479
 RS-File-Manager: 2.3.0.4  
 Reddit-Adobo: 2026.29.0  
 Patches: jkennethcarino/patches-1.3.0-dev.13.mpp  
+Reddit-Morphe: 2026.14.0  
+Patches: MorpheApp/patches-1.38.0.mpp  
 Send-Files-To-TV: 1.4.22  
 Showly: 3.70.0  
 Solid-Explorer: 3.4.1  
@@ -141,6 +139,8 @@ Unimote: 1.8.1
 WPS-Office: 18.24  
 Wallcraft: 3.61.01  
 Yatri: 5.0.5  
+YouTube-Morphe: 21.04.223  
+YouTube-Music-Morphe: 9.15.51  
 Zombie-Catchers: latest  
 iLovePDF: 4.0.1  
-qBitConnect: 2.0.5                
+qBitConnect: 2.0.5                  
