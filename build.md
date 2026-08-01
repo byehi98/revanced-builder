@@ -1,5 +1,13 @@
-Minesweeper: 1.21.3  
-Solitaire: 1.20.3  
+Smashit: 1.5.14  
+Swordigo: 1.4.12  
+Freejobalert: 1.0.0  
+Truecloud: 4.6.5.13  
+Reddit-Morphe-Dev: 2026.14.0  
+Reddit-Morphe: 2026.14.0  
+YouTube-Music-Morphe: 9.15.51  
+YouTube-Music-Morphe-Dev: 9.15.51  
+YouTube-Morphe-Dev: 21.04.223  
+YouTube-Morphe: 21.04.223  
 
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
@@ -7,9 +15,20 @@ Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and
 [revanced-magisk-module](https://github.com/j-hc/revanced-magisk-module)
   
 CLI: MorpheApp/morphe-desktop-1.12.0-all.jar  
-Patches: cesbar/patches-1.8.0.mpp  
-[Changelog](https://github.com/cesbar/zpatches/releases/tag/v1.8.0)
+Patches: byehi98/patches-1.3.0.mpp  
+[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.3.0)
 
+CLI: MorpheApp/morphe-desktop-1.12.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.12.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.12.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.12.0-all.jar  
+Patches: MorpheApp/patches-1.38.0.mpp  
+[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.38.0)
+
+CLI: MorpheApp/morphe-desktop-1.12.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.12.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.12.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.12.0-all.jar  
 CLI: MorpheApp/morphe-desktop-1.12.0-all.jar    
 
 Skipped:  
@@ -59,8 +78,6 @@ Does-Not-Commute: 1.5.5
 Eyecon: 4.2026.04.05.1300  
 Fing: 12.12.0  
 FolderSync: 4.9.3  
-Freejobalert: 1.0.0  
-Patches: byehi98/patches-1.2.0.mpp  
 Google-News-RookieEnough: 5.108.0.644447823  
 Google-News-hoo-dles: 5.161.0.931240252  
 Google-Photos: latest  
@@ -80,6 +97,8 @@ MX-Player-Pro: 1.93.4
 MacroDroid: 5.62.11  
 Medium: 4.5.1302097  
 Mega: 16.10(261970902)(8daeddaf4d)  
+Minesweeper: 1.21.3  
+Patches: cesbar/patches-1.8.0.mpp  
 MobiOffice: 16.4.60095  
 MovieBox: 3.0.16.0709.03  
 NYT-Crossword: 6.35.0  
@@ -100,14 +119,10 @@ Psiphon: 479
 RS-File-Manager: 2.3.0.4  
 Reddit-Adobo: 2026.29.0  
 Patches: jkennethcarino/patches-1.3.0-dev.13.mpp  
-Reddit-Morphe: 2026.14.0  
-Patches: MorpheApp/patches-1.37.0.mpp  
-Reddit-Morphe-Dev: 2026.14.0  
-Patches: MorpheApp/patches-1.38.0-dev.3.mpp  
 Send-Files-To-TV: 1.4.22  
 Showly: 3.70.0  
-Smashit: 1.5.14  
 Solid-Explorer: 3.4.1  
+Solitaire: 1.20.3  
 SoundCloud-RookieEnough: 2025.05.27-release  
 Speedtest: 7.0.4  
 Symfonium: 14.0.0  
@@ -122,16 +137,10 @@ Patches: IMXEren/patches-1.4.1.mpp
 Truecaller: 26.10.6  
 Patches: Paresh-Maheshwari/patches-1.19.1-dev.1.mpp  
 Truecaller-bufferk: 26.10.6  
-Truecloud: 4.6.5.13  
-Patches: byehi98/patches-1.2.0.mpp  
 Unimote: 1.8.1  
 WPS-Office: 18.24  
 Wallcraft: 3.61.01  
 Yatri: 5.0.5  
-YouTube-Morphe: 21.04.223  
-YouTube-Morphe-Dev: 21.04.223  
-YouTube-Music-Morphe: 9.15.51  
-YouTube-Music-Morphe-Dev: 9.15.51  
 Zombie-Catchers: latest  
 iLovePDF: 4.0.1  
-qBitConnect: 2.0.5              
+qBitConnect: 2.0.5                
