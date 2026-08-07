@@ -390,6 +390,7 @@ patches-source  = "RookieEnough/De-ReVanced"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "RookieEnough"
 uptodown-dlurl  = "https://cricbuzz-cricket-scores-and-news.en.uptodown.com/android"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/cricbuzz-com/cricbuzz-live-cricket-scores-news"
 
 [Google-Photos]
 patches-source  = "RookieEnough/De-ReVanced"
@@ -402,7 +403,7 @@ apkeep-dlurl  	= "com.google.android.apps.photos"
 patches-source  = "RookieEnough/De-ReVanced"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "RookieEnough"
-uptodown-dlurl = "https://google-play-newsstand.en.uptodown.com/android"
+uptodown-dlurl 	= "https://google-play-newsstand.en.uptodown.com/android"
 
 [Icon-Pack-Studio]
 patches-source  = "RookieEnough/De-ReVanced"
@@ -450,7 +451,8 @@ patches-source  	= "MiguelNinja19/miguel-morphe-patches"
 cli-source      	= "MorpheApp/morphe-cli"
 rv-brand        	= "MiguelNinja19"
 version 			= "latest"
-uptodown-dlurl 	= "https://climb-free.en.uptodown.com/android"
+apkcombo-dlurl		= "https://apkcombo.com/climb-amiyp/com.IvanAF.ClimbAMIYPfree/"
+uptodown-dlurl	 	= "https://climb-free.en.uptodown.com/android"
 
 [CubeX-Solver]
 patches-source  	= "MiguelNinja19/miguel-morphe-patches"
@@ -621,6 +623,7 @@ apkeep-dlurl  	= "com.dv.adm"
 patches-source  = "bufferk/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "bufferk"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/brave-software/brave-browser/"
 uptodown-dlurl	= "https://brave-software-brave.en.uptodown.com/android"
 
 [Medium]

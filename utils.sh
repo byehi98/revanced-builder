@@ -681,6 +681,39 @@ get_apkmirror_resp() {
 }
 
 # -------------------- uptodown --------------------
+_utd_eapi_secret='MDGMXUMdvHJBG/vjdFgmqX6LUdy7ecfwvYNd0gyfOCs='
+_UTD_EAPI_TOKEN=""
+_UTD_EAPI_TOKEN_AT=0
+
+_utd_eapi_token() {
+	local now hmac resp token
+	now=$(date +%s)
+	if [ -n "$_UTD_EAPI_TOKEN" ] && [ $((now - _UTD_EAPI_TOKEN_AT)) -lt 1500 ]; then
+		echo "$_UTD_EAPI_TOKEN"
+		return 0
+	fi
+	hmac=$(printf '%s' "$now" | openssl dgst -sha256 -hmac "$_utd_eapi_secret" -hex | awk '{print $2}')
+	resp=$(_req "https://www.uptodown.app/eapi/auth/token" - \
+		-X POST -H "Content-Type: application/x-www-form-urlencoded" \
+		-H "Identificador: Uptodown_Android" -H "Identificador-Version: 736" \
+		-H "User-Agent: Dalvik/2.1.0 (Linux; U; Android 14; SM-G955F Build/AP2A.240805.005)" \
+		-d "hmac=${hmac}&unixtime=${now}") || return 1
+	token=$(jq -er '.token' <<<"$resp") || return 1
+	_UTD_EAPI_TOKEN="$token"
+	_UTD_EAPI_TOKEN_AT="$now"
+	echo "$token"
+}
+
+_utd_eapi_dlurl() {
+	local app_id=$1 file_id=$2 token resp url
+	token=$(_utd_eapi_token) || return 1
+	resp=$(_req "https://www.uptodown.app/eapi/apps/${app_id}/file/${file_id}/downloadUrl?update=0" - \
+		-H "Authorization: Bearer ${token}" \
+		-H "Identificador: Uptodown_Android" -H "Identificador-Version: 736" \
+		-H "User-Agent: Dalvik/2.1.0 (Linux; U; Android 14; SM-G955F Build/AP2A.240805.005)") || return 1
+	url=$(jq -er '.data.downloadURL' <<<"$resp") || return 1
+	echo "$url"
+}
 get_uptodown_resp() {
 	if [ "${GITHUB_ACTIONS:-false}" = "true" ]; then
 		sleep $((RANDOM % 15))
@@ -705,7 +738,7 @@ dl_uptodown() {
 
 	local op resp data_code
 	data_code=$($HTMLQ "#detail-app-name" --attribute data-code <<<"$__UPTODOWN_RESP__")
-	local versionURL=""
+	local versionURL="" file_id=""
 	local is_bundle=false
 	for i in {1..20}; do
 		sleep 1
@@ -714,6 +747,7 @@ dl_uptodown() {
 			continue
 		fi
 		if [ "$(jq -e -r ".kindFile" <<<"$op")" = "xapk" ]; then is_bundle=true; fi
+		file_id=$(jq -er '.fileID' <<<"$op" 2>/dev/null)
 		if versionURL=$(jq -e -r '.versionURL' <<<"$op"); then break; else return 1; fi
 	done
 	if [ -z "$versionURL" ]; then return 1; fi
@@ -741,13 +775,24 @@ dl_uptodown() {
 		done
 		if [ $n -eq 12 ]; then return 1; fi
 	fi
-	local data_url
-	data_url=$($HTMLQ "#detail-download-button" --attribute data-url <<<"$resp") || return 1
+	local data_url=""
+	local eapi_fid="${data_file_id:-$file_id}"
+	if [ -n "$eapi_fid" ]; then
+		data_url=$(_utd_eapi_dlurl "$data_code" "$eapi_fid")
+	fi
+	if [ -z "$data_url" ]; then
+		data_url=$($HTMLQ "#detail-download-button" --attribute data-url <<<"$resp") || data_url=""
+	fi
+	if [ -z "$data_url" ]; then return 1; fi
+	case "$data_url" in
+		http://*|https://*) dl_url="$data_url" ;;
+		*) dl_url="https://dw.uptodown.com/dwn/${data_url}" ;;
+	esac
 	if [ $is_bundle = true ]; then
-		req "https://dw.uptodown.com/dwn/${data_url}" "$output.apkm" || return 1
+		req "$dl_url" "$output.apkm" || return 1
 		merge_splits "${output}.apkm" "${output}"
 	else
-		req "https://dw.uptodown.com/dwn/${data_url}" "$output" || return 1
+		req "$dl_url" "$output" || return 1
 	fi
 }
 get_uptodown_pkg_name() { $HTMLQ --text "tr.full:nth-child(1) > td:nth-child(3)" <<<"$__UPTODOWN_RESP_PKG__"; }
