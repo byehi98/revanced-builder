@@ -704,15 +704,18 @@ _utd_eapi_token() {
 	echo "$token"
 }
 
-_utd_eapi_dlurl() {
-	local app_id=$1 file_id=$2 token resp url
+_utd_eapi_get() {
+	local path=$1 token resp
 	token=$(_utd_eapi_token) || return 1
-	resp=$(_req "https://www.uptodown.app/eapi/apps/${app_id}/file/${file_id}/downloadUrl?update=0" - \
+	resp=$(_req "https://www.uptodown.app/eapi${path}" - \
 		-H "Authorization: Bearer ${token}" \
 		-H "Identificador: Uptodown_Android" -H "Identificador-Version: 736" \
 		-H "User-Agent: Dalvik/2.1.0 (Linux; U; Android 14; SM-G955F Build/AP2A.240805.005)") || return 1
-	url=$(jq -er '.data.downloadURL' <<<"$resp") || return 1
-	echo "$url"
+	echo "$resp"
+}
+_utd_eapi_dlurl() {
+	local app_id=$1 file_id=$2
+	_utd_eapi_get "/apps/${app_id}/file/${file_id}/downloadUrl?update=0" | jq -er '.data.downloadURL'
 }
 get_uptodown_resp() {
 	if [ "${GITHUB_ACTIONS:-false}" = "true" ]; then
@@ -722,7 +725,16 @@ get_uptodown_resp() {
 		local UA="User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
 		__UPTODOWN_RESP__=$(_req "${1}/versions" - -H "$UA") || return 1
 	}
-	__UPTODOWN_RESP_PKG__=$(req "${1}/download" -) || return 1
+	local data_code
+	data_code=$($HTMLQ "#detail-app-name" --attribute data-code <<<"$__UPTODOWN_RESP__") || data_code=""
+	__UPTODOWN_RESP_PKG__=""
+	if [ -n "$data_code" ]; then
+		__UPTODOWN_RESP_PKG__=$(_utd_eapi_get "/v3/apps/${data_code}/device/0?countryIsoCode=US" | jq -er '.data.packagename' 2>/dev/null) || __UPTODOWN_RESP_PKG__=""
+	fi
+	if [ -z "$__UPTODOWN_RESP_PKG__" ]; then
+		local UA="User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+		__UPTODOWN_RESP_PKG__=$(_req "${1}/download" - -H "$UA") || return 1
+	fi
 }
 get_uptodown_vers() { $HTMLQ --text ".version" <<<"$__UPTODOWN_RESP__" | awk '{$1=$1}1' | grep -E '^[0-9]' || :; }
 dl_uptodown() {
@@ -795,7 +807,14 @@ dl_uptodown() {
 		req "$dl_url" "$output" || return 1
 	fi
 }
-get_uptodown_pkg_name() { $HTMLQ --text "tr.full:nth-child(1) > td:nth-child(3)" <<<"$__UPTODOWN_RESP_PKG__"; }
+get_uptodown_pkg_name() {
+	local pkg
+	pkg=$(grep -oE '^[a-zA-Z][a-zA-Z0-9_]*(\.[a-zA-Z0-9_]+)+$' <<<"$__UPTODOWN_RESP_PKG__") || pkg=""
+	if [ -z "$pkg" ]; then
+		pkg=$($HTMLQ --text "tr.full:nth-child(1) > td:nth-child(3)" <<<"$__UPTODOWN_RESP_PKG__")
+	fi
+	echo "$pkg"
+}
 
 # -------------------- apkcombo --------------------
 get_apkcombo_resp() {
