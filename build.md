@@ -1,9 +1,13 @@
-Dr-Driving: 1.73  
-Opera-GX: latest  
-Brave-dh6k: 1.92.140  
-Brave-Beta-dh6k: 1.94.104  
-Brave-Nightly-dh6k: 1.95.46  
-Protonmail: 7.10.4  
+Fing: 12.12.0  
+Document-Scanner: 6.8.18  
+Eyecon: 4.2026.04.05.1300  
+Lumina: 1.0.2.4  
+CREX: 26.04.05  
+MacroDroid: 5.62.11  
+MX-Player-Pro: 1.93.4  
+Brave-Bufferk: 1.92.140  
+Telegram-Paresh: 12.9.2  
+Truecaller: 26.10.6  
 
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
@@ -11,27 +15,42 @@ Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and
 [revanced-magisk-module](https://github.com/j-hc/revanced-magisk-module)
   
 CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
-Patches: Alastor-Kaneki/patches-1.12.0.mpp  
-[Changelog](https://github.com/Alastor-Kaneki/Morphe-Patches/releases/tag/v1.12.0)
-
-CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
 Patches: bufferk/patches-1.8.0.mpp  
 [Changelog](https://github.com/bufferk/morphe-patches/releases/tag/v1.8.0)
 
 CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
-Patches: byehi98/patches-1.6.0.mpp  
-[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.6.0)
+Patches: Paresh-Maheshwari/patches-1.20.0-dev.1.mpp  
+[Changelog](https://gitlab.com/Paresh-Maheshwari/paresh-patches/-/releases/v1.20.0-dev.1)
 
 CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
-Patches: dh6k/patches-1.1.0.mpp  
-[Changelog](https://github.com/dh6k/morphe-patches/releases/tag/v1.1.0)
+Patches: Paresh-Maheshwari/patches-1.20.0-dev.1.mpp  
+[Changelog](https://gitlab.com/Paresh-Maheshwari/paresh-patches/-/releases/v1.20.0-dev.1)
 
 CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
-Patches: hxreborn/patches-1.3.0.mpp  
-[Changelog](https://github.com/hxreborn/morphe-patches/releases/tag/v1.3.0)
+Patches: Paresh-Maheshwari/patches-1.20.0-dev.1.mpp  
+[Changelog](https://gitlab.com/Paresh-Maheshwari/paresh-patches/-/releases/v1.20.0-dev.1)
 
+CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
+Patches: Paresh-Maheshwari/patches-1.20.0-dev.1.mpp  
+[Changelog](https://gitlab.com/Paresh-Maheshwari/paresh-patches/-/releases/v1.20.0-dev.1)
+
+CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
+Patches: Paresh-Maheshwari/patches-1.20.0-dev.1.mpp  
+[Changelog](https://gitlab.com/Paresh-Maheshwari/paresh-patches/-/releases/v1.20.0-dev.1)
+
+CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
+Patches: Paresh-Maheshwari/patches-1.20.0-dev.1.mpp  
+[Changelog](https://gitlab.com/Paresh-Maheshwari/paresh-patches/-/releases/v1.20.0-dev.1)
+
+CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
+Patches: Paresh-Maheshwari/patches-1.20.0-dev.1.mpp  
+[Changelog](https://gitlab.com/Paresh-Maheshwari/paresh-patches/-/releases/v1.20.0-dev.1)
+
+CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
+Patches: Paresh-Maheshwari/patches-1.20.0-dev.1.mpp  
+[Changelog](https://gitlab.com/Paresh-Maheshwari/paresh-patches/-/releases/v1.20.0-dev.1)
+
+CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
 CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
 Patches: rushiranpise/patches-1.16.0.mpp  
 [Changelog](https://github.com/rushiranpise/morphe-patches/releases/tag/v1.16.0)
@@ -64,9 +83,11 @@ Backdrops: 6.1.2
 Patches: BholeyKaBhakt/patches-2.12.0.mpp  
 Block-Blast: 10.4.5  
 Block-Puzzle: 6.0  
+Brave-Beta-dh6k: 1.94.104  
+Patches: dh6k/patches-1.1.0.mpp  
 Patches: bufferk/patches-1.8.0.mpp  
-CREX: 26.04.05  
-Patches: Paresh-Maheshwari/patches-1.19.1-dev.2.mpp  
+Brave-Nightly-dh6k: 1.95.46  
+Brave-dh6k: 1.92.140  
 CalcNote: 2.25.107  
 Patches: binarymend/patches-1.3.1.mpp  
 CamScanner-hoo-dles: 7.20.0.2606230000  
@@ -80,11 +101,9 @@ Cloudflare-Warp: 6.38.8
 Cricbuzz: 6.24.01  
 CubeX-Solver: latest  
 Dailyhunt: 34.0.4  
-Document-Scanner: 6.8.18  
 Does-Not-Commute: 1.5.5  
+Dr-Driving: 1.73  
 Patches: byehi98/patches-1.6.0.mpp  
-Eyecon: 4.2026.04.05.1300  
-Fing: 12.12.0  
 FolderSync: 4.9.3  
 Freejobalert: 1.0.0  
 Google-News-RookieEnough: 5.108.0.644447823  
@@ -102,10 +121,7 @@ Killapps: 1.58.0
 Lemmy-Sync: latest  
 Patches: wchill/patches-1.4.0.mpp  
 Letterboxd: latest  
-Lumina: 1.0.2.4  
 M-Indicator: 18.0.362  
-MX-Player-Pro: 1.93.4  
-MacroDroid: 5.62.11  
 Medium: 4.5.1302097  
 Mega: 16.10(261970902)(8daeddaf4d)  
 Minesweeper: 1.21.3  
@@ -115,6 +131,8 @@ NZB360: 24.3
 Network-Guru: 1.9-beta5  
 Octi: 1.1.0-rc0  
 Oddmar: latest  
+Opera-GX: latest  
+Patches: Alastor-Kaneki/patches-1.12.0.mpp  
 Opera-News: 14.1.2254.83278  
 Photomath: latest  
 Plants-vs-Zombies: latest  
@@ -123,6 +141,8 @@ Pocket-Prep: 3.28.1
 Poweramp: build-1025-bundle-play  
 ProtonVPN-Hoodles: 5.19.43.0  
 ProtonVPN-Rushiranpise: 5.19.61.0  
+Protonmail: 7.10.4  
+Patches: hxreborn/patches-1.3.0.mpp  
 Psiphon: 474  
 RS-File-Manager: 2.3.0.4  
 Reddit-Adobo: 2026.31.0  
@@ -142,14 +162,11 @@ Swordigo: 1.4.12
 Symfonium: 14.0.0  
 Telegram: 12.9.2  
 Patches: Aunali321/patches-2.0.0.rvp  
-Telegram-Paresh: 12.9.2  
 TeraBox: 4.22.1  
 The-Battle-of-Polytopia: 2.17.2.16299  
 Torrent-Search: 2.3.3  
 Trakt: 3.13.0  
 Patches: IMXEren/patches-1.4.1.mpp  
-Truecaller: 26.10.6  
-Patches: Paresh-Maheshwari/patches-1.19.1-dev.2.mpp  
 Truecaller-bufferk: 26.10.6  
 Truecloud: 4.6.5.13  
 Unimote: 1.8.1  
@@ -162,11 +179,10 @@ YouTube-Music-Morphe: 9.15.51
 YouTube-Music-Morphe-Dev: 9.15.51  
 Zombie-Catchers: latest  
 iLovePDF: 4.0.1  
-qBitConnect: 2.0.6          
+qBitConnect: 2.0.6            
 
 
 ### Failed to build
-- ❌ `Brave-Bufferk`
 - ❌ `MobiOffice`
 - ❌ `MovieBox`
 - ❌ `Parallel-Space-Pro`
