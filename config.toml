@@ -619,7 +619,7 @@ apkeep-dlurl  	= "com.dv.adm"
 # bufferk/morphe-patches
 # ==============================================================================
 
-[Brave]
+[Brave-Bufferk]
 patches-source  = "bufferk/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "bufferk"
@@ -643,6 +643,13 @@ apkeep-dlurl 		= "com.truecaller"
 # ==============================================================================
 # byehi98/okish-morphe-patches
 # ==============================================================================
+
+[Dr-Driving]
+patches-source  = "byehi98/okish-morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "okish"
+patches-version = "dev"
+apkeep-dlurl 	= "com.ansangha.drdriving"
 
 [Truecloud]
 patches-source  = "byehi98/okish-morphe-patches"
@@ -729,3 +736,38 @@ cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "IMXEren"
 # patches-version = "dev"
 apkeep-dlurl 	= "tv.trakt.trakt"
+
+[Opera-GX]
+patches-source  = "Alastor-Kaneki/Morphe-Patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "Kaneki"
+apkeep-dlurl    = "com.opera.gx"
+
+[Protonmail]
+patches-source  = "hxreborn/morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "hxreborn"
+apkeep-dlurl    = "ch.protonmail.android"
+
+# ==============================================================================
+# dh6k/morphe-patches
+# ==============================================================================
+
+[Brave-dh6k]
+patches-source  = "dh6k/morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "dh6k"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/brave-software/brave-browser/"
+uptodown-dlurl	= "https://brave-software-brave.en.uptodown.com/android"
+
+[Brave-Beta-dh6k]
+patches-source  = "dh6k/morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "dh6k-beta"
+apkmirror-dlurl = "http://apkmirror.com/apk/brave-software/brave-browser-beta/"
+
+[Brave-Nightly-dh6k]
+patches-source  = "dh6k/morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "dh6k-nightly"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/brave-software/brave-browser-nightly/"
