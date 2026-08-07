@@ -1,10 +1,6 @@
-Poweramp: build-1025-bundle-play  
-Google-News-RookieEnough: 5.108.0.644447823  
-ProtonVPN-Rushiranpise: 5.19.61.0  
-Psiphon: 474  
-Telegram: 12.9.2  
-Telegram-Paresh: 12.9.2  
-The-Battle-of-Polytopia: 2.17.2.16299  
+YouTube-Music-Morphe-Dev: 9.15.51  
+Reddit-Morphe-Dev: 2026.14.0  
+YouTube-Morphe-Dev: 21.04.223  
 
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
@@ -12,31 +8,15 @@ Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and
 [revanced-magisk-module](https://github.com/j-hc/revanced-magisk-module)
   
 CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
-Patches: arandomhooman/patches-1.43.4.mpp  
-[Changelog](https://github.com/arandomhooman/hoomans-morphe-patches/releases/tag/v1.43.4)
-
-CLI: ReVanced/revanced-cli-6.0.0-all.jar  
-Patches: Aunali321/patches-2.0.0.rvp  
-[Changelog](https://github.com/Aunali321/ReVancedExperiments/releases/tag/v2.0.0)
+Patches: MorpheApp/patches-1.39.0-dev.9.mpp  
+[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.39.0-dev.9)
 
 CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
-Patches: MiguelNinja19/patches-1.13.5.mpp  
-[Changelog](https://github.com/MiguelNinja19/miguel-morphe-patches/releases/tag/v1.13.5)
-
 CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
-Patches: Paresh-Maheshwari/patches-1.19.1-dev.2.mpp  
-[Changelog](https://gitlab.com/Paresh-Maheshwari/paresh-patches/-/releases/v1.19.1-dev.2)
-
-CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
-Patches: RookieEnough/patches-1.1.0.mpp  
-[Changelog](https://github.com/RookieEnough/De-ReVanced/releases/tag/v1.1.0)
-
 CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
 Patches: rushiranpise/patches-1.16.0.mpp  
 [Changelog](https://github.com/rushiranpise/morphe-patches/releases/tag/v1.16.0)
 
-CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
 CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
 CLI: MorpheApp/morphe-desktop-1.13.0-all.jar    
 
@@ -89,6 +69,7 @@ Fing: 12.12.0
 FolderSync: 4.9.3  
 Freejobalert: 1.0.0  
 Patches: byehi98/patches-1.6.0.mpp  
+Google-News-RookieEnough: 5.108.0.644447823  
 Google-News-hoo-dles: 5.161.0.931240252  
 Google-Photos: latest  
 Greenify: 5.1.1  
@@ -121,14 +102,15 @@ Photomath: latest
 Plants-vs-Zombies: latest  
 Playit: 2.7.50.12  
 Pocket-Prep: 3.28.1  
+Poweramp: build-1025-bundle-play  
 ProtonVPN-Hoodles: 5.19.43.0  
+ProtonVPN-Rushiranpise: 5.19.61.0  
+Psiphon: 474  
 RS-File-Manager: 2.3.0.4  
 Reddit-Adobo: 2026.31.0  
 Patches: jkennethcarino/patches-1.3.0-dev.17.mpp  
 Reddit-Morphe: 2026.14.0  
 Patches: MorpheApp/patches-1.38.0.mpp  
-Reddit-Morphe-Dev: 2026.14.0  
-Patches: MorpheApp/patches-1.39.0-dev.8.mpp  
 Send-Files-To-TV: 1.4.22  
 Showly: 3.70.0  
 Smashit: 1.5.14  
@@ -138,8 +120,11 @@ SoundCloud-RookieEnough: 2025.05.27-release
 Speedtest: 7.0.4  
 Swordigo: 1.4.12  
 Symfonium: 14.0.0  
+Telegram: 12.9.2  
 Patches: Aunali321/patches-2.0.0.rvp  
+Telegram-Paresh: 12.9.2  
 TeraBox: 4.22.1  
+The-Battle-of-Polytopia: 2.17.2.16299  
 Torrent-Search: 2.3.3  
 Trakt: 3.13.0  
 Patches: IMXEren/patches-1.4.1.mpp  
@@ -152,12 +137,10 @@ WPS-Office: 18.24
 Wallcraft: 3.61.01  
 Yatri: 5.0.5  
 YouTube-Morphe: 21.04.223  
-YouTube-Morphe-Dev: 21.04.223  
 YouTube-Music-Morphe: 9.15.51  
-YouTube-Music-Morphe-Dev: 9.15.51  
 Zombie-Catchers: latest  
 iLovePDF: 4.0.1  
-qBitConnect: 2.0.6      
+qBitConnect: 2.0.6        
 
 
 ### Failed to build
