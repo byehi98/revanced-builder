@@ -1,6 +1,10 @@
-Climb: 6.0.7  
-Cricbuzz: 6.24.01  
-Brave: 1.92.140  
+Poweramp: build-1025-bundle-play  
+Google-News-RookieEnough: 5.108.0.644447823  
+ProtonVPN-Rushiranpise: 5.19.61.0  
+Psiphon: 474  
+Telegram: 12.9.2  
+Telegram-Paresh: 12.9.2  
+The-Battle-of-Polytopia: 2.17.2.16299  
 
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
@@ -16,14 +20,9 @@ Patches: Aunali321/patches-2.0.0.rvp
 [Changelog](https://github.com/Aunali321/ReVancedExperiments/releases/tag/v2.0.0)
 
 CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
-Patches: bufferk/patches-1.8.0.mpp  
-[Changelog](https://github.com/bufferk/morphe-patches/releases/tag/v1.8.0)
-
-CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
 Patches: MiguelNinja19/patches-1.13.5.mpp  
 [Changelog](https://github.com/MiguelNinja19/miguel-morphe-patches/releases/tag/v1.13.5)
 
-CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
 CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
 Patches: Paresh-Maheshwari/patches-1.19.1-dev.2.mpp  
 [Changelog](https://gitlab.com/Paresh-Maheshwari/paresh-patches/-/releases/v1.19.1-dev.2)
@@ -32,7 +31,6 @@ CLI: MorpheApp/morphe-desktop-1.13.0-all.jar
 Patches: RookieEnough/patches-1.1.0.mpp  
 [Changelog](https://github.com/RookieEnough/De-ReVanced/releases/tag/v1.1.0)
 
-CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
 CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
 Patches: rushiranpise/patches-1.16.0.mpp  
 [Changelog](https://github.com/rushiranpise/morphe-patches/releases/tag/v1.16.0)
@@ -67,6 +65,7 @@ Backdrops: 6.1.2
 Patches: BholeyKaBhakt/patches-2.12.0.mpp  
 Block-Blast: 10.4.5  
 Block-Puzzle: 6.0  
+Brave: 1.92.140  
 Patches: bufferk/patches-1.8.0.mpp  
 CREX: 26.04.05  
 Patches: Paresh-Maheshwari/patches-1.19.1-dev.2.mpp  
@@ -78,7 +77,9 @@ Camera: 5.4.0
 Charge-Meter: 2.9.7  
 Chess-com: 4.10.0  
 Patches: prathxmOp/patches-1.13.0.mpp  
+Climb: 6.0.7  
 Cloudflare-Warp: 6.38.8  
+Cricbuzz: 6.24.01  
 CubeX-Solver: latest  
 Dailyhunt: 34.0.4  
 Document-Scanner: 6.8.18  
@@ -156,17 +157,10 @@ YouTube-Music-Morphe: 9.15.51
 YouTube-Music-Morphe-Dev: 9.15.51  
 Zombie-Catchers: latest  
 iLovePDF: 4.0.1  
-qBitConnect: 2.0.6    
+qBitConnect: 2.0.6      
 
 
 ### Failed to build
-- ❌ `Google-News-RookieEnough`
 - ❌ `MobiOffice`
 - ❌ `MovieBox`
 - ❌ `Parallel-Space-Pro`
-- ❌ `Poweramp`
-- ❌ `ProtonVPN-Rushiranpise`
-- ❌ `Psiphon`
-- ❌ `Telegram`
-- ❌ `Telegram-Paresh`
-- ❌ `The-Battle-of-Polytopia`
