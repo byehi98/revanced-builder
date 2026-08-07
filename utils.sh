@@ -5,7 +5,7 @@ CWD=$(pwd)
 TEMP_DIR="temp"
 BIN_DIR="bin"
 BUILD_DIR="build"
-DL_SRCS=("direct" "archive" "apkmirror" "uptodown" "apkpure" "apkcombo" "apkeep" "gplaydl")
+DL_SRCS=("apkeep" "apkcombo" "apkmirror" "apkpure" "archive" "direct" "gplaydl" "uptodown")
 
 if [ "${GITHUB_TOKEN-}" ]; then GH_HEADER="Authorization: token ${GITHUB_TOKEN}"; else GH_HEADER=; fi
 if [ "${GL_TOKEN-}" ]; then GL_HEADER="PRIVATE-TOKEN: ${GL_TOKEN}"; else GL_HEADER=; fi
@@ -788,8 +788,7 @@ dl_apkcombo() {
 	fi
 	
 	local dl_page_resp
-	local tr_dl_url="https://translate.google.com/website?sl=auto&tl=en&hl=en&client=webapp&u=https://apkcombo.com${dl_page_path}"
-	dl_page_resp=$(_req "$tr_dl_url" - -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64)") || return 1
+	dl_page_resp=$(_cf_get "https://apkcombo.com${dl_page_path}") || return 1
 	
 	local dl_url=""
 	dl_url=$($HTMLQ "a.variant" --attribute href <<<"$dl_page_resp" | grep -E "(r2|d)\?u=" | head -n 1)
@@ -809,8 +808,13 @@ dl_apkcombo() {
 	else
 		dl_url=$(echo "$dl_url" | sed 's/&_x_tr.*//g' | sed 's/apkcombo-com.translate.goog/apkcombo.com/g')
 	fi
-	
-	_req "$dl_url" "$output" -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+
+	if grep -qiE "/(XAPK|APKS)/|\.xapk|\.apks" <<<"$dl_url"; then
+		_req "$dl_url" "${output}.apkm" -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64)" || return 1
+		merge_splits "${output}.apkm" "${output}"
+	else
+		_req "$dl_url" "$output" -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64)" || return 1
+	fi
 }
 
 # -------------------- apkpure --------------------
