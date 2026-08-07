@@ -293,6 +293,16 @@ jobs:
             cp "all_artifacts/base-config/build.md" build.md
           fi
 
+      - name: Generate failed list
+        run: |
+          if [ -s final_report.md ]; then
+            mkdir -p release_files
+            awk -F'|' '/❌/ && $4 ~ /`/ { gsub(/ /, "", $4); gsub(/`/, "", $4); if ($4 != "") print $4 }' final_report.md > release_files/failed.txt
+            if [ ! -s release_files/failed.txt ]; then
+              rm -f release_files/failed.txt
+            fi
+          fi
+
       - name: Upload release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -55,6 +55,7 @@ jobs:
 
       - name: Build modules/APKs
         run: if [ -f "config.json" ]; then ./build.sh config.json; else ./build.sh config.toml; fi
+        continue-on-error: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: $GITHUB_REPOSITORY
@@ -62,14 +63,70 @@ jobs:
           APK_KEEP_TOKEN: ${{ secrets.APK_KEEP_TOKEN }}
           APK_KEEP_EMAIL: ${{ secrets.APK_KEEP_EMAIL }}
 
+      - name: Generate build report
+        run: |
+          source utils.sh
+          set_prebuilts
+          if [ -f config.json ]; then
+            toml_prep config.json
+          else
+            toml_prep config.toml
+          fi
+          echo "$__TOML__" > config_full.json
+
+          cat << 'EOF' > gen_report.py
+          import json
+          import os
+
+          with open("config_full.json", "r") as f:
+              config = json.load(f)
+
+          built_files = set(os.listdir("build")) if os.path.isdir("build") else set()
+          failed = []
+
+          for table, data in config.items():
+              if not isinstance(data, dict):
+                  continue
+              enabled = data.get("enabled", True)
+              if enabled == False or enabled == "false":
+                  continue
+              app_name = data.get("app-name", table)
+              app_name_l = app_name.lower().replace(" ", "-")
+
+              main_rv_brand = config.get("rv-brand", "ReVanced")
+              rv_brand = data.get("rv-brand", main_rv_brand)
+              rv_brand_f = rv_brand.lower().replace(" ", "-")
+
+              prefix = f"{app_name_l}-{rv_brand_f}"
+
+              if not any(f.startswith(prefix) for f in built_files):
+                  failed.append(table)
+
+          if failed:
+              os.makedirs("build", exist_ok=True)
+              with open("build/failed.txt", "w") as f:
+                  f.write("\n".join(failed))
+              print("Failed apps:")
+              for t in failed:
+                  print(f"  - {t}")
+              if os.path.exists("build.md"):
+                  with open("build.md", "a") as f:
+                      f.write("\n\n### Failed to build\n")
+                      for t in failed:
+                          f.write(f"- ❌ `{t}`\n")
+          else:
+              print("All apps built successfully.")
+          EOF
+          python3 gen_report.py
+
       - name: Get output
         id: get_output
         run: |
           DELIM="$(openssl rand -hex 8)"
           echo "BUILD_LOG<<${DELIM}" >> "$GITHUB_OUTPUT"
-          cat build.md >> "$GITHUB_OUTPUT"
+          [ -f build.md ] && cat build.md >> "$GITHUB_OUTPUT" || true
           echo "${DELIM}" >> "$GITHUB_OUTPUT"
-          cp -f build.md build.tmp
+          [ -f build.md ] && cp -f build.md build.tmp || true
       
       - name: Generate package_ids.json
         run: |
@@ -92,7 +149,7 @@ jobs:
               config = json.load(f)
               
           package_ids = {}
-          built_files = os.listdir("build")
+          built_files = os.listdir("build") if os.path.isdir("build") else []
           
           for table, data in config.items():
               if not isinstance(data, dict):
@@ -128,6 +185,10 @@ jobs:
           TAG: ${{ steps.next_ver_code.outputs.NEXT_VER_CODE }}
           BODY: ${{ steps.get_output.outputs.BUILD_LOG }}
         run: |
+          if ! compgen -G 'build/*.apk' >/dev/null && ! compgen -G 'build/*.zip' >/dev/null; then
+            echo "No builds succeeded, skipping release!"
+            exit 0
+          fi
           if gh release view "$TAG" >/dev/null 2>&1; then
             gh release edit "$TAG" --title "Release" --notes "$BODY"
             gh release upload "$TAG" ./build/* --clobber
@@ -138,6 +199,10 @@ jobs:
       - name: Update modules changelog and update json
         id: update_config
         run: |
+          if ! compgen -G 'build/*.apk' >/dev/null && ! compgen -G 'build/*.zip' >/dev/null; then
+            echo "No builds succeeded, skipping changelog update."
+            exit 0
+          fi
           git checkout -f update || git switch --discard-changes --orphan update
           cp -f build.tmp build.md
           get_update_json() {
@@ -166,6 +231,10 @@ jobs:
 
       - name: Commit module json changes
         run: |
+          if ! compgen -G 'build/*.apk' >/dev/null && ! compgen -G 'build/*.zip' >/dev/null; then
+            echo "No builds succeeded, skipping commit."
+            exit 0
+          fi
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
       
@@ -183,6 +252,10 @@ jobs:
           TG_TOKEN: ${{ secrets.TG_TOKEN }}
         if: env.TG_TOKEN != null
         run: |
+          if ! compgen -G 'build/*.apk' >/dev/null && ! compgen -G 'build/*.zip' >/dev/null; then
+            echo "No builds succeeded, skipping Telegram report."
+            exit 0
+          fi
           cd build || { echo "build folder not found"; exit 1; }
 
           TG_CHAT="@rvc_magisk"
