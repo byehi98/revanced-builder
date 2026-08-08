@@ -1,13 +1,20 @@
 Fing: 12.12.0  
-Document-Scanner: 6.8.18  
-Eyecon: 4.2026.04.05.1300  
 Lumina: 1.0.2.4  
+Eyecon: 4.2026.04.05.1300  
+Document-Scanner: 6.8.18  
 CREX: 26.04.05  
 MacroDroid: 5.62.11  
+Minesweeper: 1.21.3  
 MX-Player-Pro: 1.93.4  
-Brave-Bufferk: 1.92.140  
+Solitaire: 1.20.3  
 Telegram-Paresh: 12.9.2  
+Reddit-Morphe: 2026.14.0  
+Reddit-Morphe-Dev: 2026.14.0  
 Truecaller: 26.10.6  
+YouTube-Music-Morphe-Dev: 9.15.51  
+YouTube-Music-Morphe: 9.15.51  
+YouTube-Morphe: 21.04.223  
+YouTube-Morphe-Dev: 21.04.223  
 
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
@@ -15,40 +22,53 @@ Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and
 [revanced-magisk-module](https://github.com/j-hc/revanced-magisk-module)
   
 CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
-Patches: bufferk/patches-1.8.0.mpp  
-[Changelog](https://github.com/bufferk/morphe-patches/releases/tag/v1.8.0)
+Patches: cesbar/patches-1.10.0.mpp  
+[Changelog](https://github.com/cesbar/zpatches/releases/tag/v1.10.0)
 
 CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
-Patches: Paresh-Maheshwari/patches-1.20.0-dev.1.mpp  
-[Changelog](https://gitlab.com/Paresh-Maheshwari/paresh-patches/-/releases/v1.20.0-dev.1)
+CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
+Patches: MorpheApp/patches-1.39.0.mpp  
+[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.39.0)
 
 CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
-Patches: Paresh-Maheshwari/patches-1.20.0-dev.1.mpp  
-[Changelog](https://gitlab.com/Paresh-Maheshwari/paresh-patches/-/releases/v1.20.0-dev.1)
+Patches: MorpheApp/patches-1.39.1-dev.1.mpp  
+[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.39.1-dev.1)
 
 CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
-Patches: Paresh-Maheshwari/patches-1.20.0-dev.1.mpp  
-[Changelog](https://gitlab.com/Paresh-Maheshwari/paresh-patches/-/releases/v1.20.0-dev.1)
+CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
+Patches: Paresh-Maheshwari/patches-1.20.0-dev.2.mpp  
+[Changelog](https://gitlab.com/Paresh-Maheshwari/paresh-patches/-/releases/v1.20.0-dev.2)
 
 CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
-Patches: Paresh-Maheshwari/patches-1.20.0-dev.1.mpp  
-[Changelog](https://gitlab.com/Paresh-Maheshwari/paresh-patches/-/releases/v1.20.0-dev.1)
+Patches: Paresh-Maheshwari/patches-1.20.0-dev.2.mpp  
+[Changelog](https://gitlab.com/Paresh-Maheshwari/paresh-patches/-/releases/v1.20.0-dev.2)
 
 CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
-Patches: Paresh-Maheshwari/patches-1.20.0-dev.1.mpp  
-[Changelog](https://gitlab.com/Paresh-Maheshwari/paresh-patches/-/releases/v1.20.0-dev.1)
+Patches: Paresh-Maheshwari/patches-1.20.0-dev.2.mpp  
+[Changelog](https://gitlab.com/Paresh-Maheshwari/paresh-patches/-/releases/v1.20.0-dev.2)
 
 CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
-Patches: Paresh-Maheshwari/patches-1.20.0-dev.1.mpp  
-[Changelog](https://gitlab.com/Paresh-Maheshwari/paresh-patches/-/releases/v1.20.0-dev.1)
+Patches: Paresh-Maheshwari/patches-1.20.0-dev.2.mpp  
+[Changelog](https://gitlab.com/Paresh-Maheshwari/paresh-patches/-/releases/v1.20.0-dev.2)
 
 CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
-Patches: Paresh-Maheshwari/patches-1.20.0-dev.1.mpp  
-[Changelog](https://gitlab.com/Paresh-Maheshwari/paresh-patches/-/releases/v1.20.0-dev.1)
+Patches: Paresh-Maheshwari/patches-1.20.0-dev.2.mpp  
+[Changelog](https://gitlab.com/Paresh-Maheshwari/paresh-patches/-/releases/v1.20.0-dev.2)
 
 CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
-Patches: Paresh-Maheshwari/patches-1.20.0-dev.1.mpp  
-[Changelog](https://gitlab.com/Paresh-Maheshwari/paresh-patches/-/releases/v1.20.0-dev.1)
+Patches: Paresh-Maheshwari/patches-1.20.0-dev.2.mpp  
+[Changelog](https://gitlab.com/Paresh-Maheshwari/paresh-patches/-/releases/v1.20.0-dev.2)
+
+CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
+Patches: Paresh-Maheshwari/patches-1.20.0-dev.2.mpp  
+[Changelog](https://gitlab.com/Paresh-Maheshwari/paresh-patches/-/releases/v1.20.0-dev.2)
+
+CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
+Patches: Paresh-Maheshwari/patches-1.20.0-dev.2.mpp  
+[Changelog](https://gitlab.com/Paresh-Maheshwari/paresh-patches/-/releases/v1.20.0-dev.2)
 
 CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
 CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
@@ -85,6 +105,7 @@ Block-Blast: 10.4.5
 Block-Puzzle: 6.0  
 Brave-Beta-dh6k: 1.94.104  
 Patches: dh6k/patches-1.1.0.mpp  
+Brave-Bufferk: 1.92.140  
 Patches: bufferk/patches-1.8.0.mpp  
 Brave-Nightly-dh6k: 1.95.46  
 Brave-dh6k: 1.92.140  
@@ -124,8 +145,6 @@ Letterboxd: latest
 M-Indicator: 18.0.362  
 Medium: 4.5.1302097  
 Mega: 16.10(261970902)(8daeddaf4d)  
-Minesweeper: 1.21.3  
-Patches: cesbar/patches-1.9.1.mpp  
 NYT-Crossword: 6.35.0  
 NZB360: 24.3  
 Network-Guru: 1.9-beta5  
@@ -147,15 +166,10 @@ Psiphon: 474
 RS-File-Manager: 2.3.0.4  
 Reddit-Adobo: 2026.31.0  
 Patches: jkennethcarino/patches-1.3.0-dev.17.mpp  
-Reddit-Morphe: 2026.14.0  
-Patches: MorpheApp/patches-1.38.0.mpp  
-Reddit-Morphe-Dev: 2026.14.0  
-Patches: MorpheApp/patches-1.39.0-dev.9.mpp  
 Send-Files-To-TV: 1.4.22  
 Showly: 3.70.0  
 Smashit: 1.5.14  
 Solid-Explorer: 3.5.16  
-Solitaire: 1.20.3  
 SoundCloud-RookieEnough: 2025.05.27-release  
 Speedtest: 7.0.4  
 Swordigo: 1.4.12  
@@ -173,13 +187,9 @@ Unimote: 1.8.1
 WPS-Office: 18.24  
 Wallcraft: 3.61.01  
 Yatri: 5.0.5  
-YouTube-Morphe: 21.04.223  
-YouTube-Morphe-Dev: 21.04.223  
-YouTube-Music-Morphe: 9.15.51  
-YouTube-Music-Morphe-Dev: 9.15.51  
 Zombie-Catchers: latest  
 iLovePDF: 4.0.1  
-qBitConnect: 2.0.6            
+qBitConnect: 2.0.6              
 
 
 ### Failed to build
