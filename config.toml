@@ -84,7 +84,7 @@ cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "paresh"
 apkeep-dlurl  = "com.lumina.wallpapers"
 
-[MacroDroid]
+[MacroDroid-Paresh]
 patches-source  = "GitLab:Paresh-Maheshwari/paresh-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "paresh"
@@ -587,7 +587,7 @@ cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "durgesh0505"
 apkeep-dlurl  	= "com.easybrain.arrow.puzzle.game"
 
-[Does-Not-Commute]
+[Does-Not-Commute-chiggi]
 patches-source  = "durgesh0505/chiggi_morphe_patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "durgesh0505"
@@ -648,15 +648,13 @@ apkeep-dlurl 		= "com.truecaller"
 patches-source  = "byehi98/okish-morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "okish"
-patches-version = "dev"
 apkeep-dlurl 	= "com.ansangha.drdriving"
 
-[Truecloud]
+[Doodle-Jump]
 patches-source  = "byehi98/okish-morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "okish"
-# patches-version = "dev"
-apkeep-dlurl 	= "com.generalcomp.truecloud"
+apkeep-dlurl 	= "com.lima.doodlejump"
 
 [Freejobalert]
 patches-source  = "byehi98/okish-morphe-patches"
@@ -664,6 +662,12 @@ cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "okish"
 patches-version = "dev"
 apkeep-dlurl 	= "com.freejobalert"
+
+[Hill-Climb-Racing]
+patches-source  = "byehi98/okish-morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "okish"
+apkeep-dlurl 	= "com.fingersoft.hillclimb"
 
 [Jetpack-Joyride]
 patches-source  = "byehi98/okish-morphe-patches"
@@ -684,6 +688,13 @@ rv-brand        = "okish"
 patches-version = "dev"
 apkeep-dlurl 	= "com.mediocre.smashhit"
 
+[Truecloud]
+patches-source  = "byehi98/okish-morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "okish"
+# patches-version = "dev"
+apkeep-dlurl 	= "com.generalcomp.truecloud"
+
 # ==============================================================================
 # cesbar/zpatches
 # ==============================================================================
@@ -701,6 +712,46 @@ cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "cesbar"
 # patches-version = "dev"
 apkeep-dlurl 	= "ee.dustland.android.minesweeper"
+
+# ==============================================================================
+# Entree3k/Morning-Entree-Patches
+# ==============================================================================
+
+[Arm-Workout]
+patches-source  = "Entree3k/Morning-Entree-Patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "Entree3k"
+uptodown-dlurl 	= "https://arm-workout.en.uptodown.com/android"
+
+[Does-Not-Commute-Entree3k]
+patches-source  = "Entree3k/Morning-Entree-Patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "Entree3k"
+apkeep-dlurl  	= "com.mediocre.commute"
+
+[Lose-Weight-App-for-Men]
+patches-source  = "Entree3k/Morning-Entree-Patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "Entree3k"
+uptodown-dlurl 	= "https://lose-weight-app-for-men.en.uptodown.com/android"
+
+[MacroDroid-Entree3k]
+patches-source  = "Entree3k/Morning-Entree-Patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "Entree3k"
+apkeep-dlurl 	= "com.arlosoft.macrodroid"
+
+[Photon-Camera]
+patches-source  = "Entree3k/Morning-Entree-Patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "Entree3k"
+apkcombo-dlurl 	= "https://apkcombo.com/photon-camera/com.hinnka.mycamera/"
+
+[PinOut]
+patches-source  = "Entree3k/Morning-Entree-Patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "Entree3k"
+apkeep-dlurl 	= "com.mediocre.pinout"
 
 # ==============================================================================
 # Single Target Repositories (Unique Sources)
