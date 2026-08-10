@@ -50,16 +50,38 @@ jobs:
               release_data = json.loads(release_info)
               tag = release_data["tagName"]
               built_files = [a["name"] for a in release_data["assets"]]
-              
-              if "package_ids.json" in built_files:
-                  subprocess.check_call(["gh", "release", "download", tag, "-p", "package_ids.json", "--clobber"])
-                  with open("package_ids.json", "r") as pf:
-                      package_ids = json.load(pf)
-              else:
-                  package_ids = {}
           except Exception:
               tag = ""
               built_files = []
+
+          # Merge package_ids.json from ALL releases so every app ever built
+          # gets its real package ID (a single release only contains the apps
+          # built in that release).
+          import urllib.request
+          package_ids = {}
+          try:
+              repo_name = os.environ.get("GITHUB_REPOSITORY", "")
+              urls = []
+              page = 1
+              while True:
+                  out = subprocess.check_output(["gh", "api", f"repos/{repo_name}/releases?per_page=100&page={page}"]).decode("utf-8")
+                  releases_page = json.loads(out)
+                  if not releases_page:
+                      break
+                  for rel in releases_page:
+                      for a in rel.get("assets", []):
+                          if a["name"] == "package_ids.json":
+                              urls.append(a["browser_download_url"])
+                  page += 1
+              # Releases are listed newest-first; apply the newest last so it wins.
+              for url in reversed(urls):
+                  try:
+                      req = urllib.request.Request(url, headers={"User-Agent": "curl/7.0"})
+                      with urllib.request.urlopen(req, timeout=30) as resp:
+                          package_ids.update(json.loads(resp.read().decode("utf-8")))
+                  except Exception:
+                      pass
+          except Exception:
               package_ids = {}
               
           failed_tables = set()
