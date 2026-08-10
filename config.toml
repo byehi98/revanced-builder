@@ -269,12 +269,16 @@ apkeep-dlurl	= "mega.privacy.android.app"
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
-apkeep-dlurl 	= "com.mobisystems.office"
+version			= "latest"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/mobisystems/officesuite/"
+# apkeep-dlurl 	= "com.mobisystems.office"
+uptodown-dlurl	= "https://officesuite-pro-7.en.uptodown.com/android"
 
 [MovieBox]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
+version			= "3.0.16.0709.03"
 uptodown-dlurl = "https://com-community-oneroom.en.uptodown.com/android"
 
 [Network-Guru]
@@ -305,6 +309,7 @@ apkeep-dlurl	= "com.opera.app.news"
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
+version		  	= "4.0.9159"
 apkeep-dlurl 	= "com.parallel.space.pro"
 
 [ProtonVPN-Rushiranpise]
@@ -740,12 +745,6 @@ patches-source  = "Entree3k/Morning-Entree-Patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "Entree3k"
 apkeep-dlurl 	= "com.arlosoft.macrodroid"
-
-[Photon-Camera]
-patches-source  = "Entree3k/Morning-Entree-Patches"
-cli-source      = "MorpheApp/morphe-cli"
-rv-brand        = "Entree3k"
-apkcombo-dlurl 	= "https://apkcombo.com/photon-camera/com.hinnka.mycamera/"
 
 [PinOut]
 patches-source  = "Entree3k/Morning-Entree-Patches"
