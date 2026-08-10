@@ -1,6 +1,13 @@
-Reddit-Adobo: 2026.32.0  
-Reddit-Morphe-Dev: 2026.14.0  
+Does-Not-Commute-Entree3k: 1.5.5  
+MacroDroid-Entree3k: 5.65.9  
+Parallel-Space-Pro: 4.0.9159  
+Arm-Workout: 2.4.3  
+PinOut: 1.0.7  
+MovieBox: 3.0.16.0709.03  
+Lose-Weight-App-for-Men: 2.4.37  
 YouTube-Music-Morphe-Dev: 9.15.51  
+Reddit-Morphe-Dev: 2026.14.0  
+MobiOffice: 16.5.60504  
 YouTube-Morphe-Dev: 21.04.223  
 
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
@@ -9,16 +16,16 @@ Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and
 [revanced-magisk-module](https://github.com/j-hc/revanced-magisk-module)
   
 CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
-Patches: Entree3k/patches-1.9.0.mpp  
-[Changelog](https://github.com/Entree3k/Morning-Entree-Patches/releases/tag/v1.9.0)
+Patches: Entree3k/patches-1.11.0.mpp  
+[Changelog](https://github.com/Entree3k/Morning-Entree-Patches/releases/tag/v1.11.0)
 
 CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
-Patches: jkennethcarino/patches-1.3.1-dev.1.mpp  
-[Changelog](https://github.com/jkennethcarino/adobo/releases/tag/v1.3.1-dev.1)
-
 CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
-Patches: MorpheApp/patches-1.40.0-dev.1.mpp  
-[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.40.0-dev.1)
+CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
+Patches: MorpheApp/patches-1.40.0-dev.2.mpp  
+[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.40.0-dev.2)
 
 CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
 CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
@@ -44,8 +51,6 @@ Amoledpix: 7.3
 Anger-of-Stick-5: latest  
 Patches: MiguelNinja19/patches-1.13.5.mpp  
 Apkmirror-Installer: 2.0.3  
-Arm-Workout: 2.4.3  
-Patches: Entree3k/patches-1.9.0.mpp  
 Arrow-Puzzle: 1.7.0  
 Patches: durgesh0505/patches-1.18.0.mpp  
 AudioRelay: 0.26.1  
@@ -78,7 +83,6 @@ Cricbuzz: 6.24.01
 CubeX-Solver: latest  
 Dailyhunt: 34.0.4  
 Document-Scanner: 6.8.18  
-Does-Not-Commute-Entree3k: 1.5.5  
 Does-Not-Commute-chiggi: 1.5.5  
 Doodle-Jump: 3.11.38  
 Patches: byehi98/patches-1.7.0.mpp  
@@ -103,11 +107,9 @@ Killapps: 1.58.0
 Lemmy-Sync: latest  
 Patches: wchill/patches-1.4.0.mpp  
 Letterboxd: latest  
-Lose-Weight-App-for-Men: 2.4.37  
 Lumina: 1.0.2.4  
 M-Indicator: 18.0.362  
 MX-Player-Pro: 1.93.4  
-MacroDroid-Entree3k: 5.65.9  
 MacroDroid-Paresh: 5.62.11  
 Medium: 4.5.1302097  
 Mega: 16.10(261970902)(8daeddaf4d)  
@@ -122,7 +124,6 @@ Opera-GX: latest
 Patches: Alastor-Kaneki/patches-1.12.0.mpp  
 Opera-News: 14.1.2254.83278  
 Photomath: latest  
-PinOut: 1.0.7  
 Plants-vs-Zombies: latest  
 Playit: 2.7.50.12  
 Pocket-Prep: 3.28.1  
@@ -133,6 +134,8 @@ Protonmail: 7.10.4
 Patches: hxreborn/patches-1.3.0.mpp  
 Psiphon: 474  
 RS-File-Manager: 2.3.0.4  
+Reddit-Adobo: 2026.32.0  
+Patches: jkennethcarino/patches-1.3.1-dev.1.mpp  
 Reddit-Morphe: 2026.14.0  
 Patches: MorpheApp/patches-1.39.1.mpp  
 Send-Files-To-TV: 1.4.22  
@@ -164,11 +167,4 @@ YouTube-Morphe: 21.04.223
 YouTube-Music-Morphe: 9.15.51  
 Zombie-Catchers: latest  
 iLovePDF: 4.0.1  
-qBitConnect: 2.0.6                  
-
-
-### Failed to build
-- ❌ `MobiOffice`
-- ❌ `MovieBox`
-- ❌ `Parallel-Space-Pro`
-- ❌ `Photon-Camera`
+qBitConnect: 2.0.6                    
