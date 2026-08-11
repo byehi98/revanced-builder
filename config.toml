@@ -734,6 +734,12 @@ cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "Entree3k"
 apkeep-dlurl  	= "com.mediocre.commute"
 
+[Home-Workout]
+patches-source  = "Entree3k/Morning-Entree-Patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "Entree3k"
+uptodown-dlurl 	= "https://leap-fitness-group-home-workout.en.uptodown.com/android"
+
 [Lose-Weight-App-for-Men]
 patches-source  = "Entree3k/Morning-Entree-Patches"
 cli-source      = "MorpheApp/morphe-cli"
@@ -798,6 +804,12 @@ patches-source  = "hxreborn/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "hxreborn"
 apkeep-dlurl    = "ch.protonmail.android"
+
+[Imgur]
+patches-source  = "sushruth/imgur-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "imgur"
+apkeep-dlurl    = "com.imgur.mobile"
 
 # ==============================================================================
 # dh6k/morphe-patches
