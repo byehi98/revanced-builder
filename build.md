@@ -1,6 +1,5 @@
-PinOut: 1.0.7  
-Does-Not-Commute-Entree3k: 1.5.5  
-MacroDroid-Entree3k: 5.65.9  
+Arm-Workout: 2.4.3  
+Lose-Weight-App-for-Men: 2.4.37  
 
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
@@ -11,9 +10,6 @@ CLI: MorpheApp/morphe-desktop-1.13.0-all.jar
 Patches: Entree3k/patches-1.14.0.mpp  
 [Changelog](https://github.com/Entree3k/Morning-Entree-Patches/releases/tag/v1.14.0)
 
-CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
 CLI: MorpheApp/morphe-desktop-1.13.0-all.jar    
 
 Skipped:  
@@ -31,6 +27,7 @@ Amoledpix: 7.3
 Anger-of-Stick-5: latest  
 Patches: MiguelNinja19/patches-1.13.5.mpp  
 Apkmirror-Installer: 2.0.3  
+Patches: Entree3k/patches-1.14.0.mpp  
 Arrow-Puzzle: 1.7.0  
 Patches: durgesh0505/patches-1.18.0.mpp  
 AudioRelay: 0.26.1  
@@ -63,6 +60,7 @@ Cricbuzz: 6.24.01
 CubeX-Solver: latest  
 Dailyhunt: 34.0.4  
 Document-Scanner: 6.8.18  
+Does-Not-Commute-Entree3k: 1.5.5  
 Does-Not-Commute-chiggi: 1.5.5  
 Doodle-Jump: 3.11.38  
 Patches: byehi98/patches-1.7.0.mpp  
@@ -90,6 +88,7 @@ Letterboxd: latest
 Lumina: 1.0.2.4  
 M-Indicator: 18.0.362  
 MX-Player-Pro: 1.93.4  
+MacroDroid-Entree3k: 5.65.9  
 MacroDroid-Paresh: 5.62.11  
 Medium: 4.5.1302097  
 Mega: 16.10(261970902)(8daeddaf4d)  
@@ -107,6 +106,7 @@ Patches: Alastor-Kaneki/patches-1.12.0.mpp
 Opera-News: 14.1.2254.83278  
 Parallel-Space-Pro: 4.0.9159  
 Photomath: latest  
+PinOut: 1.0.7  
 Plants-vs-Zombies: latest  
 Playit: 2.7.50.12  
 Pocket-Prep: 3.28.1  
@@ -154,9 +154,4 @@ YouTube-Music-Morphe: 9.15.51
 YouTube-Music-Morphe-Dev: 9.15.51  
 Zombie-Catchers: latest  
 iLovePDF: 4.0.1  
-qBitConnect: 2.0.6                        
-
-
-### Failed to build
-- ❌ `Arm-Workout`
-- ❌ `Lose-Weight-App-for-Men`
+qBitConnect: 2.0.6                          
