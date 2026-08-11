@@ -1,5 +1,7 @@
-Arm-Workout: 2.4.3  
-Lose-Weight-App-for-Men: 2.4.37  
+Imgur: 7.34.0.0  
+YouTube-Music-Morphe-Dev: 9.15.51  
+Reddit-Morphe-Dev: 2026.14.0  
+YouTube-Morphe-Dev: 21.04.223  
 
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
@@ -10,7 +12,15 @@ CLI: MorpheApp/morphe-desktop-1.13.0-all.jar
 Patches: Entree3k/patches-1.14.0.mpp  
 [Changelog](https://github.com/Entree3k/Morning-Entree-Patches/releases/tag/v1.14.0)
 
-CLI: MorpheApp/morphe-desktop-1.13.0-all.jar    
+CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
+Patches: MorpheApp/patches-1.40.0-dev.3.mpp  
+[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.40.0-dev.3)
+
+CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
+Patches: sushruth/patches-1.0.0.mpp  
+[Changelog](https://github.com/sushruth/imgur-patches/releases/tag/v1.0.0)  
 
 Skipped:  
 AccuBattery: 2.1.8  
@@ -27,6 +37,7 @@ Amoledpix: 7.3
 Anger-of-Stick-5: latest  
 Patches: MiguelNinja19/patches-1.13.5.mpp  
 Apkmirror-Installer: 2.0.3  
+Arm-Workout: 2.4.3  
 Patches: Entree3k/patches-1.14.0.mpp  
 Arrow-Puzzle: 1.7.0  
 Patches: durgesh0505/patches-1.18.0.mpp  
@@ -85,6 +96,7 @@ Killapps: 1.58.0
 Lemmy-Sync: latest  
 Patches: wchill/patches-1.4.0.mpp  
 Letterboxd: latest  
+Lose-Weight-App-for-Men: 2.4.37  
 Lumina: 1.0.2.4  
 M-Indicator: 18.0.362  
 MX-Player-Pro: 1.93.4  
@@ -121,8 +133,6 @@ Reddit-Adobo: 2026.32.0
 Patches: jkennethcarino/patches-1.3.1-dev.1.mpp  
 Reddit-Morphe: 2026.14.0  
 Patches: MorpheApp/patches-1.39.1.mpp  
-Reddit-Morphe-Dev: 2026.14.0  
-Patches: MorpheApp/patches-1.40.0-dev.2.mpp  
 Send-Files-To-TV: 1.4.22  
 Showly: 3.70.0  
 Smashit: 1.5.14  
@@ -149,9 +159,11 @@ WPS-Office: 18.24
 Wallcraft: 3.61.01  
 Yatri: 5.0.5  
 YouTube-Morphe: 21.04.223  
-YouTube-Morphe-Dev: 21.04.223  
 YouTube-Music-Morphe: 9.15.51  
-YouTube-Music-Morphe-Dev: 9.15.51  
 Zombie-Catchers: latest  
 iLovePDF: 4.0.1  
-qBitConnect: 2.0.6                          
+qBitConnect: 2.0.6                            
+
+
+### Failed to build
+- ❌ `Home-Workout`
