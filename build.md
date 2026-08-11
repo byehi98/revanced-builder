@@ -1,7 +1,4 @@
-Imgur: 7.34.0.0  
-YouTube-Music-Morphe-Dev: 9.15.51  
-Reddit-Morphe-Dev: 2026.14.0  
-YouTube-Morphe-Dev: 21.04.223  
+Home-Workout: 1.7.6  
 
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
@@ -10,17 +7,7 @@ Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and
   
 CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
 Patches: Entree3k/patches-1.14.0.mpp  
-[Changelog](https://github.com/Entree3k/Morning-Entree-Patches/releases/tag/v1.14.0)
-
-CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
-Patches: MorpheApp/patches-1.40.0-dev.3.mpp  
-[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.40.0-dev.3)
-
-CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
-Patches: sushruth/patches-1.0.0.mpp  
-[Changelog](https://github.com/sushruth/imgur-patches/releases/tag/v1.0.0)  
+[Changelog](https://github.com/Entree3k/Morning-Entree-Patches/releases/tag/v1.14.0)  
 
 Skipped:  
 AccuBattery: 2.1.8  
@@ -89,6 +76,8 @@ Hidden-Settings: 7.34
 Hill-Climb-Racing: 1.70.0  
 Hunter-Assassin: latest  
 Icon-Pack-Studio: 2.2 build 016  
+Imgur: 7.34.0.0  
+Patches: sushruth/patches-1.0.0.mpp  
 Irplus: latest  
 Patches: RookieEnough/patches-1.1.0.mpp  
 Jetpack-Joyride: 1.104.1  
@@ -133,6 +122,8 @@ Reddit-Adobo: 2026.32.0
 Patches: jkennethcarino/patches-1.3.1-dev.1.mpp  
 Reddit-Morphe: 2026.14.0  
 Patches: MorpheApp/patches-1.39.1.mpp  
+Reddit-Morphe-Dev: 2026.14.0  
+Patches: MorpheApp/patches-1.40.0-dev.3.mpp  
 Send-Files-To-TV: 1.4.22  
 Showly: 3.70.0  
 Smashit: 1.5.14  
@@ -159,11 +150,9 @@ WPS-Office: 18.24
 Wallcraft: 3.61.01  
 Yatri: 5.0.5  
 YouTube-Morphe: 21.04.223  
+YouTube-Morphe-Dev: 21.04.223  
 YouTube-Music-Morphe: 9.15.51  
+YouTube-Music-Morphe-Dev: 9.15.51  
 Zombie-Catchers: latest  
 iLovePDF: 4.0.1  
-qBitConnect: 2.0.6                            
-
-
-### Failed to build
-- ❌ `Home-Workout`
+qBitConnect: 2.0.6                              
