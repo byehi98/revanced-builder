@@ -1,8 +1,6 @@
-Minesweeper: 1.21.3  
-Does-Not-Commute-Entree3k: 1.5.5  
 PinOut: 1.0.7  
+Does-Not-Commute-Entree3k: 1.5.5  
 MacroDroid-Entree3k: 5.65.9  
-Solitaire: 1.20.3  
 
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
@@ -10,13 +8,8 @@ Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and
 [revanced-magisk-module](https://github.com/j-hc/revanced-magisk-module)
   
 CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
-Patches: cesbar/patches-1.11.0.mpp  
-[Changelog](https://github.com/cesbar/zpatches/releases/tag/v1.11.0)
-
-CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
-Patches: Entree3k/patches-1.12.0.mpp  
-[Changelog](https://github.com/Entree3k/Morning-Entree-Patches/releases/tag/v1.12.0)
+Patches: Entree3k/patches-1.14.0.mpp  
+[Changelog](https://github.com/Entree3k/Morning-Entree-Patches/releases/tag/v1.14.0)
 
 CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
 CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
@@ -100,6 +93,8 @@ MX-Player-Pro: 1.93.4
 MacroDroid-Paresh: 5.62.11  
 Medium: 4.5.1302097  
 Mega: 16.10(261970902)(8daeddaf4d)  
+Minesweeper: 1.21.3  
+Patches: cesbar/patches-1.11.0.mpp  
 MobiOffice: 16.5.60504  
 MovieBox: 3.0.16.0709.03  
 NYT-Crossword: 6.35.0  
@@ -132,6 +127,7 @@ Send-Files-To-TV: 1.4.22
 Showly: 3.70.0  
 Smashit: 1.5.14  
 Solid-Explorer: 3.5.16  
+Solitaire: 1.20.3  
 SoundCloud-RookieEnough: 2025.05.27-release  
 Speedtest: 7.0.4  
 Swordigo: 1.4.12  
@@ -158,7 +154,7 @@ YouTube-Music-Morphe: 9.15.51
 YouTube-Music-Morphe-Dev: 9.15.51  
 Zombie-Catchers: latest  
 iLovePDF: 4.0.1  
-qBitConnect: 2.0.6                      
+qBitConnect: 2.0.6                        
 
 
 ### Failed to build
