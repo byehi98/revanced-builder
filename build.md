@@ -1,4 +1,15 @@
-Protonmail: 7.10.4  
+Adobe-Photoshop-Mix: latest  
+Google-News-RookieEnough: 5.164.0.956529531  
+Cricbuzz: 6.24.01  
+Icon-Pack-Studio: 2.2 build 016  
+Irplus: latest  
+Brave-Nightly-dh6k: 1.95.46  
+Brave-Beta-dh6k: 1.94.104  
+Brave-dh6k: 1.92.140  
+Photomath: latest  
+Google-Photos: latest  
+SoundCloud-RookieEnough: latest  
+Letterboxd: latest  
 
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
@@ -6,9 +17,23 @@ Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and
 [revanced-magisk-module](https://github.com/j-hc/revanced-magisk-module)
   
 CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
-Patches: hxreborn/patches-1.4.0.mpp  
-[Changelog](https://github.com/hxreborn/morphe-patches/releases/tag/v1.4.0)
+Patches: dh6k/patches-1.2.0.mpp  
+[Changelog](https://github.com/dh6k/morphe-patches/releases/tag/v1.2.0)
 
+CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
+Patches: RookieEnough/patches-1.2.0.mpp  
+[Changelog](https://github.com/RookieEnough/De-ReVanced/releases/tag/v1.2.0)
+
+CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
 CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
 Patches: rushiranpise/patches-1.17.0.mpp  
 [Changelog](https://github.com/rushiranpise/morphe-patches/releases/tag/v1.17.0)  
@@ -20,8 +45,6 @@ Accuweather: 21.1.14-5-rc
 AdGuard-hoo-dles: 4.13.1  
 Patches: hoo-dles/patches-1.40.0.mpp  
 AdGuard-rushiranpise: 4.14.68  
-Adobe-Photoshop-Mix: latest  
-Patches: RookieEnough/patches-1.1.1.mpp  
 Advanced-Download-Manager: 14.0.39  
 Patches: arandomhooman/patches-1.43.4.mpp  
 Amoledpix: 7.3  
@@ -40,12 +63,8 @@ Backdrops: 6.1.2
 Patches: BholeyKaBhakt/patches-2.12.0.mpp  
 Block-Blast: 10.4.5  
 Block-Puzzle: 6.0  
-Brave-Beta-dh6k: 1.94.104  
-Patches: dh6k/patches-1.1.0.mpp  
 Brave-Bufferk: 1.92.140  
 Patches: bufferk/patches-1.8.0.mpp  
-Brave-Nightly-dh6k: 1.95.46  
-Brave-dh6k: 1.92.140  
 CREX: 26.04.05  
 Patches: Paresh-Maheshwari/patches-1.20.0-dev.2.mpp  
 CalcNote: 2.25.107  
@@ -58,7 +77,6 @@ Chess-com: 4.10.0
 Patches: prathxmOp/patches-1.13.0.mpp  
 Climb: 6.0.7  
 Cloudflare-Warp: 6.38.8  
-Cricbuzz: 6.24.01  
 CubeX-Solver: latest  
 Dailyhunt: 34.0.4  
 Document-Scanner: 6.8.18  
@@ -72,24 +90,18 @@ Fing: 12.12.0
 FolderSync: 4.9.3  
 Freejobalert: 1.0.0  
 Patches: byehi98/patches-1.7.0.mpp  
-Google-News-RookieEnough: 5.108.0.644447823  
 Google-News-hoo-dles: 5.161.0.931240252  
-Google-Photos: latest  
 Greenify: 5.1.1  
 Hidden-Settings: 7.34  
 Hill-Climb-Racing: 1.70.0  
 Home-Workout: 1.7.6  
 Hunter-Assassin: latest  
-Icon-Pack-Studio: 2.2 build 016  
 Imgur: 7.34.0.0  
 Patches: sushruth/patches-1.0.0.mpp  
-Irplus: latest  
-Patches: RookieEnough/patches-1.1.1.mpp  
 Jetpack-Joyride: 1.104.1  
 Killapps: 1.58.0  
 Lemmy-Sync: latest  
 Patches: wchill/patches-1.4.0.mpp  
-Letterboxd: latest  
 Lose-Weight-App-for-Men: 2.4.37  
 Lumina: 1.0.2.4  
 M-Indicator: 18.0.362  
@@ -110,7 +122,6 @@ Opera-GX: latest
 Patches: Alastor-Kaneki/patches-1.12.0.mpp  
 Opera-News: 14.1.2254.83278  
 Parallel-Space-Pro: 4.0.9159  
-Photomath: latest  
 PinOut: 1.0.7  
 Plants-vs-Zombies: latest  
 Playit: 2.7.50.12  
@@ -118,6 +129,8 @@ Pocket-Prep: 3.28.1
 Poweramp: build-1025-bundle-play  
 ProtonVPN-Hoodles: 5.19.43.0  
 ProtonVPN-Rushiranpise: 5.19.78.0  
+Protonmail: 7.10.4  
+Patches: hxreborn/patches-1.4.0.mpp  
 Psiphon: 479  
 RS-File-Manager: 2.3.0.4  
 Reddit-Adobo: 2026.32.0  
@@ -131,7 +144,6 @@ Showly: 3.70.0
 Smashit: 1.5.14  
 Solid-Explorer: 3.5.16  
 Solitaire: 1.20.3  
-SoundCloud-RookieEnough: 2025.05.27-release  
 Speedtest: 7.0.4  
 Swordigo: 1.4.12  
 Symfonium: 14.0.0  
@@ -157,7 +169,7 @@ YouTube-Music-Morphe: 9.15.51
 YouTube-Music-Morphe-Dev: 9.15.51  
 Zombie-Catchers: latest  
 iLovePDF: 4.0.1    
-qBitConnect: 2.0.6    
+qBitConnect: 2.0.6      
 
 
 ### Failed to build
