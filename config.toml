@@ -668,6 +668,12 @@ rv-brand        = "okish"
 patches-version = "dev"
 apkeep-dlurl 	= "com.freejobalert"
 
+[Into-The-Dead]
+patches-source  = "byehi98/okish-morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "okish"
+apkeep-dlurl 	= "com.sidheinteractive.sif.DR"
+
 [Hill-Climb-Racing]
 patches-source  = "byehi98/okish-morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
