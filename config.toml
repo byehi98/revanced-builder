@@ -281,12 +281,6 @@ rv-brand        = "rushiranpise"
 version			= "3.0.16.0709.03"
 uptodown-dlurl = "https://com-community-oneroom.en.uptodown.com/android"
 
-[Network-Guru]
-patches-source  = "rushiranpise/morphe-patches"
-cli-source      = "MorpheApp/morphe-cli"
-rv-brand        = "rushiranpise"
-apkeep-dlurl = "com.paget96.netspeedindicator"
-
 [NYT-Crossword]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
@@ -511,13 +505,6 @@ cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "binarymend"
 apkeep-dlurl 	= "com.burton999.notecal"
 
-[Symfonium]
-patches-source  	= "binarymend/morphe-patches"
-cli-source      	= "MorpheApp/morphe-cli"
-rv-brand        	= "binarymend"
-apkmirror-dlurl 	= "https://www.apkmirror.com/apk/tolriq/symfonium-music-player-cast/"
-apkeep-dlurl	 	= "app.symfonik.music.player"
-
 # ==============================================================================
 # BholeyKaBhakt/android-patches-xtra
 # ==============================================================================
@@ -614,6 +601,12 @@ cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "hoomans"
 uptodown-dlurl  = "https://poweramp-music-player.en.uptodown.com/android"
 
+[Microsoft-SwiftKey]
+patches-source  = "arandomhooman/hoomans-morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "hoomans"
+apkeep-dlurl  	= "com.touchtype.swiftkey"
+
 [Advanced-Download-Manager]
 patches-source  = "arandomhooman/hoomans-morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
@@ -648,6 +641,12 @@ apkeep-dlurl 		= "com.truecaller"
 # ==============================================================================
 # byehi98/okish-morphe-patches
 # ==============================================================================
+
+[Big-Hunter]
+patches-source  = "byehi98/okish-morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "okish"
+apkeep-dlurl 	= "com.kakarod.bighunter"
 
 [Dr-Driving]
 patches-source  = "byehi98/okish-morphe-patches"
@@ -685,6 +684,12 @@ patches-source  = "byehi98/okish-morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "okish"
 apkeep-dlurl 	= "com.halfbrick.jetpackjoyride"
+
+[Rodeo-Stampede]
+patches-source  = "byehi98/okish-morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "okish"
+apkeep-dlurl 	= "com.yodo1.rodeo.safari"
 
 [Swordigo]
 patches-source  = "byehi98/okish-morphe-patches"
@@ -764,6 +769,12 @@ cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "Entree3k"
 apkeep-dlurl 	= "com.mediocre.pinout"
 
+[Six-Pack-in-30-Days]
+patches-source  = "Entree3k/Morning-Entree-Patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "Entree3k"
+uptodown-dlurl	= "https://six-pack-in-30-days.en.uptodown.com/android"
+
 # ==============================================================================
 # Single Target Repositories (Unique Sources)
 # ==============================================================================
@@ -816,6 +827,19 @@ patches-source  = "sushruth/imgur-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "imgur"
 apkeep-dlurl    = "com.imgur.mobile"
+
+[Symfonium]
+patches-source  	= "hxreborn/morphe-patches"
+cli-source      	= "MorpheApp/morphe-cli"
+rv-brand        	= "hxreborn"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/tolriq/symfonium-music-player-cast/"
+apkeep-dlurl	 	= "app.symfonik.music.player"
+
+[All-Video-Downloader-and-Ace-Player]
+patches-source  = "BlazeFTL/FTL-Patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "FTL"
+apkeep-dlurl    = "videoplayer.videodownloader.downloader"
 
 # ==============================================================================
 # dh6k/morphe-patches
