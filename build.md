@@ -1,25 +1,10 @@
-Anger-of-Stick-5: latest  
-Doodle-Jump: 3.11.38  
-CubeX-Solver: latest  
-Advanced-Download-Manager: 14.0.39  
-Dr-Driving: 1.73  
-Freejobalert: 1.0.0  
-FolderSync: 4.9.3  
-Climb: 6.0.8  
-Hill-Climb-Racing: 1.70.0  
-Hunter-Assassin: latest  
-Into-The-Dead: 2.9.3  
-Jetpack-Joyride: 1.104.1  
-Plants-vs-Zombies: latest  
-Oddmar: latest  
-Smashit: 1.5.14  
-Swordigo: 1.4.12  
-Protonmail: 7.10.4  
-Truecloud: 4.6.5.13  
-Reddit-Morphe-Dev: 2026.14.0  
-Zombie-Catchers: latest  
-YouTube-Music-Morphe-Dev: 9.15.51  
-YouTube-Morphe-Dev: 21.04.223  
+All-Video-Downloader-and-Ace-Player: latest  
+Big-Hunter: 3.1.1  
+Microsoft-SwiftKey: 9.13.13.5  
+Rodeo-Stampede: 4.23.0  
+Six-Pack-in-30-Days: 1.4.8  
+Poweramp: build-1025-bundle-play  
+The-Battle-of-Polytopia: 2.17.2.16299  
 
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
@@ -32,42 +17,21 @@ Patches: arandomhooman/patches-1.48.0.mpp
 
 CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
 CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
+Patches: BlazeFTL/patches-1.33.0.mpp  
+[Changelog](https://github.com/BlazeFTL/FTL-Patches/releases/tag/v1.33.0)
+
 CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
 Patches: byehi98/patches-1.10.0.mpp  
 [Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.10.0)
 
 CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
 CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
-Patches: hxreborn/patches-1.6.0.mpp  
-[Changelog](https://github.com/hxreborn/morphe-patches/releases/tag/v1.6.0)
+Patches: Entree3k/patches-1.16.0.mpp  
+[Changelog](https://github.com/Entree3k/Morning-Entree-Patches/releases/tag/v1.16.0)
 
 CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
 Patches: MiguelNinja19/patches-1.13.6.mpp  
-[Changelog](https://github.com/MiguelNinja19/miguel-morphe-patches/releases/tag/v1.13.6)
-
-CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
-Patches: MorpheApp/patches-1.40.0-dev.7.mpp  
-[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.40.0-dev.7)
-
-CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.13.0-all.jar  
-Patches: rushiranpise/patches-1.17.0.mpp  
-[Changelog](https://github.com/rushiranpise/morphe-patches/releases/tag/v1.17.0)  
+[Changelog](https://github.com/MiguelNinja19/miguel-morphe-patches/releases/tag/v1.13.6)  
 
 Skipped:  
 AccuBattery: 2.1.8  
@@ -78,7 +42,11 @@ Patches: hoo-dles/patches-1.40.0.mpp
 AdGuard-rushiranpise: 4.14.68  
 Adobe-Photoshop-Mix: latest  
 Patches: RookieEnough/patches-1.2.1.mpp  
+Advanced-Download-Manager: 14.0.39  
+Patches: arandomhooman/patches-1.48.0.mpp  
 Amoledpix: 7.3  
+Anger-of-Stick-5: latest  
+Patches: MiguelNinja19/patches-1.13.6.mpp  
 Apkmirror-Installer: 2.0.3  
 Arm-Workout: 2.4.3  
 Patches: Entree3k/patches-1.16.0.mpp  
@@ -90,6 +58,7 @@ Automate: 1.51.1
 Patches: BholeyKaBhakt/patches-2.12.0.mpp  
 Backdrops: 6.1.2  
 Patches: BholeyKaBhakt/patches-2.12.0.mpp  
+Patches: byehi98/patches-1.10.0.mpp  
 Block-Blast: 10.4.5  
 Block-Puzzle: 6.0  
 Brave-Beta-dh6k: 1.94.104  
@@ -108,25 +77,36 @@ Camera: 5.4.0
 Charge-Meter: 2.9.7  
 Chess-com: 4.10.0  
 Patches: prathxmOp/patches-1.13.0.mpp  
+Climb: 6.0.8  
 Cloudflare-Warp: 6.38.8  
 Cricbuzz: 6.24.01  
+CubeX-Solver: latest  
 Dailyhunt: 34.0.4  
 Document-Scanner: 6.8.18  
 Does-Not-Commute-Entree3k: 1.5.5  
 Does-Not-Commute-chiggi: 1.5.5  
+Doodle-Jump: 3.11.38  
+Dr-Driving: 1.73  
 Eyecon: 4.2026.04.05.1300  
 Fing: 12.12.0  
+FolderSync: 4.9.3  
+Freejobalert: 1.0.0  
+Patches: byehi98/patches-1.10.0.mpp  
 Google-News-RookieEnough: 5.164.0.956529531  
 Google-News-hoo-dles: 5.161.0.931240252  
 Google-Photos: latest  
 Greenify: 5.1.1  
 Hidden-Settings: 7.34  
+Hill-Climb-Racing: 1.70.0  
 Home-Workout: 1.7.6  
+Hunter-Assassin: latest  
 Icon-Pack-Studio: 2.2 build 016  
 Imgur: 7.34.0.0  
 Patches: sushruth/patches-1.0.0.mpp  
+Into-The-Dead: 2.9.3  
 Irplus: latest  
 Patches: RookieEnough/patches-1.2.1.mpp  
+Jetpack-Joyride: 1.104.1  
 Killapps: 1.58.0  
 Lemmy-Sync: latest  
 Patches: wchill/patches-1.4.0.mpp  
@@ -146,28 +126,36 @@ MovieBox: 3.0.16.0709.03
 NYT-Crossword: 6.36.1  
 NZB360: 24.3  
 Octi: 1.1.0-rc0  
+Oddmar: latest  
 Opera-GX: latest  
 Patches: Alastor-Kaneki/patches-1.12.0.mpp  
 Opera-News: 14.1.2254.83278  
 Parallel-Space-Pro: 4.0.9159  
 Photomath: latest  
 PinOut: 1.0.7  
+Plants-vs-Zombies: latest  
 Playit: 2.7.50.12  
 Pocket-Prep: 3.28.1  
 ProtonVPN-Hoodles: 5.19.43.0  
 ProtonVPN-Rushiranpise: 5.19.78.0  
+Protonmail: 7.10.4  
+Patches: hxreborn/patches-1.6.0.mpp  
 Psiphon: 479  
 RS-File-Manager: 2.3.0.4  
 Reddit-Adobo: 2026.32.0  
 Patches: jkennethcarino/patches-1.3.1-dev.1.mpp  
 Reddit-Morphe: 2026.14.0  
 Patches: MorpheApp/patches-1.39.1.mpp  
+Reddit-Morphe-Dev: 2026.14.0  
+Patches: MorpheApp/patches-1.40.0-dev.7.mpp  
 Send-Files-To-TV: 1.4.22  
 Showly: 3.70.0  
+Smashit: 1.5.14  
 Solid-Explorer: 3.5.16  
 Solitaire: 1.20.3  
 SoundCloud-RookieEnough: latest  
 Speedtest: 7.0.4  
+Swordigo: 1.4.12  
 Symfonium: 14.0.0  
 Telegram: 12.9.2  
 Patches: Aunali321/patches-2.0.0.rvp  
@@ -179,17 +167,15 @@ Patches: IMXEren/patches-1.4.1.mpp
 Truecaller: 26.10.6  
 Patches: Paresh-Maheshwari/patches-1.20.0-dev.2.mpp  
 Truecaller-bufferk: 26.10.6  
+Truecloud: 4.6.5.13  
 Unimote: 1.8.1  
 WPS-Office: 18.24  
 Wallcraft: 3.61.01  
 Yatri: 5.0.5  
 YouTube-Morphe: 21.04.223  
+YouTube-Morphe-Dev: 21.04.223  
 YouTube-Music-Morphe: 9.15.51  
+YouTube-Music-Morphe-Dev: 9.15.51  
+Zombie-Catchers: latest  
 iLovePDF: 4.0.1    
-qBitConnect: 2.0.6                  
-
-
-### Failed to build
-- ❌ `Network-Guru`
-- ❌ `Poweramp`
-- ❌ `The-Battle-of-Polytopia`
+qBitConnect: 2.0.6                    
