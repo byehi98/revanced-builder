@@ -350,6 +350,12 @@ cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
 apkeep-dlurl	= "com.yablio.sendfilestotv"
 
+[Server-Auditor]
+patches-source  = "rushiranpise/morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "rushiranpise"
+apkeep-dlurl	= "com.server.auditor.ssh.client"
+
 [TeraBox]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
@@ -659,6 +665,12 @@ patches-source  = "byehi98/okish-morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "okish"
 apkeep-dlurl 	= "com.lima.doodlejump"
+
+[Earn-to-Die-2]
+patches-source  = "byehi98/okish-morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "okish"
+apkeep-dlurl 	= "com.notdoppler.earntodie2"
 
 [Freejobalert]
 patches-source  = "byehi98/okish-morphe-patches"
