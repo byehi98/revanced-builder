@@ -690,7 +690,7 @@ cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "okish"
 apkeep-dlurl 	= "com.halfbrick.jetpackjoyride"
 
-[Swordigo]
+[Missiles]
 patches-source  = "byehi98/okish-morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "okish"
