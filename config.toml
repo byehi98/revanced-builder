@@ -274,13 +274,6 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/mobisystems/officesuite/"
 # apkeep-dlurl 	= "com.mobisystems.office"
 uptodown-dlurl	= "https://officesuite-pro-7.en.uptodown.com/android"
 
-[MovieBox]
-patches-source  = "rushiranpise/morphe-patches"
-cli-source      = "MorpheApp/morphe-cli"
-rv-brand        = "rushiranpise"
-version			= "3.0.16.0709.03"
-uptodown-dlurl = "https://com-community-oneroom.en.uptodown.com/android"
-
 [NYT-Crossword]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
@@ -697,6 +690,18 @@ cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "okish"
 apkeep-dlurl 	= "com.halfbrick.jetpackjoyride"
 
+[Swordigo]
+patches-source  = "byehi98/okish-morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "okish"
+apkeep-dlurl 	= "pl.macaque.Missiles"
+
+[MovieBox]
+patches-source  = "byehi98/okish-morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "okish"
+uptodown-dlurl  = "https://com-community-oneroom.en.uptodown.com/android"
+
 [Rodeo-Stampede]
 patches-source  = "byehi98/okish-morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
@@ -722,6 +727,13 @@ cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "okish"
 # patches-version = "dev"
 apkeep-dlurl 	= "com.generalcomp.truecloud"
+
+[Vector]
+patches-source  = "byehi98/okish-morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "okish"
+patches-version = "dev"
+apkeep-dlurl 	= "com.nekki.vector"
 
 # ==============================================================================
 # cesbar/zpatches
