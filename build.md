@@ -1,12 +1,7 @@
-Does-Not-Commute-chiggi: 1.5.5  
-Arrow-Puzzle: 1.7.0  
-Protonmail: 7.10.4  
-Symfonium: 14.1.0  
-Brave-Nightly-dh6k: 1.96.3  
-Reddit-Morphe-Dev: 2026.14.0  
-Brave-Beta-dh6k: 1.94.112  
-Brave-dh6k: 1.93.136  
+All-Video-Downloader-and-Ace-Player: latest  
 YouTube-Music-Morphe-Dev: 9.15.51  
+Reddit-Morphe-Dev: 2026.14.0  
+Reddit-Adobo: 2026.34.0  
 YouTube-Morphe-Dev: 21.04.223  
 
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
@@ -14,28 +9,20 @@ Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and
 
 [revanced-magisk-module](https://github.com/j-hc/revanced-magisk-module)
   
-CLI: MorpheApp/morphe-desktop-1.13.1-all.jar  
-Patches: dh6k/patches-1.3.0.mpp  
-[Changelog](https://github.com/dh6k/morphe-patches/releases/tag/v1.3.0)
+CLI: MorpheApp/morphe-desktop-1.13.2-all.jar  
+Patches: BlazeFTL/patches-1.39.0.mpp  
+[Changelog](https://github.com/BlazeFTL/FTL-Patches/releases/tag/v1.39.0)
 
-CLI: MorpheApp/morphe-desktop-1.13.1-all.jar  
-CLI: MorpheApp/morphe-desktop-1.13.1-all.jar  
-CLI: MorpheApp/morphe-desktop-1.13.1-all.jar  
-Patches: durgesh0505/patches-1.19.0.mpp  
-[Changelog](https://github.com/durgesh0505/chiggi_morphe_patches/releases/tag/v1.19.0)
+CLI: MorpheApp/morphe-desktop-1.13.2-all.jar  
+Patches: jkennethcarino/patches-1.4.0-dev.2.mpp  
+[Changelog](https://github.com/jkennethcarino/adobo/releases/tag/v1.4.0-dev.2)
 
-CLI: MorpheApp/morphe-desktop-1.13.1-all.jar  
-CLI: MorpheApp/morphe-desktop-1.13.1-all.jar  
-Patches: hxreborn/patches-1.10.0.mpp  
-[Changelog](https://github.com/hxreborn/morphe-patches/releases/tag/v1.10.0)
+CLI: MorpheApp/morphe-desktop-1.13.2-all.jar  
+Patches: MorpheApp/patches-1.40.0-dev.18.mpp  
+[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.40.0-dev.18)
 
-CLI: MorpheApp/morphe-desktop-1.13.1-all.jar  
-CLI: MorpheApp/morphe-desktop-1.13.1-all.jar  
-Patches: MorpheApp/patches-1.40.0-dev.14.mpp  
-[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.40.0-dev.14)
-
-CLI: MorpheApp/morphe-desktop-1.13.1-all.jar  
-CLI: MorpheApp/morphe-desktop-1.13.1-all.jar    
+CLI: MorpheApp/morphe-desktop-1.13.2-all.jar  
+CLI: MorpheApp/morphe-desktop-1.13.2-all.jar    
 
 Skipped:  
 AccuBattery: 2.1.8  
@@ -48,14 +35,14 @@ Adobe-Photoshop-Mix: latest
 Patches: RookieEnough/patches-1.2.2.mpp  
 Advanced-Download-Manager: 14.0.39  
 Patches: arandomhooman/patches-1.50.3.mpp  
-All-Video-Downloader-and-Ace-Player: latest  
-Patches: BlazeFTL/patches-1.38.0.mpp  
 Amoledpix: 7.3  
 Anger-of-Stick-5: latest  
 Patches: MiguelNinja19/patches-1.13.6.mpp  
 Apkmirror-Installer: 2.0.3  
 Arm-Workout: 2.4.3  
 Patches: Entree3k/patches-1.16.0.mpp  
+Arrow-Puzzle: 1.7.0  
+Patches: durgesh0505/patches-1.19.0.mpp  
 AudioRelay: 0.26.1  
 Patches: kiraio-moe/patches-1.3.0.mpp  
 Automate: 1.51.1  
@@ -66,8 +53,12 @@ Big-Hunter: 3.1.1
 Patches: byehi98/patches-1.14.0.mpp  
 Block-Blast: 10.4.5  
 Block-Puzzle: 6.0  
+Brave-Beta-dh6k: 1.94.112  
+Patches: dh6k/patches-1.3.0.mpp  
 Brave-Bufferk: 1.92.140  
 Patches: bufferk/patches-1.8.0.mpp  
+Brave-Nightly-dh6k: 1.96.3  
+Brave-dh6k: 1.93.136  
 CREX: 26.04.05  
 Patches: Paresh-Maheshwari/patches-1.20.0-dev.2.mpp  
 CalcNote: 2.25.107  
@@ -85,6 +76,7 @@ CubeX-Solver: latest
 Dailyhunt: 34.0.4  
 Document-Scanner: 6.8.18  
 Does-Not-Commute-Entree3k: 1.5.5  
+Does-Not-Commute-chiggi: 1.5.5  
 Doodle-Jump: 3.11.38  
 Dr-Driving: 1.73  
 Earn-to-Die-2: 1.4.58  
@@ -142,10 +134,10 @@ Pocket-Prep: 3.28.1
 Poweramp: build-1025-bundle-play  
 ProtonVPN-Hoodles: 5.19.43.0  
 ProtonVPN-Rushiranpise: 5.19.78.0  
+Protonmail: 7.10.4  
+Patches: hxreborn/patches-1.10.0.mpp  
 Psiphon: 479  
 RS-File-Manager: 2.3.0.4  
-Reddit-Adobo: 2026.32.0  
-Patches: jkennethcarino/patches-1.3.1-dev.1.mpp  
 Reddit-Morphe: 2026.14.0  
 Patches: MorpheApp/patches-1.39.1.mpp  
 Rodeo-Stampede: 4.23.0  
@@ -159,6 +151,7 @@ Solitaire: 1.20.3
 SoundCloud-RookieEnough: latest  
 Speedtest: 7.0.4  
 Swordigo: 1.4.12  
+Symfonium: 14.1.0  
 Telegram: 12.9.2  
 Patches: Aunali321/patches-2.0.0.rvp  
 Telegram-Paresh: 12.9.2  
@@ -180,4 +173,4 @@ YouTube-Morphe: 21.04.223
 YouTube-Music-Morphe: 9.15.51  
 Zombie-Catchers: latest  
 iLovePDF: 4.0.1            
-qBitConnect: 2.0.6    
+qBitConnect: 2.0.6      
