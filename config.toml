@@ -306,12 +306,6 @@ rv-brand        = "rushiranpise"
 # apkmirror-dlurl = "https://www.apkmirror.com/apk/proton-technologies-ag/protonvpn-free-vpn-secure-unlimited-fdroid-version/"
 uptodown-dlurl  = "https://protonvpn.en.uptodown.com/android"
 
-[Pocket-Prep]
-patches-source  = "rushiranpise/morphe-patches"
-cli-source      = "MorpheApp/morphe-cli"
-rv-brand        = "rushiranpise"
-apkeep-dlurl 	= "com.pocketprep.android.itcybersecurity"
-
 [Playit]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
@@ -672,6 +666,12 @@ rv-brand        = "okish"
 patches-version = "dev"
 apkeep-dlurl 	= "com.freejobalert"
 
+[HAAK]
+patches-source  = "byehi98/okish-morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "okish"
+apkeep-dlurl 	= "com.blingame.haaktestb"
+
 [Into-The-Dead]
 patches-source  = "byehi98/okish-morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
@@ -702,6 +702,18 @@ cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "okish"
 uptodown-dlurl  = "https://com-community-oneroom.en.uptodown.com/android"
 
+[Onlyone]
+patches-source  = "byehi98/okish-morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "okish"
+apkeep-dlurl  	= "com.rebelbinary.onlyone"
+
+[Plagueinc]
+patches-source  = "byehi98/okish-morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "okish"
+apkeep-dlurl  	= "com.miniclip.plagueinc"
+
 [Rodeo-Stampede]
 patches-source  = "byehi98/okish-morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
@@ -720,6 +732,13 @@ cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "okish"
 patches-version = "dev"
 apkeep-dlurl 	= "com.mediocre.smashhit"
+
+[Tentaclewars]
+patches-source  = "byehi98/okish-morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "okish"
+# patches-version = "dev"
+apkeep-dlurl 	= "com.fdgentertainment.tentaclewars.gp.free"
 
 [Truecloud]
 patches-source  = "byehi98/okish-morphe-patches"
@@ -846,6 +865,12 @@ cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "hxreborn"
 apkeep-dlurl    = "ch.protonmail.android"
 
+[Cx-File-Explorer]
+patches-source  = "hxreborn/morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "hxreborn"
+apkeep-dlurl    = "com.cxinventor.file.explorer"
+
 [Imgur]
 patches-source  = "sushruth/imgur-patches"
 cli-source      = "MorpheApp/morphe-cli"
@@ -863,6 +888,7 @@ apkeep-dlurl	 	= "app.symfonik.music.player"
 patches-source  = "BlazeFTL/FTL-Patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "FTL"
+uptodown-dlurl	= "https://video-downloader-and-ace-player.en.uptodown.com/android"
 apkeep-dlurl    = "videoplayer.videodownloader.downloader"
 
 # ==============================================================================

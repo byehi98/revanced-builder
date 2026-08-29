@@ -487,7 +487,7 @@ get_patch_last_supported_ver() {
 			ver=$(sed -n "/^Name: $line\$/,/^\$/p" <<<"$op" | sed -n "/^Compatible versions:\$/,/^\$/p" | tail -n +2)
 			vers=${ver}${NL}
 		done <<<"$(list_args "$inc_sel")"
-		vers=$(awk '{$1=$1}1' <<<"$vers")
+		vers=$(awk '{$1=$1}1' <<<"$vers" | grep -E '^[0-9]' | awk '{print $1}')
 		if [ "$vers" ]; then
 			get_highest_ver <<<"$vers"
 			return
@@ -501,7 +501,7 @@ get_patch_last_supported_ver() {
 		epr "No patches found for '$pkg_name' in patches '$patches_jar'"
 		return 1
 	fi
-	grep -F "($pcount patch" <<<"$op" | sed 's/ (.* patch.*//' | get_highest_ver || return 1
+	grep -F "($pcount patch" <<<"$op" | awk '{print $1}' | get_highest_ver || return 1
 }
 
 patches_list_versions() {
