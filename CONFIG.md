@@ -40,8 +40,8 @@ build-mode = "apk"   # 'both', 'apk' or 'module'. default: apk
 
 # 'auto' option gets the latest possible version supported by all the included patches
 # 'latest' gets the latest stable without checking patches support. 'beta' gets the latest beta/alpha
-# whitespace seperated list of patches to exclude. default: ""
-version = "auto"     # 'auto', 'latest', 'beta' or a version number (e.g. '17.40.41'). default: auto
+# 'experiment' (or 'experimental') gets the latest experimental version supported by patches
+version = "auto"     # 'auto', 'latest', 'beta', 'experiment' or a version number (e.g. '17.40.41'). default: auto
 
 # optional args to be passed to cli. can be used to set patch options
 # multiline strings in the config is supported

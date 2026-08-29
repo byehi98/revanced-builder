@@ -474,7 +474,7 @@ semver_validate() {
 	[ ${#ac} = 0 ]
 }
 get_patch_last_supported_ver() {
-	local list_patches=$1 pkg_name=$2 inc_sel=$3 _exc_sel=$4 _exclusive=$5 # TODO: resolve using all of these
+	local list_patches=$1 pkg_name=$2 inc_sel=$3 _exc_sel=$4 _exclusive=$5 is_exp=${6:-false} # TODO: resolve using all of these
 	local op
 	if [ "$inc_sel" ]; then
 		if ! op=$(awk '{$1=$1}1' <<<"$list_patches"); then
@@ -493,7 +493,7 @@ get_patch_last_supported_ver() {
 			return
 		fi
 	fi
-	op=$(patches_list_versions "$cli_jar" "$patches_jar" "$pkg_name") || return 1
+	op=$(patches_list_versions "$cli_jar" "$patches_jar" "$pkg_name" "$is_exp") || return 1
 	op=$(sed -n '/Most common compatible versions:/,$p' <<<"$op" | sed '1d' | awk '{$1=$1}1')
 	if [ "$op" = "Any" ] || [ -z "$op" ]; then return 0; fi
 	pcount=$(head -1 <<<"$op") pcount=${pcount#*(} pcount=${pcount% *}
@@ -505,37 +505,63 @@ get_patch_last_supported_ver() {
 }
 
 patches_list_versions() {
-	local cli_jar=$1 patches_jar=$2 pkg_name=$3 op cmd
+	local cli_jar=$1 patches_jar=$2 pkg_name=$3 is_exp=${4:-false} op cmd
 	local cmd_base="java -jar '$cli_jar' list-versions"
+	local exp_flag=""
+	if [ "$is_exp" = true ]; then exp_flag="-x"; fi
 
 	# TODO: remove this later
 	local cli_name
 	cli_name=$(basename "$cli_jar")
 	if [ "${cli_name::8}" = revanced ]; then cmd_base+=" -b"; fi
 
-	cmd="${cmd_base} --patches='$patches_jar' -f '$pkg_name'"
+	cmd="${cmd_base} --patches='$patches_jar' -f '$pkg_name' $exp_flag"
 	if op=$(eval "$cmd" 2>&1); then
 		echo "$op"
 		return
 	fi
 
-	cmd="${cmd_base} '$patches_jar' -f '$pkg_name'"
+	cmd="${cmd_base} '$patches_jar' -f '$pkg_name' $exp_flag"
 	if op=$(eval "$cmd" 2>&1); then
 		echo "$op"
 		return
+	fi
+
+	if [ "$is_exp" = true ]; then
+		cmd="${cmd_base} --patches='$patches_jar' -f '$pkg_name'"
+		if op=$(eval "$cmd" 2>&1); then
+			echo "$op"
+			return
+		fi
+
+		cmd="${cmd_base} '$patches_jar' -f '$pkg_name'"
+		if op=$(eval "$cmd" 2>&1); then
+			echo "$op"
+			return
+		fi
 	fi
 
 	epr "Could not list versions $cli_jar: '$op'"
 	return 1
 }
 patches_list() {
-	local cli_jar=$1 patches_jar=$2 pkg_name=$3 op
-	if ! op=$(java -jar "$cli_jar" list-patches -p "$patches_jar" --filter-package-name "$pkg_name" --versions --packages -b 2>&1); then
-		if ! op=$(java -jar "$cli_jar" list-patches --patches "$patches_jar" -f "$pkg_name" --with-versions --with-packages 2>&1); then
-			epr "Could not get patches list $cli_jar: '$op'"
-			return 1
+	local cli_jar=$1 patches_jar=$2 pkg_name=$3 is_exp=${4:-false} op
+	local exp_flag=""
+	if [ "$is_exp" = true ]; then exp_flag="-x"; fi
+	if ! op=$(java -jar "$cli_jar" list-patches -p "$patches_jar" --filter-package-name "$pkg_name" --versions --packages -b $exp_flag 2>&1); then
+		if ! op=$(java -jar "$cli_jar" list-patches --patches "$patches_jar" -f "$pkg_name" --with-versions --with-packages $exp_flag 2>&1); then
+			if [ "$is_exp" = true ]; then
+				if ! op=$(java -jar "$cli_jar" list-patches -p "$patches_jar" --filter-package-name "$pkg_name" --versions --packages -b 2>&1); then
+					if ! op=$(java -jar "$cli_jar" list-patches --patches "$patches_jar" -f "$pkg_name" --with-versions --with-packages 2>&1); then
+						epr "Could not get patches list $cli_jar: '$op'"
+						return 1
+					fi
+				fi
+			else
+				epr "Could not get patches list $cli_jar: '$op'"
+				return 1
+			fi
 		fi
-
 	fi
 	echo "$op"
 }
@@ -1231,12 +1257,14 @@ build_rv() {
 		return 1
 	fi
 	pr "Package name of '${table}' is '$pkg_name'"
+	local is_exp=false
+	if isoneof "$version_mode" experiment experimental; then is_exp=true; fi
 	local list_patches
-	list_patches=$(patches_list "$cli_jar" "$patches_jar" "$pkg_name") || return 1
+	list_patches=$(patches_list "$cli_jar" "$patches_jar" "$pkg_name" "$is_exp") || return 1
 	local get_latest_ver=false
-	if [ "$version_mode" = auto ]; then
+	if isoneof "$version_mode" auto experiment experimental; then
 		if ! version=$(get_patch_last_supported_ver "$list_patches" "$pkg_name" \
-			"${args[included_patches]}" "${args[excluded_patches]}" "${args[exclusive_patches]}"); then
+			"${args[included_patches]}" "${args[excluded_patches]}" "${args[exclusive_patches]}" "$is_exp"); then
 			epr "get_patch_last_supported_ver failed '$list_patches'"
 			return 1
 		elif [ -z "$version" ]; then get_latest_ver=true; fi
@@ -1248,7 +1276,7 @@ build_rv() {
 		p_patcher_args+=("-f")
 	fi
 	if [ $get_latest_ver = true ]; then
-		if [ "$version_mode" = beta ]; then __AAV__="true"; else __AAV__="false"; fi
+		if isoneof "$version_mode" beta experiment experimental; then __AAV__="true"; else __AAV__="false"; fi
 		pkgvers=$(get_"${dl_from}"_vers)
 		version=$(get_highest_ver <<<"$pkgvers") || version=$(head -1 <<<"$pkgvers")
 	fi
