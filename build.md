@@ -1,5 +1,28 @@
-YouTube-Music-Morphe-Dev: 9.15.51  
-YouTube-Morphe-Dev: 21.04.223  
+Doodle-Jump: 3.11.40  
+Dr-Driving: 1.73  
+Cx-File-Explorer: 2.7.8  
+Big-Hunter: 3.1.1  
+Earn-to-Die-2: 1.4.58  
+Freejobalert: 1.0.0  
+HAAK: 1.4.3  
+All-Video-Downloader-and-Ace-Player: 1.9.7  
+Into-The-Dead: 2.9.3  
+Hill-Climb-Racing: 1.71.1  
+Jetpack-Joyride: 1.104.1  
+Missiles: 1.41  
+MovieBox: 4.0.01.0813.02  
+Onlyone: 1.2983  
+Plagueinc: 1.25.2  
+Protonmail: 7.10.4  
+Opera-News: 14.2.2254.84245  
+Smashit: 1.5.14  
+Swordigo: 1.4.12  
+Symfonium: 14.1.0  
+Tentaclewars: 2.1.27  
+Truecloud: 4.6.5.13  
+Reddit-Morphe-Dev: 2026.14.0  
+Vector: 2.10.0  
+Rodeo-Stampede: 4.24.0  
 
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
@@ -11,21 +34,40 @@ Patches: BlazeFTL/patches-1.42.0.mpp
 [Changelog](https://github.com/BlazeFTL/FTL-Patches/releases/tag/v1.42.0)
 
 CLI: MorpheApp/morphe-desktop-1.14.0-all.jar  
+Patches: byehi98/patches-1.19.1.mpp  
+[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.19.1)
+
+CLI: MorpheApp/morphe-desktop-1.14.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.14.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.14.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.14.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.14.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.14.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.14.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.14.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.14.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.14.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.14.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.14.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.14.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.14.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.14.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.14.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.14.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.14.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.14.0-all.jar  
 Patches: hxreborn/patches-1.13.0.mpp  
 [Changelog](https://github.com/hxreborn/morphe-patches/releases/tag/v1.13.0)
 
+CLI: MorpheApp/morphe-desktop-1.14.0-all.jar  
 CLI: MorpheApp/morphe-desktop-1.14.0-all.jar  
 CLI: MorpheApp/morphe-desktop-1.14.0-all.jar  
 Patches: MorpheApp/patches-1.41.0-dev.3.mpp  
 [Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.41.0-dev.3)
 
 CLI: MorpheApp/morphe-desktop-1.14.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.14.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.14.0-all.jar  
 Patches: rushiranpise/patches-1.20.0.mpp  
-[Changelog](https://github.com/rushiranpise/morphe-patches/releases/tag/v1.20.0)
-
-CLI: MorpheApp/morphe-desktop-1.14.0-all.jar    
+[Changelog](https://github.com/rushiranpise/morphe-patches/releases/tag/v1.20.0)  
 
 Skipped:  
 AccuBattery: 2.1.8  
@@ -38,6 +80,7 @@ Adobe-Photoshop-Mix: latest
 Patches: RookieEnough/patches-1.2.2.mpp  
 Advanced-Download-Manager: 14.0.39  
 Patches: arandomhooman/patches-1.51.1.mpp  
+Patches: BlazeFTL/patches-1.42.0.mpp  
 Amoledpix: 7.3  
 Anger-of-Stick-5: latest  
 Patches: MiguelNinja19/patches-1.13.6.mpp  
@@ -52,8 +95,6 @@ Automate: 1.51.1
 Patches: BholeyKaBhakt/patches-2.12.0.mpp  
 Backdrops: 6.1.2  
 Patches: BholeyKaBhakt/patches-2.12.0.mpp  
-Big-Hunter: 3.1.1  
-Patches: byehi98/patches-1.19.0.mpp  
 Block-Blast: 10.4.5  
 Block-Puzzle: 6.0  
 Brave-Beta-dh6k: 1.94.112  
@@ -76,33 +117,26 @@ Climb: 6.0.8
 Cloudflare-Warp: 6.38.9  
 Cricbuzz: 6.24.01  
 CubeX-Solver: latest  
+Patches: hxreborn/patches-1.13.0.mpp  
 Dailyhunt: 34.0.4  
 Document-Scanner: 6.8.18  
 Does-Not-Commute-Entree3k: 1.5.5  
 Does-Not-Commute-chiggi: 1.5.5  
-Doodle-Jump: 3.11.38  
-Dr-Driving: 1.73  
-Earn-to-Die-2: 1.4.58  
 Eyecon: 4.2026.04.05.1300  
 Fing: 12.12.0  
 FolderSync: 4.12.0  
-Freejobalert: 1.0.0  
-Patches: byehi98/patches-1.19.0.mpp  
 Google-News-RookieEnough: 5.165.0.960305370  
 Google-News-hoo-dles: 5.161.0.931240252  
 Google-Photos: latest  
 Greenify: 5.1.1  
 Hidden-Settings: 7.34  
-Hill-Climb-Racing: 1.70.0  
 Home-Workout: 1.7.6  
 Hunter-Assassin: latest  
 Icon-Pack-Studio: 2.2 build 016  
 Imgur: 7.34.0.0  
 Patches: sushruth/patches-1.0.0.mpp  
-Into-The-Dead: 2.9.3  
 Irplus: latest  
 Patches: RookieEnough/patches-1.2.2.mpp  
-Jetpack-Joyride: 1.104.1  
 Killapps: 1.58.0  
 Lemmy-Sync: latest  
 Patches: wchill/patches-1.4.0.mpp  
@@ -118,9 +152,7 @@ Mega: 16.11.1(262250408)(9a6c828835)
 Microsoft-SwiftKey: 9.13.13.5  
 Minesweeper: 1.21.3  
 Patches: cesbar/patches-1.12.0.mpp  
-Missiles: 1.41  
 MobiOffice: 16.5.60504  
-MovieBox: 4.0.01.0813.02  
 NYT-Crossword: 6.38.0  
 NZB360: 24.4.1  
 Octi: 1.2.1-rc0  
@@ -135,24 +167,21 @@ Playit: 2.7.50.12
 Poweramp: build-1025-bundle-play  
 ProtonVPN-Hoodles: 5.19.43.0  
 ProtonVPN-Rushiranpise: 5.19.78.0  
-Patches: hxreborn/patches-1.13.0.mpp  
 Psiphon: 479  
 RS-File-Manager: 2.3.0.4  
 Reddit-Adobo: 2026.34.0  
 Patches: jkennethcarino/patches-1.4.0-dev.2.mpp  
 Reddit-Morphe: 2026.14.0  
 Patches: MorpheApp/patches-1.40.0.mpp  
-Rodeo-Stampede: 4.23.0  
+Patches: MorpheApp/patches-1.41.0-dev.3.mpp  
 Send-Files-To-TV: 1.4.22  
 Server-Auditor: 7.8.1  
 Showly: 3.70.0  
 Six-Pack-in-30-Days: 1.4.8  
-Smashit: 1.5.14  
 Solid-Explorer: 3.5.19  
 Solitaire: 1.20.3  
 SoundCloud-RookieEnough: latest  
 Speedtest: 7.0.4  
-Swordigo: 1.4.12  
 Telegram: 12.9.2  
 Patches: Aunali321/patches-2.0.0.rvp  
 Telegram-Paresh: 12.9.2  
@@ -164,23 +193,14 @@ Patches: IMXEren/patches-1.4.1.mpp
 Truecaller: 26.10.6  
 Patches: Paresh-Maheshwari/patches-1.20.0-dev.2.mpp  
 Truecaller-bufferk: 26.10.6  
-Truecloud: 4.6.5.13  
 Unimote: 1.8.1  
-Vector: 2.10.0  
 WPS-Office: 18.24  
 Wallcraft: 3.61.01  
 Yatri: 5.0.6  
 YouTube-Morphe: 21.04.223  
+YouTube-Morphe-Dev: 21.04.223  
 YouTube-Music-Morphe: 9.15.51  
+YouTube-Music-Morphe-Dev: 9.15.51  
 Zombie-Catchers: latest  
 iLovePDF: 4.0.1              
-qBitConnect: 2.0.6          
-
-
-### Failed to build
-- ❌ `All-Video-Downloader-and-Ace-Player`
-- ❌ `Opera-News`
-- ❌ `Pocket-Prep`
-- ❌ `Protonmail`
-- ❌ `Reddit-Morphe-Dev`
-- ❌ `Symfonium`
+qBitConnect: 2.0.6            
