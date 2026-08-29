@@ -1,10 +1,6 @@
-All-Video-Downloader-and-Ace-Player: 1.9.7  
-MovieBox: 4.0.01.0813.02  
-Poweramp: build-1025-bundle-play  
-Home-Workout: 1.7.6  
-Lose-Weight-App-for-Men: 2.4.37  
-Telegram-Paresh: 12.9.2  
-Six-Pack-in-30-Days: 1.4.8  
+YouTube-Music-Morphe-Dev: 9.34.52  
+Reddit-Morphe-Dev: 2026.35.0  
+YouTube-Morphe-Dev: 21.35.442  
 
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
@@ -12,30 +8,15 @@ Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and
 [revanced-magisk-module](https://github.com/j-hc/revanced-magisk-module)
   
 CLI: MorpheApp/morphe-desktop-1.14.0-all.jar  
-Patches: arandomhooman/patches-1.51.1.mpp  
-[Changelog](https://github.com/arandomhooman/hoomans-morphe-patches/releases/tag/v1.51.1)
-
-CLI: MorpheApp/morphe-desktop-1.14.0-all.jar  
-Patches: BlazeFTL/patches-1.42.0.mpp  
-[Changelog](https://github.com/BlazeFTL/FTL-Patches/releases/tag/v1.42.0)
-
-CLI: MorpheApp/morphe-desktop-1.14.0-all.jar  
-Patches: byehi98/patches-1.20.0.mpp  
-[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.20.0)
-
-CLI: MorpheApp/morphe-desktop-1.14.0-all.jar  
 Patches: dh6k/patches-1.4.0.mpp  
 [Changelog](https://github.com/dh6k/morphe-patches/releases/tag/v1.4.0)
 
 CLI: MorpheApp/morphe-desktop-1.14.0-all.jar  
-Patches: Entree3k/patches-1.19.0.mpp  
-[Changelog](https://github.com/Entree3k/Morning-Entree-Patches/releases/tag/v1.19.0)
+Patches: MorpheApp/patches-1.41.0-dev.5.mpp  
+[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.41.0-dev.5)
 
 CLI: MorpheApp/morphe-desktop-1.14.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.14.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.14.0-all.jar  
-Patches: Paresh-Maheshwari/patches-1.20.0-dev.2.mpp  
-[Changelog](https://gitlab.com/Paresh-Maheshwari/paresh-patches/-/releases/v1.20.0-dev.2)  
+CLI: MorpheApp/morphe-desktop-1.14.0-all.jar    
 
 Skipped:  
 AccuBattery: 2.1.8  
@@ -48,6 +29,7 @@ Adobe-Photoshop-Mix: latest
 Patches: RookieEnough/patches-1.2.2.mpp  
 Advanced-Download-Manager: 14.0.39  
 Patches: arandomhooman/patches-1.51.1.mpp  
+All-Video-Downloader-and-Ace-Player: 1.9.7  
 Patches: BlazeFTL/patches-1.42.0.mpp  
 Amoledpix: 7.3  
 Anger-of-Stick-5: latest  
@@ -107,6 +89,7 @@ Greenify: 5.1.1
 HAAK: 1.4.3  
 Hidden-Settings: 7.34  
 Hill-Climb-Racing: 1.71.1  
+Home-Workout: 1.7.6  
 Hunter-Assassin: latest  
 Icon-Pack-Studio: 2.2 build 016  
 Imgur: 7.34.0.0  
@@ -119,6 +102,7 @@ Killapps: 1.58.0
 Lemmy-Sync: latest  
 Patches: wchill/patches-1.4.0.mpp  
 Letterboxd: latest  
+Lose-Weight-App-for-Men: 2.4.37  
 Lumina: 1.0.2.4  
 M-Indicator: 18.0.364  
 MX-Player-Pro: 1.93.4  
@@ -131,6 +115,7 @@ Minesweeper: 1.21.3
 Patches: cesbar/patches-1.12.0.mpp  
 Missiles: 1.41  
 MobiOffice: 16.5.60504  
+MovieBox: 4.0.01.0813.02  
 NYT-Crossword: 6.38.0  
 NZB360: 24.4.1  
 Octi: 1.2.1-rc0  
@@ -145,6 +130,7 @@ PinOut: 1.0.7
 Plagueinc: 1.25.2  
 Plants-vs-Zombies: latest  
 Playit: 2.7.50.12  
+Poweramp: build-1025-bundle-play  
 ProtonVPN-Hoodles: 5.19.43.0  
 ProtonVPN-Rushiranpise: 5.19.78.0  
 Protonmail: 7.10.4  
@@ -154,12 +140,11 @@ Reddit-Adobo: 2026.34.0
 Patches: jkennethcarino/patches-1.4.0-dev.2.mpp  
 Reddit-Morphe: 2026.14.0  
 Patches: MorpheApp/patches-1.40.0.mpp  
-Reddit-Morphe-Dev: 2026.35.0  
-Patches: MorpheApp/patches-1.41.0-dev.4.mpp  
 Rodeo-Stampede: 4.24.0  
 Send-Files-To-TV: 1.4.22  
 Server-Auditor: 7.8.1  
 Showly: 3.70.0  
+Six-Pack-in-30-Days: 1.4.8  
 Smashit: 1.5.14  
 Solid-Explorer: 3.5.19  
 Solitaire: 1.20.3  
@@ -169,6 +154,7 @@ Swordigo: 1.4.12
 Symfonium: 14.1.0  
 Telegram: 12.9.2  
 Patches: Aunali321/patches-2.0.0.rvp  
+Telegram-Paresh: 12.9.2  
 Tentaclewars: 2.1.27  
 TeraBox: 4.23.5  
 The-Battle-of-Polytopia: 2.17.2.16299  
@@ -185,12 +171,10 @@ WPS-Office: 18.24
 Wallcraft: 3.61.01  
 Yatri: 5.0.6  
 YouTube-Morphe: 21.04.223  
-YouTube-Morphe-Dev: 21.35.442  
 YouTube-Music-Morphe: 9.15.51  
-YouTube-Music-Morphe-Dev: 9.34.52  
 Zombie-Catchers: latest  
 iLovePDF: 4.0.1              
-qBitConnect: 2.0.6                
+qBitConnect: 2.0.6                  
 
 
 ### Failed to build
