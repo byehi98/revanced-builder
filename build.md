@@ -1,25 +1,15 @@
-Big-Hunter: 3.1.1  
-Arrow-Puzzle: 1.7.0  
-Does-Not-Commute-chiggi: 1.5.5  
-Doodle-Jump: 3.11.40  
-Dr-Driving: 1.73  
-Earn-to-Die-2: 1.4.58  
-Freejobalert: 1.0.0  
-Into-The-Dead: 2.9.3  
-Hill-Climb-Racing: 1.71.1  
-HAAK: 1.4.3  
-Jetpack-Joyride: 1.104.1  
-Missiles: 1.41  
-Onlyone: 1.3031  
-Plagueinc: 1.25.2  
-Smashit: 1.5.14  
-Swordigo: 1.4.13  
-Rodeo-Stampede: 4.24.0  
+Arm-Workout: 2.4.3  
+MovieBox: 4.0.02.0903.02  
+Home-Workout: 1.7.6  
+Lose-Weight-App-for-Men: 2.4.37  
+Psiphon: 486  
+ProtonVPN-Rushiranpise: 5.19.78.0  
+Reddit-Morphe: 2026.14.0  
+Six-Pack-in-30-Days: 1.4.8  
 Reddit-Morphe-Dev: 2026.35.0  
-Tentaclewars: 2.1.27  
-Truecloud: 4.6.5.13  
-Vector: 2.10.0  
 YouTube-Music-Morphe-Dev: 9.35.54  
+YouTube-Music-Morphe: 9.15.51  
+YouTube-Morphe: 21.13.164  
 YouTube-Morphe-Dev: 21.36.45  
 
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
@@ -27,70 +17,46 @@ Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and
 
 [revanced-magisk-module](https://github.com/j-hc/revanced-magisk-module)
   
-CLI: MorpheApp/morphe-desktop-1.15.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.15.1-all.jar  
 Patches: byehi98/patches-1.26.0.mpp  
 [Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.26.0)
 
-CLI: MorpheApp/morphe-desktop-1.15.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.15.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.15.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.15.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.15.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.15.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.15.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.15.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.15.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.15.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.15.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.15.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.15.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.15.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.15.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.15.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.15.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.15.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.15.0-all.jar  
-Patches: durgesh0505/patches-1.21.2.mpp  
-[Changelog](https://github.com/durgesh0505/chiggi_morphe_patches/releases/tag/v1.21.2)
-
-CLI: MorpheApp/morphe-desktop-1.15.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.15.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.15.1-all.jar  
 Patches: Entree3k/patches-1.22.0.mpp  
 [Changelog](https://github.com/Entree3k/Morning-Entree-Patches/releases/tag/v1.22.0)
 
-CLI: MorpheApp/morphe-desktop-1.15.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.15.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.15.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.15.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.15.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.15.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.15.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.15.1-all.jar  
 Patches: hoo-dles/patches-1.44.0.mpp  
 [Changelog](https://github.com/hoo-dles/morphe-patches/releases/tag/v1.44.0)
 
-CLI: MorpheApp/morphe-desktop-1.15.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.15.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.15.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.15.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.15.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.15.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.15.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.15.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.15.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.15.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.15.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.15.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.15.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.15.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.15.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.15.1-all.jar  
 Patches: hxreborn/patches-1.16.0.mpp  
 [Changelog](https://github.com/hxreborn/morphe-patches/releases/tag/v1.16.0)
 
-CLI: MorpheApp/morphe-desktop-1.15.0-all.jar  
-Patches: MorpheApp/patches-1.42.0-dev.9.mpp  
-[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.42.0-dev.9)
+CLI: MorpheApp/morphe-desktop-1.15.1-all.jar  
+Patches: MorpheApp/patches-1.42.0.mpp  
+[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.42.0)
 
-CLI: MorpheApp/morphe-desktop-1.15.0-all.jar  
-Patches: MorpheApp/patches-1.41.0.mpp  
-[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.41.0)
-
-CLI: MorpheApp/morphe-desktop-1.15.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.15.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.15.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.15.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.15.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.15.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.15.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.15.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.15.1-all.jar  
 Patches: rushiranpise/patches-1.21.5.mpp  
 [Changelog](https://github.com/rushiranpise/morphe-patches/releases/tag/v1.21.5)
 
-CLI: MorpheApp/morphe-desktop-1.15.0-all.jar    
+CLI: MorpheApp/morphe-desktop-1.15.1-all.jar    
 
 Skipped:  
 AccuBattery: 2.1.8  
@@ -109,12 +75,16 @@ Anger-of-Stick-5: latest
 Patches: MiguelNinja19/patches-1.13.6.mpp  
 Apkmirror-Installer: 2.0.3  
 Patches: Entree3k/patches-1.22.0.mpp  
+Arrow-Puzzle: 1.7.0  
+Patches: durgesh0505/patches-1.21.2.mpp  
 AudioRelay: 0.26.1  
 Patches: kiraio-moe/patches-1.3.0.mpp  
 Automate: 1.51.1  
 Patches: BholeyKaBhakt/patches-2.12.0.mpp  
 Backdrops: 6.1.2  
 Patches: BholeyKaBhakt/patches-2.12.0.mpp  
+Big-Hunter: 3.1.1  
+Patches: byehi98/patches-1.26.0.mpp  
 Block-Blast: 10.4.5  
 Block-Puzzle: 6.0  
 Brave-Beta-dh6k: 1.95.96  
@@ -141,19 +111,29 @@ Patches: hxreborn/patches-1.16.0.mpp
 Dailyhunt: 34.0.4  
 Document-Scanner: 6.8.18  
 Does-Not-Commute-Entree3k: 1.5.5  
+Does-Not-Commute-chiggi: 1.5.5  
+Doodle-Jump: 3.11.40  
+Dr-Driving: 1.73  
+Earn-to-Die-2: 1.4.58  
 Eyecon: 4.2026.04.05.1300  
 Fing: 12.12.0  
 FolderSync: 4.12.0  
+Freejobalert: 1.0.0  
+Patches: byehi98/patches-1.26.0.mpp  
 Google-News-RookieEnough: 5.166.0.967065104  
 Google-Photos: latest  
 Greenify: 5.1.1  
+HAAK: 1.4.3  
 Hidden-Settings: 7.34  
+Hill-Climb-Racing: 1.71.1  
 Hunter-Assassin: latest  
 Icon-Pack-Studio: 2.2  
 Imgur: 7.34.0.0  
 Patches: sushruth/patches-1.0.0.mpp  
+Into-The-Dead: 2.9.3  
 Irplus: latest  
 Patches: RookieEnough/patches-1.3.2.mpp  
+Jetpack-Joyride: 1.104.1  
 Killapps: 1.58.0  
 Lemmy-Sync: latest  
 Patches: wchill/patches-1.4.0.mpp  
@@ -168,34 +148,39 @@ Mega: 16.11.1(262250408)(9a6c828835)
 Microsoft-SwiftKey: 9.13.13.5  
 Minesweeper: 1.21.3  
 Patches: cesbar/patches-1.13.0.mpp  
+Missiles: 1.41  
 MobiOffice: 16.5.60504  
 NYT-Crossword: 6.39.0  
 NZB360: 24.4.1  
 Octi: 1.2.1-rc0  
 Oddmar: latest  
+Onlyone: 1.3031  
 Opera-GX: latest  
 Patches: Alastor-Kaneki/patches-1.14.0.mpp  
 Opera-News: 14.2.2254.84245  
 Parallel-Space-Pro: 4.0.9159  
 Photomath: latest  
 PinOut: 1.0.7  
+Plagueinc: 1.25.2  
 Plants-vs-Zombies: latest  
 Playit: 2.7.50.12  
 Poweramp: build-1025-bundle-play  
 RS-File-Manager: 2.3.0.4  
 Reddit-Adobo: 2026.35.0  
 Patches: jkennethcarino/patches-1.5.0-dev.2.mpp  
-Reddit-Morphe: 2026.14.0  
-Patches: MorpheApp/patches-1.41.0.mpp  
+Rodeo-Stampede: 4.24.0  
 Send-Files-To-TV: 1.4.22  
 Server-Auditor: 7.8.2  
+Smashit: 1.5.14  
 Solitaire: 1.20.3  
 SoundCloud-RookieEnough: latest  
 Speedtest: 7.0.4  
+Swordigo: 1.4.13  
 Symfonium: 14.1.0  
 Telegram: 12.9.2  
 Patches: Aunali321/patches-2.0.0.rvp  
 Telegram-Paresh: 12.9.2  
+Tentaclewars: 2.1.27  
 TeraBox: latest  
 The-Battle-of-Polytopia: 2.17.2.16299  
 Torrent-Search: 2.3.3  
@@ -204,29 +189,22 @@ Patches: IMXEren/patches-1.4.1.mpp
 Truecaller: 26.10.6  
 Patches: Paresh-Maheshwari/patches-1.20.0.mpp  
 Truecaller-bufferk: 26.10.6  
+Truecloud: 4.6.5.13  
 Unimote: 1.8.1  
+Vector: 2.10.0  
 Yatri: 5.0.6  
-YouTube-Music-Morphe: 9.15.51  
 Zombie-Catchers: latest  
 iLovePDF: 4.0.1                      
-qBitConnect: 2.0.6    
+qBitConnect: 2.0.6      
 
 
 ### Failed to build
 - ❌ `AdGuard-hoo-dles`
-- ❌ `Arm-Workout`
 - ❌ `CamScanner-hoo-dles`
 - ❌ `Google-News-hoo-dles`
-- ❌ `Home-Workout`
-- ❌ `Lose-Weight-App-for-Men`
-- ❌ `MovieBox`
 - ❌ `ProtonVPN-Hoodles`
-- ❌ `ProtonVPN-Rushiranpise`
 - ❌ `Protonmail`
-- ❌ `Psiphon`
 - ❌ `Showly`
-- ❌ `Six-Pack-in-30-Days`
 - ❌ `Solid-Explorer`
 - ❌ `WPS-Office`
 - ❌ `Wallcraft`
-- ❌ `YouTube-Morphe`
