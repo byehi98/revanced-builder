@@ -1365,44 +1365,26 @@ build_rv() {
 		fi
 
 		local stock_apk_to_patch="${patched_apk}.stripped.apk"
-		cp -f "$stock_apk" "$stock_apk_to_patch"
 
 		pr "Applying Disable Play Store Updates patch..."
 		if [ ! -f "$TEMP_DIR/apkeditor.jar" ]; then
 			gh_dl "$TEMP_DIR/apkeditor.jar" "https://github.com/REAndroid/APKEditor/releases/download/V1.4.7/APKEditor-1.4.7.jar" >/dev/null || :
 		fi
-		local manifest_tmp="${stock_apk_to_patch}-manifest-tmp"
-		local apk_decoded="${manifest_tmp}-decoded"
-		cp "$stock_apk_to_patch" "$manifest_tmp"
-		zip -q -d "$manifest_tmp" "res/*" "assets/*" "META-INF/*" "classes*.dex" "lib/*" "resources.arsc" 2>/dev/null || :
-		if java -jar "$TEMP_DIR/apkeditor.jar" d -i "$manifest_tmp" -o "$apk_decoded" -f -t xml >/dev/null 2>&1; then
-			if [ -f "$apk_decoded/AndroidManifest.xml" ]; then
-				sed -i -E 's/android:versionCode="[0-9]+"/android:versionCode="2147483647"/g' "$apk_decoded/AndroidManifest.xml"
-				if java -jar "$TEMP_DIR/apkeditor.jar" b -i "$apk_decoded" -o "${manifest_tmp}-new.apk" -f >/dev/null 2>&1; then
-					local extracted_manifest="${manifest_tmp}-extracted"
-					unzip -q "${manifest_tmp}-new.apk" AndroidManifest.xml -d "$extracted_manifest" 2>/dev/null || :
-					if [ -f "$extracted_manifest/AndroidManifest.xml" ]; then
-						(cd "$extracted_manifest" && zip -q "${CWD}/${stock_apk_to_patch}" AndroidManifest.xml) >/dev/null 2>&1 || :
-					fi
-					rm -rf "$extracted_manifest"
-				fi
+		local is_module=false
+		[ "$build_mode" = module ] && is_module=true
+		local prep_cp="${BIN_DIR}/apkprep.jar:${args[cli]}:${TEMP_DIR}/apkeditor.jar"
+		if [ -f "${BIN_DIR}/apkprep.jar" ]; then
+			if ! java -cp "$prep_cp" ApkPrep "$stock_apk" "$stock_apk_to_patch" "$arch" "$is_module" >/dev/null 2>&1; then
+				wpr "ApkPrep failed, falling back to stock APK"
+				cp -f "$stock_apk" "$stock_apk_to_patch"
 			fi
-		fi
-		rm -rf "$apk_decoded" "${manifest_tmp}" "${manifest_tmp}-new.apk"
-		if [ "$build_mode" = module ]; then
-			zip -d "$stock_apk_to_patch" "lib/*" >/dev/null 2>&1 || :
+		elif [ -f "${BIN_DIR}/ApkPrep.java" ]; then
+			if ! java -cp "$prep_cp" "${BIN_DIR}/ApkPrep.java" "$stock_apk" "$stock_apk_to_patch" "$arch" "$is_module" >/dev/null 2>&1; then
+				wpr "ApkPrep failed, falling back to stock APK"
+				cp -f "$stock_apk" "$stock_apk_to_patch"
+			fi
 		else
-			if [ "$arch" = "arm64-v8a" ]; then
-				zip -d "$stock_apk_to_patch" "lib/armeabi-v7a/*" "lib/x86_64/*" "lib/x86/*" >/dev/null 2>&1 || :
-			elif [ "$arch" = "arm-v7a" ]; then
-				zip -d "$stock_apk_to_patch" "lib/arm64-v8a/*" "lib/x86_64/*" "lib/x86/*" >/dev/null 2>&1 || :
-			elif [ "$arch" = "x86" ]; then
-				zip -d "$stock_apk_to_patch" "lib/arm64-v8a/*" "lib/x86_64/*" "lib/armeabi-v7a/*" >/dev/null 2>&1 || :
-			elif [ "$arch" = "x86_64" ]; then
-				zip -d "$stock_apk_to_patch" "lib/arm64-v8a/*" "lib/armeabi-v7a/*" "lib/x86/*" >/dev/null 2>&1 || :
-			else
-				zip -d "$stock_apk_to_patch" "lib/x86_64/*" "lib/x86/*" >/dev/null 2>&1 || :
-			fi
+			cp -f "$stock_apk" "$stock_apk_to_patch"
 		fi
 
 		local apk_output="${BUILD_DIR}/${app_name_l}-${rv_brand_f}-v${version_f}-${arch_f}.apk"

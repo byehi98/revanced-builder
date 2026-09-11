@@ -13,7 +13,7 @@ This project is an extensive ReVanced builder that can create Magisk modules and
 - `utils.sh`: Contains common helper functions for configuration parsing, downloading, and patching.
 - `config.toml`: The primary configuration file where users define which apps to build and which patches to include/exclude.
 - `CONFIG.md`: Documentation for the configuration options available in `config.toml`.
-- `bin/`: Contains pre-compiled binary utilities for different architectures (aapt2, htmlq, toml).
+- `bin/`: Contains pre-compiled binary utilities for different architectures and tools (`aapt2`, `htmlq`, `toml`, `apksigner.jar`, `apkprep.jar`, `ApkPrep.java`).
 - `module/`: Template for the Magisk module structure.
 - `ksu_profile/`: Source code for KernelSU profile integration.
 - `temp/`: Directory used for temporary files during the build process.
