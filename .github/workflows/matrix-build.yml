@@ -1,6 +1,8 @@
 name: Matrix Build Modules
 on:
   workflow_dispatch:
+  schedule:
+    - cron: "0 16 * * 0"
   workflow_call:
     inputs:
       from_ci:
@@ -409,6 +411,17 @@ jobs:
           MSG=${MSG:0:9450}
           POST="https://api.telegram.org/bot${TG_TOKEN}/sendMessage"
           curl -X POST --data-urlencode "parse_mode=Markdown" --data-urlencode "disable_web_page_preview=true" --data-urlencode "text=${MSG}" --data-urlencode "chat_id=${TG_CHAT}" "$POST"
+
+      - name: Keep only latest 100 releases
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh api repos/$GITHUB_REPOSITORY/releases --paginate -q '.[].tag_name' | head -100 > /tmp/keep_tags.txt
+          gh api repos/$GITHUB_REPOSITORY/releases --paginate -q '.[] | "\(.tag_name) \(.id)"' | tail -n+101 | while read tag id; do
+            echo "Deleting release $tag (ID: $id)"
+            gh api "repos/$GITHUB_REPOSITORY/releases/$id" -X DELETE || true
+            gh api "repos/$GITHUB_REPOSITORY/git/refs/tags/$tag" -X DELETE || true
+          done
 
       - name: Clear older runs
         env:
