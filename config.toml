@@ -52,67 +52,6 @@ version			= "experiment"
 apkeep-dlurl  	= "com.reddit.frontpage"
 
 # ==============================================================================
-# GitLab:Paresh-Maheshwari/paresh-patches
-# ==============================================================================
-
-[CREX]
-patches-source  = "GitLab:Paresh-Maheshwari/paresh-patches"
-cli-source      = "MorpheApp/morphe-cli"
-rv-brand        = "paresh"
-apkeep-dlurl 	= "in.cricketexchange.app.cricketexchange"
-
-[Document-Scanner]
-patches-source  = "GitLab:Paresh-Maheshwari/paresh-patches"
-cli-source      = "MorpheApp/morphe-cli"
-rv-brand        = "paresh"
-# patches-version = "dev"
-apkeep-dlurl = "com.cv.docscanner"
-
-[Eyecon]
-patches-source  = "GitLab:Paresh-Maheshwari/paresh-patches"
-cli-source      = "MorpheApp/morphe-cli"
-rv-brand        = "paresh"
-apkeep-dlurl 	= "com.eyecon.global"
-
-[Fing]
-patches-source  = "GitLab:Paresh-Maheshwari/paresh-patches"
-cli-source      = "MorpheApp/morphe-cli"
-rv-brand        = "paresh"
-# apkmirror-dlurl = "https://www.apkmirror.com/apk/fing-limited/fing-network-tools/"
-apkeep-dlurl  	= "com.overlook.android.fing"
-
-[Lumina]
-patches-source  = "GitLab:Paresh-Maheshwari/paresh-patches"
-cli-source      = "MorpheApp/morphe-cli"
-rv-brand        = "paresh"
-apkeep-dlurl  = "com.lumina.wallpapers"
-
-[MacroDroid-Paresh]
-patches-source  = "GitLab:Paresh-Maheshwari/paresh-patches"
-cli-source      = "MorpheApp/morphe-cli"
-rv-brand        = "paresh"
-apkeep-dlurl 	= "com.arlosoft.macrodroid"
-
-[MX-Player-Pro]
-patches-source  = "GitLab:Paresh-Maheshwari/paresh-patches"
-cli-source      = "MorpheApp/morphe-cli"
-rv-brand        = "paresh"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/mx-media-entertainment-pte-ltd/mx-player-pro/"
-
-[Telegram-Paresh]
-patches-source  = "GitLab:Paresh-Maheshwari/paresh-patches"
-cli-source      = "MorpheApp/morphe-cli"
-rv-brand        = "paresh"
-uptodown-dlurl = "https://telegram.en.uptodown.com/android"
-
-[Truecaller]
-patches-source  = "GitLab:Paresh-Maheshwari/paresh-patches"
-cli-source      = "MorpheApp/morphe-cli"
-rv-brand        = "paresh"
-patches-version = "dev"
-apkeep-dlurl 	= "com.truecaller"
-
-# ==============================================================================
 # hoo-dles/morphe-patches
 # ==============================================================================
 
