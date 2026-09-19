@@ -1,23 +1,24 @@
-Earn-to-Die-2: 1.4.58  
+Doodle-Jump: 3.11.40  
+Cx-File-Explorer: 2.7.8  
 Dr-Driving: 1.73  
 Big-Hunter: 3.1.1  
-Doodle-Jump: 3.11.40  
+Earn-to-Die-2: 1.4.58  
 Freejobalert: 1.0.0  
-Into-The-Dead: 2.9.3  
-Missiles: 1.41  
-Jetpack-Joyride: 1.104.1  
-Hill-Climb-Racing: 1.71.1  
-Onlyone: 1.3031  
-Plagueinc: 1.25.2  
-Smashit: 1.5.14  
 HAAK: 1.4.3  
+Into-The-Dead: 2.9.3  
+Hill-Climb-Racing: 1.71.1  
+Jetpack-Joyride: 1.104.1  
+Missiles: 1.41  
+Plagueinc: 1.25.2  
+Protonmail: 7.11.5  
+Smashit: 1.5.14  
 Swordigo: 1.4.13  
-Rodeo-Stampede: 4.24.0  
-Reddit-Morphe-Dev: 2026.37.0  
 Tentaclewars: 2.1.27  
+Symfonium: 15.0.1  
+Reddit-Adobo: 2026.38.0  
 Truecloud: 4.6.5.13  
+Rodeo-Stampede: 4.25.0  
 YouTube-Music-Morphe-Dev: 9.36.50  
-YouTube-Morphe-Dev: 21.37.42  
 
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
@@ -25,8 +26,8 @@ Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and
 [revanced-magisk-module](https://github.com/j-hc/revanced-magisk-module)
   
 CLI: MorpheApp/morphe-desktop-1.16.0-all.jar  
-Patches: byehi98/patches-1.28.0.mpp  
-[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.28.0)
+Patches: byehi98/patches-1.28.1.mpp  
+[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.28.1)
 
 CLI: MorpheApp/morphe-desktop-1.16.0-all.jar  
 CLI: MorpheApp/morphe-desktop-1.16.0-all.jar  
@@ -46,11 +47,25 @@ CLI: MorpheApp/morphe-desktop-1.16.0-all.jar
 CLI: MorpheApp/morphe-desktop-1.16.0-all.jar  
 CLI: MorpheApp/morphe-desktop-1.16.0-all.jar  
 CLI: MorpheApp/morphe-desktop-1.16.0-all.jar  
-Patches: MorpheApp/patches-1.44.0-dev.6.mpp  
-[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.44.0-dev.6)
+Patches: hxreborn/patches-1.25.0.mpp  
+[Changelog](https://github.com/hxreborn/morphe-patches/releases/tag/v1.25.0)
 
 CLI: MorpheApp/morphe-desktop-1.16.0-all.jar  
 CLI: MorpheApp/morphe-desktop-1.16.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.16.0-all.jar  
+Patches: jkennethcarino/patches-1.5.0.mpp  
+[Changelog](https://github.com/jkennethcarino/adobo/releases/tag/v1.5.0)
+
+CLI: MorpheApp/morphe-desktop-1.16.0-all.jar  
+Patches: MorpheApp/patches-1.44.0-dev.9.mpp  
+[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.44.0-dev.9)
+
+CLI: MorpheApp/morphe-desktop-1.16.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.16.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.16.0-all.jar  
+Patches: prathxmOp/patches-1.13.1.mpp  
+[Changelog](https://github.com/prathxmOp/prathxm-patches/releases/tag/v1.13.1)
+
 CLI: MorpheApp/morphe-desktop-1.16.0-all.jar  
 Patches: rushiranpise/patches-1.22.0.mpp  
 [Changelog](https://github.com/rushiranpise/morphe-patches/releases/tag/v1.22.0)  
@@ -96,14 +111,10 @@ CamScanner-hoo-dles: 7.20.0.2606230000
 CamScanner-rushiranpise: 7.24.5.2608200000  
 Camera: 5.4.0  
 Charge-Meter: 3.0.1  
-Chess-com: 4.10.0  
-Patches: prathxmOp/patches-1.13.0.mpp  
 Climb: 6.0.8  
 Cloudflare-Warp: 6.38.9  
 Cricbuzz: 6.24.01  
 CubeX-Solver: latest  
-Cx-File-Explorer: 2.7.8  
-Patches: hxreborn/patches-1.24.0.mpp  
 Dailyhunt: 34.0.4  
 Does-Not-Commute-Entree3k: 1.5.5  
 Does-Not-Commute-chiggi: 1.5.5  
@@ -116,8 +127,6 @@ Hidden-Settings: 7.34
 Home-Workout: 1.7.6  
 Hunter-Assassin: latest  
 Icon-Pack-Studio: 2.2  
-Imgur: 7.34.0.0  
-Patches: sushruth/patches-1.0.0.mpp  
 Irplus: latest  
 Patches: RookieEnough/patches-1.4.2.mpp  
 Killapps: 1.58.0  
@@ -147,11 +156,8 @@ Playit: 2.7.50.12
 Poweramp: build-1025-bundle-play  
 ProtonVPN-Hoodles: 5.19.43.0  
 ProtonVPN-Rushiranpise: 5.19.78.0  
-Protonmail: 7.11.5  
 Psiphon: 486  
 RS-File-Manager: 2.3.0.4  
-Reddit-Adobo: 2026.35.0  
-Patches: jkennethcarino/patches-1.5.0-dev.2.mpp  
 Reddit-Morphe: 2026.14.0  
 Patches: MorpheApp/patches-1.43.0.mpp  
 Send-Files-To-TV: 1.4.22  
@@ -162,7 +168,6 @@ Solid-Explorer: 3.5.20
 Solitaire: 1.20.3  
 SoundCloud-RookieEnough: latest  
 Speedtest: 7.0.4  
-Symfonium: 15.0.1  
 Telegram: 12.10.1  
 Patches: Aunali321/patches-2.0.0.rvp  
 TeraBox: latest  
@@ -179,9 +184,13 @@ YouTube-Morphe: 21.13.164
 YouTube-Music-Morphe: 9.15.51  
 Zombie-Catchers: latest  
 iLovePDF: 4.0.1    
-qBitConnect: 2.0.6      
+qBitConnect: 2.0.6        
 
 
 ### Failed to build
+- ❌ `Chess-com`
 - ❌ `MobiOffice`
+- ❌ `Onlyone`
+- ❌ `Reddit-Morphe-Dev`
 - ❌ `Vector`
+- ❌ `YouTube-Morphe-Dev`
