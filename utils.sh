@@ -639,11 +639,39 @@ dl_apkmirror() {
 
 	if [ "$arch" = "arm-v7a" ]; then arch="armeabi-v7a"; fi
 	local resp node app_table apkmname dlurl=""
+	local clean_url="${url%/}"
+	local cat="${__APKMIRROR_CAT__:-${clean_url##*/}}"
+	local app_path="${clean_url#*apkmirror.com}"
+	app_path="/${app_path#/}/"
+
 	local release_path
-	release_path=$(grep -m1 -o "href=\"/apk/[^\"]*-${version//./-}[a-zA-Z0-9-]*release/\"" <<<"$__APKMIRROR_RESP__")
+	release_path=$(grep -E -o "href=\"${app_path}[^\"]*-${version//./-}[a-zA-Z0-9_-]*release/?\"" <<<"$__APKMIRROR_RESP__" | head -n 1 || true)
+	if [ -z "$release_path" ]; then
+		release_path=$(grep -E -o "href=\"/apk/[^\"]*-${version//./-}[a-zA-Z0-9_-]*release/?\"" <<<"$__APKMIRROR_RESP__" | head -n 1 || true)
+	fi
+	if [ -z "$release_path" ]; then
+		local uploads_resp
+		if uploads_resp=$(_cf_get "https://www.apkmirror.com/uploads/?appcategory=${cat}"); then
+			release_path=$(grep -E -o "href=\"${app_path}[^\"]*-${version//./-}[a-zA-Z0-9_-]*release/?\"" <<<"$uploads_resp" | head -n 1 || true)
+			if [ -z "$release_path" ]; then
+				release_path=$(grep -E -o "href=\"/apk/[^\"]*-${version//./-}[a-zA-Z0-9_-]*release/?\"" <<<"$uploads_resp" | head -n 1 || true)
+			fi
+		fi
+	fi
+	if [ -z "$release_path" ]; then
+		local search_resp
+		if search_resp=$(_cf_get "https://www.apkmirror.com/?post_type=app_release&searchtype=apk&s=${cat}+${version}"); then
+			release_path=$(grep -E -o "href=\"${app_path}[^\"]*-${version//./-}[a-zA-Z0-9_-]*release/?\"" <<<"$search_resp" | head -n 1 || true)
+			if [ -z "$release_path" ]; then
+				release_path=$(grep -E -o "href=\"/apk/[^\"]*-${version//./-}[a-zA-Z0-9_-]*release/?\"" <<<"$search_resp" | head -n 1 || true)
+			fi
+		fi
+	fi
 	if [ -n "$release_path" ]; then
 		release_path=${release_path#href=\"}
 		release_path=${release_path%\"}
+		release_path="/${release_path#/}"
+		release_path="${release_path%/}/"
 		url="https://www.apkmirror.com${release_path}"
 	else
 		apkmname=$($HTMLQ "h1.marginZero" --text <<<"$__APKMIRROR_RESP__")
@@ -652,7 +680,7 @@ dl_apkmirror() {
 		apkmname="${apkmname//./-}"
 		apkmname="${apkmname//[^a-z0-9-]/}"
 		apkmname=$(echo "$apkmname" | tr -s '-')
-		url="${url}/${apkmname}-${version//./-}-release/"
+		url="${clean_url}/${apkmname}-${version//./-}-release/"
 	fi
 	resp=$(_cf_get "$url") || return 1
 	node=$($HTMLQ "div.table-row.headerFont:nth-last-child(1)" -r "span:nth-child(n+3)" <<<"$resp")
@@ -662,7 +690,7 @@ dl_apkmirror() {
 				if [ "$type" = "BUNDLE" ]; then
 					is_bundle=true
 				else is_bundle=false; fi
-				break 2
+				break
 			fi
 		done
 		if [ -z "$dlurl" ]; then return 1; fi
