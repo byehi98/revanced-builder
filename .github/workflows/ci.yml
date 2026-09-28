@@ -4,10 +4,17 @@ on:
   schedule:
     - cron: "0 16 * * *"
 
+concurrency:
+  group: ci
+  cancel-in-progress: false
+
 jobs:
   check:
-    permissions: write-all
+    permissions:
+      contents: read
+      actions: write
     runs-on: ubuntu-latest
+    timeout-minutes: 60
     steps:
       - name: Checkout
         uses: actions/checkout@v7
@@ -43,7 +50,8 @@ jobs:
       SHOULD_BUILD: ${{ steps.should_build.outputs.SHOULD_BUILD }}
 
   build:
-    permissions: write-all
+    permissions:
+      contents: write
     needs: check
     uses: ./.github/workflows/build.yml
     if: ${{ needs.check.outputs.SHOULD_BUILD == 1 }}

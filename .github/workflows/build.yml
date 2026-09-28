@@ -11,8 +11,13 @@ on:
 
 jobs:
   run:
-    permissions: write-all
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
+    timeout-minutes: 120
+    concurrency:
+      group: build
+      cancel-in-progress: false
     steps:
       - uses: actions/setup-java@v5
         with:

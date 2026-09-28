@@ -10,9 +10,16 @@ on:
         required: false
         default: true
 
+concurrency:
+  group: build
+  cancel-in-progress: false
+
 jobs:
   prepare_matrix:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
     outputs:
       matrix: ${{ steps.extract_matrix.outputs.matrix }}
       has_matrix: ${{ steps.extract_matrix.outputs.has_matrix }}
@@ -81,8 +88,10 @@ jobs:
   build_matrix:
     needs: prepare_matrix
     if: needs.prepare_matrix.outputs.has_matrix == 'true'
-    permissions: write-all
+    permissions:
+      contents: read
     runs-on: ubuntu-latest
+    timeout-minutes: 120
     strategy:
       fail-fast: false
       matrix:
@@ -248,8 +257,11 @@ jobs:
   release:
     needs: [prepare_matrix, build_matrix]
     if: always() && needs.prepare_matrix.outputs.has_matrix == 'true'
-    permissions: write-all
+    permissions:
+      contents: write
+      actions: write
     runs-on: ubuntu-latest
+    timeout-minutes: 60
     steps:
       - name: Checkout
         uses: actions/checkout@v4
