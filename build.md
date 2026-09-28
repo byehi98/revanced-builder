@@ -1,6 +1,4 @@
-Arm-Workout: 2.4.3  
-The-Battle-of-Polytopia: 2.17.3.16375  
-ProtonVPN-Rushiranpise: 5.19.78.0  
+Vector: 2.10.2  
 
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
@@ -10,14 +8,6 @@ Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and
 CLI: MorpheApp/morphe-desktop-1.17.0-all.jar  
 Patches: byehi98/patches-1.34.0.mpp  
 [Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.35.0-dev.1)
-
-CLI: MorpheApp/morphe-desktop-1.17.0-all.jar  
-Patches: Entree3k/patches-1.22.0.mpp  
-[Changelog](https://github.com/Entree3k/Morning-Entree-Patches/releases/tag/v1.22.0)
-
-CLI: MorpheApp/morphe-desktop-1.17.0-all.jar  
-Patches: MiguelNinja19/patches-1.13.6.mpp  
-[Changelog](https://github.com/MiguelNinja19/miguel-morphe-patches/releases/tag/v1.13.6)
 
 CLI: MorpheApp/morphe-desktop-1.17.0-all.jar  
 Patches: MorpheApp/patches-1.45.0-dev.18.mpp  
@@ -30,9 +20,7 @@ Patches: MorpheApp/patches-1.44.0.mpp
 CLI: MorpheApp/morphe-desktop-1.17.0-all.jar  
 CLI: MorpheApp/morphe-desktop-1.17.0-all.jar  
 Patches: rushiranpise/patches-1.22.0.mpp  
-[Changelog](https://github.com/rushiranpise/morphe-patches/releases/tag/v1.22.0)
-
-CLI: MorpheApp/morphe-desktop-1.17.0-all.jar    
+[Changelog](https://github.com/rushiranpise/morphe-patches/releases/tag/v1.22.0)  
 
 Skipped:  
 AccuBattery: 2.1.8  
@@ -51,6 +39,7 @@ Amoledpix: 7.3
 Anger-of-Stick-5: latest  
 Patches: MiguelNinja19/patches-1.13.6.mpp  
 Apkmirror-Installer: 2.0.3  
+Arm-Workout: 2.4.3  
 Patches: Entree3k/patches-1.22.0.mpp  
 Arrow-Puzzle: 1.7.0  
 Patches: durgesh0505/patches-1.23.1.mpp  
@@ -138,6 +127,7 @@ Plants-vs-Zombies: latest
 Playit: 2.7.50.12  
 Poweramp: build-1025-bundle-play  
 ProtonVPN-Hoodles: 5.19.43.0  
+ProtonVPN-Rushiranpise: 5.19.78.0  
 Protonmail: 7.11.8  
 Psiphon: 486  
 RS-File-Manager: 2.3.0.4  
@@ -162,6 +152,7 @@ Telegram: 12.10.1
 Patches: Aunali321/patches-2.0.0.rvp  
 Tentaclewars: 2.1.27  
 TeraBox: latest  
+The-Battle-of-Polytopia: 2.17.3.16375  
 Torrent-Search: 2.3.3  
 Trakt: 3.13.0  
 Patches: IMXEren/patches-1.4.1.mpp  
@@ -175,12 +166,11 @@ YouTube-Music-Morphe: 9.15.51
 YouTube-Music-Morphe-Dev: 9.38.51  
 Zombie-Catchers: latest  
 iLovePDF: 4.0.1    
-qBitConnect: 2.0.6                          
+qBitConnect: 2.0.6                            
 
 
 ### Failed to build
 - ❌ `MobiOffice`
 - ❌ `Reddit-Morphe-Dev`
-- ❌ `Vector`
 - ❌ `YouTube-Morphe`
 - ❌ `YouTube-Morphe-Dev`
