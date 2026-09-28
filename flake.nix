@@ -37,6 +37,7 @@
             coreutils
             findutils
             gnugrep
+            util-linux # flock, used by _with_lock() in utils.sh
             apkeep
             pipx
           ];

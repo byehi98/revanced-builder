@@ -18,6 +18,15 @@ jobs:
     concurrency:
       group: build
       cancel-in-progress: false
+    env:
+      # tells utils.sh the bypass solver is already running as a service
+      # container, so it skips the on-demand `docker run` path entirely
+      CF_SOLVER_URL: http://localhost:8000
+    services:
+      cf-solver:
+        image: ghcr.io/sarperavci/cloudflarebypassforscraping:latest
+        ports:
+          - 8000:8000
     steps:
       - uses: actions/setup-java@v6
         with:
@@ -29,6 +38,18 @@ jobs:
         with:
           fetch-depth: 0
           submodules: true
+
+      - name: Restore stock APK cache
+        uses: actions/cache/restore@v6
+        with:
+          path: |
+            temp/*.apk
+            temp/*.apkm
+            temp/apkeditor.jar
+            temp/cache_manifest.txt
+          key: apks-${{ github.run_id }}
+          restore-keys: |
+            apks-
 
       - name: Install tools
         run: |
@@ -67,6 +88,25 @@ jobs:
           NEXT_VER_CODE: ${{ steps.next_ver_code.outputs.NEXT_VER_CODE }}
           APK_KEEP_TOKEN: ${{ secrets.APK_KEEP_TOKEN }}
           APK_KEEP_EMAIL: ${{ secrets.APK_KEEP_EMAIL }}
+
+      - name: Prune stock APK cache
+        if: always()
+        run: .github/scripts/apk_cache.sh temp prune
+
+      - name: Write cache manifest
+        if: always()
+        run: .github/scripts/apk_cache.sh temp manifest
+
+      - name: Save stock APK cache
+        if: always() && hashFiles('temp/cache_manifest.txt') != ''
+        uses: actions/cache/save@v6
+        with:
+          path: |
+            temp/*.apk
+            temp/*.apkm
+            temp/apkeditor.jar
+            temp/cache_manifest.txt
+          key: apks-${{ hashFiles('temp/cache_manifest.txt') }}
 
       - name: Generate build report
         run: |
@@ -189,16 +229,40 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           TAG: ${{ steps.next_ver_code.outputs.NEXT_VER_CODE }}
           BODY: ${{ steps.get_output.outputs.BUILD_LOG }}
+          UPLOAD_CONCURRENCY: "12"
         run: |
           if ! compgen -G 'build/*.apk' >/dev/null && ! compgen -G 'build/*.zip' >/dev/null; then
             echo "No builds succeeded, skipping release!"
             exit 0
           fi
+
+          upload_one() {
+            local f="$1" attempt
+            for attempt in 1 2 3; do
+              if gh release upload "$TAG" "$f" --clobber; then
+                return 0
+              fi
+              sleep $((attempt * 5))
+            done
+            echo "::error::Failed to upload ${f}"
+            return 1
+          }
+          export -f upload_one
+          export TAG
+
+          mapfile -t files < <(find build -maxdepth 1 -type f | sort)
           if gh release view "$TAG" >/dev/null 2>&1; then
             gh release edit "$TAG" --title "Release" --notes "$BODY"
-            gh release upload "$TAG" ./build/* --clobber
+            rest=("${files[@]}")
           else
-            gh release create "$TAG" ./build/* --title "Release" --notes "$BODY"
+            # seed the release with the first asset so it is never asset-less
+            gh release create "$TAG" "${files[0]}" --title "Release" --notes "$BODY"
+            rest=("${files[@]:1}")
+          fi
+
+          if [ "${#rest[@]}" -gt 0 ]; then
+            printf '%s\0' "${rest[@]}" |
+              xargs -0 -P "$UPLOAD_CONCURRENCY" -n 1 bash -c 'upload_one "$@"' _
           fi
 
       - name: Update modules changelog and update json

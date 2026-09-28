@@ -302,6 +302,57 @@ config_update() {
 	fi
 }
 
+# ------------------------- cross-job locking -------------------------------
+# Parallel build jobs (and the `arch = both` fan-out) can race on the same
+# stock APK / split bundle. flock replaces the old tmp-file and lock-file
+# spin-waits, which hung forever if the process holding them died.
+LOCK_DIR="$TEMP_DIR/locks"
+
+_lock_key() {
+	if command -v sha256sum >/dev/null 2>&1; then
+		printf '%s' "$1" | sha256sum | cut -c1-40
+	else
+		printf '%s' "$1" | md5sum | cut -c1-40
+	fi
+}
+
+# _with_lock <name> <cmd> [args...]
+# Runs cmd while holding an exclusive lock keyed by <name>. Runs in a subshell,
+# so only side effects (files) made by cmd are visible to the caller.
+_with_lock() {
+	local name="$1" st=0
+	shift
+	if ! mkdir -p "$LOCK_DIR" 2>/dev/null; then
+		# cannot lock at all (unwritable temp) - run unlocked rather than
+		# spin forever waiting for a dir we can never create
+		"$@" || st=$?
+		return "$st"
+	fi
+	if command -v flock >/dev/null 2>&1; then
+		# `|| st=$?` keeps set -e from killing the caller when cmd fails
+		(
+			exec {_lock_fd}>"$LOCK_DIR/$name.lock" || exit 1
+			flock -x "$_lock_fd" || exit 1
+			"$@"
+		) || st=$?
+		return "$st"
+	fi
+	# Fallback for hosts without util-linux: mkdir lock with a stale-break.
+	local dir="$LOCK_DIR/$name.d" waited=0
+	while ! mkdir "$dir" 2>/dev/null; do
+		sleep 1
+		waited=$((waited + 1))
+		if [ "$waited" -ge 1800 ]; then
+			wpr "Breaking stale lock '$name'"
+			rmdir "$dir" 2>/dev/null || :
+			waited=0
+		fi
+	done
+	"$@" || st=$?
+	rmdir "$dir" 2>/dev/null || :
+	return "$st"
+}
+
 _req() {
 	local ip="$1" op="$2"
 	shift 2
@@ -309,102 +360,208 @@ _req() {
 		epr "Error: empty URL passed to _req"
 		return 1
 	fi
-	local dlp="$op"
-	if [ "$op" != - ]; then
-		if [ -z "$op" ]; then
-			epr "Error: empty output path passed to _req"
+	if [ "$op" = - ]; then
+		if ! curl -L -c "$TEMP_DIR/cookie.txt" -b "$TEMP_DIR/cookie.txt" --connect-timeout 15 --retry 5 --retry-all-errors --retry-delay 5 --fail -s -S "$@" "$ip" -o -; then
+			epr "Request failed: $ip"
 			return 1
 		fi
-		if [ -f "$op" ]; then return; fi
-		dlp="$(dirname "$op")/tmp.$(basename "$op")"
-		if [ -f "$dlp" ]; then
-			while [ -f "$dlp" ]; do sleep 1; done
-			return
-		fi
+		return 0
 	fi
-	if ! curl -L -c "$TEMP_DIR/cookie.txt" -b "$TEMP_DIR/cookie.txt" --connect-timeout 15 --retry 5 --retry-all-errors --retry-delay 5 --fail -s -S "$@" "$ip" -o "$dlp"; then
-		epr "Request failed: $ip"
+	if [ -z "$op" ]; then
+		epr "Error: empty output path passed to _req"
 		return 1
 	fi
-	if [ "$dlp" != - ]; then
-		mv -f "$dlp" "$op"
+	if [ -f "$op" ]; then return 0; fi
+	_with_lock "dl.$(_lock_key "$op")" _req_locked "$ip" "$op" "$@"
+}
+
+# Downloads to $op while holding the lock for that path. Re-checks $op because
+# another job may have finished the same download while we waited for the lock.
+_req_locked() {
+	local ip="$1" op="$2"
+	shift 2
+	if [ -f "$op" ]; then return 0; fi
+	local dlp="$(dirname "$op")/tmp.$(basename "$op")"
+	rm -f "$dlp"
+	if ! curl -L -c "$TEMP_DIR/cookie.txt" -b "$TEMP_DIR/cookie.txt" --connect-timeout 15 --retry 5 --retry-all-errors --retry-delay 5 --fail -s -S "$@" "$ip" -o "$dlp"; then
+		epr "Request failed: $ip"
+		rm -f "$dlp"
+		return 1
+	fi
+	mv -f "$dlp" "$op"
+}
+_cf_endpoint_up() {
+	curl -s -o /dev/null --connect-timeout 3 --max-time 5 "$1" 2>/dev/null
+}
+
+_cf_wait_endpoint() {
+	local url=$1 max=${2:-60} waited=0
+	while ! _cf_endpoint_up "$url"; do
+		sleep 2
+		waited=$((waited + 2))
+		if [ "$waited" -ge "$max" ]; then return 1; fi
+	done
+}
+
+_cf_write_state() {
+	# $1 solver_url $2 trawl_url $3 has_solver $4 has_trawl $5 may_spawn
+	local state="$TEMP_DIR/cf_services.sh"
+	{
+		printf 'CF_SOLVER_URL=%q\n' "$1"
+		printf 'CF_TRAWL_URL=%q\n' "$2"
+		printf 'CF_HAS_SOLVER=%s\n' "$3"
+		printf 'CF_HAS_TRAWL=%s\n' "$4"
+		printf 'CF_MAY_SPAWN=%s\n' "$5"
+	} >"$state.tmp"
+	mv -f "$state.tmp" "$state"
+}
+
+_cf_spawn_trawl() {
+	docker run -d --name redis_service -p 6379:6379 redis:alpine >/dev/null 2>&1 || :
+	docker run -d --name trawl_service -p 8191:8191 -e REDIS_URL=redis://host.docker.internal:6379 --add-host=host.docker.internal:host-gateway --shm-size=1gb ghcr.io/germondai/trawl:latest >/dev/null 2>&1 || :
+}
+
+_cf_spawn_containers() {
+	_cf_spawn_trawl
+	docker run -d --name cloudflare_service -p 8000:8000 ghcr.io/sarperavci/cloudflarebypassforscraping:latest >/dev/null 2>&1 || :
+}
+
+_cf_resolve_services() {
+	[ -f "$TEMP_DIR/cf_services.sh" ] && return 0
+	local solver_from_service=false
+	[ -n "${CF_SOLVER_URL:-}" ] && solver_from_service=true
+	local solver_url="${CF_SOLVER_URL:-http://localhost:8000}"
+	local trawl_url="${CF_TRAWL_URL:-http://localhost:8191}"
+	local has_solver=false has_trawl=false may_spawn=false
+
+	if [ "$solver_from_service" = true ]; then
+		# Provisioned by the workflow's `services:` block: nothing to spawn.
+		if _cf_wait_endpoint "$solver_url" 60; then has_solver=true; fi
+		if [ -n "${CF_TRAWL_URL:-}" ]; then
+			if _cf_wait_endpoint "$trawl_url" 30; then has_trawl=true; fi
+		else
+			may_spawn=true
+		fi
+	elif [ "${GITHUB_ACTIONS:-false}" = "true" ] && [ "${CF_SPAWN_CONTAINERS:-true}" = "true" ]; then
+		wpr "Starting Cloudflare bypass containers on-demand..."
+		_cf_spawn_containers
+		if _cf_wait_endpoint "$solver_url" 90; then has_solver=true; fi
+		if _cf_wait_endpoint "$trawl_url" 90; then has_trawl=true; fi
+	fi
+	_cf_write_state "$solver_url" "$trawl_url" "$has_solver" "$has_trawl" "$may_spawn"
+}
+
+# Resolve the bypass endpoints once per run (shared across parallel jobs via
+# $TEMP_DIR/cf_services.sh). A workflow `services:` container (CF_SOLVER_URL)
+# is preferred: it is already listening before the first step runs, so the
+# image pulls and the on-demand `docker run` both disappear from the hot path.
+_cf_ensure_services() {
+	if [ -f "$TEMP_DIR/cf_services.sh" ]; then
+		. "$TEMP_DIR/cf_services.sh"
+		return 0
+	fi
+	_with_lock cf.services _cf_resolve_services || :
+	if [ -f "$TEMP_DIR/cf_services.sh" ]; then
+		. "$TEMP_DIR/cf_services.sh"
 	fi
 }
+
+# Last resort when the service solver could not pass the challenge: start the
+# full browser (trawl) ourselves. Only ever done once per run.
+_cf_lazy_spawn_trawl() {
+	[ -f "$TEMP_DIR/cf_services.sh" ] || return 0
+	_with_lock cf.lazy _cf_lazy_spawn_trawl_locked || :
+	if [ -f "$TEMP_DIR/cf_services.sh" ]; then
+		. "$TEMP_DIR/cf_services.sh"
+	fi
+}
+
+_cf_lazy_spawn_trawl_locked() {
+	. "$TEMP_DIR/cf_services.sh"
+	[ "${CF_HAS_TRAWL:-false}" = true ] && return 0
+	wpr "Starting trawl bypass container on-demand..."
+	_cf_spawn_trawl
+	local has_trawl=false
+	if _cf_wait_endpoint "${CF_TRAWL_URL:-http://localhost:8191}" 90; then has_trawl=true; fi
+	_cf_write_state "${CF_SOLVER_URL:-http://localhost:8000}" "${CF_TRAWL_URL:-http://localhost:8191}" \
+		"${CF_HAS_SOLVER:-false}" "$has_trawl" false
+}
+
+_cf_try_trawl() {
+	local url=$1 attempt response status html
+	for attempt in $(seq 1 3); do
+		response=$(curl -s -X POST "${CF_TRAWL_URL:-http://localhost:8191}/scrape" \
+			-H 'Content-Type: application/json' \
+			-d "{\"url\":\"$url\",\"maxTimeout\":60000,\"skipHttp\":true}") || true
+		status=$(jq -r '.statusCode // empty' <<<"$response" 2>/dev/null) || status=""
+		if [[ "$status" == "200" ]]; then
+			html=$(jq -r '.html // empty' <<<"$response" 2>/dev/null) || html=""
+			if [[ -n "$html" && "$html" != *"Attention Required!"* && "$html" != *"Just a moment..."* && "$html" != *"Please Wait... | Cloudflare"* && "$html" != *"Verify you are human"* ]]; then
+				CF_COOKIES=$(jq -r '[.cookies[] | .name + "=" + .value] | join("; ")' <<<"$response" 2>/dev/null) || CF_COOKIES=""
+				CF_UA=$(jq -r '.userAgent // empty' <<<"$response" 2>/dev/null) || CF_UA=""
+				export CF_COOKIES CF_UA
+				printf 'export CF_COOKIES=%q; export CF_UA=%q\n' "$CF_COOKIES" "$CF_UA" >"$TEMP_DIR/cf_env.sh.tmp"
+				mv -f "$TEMP_DIR/cf_env.sh.tmp" "$TEMP_DIR/cf_env.sh"
+				printf '%s\n' "$html"
+				return 0
+			fi
+		fi
+		sleep 5
+	done
+	return 1
+}
+
+_cf_try_solver() {
+	local url=$1 attempt response_file headers_file http_code html
+	for attempt in $(seq 1 3); do
+		response_file=$(mktemp)
+		headers_file=$(mktemp)
+		http_code=$(curl -s -o "$response_file" -w '%{http_code}' \
+			-D "$headers_file" \
+			-G --data-urlencode "url=$url" \
+			--max-time 30 \
+			"${CF_SOLVER_URL:-http://localhost:8000}/html") || true
+		if [[ "$http_code" == "200" ]]; then
+			html=$(cat "$response_file")
+			if [[ -n "$html" ]]; then
+				# strip the CR curl leaves at the end of every header line
+				CF_COOKIES=$(grep -i '^x-cf-bypasser-cookies:' "$headers_file" 2>/dev/null | cut -d':' -f2- | tr -d '\r' | xargs) || CF_COOKIES=""
+				CF_UA=$(grep -i '^x-cf-bypasser-user-agent:' "$headers_file" 2>/dev/null | cut -d':' -f2- | tr -d '\r' | xargs) || CF_UA=""
+				export CF_COOKIES CF_UA
+				printf 'export CF_COOKIES=%q; export CF_UA=%q\n' "$CF_COOKIES" "$CF_UA" >"$TEMP_DIR/cf_env.sh.tmp"
+				mv -f "$TEMP_DIR/cf_env.sh.tmp" "$TEMP_DIR/cf_env.sh"
+				printf '%s\n' "$html"
+				rm -f "$response_file" "$headers_file"
+				return 0
+			fi
+		fi
+		rm -f "$response_file" "$headers_file"
+		sleep 5
+	done
+	return 1
+}
+
 _cf_get() {
 	local url=$1
-	local attempt
-	local max_retries=3
-	
+
 	export CF_COOKIES=""
 	export CF_UA=""
-	
+
 	if [ "${GITHUB_ACTIONS:-false}" = "true" ]; then
-		if [ -z "$(docker ps -q -f name=redis_service 2>/dev/null)" ]; then
-			wpr "Starting Cloudflare bypass containers on-demand..."
-			docker run -d --name redis_service -p 6379:6379 redis:alpine >/dev/null 2>&1 || true
-			docker run -d --name trawl_service -p 8191:8191 -e REDIS_URL=redis://host.docker.internal:6379 --add-host=host.docker.internal:host-gateway --shm-size=1gb ghcr.io/germondai/trawl:latest >/dev/null 2>&1 || true
-			docker run -d --name cloudflare_service -p 8000:8000 ghcr.io/sarperavci/cloudflarebypassforscraping:latest >/dev/null 2>&1 || true
-			local wait_time=0
-			while ! curl -s http://localhost:8000/ >/dev/null; do
-				sleep 2
-				wait_time=$((wait_time + 2))
-				if [ $wait_time -ge 30 ]; then break; fi
-			done
-			wait_time=0
-			while ! curl -s http://localhost:8191/ >/dev/null; do
-				sleep 2
-				wait_time=$((wait_time + 2))
-				if [ $wait_time -ge 30 ]; then break; fi
-			done
+		_cf_ensure_services
+
+		if [ "${CF_HAS_TRAWL:-false}" = true ]; then
+			_cf_try_trawl "$url" && return 0
 		fi
-		
-		# Try trawl on 8191
-		for attempt in $(seq 1 $max_retries); do
-			local response status html
-			response=$(curl -s -X POST "http://localhost:8191/scrape" \
-				-H 'Content-Type: application/json' \
-				-d "{\"url\":\"$url\",\"maxTimeout\":60000,\"skipHttp\":true}") || true
-			status=$(echo "$response" | jq -r '.statusCode // empty')
-			if [[ "$status" == "200" ]]; then
-				html=$(echo "$response" | jq -r '.html // empty')
-				if [[ -n "$html" && "$html" != *"Attention Required!"* && "$html" != *"Just a moment..."* && "$html" != *"Please Wait... | Cloudflare"* && "$html" != *"Verify you are human"* ]]; then
-					CF_COOKIES=$(echo "$response" | jq -r '[.cookies[] | .name + "=" + .value] | join("; ")')
-					CF_UA=$(echo "$response" | jq -r '.userAgent // empty')
-					export CF_COOKIES CF_UA
-					echo "export CF_COOKIES='$CF_COOKIES'; export CF_UA='$CF_UA'" > "$TEMP_DIR/cf_env.sh"
-					echo "$html"
-					return 0
-				fi
+		if [ "${CF_HAS_SOLVER:-false}" = true ]; then
+			_cf_try_solver "$url" && return 0
+		fi
+		if [ "${CF_MAY_SPAWN:-false}" = true ] && [ "${CF_SPAWN_CONTAINERS:-true}" = "true" ]; then
+			_cf_lazy_spawn_trawl
+			if [ "${CF_HAS_TRAWL:-false}" = true ]; then
+				_cf_try_trawl "$url" && return 0
 			fi
-			sleep 5
-		done
-		
-		# Try cloudflarebypassforscraping on 8000
-		for attempt in $(seq 1 $max_retries); do
-			local response_file headers_file http_code
-			response_file=$(mktemp)
-			headers_file=$(mktemp)
-			http_code=$(curl -s -o "$response_file" -w '%{http_code}' \
-			    -D "$headers_file" \
-				-G --data-urlencode "url=$url"\
-				--max-time 30 \
-				"http://localhost:8000/html") || true
-			if [[ "$http_code" == "200" ]]; then
-				local html
-				html=$(cat "$response_file")
-				if [[ -n "$html" ]]; then
-					CF_COOKIES=$(grep -i '^x-cf-bypasser-cookies:' "$headers_file" 2>/dev/null | cut -d':' -f2- | xargs)
-					CF_UA=$(grep -i '^x-cf-bypasser-user-agent:' "$headers_file" 2>/dev/null | cut -d':' -f2- | xargs)
-					export CF_COOKIES CF_UA
-					echo "export CF_COOKIES='$CF_COOKIES'; export CF_UA='$CF_UA'" > "$TEMP_DIR/cf_env.sh"
-					echo "$html"
-					rm -f "$response_file" "$headers_file"
-					return 0
-				fi
-			fi
-			rm -f "$response_file" "$headers_file"
-			sleep 5
-		done
+		fi
 	fi
 
 	# fallback
@@ -575,6 +732,13 @@ isoneof() {
 
 merge_splits() {
 	local bundle=$1 output=$2
+	_with_lock "merge.$(_lock_key "$output")" _merge_splits_locked "$bundle" "$output"
+}
+
+_merge_splits_locked() {
+	local bundle=$1 output=$2
+	# another job may have merged it while we waited for the lock
+	if [ -f "$output" ]; then return 0; fi
 	pr "Merging splits"
 	gh_dl "$TEMP_DIR/apkeditor.jar" "https://github.com/REAndroid/APKEditor/releases/download/V1.4.7/APKEditor-1.4.7.jar" >/dev/null || return 1
 	if ! OP=$(java -jar "$TEMP_DIR/apkeditor.jar" merge -i "$bundle" -o "${output}-unsigned" -clean-meta -f 2>&1); then
@@ -1047,21 +1211,21 @@ get_direct_resp() { __DIRECT_APKNAME__=$(awk -F/ '{print $NF}' <<<"$1"); }
 
 # -------------------- apkeep --------------------
 dl_apkeep() {
+	local pkg=$1 version=$2 output=$3 arch=$4 _dpi=$5
+	if [ -f "$output" ]; then return 0; fi
+	_with_lock "apkeep.$(_lock_key "$output")" _dl_apkeep_locked "$pkg" "$version" "$output" "$arch" "$_dpi"
+}
+
+_dl_apkeep_locked() {
 	local pkg=$1 version=${2// /-} output=$3 arch=$4 _dpi=$5
 	local email="${APK_KEEP_EMAIL:-}"
 	local token="${APK_KEEP_TOKEN:-}"
 
+	# another job may have downloaded it while we waited for the lock
 	if [ -f "$output" ]; then return 0; fi
-	local lock_file="${output}.lock"
-	if [ -f "$lock_file" ]; then
-		while [ -f "$lock_file" ]; do sleep 1; done
-		if [ -f "$output" ]; then return 0; fi
-	fi
-	touch "$lock_file"
 
 	if ! command -v apkeep >/dev/null 2>&1; then
 		epr "apkeep is not installed or not in PATH. Are you in the nix shell?"
-		rm -f "$lock_file"
 		return 1
 	fi
 	local apkeep_bin="apkeep"
@@ -1092,7 +1256,7 @@ dl_apkeep() {
 		done
 		if [ "$success" = false ]; then
 			epr "apkeep failed to download $pkg after $max_retries attempts"
-			rm -rf "$out_dir" "$lock_file"
+			rm -rf "$out_dir"
 			return 1
 		fi
 	else
@@ -1110,7 +1274,7 @@ dl_apkeep() {
 		done
 		if [ "$success" = false ]; then
 			epr "apkeep failed to download $pkg after $max_retries attempts"
-			rm -rf "$out_dir" "$lock_file"
+			rm -rf "$out_dir"
 			return 1
 		fi
 	fi
@@ -1131,17 +1295,17 @@ dl_apkeep() {
 			cd "$downloaded_dir" || exit 1
 			zip -0rq "${CWD}/${output}.apkm" . || exit 1
 		); then
-			rm -rf "$out_dir" "$lock_file"
+			rm -rf "$out_dir"
 			return 1
 		fi
 		merge_splits "${output}.apkm" "${output}"
 		rm -f "${output}.apkm"
 	else
 		epr "Could not find downloaded files in $out_dir"
-		rm -rf "$out_dir" "$lock_file"
+		rm -rf "$out_dir"
 		return 1
 	fi
-	rm -rf "$out_dir" "$lock_file"
+	rm -rf "$out_dir"
 }
 get_apkeep_vers() { echo "latest"; }
 get_apkeep_pkg_name() { echo "$__APKEEP_PKG_NAME__"; }

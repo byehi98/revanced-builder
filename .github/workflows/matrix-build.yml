@@ -108,6 +108,18 @@ jobs:
           fetch-depth: 0
           submodules: true
 
+      - name: Restore stock APK cache
+        uses: actions/cache/restore@v6
+        with:
+          path: |
+            temp/*.apk
+            temp/*.apkm
+            temp/apkeditor.jar
+            temp/cache_manifest.txt
+          key: apks-${{ github.run_id }}
+          restore-keys: |
+            apks-
+
       - name: Download base config
         uses: actions/download-artifact@v8
         with:
@@ -321,18 +333,41 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           TAG: ${{ needs.prepare_matrix.outputs.next_ver_code }}
+          UPLOAD_CONCURRENCY: "12"
         run: |
           if [ -z "$(ls -A release_files)" ]; then
             echo "No files to release!"
             exit 0
           fi
 
+          upload_one() {
+            local f="$1" attempt
+            for attempt in 1 2 3; do
+              if gh release upload "$TAG" "$f" --clobber; then
+                return 0
+              fi
+              sleep $((attempt * 5))
+            done
+            echo "::error::Failed to upload ${f}"
+            return 1
+          }
+          export -f upload_one
+          export TAG
+
+          mapfile -t files < <(find release_files -maxdepth 1 -type f | sort)
           BODY=$(cat final_report.md)
           if gh release view "$TAG" >/dev/null 2>&1; then
             gh release edit "$TAG" --title "Release" --notes "$BODY"
-            gh release upload "$TAG" release_files/* --clobber
+            rest=("${files[@]}")
           else
-            gh release create "$TAG" release_files/* --title "Release" --notes "$BODY"
+            # seed the release with the first asset so it is never asset-less
+            gh release create "$TAG" "${files[0]}" --title "Release" --notes "$BODY"
+            rest=("${files[@]:1}")
+          fi
+
+          if [ "${#rest[@]}" -gt 0 ]; then
+            printf '%s\0' "${rest[@]}" |
+              xargs -0 -P "$UPLOAD_CONCURRENCY" -n 1 bash -c 'upload_one "$@"' _
           fi
 
       - name: Update modules changelog and update json

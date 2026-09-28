@@ -211,7 +211,6 @@ apkeep-dlurl	= "mega.privacy.android.app"
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
-version			= "latest"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/mobisystems/officesuite/"
 # apkeep-dlurl 	= "com.mobisystems.office"
 uptodown-dlurl	= "https://officesuite-pro-7.en.uptodown.com/android"
@@ -688,7 +687,7 @@ patches-source  = "byehi98/okish-morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "okish"
 patches-version = "dev"
-apkeep-dlurl 	= "com.nekki.vector"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/nekki/vector/"
 
 # ==============================================================================
 # cesbar/zpatches
