@@ -8,9 +8,10 @@ remove-rv-integrations-checks = false
 # ==============================================================================
 
 [YouTube-Morphe]
-patches-source 	= "MorpheApp/morphe-patches"
-cli-source 		= "MorpheApp/morphe-cli"
+patches-source 		= "MorpheApp/morphe-patches"
+cli-source 			= "MorpheApp/morphe-cli"
 rv-brand 			= "morphe"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/google-inc/youtube/"
 apkeep-dlurl 		= "com.google.android.youtube"
 
 [YouTube-Morphe-Dev]
@@ -19,12 +20,14 @@ cli-source 			= "MorpheApp/morphe-cli"
 rv-brand 			= "morphe-dev"
 patches-version 	= "dev"
 version				= "experiment"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/google-inc/youtube/"
 apkeep-dlurl 		= "com.google.android.youtube"
 
 [YouTube-Music-Morphe]
 patches-source 	= "MorpheApp/morphe-patches"
 cli-source 		= "MorpheApp/morphe-cli"
 rv-brand		= "morphe"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/google-inc/youtube-music/"
 apkeep-dlurl 	= "com.google.android.apps.youtube.music"
 
 [YouTube-Music-Morphe-Dev]
@@ -33,12 +36,14 @@ cli-source 			= "MorpheApp/morphe-cli"
 rv-brand 			= "morphe-dev"
 patches-version 	= "dev"
 version				= "experiment"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/google-inc/youtube-music/"
 apkeep-dlurl 		= "com.google.android.apps.youtube.music"
 
 [Reddit-Morphe]
 patches-source 	= "MorpheApp/morphe-patches"
 cli-source 		= "MorpheApp/morphe-cli"
 rv-brand		= "morphe"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/redditinc/reddit/"
 # uptodown-dlurl  = "https://reddit-official-app.en.uptodown.com/android"
 apkeep-dlurl  	= "com.reddit.frontpage"
 
@@ -48,6 +53,7 @@ cli-source 		= "MorpheApp/morphe-cli"
 rv-brand		= "morphe-dev"
 patches-version = "dev"
 version			= "experiment"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/redditinc/reddit/"
 # uptodown-dlurl  = "https://reddit-official-app.en.uptodown.com/android"
 apkeep-dlurl  	= "com.reddit.frontpage"
 
