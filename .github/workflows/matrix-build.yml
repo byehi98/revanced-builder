@@ -97,7 +97,7 @@ jobs:
       matrix:
         app_name: ${{ fromJson(needs.prepare_matrix.outputs.matrix) }}
     steps:
-      - uses: actions/setup-java@v5
+      - uses: actions/setup-java@v6
         with:
           distribution: "zulu"
           java-version: "21"
