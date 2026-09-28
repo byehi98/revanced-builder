@@ -19,7 +19,7 @@ jobs:
       group: build
       cancel-in-progress: false
     steps:
-      - uses: actions/setup-java@v5
+      - uses: actions/setup-java@v6
         with:
           distribution: "zulu"
           java-version: "21"
