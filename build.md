@@ -1,14 +1,12 @@
-Vector: 2.10.2  
+YouTube-Morphe-Dev: 21.39.522  
+YouTube-Morphe: 21.16.256  
+MobiOffice: 16.5.60515  
 
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
 
 [revanced-magisk-module](https://github.com/j-hc/revanced-magisk-module)
   
-CLI: MorpheApp/morphe-desktop-1.17.0-all.jar  
-Patches: byehi98/patches-1.34.0.mpp  
-[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.35.0-dev.1)
-
 CLI: MorpheApp/morphe-desktop-1.17.0-all.jar  
 Patches: MorpheApp/patches-1.45.0-dev.18.mpp  
 [Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.45.0-dev.18)
@@ -159,6 +157,7 @@ Patches: IMXEren/patches-1.4.1.mpp
 Truecaller-bufferk: 26.10.6  
 Truecloud: 4.6.5.13  
 Unimote: 1.8.1  
+Vector: 2.10.2  
 WPS-Office: 18.24  
 Wallcraft: 3.61.01  
 Yatri: 5.0.6  
@@ -166,11 +165,8 @@ YouTube-Music-Morphe: 9.15.51
 YouTube-Music-Morphe-Dev: 9.38.51  
 Zombie-Catchers: latest  
 iLovePDF: 4.0.1    
-qBitConnect: 2.0.6                            
+qBitConnect: 2.0.6                              
 
 
 ### Failed to build
-- ❌ `MobiOffice`
 - ❌ `Reddit-Morphe-Dev`
-- ❌ `YouTube-Morphe`
-- ❌ `YouTube-Morphe-Dev`
