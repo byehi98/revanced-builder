@@ -1,35 +1,27 @@
-Cx-File-Explorer: 2.7.8  
-Big-Hunter: 3.1.1  
-Doodle-Jump: 3.11.40  
 Dr-Driving: 1.73  
+Doodle-Jump: 3.11.40  
+Cx-File-Explorer: 2.7.8  
 Freejobalert: 1.0.0  
-Earn-to-Die-2: 1.4.58  
-CamScanner-hoo-dles: 7.20.0.2606230000  
-AdGuard-hoo-dles: 4.14.1  
+Earn-to-Die-2: 1.5.6  
 HAAK: 1.4.3  
-Google-News-hoo-dles: 5.161.0.931240252  
-Hill-Climb-Racing: 1.71.1  
 Into-The-Dead: 2.9.3  
-Missiles: 1.41  
-Onlyone: 1.3043  
+Hill-Climb-Racing: 1.71.1  
 Jetpack-Joyride: 1.104.1  
-Plagueinc: 1.25.2  
-Chess-com: 4.10.0  
-ProtonVPN-Hoodles: 5.19.43.0  
-Smashit: 1.5.14  
-Showly: 3.70.0  
+Missiles: 1.41  
+Big-Hunter: 3.1.2  
 Protonmail: 7.11.8  
-Symfonium: 15.0.1  
-Swordigo: 1.4.13  
-Solid-Explorer: 3.6.1  
-Tentaclewars: 2.1.27  
+Onlyone: 1.3044  
 Rodeo-Stampede: 4.25.0  
+Swordigo: 1.4.13  
+Smashit: 1.5.14  
+Chess-com: 4.10.0  
+Symfonium: 15.0.1  
+Tentaclewars: 2.1.27  
+Reddit-Morphe-Dev: 2026.39.0  
 Truecloud: 4.6.5.13  
 YouTube-Morphe-Dev: 21.39.522  
-Vector: 2.10.2  
-Wallcraft: 3.61.01  
 YouTube-Music-Morphe-Dev: 9.38.51  
-WPS-Office: 18.24  
+Vector: 2.10.2  
 
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
@@ -37,8 +29,8 @@ Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and
 [revanced-magisk-module](https://github.com/j-hc/revanced-magisk-module)
   
 CLI: MorpheApp/morphe-desktop-1.17.0-all.jar  
-Patches: byehi98/patches-1.35.0.mpp  
-[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.35.0)
+Patches: byehi98/patches-1.35.1.mpp  
+[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.35.1)
 
 CLI: MorpheApp/morphe-desktop-1.17.0-all.jar  
 CLI: MorpheApp/morphe-desktop-1.17.0-all.jar  
@@ -58,36 +50,27 @@ CLI: MorpheApp/morphe-desktop-1.17.0-all.jar
 CLI: MorpheApp/morphe-desktop-1.17.0-all.jar  
 CLI: MorpheApp/morphe-desktop-1.17.0-all.jar  
 CLI: MorpheApp/morphe-desktop-1.17.0-all.jar  
-Patches: hoo-dles/patches-1.45.0.mpp  
-[Changelog](https://github.com/hoo-dles/morphe-patches/releases/tag/v1.45.0)
+Patches: hxreborn/patches-1.36.0.mpp  
+[Changelog](https://github.com/hxreborn/morphe-patches/releases/tag/v1.36.0)
 
 CLI: MorpheApp/morphe-desktop-1.17.0-all.jar  
 CLI: MorpheApp/morphe-desktop-1.17.0-all.jar  
 CLI: MorpheApp/morphe-desktop-1.17.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.17.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.17.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.17.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.17.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.17.0-all.jar  
-Patches: hxreborn/patches-1.34.0.mpp  
-[Changelog](https://github.com/hxreborn/morphe-patches/releases/tag/v1.34.0)
+Patches: MorpheApp/patches-1.45.0-dev.20.mpp  
+[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.45.0-dev.20)
 
 CLI: MorpheApp/morphe-desktop-1.17.0-all.jar  
 CLI: MorpheApp/morphe-desktop-1.17.0-all.jar  
 CLI: MorpheApp/morphe-desktop-1.17.0-all.jar  
-Patches: MorpheApp/patches-1.45.0-dev.19.mpp  
-[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.45.0-dev.19)
-
-CLI: MorpheApp/morphe-desktop-1.17.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.17.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.17.0-all.jar  
-Patches: prathxmOp/patches-1.14.0.mpp  
-[Changelog](https://github.com/prathxmOp/prathxm-patches/releases/tag/v1.14.0)  
+Patches: prathxmOp/patches-1.15.0.mpp  
+[Changelog](https://github.com/prathxmOp/prathxm-patches/releases/tag/v1.15.0)  
 
 Skipped:  
 AccuBattery: 2.1.8  
 Patches: rushiranpise/patches-1.22.0.mpp  
 Accuweather: 21.1.15-3-rc  
+AdGuard-hoo-dles: 4.14.1  
+Patches: hoo-dles/patches-1.45.0.mpp  
 AdGuard-rushiranpise: 4.14.68  
 Adobe-Photoshop-Mix: latest  
 Patches: RookieEnough/patches-1.4.4.mpp  
@@ -119,6 +102,7 @@ Brave-Nightly-dh6k: 1.98.29
 Brave-dh6k: 1.95.104  
 CalcNote: 2.25.107  
 Patches: binarymend/patches-1.3.1.mpp  
+CamScanner-hoo-dles: 7.20.0.2606230000  
 CamScanner-rushiranpise: 7.24.5.2608200000  
 Camera: 5.4.0  
 Charge-Meter: 3.0.1  
@@ -131,6 +115,7 @@ Does-Not-Commute-Entree3k: 1.5.5
 Does-Not-Commute-chiggi: 1.5.5  
 FolderSync: 4.12.0  
 Google-News-RookieEnough: 5.167.0.974984811  
+Google-News-hoo-dles: 5.161.0.931240252  
 Google-Photos: 7.92.0.977185651  
 Greenify: 5.1.1  
 Hidden-Settings: 7.34  
@@ -167,6 +152,7 @@ PinOut: 1.0.7
 Plants-vs-Zombies: latest  
 Playit: 2.7.50.12  
 Poweramp: build-1025-bundle-play  
+ProtonVPN-Hoodles: 5.19.43.0  
 ProtonVPN-Rushiranpise: 5.19.78.0  
 Psiphon: 486  
 RS-File-Manager: 2.3.0.4  
@@ -176,7 +162,9 @@ Reddit-Morphe: 2026.14.0
 Patches: MorpheApp/patches-1.44.0.mpp  
 Send-Files-To-TV: 1.4.22  
 Server-Auditor: 7.9.0  
+Showly: 3.70.0  
 Six-Pack-in-30-Days: 1.4.8  
+Solid-Explorer: 3.6.1  
 Solitaire: 1.20.3  
 SoundCloud-RookieEnough: latest  
 Speedtest: 7.0.4  
@@ -189,13 +177,15 @@ Trakt: 3.13.0
 Patches: IMXEren/patches-1.4.1.mpp  
 Truecaller-bufferk: 26.10.6  
 Unimote: 1.8.1  
+WPS-Office: 18.24  
+Wallcraft: 3.61.01  
 Yatri: 5.0.6  
 YouTube-Morphe: 21.16.256  
 YouTube-Music-Morphe: 9.15.51  
 Zombie-Catchers: latest  
 iLovePDF: 4.0.1    
-qBitConnect: 2.0.6                                
+qBitConnect: 2.0.6                                  
 
 
 ### Failed to build
-- ❌ `Reddit-Morphe-Dev`
+- ❌ `Plagueinc`
