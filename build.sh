@@ -164,15 +164,25 @@ if [ -f "$TEMP_DIR/some_job_failed" ]; then
 fi
 if [ -z "$(ls -A1 "${BUILD_DIR}")" ]; then abort "All builds failed."; fi
 
-log "\nInstall [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs"
+# build.md doubles as the release body, so keep it to a count, the patches
+# changelog and the built versions. the per-app status table is rendered into
+# README.md instead - see .github/workflows/update-readme.yml
+BUILT_APPS=$(sort -u "$TEMP_DIR"/built_apps 2>/dev/null | grep . || :)
+built_apps=$(grep -c . <<<"$BUILT_APPS" || :)
+log "\n**${built_apps} apps built.**\n"
+log "Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs"
 log "Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store"
-log "\n[revanced-magisk-module](https://github.com/j-hc/revanced-magisk-module)\n"
 log "$(cat "$TEMP_DIR"/*/changelog.md)"
 
 SKIPPED=$(cat "$TEMP_DIR"/skipped 2>/dev/null || :)
 if [ -n "$SKIPPED" ]; then
 	log "\nSkipped:"
 	log "$SKIPPED"
+fi
+
+if [ -n "$BUILT_APPS" ]; then
+	log "\n### Built versions"
+	log "$BUILT_APPS"
 fi
 
 pr "Done"

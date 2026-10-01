@@ -46,6 +46,7 @@ jobs:
           import sys
           import subprocess
           import os
+          import re
           import urllib.parse
           
           with open("config.json", "r") as f:
@@ -106,33 +107,60 @@ jobs:
               readme_lines = rfile.readlines()
               
           old_data = {}
+          old_src_ver = {}
           in_table = False
-          has_patch_ver_col = False
+          # which layout the table currently in README.md uses. the previous
+          # one has a per-app "Patches Source"/"Patch Version" column; the
+          # grouped one puts those in a per-source heading instead.
+          table_fmt = None
           for line in readme_lines:
               if "<!-- BUILD_STATUS_START -->" in line:
                   in_table = True
                   continue
               if "<!-- BUILD_STATUS_END -->" in line:
                   break
-              if in_table and line.startswith("|") and "Patches Source" in line and "Patch Version" in line:
-                  has_patch_ver_col = True
+              if not in_table:
                   continue
-              if in_table and line.startswith("|") and not line.startswith("| Patches") and not line.startswith("| :---"):
-                  parts = [p.strip() for p in line.split("|")]
-                  if has_patch_ver_col and len(parts) >= 7:
-                      config_table = parts[4].strip("`")
-                      old_data[config_table] = {
-                          "patch_ver": parts[2].strip("`") if parts[2] != "Unknown" else "Unknown",
-                          "status": parts[3],
-                          "app_display": parts[5]
-                      }
-                  elif not has_patch_ver_col and len(parts) >= 6:
-                      config_table = parts[3].strip("`")
-                      old_data[config_table] = {
+              # per-source heading, e.g. #### `owner/repo` · `patches-1.2.3.mpp`
+              if line.startswith("####"):
+                  m = re.match(r"^####\s+`([^`]+)`\s*(?:.\s*`([^`]+)`)?", line)
+                  if m and m.group(2):
+                      old_src_ver[m.group(1)] = m.group(2)
+                  continue
+              # the table is rendered inside a <details> block, so skip the wrapper
+              if line.startswith("<details") or line.startswith("<summary") \
+                  or line.startswith("</details") or line.startswith("#"):
+                  continue
+              if line.startswith("|") and "Patches Source" in line:
+                  table_fmt = "old_ver" if "Patch Version" in line else "old"
+                  continue
+              if line.startswith("|") and line.strip().startswith("| App"):
+                  table_fmt = "grouped"
+                  continue
+              if not line.startswith("|") or line.startswith("| :---"):
+                  continue
+              parts = [p.strip() for p in line.split("|")]
+              if table_fmt == "grouped" and len(parts) >= 4:
+                  # | `Table` (links) | status | Obtainium |
+                  m = re.match(r"^`([^`]+)`\s*(.*)$", parts[1])
+                  if m:
+                      old_data[m.group(1)] = {
                           "patch_ver": "Unknown",
                           "status": parts[2],
-                          "app_display": parts[4]
+                          "app_display": (m.group(1) + " " + m.group(2)).strip()
                       }
+              elif table_fmt == "old_ver" and len(parts) >= 7:
+                  old_data[parts[4].strip("`")] = {
+                      "patch_ver": parts[2].strip("`") if parts[2] != "Unknown" else "Unknown",
+                      "status": parts[3],
+                      "app_display": parts[5]
+                  }
+              elif table_fmt == "old" and len(parts) >= 6:
+                  old_data[parts[3].strip("`")] = {
+                      "patch_ver": "Unknown",
+                      "status": parts[2],
+                      "app_display": parts[4]
+                  }
 
           patch_versions = {}
           try:
@@ -148,11 +176,18 @@ jobs:
           except Exception:
               pass
 
-          print("| Patches Source | Patch Version | Status | Config | App | Obtainium |")
-          print("| :--- | :--- | :---: | :--- | :--- | :---: |")
-          
+          # the table is grouped by patches source and rendered inside a <details>
+          # block, so the source name and patch version are printed once per
+          # group instead of once per app
           def_patch_src = config.get("patches-source") or config.get("patches-sources") or "ReVanced/revanced-patches"
           
+          # group rows by patches source so the source name and the patch
+          # version are printed once per group instead of once per app
+          groups = {}
+          total = 0
+          built_count = 0
+          author = repository.split('/')[0] if '/' in repository else "Unknown"
+
           for table, data in config.items():
               if not isinstance(data, dict):
                   continue
@@ -178,7 +213,7 @@ jobs:
                   src_author = patches_source.split(":")[1].split("/")[0].lower()
               else:
                   src_author = patches_source.split("/")[0].lower()
-              patch_ver = patch_versions.get(src_author)
+              patch_ver = patch_versions.get(src_author) or old_src_ver.get(patches_source)
 
               if success and tag:
                   status = "✅"
@@ -213,8 +248,13 @@ jobs:
                       if not patch_ver:
                           patch_ver = old_info["patch_ver"] if old_info else "Unknown"
               
+              # count the status that actually ends up in the table, so the
+              # summary stays truthful on a partial run and does not drop apps
+              # that were built by an earlier release
+              if status == "✅":
+                  built_count += 1
+
               dummy_id = package_ids.get(app_name_l, f"app.revanced.builder.{app_name_l}")
-              author = repository.split('/')[0] if '/' in repository else "Unknown"
               additional_settings = json.dumps({
                   "apkFilterRegEx": prefix,
                   "autoApkFilterByArch": True
@@ -230,10 +270,37 @@ jobs:
               encoded_json = urllib.parse.quote(obtainium_json)
               obtainium_link = f"https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/{encoded_json}"
               obtainium_badge = f"[![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)]({obtainium_link})"
-              
-              patch_ver_display = f"`{patch_ver}`" if patch_ver != "Unknown" else "Unknown"
-              
-              print(f"| `{patches_source}` | {patch_ver_display} | {status} | `{table}` | {app_display} | {obtainium_badge} |")
+
+              total += 1
+              entry = groups.setdefault(patches_source, {"patch_ver": patch_ver, "rows": []})
+              if entry["patch_ver"] != "Unknown" and patch_ver == "Unknown":
+                  patch_ver = entry["patch_ver"]
+              # app_display repeats the table name for the common case where
+              # app-name is unset, so only render it when it adds something
+              disp = app_display
+              if disp.startswith(table):
+                  disp = disp[len(table):].strip()
+              cell = f"`{table}`" + (f" {disp}" if disp else "")
+              entry["rows"].append(f"| {cell} | {status} | {obtainium_badge} |")
+
+          failed_count = total - built_count
+          print("<details>")
+          print(f"<summary><b>{built_count} of {total} apps built</b> — click to expand the full list</summary>")
+          print()
+
+          for src in sorted(groups, key=str.lower):
+              grp = groups[src]
+              ver = grp["patch_ver"]
+              ver_display = f" · `{ver}`" if ver and ver != "Unknown" else ""
+              print(f"#### `{src}`{ver_display}")
+              print()
+              print("| App | Status | Obtainium |")
+              print("| :--- | :---: | :---: |")
+              for row in grp["rows"]:
+                  print(row)
+              print()
+
+          print("</details>")
           EOF
           
           python3 generate_table.py > table.md

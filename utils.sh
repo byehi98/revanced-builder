@@ -1727,7 +1727,9 @@ build_rv() {
 		popd >/dev/null || :
 		pr "Built ${table} (root): '${BUILD_DIR}/${module_output}'"
 	done
-	log "${table}: ${version}"
+	# kept out of build.md until the end of the run so the changelog stays at
+	# the top. config_update still reads these back out of build.md.
+	echo "${table}: ${version}" >>"${TEMP_DIR}/built_apps"
 }
 
 list_args() { tr -d '\t\r' <<<"$1" | tr -s ' ' | sed 's/" "/"\n"/g' | sed 's/\([^"]\)"\([^"]\)/\1'\''\2/g' | grep -v '^$' || :; }
