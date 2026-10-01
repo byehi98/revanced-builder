@@ -265,15 +265,15 @@ apkcombo-dlurl 	= "https://apkcombo.com/plague-inc/com.miniclip.plagueinc/"
 gplaydl-dlurl 	= "com.miniclip.plagueinc"
 uptodown-dlurl 	= "https://plague-inc.en.uptodown.com/android"
 
-[Prince-of-Persia-Lost-Crown]
-patches-source  = "byehi98/okish-morphe-patches"
-cli-source      = "MorpheApp/morphe-cli"
-rv-brand        = "okish"
-apkeep-dlurl 	= "com.ubisoft.princeofpersia.thelostcrown.mobile.action.adventure.platform"
-apkmirror-dlurl 	= "https://www.apkmirror.com/apk/ubisoft-entertainment/prince-of-persia-lost-crown/"
-apkpure-dlurl 	= "https://apkpure.net/prince-of-persia-lost-crown/com.ubisoft.princeofpersia.thelostcrown.mobile.action.adventure.platform"
-apkcombo-dlurl 	= "https://apkcombo.com/prince-of-persia-the-lost-crown/com.ubisoft.princeofpersia.thelostcrown.mobile.action.adventure.platform/"
-gplaydl-dlurl 	= "com.ubisoft.princeofpersia.thelostcrown.mobile.action.adventure.platform"
+# [Prince-of-Persia-Lost-Crown]
+# patches-source  = "byehi98/okish-morphe-patches"
+# cli-source      = "MorpheApp/morphe-cli"
+# rv-brand        = "okish"
+# apkeep-dlurl 	= "com.ubisoft.princeofpersia.thelostcrown.mobile.action.adventure.platform"
+# apkmirror-dlurl 	= "https://www.apkmirror.com/apk/ubisoft-entertainment/prince-of-persia-lost-crown/"
+# apkpure-dlurl 	= "https://apkpure.net/prince-of-persia-lost-crown/com.ubisoft.princeofpersia.thelostcrown.mobile.action.adventure.platform"
+# apkcombo-dlurl 	= "https://apkcombo.com/prince-of-persia-the-lost-crown/com.ubisoft.princeofpersia.thelostcrown.mobile.action.adventure.platform/"
+# gplaydl-dlurl 	= "com.ubisoft.princeofpersia.thelostcrown.mobile.action.adventure.platform"
 
 [Rodeo-Stampede]
 patches-source  = "byehi98/okish-morphe-patches"
