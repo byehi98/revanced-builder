@@ -580,31 +580,159 @@ apkeep-dlurl 		= "com.truecaller"
 
 # ==============================================================================
 # byehi98/okish-morphe-patches
+#
+# every app lists several download sources. build.sh walks DL_SRCS in order
+# (apkeep, apkmirror, apkpure, apkcombo, gplaydl, uptodown) and falls through to
+# the next one whenever the current one cannot deliver the required version.
 # ==============================================================================
+
+[Adda247]
+patches-source  = "byehi98/okish-morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "okish"
+apkeep-dlurl 	= "com.adda247.app"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/adda247/adda247-exam-prep-to-selection/"
+apkpure-dlurl 	= "https://apkpure.net/adda247-govt-job-prep-more/com.adda247.app"
+apkcombo-dlurl 	= "https://apkcombo.com/adda247/com.adda247.app/"
+gplaydl-dlurl 	= "com.adda247.app"
+uptodown-dlurl 	= "https://adda247-exam-preparation.en.uptodown.com/android"
+
+[Aliens-Drive-Me-Crazy]
+patches-source  = "byehi98/okish-morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "okish"
+apkeep-dlurl 	= "com.rebeltwins.aliensdrivemecrazy"
+apkpure-dlurl 	= "https://apkpure.net/aliens-drive-me-crazy/com.rebeltwins.aliensdrivemecrazy"
+apkcombo-dlurl 	= "https://apkcombo.com/aliens-drive-me-crazy/com.rebeltwins.aliensdrivemecrazy/"
+gplaydl-dlurl 	= "com.rebeltwins.aliensdrivemecrazy"
+uptodown-dlurl 	= "https://aliens-drive-me-crazy.en.uptodown.com/android"
+
+[Alto-Adventure]
+patches-source  = "byehi98/okish-morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "okish"
+apkeep-dlurl 	= "com.noodlecake.altosadventure"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/noodlecake-studios-inc/altos-adventure/"
+apkpure-dlurl 	= "https://apkpure.net/altos-adventure/com.noodlecake.altosadventure"
+apkcombo-dlurl 	= "https://apkcombo.com/altos-adventure/com.noodlecake.altosadventure/"
+gplaydl-dlurl 	= "com.noodlecake.altosadventure"
+uptodown-dlurl 	= "https://altos-adventure.en.uptodown.com/android"
+
+[Alto-Odyssey]
+patches-source  = "byehi98/okish-morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "okish"
+apkeep-dlurl 	= "com.noodlecake.altosodyssey"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/noodlecake-studios-inc/altos-odyssey/"
+apkpure-dlurl 	= "https://apkpure.net/altos-odyssey/com.noodlecake.altosodyssey"
+apkcombo-dlurl 	= "https://apkcombo.com/altos-odyssey/com.noodlecake.altosodyssey/"
+gplaydl-dlurl 	= "com.noodlecake.altosodyssey"
+uptodown-dlurl 	= "https://altos-odyssey.en.uptodown.com/android"
 
 [Big-Hunter]
 patches-source  = "byehi98/okish-morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "okish"
 apkeep-dlurl 	= "com.kakarod.bighunter"
+apkpure-dlurl 	= "https://apkpure.net/big-hunter/com.kakarod.bighunter"
+apkcombo-dlurl 	= "https://apkcombo.com/big-hunter/com.kakarod.bighunter/"
+gplaydl-dlurl 	= "com.kakarod.bighunter"
+uptodown-dlurl 	= "https://big-hunter.en.uptodown.com/android"
 
-[Dr-Driving]
+[Burrito-Bison]
 patches-source  = "byehi98/okish-morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "okish"
-apkeep-dlurl 	= "com.ansangha.drdriving"
+apkeep-dlurl 	= "com.kongregate.mobile.burritobison3.google"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/kongregate/burrito-bison-launcha-libre/"
+apkpure-dlurl 	= "https://apkpure.net/burrito-bison-launcha-libre/com.kongregate.mobile.burritobison3.google"
+apkcombo-dlurl 	= "https://apkcombo.com/burrito-bison-launcha-libre/com.kongregate.mobile.burritobison3.google/"
+gplaydl-dlurl 	= "com.kongregate.mobile.burritobison3.google"
+uptodown-dlurl 	= "https://burrito-bison-launcha-libre.en.uptodown.com/android"
+
+[Crossy-Road]
+patches-source  = "byehi98/okish-morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "okish"
+apkeep-dlurl 	= "com.yodo1.crossyroad"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/hipster-whale/crossy-road/"
+apkpure-dlurl 	= "https://apkpure.net/crossy-road/com.yodo1.crossyroad"
+apkcombo-dlurl 	= "https://apkcombo.com/crossy-road/com.yodo1.crossyroad/"
+gplaydl-dlurl 	= "com.yodo1.crossyroad"
+uptodown-dlurl 	= "https://crossy-road.en.uptodown.com/android"
+
+[Dan-The-Man]
+patches-source  = "byehi98/okish-morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "okish"
+apkeep-dlurl 	= "com.halfbrick.dantheman"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/halfbrick-studios/dan-the-man/"
+apkcombo-dlurl 	= "https://apkcombo.com/dan-the-man/com.halfbrick.dantheman/"
+gplaydl-dlurl 	= "com.halfbrick.dantheman"
+
+[Dead-Trigger]
+patches-source  = "byehi98/okish-morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "okish"
+apkeep-dlurl 	= "com.madfingergames.deadtrigger"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/deca_games/dead-trigger-offline-zombie-shooter/"
+apkcombo-dlurl 	= "https://apkcombo.com/dead-trigger/com.madfingergames.deadtrigger/"
+gplaydl-dlurl 	= "com.madfingergames.deadtrigger"
+uptodown-dlurl 	= "https://dead-trigger.en.uptodown.com/android"
+
+[Document-Scanner]
+patches-source  = "byehi98/okish-morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "okish"
+apkeep-dlurl 	= "com.cv.docscanner"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/lufick/document-scanner-pdf-creator/"
+apkpure-dlurl 	= "https://apkpure.net/document-scanner/com.cv.docscanner"
+apkcombo-dlurl 	= "https://apkcombo.com/document-scanner/com.cv.docscanner/"
+gplaydl-dlurl 	= "com.cv.docscanner"
+uptodown-dlurl 	= "https://doc-scanner.en.uptodown.com/android"
 
 [Doodle-Jump]
 patches-source  = "byehi98/okish-morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "okish"
 apkeep-dlurl 	= "com.lima.doodlejump"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/lima-sky-llc/doodle-jump/"
+apkpure-dlurl 	= "https://apkpure.net/doodle-jump/com.lima.doodlejump"
+apkcombo-dlurl 	= "https://apkcombo.com/doodle-jump/com.lima.doodlejump/"
+gplaydl-dlurl 	= "com.lima.doodlejump"
+uptodown-dlurl 	= "https://doodle-jump.en.uptodown.com/android"
+
+[Dr-Driving]
+patches-source  = "byehi98/okish-morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "okish"
+apkeep-dlurl 	= "com.ansangha.drdriving"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/sud-inc/dr-driving-2/"
+apkpure-dlurl 	= "https://apkpure.net/dr-driving/com.ansangha.drdriving"
+apkcombo-dlurl 	= "https://apkcombo.com/dr-driving/com.ansangha.drdriving/"
+gplaydl-dlurl 	= "com.ansangha.drdriving"
+uptodown-dlurl 	= "https://dr-driving.en.uptodown.com/android"
 
 [Earn-to-Die-2]
 patches-source  = "byehi98/okish-morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "okish"
 apkeep-dlurl 	= "com.notdoppler.earntodie2"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/not-doppler/earn-to-die-2/"
+apkpure-dlurl 	= "https://apkpure.net/earn-to-die-2/com.notdoppler.earntodie2"
+apkcombo-dlurl 	= "https://apkcombo.com/earn-to-die-2/com.notdoppler.earntodie2/"
+gplaydl-dlurl 	= "com.notdoppler.earntodie2"
+uptodown-dlurl 	= "https://earn-to-die-2.en.uptodown.com/android"
+
+[Fancy-Pants]
+patches-source  = "byehi98/okish-morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "okish"
+apkeep-dlurl 	= "com.overthetopgames.fancypants"
+apkpure-dlurl 	= "https://apkpure.net/fancy-pants-adventures/com.overthetopgames.fancypants"
+apkcombo-dlurl 	= "https://apkcombo.com/fancy-pants-adventures/com.overthetopgames.fancypants/"
+gplaydl-dlurl 	= "com.overthetopgames.fancypants"
+uptodown-dlurl 	= "https://fancy-pants-adventures.en.uptodown.com/android"
 
 [Freejobalert]
 patches-source  = "byehi98/okish-morphe-patches"
@@ -612,60 +740,134 @@ cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "okish"
 patches-version = "dev"
 apkeep-dlurl 	= "com.freejobalert"
+apkpure-dlurl 	= "https://apkpure.net/freejobalert-com-jobs-results/com.freejobalert"
+apkcombo-dlurl 	= "https://apkcombo.com/freejobalert/com.freejobalert/"
+gplaydl-dlurl 	= "com.freejobalert"
+uptodown-dlurl 	= "https://freejobalert-com.en.uptodown.com/android"
 
 [HAAK]
 patches-source  = "byehi98/okish-morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "okish"
 apkeep-dlurl 	= "com.blingame.haaktestb"
-
-[Into-The-Dead]
-patches-source  = "byehi98/okish-morphe-patches"
-cli-source      = "MorpheApp/morphe-cli"
-rv-brand        = "okish"
-apkeep-dlurl 	= "com.sidheinteractive.sif.DR"
+apkpure-dlurl 	= "https://apkpure.net/haak/com.blingame.haaktestb"
+apkcombo-dlurl 	= "https://apkcombo.com/haak/com.blingame.haaktestb/"
+gplaydl-dlurl 	= "com.blingame.haaktestb"
+uptodown-dlurl 	= "https://haak.en.uptodown.com/android"
 
 [Hill-Climb-Racing]
 patches-source  = "byehi98/okish-morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "okish"
 apkeep-dlurl 	= "com.fingersoft.hillclimb"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/fingersoft/hill-climb-racing/"
+apkpure-dlurl 	= "https://apkpure.net/hill-climb-racing/com.fingersoft.hillclimb"
+apkcombo-dlurl 	= "https://apkcombo.com/hill-climb-racing/com.fingersoft.hillclimb/"
+gplaydl-dlurl 	= "com.fingersoft.hillclimb"
+uptodown-dlurl 	= "https://hill-climb-racing.en.uptodown.com/android"
+
+[Injustice]
+patches-source  = "byehi98/okish-morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "okish"
+apkeep-dlurl 	= "com.wb.goog.injustice"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/warner-bros-international-enterprises/injustice-gods-among-us/"
+apkpure-dlurl 	= "https://apkpure.net/injustice-gods-among-us/com.wb.goog.injustice"
+apkcombo-dlurl 	= "https://apkcombo.com/injustice-gods-among-us/com.wb.goog.injustice/"
+gplaydl-dlurl 	= "com.wb.goog.injustice"
+uptodown-dlurl 	= "https://injustice-gods-among-us.en.uptodown.com/android"
+
+[Into-The-Dead]
+patches-source  = "byehi98/okish-morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "okish"
+apkeep-dlurl 	= "com.sidheinteractive.sif.DR"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/pikpok/into-the-dead/"
+apkcombo-dlurl 	= "https://apkcombo.com/into-the-dead/com.sidheinteractive.sif.DR/"
+gplaydl-dlurl 	= "com.sidheinteractive.sif.DR"
+uptodown-dlurl 	= "https://into-the-dead.en.uptodown.com/android"
+
+[Into-The-Dead-2]
+patches-source  = "byehi98/okish-morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "okish"
+apkeep-dlurl 	= "com.pikpok.dr2.play"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/pikpok/into-the-dead-2/"
+apkpure-dlurl 	= "https://apkpure.net/into-the-dead-2/com.pikpok.dr2.play"
+apkcombo-dlurl 	= "https://apkcombo.com/into-the-dead-2/com.pikpok.dr2.play/"
+gplaydl-dlurl 	= "com.pikpok.dr2.play"
+uptodown-dlurl 	= "https://into-the-dead-2.en.uptodown.com/android"
 
 [Jetpack-Joyride]
 patches-source  = "byehi98/okish-morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "okish"
 apkeep-dlurl 	= "com.halfbrick.jetpackjoyride"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/halfbrick-studios/jetpack-joyride/"
+apkcombo-dlurl 	= "https://apkcombo.com/jetpack-joyride/com.halfbrick.jetpackjoyride/"
+gplaydl-dlurl 	= "com.halfbrick.jetpackjoyride"
+
+[Lumina-Walls]
+patches-source  = "byehi98/okish-morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "okish"
+apkeep-dlurl 	= "com.lumina.wallpapers"
+apkpure-dlurl 	= "https://apkpure.net/lumina-wallpapers/com.lumina.wallpapers"
+apkcombo-dlurl 	= "https://apkcombo.com/lumina-walls/com.lumina.wallpapers/"
+gplaydl-dlurl 	= "com.lumina.wallpapers"
+uptodown-dlurl 	= "https://lumina-walls.en.uptodown.com/android"
 
 [Missiles]
 patches-source  = "byehi98/okish-morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "okish"
 apkeep-dlurl 	= "pl.macaque.Missiles"
+apkpure-dlurl 	= "https://apkpure.net/missiles/pl.macaque.Missiles"
+apkcombo-dlurl 	= "https://apkcombo.com/missiles/pl.macaque.Missiles/"
+gplaydl-dlurl 	= "pl.macaque.Missiles"
+uptodown-dlurl 	= "https://missiles.en.uptodown.com/android"
 
 [Onlyone]
 patches-source  = "byehi98/okish-morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "okish"
-apkeep-dlurl  	= "com.rebelbinary.onlyone"
+apkeep-dlurl 	= "com.rebelbinary.onlyone"
+apkpure-dlurl 	= "https://apkpure.net/only-one/com.rebelbinary.onlyone"
+apkcombo-dlurl 	= "https://apkcombo.com/only-one/com.rebelbinary.onlyone/"
+gplaydl-dlurl 	= "com.rebelbinary.onlyone"
+uptodown-dlurl 	= "https://only-one.en.uptodown.com/android"
 
 [Plagueinc]
 patches-source  = "byehi98/okish-morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "okish"
-apkeep-dlurl  	= "com.miniclip.plagueinc"
+apkeep-dlurl 	= "com.miniclip.plagueinc"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/ndemic-creations/plague-inc/"
+apkpure-dlurl 	= "https://apkpure.net/plague-inc/com.miniclip.plagueinc"
+apkcombo-dlurl 	= "https://apkcombo.com/plague-inc/com.miniclip.plagueinc/"
+gplaydl-dlurl 	= "com.miniclip.plagueinc"
+uptodown-dlurl 	= "https://plague-inc.en.uptodown.com/android"
+
+[Prince-of-Persia-Lost-Crown]
+patches-source  = "byehi98/okish-morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "okish"
+apkeep-dlurl 	= "com.ubisoft.princeofpersia.thelostcrown.mobile.action.adventure.platform"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/ubisoft-entertainment/prince-of-persia-lost-crown/"
+apkpure-dlurl 	= "https://apkpure.net/prince-of-persia-lost-crown/com.ubisoft.princeofpersia.thelostcrown.mobile.action.adventure.platform"
+apkcombo-dlurl 	= "https://apkcombo.com/prince-of-persia-the-lost-crown/com.ubisoft.princeofpersia.thelostcrown.mobile.action.adventure.platform/"
+gplaydl-dlurl 	= "com.ubisoft.princeofpersia.thelostcrown.mobile.action.adventure.platform"
 
 [Rodeo-Stampede]
 patches-source  = "byehi98/okish-morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "okish"
 apkeep-dlurl 	= "com.yodo1.rodeo.safari"
-
-[Swordigo]
-patches-source  = "byehi98/okish-morphe-patches"
-cli-source      = "MorpheApp/morphe-cli"
-rv-brand        = "okish"
-apkeep-dlurl 	= "com.touchfoo.swordigo"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/yodo1-games/rodeo-stampede-sky-zoo-safari/"
+apkpure-dlurl 	= "https://apkpure.net/rodeo-stampede-sky-zoo-safari/com.yodo1.rodeo.safari"
+apkcombo-dlurl 	= "https://apkcombo.com/rodeo-stampede/com.yodo1.rodeo.safari/"
+gplaydl-dlurl 	= "com.yodo1.rodeo.safari"
+uptodown-dlurl 	= "https://rodeo-stampede.en.uptodown.com/android"
 
 [Smashit]
 patches-source  = "byehi98/okish-morphe-patches"
@@ -673,6 +875,33 @@ cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "okish"
 patches-version = "dev"
 apkeep-dlurl 	= "com.mediocre.smashhit"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/mediocre/smash-hit/"
+apkpure-dlurl 	= "https://apkpure.net/smash-hit/com.mediocre.smashhit"
+apkcombo-dlurl 	= "https://apkcombo.com/smash-hit/com.mediocre.smashhit/"
+gplaydl-dlurl 	= "com.mediocre.smashhit"
+uptodown-dlurl 	= "https://smash-hit.en.uptodown.com/android"
+
+[Swordigo]
+patches-source  = "byehi98/okish-morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "okish"
+apkeep-dlurl 	= "com.touchfoo.swordigo"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/touch-foo/swordigo/"
+apkpure-dlurl 	= "https://apkpure.net/swordigo/com.touchfoo.swordigo"
+apkcombo-dlurl 	= "https://apkcombo.com/swordigo/com.touchfoo.swordigo/"
+gplaydl-dlurl 	= "com.touchfoo.swordigo"
+uptodown-dlurl 	= "https://swordigo.en.uptodown.com/android"
+
+[Swift-Backup]
+patches-source  = "byehi98/okish-morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "okish"
+apkeep-dlurl 	= "org.swiftapps.swiftbackup"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/swiftapps-org/swift-backup/"
+apkpure-dlurl 	= "https://apkpure.net/swift-backup/org.swiftapps.swiftbackup"
+apkcombo-dlurl 	= "https://apkcombo.com/swift-backup/org.swiftapps.swiftbackup/"
+gplaydl-dlurl 	= "org.swiftapps.swiftbackup"
+uptodown-dlurl 	= "https://swift-backup.en.uptodown.com/android"
 
 [Tentaclewars]
 patches-source  = "byehi98/okish-morphe-patches"
@@ -680,6 +909,33 @@ cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "okish"
 # patches-version = "dev"
 apkeep-dlurl 	= "com.fdgentertainment.tentaclewars.gp.free"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/fdg-entertainment-gmbh-co-kg/tentacle-wars/"
+apkpure-dlurl 	= "https://apkpure.net/tentacle-wars/com.fdgentertainment.tentaclewars.gp.free"
+apkcombo-dlurl 	= "https://apkcombo.com/tentacle-wars/com.fdgentertainment.tentaclewars.gp.free/"
+gplaydl-dlurl 	= "com.fdgentertainment.tentaclewars.gp.free"
+uptodown-dlurl 	= "https://tentacle-wars.en.uptodown.com/android"
+
+[Traffic-Racer]
+patches-source  = "byehi98/okish-morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "okish"
+apkeep-dlurl 	= "com.skgames.trafficracer"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/soner-kara/traffic-racer/"
+apkpure-dlurl 	= "https://apkpure.net/traffic-racer/com.skgames.trafficracer"
+apkcombo-dlurl 	= "https://apkcombo.com/traffic-racer/com.skgames.trafficracer/"
+gplaydl-dlurl 	= "com.skgames.trafficracer"
+uptodown-dlurl 	= "https://traffic-racer.en.uptodown.com/android"
+
+[Traffic-Rider]
+patches-source  = "byehi98/okish-morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "okish"
+apkeep-dlurl 	= "com.skgames.trafficrider"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/soner-kara/traffic-rider-2/"
+apkpure-dlurl 	= "https://apkpure.net/traffic-rider/com.skgames.trafficrider"
+apkcombo-dlurl 	= "https://apkcombo.com/traffic-rider/com.skgames.trafficrider/"
+gplaydl-dlurl 	= "com.skgames.trafficrider"
+uptodown-dlurl 	= "https://traffic-rider.en.uptodown.com/android"
 
 [Truecloud]
 patches-source  = "byehi98/okish-morphe-patches"
@@ -687,13 +943,22 @@ cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "okish"
 # patches-version = "dev"
 apkeep-dlurl 	= "com.generalcomp.truecloud"
+apkpure-dlurl 	= "https://apkpure.net/true-cloud/com.generalcomp.truecloud"
+apkcombo-dlurl 	= "https://apkcombo.com/truecloud/com.generalcomp.truecloud/"
+gplaydl-dlurl 	= "com.generalcomp.truecloud"
 
 [Vector]
 patches-source  = "byehi98/okish-morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "okish"
 patches-version = "dev"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/nekki/vector/"
+apkeep-dlurl 	= "com.nekki.vector"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/nekki/vector/"
+apkpure-dlurl 	= "https://apkpure.net/vector/com.nekki.vector"
+apkcombo-dlurl 	= "https://apkcombo.com/vector/com.nekki.vector/"
+gplaydl-dlurl 	= "com.nekki.vector"
+uptodown-dlurl 	= "https://vector.en.uptodown.com/android"
+
 
 # ==============================================================================
 # cesbar/zpatches
