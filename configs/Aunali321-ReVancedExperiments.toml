@@ -1,0 +1,10 @@
+# Aunali321/ReVancedExperiments
+#
+# Patches bundle: https://github.com/Aunali321/ReVancedExperiments
+# CLI:            https://github.com/ReVanced/revanced-cli
+
+[Telegram]
+patches-source  = "Aunali321/ReVancedExperiments"
+cli-source      = "ReVanced/revanced-cli"
+rv-brand        = "Aunali321"
+uptodown-dlurl  = "https://telegram-google-play-version.en.uptodown.com/android"

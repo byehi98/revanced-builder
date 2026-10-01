@@ -1,0 +1,10 @@
+# Alastor-Kaneki/Morphe-Patches
+#
+# Patches bundle: https://github.com/Alastor-Kaneki/Morphe-Patches
+# CLI:            https://github.com/MorpheApp/morphe-cli
+
+[Opera-GX]
+patches-source  = "Alastor-Kaneki/Morphe-Patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "Kaneki"
+apkeep-dlurl    = "com.opera.gx"

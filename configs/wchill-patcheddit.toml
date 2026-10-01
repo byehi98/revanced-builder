@@ -1,0 +1,11 @@
+# wchill/patcheddit
+#
+# Patches bundle: https://github.com/wchill/patcheddit
+# CLI:            https://github.com/MorpheApp/morphe-cli
+
+[Lemmy-Sync]
+patches-source  = "wchill/patcheddit"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "patcheddit"
+# patches-version = "dev"
+apkeep-dlurl 	= "io.syncapps.lemmy_sync"

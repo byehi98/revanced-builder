@@ -1,0 +1,10 @@
+# sushruth/imgur-patches
+#
+# Patches bundle: https://github.com/sushruth/imgur-patches
+# CLI:            https://github.com/MorpheApp/morphe-cli
+
+[Imgur]
+patches-source  = "sushruth/imgur-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "imgur"
+apkeep-dlurl    = "com.imgur.mobile"

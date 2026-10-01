@@ -1,0 +1,24 @@
+# bufferk/morphe-patches
+#
+# Patches bundle: https://github.com/bufferk/morphe-patches
+# CLI:            https://github.com/MorpheApp/morphe-cli
+
+[Brave-Bufferk]
+patches-source  = "bufferk/morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "bufferk"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/brave-software/brave-browser/"
+uptodown-dlurl	= "https://brave-software-brave.en.uptodown.com/android"
+
+[Medium]
+patches-source  = "bufferk/morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "bufferk"
+apkeep-dlurl	= "com.medium.reader"
+
+[Truecaller-bufferk]
+patches-source  	= "bufferk/morphe-patches"
+cli-source      	= "MorpheApp/morphe-cli"
+rv-brand        	= "bufferk"
+# patches-version 	= "dev"
+apkeep-dlurl 		= "com.truecaller"

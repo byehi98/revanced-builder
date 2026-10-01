@@ -11,18 +11,29 @@ This project is an extensive ReVanced builder that can create Magisk modules and
 ## Project Structure
 - `build.sh`: The main entry point for the build process.
 - `utils.sh`: Contains common helper functions for configuration parsing, downloading, and patching.
-- `config.toml`: The primary configuration file where users define which apps to build and which patches to include/exclude.
-- `CONFIG.md`: Documentation for the configuration options available in `config.toml`.
+- `config.toml`: The root config — global settings plus a pointer to the app config directory.
+- `configs/`: One TOML file per patch author, each holding that author's app tables. All of them are merged into the root config by `toml_prep`.
+- `CONFIG.md`: Documentation for the configuration options available in `config.toml` and the per-author files.
 - `bin/`: Contains pre-compiled binary utilities for different architectures and tools (`aapt2`, `htmlq`, `toml`, `apksigner.jar`, `apkprep.jar`, `ApkPrep.java`).
 - `module/`: Template for the Magisk module structure.
 - `ksu_profile/`: Source code for KernelSU profile integration.
 - `temp/`: Directory used for temporary files during the build process.
 - `build/`: Directory where final APKs and Magisk modules are placed.
 
+## Configuration Layout
+`toml_prep` accepts a single TOML file but merges an include tree into it:
+
+- `app-configs = "configs"` — merge every `*.toml` in that directory, sorted by name.
+- `imports = ["a.toml", "b.toml"]` — merge those files in the listed order (a bare string is also accepted).
+
+Paths are resolved relative to the directory of the file that names them, and each file may declare its own `app-configs`/`imports`. `toml_merge` keeps a set of already-merged files, so an import cycle terminates rather than recursing forever, and it errors out on a duplicate app table name instead of letting one app silently shadow another. Both keys are stripped from the result, so a merged config is indistinguishable from a single-file one — `toml_prep` output matches what the old one big `config.toml` produced.
+
+`toml_get_table_main` treats every non-object value as a global setting, so new globals can be added to the root config freely.
+
 ## Core Workflows
 ### Build Process
 1. **Environment Setup:** `build.sh` sources `utils.sh` and checks for required tools (`jq`, `java`, `zip`).
-2. **Configuration Parsing:** The script parses `config.toml` to determine build parameters (compression, parallel jobs, etc.).
+2. **Configuration Parsing:** The script parses the root config, merging in every file under `app-configs`/`imports`, to determine build parameters (compression, parallel jobs, etc.).
 3. **Prebuilt Acquisition:** Fetches the latest (or specified) ReVanced CLI and patches JARs from GitHub or GitLab.
 4. **App Processing:** For each enabled app in `config.toml`:
     - Finds the correct APK version (from APKeep, APKCombo, APKMirror, APKPure, archive, direct, gplaydl, or Uptodown — see `DL_SRCS` in `utils.sh`).

@@ -1,0 +1,23 @@
+# hxreborn/morphe-patches
+#
+# Patches bundle: https://github.com/hxreborn/morphe-patches
+# CLI:            https://github.com/MorpheApp/morphe-cli
+
+[Protonmail]
+patches-source  = "hxreborn/morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "hxreborn"
+apkeep-dlurl    = "ch.protonmail.android"
+
+[Cx-File-Explorer]
+patches-source  = "hxreborn/morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "hxreborn"
+apkeep-dlurl    = "com.cxinventor.file.explorer"
+
+[Symfonium]
+patches-source  	= "hxreborn/morphe-patches"
+cli-source      	= "MorpheApp/morphe-cli"
+rv-brand        	= "hxreborn"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/tolriq/symfonium-music-player-cast/"
+apkeep-dlurl	 	= "app.symfonik.music.player"

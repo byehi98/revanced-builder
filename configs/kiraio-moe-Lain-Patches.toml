@@ -1,0 +1,28 @@
+# kiraio-moe/Lain-Patches
+#
+# Patches bundle: https://github.com/kiraio-moe/Lain-Patches
+# CLI:            https://github.com/MorpheApp/morphe-cli
+
+[AudioRelay]
+patches-source  = "kiraio-moe/Lain-Patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "lain"
+apkeep-dlurl 	= "com.azefsw.audioconnect"
+
+[Camera]
+patches-source  = "kiraio-moe/Lain-Patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "lain"
+apkeep-dlurl  	= "com.flavionet.android.camera.lite"
+
+[iLovePDF]
+patches-source  = "kiraio-moe/Lain-Patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "lain"
+apkeep-dlurl	= "com.ilovepdf.www"
+
+[Hidden-Settings]
+patches-source  = "kiraio-moe/Lain-Patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "lain"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/yunus-ceyhan/hidden-settings-miui-hyperos/"

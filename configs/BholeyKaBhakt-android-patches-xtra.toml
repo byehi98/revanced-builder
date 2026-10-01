@@ -1,0 +1,23 @@
+# BholeyKaBhakt/android-patches-xtra
+#
+# Patches bundle: https://github.com/BholeyKaBhakt/android-patches-xtra
+# CLI:            https://github.com/MorpheApp/morphe-cli
+
+[Automate]
+patches-source  = "BholeyKaBhakt/android-patches-xtra"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "xtra"
+apkeep-dlurl 	= "com.llamalab.automate"
+
+[Backdrops]
+patches-source  = "BholeyKaBhakt/android-patches-xtra"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "xtra"
+patches-version = "dev"
+apkeep-dlurl 	= "com.backdrops.wallpapers"
+
+[Speedtest]
+patches-source  = "BholeyKaBhakt/android-patches-xtra"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "xtra"
+apkeep-dlurl 	= "org.zwanoo.android.speedtest"

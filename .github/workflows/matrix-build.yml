@@ -80,6 +80,7 @@ jobs:
           path: |
             config.json
             config.toml
+            configs/
             build.md
             temp/skipped
           if-no-files-found: ignore

@@ -1,13 +1,51 @@
 # Config
 
-Adding another revanced app is as easy as this:
+The root `config.toml` holds only global settings and points at the app configs:
+
+```toml
+parallel-jobs = 5
+dpi = "nodpi anydpi"
+remove-rv-integrations-checks = false
+
+app-configs = "configs"   # every *.toml in here gets merged in
+# imports = ["some/other.toml"]   # extra files, merged in the listed order
+```
+
+Every `configs/*.toml` file holds the app tables of one patch author, so the app
+config is split up per author instead of living in one huge file. Adding a new
+author means adding a file to `configs/` — the root `config.toml` never needs to
+change.
+
+```
+configs/
+├── MorpheApp-morphe-patches.toml     # [YouTube-Morphe], [Reddit-Morphe], ...
+├── byehi98-okish-morphe-patches.toml # 35 games
+└── ...one file per patches-source
+```
+
+A file may set its own `app-configs`/`imports`; those are resolved relative to
+that file, so `configs/` files can pull in shared configs of their own. Table
+names must be unique across every file — a duplicate is a hard error rather than
+a silent overwrite.
+
+## Adding another revanced app
+
+Find the file in `configs/` for that patches author (or create one), then add a
+table:
 ```toml
 [Some-App]
 apkmirror-dlurl = "https://www.apkmirror.com/apk/inc/app"
 # or uptodown-dlurl = "https://app.en.uptodown.com/android"
 # or apkpure-dlurl = "https://apkpure.net/app-slug/package.name"
 # or apkcombo-dlurl = "https://apkcombo.com/app-slug/package.name"
+# or apkeep-dlurl = "package.name"
+# or gplaydl-dlurl = "package.name"
 ```
+
+These are tried in the fixed order `apkeep → apkcombo → apkmirror → apkpure →
+archive → direct → gplaydl → uptodown`, and any source that cannot deliver the
+required version falls through to the next one, so list as many as apply to make
+the build resilient to a single site being down.
 
 > [!WARNING]
 > When a patch name itself contains a single quote, double it inside the string (e.g. 'Hide ''Get Music Premium''').

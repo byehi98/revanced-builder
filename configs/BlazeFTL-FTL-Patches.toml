@@ -1,0 +1,11 @@
+# BlazeFTL/FTL-Patches
+#
+# Patches bundle: https://github.com/BlazeFTL/FTL-Patches
+# CLI:            https://github.com/MorpheApp/morphe-cli
+
+[All-Video-Downloader-and-Ace-Player]
+patches-source  = "BlazeFTL/FTL-Patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "FTL"
+uptodown-dlurl	= "https://video-downloader-and-ace-player.en.uptodown.com/android"
+apkeep-dlurl    = "videoplayer.videodownloader.downloader"

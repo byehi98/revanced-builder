@@ -12,10 +12,95 @@ if [ "${GL_TOKEN-}" ]; then GL_HEADER="PRIVATE-TOKEN: ${GL_TOKEN}"; else GL_HEAD
 NEXT_VER_CODE=${NEXT_VER_CODE:-$(date +'%Y%m%d')}
 OS=$(uname -o)
 
+toml_read_json() { $TOML --output json --file "$1" . 2>/dev/null; }
+
+# Print the extra config files that a TOML config file pulls in, one per line:
+#   `app-configs = "dir"`  -> every *.toml in dir, sorted by name
+#   `imports = ["f.toml"]` -> those files, in the listed order
+# Paths are relative to the directory of the file that names them.
+toml_extra_files() {
+	local src=$1 json=$2
+	local dir
+	dir=$(dirname "$src")
+
+	local dir_arg
+	dir_arg=$(jq -r 'if (."app-configs" | type) == "string" then ."app-configs" else empty end' <<<"$json") || :
+
+	if [ -n "$dir_arg" ]; then
+		local d="$dir/$dir_arg"
+		if [ ! -d "$d" ]; then epr "app-configs: '$dir_arg' is not a directory"; return 1; fi
+		local had_nullglob=0
+		shopt -q nullglob || had_nullglob=1
+		shopt -s nullglob
+		local files=("$d"/*.toml)
+		((had_nullglob)) || shopt -u nullglob
+		((${#files[@]})) || wpr "app-configs: no *.toml found in '$dir_arg'"
+		printf '%s\n' "${files[@]}"
+	fi
+
+	local imports
+	imports=$(jq -r 'if (.imports | type) == "array" then .imports[]
+		elif (.imports | type) == "string" then .imports
+		else empty end' <<<"$json") || :
+	if [ -n "$imports" ]; then
+		local f
+		while IFS= read -r f; do
+			[ -n "$f" ] && printf '%s\n' "$dir/$f"
+		done <<<"$imports"
+	fi
+}
+
+# Merge a config's whole include tree into $1 (a JSON object string).
+# `imports`/`app-configs` are consumed and never reach the merged output.
+# A duplicate app table name is an error, so an app cannot silently shadow another.
+#
+# $1 merged json so far   $2 file whose includes are being expanded
+# $3 files already merged (cycle guard)
+toml_merge() {
+	local json=$1 src=$2 seen=${3:-" $2 "} f own
+
+	# includes are resolved from this file's own json only, never from the
+	# merged result, otherwise a root `app-configs` would be re-applied to
+	# every file below it
+	own=$(toml_read_json "$src") || own=$json
+
+	# command substitution, not process substitution: a process substitution
+	# would swallow the non-zero status of toml_extra_files
+	local list
+	list=$(toml_extra_files "$src" "$own") || return 1
+
+	while IFS= read -r f; do
+		[ -n "$f" ] || continue
+		case "$seen" in *" $f "*) continue ;; esac
+		seen+="$f "
+		[ -f "$f" ] || { epr "import: '$f' does not exist"; return 1; }
+
+		local sub
+		sub=$(toml_read_json "$f") || { epr "could not parse '$f'"; return 1; }
+		[ -n "$sub" ] || { epr "'$f' produced no output"; return 1; }
+
+		local dup
+		dup=$(jq -r --argjson sub "$sub" '
+			def tables: [ to_entries[] | select(.value | type == "object") | .key ];
+			($sub | tables) as $new | (tables) as $old
+			| [ $new[] | select(. as $k | $old | index($k)) ] | join(" ")' <<<"$json") || :
+		if [ -n "$dup" ]; then epr "duplicate app table(s) in '$f': $dup"; return 1; fi
+
+		json=$(jq -c --argjson sub "$sub" '. * ($sub | del(."app-configs", .imports))' <<<"$json") || return 1
+		json=$(toml_merge "$json" "$f" "$seen") || return 1
+	done <<<"$list"
+	printf '%s' "$json"
+}
+
 toml_prep() {
 	if [ ! -f "$1" ]; then return 1; fi
 	if [ "${1##*.}" == toml ]; then
-		__TOML__=$($TOML --output json --file "$1" .)
+		local json
+		json=$(toml_read_json "$1") || { epr "could not parse '$1'"; return 1; }
+		json=$(toml_merge "$json" "$1" " $1 ") || return 1
+		# the include directives themselves are not part of the result, so a
+		# merged config looks exactly like a single-file one
+		__TOML__=$(jq -c 'del(."app-configs", .imports)' <<<"$json") || return 1
 	elif [ "${1##*.}" == json ]; then
 		__TOML__=$(cat "$1")
 	else abort "config extension not supported"; fi

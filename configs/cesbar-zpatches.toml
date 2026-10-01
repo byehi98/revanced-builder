@@ -1,0 +1,18 @@
+# cesbar/zpatches
+#
+# Patches bundle: https://github.com/cesbar/zpatches
+# CLI:            https://github.com/MorpheApp/morphe-cli
+
+[Solitaire]
+patches-source  = "cesbar/zpatches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "cesbar"
+# patches-version = "dev"
+apkeep-dlurl 	= "ee.dustland.android.solitaire"
+
+[Minesweeper]
+patches-source  = "cesbar/zpatches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "cesbar"
+# patches-version = "dev"
+apkeep-dlurl 	= "ee.dustland.android.minesweeper"

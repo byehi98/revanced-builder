@@ -1,0 +1,52 @@
+# hoo-dles/morphe-patches
+#
+# Patches bundle: https://github.com/hoo-dles/morphe-patches
+# CLI:            https://github.com/MorpheApp/morphe-cli
+
+[AdGuard-hoo-dles]
+patches-source  = "hoo-dles/morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "hoo-dles"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/adguard-software-limited/adguard/"
+
+[CamScanner-hoo-dles]
+patches-source  = "hoo-dles/morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "hoo-dles"
+apkeep-dlurl 	= "com.intsig.camscanner"
+
+[ProtonVPN-Hoodles]
+patches-source  = "hoo-dles/morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "hoo-dles"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/proton-technologies-ag/protonvpn-free-vpn-secure-unlimited-fdroid-version/"
+
+[Google-News-hoo-dles]
+patches-source  = "hoo-dles/morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "hoo-dles"
+apkeep-dlurl 	= "com.google.android.apps.magazines"
+
+[Solid-Explorer]
+patches-source  = "hoo-dles/morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "hoo-dles"
+apkeep-dlurl 	= "pl.solidexplorer2"
+
+[Showly]
+patches-source  = "hoo-dles/morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "hoo-dles"
+apkeep-dlurl 	= "com.michaldrabik.showly2"
+
+[Wallcraft]
+patches-source  = "hoo-dles/morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "hoo-dles"
+apkeep-dlurl 	= "com.wallpaperscraft.wallpaper"
+
+[WPS-Office]
+patches-source  = "hoo-dles/morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "hoo-dles"
+apkeep-dlurl 	= "cn.wps.moffice_eng"

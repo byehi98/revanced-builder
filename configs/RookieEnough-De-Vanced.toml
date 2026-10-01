@@ -1,0 +1,22 @@
+# RookieEnough/De-Vanced
+#
+# Patches bundle: https://github.com/RookieEnough/De-Vanced
+# CLI:            https://github.com/MorpheApp/morphe-cli
+
+[Irplus]
+patches-source  = "RookieEnough/De-Vanced"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "RookieEnough"
+apkeep-dlurl	= "net.binarymode.android.irplus"
+
+[Letterboxd]
+patches-source  = "RookieEnough/De-Vanced"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "RookieEnough"
+apkeep-dlurl  	= "com.letterboxd.letterboxd"
+
+[SoundCloud-RookieEnough]
+patches-source  = "RookieEnough/De-Vanced"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "RookieEnough"
+apkeep-dlurl  	= "com.soundcloud.android"

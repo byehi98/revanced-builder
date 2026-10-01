@@ -1,0 +1,11 @@
+# IMXEren/mix-patches
+#
+# Patches bundle: https://github.com/IMXEren/mix-patches
+# CLI:            https://github.com/MorpheApp/morphe-cli
+
+[Trakt]
+patches-source  = "IMXEren/mix-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "IMXEren"
+# patches-version = "dev"
+apkeep-dlurl 	= "tv.trakt.trakt"

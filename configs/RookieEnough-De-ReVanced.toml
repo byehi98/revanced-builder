@@ -1,0 +1,42 @@
+# RookieEnough/De-ReVanced
+#
+# Patches bundle: https://github.com/RookieEnough/De-ReVanced
+# CLI:            https://github.com/MorpheApp/morphe-cli
+
+[Adobe-Photoshop-Mix]
+patches-source  = "RookieEnough/De-ReVanced"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "RookieEnough"
+apkeep-dlurl  	= "com.adobe.photoshopmix"
+
+[Cricbuzz]
+patches-source  = "RookieEnough/De-ReVanced"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "RookieEnough"
+uptodown-dlurl  = "https://cricbuzz-cricket-scores-and-news.en.uptodown.com/android"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/cricbuzz-com/cricbuzz-live-cricket-scores-news"
+
+[Google-Photos]
+patches-source  = "RookieEnough/De-ReVanced"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "RookieEnough"
+# patches-version = "dev"
+apkeep-dlurl  	= "com.google.android.apps.photos"
+
+[Google-News-RookieEnough]
+patches-source  = "RookieEnough/De-ReVanced"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "RookieEnough"
+uptodown-dlurl 	= "https://google-play-newsstand.en.uptodown.com/android"
+
+[Icon-Pack-Studio]
+patches-source  = "RookieEnough/De-ReVanced"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "RookieEnough"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/smart-launcher-team/icon-pack-studio/"
+
+[Photomath]
+patches-source  = "RookieEnough/De-ReVanced"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "RookieEnough"
+apkeep-dlurl	= "com.microblink.photomath"

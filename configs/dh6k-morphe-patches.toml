@@ -1,0 +1,23 @@
+# dh6k/morphe-patches
+#
+# Patches bundle: https://github.com/dh6k/morphe-patches
+# CLI:            https://github.com/MorpheApp/morphe-cli
+
+[Brave-dh6k]
+patches-source  = "dh6k/morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "dh6k"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/brave-software/brave-browser/"
+uptodown-dlurl	= "https://brave-software-brave.en.uptodown.com/android"
+
+[Brave-Beta-dh6k]
+patches-source  = "dh6k/morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "dh6k-beta"
+apkmirror-dlurl = "http://apkmirror.com/apk/brave-software/brave-browser-beta/"
+
+[Brave-Nightly-dh6k]
+patches-source  = "dh6k/morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "dh6k-nightly"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/brave-software/brave-browser-nightly/"

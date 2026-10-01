@@ -1,0 +1,28 @@
+# arandomhooman/hoomans-morphe-patches
+#
+# Patches bundle: https://github.com/arandomhooman/hoomans-morphe-patches
+# CLI:            https://github.com/MorpheApp/morphe-cli
+
+[FolderSync]
+patches-source  = "arandomhooman/hoomans-morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "hoomans"
+apkeep-dlurl  	= "dk.tacit.android.foldersync.lite"
+
+[Poweramp]
+patches-source  = "arandomhooman/hoomans-morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "hoomans"
+uptodown-dlurl  = "https://poweramp-music-player.en.uptodown.com/android"
+
+[Microsoft-SwiftKey]
+patches-source  = "arandomhooman/hoomans-morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "hoomans"
+apkeep-dlurl  	= "com.touchtype.swiftkey"
+
+[Advanced-Download-Manager]
+patches-source  = "arandomhooman/hoomans-morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "hoomans"
+apkeep-dlurl  	= "com.dv.adm"

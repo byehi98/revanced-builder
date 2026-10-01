@@ -1,0 +1,16 @@
+# durgesh0505/chiggi_morphe_patches
+#
+# Patches bundle: https://github.com/durgesh0505/chiggi_morphe_patches
+# CLI:            https://github.com/MorpheApp/morphe-cli
+
+[Arrow-Puzzle]
+patches-source  = "durgesh0505/chiggi_morphe_patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "durgesh0505"
+apkeep-dlurl  	= "com.easybrain.arrow.puzzle.game"
+
+[Does-Not-Commute-chiggi]
+patches-source  = "durgesh0505/chiggi_morphe_patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "durgesh0505"
+apkeep-dlurl  	= "com.mediocre.commute"
