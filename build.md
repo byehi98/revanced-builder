@@ -1,36 +1,37 @@
 
-**9 apps built.**
+**11 apps built.**
   
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
 CLI: MorpheApp/morphe-desktop-1.18.0-all.jar  
-Patches: Akash-Sriram/patches-1.12.2.mpp  
-[Changelog](https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.12.2)
-
-CLI: MorpheApp/morphe-desktop-1.18.0-all.jar  
 Patches: binarymend/patches-1.3.1.mpp  
 [Changelog](https://github.com/binarymend/morphe-patches/releases/tag/v1.3.1)
-
-CLI: MorpheApp/morphe-desktop-1.18.0-all.jar  
-Patches: BlazeFTL/patches-1.43.1.mpp  
-[Changelog](https://github.com/BlazeFTL/FTL-Patches/releases/tag/v1.43.1)
 
 CLI: MorpheApp/morphe-desktop-1.18.0-all.jar  
 Patches: Entree3k/patches-1.22.0.mpp  
 [Changelog](https://github.com/Entree3k/Morning-Entree-Patches/releases/tag/v1.22.0)
 
 CLI: MorpheApp/morphe-desktop-1.18.0-all.jar  
-Patches: ethanm6/patches-1.4.2.mpp  
-[Changelog](https://github.com/ethanm6/letterboxd-stremio-morphe-patch/releases/tag/v1.4.2)
-
-CLI: MorpheApp/morphe-desktop-1.18.0-all.jar  
-Patches: hxreborn/patches-1.38.0.mpp  
-[Changelog](https://github.com/hxreborn/morphe-patches/releases/tag/v1.38.0)
+Patches: heval99/patches-1.5.0.mpp  
+[Changelog](https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v1.5.0)
 
 CLI: MorpheApp/morphe-desktop-1.18.0-all.jar  
 CLI: MorpheApp/morphe-desktop-1.18.0-all.jar  
-Patches: mvaishak/patches-2.2.0.mpp  
-[Changelog](https://github.com/mvaishak/letterboxd-morphe-patches/releases/tag/v2.2.0)
+Patches: hoo-dles/patches-1.46.0.mpp  
+[Changelog](https://github.com/hoo-dles/morphe-patches/releases/tag/v1.46.0)
+
+CLI: MorpheApp/morphe-desktop-1.18.0-all.jar  
+Patches: hxreborn/patches-1.39.0.mpp  
+[Changelog](https://github.com/hxreborn/morphe-patches/releases/tag/v1.39.0)
+
+CLI: MorpheApp/morphe-desktop-1.18.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.0-all.jar  
+Patches: legendsciber/patches-1.35.0.mpp  
+[Changelog](https://github.com/legendsciber/morphe-patches/releases/tag/v1.35.1)
 
 CLI: MorpheApp/morphe-desktop-1.18.0-all.jar  
 Patches: rushiranpise/patches-1.22.0.mpp  
@@ -39,6 +40,8 @@ Patches: rushiranpise/patches-1.22.0.mpp
 CLI: MorpheApp/morphe-desktop-1.18.0-all.jar    
 
 Skipped:  
+Google-Photos-Akash-Sriram: 7.94.0.984908898
+Patches: Akash-Sriram/patches-1.12.2.mpp  
 Opera-GX: latest  
 Patches: Alastor-Kaneki/patches-1.14.0.mpp  
 Telegram: 12.10.1  
@@ -50,12 +53,14 @@ Patches: BholeyKaBhakt/patches-2.12.0.mpp
 Speedtest: 7.0.4  
 All-Video-Downloader-and-Ace-Player: 1.9.7  
 Patches: BlazeFTL/patches-1.43.1.mpp  
+RS-File-Manager-BlazeFTL: latest
 Arm-Workout: 2.4.3  
 Patches: Entree3k/patches-1.22.0.mpp  
 Does-Not-Commute-Entree3k: 1.5.5  
 Home-Workout: 1.7.6  
 Lose-Weight-App-for-Men: 2.4.37  
 MacroDroid-Entree3k: 5.65.9  
+NZB360-Entree3k: 24.1
 PinOut: 1.0.7  
 Six-Pack-in-30-Days: 1.4.8  
 Trakt: 3.13.0  
@@ -69,10 +74,6 @@ Oddmar: latest
 Plants-vs-Zombies: latest  
 The-Battle-of-Polytopia: 2.17.3.16375  
 Zombie-Catchers: latest  
-Reddit-Morphe: 2026.24.0
-Patches: MorpheApp/patches-1.45.0.mpp  
-Reddit-Morphe-Dev: 2026.39.0
-Patches: MorpheApp/patches-1.45.0.mpp  
 YouTube-Morphe: 21.16.256
 YouTube-Morphe-Dev: 21.39.522
 YouTube-Music-Morphe: 9.15.51  
@@ -92,6 +93,7 @@ Patches: arandomhooman/patches-1.53.0.mpp
 FolderSync: 4.12.0  
 Microsoft-SwiftKey: 9.13.13.5  
 Poweramp: build-1025-bundle-play  
+Patches: binarymend/patches-1.3.1.mpp  
 Brave-Bufferk: 1.92.140  
 Patches: bufferk/patches-1.8.0.mpp  
 Medium: 4.5.1302097  
@@ -142,6 +144,8 @@ Brave-dh6k: 1.96.59
 Arrow-Puzzle: 1.7.0  
 Patches: durgesh0505/patches-1.23.1.mpp  
 Does-Not-Commute-chiggi: 1.5.5  
+Letterboxd-ethanm6: latest
+Patches: ethanm6/patches-1.4.2.mpp  
 AdGuard-hoo-dles: 4.14.2  
 Patches: hoo-dles/patches-1.46.0.mpp  
 CamScanner-hoo-dles: 7.20.0.2606230000  
@@ -151,10 +155,6 @@ Showly: 3.70.0
 Solid-Explorer: 3.6.1  
 WPS-Office: 18.24  
 Wallcraft: 3.61.01  
-Cx-File-Explorer: 2.7.9
-Patches: hxreborn/patches-1.38.0.mpp  
-Protonmail: 7.11.8
-Symfonium: 15.0.1  
 Reddit-Adobo: 2026.38.0  
 Patches: jkennethcarino/patches-1.6.0-dev.3.mpp  
 AudioRelay: 0.26.1  
@@ -162,6 +162,8 @@ Patches: kiraio-moe/patches-1.3.0.mpp
 Camera: 5.4.0  
 Hidden-Settings: 7.34  
 iLovePDF: 4.0.1    
+Letterboxd-mvaishak: latest
+Patches: mvaishak/patches-2.2.0.mpp  
 Chess-com: 4.10.0  
 Patches: prathxmOp/patches-1.15.0.mpp  
 AccuBattery: 2.1.8  
@@ -176,9 +178,11 @@ CamScanner-rushiranpise: 7.24.5.2608200000
 Charge-Meter: 3.0.1  
 Cloudflare-Warp: 6.38.9  
 Dailyhunt: 34.0.4  
+Google-Photos-rushiranpise: 7.92.0.977185651
 Greenify: 5.1.1  
 Killapps: 1.58.0  
 M-Indicator: 18.0.365  
+MacroDroid-rushiranpise: 5.66.9
 Mega: 16.12(262370820)(dcdf0a7f27)  
 MobiOffice: 16.5.60515  
 NYT-Crossword: 6.41.0  
@@ -200,15 +204,17 @@ qBitConnect: 2.0.6
 Imgur: 7.34.0.0  
 Patches: sushruth/patches-1.0.0.mpp  
 Lemmy-Sync: latest  
-Patches: wchill/patches-1.4.0.mpp            
+Patches: wchill/patches-1.4.0.mpp              
 
 ### Built versions  
-Google-Photos-Akash-Sriram: 7.94.0.984908898
-Google-Photos-rushiranpise: 7.92.0.977185651
-Letterboxd-ethanm6: latest
-Letterboxd-mvaishak: latest
-MacroDroid-rushiranpise: 5.66.9
-NZB360-Entree3k: 24.1
-ProtonVPN-hxreborn: 5.20.39.0
-RS-File-Manager-BlazeFTL: latest
-TeraBox-hxreborn: 4.26.0  
+AnyDesk: 9.0.0
+AquaMail: 2.7.0
+Cx-File-Explorer: 2.7.9
+Lightroom: 11.5.31
+MyAnimeList: 2.3.16
+ProtonVPN-hxreborn: 5.20.57.0
+Protonmail: 7.11.8
+RAR: 7.23.build134
+Send-Files-To-TV-Entree3k: 1.4.22
+Symfonium: 15.0.1
+TeraBox-hxreborn: 4.26.5  
