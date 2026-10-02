@@ -1,0 +1,18 @@
+# ethanm6/letterboxd-stremio-morphe-patch
+#
+# Patches bundle: https://github.com/ethanm6/letterboxd-stremio-morphe-patch
+# CLI:            https://github.com/MorpheApp/morphe-cli
+
+# every <source>-dlurl below is tried in DL_SRCS order
+# (apkeep, apkcombo, apkmirror, apkpure, gplaydl, uptodown) and the next one
+# is used when the current one cannot serve the required version.
+
+[Letterboxd-ethanm6]
+patches-source  = "ethanm6/letterboxd-stremio-morphe-patch"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "ethanm6"
+apkeep-dlurl    	= "com.letterboxd.letterboxd"
+apkcombo-dlurl  	= "https://apkcombo.com/letterboxd/com.letterboxd.letterboxd/"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/letterboxd-limited/letterboxd/"
+apkpure-dlurl   	= "https://apkpure.net/letterboxd/com.letterboxd.letterboxd"
+uptodown-dlurl  	= "https://letterboxd.en.uptodown.com/android"
