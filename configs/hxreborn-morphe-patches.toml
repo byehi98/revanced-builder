@@ -36,3 +36,13 @@ apkcombo-dlurl  	= "https://apkcombo.com/symfonium/app.symfonik.music.player/"
 apkmirror-dlurl 	= "https://www.apkmirror.com/apk/tolriq/symfonium-music-player-cast/"
 apkpure-dlurl   	= "https://apkpure.net/symfonium/app.symfonik.music.player"
 uptodown-dlurl  	= "https://symfonium.en.uptodown.com/android"
+
+[ProtonVPN-hxreborn]
+patches-source  = "hxreborn/morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "hxreborn"
+apkeep-dlurl    	= "ch.protonvpn.android"
+apkcombo-dlurl  	= "https://apkcombo.com/proton-vpn/ch.protonvpn.android/"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/proton-technologies-ag/protonvpn-secure-and-free-vpn/"
+uptodown-dlurl  	= "https://protonvpn.en.uptodown.com/android"
+# no apkpure-dlurl: apkpure was rate limited and could not be verified
