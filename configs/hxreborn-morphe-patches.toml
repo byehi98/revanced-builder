@@ -46,3 +46,13 @@ apkcombo-dlurl  	= "https://apkcombo.com/proton-vpn/ch.protonvpn.android/"
 apkmirror-dlurl 	= "https://www.apkmirror.com/apk/proton-technologies-ag/protonvpn-secure-and-free-vpn/"
 uptodown-dlurl  	= "https://protonvpn.en.uptodown.com/android"
 # no apkpure-dlurl: apkpure was rate limited and could not be verified
+
+[TeraBox-hxreborn]
+patches-source  = "hxreborn/morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "hxreborn"
+apkeep-dlurl    	= "com.dubox.drive"
+apkcombo-dlurl  	= "https://apkcombo.com/terabox/com.dubox.drive/"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/flextech-inc/terabox-cloud-storage-cloud-backup-data-backup/"
+apkpure-dlurl   	= "https://apkpure.net/terabox/com.dubox.drive"
+uptodown-dlurl  	= "https://terabox.en.uptodown.com/android"

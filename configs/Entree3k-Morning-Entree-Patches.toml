@@ -66,3 +66,13 @@ rv-brand        = "Entree3k"
 apkeep-dlurl    	= "sixpack.sixpackabs.absworkout"
 apkcombo-dlurl  	= "https://apkcombo.com/six-pack-in-30-days/sixpack.sixpackabs.absworkout/"
 uptodown-dlurl  	= "https://six-pack-in-30-days.en.uptodown.com/android"
+
+[NZB360-Entree3k]
+patches-source  = "Entree3k/Morning-Entree-Patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "Entree3k"
+apkeep-dlurl    	= "com.kevinforeman.nzb360"
+apkcombo-dlurl  	= "https://apkcombo.com/nzb360/com.kevinforeman.nzb360/"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/kevin-foreman/nzb360/"
+apkpure-dlurl   	= "https://apkpure.net/nzb360/com.kevinforeman.nzb360"
+uptodown-dlurl  	= "https://nzb360.en.uptodown.com/android"

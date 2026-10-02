@@ -320,3 +320,13 @@ apkeep-dlurl    	= "com.yatrirailways.yatri"
 apkcombo-dlurl  	= "https://apkcombo.com/yatri/com.yatrirailways.yatri/"
 apkpure-dlurl   	= "https://apkpure.net/yatri/com.yatrirailways.yatri"
 uptodown-dlurl  	= "https://yatri-mumbai-local-app.en.uptodown.com/android"
+
+[MacroDroid-rushiranpise]
+patches-source  = "rushiranpise/morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "rushiranpise"
+apkeep-dlurl    	= "com.arlosoft.macrodroid"
+apkcombo-dlurl  	= "https://apkcombo.com/macrodroid/com.arlosoft.macrodroid/"
+apkpure-dlurl   	= "https://apkpure.net/macrodroid/com.arlosoft.macrodroid"
+uptodown-dlurl  	= "https://macrodroid.en.uptodown.com/android"
+# no apkmirror-dlurl: apkmirror was rate limited and could not be verified
