@@ -169,8 +169,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: ${{ github.repository }}
           NEXT_VER_CODE: ${{ needs.prepare_matrix.outputs.next_ver_code }}
-          APK_KEEP_TOKEN: ${{ secrets.APK_KEEP_TOKEN }}
-          APK_KEEP_EMAIL: ${{ secrets.APK_KEEP_EMAIL }}
         continue-on-error: true
 
       - name: Generate Job Report

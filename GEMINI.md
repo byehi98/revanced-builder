@@ -6,6 +6,7 @@ This project is an extensive ReVanced builder that can create Magisk modules and
 - **Primary Language:** Bash
 - **Environment Management:** Nix (`flake.nix`, `flake.lock`)
 - **Key Dependencies:** OpenJDK 21, `jq`, `zip`, `curl`/`wget`, `aapt2`, `apksigner`, `apkeep`, `gplaydl`
+- **apkeep:** pinned in `flake.nix` to a specific upstream release binary, because nixpkgs-unstable still carries 0.18.0. Only apkeep's `apk-pure` source is used — Google Play is deliberately not, since it is unusable here (anonymous requests are rejected on apkeep >= 1.0.0, and authenticated ones exit 0 while downloading nothing). `apk-pure` needs `-o acknowledge_dangers=true` or apkeep >= 1.1.0 refuses to run, and it exits 0 even when a version is unavailable, so `dl_apkeep` checks for a downloaded file rather than trusting the exit code.
 - **Configuration:** TOML (`config.toml`)
 
 ## Project Structure

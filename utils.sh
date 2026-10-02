@@ -1343,8 +1343,6 @@ dl_apkeep() {
 
 _dl_apkeep_locked() {
 	local pkg=$1 version=${2// /-} output=$3 arch=$4 _dpi=$5
-	local email="${APK_KEEP_EMAIL:-}"
-	local token="${APK_KEEP_TOKEN:-}"
 
 	# another job may have downloaded it while we waited for the lock
 	if [ -f "$output" ]; then return 0; fi
@@ -1365,43 +1363,39 @@ _dl_apkeep_locked() {
 	mkdir -p "$out_dir"
 	
 	pr "Running apkeep for $pkg..."
-	if [ -z "$email" ] || [ -z "$token" ]; then
-		wpr "Note: building without credentials"
-		local max_retries=3
-		local retry_count=0
-		local success=false
-		while [ $retry_count -lt $max_retries ]; do
-			if "$apkeep_bin" -a "${pkg}${target_ver}" "$out_dir"; then
-				success=true
-				break
-			fi
-			wpr "apkeep failed to download $pkg, retrying in 20 seconds... ($((retry_count + 1))/$max_retries)"
-			sleep 20
-			retry_count=$((retry_count + 1))
-		done
-		if [ "$success" = false ]; then
-			epr "apkeep failed to download $pkg after $max_retries attempts"
-			rm -rf "$out_dir"
-			return 1
+
+	# APKPure only. Google Play is deliberately not used here: apkeep's
+	# google-play source cannot be relied on for this builder. Anonymous
+	# requests are rejected outright on apkeep >= 1.0.0, and authenticated
+	# ones (APK_KEEP_EMAIL/APK_KEEP_TOKEN) exit 0 while silently downloading
+	# nothing. Since every patch here is pinned to a specific version, a
+	# source that quietly returns the wrong build is worse than no source.
+	#
+	# -o acknowledge_dangers=true is required by apkeep >= 1.1.0, which refuses
+	# to use APKPure without an explicit acknowledgement. See
+	# https://github.com/EFForg/apkeep/blob/master/USAGE-apkpure.md
+	#
+	# Note apkeep exits 0 even when the version is unavailable, so success is
+	# judged by whether any file landed, not by the exit code.
+	local -a src_args=(-d apk-pure -o acknowledge_dangers=true)
+
+	local max_retries=3
+	local retry_count=0
+	local success=false
+	while [ $retry_count -lt $max_retries ]; do
+		if "$apkeep_bin" -a "${pkg}${target_ver}" "${src_args[@]}" "$out_dir" &&
+			[ -n "$(ls -A "$out_dir" 2>/dev/null)" ]; then
+			success=true
+			break
 		fi
-	else
-		local max_retries=3
-		local retry_count=0
-		local success=false
-		while [ $retry_count -lt $max_retries ]; do
-			if "$apkeep_bin" -a "${pkg}${target_ver}" -d google-play -e "$email" -t "$token" -o split_apk=true "$out_dir"; then
-				success=true
-				break
-			fi
-			wpr "apkeep failed to download $pkg with credentials, retrying in 20 seconds... ($((retry_count + 1))/$max_retries)"
-			sleep 20
-			retry_count=$((retry_count + 1))
-		done
-		if [ "$success" = false ]; then
-			epr "apkeep failed to download $pkg after $max_retries attempts"
-			rm -rf "$out_dir"
-			return 1
-		fi
+		wpr "apkeep did not return $pkg${target_ver}, retrying in 20 seconds... ($((retry_count + 1))/$max_retries)"
+		sleep 20
+		retry_count=$((retry_count + 1))
+	done
+	if [ "$success" = false ]; then
+		epr "apkeep failed to download $pkg after $max_retries attempts"
+		rm -rf "$out_dir"
+		return 1
 	fi
 	
 	local apk_file xapk_file downloaded_dir
