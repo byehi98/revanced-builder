@@ -3,10 +3,18 @@
 # Patches bundle: https://github.com/jkennethcarino/adobo
 # CLI:            https://github.com/MorpheApp/morphe-cli
 
+# every <source>-dlurl below is tried in DL_SRCS order
+# (apkeep, apkcombo, apkmirror, apkpure, gplaydl, uptodown) and the next one
+# is used when the current one cannot serve the required version.
+# no apkpure-dlurl: apkpure has no version history page for this package, so
+# <url>/versions 410s and the source can never resolve.
+
 [Reddit-Adobo]
 patches-source  = "jkennethcarino/adobo"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "adobo"
 patches-version = "dev"
-uptodown-dlurl  = "https://reddit-official-app.en.uptodown.com/android"
 apkeep-dlurl  	= "com.reddit.frontpage"
+apkcombo-dlurl 	= "https://apkcombo.com/reddit-adobo/com.reddit.frontpage/"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/redditinc/reddit/"
+uptodown-dlurl  = "https://reddit-official-app.en.uptodown.com/android"

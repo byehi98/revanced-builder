@@ -3,203 +3,310 @@
 # Patches bundle: https://github.com/rushiranpise/morphe-patches
 # CLI:            https://github.com/MorpheApp/morphe-cli
 
+# every <source>-dlurl below is tried in DL_SRCS order
+# (apkeep, apkcombo, apkmirror, apkpure, gplaydl, uptodown) and the next one
+# is used when the current one cannot serve the required version.
+
 [AccuBattery]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
-apkeep-dlurl	= "com.digibites.accubattery"
+apkeep-dlurl    	= "com.digibites.accubattery"
+apkcombo-dlurl  	= "https://apkcombo.com/accubattery/com.digibites.accubattery/"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/digibites/accubattery/"
+uptodown-dlurl  	= "https://accubattery.en.uptodown.com/android"
 
 [Amoledpix]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
-apkeep-dlurl   	= "com.androholic.amoledpix"
+apkeep-dlurl    	= "com.androholic.amoledpix"
+apkcombo-dlurl  	= "https://apkcombo.com/amoledpix/com.androholic.amoledpix/"
 
 [AdGuard-rushiranpise]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/adguard-software-limited/adguard/"
+apkeep-dlurl    	= "com.adguard.android"
+apkcombo-dlurl  	= "https://apkcombo.com/adguard-rushiranpise/com.adguard.android/"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/adguard-software-limited/adguard/"
+uptodown-dlurl  	= "https://adguard-for-android.en.uptodown.com/android"
 
 [Accuweather]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
 # patches-version = "dev"
-apkeep-dlurl 	= "com.accuweather.android"
+apkeep-dlurl    	= "com.accuweather.android"
+apkcombo-dlurl  	= "https://apkcombo.com/accuweather/com.accuweather.android/"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/accuweather/accuweather/"
+uptodown-dlurl  	= "https://accuweather.en.uptodown.com/android"
 
 [Apkmirror-Installer]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
-apkeep-dlurl 	= "com.apkmirror.helper.prod"
+apkeep-dlurl    	= "com.apkmirror.helper.prod"
+apkcombo-dlurl  	= "https://apkcombo.com/apkmirror-installer/com.apkmirror.helper.prod/"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/apkmirror/apkmirror-installer-official/"
+uptodown-dlurl  	= "https://apkmirror-installer-official.en.uptodown.com/android"
 
 [Block-Blast]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
-apkeep-dlurl 	= "com.block.juggle"
+apkeep-dlurl    	= "com.block.juggle"
+apkcombo-dlurl  	= "https://apkcombo.com/block-blast/com.block.juggle/"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/hungrystudio/block-blast-puzzle-games/"
+uptodown-dlurl  	= "https://block-blast.en.uptodown.com/android"
 
 [Block-Puzzle]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
-apkeep-dlurl 	= "game.puzzle.blockpuzzle"
+apkeep-dlurl    	= "game.puzzle.blockpuzzle"
+apkcombo-dlurl  	= "https://apkcombo.com/block-puzzle/game.puzzle.blockpuzzle/"
+uptodown-dlurl  	= "https://fun-games-free-block-puzzle.en.uptodown.com/android"
 
 [CamScanner-rushiranpise]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
-apkeep-dlurl 	= "com.intsig.camscanner"
+apkeep-dlurl    	= "com.intsig.camscanner"
+apkcombo-dlurl  	= "https://apkcombo.com/camscanner-rushiranpise/com.intsig.camscanner/"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/intsig-pte/camscanner-phone-pdf-creator/"
+uptodown-dlurl  	= "https://camscanner.en.uptodown.com/android"
 
 [Cloudflare-Warp]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/cloudflare/1-1-1-1-faster-safer-internet/"
+apkeep-dlurl    	= "com.cloudflare.onedotonedotonedotone"
+apkcombo-dlurl  	= "https://apkcombo.com/cloudflare-warp/com.cloudflare.onedotonedotonedotone/"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/cloudflare/1-1-1-1-faster-safer-internet/"
+uptodown-dlurl  	= "https://1-1-1-1.en.uptodown.com/android"
 
 [Charge-Meter]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
-apkeep-dlurl	= "dev.km.android.chargemeter"
+apkeep-dlurl    	= "dev.km.android.chargemeter"
+apkcombo-dlurl  	= "https://apkcombo.com/charge-meter/dev.km.android.chargemeter/"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/heartinz-technologies-pvt-ltd/charge-meter/"
+uptodown-dlurl  	= "https://charge-meter.en.uptodown.com/android"
 
 [Dailyhunt]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
-apkeep-dlurl	= "com.eterno"
+apkeep-dlurl    	= "com.eterno"
+apkcombo-dlurl  	= "https://apkcombo.com/dailyhunt/com.eterno/"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/eterno-infotech/dailyhunt-newshunt-latest-news-viral-videos/"
+apkpure-dlurl   	= "https://apkpure.net/dailyhunt/com.eterno"
+uptodown-dlurl  	= "https://newshunt-india-news-ebooks.en.uptodown.com/android"
 
 [Greenify]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
 # patches-version = "dev"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/oasis-feng/greenify/"
+apkeep-dlurl    	= "com.oasisfeng.greenify"
+apkcombo-dlurl  	= "https://apkcombo.com/greenify/com.oasisfeng.greenify/"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/oasis-feng/greenify/"
+apkpure-dlurl   	= "https://apkpure.net/greenify/com.oasisfeng.greenify"
+uptodown-dlurl  	= "https://greenify.en.uptodown.com/android"
 
 [Killapps]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
-apkeep-dlurl 	= "com.tafayor.killall"
+apkeep-dlurl    	= "com.tafayor.killall"
+apkcombo-dlurl  	= "https://apkcombo.com/killapps/com.tafayor.killall/"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/appdev-quebec/killapps-close-all-apps-running/"
+apkpure-dlurl   	= "https://apkpure.net/killapps/com.tafayor.killall"
 
 [M-Indicator]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
 # patches-version = "dev"
-apkeep-dlurl  	= "com.mobond.mindicator"
+apkeep-dlurl    	= "com.mobond.mindicator"
+apkcombo-dlurl  	= "https://apkcombo.com/m-indicator/com.mobond.mindicator/"
+apkpure-dlurl   	= "https://apkpure.net/m-indicator/com.mobond.mindicator"
+uptodown-dlurl  	= "https://m-indicator.en.uptodown.com/android"
 
 [NZB360]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
 # patches-version = "dev"
-apkeep-dlurl 	= "com.kevinforeman.nzb360"
+apkeep-dlurl    	= "com.kevinforeman.nzb360"
+apkcombo-dlurl  	= "https://apkcombo.com/nzb360/com.kevinforeman.nzb360/"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/kevin-foreman/nzb360/"
+apkpure-dlurl   	= "https://apkpure.net/nzb360/com.kevinforeman.nzb360"
+uptodown-dlurl  	= "https://nzb360.en.uptodown.com/android"
 
 [Mega]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
-apkeep-dlurl	= "mega.privacy.android.app"
+apkeep-dlurl    	= "mega.privacy.android.app"
+apkcombo-dlurl  	= "https://apkcombo.com/mega/mega.privacy.android.app/"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/mega-ltd/mega-official/"
+apkpure-dlurl   	= "https://apkpure.net/mega/mega.privacy.android.app"
+uptodown-dlurl  	= "https://mega.en.uptodown.com/android"
 
 [MobiOffice]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/mobisystems/officesuite/"
 # apkeep-dlurl 	= "com.mobisystems.office"
-uptodown-dlurl	= "https://officesuite-pro-7.en.uptodown.com/android"
+apkeep-dlurl    	= "com.mobisystems.office"
+apkcombo-dlurl  	= "https://apkcombo.com/mobioffice/com.mobisystems.office/"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/mobisystems/officesuite/"
+apkpure-dlurl   	= "https://apkpure.net/mobioffice/com.mobisystems.office"
+uptodown-dlurl  	= "https://officesuite-pro-7.en.uptodown.com/android"
 
 [NYT-Crossword]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
-apkeep-dlurl	= "com.nytimes.crossword"
+apkeep-dlurl    	= "com.nytimes.crossword"
+apkcombo-dlurl  	= "https://apkcombo.com/nyt-crossword/com.nytimes.crossword/"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/the-new-york-times-company/nytimes-crossword/"
+apkpure-dlurl   	= "https://apkpure.net/nyt-crossword/com.nytimes.crossword"
+uptodown-dlurl  	= "https://nytimes-crossword.en.uptodown.com/android"
 
 [Octi]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
-apkeep-dlurl 	= "eu.darken.octi"
+apkeep-dlurl    	= "eu.darken.octi"
+apkcombo-dlurl  	= "https://apkcombo.com/octi/eu.darken.octi/"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/darken/octi-multi-device-monitor/"
+apkpure-dlurl   	= "https://apkpure.net/octi/eu.darken.octi"
+uptodown-dlurl  	= "https://octi.en.uptodown.com/android"
 
 [Opera-News]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
-apkeep-dlurl	= "com.opera.app.news"
+apkeep-dlurl    	= "com.opera.app.news"
+apkcombo-dlurl  	= "https://apkcombo.com/opera-news/com.opera.app.news/"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/opera-software-asa/opera-news-trending-news-and-videos/"
+apkpure-dlurl   	= "https://apkpure.net/opera-news/com.opera.app.news"
+uptodown-dlurl  	= "https://opera-news.en.uptodown.com/android"
 
 [Parallel-Space-Pro]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
 version		  	= "4.0.9159"
-apkeep-dlurl 	= "com.parallel.space.pro"
+apkeep-dlurl    	= "com.parallel.space.pro"
+apkcombo-dlurl  	= "https://apkcombo.com/parallel-space-pro/com.parallel.space.pro/"
+apkpure-dlurl   	= "https://apkpure.net/parallel-space-pro/com.parallel.space.pro"
+uptodown-dlurl  	= "https://parallel-space-pro.en.uptodown.com/android"
 
 [ProtonVPN-Rushiranpise]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
 # apkmirror-dlurl = "https://www.apkmirror.com/apk/proton-technologies-ag/protonvpn-free-vpn-secure-unlimited-fdroid-version/"
-uptodown-dlurl  = "https://protonvpn.en.uptodown.com/android"
+apkeep-dlurl    	= "ch.protonvpn.android"
+apkcombo-dlurl  	= "https://apkcombo.com/protonvpn-rushiranpise/ch.protonvpn.android/"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/proton-technologies-ag/protonvpn-secure-and-free-vpn/"
+uptodown-dlurl  	= "https://protonvpn.en.uptodown.com/android"
 
 [Playit]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
-apkeep-dlurl	= "com.playit.videoplayer"
+apkeep-dlurl    	= "com.playit.videoplayer"
+apkcombo-dlurl  	= "https://apkcombo.com/playit/com.playit.videoplayer/"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/playit-technology-pte-ltd/playit-a-new-all-in-one-video-player/"
+apkpure-dlurl   	= "https://apkpure.net/playit/com.playit.videoplayer"
+uptodown-dlurl  	= "https://playit-hd-video-player-all-format-video-player.en.uptodown.com/android"
 
 [Psiphon]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
 # patches-version = "dev"
-uptodown-dlurl  = "https://psiphon-pro.en.uptodown.com/android"
+apkeep-dlurl    	= "com.psiphon3.subscription"
+apkcombo-dlurl  	= "https://apkcombo.com/psiphon/com.psiphon3.subscription/"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/psiphon-inc/psiphon-pro-the-internet-freedom-vpn/"
+uptodown-dlurl  	= "https://psiphon-pro.en.uptodown.com/android"
 
 [qBitConnect]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
-apkeep-dlurl	= "com.bluematter.qbitconnect"
+apkeep-dlurl    	= "com.bluematter.qbitconnect"
+apkcombo-dlurl  	= "https://apkcombo.com/qbitconnect/com.bluematter.qbitconnect/"
+apkpure-dlurl   	= "https://apkpure.net/qbitconnect/com.bluematter.qbitconnect"
 
 [RS-File-Manager]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
-apkeep-dlurl	= "com.rs.explorer.filemanager"
+apkeep-dlurl    	= "com.rs.explorer.filemanager"
+apkcombo-dlurl  	= "https://apkcombo.com/rs-file-manager/com.rs.explorer.filemanager/"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/rs-mobile-group/rs-file/"
+apkpure-dlurl   	= "https://apkpure.net/rs-file-manager/com.rs.explorer.filemanager"
+uptodown-dlurl  	= "https://rs-file-manager.en.uptodown.com/android"
 
 [Send-Files-To-TV]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
-apkeep-dlurl	= "com.yablio.sendfilestotv"
+apkeep-dlurl    	= "com.yablio.sendfilestotv"
+apkcombo-dlurl  	= "https://apkcombo.com/send-files-to-tv/com.yablio.sendfilestotv/"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/yablio/send-files-to-tv/"
+apkpure-dlurl   	= "https://apkpure.net/send-files-to-tv/com.yablio.sendfilestotv"
+uptodown-dlurl  	= "https://send-files-to-tv.en.uptodown.com/android"
 
 [Server-Auditor]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
-apkeep-dlurl	= "com.server.auditor.ssh.client"
+apkeep-dlurl    	= "com.server.auditor.ssh.client"
+apkcombo-dlurl  	= "https://apkcombo.com/server-auditor/com.server.auditor.ssh.client/"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/termius-corporation/termius-ssh-telnet-client/"
+apkpure-dlurl   	= "https://apkpure.net/server-auditor/com.server.auditor.ssh.client"
+uptodown-dlurl  	= "https://serverauditor.en.uptodown.com/android"
 
 [TeraBox]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
-apkeep-dlurl	= "com.dubox.drive"
+apkeep-dlurl    	= "com.dubox.drive"
+apkcombo-dlurl  	= "https://apkcombo.com/terabox/com.dubox.drive/"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/flextech-inc/terabox-cloud-storage-cloud-backup-data-backup/"
+apkpure-dlurl   	= "https://apkpure.net/terabox/com.dubox.drive"
 
 [Torrent-Search]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
-apkeep-dlurl	= "torrent.search.revolutionv2"
+apkeep-dlurl    	= "torrent.search.revolutionv2"
+apkcombo-dlurl  	= "https://apkcombo.com/torrent-search/torrent.search.revolutionv2/"
+apkpure-dlurl   	= "https://apkpure.net/torrent-search/torrent.search.revolutionv2"
+uptodown-dlurl  	= "https://torrent-search-revolution.en.uptodown.com/android"
 
 [Unimote]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
-apkeep-dlurl	= "sensustech.universal.tv.remote.control"
+apkeep-dlurl    	= "sensustech.universal.tv.remote.control"
+apkcombo-dlurl  	= "https://apkcombo.com/unimote/sensustech.universal.tv.remote.control/"
+apkpure-dlurl   	= "https://apkpure.net/unimote/sensustech.universal.tv.remote.control"
+uptodown-dlurl  	= "https://unimote.en.uptodown.com/android"
 
 [Yatri]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
-apkeep-dlurl 	  = "com.yatrirailways.yatri"
+apkeep-dlurl    	= "com.yatrirailways.yatri"
+apkcombo-dlurl  	= "https://apkcombo.com/yatri/com.yatrirailways.yatri/"
+apkpure-dlurl   	= "https://apkpure.net/yatri/com.yatrirailways.yatri"
+uptodown-dlurl  	= "https://yatri-mumbai-local-app.en.uptodown.com/android"

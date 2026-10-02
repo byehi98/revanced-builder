@@ -3,8 +3,16 @@
 # Patches bundle: https://github.com/sushruth/imgur-patches
 # CLI:            https://github.com/MorpheApp/morphe-cli
 
+# every <source>-dlurl below is tried in DL_SRCS order
+# (apkeep, apkcombo, apkmirror, apkpure, gplaydl, uptodown) and the next one
+# is used when the current one cannot serve the required version.
+
 [Imgur]
 patches-source  = "sushruth/imgur-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "imgur"
 apkeep-dlurl    = "com.imgur.mobile"
+apkcombo-dlurl 	= "https://apkcombo.com/imgur/com.imgur.mobile/"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/imgur/imgur-imgur/"
+apkpure-dlurl 	= "https://apkpure.net/imgur/com.imgur.mobile"
+uptodown-dlurl 	= "https://imgur.en.uptodown.com/android"

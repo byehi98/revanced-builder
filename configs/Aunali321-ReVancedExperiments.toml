@@ -3,8 +3,16 @@
 # Patches bundle: https://github.com/Aunali321/ReVancedExperiments
 # CLI:            https://github.com/ReVanced/revanced-cli
 
+# every <source>-dlurl below is tried in DL_SRCS order
+# (apkeep, apkcombo, apkmirror, apkpure, gplaydl, uptodown) and the next one
+# is used when the current one cannot serve the required version.
+
 [Telegram]
 patches-source  = "Aunali321/ReVancedExperiments"
 cli-source      = "ReVanced/revanced-cli"
 rv-brand        = "Aunali321"
+apkeep-dlurl 	= "org.telegram.messenger"
+apkcombo-dlurl 	= "https://apkcombo.com/telegram/org.telegram.messenger/"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/telegram-fz-llc/telegram/"
+apkpure-dlurl 	= "https://apkpure.net/telegram/org.telegram.messenger"
 uptodown-dlurl  = "https://telegram-google-play-version.en.uptodown.com/android"

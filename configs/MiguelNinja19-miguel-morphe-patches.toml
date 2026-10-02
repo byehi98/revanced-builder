@@ -3,59 +3,90 @@
 # Patches bundle: https://github.com/MiguelNinja19/miguel-morphe-patches
 # CLI:            https://github.com/MorpheApp/morphe-cli
 
+# every <source>-dlurl below is tried in DL_SRCS order
+# (apkeep, apkcombo, apkmirror, apkpure, gplaydl, uptodown) and the next one
+# is used when the current one cannot serve the required version.
+
 [Anger-of-Stick-5]
 patches-source  	= "MiguelNinja19/miguel-morphe-patches"
 cli-source      	= "MorpheApp/morphe-cli"
 rv-brand        	= "MiguelNinja19"
 version 			= "latest"
-apkeep-dlurl 		= "jpark.AOS5"
+apkeep-dlurl    	= "jpark.AOS5"
+apkcombo-dlurl  	= "https://apkcombo.com/anger-of-stick-5/jpark.AOS5/"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/button-em/anger-of-stick-5-zombie/"
+uptodown-dlurl  	= "https://angerofstick5.en.uptodown.com/android"
 
 [Climb]
 patches-source  	= "MiguelNinja19/miguel-morphe-patches"
 cli-source      	= "MorpheApp/morphe-cli"
 rv-brand        	= "MiguelNinja19"
 version 			= "latest"
-apkcombo-dlurl		= "https://apkcombo.com/climb-amiyp/com.IvanAF.ClimbAMIYPfree/"
-uptodown-dlurl	 	= "https://climb-free.en.uptodown.com/android"
+apkeep-dlurl    	= "com.IvanAF.ClimbAMIYPfree"
+apkcombo-dlurl  	= "https://apkcombo.com/climb-amiyp/com.IvanAF.ClimbAMIYPfree/"
+uptodown-dlurl  	= "https://climb-free.en.uptodown.com/android"
 
 [CubeX-Solver]
 patches-source  	= "MiguelNinja19/miguel-morphe-patches"
 cli-source      	= "MorpheApp/morphe-cli"
 rv-brand        	= "MiguelNinja19"
 version 			= "latest"
-apkeep-dlurl		= "diozz.cubex"
+apkeep-dlurl    	= "diozz.cubex"
+apkcombo-dlurl  	= "https://apkcombo.com/cubex-solver/diozz.cubex/"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/pipi-chick-studio/cubex-solver-timer-3d-cube/"
+apkpure-dlurl   	= "https://apkpure.net/cubex-solver/diozz.cubex"
+uptodown-dlurl  	= "https://cubex.en.uptodown.com/android"
 
 [Hunter-Assassin]
 patches-source  = "MiguelNinja19/miguel-morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "MiguelNinja19"
 version 		= "latest"
-apkeep-dlurl 	= "com.rubygames.assassin"
+apkeep-dlurl    	= "com.rubygames.assassin"
+apkcombo-dlurl  	= "https://apkcombo.com/hunter-assassin/com.rubygames.assassin/"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/ruby-game-studio/hunter-assassin/"
+apkpure-dlurl   	= "https://apkpure.net/hunter-assassin/com.rubygames.assassin"
+uptodown-dlurl  	= "https://hunter-assassin.en.uptodown.com/android"
 
 [Oddmar]
 patches-source  = "MiguelNinja19/miguel-morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "MiguelNinja19"
 version 		= "latest"
-apkeep-dlurl 	= "com.mobge.Oddmar"
+apkeep-dlurl    	= "com.mobge.Oddmar"
+apkcombo-dlurl  	= "https://apkcombo.com/oddmar/com.mobge.Oddmar/"
+apkpure-dlurl   	= "https://apkpure.net/oddmar/com.mobge.Oddmar"
+uptodown-dlurl  	= "https://oddmar.en.uptodown.com/android"
 
 [Plants-vs-Zombies]
 patches-source  = "MiguelNinja19/miguel-morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "MiguelNinja19"
 version 		= "latest"
-apkeep-dlurl 	= "com.ea.game.pvzfree_row"
+apkeep-dlurl    	= "com.ea.game.pvzfree_row"
+apkcombo-dlurl  	= "https://apkcombo.com/plants-vs-zombies/com.ea.game.pvzfree_row/"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/electronic-arts/plants-vs-zombies-free/"
+apkpure-dlurl   	= "https://apkpure.net/plants-vs-zombies/com.ea.game.pvzfree_row"
+uptodown-dlurl  	= "https://plants-vs-zombies-free.en.uptodown.com/android"
 
 [The-Battle-of-Polytopia]
 patches-source  = "MiguelNinja19/miguel-morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "MiguelNinja19"
 version 		= "latest"
-uptodown-dlurl 	= "https://polytopia.en.uptodown.com/android"
+apkeep-dlurl    	= "air.com.midjiwan.polytopia"
+apkcombo-dlurl  	= "https://apkcombo.com/the-battle-of-polytopia/air.com.midjiwan.polytopia/"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/midjiwan-ab/the-battle-of-polytopia/"
+apkpure-dlurl   	= "https://apkpure.net/the-battle-of-polytopia/air.com.midjiwan.polytopia"
+uptodown-dlurl  	= "https://polytopia.en.uptodown.com/android"
 
 [Zombie-Catchers]
 patches-source  = "MiguelNinja19/miguel-morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "MiguelNinja19"
 version 		= "latest"
-apkeep-dlurl 	= "fi.twomenandadog.zombiecatchers"
+apkeep-dlurl    	= "fi.twomenandadog.zombiecatchers"
+apkcombo-dlurl  	= "https://apkcombo.com/zombie-catchers/fi.twomenandadog.zombiecatchers/"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/deca-games/zombie-catchers-hunt-sell/"
+apkpure-dlurl   	= "https://apkpure.net/zombie-catchers/fi.twomenandadog.zombiecatchers"
+uptodown-dlurl  	= "https://zombie-catchers.en.uptodown.com/android"

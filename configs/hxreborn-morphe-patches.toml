@@ -3,21 +3,36 @@
 # Patches bundle: https://github.com/hxreborn/morphe-patches
 # CLI:            https://github.com/MorpheApp/morphe-cli
 
+# every <source>-dlurl below is tried in DL_SRCS order
+# (apkeep, apkcombo, apkmirror, apkpure, gplaydl, uptodown) and the next one
+# is used when the current one cannot serve the required version.
+
 [Protonmail]
 patches-source  = "hxreborn/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "hxreborn"
-apkeep-dlurl    = "ch.protonmail.android"
+apkeep-dlurl    	= "ch.protonmail.android"
+apkcombo-dlurl  	= "https://apkcombo.com/protonmail/ch.protonmail.android/"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/proton-technologies-ag/protonmail-encrypted-email/"
+apkpure-dlurl   	= "https://apkpure.net/protonmail/ch.protonmail.android"
+uptodown-dlurl  	= "https://protonmail.en.uptodown.com/android"
 
 [Cx-File-Explorer]
 patches-source  = "hxreborn/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "hxreborn"
-apkeep-dlurl    = "com.cxinventor.file.explorer"
+apkeep-dlurl    	= "com.cxinventor.file.explorer"
+apkcombo-dlurl  	= "https://apkcombo.com/cx-file-explorer/com.cxinventor.file.explorer/"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/cx-file-explorer/cx-file-explorer/"
+apkpure-dlurl   	= "https://apkpure.net/cx-file-explorer/com.cxinventor.file.explorer"
+uptodown-dlurl  	= "https://cx-file-explorer.en.uptodown.com/android"
 
 [Symfonium]
 patches-source  	= "hxreborn/morphe-patches"
 cli-source      	= "MorpheApp/morphe-cli"
 rv-brand        	= "hxreborn"
+apkeep-dlurl    	= "app.symfonik.music.player"
+apkcombo-dlurl  	= "https://apkcombo.com/symfonium/app.symfonik.music.player/"
 apkmirror-dlurl 	= "https://www.apkmirror.com/apk/tolriq/symfonium-music-player-cast/"
-apkeep-dlurl	 	= "app.symfonik.music.player"
+apkpure-dlurl   	= "https://apkpure.net/symfonium/app.symfonik.music.player"
+uptodown-dlurl  	= "https://symfonium.en.uptodown.com/android"

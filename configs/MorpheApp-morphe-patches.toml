@@ -3,12 +3,19 @@
 # Patches bundle: https://github.com/MorpheApp/morphe-patches
 # CLI:            https://github.com/MorpheApp/morphe-cli
 
+# every <source>-dlurl below is tried in DL_SRCS order
+# (apkeep, apkcombo, apkmirror, apkpure, gplaydl, uptodown) and the next one
+# is used when the current one cannot serve the required version.
+
 [YouTube-Morphe]
 patches-source 		= "MorpheApp/morphe-patches"
 cli-source 			= "MorpheApp/morphe-cli"
 rv-brand 			= "morphe"
+apkeep-dlurl    	= "com.google.android.youtube"
+apkcombo-dlurl  	= "https://apkcombo.com/youtube-morphe/com.google.android.youtube/"
 apkmirror-dlurl 	= "https://www.apkmirror.com/apk/google-inc/youtube/"
-apkeep-dlurl 		= "com.google.android.youtube"
+apkpure-dlurl   	= "https://apkpure.net/youtube-morphe/com.google.android.youtube"
+uptodown-dlurl  	= "https://youtube.en.uptodown.com/android"
 
 [YouTube-Morphe-Dev]
 patches-source 		= "MorpheApp/morphe-patches"
@@ -16,15 +23,21 @@ cli-source 			= "MorpheApp/morphe-cli"
 rv-brand 			= "morphe-dev"
 patches-version 	= "dev"
 version				= "experiment"
+apkeep-dlurl    	= "com.google.android.youtube"
+apkcombo-dlurl  	= "https://apkcombo.com/youtube-morphe-dev/com.google.android.youtube/"
 apkmirror-dlurl 	= "https://www.apkmirror.com/apk/google-inc/youtube/"
-apkeep-dlurl 		= "com.google.android.youtube"
+apkpure-dlurl   	= "https://apkpure.net/youtube-morphe-dev/com.google.android.youtube"
+uptodown-dlurl  	= "https://youtube.en.uptodown.com/android"
 
 [YouTube-Music-Morphe]
 patches-source 	= "MorpheApp/morphe-patches"
 cli-source 		= "MorpheApp/morphe-cli"
 rv-brand		= "morphe"
+apkeep-dlurl    	= "com.google.android.apps.youtube.music"
+apkcombo-dlurl  	= "https://apkcombo.com/youtube-music-morphe/com.google.android.apps.youtube.music/"
 apkmirror-dlurl 	= "https://www.apkmirror.com/apk/google-inc/youtube-music/"
-apkeep-dlurl 	= "com.google.android.apps.youtube.music"
+apkpure-dlurl   	= "https://apkpure.net/youtube-music-morphe/com.google.android.apps.youtube.music"
+uptodown-dlurl  	= "https://youtube-music.en.uptodown.com/android"
 
 [YouTube-Music-Morphe-Dev]
 patches-source 		= "MorpheApp/morphe-patches"
@@ -32,16 +45,22 @@ cli-source 			= "MorpheApp/morphe-cli"
 rv-brand 			= "morphe-dev"
 patches-version 	= "dev"
 version				= "experiment"
+apkeep-dlurl    	= "com.google.android.apps.youtube.music"
+apkcombo-dlurl  	= "https://apkcombo.com/youtube-music-morphe-dev/com.google.android.apps.youtube.music/"
 apkmirror-dlurl 	= "https://www.apkmirror.com/apk/google-inc/youtube-music/"
-apkeep-dlurl 		= "com.google.android.apps.youtube.music"
+apkpure-dlurl   	= "https://apkpure.net/youtube-music-morphe-dev/com.google.android.apps.youtube.music"
+uptodown-dlurl  	= "https://youtube-music.en.uptodown.com/android"
 
 [Reddit-Morphe]
 patches-source 	= "MorpheApp/morphe-patches"
 cli-source 		= "MorpheApp/morphe-cli"
 rv-brand		= "morphe"
-apkmirror-dlurl 	= "https://www.apkmirror.com/apk/redditinc/reddit/"
 # uptodown-dlurl  = "https://reddit-official-app.en.uptodown.com/android"
-apkeep-dlurl  	= "com.reddit.frontpage"
+apkeep-dlurl    	= "com.reddit.frontpage"
+apkcombo-dlurl  	= "https://apkcombo.com/reddit-morphe/com.reddit.frontpage/"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/redditinc/reddit/"
+apkpure-dlurl   	= "https://apkpure.net/reddit-morphe/com.reddit.frontpage"
+uptodown-dlurl  	= "https://reddit-official-app.en.uptodown.com/android"
 
 [Reddit-Morphe-Dev]
 patches-source 	= "MorpheApp/morphe-patches"
@@ -49,6 +68,9 @@ cli-source 		= "MorpheApp/morphe-cli"
 rv-brand		= "morphe-dev"
 patches-version = "dev"
 version			= "experiment"
-apkmirror-dlurl 	= "https://www.apkmirror.com/apk/redditinc/reddit/"
 # uptodown-dlurl  = "https://reddit-official-app.en.uptodown.com/android"
-apkeep-dlurl  	= "com.reddit.frontpage"
+apkeep-dlurl    	= "com.reddit.frontpage"
+apkcombo-dlurl  	= "https://apkcombo.com/reddit-morphe-dev/com.reddit.frontpage/"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/redditinc/reddit/"
+apkpure-dlurl   	= "https://apkpure.net/reddit-morphe-dev/com.reddit.frontpage"
+uptodown-dlurl  	= "https://reddit-official-app.en.uptodown.com/android"

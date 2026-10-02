@@ -3,26 +3,42 @@
 # Patches bundle: https://github.com/kiraio-moe/Lain-Patches
 # CLI:            https://github.com/MorpheApp/morphe-cli
 
+# every <source>-dlurl below is tried in DL_SRCS order
+# (apkeep, apkcombo, apkmirror, apkpure, gplaydl, uptodown) and the next one
+# is used when the current one cannot serve the required version.
+
 [AudioRelay]
 patches-source  = "kiraio-moe/Lain-Patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "lain"
-apkeep-dlurl 	= "com.azefsw.audioconnect"
+apkeep-dlurl    	= "com.azefsw.audioconnect"
+apkcombo-dlurl  	= "https://apkcombo.com/audiorelay/com.azefsw.audioconnect/"
+uptodown-dlurl  	= "https://audiorelay.en.uptodown.com/android"
 
 [Camera]
 patches-source  = "kiraio-moe/Lain-Patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "lain"
-apkeep-dlurl  	= "com.flavionet.android.camera.lite"
+apkeep-dlurl    	= "com.flavionet.android.camera.lite"
+apkcombo-dlurl  	= "https://apkcombo.com/camera/com.flavionet.android.camera.lite/"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/fgae-apps/camera-fv-5-lite/"
+uptodown-dlurl  	= "https://camera-fv-5-lite.en.uptodown.com/android"
 
 [iLovePDF]
 patches-source  = "kiraio-moe/Lain-Patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "lain"
-apkeep-dlurl	= "com.ilovepdf.www"
+apkeep-dlurl    	= "com.ilovepdf.www"
+apkcombo-dlurl  	= "https://apkcombo.com/ilovepdf/com.ilovepdf.www/"
+apkpure-dlurl   	= "https://apkpure.net/ilovepdf/com.ilovepdf.www"
+uptodown-dlurl  	= "https://ilovepdf.en.uptodown.com/android"
 
 [Hidden-Settings]
 patches-source  = "kiraio-moe/Lain-Patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "lain"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/yunus-ceyhan/hidden-settings-miui-hyperos/"
+apkeep-dlurl    	= "com.ceyhan.sets"
+apkcombo-dlurl  	= "https://apkcombo.com/hidden-settings/com.ceyhan.sets/"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/yunus-ceyhan/hidden-settings-miui-hyperos/"
+apkpure-dlurl   	= "https://apkpure.net/hidden-settings/com.ceyhan.sets"
+uptodown-dlurl  	= "https://hidden-settings-for-miui.en.uptodown.com/android"

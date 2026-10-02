@@ -3,22 +3,34 @@
 # Patches bundle: https://github.com/bufferk/morphe-patches
 # CLI:            https://github.com/MorpheApp/morphe-cli
 
+# every <source>-dlurl below is tried in DL_SRCS order
+# (apkeep, apkcombo, apkmirror, apkpure, gplaydl, uptodown) and the next one
+# is used when the current one cannot serve the required version.
+
 [Brave-Bufferk]
 patches-source  = "bufferk/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "bufferk"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/brave-software/brave-browser/"
-uptodown-dlurl	= "https://brave-software-brave.en.uptodown.com/android"
+apkeep-dlurl    	= "com.brave.browser"
+apkcombo-dlurl  	= "https://apkcombo.com/brave-bufferk/com.brave.browser/"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/brave-software/brave-browser/"
+uptodown-dlurl  	= "https://brave-software-brave.en.uptodown.com/android"
 
 [Medium]
 patches-source  = "bufferk/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "bufferk"
-apkeep-dlurl	= "com.medium.reader"
+apkeep-dlurl    	= "com.medium.reader"
+apkcombo-dlurl  	= "https://apkcombo.com/medium/com.medium.reader/"
+apkpure-dlurl   	= "https://apkpure.net/medium/com.medium.reader"
+uptodown-dlurl  	= "https://medium.en.uptodown.com/android"
 
 [Truecaller-bufferk]
 patches-source  	= "bufferk/morphe-patches"
 cli-source      	= "MorpheApp/morphe-cli"
 rv-brand        	= "bufferk"
 # patches-version 	= "dev"
-apkeep-dlurl 		= "com.truecaller"
+apkeep-dlurl    	= "com.truecaller"
+apkcombo-dlurl  	= "https://apkcombo.com/truecaller-bufferk/com.truecaller/"
+apkpure-dlurl   	= "https://apkpure.net/truecaller-bufferk/com.truecaller"
+uptodown-dlurl  	= "https://truecaller.en.uptodown.com/android"

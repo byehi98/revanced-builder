@@ -3,8 +3,16 @@
 # Patches bundle: https://github.com/Alastor-Kaneki/Morphe-Patches
 # CLI:            https://github.com/MorpheApp/morphe-cli
 
+# every <source>-dlurl below is tried in DL_SRCS order
+# (apkeep, apkcombo, apkmirror, apkpure, gplaydl, uptodown) and the next one
+# is used when the current one cannot serve the required version.
+
 [Opera-GX]
 patches-source  = "Alastor-Kaneki/Morphe-Patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "Kaneki"
-apkeep-dlurl    = "com.opera.gx"
+apkeep-dlurl 	= "com.opera.gx"
+apkcombo-dlurl 	= "https://apkcombo.com/opera-gx/com.opera.gx/"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/opera-software-asa/opera-gx/"
+apkpure-dlurl 	= "https://apkpure.net/opera-gx/com.opera.gx"
+uptodown-dlurl 	= "https://opera-gx.en.uptodown.com/android"

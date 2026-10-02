@@ -3,20 +3,36 @@
 # Patches bundle: https://github.com/RookieEnough/De-Vanced
 # CLI:            https://github.com/MorpheApp/morphe-cli
 
+# every <source>-dlurl below is tried in DL_SRCS order
+# (apkeep, apkcombo, apkmirror, apkpure, gplaydl, uptodown) and the next one
+# is used when the current one cannot serve the required version.
+
 [Irplus]
 patches-source  = "RookieEnough/De-Vanced"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "RookieEnough"
-apkeep-dlurl	= "net.binarymode.android.irplus"
+apkeep-dlurl    	= "net.binarymode.android.irplus"
+apkcombo-dlurl  	= "https://apkcombo.com/irplus/net.binarymode.android.irplus/"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/binarymode/irplus-infrared-remote/"
+apkpure-dlurl   	= "https://apkpure.net/irplus/net.binarymode.android.irplus"
+uptodown-dlurl  	= "https://irplus.en.uptodown.com/android"
 
 [Letterboxd]
 patches-source  = "RookieEnough/De-Vanced"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "RookieEnough"
-apkeep-dlurl  	= "com.letterboxd.letterboxd"
+apkeep-dlurl    	= "com.letterboxd.letterboxd"
+apkcombo-dlurl  	= "https://apkcombo.com/letterboxd/com.letterboxd.letterboxd/"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/letterboxd-limited/letterboxd/"
+apkpure-dlurl   	= "https://apkpure.net/letterboxd/com.letterboxd.letterboxd"
+uptodown-dlurl  	= "https://letterboxd.en.uptodown.com/android"
 
 [SoundCloud-RookieEnough]
 patches-source  = "RookieEnough/De-Vanced"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "RookieEnough"
-apkeep-dlurl  	= "com.soundcloud.android"
+apkeep-dlurl    	= "com.soundcloud.android"
+apkcombo-dlurl  	= "https://apkcombo.com/soundcloud-rookieenough/com.soundcloud.android/"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/soundcloud/soundcloud-soundcloud/"
+apkpure-dlurl   	= "https://apkpure.net/soundcloud-rookieenough/com.soundcloud.android"
+uptodown-dlurl  	= "https://soundcloud.en.uptodown.com/android"

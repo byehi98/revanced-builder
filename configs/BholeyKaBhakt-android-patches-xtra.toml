@@ -3,11 +3,17 @@
 # Patches bundle: https://github.com/BholeyKaBhakt/android-patches-xtra
 # CLI:            https://github.com/MorpheApp/morphe-cli
 
+# every <source>-dlurl below is tried in DL_SRCS order
+# (apkeep, apkcombo, apkmirror, apkpure, gplaydl, uptodown) and the next one
+# is used when the current one cannot serve the required version.
+
 [Automate]
 patches-source  = "BholeyKaBhakt/android-patches-xtra"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "xtra"
 apkeep-dlurl 	= "com.llamalab.automate"
+apkcombo-dlurl 	= "https://apkcombo.com/automate/com.llamalab.automate/"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/llamalab/automate-llamalab/"
 
 [Backdrops]
 patches-source  = "BholeyKaBhakt/android-patches-xtra"
@@ -15,9 +21,15 @@ cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "xtra"
 patches-version = "dev"
 apkeep-dlurl 	= "com.backdrops.wallpapers"
+apkcombo-dlurl 	= "https://apkcombo.com/backdrops/com.backdrops.wallpapers/"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/backdrops/backdrops-wallpapers/"
+uptodown-dlurl 	= "https://backdrops.en.uptodown.com/android"
 
 [Speedtest]
 patches-source  = "BholeyKaBhakt/android-patches-xtra"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "xtra"
 apkeep-dlurl 	= "org.zwanoo.android.speedtest"
+apkcombo-dlurl 	= "https://apkcombo.com/speedtest/org.zwanoo.android.speedtest/"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/ookla/speedtest/"
+apkpure-dlurl 	= "https://apkpure.net/speedtest/org.zwanoo.android.speedtest"

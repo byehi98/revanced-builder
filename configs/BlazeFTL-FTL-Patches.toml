@@ -3,9 +3,15 @@
 # Patches bundle: https://github.com/BlazeFTL/FTL-Patches
 # CLI:            https://github.com/MorpheApp/morphe-cli
 
+# every <source>-dlurl below is tried in DL_SRCS order
+# (apkeep, apkcombo, apkmirror, apkpure, gplaydl, uptodown) and the next one
+# is used when the current one cannot serve the required version.
+
 [All-Video-Downloader-and-Ace-Player]
 patches-source  = "BlazeFTL/FTL-Patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "FTL"
-uptodown-dlurl	= "https://video-downloader-and-ace-player.en.uptodown.com/android"
 apkeep-dlurl    = "videoplayer.videodownloader.downloader"
+apkcombo-dlurl 	= "https://apkcombo.com/all-video-downloader-and-ace-player/videoplayer.videodownloader.downloader/"
+apkpure-dlurl 	= "https://apkpure.net/video-downloader-and-ace-player/videoplayer.videodownloader.downloader"
+uptodown-dlurl	= "https://video-downloader-and-ace-player.en.uptodown.com/android"

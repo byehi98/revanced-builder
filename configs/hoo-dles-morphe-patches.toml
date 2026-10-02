@@ -3,50 +3,82 @@
 # Patches bundle: https://github.com/hoo-dles/morphe-patches
 # CLI:            https://github.com/MorpheApp/morphe-cli
 
+# every <source>-dlurl below is tried in DL_SRCS order
+# (apkeep, apkcombo, apkmirror, apkpure, gplaydl, uptodown) and the next one
+# is used when the current one cannot serve the required version.
+
 [AdGuard-hoo-dles]
 patches-source  = "hoo-dles/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "hoo-dles"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/adguard-software-limited/adguard/"
+apkeep-dlurl    	= "com.adguard.android"
+apkcombo-dlurl  	= "https://apkcombo.com/adguard-hoo-dles/com.adguard.android/"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/adguard-software-limited/adguard/"
+uptodown-dlurl  	= "https://adguard-for-android.en.uptodown.com/android"
 
 [CamScanner-hoo-dles]
 patches-source  = "hoo-dles/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "hoo-dles"
-apkeep-dlurl 	= "com.intsig.camscanner"
+apkeep-dlurl    	= "com.intsig.camscanner"
+apkcombo-dlurl  	= "https://apkcombo.com/camscanner-hoo-dles/com.intsig.camscanner/"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/intsig-pte/camscanner-phone-pdf-creator/"
+uptodown-dlurl  	= "https://camscanner.en.uptodown.com/android"
 
 [ProtonVPN-Hoodles]
 patches-source  = "hoo-dles/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "hoo-dles"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/proton-technologies-ag/protonvpn-free-vpn-secure-unlimited-fdroid-version/"
+apkeep-dlurl    	= "ch.protonvpn.android"
+apkcombo-dlurl  	= "https://apkcombo.com/protonvpn-hoodles/ch.protonvpn.android/"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/proton-technologies-ag/protonvpn-free-vpn-secure-unlimited-fdroid-version/"
+uptodown-dlurl  	= "https://protonvpn.en.uptodown.com/android"
 
 [Google-News-hoo-dles]
 patches-source  = "hoo-dles/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "hoo-dles"
-apkeep-dlurl 	= "com.google.android.apps.magazines"
+apkeep-dlurl    	= "com.google.android.apps.magazines"
+apkcombo-dlurl  	= "https://apkcombo.com/google-news-hoo-dles/com.google.android.apps.magazines/"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/google-inc/google-news/"
+apkpure-dlurl   	= "https://apkpure.net/google-news-hoo-dles/com.google.android.apps.magazines"
+uptodown-dlurl  	= "https://google-play-newsstand.en.uptodown.com/android"
 
 [Solid-Explorer]
 patches-source  = "hoo-dles/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "hoo-dles"
-apkeep-dlurl 	= "pl.solidexplorer2"
+apkeep-dlurl    	= "pl.solidexplorer2"
+apkcombo-dlurl  	= "https://apkcombo.com/solid-explorer/pl.solidexplorer2/"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/neatbytes/solid-explorer-file-manager/"
+apkpure-dlurl   	= "https://apkpure.net/solid-explorer/pl.solidexplorer2"
+uptodown-dlurl  	= "https://solid-explorer-file-manager.en.uptodown.com/android"
 
 [Showly]
 patches-source  = "hoo-dles/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "hoo-dles"
-apkeep-dlurl 	= "com.michaldrabik.showly2"
+apkeep-dlurl    	= "com.michaldrabik.showly2"
+apkcombo-dlurl  	= "https://apkcombo.com/showly/com.michaldrabik.showly2/"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/trakt/showly/"
+apkpure-dlurl   	= "https://apkpure.net/showly/com.michaldrabik.showly2"
+uptodown-dlurl  	= "https://showly-2-0.en.uptodown.com/android"
 
 [Wallcraft]
 patches-source  = "hoo-dles/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "hoo-dles"
-apkeep-dlurl 	= "com.wallpaperscraft.wallpaper"
+apkeep-dlurl    	= "com.wallpaperscraft.wallpaper"
+apkcombo-dlurl  	= "https://apkcombo.com/wallcraft/com.wallpaperscraft.wallpaper/"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/nebuchadnezzar-doo/wallpapers-hd-4k-backgrounds/"
+uptodown-dlurl  	= "https://wallpaperscraft.en.uptodown.com/android"
 
 [WPS-Office]
 patches-source  = "hoo-dles/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "hoo-dles"
-apkeep-dlurl 	= "cn.wps.moffice_eng"
+apkeep-dlurl    	= "cn.wps.moffice_eng"
+apkcombo-dlurl  	= "https://apkcombo.com/wps-office/cn.wps.moffice_eng/"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/wps-software-pte-ltd/wps-office-pdf/"
+apkpure-dlurl   	= "https://apkpure.net/wps-office/cn.wps.moffice_eng"
+uptodown-dlurl  	= "https://wps-office.en.uptodown.com/android"

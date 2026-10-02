@@ -3,16 +3,27 @@
 # Patches bundle: https://github.com/arandomhooman/hoomans-morphe-patches
 # CLI:            https://github.com/MorpheApp/morphe-cli
 
+# every <source>-dlurl below is tried in DL_SRCS order
+# (apkeep, apkcombo, apkmirror, apkpure, gplaydl, uptodown) and the next one
+# is used when the current one cannot serve the required version.
+
 [FolderSync]
 patches-source  = "arandomhooman/hoomans-morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "hoomans"
 apkeep-dlurl  	= "dk.tacit.android.foldersync.lite"
+apkcombo-dlurl 	= "https://apkcombo.com/foldersync/dk.tacit.android.foldersync.lite/"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/tacit-dynamics/foldersync/"
+apkpure-dlurl 	= "https://apkpure.net/foldersync/dk.tacit.android.foldersync.lite"
 
 [Poweramp]
 patches-source  = "arandomhooman/hoomans-morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "hoomans"
+apkeep-dlurl 	= "com.maxmpz.audioplayer"
+apkcombo-dlurl 	= "https://apkcombo.com/poweramp/com.maxmpz.audioplayer/"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/max-mp/poweramp/"
+apkpure-dlurl 	= "https://apkpure.net/poweramp/com.maxmpz.audioplayer"
 uptodown-dlurl  = "https://poweramp-music-player.en.uptodown.com/android"
 
 [Microsoft-SwiftKey]
@@ -20,9 +31,16 @@ patches-source  = "arandomhooman/hoomans-morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "hoomans"
 apkeep-dlurl  	= "com.touchtype.swiftkey"
+apkcombo-dlurl 	= "https://apkcombo.com/microsoft-swiftkey/com.touchtype.swiftkey/"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/swiftkey/swiftkey-keyboard/"
+apkpure-dlurl 	= "https://apkpure.net/microsoft-swiftkey/com.touchtype.swiftkey"
+uptodown-dlurl 	= "https://swiftkey-keyboard.en.uptodown.com/android"
 
 [Advanced-Download-Manager]
 patches-source  = "arandomhooman/hoomans-morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "hoomans"
 apkeep-dlurl  	= "com.dv.adm"
+apkcombo-dlurl 	= "https://apkcombo.com/advanced-download-manager/com.dv.adm/"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/admtorrent/advanced-download-manager/"
+uptodown-dlurl 	= "https://advanced-download-manager.en.uptodown.com/android"

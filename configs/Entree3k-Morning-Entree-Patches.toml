@@ -3,44 +3,66 @@
 # Patches bundle: https://github.com/Entree3k/Morning-Entree-Patches
 # CLI:            https://github.com/MorpheApp/morphe-cli
 
+# every <source>-dlurl below is tried in DL_SRCS order
+# (apkeep, apkcombo, apkmirror, apkpure, gplaydl, uptodown) and the next one
+# is used when the current one cannot serve the required version.
+
 [Arm-Workout]
 patches-source  = "Entree3k/Morning-Entree-Patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "Entree3k"
-uptodown-dlurl 	= "https://arm-workout.en.uptodown.com/android"
+apkeep-dlurl    	= "armworkout.armworkoutformen.armexercises"
+apkcombo-dlurl  	= "https://apkcombo.com/arm-workout/armworkout.armworkoutformen.armexercises/"
+uptodown-dlurl  	= "https://arm-workout.en.uptodown.com/android"
 
 [Does-Not-Commute-Entree3k]
 patches-source  = "Entree3k/Morning-Entree-Patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "Entree3k"
-apkeep-dlurl  	= "com.mediocre.commute"
+apkeep-dlurl    	= "com.mediocre.commute"
+apkcombo-dlurl  	= "https://apkcombo.com/does-not-commute-entree3k/com.mediocre.commute/"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/mediocre/does-not-commute/"
+apkpure-dlurl   	= "https://apkpure.net/does-not-commute-entree3k/com.mediocre.commute"
+uptodown-dlurl  	= "https://commute.en.uptodown.com/android"
 
 [Home-Workout]
 patches-source  = "Entree3k/Morning-Entree-Patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "Entree3k"
-uptodown-dlurl 	= "https://leap-fitness-group-home-workout.en.uptodown.com/android"
+apkeep-dlurl    	= "homeworkout.homeworkouts.noequipment"
+apkcombo-dlurl  	= "https://apkcombo.com/home-workout/homeworkout.homeworkouts.noequipment/"
+uptodown-dlurl  	= "https://leap-fitness-group-home-workout.en.uptodown.com/android"
 
 [Lose-Weight-App-for-Men]
 patches-source  = "Entree3k/Morning-Entree-Patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "Entree3k"
-uptodown-dlurl 	= "https://lose-weight-app-for-men.en.uptodown.com/android"
+apkeep-dlurl    	= "menloseweight.loseweightappformen.weightlossformen"
+apkcombo-dlurl  	= "https://apkcombo.com/lose-weight-app-for-men/menloseweight.loseweightappformen.weightlossformen/"
+uptodown-dlurl  	= "https://lose-weight-app-for-men.en.uptodown.com/android"
 
 [MacroDroid-Entree3k]
 patches-source  = "Entree3k/Morning-Entree-Patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "Entree3k"
-apkeep-dlurl 	= "com.arlosoft.macrodroid"
+apkeep-dlurl    	= "com.arlosoft.macrodroid"
+apkcombo-dlurl  	= "https://apkcombo.com/macrodroid-entree3k/com.arlosoft.macrodroid/"
+apkpure-dlurl   	= "https://apkpure.net/macrodroid-entree3k/com.arlosoft.macrodroid"
+uptodown-dlurl  	= "https://macrodroid.en.uptodown.com/android"
 
 [PinOut]
 patches-source  = "Entree3k/Morning-Entree-Patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "Entree3k"
-apkeep-dlurl 	= "com.mediocre.pinout"
+apkeep-dlurl    	= "com.mediocre.pinout"
+apkcombo-dlurl  	= "https://apkcombo.com/pinout/com.mediocre.pinout/"
+apkpure-dlurl   	= "https://apkpure.net/pinout/com.mediocre.pinout"
+uptodown-dlurl  	= "https://pinout.en.uptodown.com/android"
 
 [Six-Pack-in-30-Days]
 patches-source  = "Entree3k/Morning-Entree-Patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "Entree3k"
-uptodown-dlurl	= "https://six-pack-in-30-days.en.uptodown.com/android"
+apkeep-dlurl    	= "sixpack.sixpackabs.absworkout"
+apkcombo-dlurl  	= "https://apkcombo.com/six-pack-in-30-days/sixpack.sixpackabs.absworkout/"
+uptodown-dlurl  	= "https://six-pack-in-30-days.en.uptodown.com/android"

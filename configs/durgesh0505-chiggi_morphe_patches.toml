@@ -3,14 +3,24 @@
 # Patches bundle: https://github.com/durgesh0505/chiggi_morphe_patches
 # CLI:            https://github.com/MorpheApp/morphe-cli
 
+# every <source>-dlurl below is tried in DL_SRCS order
+# (apkeep, apkcombo, apkmirror, apkpure, gplaydl, uptodown) and the next one
+# is used when the current one cannot serve the required version.
+
 [Arrow-Puzzle]
 patches-source  = "durgesh0505/chiggi_morphe_patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "durgesh0505"
-apkeep-dlurl  	= "com.easybrain.arrow.puzzle.game"
+apkeep-dlurl    	= "com.easybrain.arrow.puzzle.game"
+apkcombo-dlurl  	= "https://apkcombo.com/arrow-puzzle/com.easybrain.arrow.puzzle.game/"
+uptodown-dlurl  	= "https://arrow-puzzle.en.uptodown.com/android"
 
 [Does-Not-Commute-chiggi]
 patches-source  = "durgesh0505/chiggi_morphe_patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "durgesh0505"
-apkeep-dlurl  	= "com.mediocre.commute"
+apkeep-dlurl    	= "com.mediocre.commute"
+apkcombo-dlurl  	= "https://apkcombo.com/does-not-commute-chiggi/com.mediocre.commute/"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/mediocre/does-not-commute/"
+apkpure-dlurl   	= "https://apkpure.net/does-not-commute-chiggi/com.mediocre.commute"
+uptodown-dlurl  	= "https://commute.en.uptodown.com/android"

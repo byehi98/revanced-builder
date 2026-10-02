@@ -3,40 +3,63 @@
 # Patches bundle: https://github.com/RookieEnough/De-ReVanced
 # CLI:            https://github.com/MorpheApp/morphe-cli
 
+# every <source>-dlurl below is tried in DL_SRCS order
+# (apkeep, apkcombo, apkmirror, apkpure, gplaydl, uptodown) and the next one
+# is used when the current one cannot serve the required version.
+
 [Adobe-Photoshop-Mix]
 patches-source  = "RookieEnough/De-ReVanced"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "RookieEnough"
-apkeep-dlurl  	= "com.adobe.photoshopmix"
+apkeep-dlurl    	= "com.adobe.photoshopmix"
+apkcombo-dlurl  	= "https://apkcombo.com/adobe-photoshop-mix/com.adobe.photoshopmix/"
 
 [Cricbuzz]
 patches-source  = "RookieEnough/De-ReVanced"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "RookieEnough"
-uptodown-dlurl  = "https://cricbuzz-cricket-scores-and-news.en.uptodown.com/android"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/cricbuzz-com/cricbuzz-live-cricket-scores-news"
+apkeep-dlurl    	= "com.cricbuzz.android"
+apkcombo-dlurl  	= "https://apkcombo.com/cricbuzz/com.cricbuzz.android/"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/cricbuzz-com/cricbuzz-live-cricket-scores-news"
+apkpure-dlurl   	= "https://apkpure.net/cricbuzz/com.cricbuzz.android"
+uptodown-dlurl  	= "https://cricbuzz-cricket-scores-and-news.en.uptodown.com/android"
 
 [Google-Photos]
 patches-source  = "RookieEnough/De-ReVanced"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "RookieEnough"
 # patches-version = "dev"
-apkeep-dlurl  	= "com.google.android.apps.photos"
+apkeep-dlurl    	= "com.google.android.apps.photos"
+apkcombo-dlurl  	= "https://apkcombo.com/google-photos/com.google.android.apps.photos/"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/google-inc/photos/"
+apkpure-dlurl   	= "https://apkpure.net/google-photos/com.google.android.apps.photos"
+uptodown-dlurl  	= "https://google-photos.en.uptodown.com/android"
 
 [Google-News-RookieEnough]
 patches-source  = "RookieEnough/De-ReVanced"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "RookieEnough"
-uptodown-dlurl 	= "https://google-play-newsstand.en.uptodown.com/android"
+apkeep-dlurl    	= "com.google.android.apps.magazines"
+apkcombo-dlurl  	= "https://apkcombo.com/google-news-rookieenough/com.google.android.apps.magazines/"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/google-inc/google-news/"
+apkpure-dlurl   	= "https://apkpure.net/google-news-rookieenough/com.google.android.apps.magazines"
+uptodown-dlurl  	= "https://google-play-newsstand.en.uptodown.com/android"
 
 [Icon-Pack-Studio]
 patches-source  = "RookieEnough/De-ReVanced"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "RookieEnough"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/smart-launcher-team/icon-pack-studio/"
+apkeep-dlurl    	= "ginlemon.iconpackstudio"
+apkcombo-dlurl  	= "https://apkcombo.com/icon-pack-studio/ginlemon.iconpackstudio/"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/smart-launcher-team/icon-pack-studio/"
+apkpure-dlurl   	= "https://apkpure.net/icon-pack-studio/ginlemon.iconpackstudio"
+uptodown-dlurl  	= "https://icon-pack-studio.en.uptodown.com/android"
 
 [Photomath]
 patches-source  = "RookieEnough/De-ReVanced"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "RookieEnough"
-apkeep-dlurl	= "com.microblink.photomath"
+apkeep-dlurl    	= "com.microblink.photomath"
+apkcombo-dlurl  	= "https://apkcombo.com/photomath/com.microblink.photomath/"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/google-inc/photomath/"
+uptodown-dlurl  	= "https://photomath.en.uptodown.com/android"
