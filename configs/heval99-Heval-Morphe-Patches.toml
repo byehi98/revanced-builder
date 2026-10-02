@@ -16,3 +16,13 @@ apkcombo-dlurl  	= "https://apkcombo.com/anydesk/com.anydesk.anydeskandroid/"
 apkpure-dlurl   	= "https://apkpure.net/anydesk-remote-desktop/com.anydesk.anydeskandroid"
 uptodown-dlurl  	= "https://anydesk.en.uptodown.com/android"
 # no apkmirror-dlurl: apkmirror 404s on every slug tried for this app
+
+[AquaMail]
+patches-source  = "heval99/Heval-Morphe-Patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "heval99"
+apkeep-dlurl    	= "org.kman.AquaMail"
+apkcombo-dlurl  	= "https://apkcombo.com/aqua-mail/org.kman.AquaMail/"
+apkpure-dlurl   	= "https://apkpure.net/aquamail-email/org.kman.AquaMail"
+uptodown-dlurl  	= "https://aqua-mail.en.uptodown.com/android"
+# no apkmirror-dlurl: apkmirror 404s on every slug tried for this app

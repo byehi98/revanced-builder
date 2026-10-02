@@ -330,3 +330,23 @@ apkcombo-dlurl  	= "https://apkcombo.com/macrodroid/com.arlosoft.macrodroid/"
 apkpure-dlurl   	= "https://apkpure.net/macrodroid/com.arlosoft.macrodroid"
 uptodown-dlurl  	= "https://macrodroid.en.uptodown.com/android"
 # no apkmirror-dlurl: apkmirror was rate limited and could not be verified
+
+[MyAnimeList]
+patches-source  = "rushiranpise/morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "rushiranpise"
+apkeep-dlurl    	= "net.myanimelist.app"
+apkcombo-dlurl  	= "https://apkcombo.com/my-animelist/net.myanimelist.app/"
+apkpure-dlurl   	= "https://apkpure.net/my-animelist/net.myanimelist.app"
+uptodown-dlurl  	= "https://myanimelist.en.uptodown.com/android"
+# no apkmirror-dlurl: apkmirror 404s on every slug tried for this app
+
+[RAR]
+patches-source  = "rushiranpise/morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "rushiranpise"
+apkeep-dlurl    	= "com.rarlab.rar"
+apkcombo-dlurl  	= "https://apkcombo.com/rar/com.rarlab.rar/"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/rarlab/rar/"
+apkpure-dlurl   	= "https://apkpure.net/rar/com.rarlab.rar"
+# no uptodown-dlurl: uptodown 404s on every slug tried for this app

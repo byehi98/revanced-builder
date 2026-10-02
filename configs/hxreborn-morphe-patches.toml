@@ -56,3 +56,13 @@ apkcombo-dlurl  	= "https://apkcombo.com/terabox/com.dubox.drive/"
 apkmirror-dlurl 	= "https://www.apkmirror.com/apk/flextech-inc/terabox-cloud-storage-cloud-backup-data-backup/"
 apkpure-dlurl   	= "https://apkpure.net/terabox/com.dubox.drive"
 uptodown-dlurl  	= "https://terabox.en.uptodown.com/android"
+
+[MovieBox-hxreborn]
+patches-source  = "hxreborn/morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "hxreborn"
+# com.community.oneroom is delisted from apkpure/apkcombo (410 Gone) and not
+# on apkmirror, so uptodown is the only source. uptodown slugs this app by its
+# package name and now brands it "MovieBox". No apkeep-dlurl: apkeep is
+# APKPure-backed, which no longer lists this package.
+uptodown-dlurl  	= "https://com-community-oneroom.en.uptodown.com/android"
