@@ -15,3 +15,13 @@ apkeep-dlurl    = "videoplayer.videodownloader.downloader"
 apkcombo-dlurl 	= "https://apkcombo.com/all-video-downloader-and-ace-player/videoplayer.videodownloader.downloader/"
 apkpure-dlurl 	= "https://apkpure.net/video-downloader-and-ace-player/videoplayer.videodownloader.downloader"
 uptodown-dlurl	= "https://video-downloader-and-ace-player.en.uptodown.com/android"
+
+[RS-File-Manager-BlazeFTL]
+patches-source  = "BlazeFTL/FTL-Patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "FTL"
+apkeep-dlurl    	= "com.rs.explorer.filemanager"
+apkcombo-dlurl  	= "https://apkcombo.com/rs-file-manager/com.rs.explorer.filemanager/"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/rs-mobile-group/rs-file/"
+apkpure-dlurl   	= "https://apkpure.net/rs-file-manager/com.rs.explorer.filemanager"
+uptodown-dlurl  	= "https://rs-file-manager.en.uptodown.com/android"
