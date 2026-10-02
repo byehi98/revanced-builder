@@ -1,19 +1,48 @@
 
-**2 apps built.**
+**34 apps built.**
   
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
 CLI: MorpheApp/morphe-desktop-1.18.0-all.jar  
-Patches: byehi98/patches-1.36.1.mpp  
-[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.36.1)
+Patches: byehi98/patches-1.36.2.mpp  
+[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.36.2)
 
+CLI: MorpheApp/morphe-desktop-1.18.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.0-all.jar  
 CLI: MorpheApp/morphe-desktop-1.18.0-all.jar  
 CLI: MorpheApp/morphe-desktop-1.18.0-all.jar  
 Patches: hxreborn/patches-1.38.0.mpp  
-[Changelog](https://github.com/hxreborn/morphe-patches/releases/tag/v1.38.0)
-
-CLI: MorpheApp/morphe-desktop-1.18.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.18.0-all.jar    
+[Changelog](https://github.com/hxreborn/morphe-patches/releases/tag/v1.38.0)  
 
 Skipped:  
 Opera-GX: latest  
@@ -76,40 +105,6 @@ Brave-Bufferk: 1.92.140
 Patches: bufferk/patches-1.8.0.mpp  
 Medium: 4.5.1302097  
 Truecaller-bufferk: 26.10.6  
-Adda247: 12.7.2  
-Patches: byehi98/patches-1.36.1.mpp  
-Aliens-Drive-Me-Crazy: 3.2.10  
-Alto-Adventure: 1.8.27  
-Alto-Odyssey: 1.0.42  
-Big-Hunter: 3.1.2  
-Burrito-Bison: 3.75  
-Crossy-Road: 7.13.0  
-Dan-The-Man: 1.14.04  
-Document-Scanner: 6.9.9  
-Doodle-Jump: 3.11.40  
-Dr-Driving: 1.73  
-Earn-to-Die-2: 1.5.6  
-Fancy-Pants: 1.0.30  
-Freejobalert: 1.0.0  
-Patches: byehi98/patches-1.36.1.mpp  
-HAAK: 1.4.3  
-Hill-Climb-Racing: 1.71.1  
-Injustice: 3.5.1  
-Into-The-Dead: 2.9.3  
-Into-The-Dead-2: 1.87.1  
-Jetpack-Joyride: 1.104.1  
-Lumina-Walls: 1.0.2.6  
-Missiles: 1.41  
-Onlyone: 1.3044  
-Plagueinc: 1.26.1  
-Rodeo-Stampede: 4.25.0  
-Smashit: 1.5.14  
-Swift-Backup: 5.1.0  
-Swordigo: 1.4.13  
-Tentaclewars: 2.1.27  
-Traffic-Racer: 4.0  
-Traffic-Rider: 2.11  
-Truecloud: 4.6.5.13  
 Minesweeper: 1.21.3  
 Patches: cesbar/patches-1.13.1.mpp  
 Solitaire: 1.20.3  
@@ -129,6 +124,9 @@ Showly: 3.70.0
 Solid-Explorer: 3.6.1  
 WPS-Office: 18.24  
 Wallcraft: 3.61.01  
+Patches: hxreborn/patches-1.38.0.mpp  
+Protonmail: 7.11.8
+Symfonium: 15.0.1  
 Reddit-Adobo: 2026.38.0  
 Patches: jkennethcarino/patches-1.6.0-dev.3.mpp  
 AudioRelay: 0.26.1  
@@ -174,14 +172,44 @@ qBitConnect: 2.0.6
 Imgur: 7.34.0.0  
 Patches: sushruth/patches-1.0.0.mpp  
 Lemmy-Sync: latest  
-Patches: wchill/patches-1.4.0.mpp      
+Patches: wchill/patches-1.4.0.mpp        
 
 ### Built versions  
-Protonmail: 7.11.8
-Symfonium: 15.0.1  
+Adda247: 12.7.2
+Aliens-Drive-Me-Crazy: 3.2.10
+Alto-Adventure: 1.8.27
+Alto-Odyssey: 1.0.42
+Big-Hunter: 3.1.2
+Burrito-Bison: 3.75
+Crossy-Road: 7.13.2
+Dan-The-Man: 1.14.04
+Dead-Trigger: 2.3.4
+Document-Scanner: 6.9.9
+Doodle-Jump: 3.11.40
+Dr-Driving: 1.73
+Earn-to-Die-2: 1.5.6
+Fancy-Pants: 1.0.30
+Freejobalert: 1.0.0
+HAAK: 1.4.3
+Hill-Climb-Racing: 1.72.2
+Injustice: 3.5.1
+Into-The-Dead-2: 1.87.1
+Into-The-Dead: 2.9.3
+Jetpack-Joyride: 1.104.1
+Lumina-Walls: 1.0.2.6
+Missiles: 1.41
+Onlyone: 1.3045
+Plagueinc: 1.26.1
+Rodeo-Stampede: 4.25.0
+Smashit: 1.5.14
+Swift-Backup: 5.1.0
+Swordigo: 1.4.13
+Tentaclewars: 2.1.27
+Traffic-Racer: 4.0
+Traffic-Rider: 2.11
+Truecloud: 4.6.5.13
+Vector: 2.10.2  
 
 
 ### Failed to build
-- ❌ `Dead-Trigger`
-- ❌ `Vector`
 - ❌ `Cx-File-Explorer`
