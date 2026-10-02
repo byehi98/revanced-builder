@@ -317,6 +317,7 @@ jobs:
 
       - name: Generate release notes
         run: |
+          source utils.sh
           mkdir -p release_files
           total=$(grep -c . app_rows.md || true)
           awk -F'|' '/❌/ && $4 ~ /`/ { gsub(/[ `]/, "", $4); if ($4 != "") print $4 }' app_rows.md \
@@ -324,19 +325,14 @@ jobs:
           failed=$(grep -c . release_files/failed.txt || true)
           built=$((total - failed))
 
-          {
-            echo "**${built} of ${total} apps built.**"
-            echo
-            if [ "$failed" -gt 0 ]; then
+          release_notes_from_build_md build.md release_notes.md "$built" 0
+          if [ "$failed" -gt 0 ]; then
+            {
+              echo
               echo "### Failed to build"
               sed 's/.*/- ❌ `&`/' release_files/failed.txt
-              echo
-            fi
-            echo "### Patches"
-            if [ -f "all_artifacts/base-config/build.md" ]; then
-              cat "all_artifacts/base-config/build.md"
-            fi
-          } > release_notes.md
+            } >> release_notes.md
+          fi
 
           if [ "$failed" -eq 0 ]; then
             rm -f release_files/failed.txt

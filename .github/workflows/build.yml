@@ -154,11 +154,14 @@ jobs:
               print("Failed apps:")
               for t in failed:
                   print(f"  - {t}")
-              if os.path.exists("build.md"):
-                  with open("build.md", "a") as f:
-                      f.write("\n\n### Failed to build\n")
-                      for t in failed:
-                          f.write(f"- ❌ `{t}`\n")
+              # the failed list is the only part that belongs in the release
+              # body; build.md stays machine-readable for config_update
+              for notes in ("release_notes.md",):
+                  if os.path.exists(notes):
+                      with open(notes, "a") as f:
+                          f.write("\n### Failed to build\n")
+                          for t in failed:
+                              f.write(f"- ❌ `{t}`\n")
           else:
               print("All apps built successfully.")
           EOF
@@ -169,7 +172,13 @@ jobs:
         run: |
           DELIM="$(openssl rand -hex 8)"
           echo "BUILD_LOG<<${DELIM}" >> "$GITHUB_OUTPUT"
-          [ -f build.md ] && cat build.md >> "$GITHUB_OUTPUT" || true
+          # release_notes.md is the short human body; build.md is the full
+          # machine log that later runs parse
+          if [ -f release_notes.md ]; then
+            cat release_notes.md >> "$GITHUB_OUTPUT"
+          elif [ -f build.md ]; then
+            cat build.md >> "$GITHUB_OUTPUT"
+          fi
           echo "${DELIM}" >> "$GITHUB_OUTPUT"
           [ -f build.md ] && cp -f build.md build.tmp || true
       

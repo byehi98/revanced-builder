@@ -703,6 +703,46 @@ gl_dl() {
 }
 
 log() { echo -e "$1  " >>"build.md"; }
+
+# `build.md` is the machine-readable run log: `config_update` parses the
+# `App: version` and `Patches: owner/file` lines out of it on the next run, so
+# it has to stay complete. It is far too long to use as a release body though
+# (one line per app, plus a line per CLI), so this renders the short human
+# version from it instead.
+#
+# $1 machine build log   $2 output file
+# $3 built count         $4 unchanged count
+release_notes_from_build_md() {
+	local in=$1 out=$2 built=${3:-0} unchanged=${4:-0} patches
+	patches=$(awk '
+		function trim(s) { sub(/[[:space:]]+$/, "", s); return s }
+		/^Patches: / {
+			line = $0
+			sub(/^Patches:[[:space:]]*/, "", line)
+			line = trim(line)
+			n = split(line, a, "/")
+			ver = a[n]
+			sub(/^patches-/, "", ver)
+			sub(/\.(mpp|rvp)$/, "", ver)
+			p = "`" a[n - 1] "` " ver
+			next
+		}
+		/^\[Changelog\]/ {
+			if (p != "" && !seen[p]++) print "- " p " · " trim($0)
+			p = ""
+			next
+		}
+	' "$in")
+	{
+		printf '**%s apps built**' "$built"
+		if [ "$unchanged" -gt 0 ]; then printf ' · %s unchanged' "$unchanged"; fi
+		printf '.\n\n'
+		printf 'Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs\n'
+		printf 'Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store\n'
+		if [ -n "$patches" ]; then printf '\n### Patches\n%s\n' "$patches"; fi
+		printf '\n'
+	} >"$out"
+}
 get_highest_ver() {
 	local vers m
 	vers=$(tee)

@@ -9,3 +9,4 @@ cmpr
 __pycache__/
 build.json
 /.direnv
+release_notes.md

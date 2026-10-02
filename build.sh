@@ -164,17 +164,20 @@ if [ -f "$TEMP_DIR/some_job_failed" ]; then
 fi
 if [ -z "$(ls -A1 "${BUILD_DIR}")" ]; then abort "All builds failed."; fi
 
-# build.md doubles as the release body, so keep it to a count, the patches
-# changelog and the built versions. the per-app status table is rendered into
-# README.md instead - see .github/workflows/update-readme.yml
+# build.md stays the complete machine-readable log: config_update and
+# update-readme both parse it on later runs. release_notes.md is the short
+# human version used as the release body.
 BUILT_APPS=$(sort -u "$TEMP_DIR"/built_apps 2>/dev/null | grep . || :)
 built_apps=$(grep -c . <<<"$BUILT_APPS" || :)
+SKIPPED=$(grep . "$TEMP_DIR"/skipped 2>/dev/null || :)
+# the skipped dump interleaves `App: version` with `Patches:`/`CLI:` lines
+unchanged=$(grep -E '^[^[:space:]].*: ' <<<"$SKIPPED" | grep -cvE '^(Patches|CLI): ' || :)
+
 log "\n**${built_apps} apps built.**\n"
 log "Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs"
 log "Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store"
 log "$(cat "$TEMP_DIR"/*/changelog.md)"
 
-SKIPPED=$(cat "$TEMP_DIR"/skipped 2>/dev/null || :)
 if [ -n "$SKIPPED" ]; then
 	log "\nSkipped:"
 	log "$SKIPPED"
@@ -184,6 +187,8 @@ if [ -n "$BUILT_APPS" ]; then
 	log "\n### Built versions"
 	log "$BUILT_APPS"
 fi
+
+release_notes_from_build_md build.md release_notes.md "$built_apps" "$unchanged"
 
 pr "Done"
 
