@@ -76,3 +76,13 @@ apkcombo-dlurl  	= "https://apkcombo.com/nzb360/com.kevinforeman.nzb360/"
 apkmirror-dlurl 	= "https://www.apkmirror.com/apk/kevin-foreman/nzb360/"
 apkpure-dlurl   	= "https://apkpure.net/nzb360/com.kevinforeman.nzb360"
 uptodown-dlurl  	= "https://nzb360.en.uptodown.com/android"
+
+[Send-Files-To-TV-Entree3k]
+patches-source  = "Entree3k/Morning-Entree-Patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "Entree3k"
+apkeep-dlurl    	= "com.yablio.sendfilestotv"
+apkcombo-dlurl  	= "https://apkcombo.com/send-files-to-tv/com.yablio.sendfilestotv/"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/yablio/send-files-to-tv/"
+apkpure-dlurl   	= "https://apkpure.net/send-files-to-tv/com.yablio.sendfilestotv"
+uptodown-dlurl  	= "https://send-files-to-tv.en.uptodown.com/android"

@@ -1,0 +1,18 @@
+# legendsciber/morphe-patches
+#
+# Patches bundle: https://github.com/legendsciber/morphe-patches
+# CLI:            https://github.com/MorpheApp/morphe-cli
+
+# every <source>-dlurl below is tried in DL_SRCS order
+# (apkeep, apkcombo, apkmirror, apkpure, gplaydl, uptodown) and the next one
+# is used when the current one cannot serve the required version.
+
+[Subway-Surfers]
+patches-source  = "legendsciber/morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "legendsciber"
+apkeep-dlurl    	= "com.kiloo.subwaysurf"
+apkcombo-dlurl  	= "https://apkcombo.com/subway-surfers/com.kiloo.subwaysurf/"
+apkpure-dlurl   	= "https://apkpure.net/subway-surfers/com.kiloo.subwaysurf"
+uptodown-dlurl  	= "https://subway-surfers.en.uptodown.com/android"
+# no apkmirror-dlurl: apkmirror 404s on every slug tried for this app
