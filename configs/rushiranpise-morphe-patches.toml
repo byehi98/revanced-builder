@@ -116,6 +116,16 @@ apkmirror-dlurl 	= "https://www.apkmirror.com/apk/oasis-feng/greenify/"
 apkpure-dlurl   	= "https://apkpure.net/greenify/com.oasisfeng.greenify"
 uptodown-dlurl  	= "https://greenify.en.uptodown.com/android"
 
+[Google-Photos-rushiranpise]
+patches-source  = "rushiranpise/morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "rushiranpise"
+apkeep-dlurl    	= "com.google.android.apps.photos"
+apkcombo-dlurl  	= "https://apkcombo.com/google-photos/com.google.android.apps.photos/"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/google-inc/photos/"
+apkpure-dlurl   	= "https://apkpure.net/google-photos/com.google.android.apps.photos"
+uptodown-dlurl  	= "https://google-photos.en.uptodown.com/android"
+
 [Killapps]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
