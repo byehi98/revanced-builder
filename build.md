@@ -1,24 +1,54 @@
 
-**7 apps built.**
+**19 apps built.**
   
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
+CLI: MorpheApp/morphe-desktop-1.18.0-all.jar  
+Patches: Akash-Sriram/patches-1.13.1.mpp  
+[Changelog](https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.13.1)
+
 CLI: MorpheApp/morphe-desktop-1.18.0-all.jar  
 Patches: binarymend/patches-1.3.1.mpp  
 [Changelog](https://github.com/binarymend/morphe-patches/releases/tag/v1.3.1)
 
 CLI: MorpheApp/morphe-desktop-1.18.0-all.jar  
-Patches: hxreborn/patches-1.39.0.mpp  
-[Changelog](https://github.com/hxreborn/morphe-patches/releases/tag/v1.39.0)
+Patches: byehi98/patches-1.37.0-dev.1.mpp  
+[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.37.0-dev.2)
 
 CLI: MorpheApp/morphe-desktop-1.18.0-all.jar  
-Patches: legendsciber/patches-1.35.0.mpp  
-[Changelog](https://github.com/legendsciber/morphe-patches/releases/tag/v1.35.1)
+Patches: byehi98/patches-1.37.0-dev.1.mpp  
+[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.37.0-dev.2)
 
 CLI: MorpheApp/morphe-desktop-1.18.0-all.jar  
-Patches: MorpheApp/patches-1.45.0.mpp  
-[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.45.0)
+Patches: byehi98/patches-1.37.0-dev.1.mpp  
+[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.37.0-dev.2)
 
+CLI: MorpheApp/morphe-desktop-1.18.0-all.jar  
+Patches: ethanm6/patches-1.4.3.mpp  
+[Changelog](https://github.com/ethanm6/letterboxd-stremio-morphe-patch/releases/tag/v1.4.3)
+
+CLI: MorpheApp/morphe-desktop-1.18.0-all.jar  
+Patches: heval99/patches-1.7.0.mpp  
+[Changelog](https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v1.7.0)
+
+CLI: MorpheApp/morphe-desktop-1.18.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.0-all.jar  
+Patches: legendsciber/patches-1.35.1.mpp  
+[Changelog](https://github.com/legendsciber/morphe-patches/releases/tag/v1.36.0)
+
+CLI: MorpheApp/morphe-desktop-1.18.0-all.jar  
+Patches: MorpheApp/patches-1.46.0-dev.1.mpp  
+[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.46.0-dev.1)
+
+CLI: MorpheApp/morphe-desktop-1.18.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.0-all.jar  
+Patches: RookieEnough/patches-1.5.0.mpp  
+[Changelog](https://github.com/RookieEnough/De-Vanced/releases/tag/v1.5.0)
+
+CLI: MorpheApp/morphe-desktop-1.18.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.0-all.jar  
 CLI: MorpheApp/morphe-desktop-1.18.0-all.jar  
 CLI: MorpheApp/morphe-desktop-1.18.0-all.jar  
 CLI: MorpheApp/morphe-desktop-1.18.0-all.jar  
@@ -26,8 +56,6 @@ CLI: MorpheApp/morphe-desktop-1.18.0-all.jar
 CLI: MorpheApp/morphe-desktop-1.18.0-all.jar    
 
 Skipped:  
-Google-Photos-Akash-Sriram: 7.94.0.984908898
-Patches: Akash-Sriram/patches-1.12.2.mpp  
 Opera-GX: latest  
 Patches: Alastor-Kaneki/patches-1.14.0.mpp  
 Telegram: 12.10.1  
@@ -61,16 +89,10 @@ Oddmar: latest
 Plants-vs-Zombies: latest  
 The-Battle-of-Polytopia: 2.17.3.16375  
 Zombie-Catchers: latest  
-Adobe-Photoshop-Mix: latest  
-Patches: RookieEnough/patches-1.4.4.mpp  
-Cricbuzz: 6.24.01  
-Google-News-RookieEnough: 5.167.0.974984811  
-Google-Photos: 7.92.0.977185651  
-Icon-Pack-Studio: 2.2  
-Irplus: latest  
-Letterboxd: latest  
-Photomath: latest  
-SoundCloud-RookieEnough: latest  
+Reddit-Morphe: 2026.24.0
+Patches: MorpheApp/patches-1.45.0.mpp  
+YouTube-Morphe: 21.16.256
+YouTube-Music-Morphe: 9.15.51  
 Advanced-Download-Manager: 14.0.39  
 Patches: arandomhooman/patches-1.53.0.mpp  
 FolderSync: 4.12.0  
@@ -96,8 +118,6 @@ Doodle-Jump: 3.11.40
 Dr-Driving: 1.73
 Earn-to-Die-2: 1.5.6
 Fancy-Pants: 1.0.30
-Freejobalert: 1.0.0
-Patches: byehi98/patches-1.36.2.mpp  
 HAAK: 1.4.3
 Hill-Climb-Racing: 1.72.2
 Injustice: 3.5.1
@@ -109,14 +129,12 @@ Missiles: 1.41
 Onlyone: 1.3045
 Plagueinc: 1.26.1
 Rodeo-Stampede: 4.25.0
-Smashit: 1.5.14
 Swift-Backup: 5.1.0
 Swordigo: 1.4.13
 Tentaclewars: 2.1.27
 Traffic-Racer: 4.0
 Traffic-Rider: 2.11
 Truecloud: 4.6.5.13
-Vector: 2.10.2  
 Minesweeper: 1.21.3  
 Patches: cesbar/patches-1.13.1.mpp  
 Solitaire: 1.20.3  
@@ -127,11 +145,6 @@ Brave-dh6k: 1.96.59
 Arrow-Puzzle: 1.7.0  
 Patches: durgesh0505/patches-1.23.1.mpp  
 Does-Not-Commute-chiggi: 1.5.5  
-Letterboxd-ethanm6: latest
-Patches: ethanm6/patches-1.4.2.mpp  
-AnyDesk: 9.0.0
-Patches: heval99/patches-1.5.0.mpp  
-AquaMail: 2.7.0
 AdGuard-hoo-dles: 4.14.2  
 Patches: hoo-dles/patches-1.46.0.mpp  
 CamScanner-hoo-dles: 7.20.0.2606230000  
@@ -144,6 +157,7 @@ WPS-Office: 18.24
 Wallcraft: 3.61.01  
 Cx-File-Explorer: 2.7.9
 Patches: hxreborn/patches-1.39.0.mpp  
+MovieBox-hxreborn: 4.0.03.0918.03
 ProtonVPN-hxreborn: 5.20.57.0
 Protonmail: 7.11.8
 Symfonium: 15.0.1
@@ -155,7 +169,6 @@ Patches: kiraio-moe/patches-1.3.0.mpp
 Camera: 5.4.0  
 Hidden-Settings: 7.34  
 iLovePDF: 4.0.1    
-Patches: legendsciber/patches-1.35.0.mpp  
 Letterboxd-mvaishak: latest
 Patches: mvaishak/patches-2.2.0.mpp  
 Chess-com: 4.10.0  
@@ -200,13 +213,25 @@ qBitConnect: 2.0.6
 Imgur: 7.34.0.0  
 Patches: sushruth/patches-1.0.0.mpp  
 Lemmy-Sync: latest  
-Patches: wchill/patches-1.4.0.mpp                
+Patches: wchill/patches-1.4.0.mpp                  
 
 ### Built versions  
-MovieBox-hxreborn: 4.0.03.0918.03
+Adobe-Photoshop-Mix: latest
+AnyDesk: latest
+AquaMail: 2.7.0
+Cricbuzz: 6.24.01
+Freejobalert: 1.0.0
+Google-News-RookieEnough: latest
+Google-Photos-Akash-Sriram: 7.95.0.989626323
+Google-Photos: 7.92.0.977185651
+Icon-Pack-Studio: 2.2
+Irplus: latest
+Letterboxd-ethanm6: latest
+Letterboxd: latest
+Photomath: latest
 Reddit-Morphe-Dev: 2026.39.0
-Reddit-Morphe: 2026.24.0
+Smashit: 1.5.14
+SoundCloud-RookieEnough: latest
+Vector: 2.10.2
 YouTube-Morphe-Dev: 21.39.522
-YouTube-Morphe: 21.16.256
-YouTube-Music-Morphe-Dev: 9.38.51
-YouTube-Music-Morphe: 9.15.51  
+YouTube-Music-Morphe-Dev: 9.39.52  
