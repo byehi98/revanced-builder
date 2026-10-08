@@ -9,7 +9,7 @@ Get the [latest CI release](https://github.com/j-hc/revanced-magisk-module/relea
 ## Build Status
 <!-- BUILD_STATUS_START -->
 <details>
-<summary><b>148 of 152 apps built</b> — click to expand the full list</summary>
+<summary><b>149 of 152 apps built</b> — click to expand the full list</summary>
 
 #### `Akash-Sriram/morphe-google-photos` · `patches-1.13.4.mpp`
 
@@ -61,7 +61,7 @@ Get the [latest CI release](https://github.com/j-hc/revanced-magisk-module/relea
 | `Medium` ([APK](https://github.com/byehi98/revanced-builder/releases/download/262/medium-bufferk-v4.5.1302097-all.apk)) | ✅ | [![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.medium.reader%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Medium%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22medium-bufferk%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%7D%22%7D) |
 | `Truecaller-bufferk` ([APK](https://github.com/byehi98/revanced-builder/releases/download/262/truecaller-bufferk-bufferk-v26.10.6-all.apk)) | ✅ | [![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.truecaller%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Truecaller-bufferk%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22truecaller-bufferk-bufferk%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%7D%22%7D) |
 
-#### `byehi98/okish-morphe-patches` · `patches-1.39.1.mpp`
+#### `byehi98/okish-morphe-patches` · `patches-1.40.0-dev.2.mpp`
 
 | App | Status | Obtainium |
 | :--- | :---: | :---: |
@@ -142,12 +142,12 @@ Get the [latest CI release](https://github.com/j-hc/revanced-magisk-module/relea
 | :--- | :---: | :---: |
 | `Letterboxd-ethanm6` ([APK](https://github.com/byehi98/revanced-builder/releases/download/277/letterboxd-ethanm6-ethanm6-vlatest-all.apk)) | ✅ | [![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.letterboxd.letterboxd%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Letterboxd-ethanm6%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22letterboxd-ethanm6-ethanm6%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%7D%22%7D) |
 
-#### `heval99/Heval-Morphe-Patches` · `patches-1.11.0.mpp`
+#### `heval99/Heval-Morphe-Patches` · `patches-1.12.0.mpp`
 
 | App | Status | Obtainium |
 | :--- | :---: | :---: |
-| `AnyDesk` ([APK](https://github.com/byehi98/revanced-builder/releases/download/284/anydesk-heval99-vlatest-all.apk)) | ✅ | [![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.anydesk.anydeskandroid%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22AnyDesk%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22anydesk-heval99%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%7D%22%7D) |
-| `AquaMail` ([APK](https://github.com/byehi98/revanced-builder/releases/download/284/aquamail-heval99-v2.7.0-all.apk)) | ✅ | [![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22org.kman.AquaMail%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22AquaMail%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22aquamail-heval99%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%7D%22%7D) |
+| `AnyDesk` ([APK](https://github.com/byehi98/revanced-builder/releases/download/285/anydesk-heval99-vlatest-all.apk)) | ✅ | [![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.anydesk.anydeskandroid%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22AnyDesk%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22anydesk-heval99%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%7D%22%7D) |
+| `AquaMail` ([APK](https://github.com/byehi98/revanced-builder/releases/download/285/aquamail-heval99-v2.7.0-all.apk)) | ✅ | [![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22org.kman.AquaMail%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22AquaMail%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22aquamail-heval99%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%7D%22%7D) |
 
 #### `hoo-dles/morphe-patches` · `patches-1.47.0.mpp`
 
@@ -194,11 +194,11 @@ Get the [latest CI release](https://github.com/j-hc/revanced-magisk-module/relea
 | `Hidden-Settings` ([APK](https://github.com/byehi98/revanced-builder/releases/download/262/hidden-settings-lain-v7.34-all.apk)) | ✅ | [![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.ceyhan.sets%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Hidden-Settings%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22hidden-settings-lain%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%7D%22%7D) |
 | `iLovePDF` ([APK](https://github.com/byehi98/revanced-builder/releases/download/262/ilovepdf-lain-v4.0.1-all.apk)) | ✅ | [![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.ilovepdf.www%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22iLovePDF%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22ilovepdf-lain%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%7D%22%7D) |
 
-#### `legendsciber/morphe-patches` · `patches-1.43.5.mpp`
+#### `legendsciber/morphe-patches` · `patches-1.43.6.mpp`
 
 | App | Status | Obtainium |
 | :--- | :---: | :---: |
-| `Subway-Surfers` | ❌ | [![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22app.revanced.builder.subway-surfers%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Subway-Surfers%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22subway-surfers-legendsciber%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%7D%22%7D) |
+| `Subway-Surfers` ([APK](https://github.com/byehi98/revanced-builder/releases/download/285/subway-surfers-legendsciber-v3.70.0-all.apk)) | ✅ | [![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.kiloo.subwaysurf%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Subway-Surfers%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22subway-surfers-legendsciber%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%7D%22%7D) |
 
 #### `MiguelNinja19/miguel-morphe-patches` · `patches-1.13.6.mpp`
 
