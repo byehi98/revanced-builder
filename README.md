@@ -9,7 +9,7 @@ Get the [latest CI release](https://github.com/j-hc/revanced-magisk-module/relea
 ## Build Status
 <!-- BUILD_STATUS_START -->
 <details>
-<summary><b>148 of 154 apps built</b> — click to expand the full list</summary>
+<summary><b>148 of 152 apps built</b> — click to expand the full list</summary>
 
 #### `Akash-Sriram/morphe-google-photos` · `patches-1.13.4.mpp`
 
@@ -45,12 +45,6 @@ Get the [latest CI release](https://github.com/j-hc/revanced-magisk-module/relea
 | `Automate` ([APK](https://github.com/byehi98/revanced-builder/releases/download/262/automate-xtra-v1.51.1-all.apk)) | ✅ | [![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.llamalab.automate%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Automate%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22automate-xtra%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%7D%22%7D) |
 | `Backdrops` ([APK](https://github.com/byehi98/revanced-builder/releases/download/262/backdrops-xtra-v6.1.2-all.apk)) | ✅ | [![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.backdrops.wallpapers%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Backdrops%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22backdrops-xtra%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%7D%22%7D) |
 | `Speedtest` ([APK](https://github.com/byehi98/revanced-builder/releases/download/262/speedtest-xtra-v7.0.4-all.apk)) | ✅ | [![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22org.zwanoo.android.speedtest%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Speedtest%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22speedtest-xtra%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%7D%22%7D) |
-
-#### `binarymend/morphe-patches` · `patches-1.3.1.mpp`
-
-| App | Status | Obtainium |
-| :--- | :---: | :---: |
-| `Truecaller-binarymend` | ❌ | [![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22app.revanced.builder.truecaller-binarymend%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Truecaller-binarymend%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22truecaller-binarymend-binarymend%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%7D%22%7D) |
 
 #### `BlazeFTL/FTL-Patches` · `patches-1.43.2.mpp`
 
@@ -178,7 +172,6 @@ Get the [latest CI release](https://github.com/j-hc/revanced-magisk-module/relea
 | `ProtonVPN-hxreborn` ([APK](https://github.com/byehi98/revanced-builder/releases/download/283/protonvpn-hxreborn-hxreborn-v5.20.57.0-all.apk)) | ✅ | [![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22ch.protonvpn.android%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22ProtonVPN-hxreborn%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22protonvpn-hxreborn-hxreborn%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%7D%22%7D) |
 | `Protonmail` ([APK](https://github.com/byehi98/revanced-builder/releases/download/283/protonmail-hxreborn-v7.11.9-all.apk)) | ✅ | [![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22ch.protonmail.android%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Protonmail%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22protonmail-hxreborn%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%7D%22%7D) |
 | `Symfonium` ([APK](https://github.com/byehi98/revanced-builder/releases/download/283/symfonium-hxreborn-v15.1.0-all.apk)) | ✅ | [![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22app.symfonik.music.player%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Symfonium%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22symfonium-hxreborn%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%7D%22%7D) |
-| `TeraBox-hxreborn` | ❌ | [![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.dubox.drive%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22TeraBox-hxreborn%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22terabox-hxreborn-hxreborn%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%7D%22%7D) |
 
 #### `IMXEren/mix-patches` · `patches-1.4.1.mpp`
 
