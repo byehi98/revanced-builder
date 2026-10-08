@@ -11,7 +11,7 @@
 patches-source  = "legendsciber/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "legendsciber"
-apkeep-dlurl    	= "com.kiloo.subwaysurf"
+# apkeep-dlurl    	= "com.kiloo.subwaysurf"
 apkcombo-dlurl  	= "https://apkcombo.com/subway-surfers/com.kiloo.subwaysurf/"
 apkpure-dlurl   	= "https://apkpure.net/subway-surfers/com.kiloo.subwaysurf"
 uptodown-dlurl  	= "https://subway-surfers.en.uptodown.com/android"

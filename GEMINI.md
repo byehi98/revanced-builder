@@ -55,6 +55,8 @@ Only keep sources that actually work for a given package. `apkpure` in particula
 
 ## Command Reference
 - `./build.sh`: Run the full build process.
+- `./build.sh [--app <table>]`: Build only the named app table(s). `--app` may be repeated, and a bare table name works in its place (`./build.sh Google-Photos-Akash-Sriram`). An explicit `--app` also builds an app whose table has `enabled = false`.
+- `./build.sh --list-apps`: Print every app table name found in the config.
 - `./build.sh clean`: Remove temporary and build directories.
 - `./build.sh <config.toml> --config-update`: Update the configuration file.
 - `bash build-termux.sh`: Specialized build script for Termux environments.

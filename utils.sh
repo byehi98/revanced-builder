@@ -293,9 +293,12 @@ config_update() {
 	local prcfg=false
 	for table_name in $(toml_get_table_names); do
 		if [ -z "$table_name" ]; then continue; fi
+		# `--app` narrows config_update to the selected app(s), like the build
+		# loop in build.sh; it also wins over `enabled = false`
+		if [ -n "${ONLY_APP-}" ] && ! grep -qxF -- "$table_name" <<<"$ONLY_APP"; then continue; fi
 		t=$(toml_get_table "$table_name")
 		enabled=$(toml_get "$t" enabled) || enabled=true
-		if [ "$enabled" = "false" ]; then
+		if [ "$enabled" = "false" ] && [ -z "${ONLY_APP-}" ]; then
 			grep -m1 "^${table_name}:" build.md >>"$TEMP_DIR"/skipped 2>/dev/null || true
 			continue
 		fi

@@ -7,21 +7,85 @@ source utils.sh
 
 trap "abort" INT
 
-if [ "${1-}" = "clean" ]; then
-	rm -r "$TEMP_DIR" "$BUILD_DIR" build.md
-	exit 0
-fi
+CONFIG_FILE=""
+ONLY_APP=""
+CONFIG_UPDATE=false
+LIST_APPS=false
+
+# -- CLI --
+# a positional argument is a config file when it looks like one (or exists),
+# otherwise it is an app table name, so both of these build one app:
+#   ./build.sh --app Google-Photos-Akash-Sriram
+#   ./build.sh Google-Photos-Akash-Sriram
+while (($#)); do
+	case "$1" in
+	clean)
+		rm -r "$TEMP_DIR" "$BUILD_DIR" build.md
+		exit 0
+		;;
+	--config-update) CONFIG_UPDATE=true ;;
+	--list-apps) LIST_APPS=true ;;
+	--app)
+		shift
+		[ $# -gt 0 ] || abort "'--app' needs an app table name"
+		case "$1" in -*) abort "'--app' needs an app table name" ;; esac
+		ONLY_APP+="${ONLY_APP:+$'\n'}$1"
+		;;
+	--app=?*)
+		ONLY_APP+="${ONLY_APP:+$'\n'}${1#--app=}"
+		;;
+	--app=)
+		abort "'--app' needs an app table name"
+		;;
+	-*)
+		abort "unknown option '$1'\n\tUsage: $0 [config.toml] [--app <table>] [--list-apps] [--config-update]"
+		;;
+	*)
+		if [ -f "$1" ] || [[ "$1" == */* || "$1" == *.toml || "$1" == *.json ]]; then
+			[ -z "$CONFIG_FILE" ] || abort "unexpected argument '$1'"
+			CONFIG_FILE=$1
+		else
+			ONLY_APP+="${ONLY_APP:+$'\n'}$1"
+		fi
+		;;
+	esac
+	shift
+done
 
 jq --version >/dev/null || abort "\`jq\` is not installed. install it with 'apt install jq' or equivalent"
-java --version >/dev/null || abort "\`openjdk 21\` is not installed. install it with 'apt install openjdk-21-jre' or equivalent"
-zip --version >/dev/null || abort "\`zip\` is not installed. install it with 'apt install zip' or equivalent"
 
 set_prebuilts
 
 vtf() { if ! isoneof "${1}" "true" "false"; then abort "ERROR: '${1}' is not a valid option for '${2}': only true or false is allowed"; fi; }
 
 # -- Main config --
-toml_prep "${1:-config.toml}" || abort "could not find config file '${1:-config.toml}'\n\tUsage: $0 <config.toml>"
+toml_prep "${CONFIG_FILE:-config.toml}" || abort "could not find config file '${CONFIG_FILE:-config.toml}'\n\tUsage: $0 [config.toml] [--app <table>] [--list-apps] [--config-update]"
+
+if $LIST_APPS; then
+	toml_get_table_names
+	exit 0
+fi
+
+# a requested app must exist in the config, otherwise nothing would be built
+if [ -n "$ONLY_APP" ]; then
+	app_bad=0
+	while IFS= read -r app_name; do
+		[ -n "$app_name" ] || continue
+		if ! jq -e --arg k "$app_name" '(.[$k] | type) == "object"' <<<"$__TOML__" >/dev/null; then
+			epr "no app table named '$app_name' in '${CONFIG_FILE:-config.toml}'"
+			similar=$(jq -r --arg k "$app_name" 'to_entries[] | select(.value | type == "object") | .key | select(ascii_downcase | contains($k | ascii_downcase))' <<<"$__TOML__") || :
+			if [ -n "$similar" ]; then epr "did you mean:\n$similar"; fi
+			app_bad=1
+		fi
+	done <<<"$ONLY_APP"
+	if ((app_bad)); then
+		abort "run '$0 --list-apps' to see every app table name"
+	fi
+fi
+
+java --version >/dev/null || abort "\`openjdk 21\` is not installed. install it with 'apt install openjdk-21-jre' or equivalent"
+zip --version >/dev/null || abort "\`zip\` is not installed. install it with 'apt install zip' or equivalent"
+
 main_config_t=$(toml_get_table_main)
 COMPRESSION_LEVEL=$(toml_get "$main_config_t" compression-level) || COMPRESSION_LEVEL="9"
 if ! PARALLEL_JOBS=$(toml_get "$main_config_t" parallel-jobs); then
@@ -35,7 +99,7 @@ DEF_CLI_SRC=$(toml_get "$main_config_t" cli-sources) || DEF_CLI_SRC=$(toml_get "
 DEF_RV_BRAND=$(toml_get "$main_config_t" rv-brand) || DEF_RV_BRAND="ReVanced"
 mkdir -p "$TEMP_DIR" "$BUILD_DIR"
 
-if [ "${2-}" = "--config-update" ]; then
+if $CONFIG_UPDATE; then
 	config_update
 	exit 0
 fi
@@ -62,10 +126,15 @@ gh_dl "${MODULE_TEMPLATE_DIR}/bin/x64/cmpr" "https://github.com/j-hc/cmpr/releas
 idx=0
 for table_name in $(toml_get_table_names); do
 	if [ -z "$table_name" ]; then continue; fi
+	if [ -n "$ONLY_APP" ] && ! grep -qxF -- "$table_name" <<<"$ONLY_APP"; then continue; fi
 	t=$(toml_get_table "$table_name")
 	enabled=$(toml_get "$t" enabled) || enabled=true
 	vtf "$enabled" "enabled"
-	if [ "$enabled" = false ]; then continue; fi
+	if [ "$enabled" = false ]; then
+		# --app is an explicit request, so it wins over `enabled = false`
+		[ -n "$ONLY_APP" ] || continue
+		wpr "'$table_name' is disabled in the config, building it anyway (--app)"
+	fi
 	if ((idx >= PARALLEL_JOBS)); then
 		wait -n || true
 		idx=$((idx - 1))
