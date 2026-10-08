@@ -1,12 +1,8 @@
 
-**4 apps built.**
+**3 apps built.**
   
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
-CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
-Patches: binarymend/patches-1.3.1.mpp  
-[Changelog](https://github.com/binarymend/morphe-patches/releases/tag/v1.3.1)
-
 CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
 Patches: byehi98/patches-1.39.1.mpp  
 [Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.39.1)
@@ -17,25 +13,13 @@ Patches: byehi98/patches-1.40.0-dev.2.mpp
 [Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.40.0-dev.3)
 
 CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
-Patches: byehi98/patches-1.40.0-dev.2.mpp  
-[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.40.0-dev.3)
-
-CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
-Patches: byehi98/patches-1.40.0-dev.2.mpp  
-[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.40.0-dev.3)
-
-CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
-Patches: heval99/patches-1.11.0.mpp  
-[Changelog](https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v1.11.0)
+Patches: heval99/patches-1.12.0.mpp  
+[Changelog](https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v1.12.0)
 
 CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
 CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
-Patches: hxreborn/patches-1.44.0.mpp  
-[Changelog](https://github.com/hxreborn/morphe-patches/releases/tag/v1.44.0)
-
-CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
-Patches: legendsciber/patches-1.43.5.mpp  
-[Changelog](https://github.com/legendsciber/morphe-patches/releases/tag/v1.43.6)  
+Patches: legendsciber/patches-1.43.6.mpp  
+[Changelog](https://github.com/legendsciber/morphe-patches/releases/tag/v1.43.7)  
 
 Skipped:  
 Google-Photos-Akash-Sriram: 7.95.0.989626323
@@ -96,7 +80,6 @@ Patches: arandomhooman/patches-1.53.0.mpp
 FolderSync: 4.12.0  
 Microsoft-SwiftKey: 9.13.13.5  
 Poweramp: build-1025-bundle-play  
-Patches: binarymend/patches-1.3.1.mpp  
 Brave-Bufferk: 1.92.140  
 Patches: bufferk/patches-1.8.0.mpp  
 Medium: 4.5.1302097  
@@ -114,6 +97,8 @@ Doodle-Jump: 3.11.40
 Dr-Driving: 1.73
 Earn-to-Die-2: 1.5.6
 Fancy-Pants: 1.0.30
+Freejobalert: 1.0.0
+Patches: byehi98/patches-1.40.0-dev.2.mpp  
 HAAK: 1.4.3
 Hill-Climb-Racing: 1.72.2
 Injustice: 3.5.1
@@ -125,6 +110,7 @@ Missiles: 1.41
 Onlyone: 1.3050
 Plagueinc: 1.26.1
 Rodeo-Stampede: 4.25.0
+Smashit: 1.5.14  
 Swift-Backup: 5.1.0
 Swordigo: 1.4.13
 Tentaclewars: 2.1.27
@@ -166,7 +152,6 @@ Patches: kiraio-moe/patches-1.3.0.mpp
 Camera: 5.4.0  
 Hidden-Settings: 7.34  
 iLovePDF: 4.0.1    
-Patches: legendsciber/patches-1.43.5.mpp  
 Letterboxd-mvaishak: latest
 Patches: mvaishak/patches-2.2.0.mpp  
 Chess-com: 4.10.0  
@@ -211,10 +196,9 @@ qBitConnect: 2.0.6
 Imgur: 7.34.0.0  
 Patches: sushruth/patches-1.0.0.mpp  
 Lemmy-Sync: latest  
-Patches: wchill/patches-1.4.0.mpp                                
+Patches: wchill/patches-1.4.0.mpp                                  
 
 ### Built versions  
 AnyDesk: latest
 AquaMail: 2.7.0
-Freejobalert: 1.0.0
-Smashit: 1.5.14  
+Subway-Surfers: 3.70.0  
