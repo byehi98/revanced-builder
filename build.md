@@ -1,25 +1,42 @@
 
-**6 apps built.**
+**10 apps built.**
   
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
 CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
-Patches: Akash-Sriram/patches-1.14.4.mpp  
-[Changelog](https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.14.4)
+Patches: byehi98/patches-1.44.0-dev.3.mpp  
+[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.44.0-dev.4)
 
 CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
-Patches: BlazeFTL/patches-1.43.3.mpp  
-[Changelog](https://github.com/BlazeFTL/FTL-Patches/releases/tag/v1.43.3)
+Patches: byehi98/patches-1.44.0-dev.3.mpp  
+[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.44.0-dev.4)
+
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+Patches: byehi98/patches-1.44.0-dev.3.mpp  
+[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.44.0-dev.4)
+
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+Patches: hxreborn/patches-1.49.1.mpp  
+[Changelog](https://github.com/hxreborn/morphe-patches/releases/tag/v1.49.1)
 
 CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
 CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
-Patches: MorpheApp/patches-1.48.0-dev.4.mpp  
-[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.48.0-dev.4)
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+Patches: legendsciber/patches-1.45.0.mpp  
+[Changelog](https://github.com/legendsciber/morphe-patches/releases/tag/v1.46.0)
+
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+Patches: MorpheApp/patches-1.48.0-dev.6.mpp  
+[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.48.0-dev.6)
 
 CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
 CLI: MorpheApp/morphe-desktop-1.18.1-all.jar    
 
 Skipped:  
+Google-Photos-Akash-Sriram: 7.96.0.993165104
+Patches: Akash-Sriram/patches-1.14.4.mpp  
 Opera-GX: latest  
 Patches: Alastor-Kaneki/patches-1.14.0.mpp  
 Telegram: 12.10.1  
@@ -29,6 +46,9 @@ Patches: BholeyKaBhakt/patches-2.12.0.mpp
 Backdrops: 6.1.2  
 Patches: BholeyKaBhakt/patches-2.12.0.mpp  
 Speedtest: 7.0.4  
+All-Video-Downloader-and-Ace-Player: 1.9.8
+Patches: BlazeFTL/patches-1.43.3.mpp  
+RS-File-Manager-BlazeFTL: latest
 Arm-Workout: 2.4.3  
 Patches: Entree3k/patches-1.22.0.mpp  
 Does-Not-Commute-Entree3k: 1.5.5  
@@ -88,8 +108,6 @@ Doodle-Jump: 3.11.40
 Dr-Driving: 1.73
 Earn-to-Die-2: 1.5.6
 Fancy-Pants: 1.0.30
-Freejobalert: 1.0.0
-Patches: byehi98/patches-1.43.0.mpp  
 HAAK: 1.4.3
 Hill-Climb-Racing: 1.72.2
 Injustice: 3.5.1
@@ -101,14 +119,12 @@ Missiles: 1.41
 Onlyone: 1.3050
 Plagueinc: 1.26.1
 Rodeo-Stampede: 4.25.0
-Smashit: 1.5.14
 Swift-Backup: 5.1.0
 Swordigo: 1.4.13
 Tentaclewars: 2.1.27
 Traffic-Racer: 4.0
 Traffic-Rider: 2.11
 Truecloud: 4.6.5.13
-Vector: 2.10.2
 Minesweeper: 1.21.3  
 Patches: cesbar/patches-1.13.1.mpp  
 Solitaire: 1.20.3  
@@ -134,12 +150,6 @@ Showly: 3.70.0
 Solid-Explorer: 3.6.1
 WPS-Office: 18.24
 Wallcraft: 3.61.01
-Cx-File-Explorer: 2.8.1
-Patches: hxreborn/patches-1.48.0.mpp  
-MovieBox-hxreborn: 4.0.03.0918.03
-ProtonVPN-hxreborn: 5.20.57.0
-Protonmail: 7.11.10
-Symfonium: 15.1.0  
 Reddit-Adobo: 2026.41.0
 Patches: jkennethcarino/patches-1.6.0-dev.5.mpp  
 AudioRelay: 0.26.1  
@@ -147,8 +157,6 @@ Patches: kiraio-moe/patches-1.3.0.mpp
 Camera: 5.4.0  
 Hidden-Settings: 7.34  
 iLovePDF: 4.0.1    
-Subway-Surfers: 3.70.0
-Patches: legendsciber/patches-1.44.2.mpp  
 Letterboxd-mvaishak: latest
 Patches: mvaishak/patches-2.2.0.mpp  
 Chess-com: 4.10.0  
@@ -193,12 +201,16 @@ qBitConnect: 2.0.6
 Imgur: 7.34.0.0  
 Patches: sushruth/patches-1.0.0.mpp  
 Lemmy-Sync: latest  
-Patches: wchill/patches-1.4.0.mpp                                              
+Patches: wchill/patches-1.4.0.mpp                                                
 
 ### Built versions  
-All-Video-Downloader-and-Ace-Player: 1.9.8
-Google-Photos-Akash-Sriram: 7.96.0.993165104
-RS-File-Manager-BlazeFTL: latest
+Cx-File-Explorer: 2.8.1
+Freejobalert: 1.0.0
+ProtonVPN-hxreborn: 5.20.57.0
+Protonmail: 7.11.10
 Reddit-Morphe-Dev: 2026.41.0
+Smashit: 1.5.14
+Symfonium: 15.1.0
+Vector: 2.10.2
 YouTube-Morphe-Dev: 21.41.525
 YouTube-Music-Morphe-Dev: 9.41.52  
