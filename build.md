@@ -1,36 +1,105 @@
 
-**10 apps built.**
+**81 apps built.**
   
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
 CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
-Patches: byehi98/patches-1.44.0-dev.3.mpp  
-[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.44.0-dev.4)
-
-CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
-Patches: byehi98/patches-1.44.0-dev.3.mpp  
-[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.44.0-dev.4)
-
-CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
-Patches: byehi98/patches-1.44.0-dev.3.mpp  
-[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.44.0-dev.4)
-
-CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
-Patches: hxreborn/patches-1.49.1.mpp  
-[Changelog](https://github.com/hxreborn/morphe-patches/releases/tag/v1.49.1)
+Patches: byehi98/patches-1.44.0.mpp  
+[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.44.0)
 
 CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
 CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
 CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
 CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
 CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
-Patches: legendsciber/patches-1.45.0.mpp  
-[Changelog](https://github.com/legendsciber/morphe-patches/releases/tag/v1.46.0)
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+Patches: heval99/patches-1.14.0.mpp  
+[Changelog](https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v1.14.0)
 
 CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
-Patches: MorpheApp/patches-1.48.0-dev.6.mpp  
-[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.48.0-dev.6)
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+Patches: hxreborn/patches-1.51.0.mpp  
+[Changelog](https://github.com/hxreborn/morphe-patches/releases/tag/v1.51.0)
 
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+Patches: legendsciber/patches-1.48.0.mpp  
+[Changelog](https://github.com/legendsciber/morphe-patches/releases/tag/v1.49.0)
+
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+Patches: MorpheApp/patches-1.48.0-dev.7.mpp  
+[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.48.0-dev.7)
+
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+Patches: rushiranpise/patches-1.23.0.mpp  
+[Changelog](https://github.com/rushiranpise/morphe-patches/releases/tag/v1.23.0)
+
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
 CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
 CLI: MorpheApp/morphe-desktop-1.18.1-all.jar    
 
@@ -93,38 +162,6 @@ Brave-Bufferk: 1.92.140
 Patches: bufferk/patches-1.8.0.mpp  
 Medium: 4.5.1302097  
 Truecaller-bufferk: 26.10.6  
-Adda247: 12.7.8
-Patches: byehi98/patches-1.43.0.mpp  
-Aliens-Drive-Me-Crazy: 3.2.10
-Alto-Adventure: 1.8.27
-Alto-Odyssey: 1.0.42
-Big-Hunter: 3.1.2
-Burrito-Bison: 3.75
-Crossy-Road: 7.13.2
-Dan-The-Man: 1.14.05
-Dead-Trigger: 2.3.4
-Document-Scanner: 6.9.9
-Doodle-Jump: 3.11.40
-Dr-Driving: 1.73
-Earn-to-Die-2: 1.5.6
-Fancy-Pants: 1.0.30
-HAAK: 1.4.3
-Hill-Climb-Racing: 1.72.2
-Injustice: 3.5.1
-Into-The-Dead: 2.9.5
-Into-The-Dead-2: 1.87.1
-Jetpack-Joyride: 1.104.1
-Lumina-Walls: 1.0.2.6
-Missiles: 1.41
-Onlyone: 1.3050
-Plagueinc: 1.26.1
-Rodeo-Stampede: 4.25.0
-Swift-Backup: 5.1.0
-Swordigo: 1.4.13
-Tentaclewars: 2.1.27
-Traffic-Racer: 4.0
-Traffic-Rider: 2.11
-Truecloud: 4.6.5.13
 Minesweeper: 1.21.3  
 Patches: cesbar/patches-1.13.1.mpp  
 Solitaire: 1.20.3  
@@ -137,9 +174,6 @@ Patches: durgesh0505/patches-1.23.1.mpp
 Does-Not-Commute-chiggi: 1.5.5  
 Letterboxd-ethanm6: latest
 Patches: ethanm6/patches-1.4.3.mpp  
-AnyDesk: latest
-Patches: heval99/patches-1.13.0.mpp  
-AquaMail: 2.7.0
 AdGuard-hoo-dles: 4.14.2
 Patches: hoo-dles/patches-1.47.0.mpp  
 CamScanner-hoo-dles: 7.20.0.2606230000
@@ -161,56 +195,90 @@ Letterboxd-mvaishak: latest
 Patches: mvaishak/patches-2.2.0.mpp  
 Chess-com: 4.10.0  
 Patches: prathxmOp/patches-1.15.0.mpp  
-AccuBattery: 2.1.8  
-Patches: rushiranpise/patches-1.22.0.mpp  
-Accuweather: 21.1.15-3-rc  
-AdGuard-rushiranpise: 4.14.68  
-Amoledpix: 7.3  
-Apkmirror-Installer: 2.0.3  
-Block-Blast: 10.4.5  
-Block-Puzzle: 6.1  
-CamScanner-rushiranpise: 7.24.5.2608200000  
-Charge-Meter: 3.0.1  
-Cloudflare-Warp: 6.38.9  
-Dailyhunt: 34.0.4  
-Google-Photos-rushiranpise: 7.92.0.977185651
-Greenify: 5.1.1  
-Killapps: 1.58.0  
-M-Indicator: 18.0.365  
-MacroDroid-rushiranpise: 5.66.9
-Mega: 16.12(262370820)(dcdf0a7f27)  
-MobiOffice: 16.5.60515  
-MyAnimeList: 2.3.16
-NYT-Crossword: 6.41.0  
-NZB360: 24.4.1  
-Octi: 1.2.2-rc0  
-Opera-News: 14.2.2254.84245  
-Parallel-Space-Pro: 4.0.9159  
-Playit: 2.7.50.12  
-ProtonVPN-Rushiranpise: 5.19.78.0  
-Psiphon: 486  
-RAR: 7.23.build134
-RS-File-Manager: 2.3.0.4  
-Send-Files-To-TV: 1.4.22  
-Server-Auditor: 7.9.0  
-TeraBox: latest  
-Torrent-Search: 2.3.3  
-Unimote: 1.8.1  
-Yatri: 5.0.6  
-qBitConnect: 2.0.6                                    
 Imgur: 7.34.0.0  
 Patches: sushruth/patches-1.0.0.mpp  
 Lemmy-Sync: latest  
-Patches: wchill/patches-1.4.0.mpp                                                
+Patches: wchill/patches-1.4.0.mpp                                                  
 
 ### Built versions  
+AccuBattery: 2.1.8
+Accuweather: 21.1.15-3-rc
+AdGuard-rushiranpise: 4.14.68
+Adda247: 12.7.8
+Aliens-Drive-Me-Crazy: 3.2.10
+Alto-Adventure: 1.8.27
+Alto-Odyssey: 1.0.42
+Amoledpix: 7.3
+AnyDesk: latest
+Apkmirror-Installer: 2.0.3
+AquaMail: 2.7.0
+Big-Hunter: 3.1.2
+Block-Blast: 10.4.5
+Block-Puzzle: 6.1
+Burrito-Bison: 3.75
+CamScanner-rushiranpise: 7.24.5.2608200000
+Charge-Meter: 3.0.1
+Cloudflare-Warp: 6.38.9
+Crossy-Road: 7.13.2
 Cx-File-Explorer: 2.8.1
+Dailyhunt: 34.0.4
+Dan-The-Man: 1.14.05
+Dead-Trigger: 2.3.4
+Document-Scanner: 6.9.9
+Doodle-Jump: 3.11.40
+Dr-Driving: 1.73
+Earn-to-Die-2: 1.5.6
+Fancy-Pants: 1.0.30
 Freejobalert: 1.0.0
+Google-Photos-rushiranpise: 7.97.0.997578476
+Greenify: 5.1.1
+HAAK: 1.4.3
+Hill-Climb-Racing: 1.72.2
+Injustice: 3.5.1
+Into-The-Dead-2: 1.87.1
+Into-The-Dead: 2.9.5
+Jetpack-Joyride: 1.104.1
+Killapps: 1.58.0
+Lumina-Walls: 1.0.2.6
+M-Indicator: 18.0.365
+MacroDroid-rushiranpise: 5.66.9
+Mega: 16.12(262370820)(dcdf0a7f27)
+Missiles: 1.41
+MobiOffice: 16.5.60515
+MovieBox-hxreborn: 4.0.03.0918.03
+MyAnimeList: 2.3.16
+NYT-Crossword: 6.41.0
+NZB360: 25.2
+Octi: 1.3.0-rc0
+Onlyone: 1.3052
+Opera-News: 14.4.2254.84848
+Parallel-Space-Pro: 4.0.9159
+Plagueinc: 1.26.1
+Playit: 2.7.50.12
+ProtonVPN-Rushiranpise: 5.19.78.0
 ProtonVPN-hxreborn: 5.20.57.0
 Protonmail: 7.11.10
+Psiphon: 486
+RAR: 7.23.build134
+RS-File-Manager: 2.3.0.4
 Reddit-Morphe-Dev: 2026.41.0
+Rodeo-Stampede: 4.25.0
+Send-Files-To-TV: 1.4.22
+Server-Auditor: 7.11.2
 Smashit: 1.5.14
+Subway-Surfers: 3.70.0
+Swift-Backup: 5.1.0
+Swordigo: 1.4.13
 Symfonium: 15.1.0
+Tentaclewars: 2.1.27
+TeraBox: latest
+Torrent-Search: 2.3.3
+Traffic-Racer: 4.0
+Traffic-Rider: 2.11
+Truecloud: 4.6.5.13
+Unimote: 1.8.1
 Vector: 2.10.2
+Yatri: 5.0.6
 YouTube-Morphe-Dev: 21.41.525
-YouTube-Music-Morphe-Dev: 9.41.52  
+YouTube-Music-Morphe-Dev: 9.41.52
+qBitConnect: 2.0.6  
