@@ -298,6 +298,17 @@ apkcombo-dlurl 	= "https://apkcombo.com/smash-hit/com.mediocre.smashhit/"
 gplaydl-dlurl 	= "com.mediocre.smashhit"
 uptodown-dlurl 	= "https://smash-hit.en.uptodown.com/android"
 
+[Swamp-Attack]
+patches-source  = "byehi98/okish-morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "okish"
+apkeep-dlurl 	= "com.outfit7.movingeye.swampattack"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/moving-eye/swamp-attack/"
+apkpure-dlurl 	= "https://apkpure.net/swamp-attack/com.outfit7.movingeye.swampattack"
+uptodown-dlurl 	= "https://swamp-attack.en.uptodown.com/android"
+# no apkcombo-dlurl: apkcombo has been failing for days, do not rely on it
+# no gplaydl-dlurl: not needed, apkmirror already serves every supported version
+
 [Swordigo]
 patches-source  = "byehi98/okish-morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
