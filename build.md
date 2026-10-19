@@ -1,16 +1,18 @@
 
-**2 apps built.**
+**3 apps built.**
   
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
 CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
-Patches: heval99/patches-1.17.0.mpp  
-[Changelog](https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v1.17.0)
+Patches: legendsciber/patches-1.51.0.mpp  
+[Changelog](https://github.com/legendsciber/morphe-patches/releases/tag/v1.52.0)
 
 CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+Patches: MorpheApp/patches-1.48.0-dev.13.mpp  
+[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.48.0-dev.13)
+
 CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
-Patches: legendsciber/patches-1.51.0.mpp  
-[Changelog](https://github.com/legendsciber/morphe-patches/releases/tag/v1.52.0)  
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar    
 
 Skipped:  
 Google-Photos-Akash-Sriram: 7.97.0.997578476
@@ -50,12 +52,8 @@ The-Battle-of-Polytopia: 2.17.3.16375
 Zombie-Catchers: latest  
 Reddit-Morphe: 2026.24.0
 Patches: MorpheApp/patches-1.47.0.mpp  
-Reddit-Morphe-Dev: 2026.42.0
-Patches: MorpheApp/patches-1.48.0-dev.12.mpp  
 YouTube-Morphe: 21.20.405
-YouTube-Morphe-Dev: 21.42.241
 YouTube-Music-Morphe: 9.20.53  
-YouTube-Music-Morphe-Dev: 9.41.52  
 Adobe-Photoshop-Mix: latest
 Patches: RookieEnough/patches-1.5.1.mpp  
 Cricbuzz: 6.24.01
@@ -126,6 +124,9 @@ Patches: durgesh0505/patches-1.25.0.mpp
 Does-Not-Commute-chiggi: 1.5.5
 Letterboxd-ethanm6: latest
 Patches: ethanm6/patches-1.4.4.mpp  
+AnyDesk: latest
+Patches: heval99/patches-1.17.0.mpp  
+AquaMail: 2.7.0  
 AdGuard-hoo-dles: 4.14.2
 Patches: hoo-dles/patches-1.47.0.mpp  
 CamScanner-hoo-dles: 7.20.0.2606230000
@@ -195,8 +196,9 @@ qBitConnect: 2.0.6
 Imgur: 7.34.0.0  
 Patches: sushruth/patches-1.0.0.mpp  
 Lemmy-Sync: latest  
-Patches: wchill/patches-1.4.0.mpp                                                                
+Patches: wchill/patches-1.4.0.mpp                                                                  
 
 ### Built versions  
-AnyDesk: latest
-AquaMail: 2.7.0  
+Reddit-Morphe-Dev: 2026.42.0
+YouTube-Morphe-Dev: 21.42.241
+YouTube-Music-Morphe-Dev: 9.41.52  
