@@ -1,18 +1,19 @@
 
-**3 apps built.**
+**4 apps built.**
   
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
 CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+Patches: hxreborn/patches-1.56.0.mpp  
+[Changelog](https://github.com/hxreborn/morphe-patches/releases/tag/v1.56.0)
+
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
 Patches: legendsciber/patches-1.51.0.mpp  
-[Changelog](https://github.com/legendsciber/morphe-patches/releases/tag/v1.52.0)
-
-CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
-Patches: MorpheApp/patches-1.48.0-dev.13.mpp  
-[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.48.0-dev.13)
-
-CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
-CLI: MorpheApp/morphe-desktop-1.18.1-all.jar    
+[Changelog](https://github.com/legendsciber/morphe-patches/releases/tag/v1.52.0)  
 
 Skipped:  
 Google-Photos-Akash-Sriram: 7.97.0.997578476
@@ -52,8 +53,12 @@ The-Battle-of-Polytopia: 2.17.3.16375
 Zombie-Catchers: latest  
 Reddit-Morphe: 2026.24.0
 Patches: MorpheApp/patches-1.47.0.mpp  
+Reddit-Morphe-Dev: 2026.42.0
+Patches: MorpheApp/patches-1.48.0-dev.13.mpp  
 YouTube-Morphe: 21.20.405
+YouTube-Morphe-Dev: 21.42.241
 YouTube-Music-Morphe: 9.20.53  
+YouTube-Music-Morphe-Dev: 9.41.52  
 Adobe-Photoshop-Mix: latest
 Patches: RookieEnough/patches-1.5.1.mpp  
 Cricbuzz: 6.24.01
@@ -137,12 +142,6 @@ Showly: 3.70.0
 Solid-Explorer: 3.6.1
 WPS-Office: 18.24
 Wallcraft: 3.61.01
-Cx-File-Explorer: 2.8.1
-Patches: hxreborn/patches-1.55.0.mpp  
-MovieBox-hxreborn: 4.0.03.0918.03
-ProtonVPN-hxreborn: 5.20.74.0
-Protonmail: 7.11.10
-Symfonium: 15.1.0
 Reddit-Adobo: 2026.42.0  
 Patches: jkennethcarino/patches-1.6.0.mpp  
 AudioRelay: 0.26.1  
@@ -196,9 +195,10 @@ qBitConnect: 2.0.6
 Imgur: 7.34.0.0  
 Patches: sushruth/patches-1.0.0.mpp  
 Lemmy-Sync: latest  
-Patches: wchill/patches-1.4.0.mpp                                                                  
+Patches: wchill/patches-1.4.0.mpp                                                                    
 
 ### Built versions  
-Reddit-Morphe-Dev: 2026.42.0
-YouTube-Morphe-Dev: 21.42.241
-YouTube-Music-Morphe-Dev: 9.41.52  
+Cx-File-Explorer: 2.8.1
+MovieBox-hxreborn: 4.0.03.0918.03
+Protonmail: 7.11.10
+Symfonium: 15.1.0  
