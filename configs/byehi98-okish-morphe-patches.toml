@@ -78,6 +78,17 @@ apkcombo-dlurl 	= "https://apkcombo.com/crossy-road/com.yodo1.crossyroad/"
 gplaydl-dlurl 	= "com.yodo1.crossyroad"
 uptodown-dlurl 	= "https://crossy-road.en.uptodown.com/android"
 
+[Crash-of-Cars]
+patches-source  = "byehi98/okish-morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "okish"
+apkeep-dlurl 	= "com.notdoppler.crashofcars"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/not-doppler/crash-of-cars/"
+apkpure-dlurl 	= "https://apkpure.net/crash-of-cars/com.notdoppler.crashofcars"
+uptodown-dlurl 	= "https://crash-of-cars.en.uptodown.com/android"
+# no apkcombo-dlurl: apkcombo has been failing for days, do not rely on it
+# no gplaydl-dlurl: not needed, apkmirror already serves every supported version
+
 [Dan-The-Man]
 patches-source  = "byehi98/okish-morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
@@ -265,6 +276,19 @@ apkcombo-dlurl 	= "https://apkcombo.com/plague-inc/com.miniclip.plagueinc/"
 gplaydl-dlurl 	= "com.miniclip.plagueinc"
 uptodown-dlurl 	= "https://plague-inc.en.uptodown.com/android"
 
+[Plants-vs-Zombies-Free]
+patches-source  = "byehi98/okish-morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "okish"
+# only in the dev branch, not in a stable release yet
+patches-version = "dev"
+apkeep-dlurl 	= "com.ea.game.pvzfree_row"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/electronic-arts/plants-vs-zombies-free/"
+apkpure-dlurl 	= "https://apkpure.net/plants-vs-zombies-free/com.ea.game.pvzfree_row"
+uptodown-dlurl 	= "https://plants-vs-zombies-free.en.uptodown.com/android"
+# no apkcombo-dlurl: apkcombo has been failing for days, do not rely on it
+# no gplaydl-dlurl: not needed, apkmirror already serves every supported version
+
 # [Prince-of-Persia-Lost-Crown]
 # patches-source  = "byehi98/okish-morphe-patches"
 # cli-source      = "MorpheApp/morphe-cli"
@@ -374,6 +398,19 @@ apkeep-dlurl 	= "com.generalcomp.truecloud"
 apkpure-dlurl 	= "https://apkpure.net/true-cloud/com.generalcomp.truecloud"
 apkcombo-dlurl 	= "https://apkcombo.com/truecloud/com.generalcomp.truecloud/"
 gplaydl-dlurl 	= "com.generalcomp.truecloud"
+
+[Vita-Mahjong]
+patches-source  = "byehi98/okish-morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "okish"
+# only in the dev branch, not in a stable release yet
+patches-version = "dev"
+apkeep-dlurl 	= "com.vitastudio.mahjong"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/vita-studio/vita-mahjong/"
+apkpure-dlurl 	= "https://apkpure.net/vita-mahjong/com.vitastudio.mahjong"
+uptodown-dlurl 	= "https://vita-mahjong.en.uptodown.com/android"
+# no apkcombo-dlurl: apkcombo has been failing for days, do not rely on it
+# no gplaydl-dlurl: not needed, apkmirror already serves every supported version
 
 [Vector]
 patches-source  = "byehi98/okish-morphe-patches"
