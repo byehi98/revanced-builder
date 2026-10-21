@@ -1,27 +1,27 @@
 
-**5 apps built.**
+**8 apps built.**
   
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
 CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
-Patches: byehi98/patches-1.46.0-dev.2.mpp  
-[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.46.0-dev.3)
+Patches: byehi98/patches-1.46.0-dev.5.mpp  
+[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.46.0-dev.6)
 
 CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
-Patches: byehi98/patches-1.46.0-dev.2.mpp  
-[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.46.0-dev.3)
+Patches: byehi98/patches-1.46.0-dev.5.mpp  
+[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.46.0-dev.6)
 
 CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
-Patches: byehi98/patches-1.46.0-dev.2.mpp  
-[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.46.0-dev.3)
+Patches: byehi98/patches-1.46.0-dev.5.mpp  
+[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.46.0-dev.6)
 
 CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
-Patches: byehi98/patches-1.46.0-dev.2.mpp  
-[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.46.0-dev.3)
+Patches: byehi98/patches-1.46.0-dev.5.mpp  
+[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.46.0-dev.6)
 
 CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
-Patches: byehi98/patches-1.46.0-dev.2.mpp  
-[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.46.0-dev.3)
+Patches: byehi98/patches-1.46.0-dev.5.mpp  
+[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.46.0-dev.6)
 
 CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
 Patches: hoo-dles/patches-1.47.0.mpp  
@@ -36,8 +36,11 @@ Patches: legendsciber/patches-1.51.0.mpp
 [Changelog](https://github.com/legendsciber/morphe-patches/releases/tag/v1.52.0)
 
 CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
-Patches: MorpheApp/patches-1.48.0-dev.16.mpp  
-[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.48.0-dev.16)  
+Patches: MorpheApp/patches-1.48.0-dev.18.mpp  
+[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.48.0-dev.18)
+
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar    
 
 Skipped:  
 Google-Photos-Akash-Sriram: 7.97.0.997578476
@@ -77,10 +80,7 @@ The-Battle-of-Polytopia: 2.17.3.16375
 Zombie-Catchers: latest  
 Reddit-Morphe: 2026.24.0
 Patches: MorpheApp/patches-1.47.0.mpp  
-Reddit-Morphe-Dev: 2026.42.0
-Patches: MorpheApp/patches-1.48.0-dev.16.mpp  
 YouTube-Morphe: 21.20.405
-YouTube-Morphe-Dev: 21.42.241  
 YouTube-Music-Morphe: 9.20.53  
 Adobe-Photoshop-Mix: latest
 Patches: RookieEnough/patches-1.5.1.mpp  
@@ -219,11 +219,14 @@ qBitConnect: 2.0.6
 Imgur: 7.34.0.0  
 Patches: sushruth/patches-1.0.0.mpp  
 Lemmy-Sync: latest  
-Patches: wchill/patches-1.4.0.mpp                                                                            
+Patches: wchill/patches-1.4.0.mpp                                                                              
 
 ### Built versions  
 Freejobalert: 1.0.0
 Plants-vs-Zombies-Free: 3.18.0
+Reddit-Morphe-Dev: 2026.42.0
 Smashit: 1.5.14
 Vector: 2.10.2
-Vita-Mahjong: 3.42.1  
+Vita-Mahjong: 3.43.0
+YouTube-Morphe-Dev: 21.42.241
+YouTube-Music-Morphe-Dev: 9.42.52  
