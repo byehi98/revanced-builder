@@ -1,5 +1,5 @@
 
-**8 apps built.**
+**2 apps built.**
   
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
@@ -8,20 +8,19 @@ Patches: hoo-dles/patches-1.47.0.mpp
 [Changelog](https://github.com/hoo-dles/morphe-patches/releases/tag/v1.47.0)
 
 CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
-CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
-CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
-CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
-CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
-CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
-CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
-CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
-CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
 Patches: hxreborn/patches-1.56.0.mpp  
 [Changelog](https://github.com/hxreborn/morphe-patches/releases/tag/v1.56.0)
 
 CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
 Patches: legendsciber/patches-1.51.0.mpp  
-[Changelog](https://github.com/legendsciber/morphe-patches/releases/tag/v1.52.0)  
+[Changelog](https://github.com/legendsciber/morphe-patches/releases/tag/v1.52.0)
+
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+Patches: MorpheApp/patches-1.48.0-dev.16.mpp  
+[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.48.0-dev.16)
+
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.18.1-all.jar    
 
 Skipped:  
 Google-Photos-Akash-Sriram: 7.97.0.997578476
@@ -61,12 +60,8 @@ The-Battle-of-Polytopia: 2.17.3.16375
 Zombie-Catchers: latest  
 Reddit-Morphe: 2026.24.0
 Patches: MorpheApp/patches-1.47.0.mpp  
-Reddit-Morphe-Dev: 2026.42.0
-Patches: MorpheApp/patches-1.48.0-dev.15.mpp  
 YouTube-Morphe: 21.20.405
-YouTube-Morphe-Dev: 21.42.241
 YouTube-Music-Morphe: 9.20.53  
-YouTube-Music-Morphe-Dev: 9.41.52  
 Adobe-Photoshop-Mix: latest
 Patches: RookieEnough/patches-1.5.1.mpp  
 Cricbuzz: 6.24.01
@@ -143,6 +138,15 @@ Patches: ethanm6/patches-1.4.4.mpp
 AnyDesk: latest
 Patches: heval99/patches-1.17.0.mpp  
 AquaMail: 2.7.0  
+AdGuard-hoo-dles: 4.14.2
+Patches: hoo-dles/patches-1.47.0.mpp  
+CamScanner-hoo-dles: 7.20.0.2606230000
+Google-News-hoo-dles: 5.161.0.931240252
+ProtonVPN-Hoodles: 5.20.57.0
+Showly: 3.70.0
+Solid-Explorer: 3.6.1
+WPS-Office: 18.24
+Wallcraft: 3.61.01  
 Cx-File-Explorer: 2.8.1
 Patches: hxreborn/patches-1.56.0.mpp  
 MovieBox-hxreborn: 4.0.03.0918.03
@@ -201,14 +205,8 @@ qBitConnect: 2.0.6
 Imgur: 7.34.0.0  
 Patches: sushruth/patches-1.0.0.mpp  
 Lemmy-Sync: latest  
-Patches: wchill/patches-1.4.0.mpp                                                                        
+Patches: wchill/patches-1.4.0.mpp                                                                          
 
 ### Built versions  
-AdGuard-hoo-dles: 4.14.2
-CamScanner-hoo-dles: 7.20.0.2606230000
-Google-News-hoo-dles: 5.161.0.931240252
-ProtonVPN-Hoodles: 5.20.57.0
-Showly: 3.70.0
-Solid-Explorer: 3.6.1
-WPS-Office: 18.24
-Wallcraft: 3.61.01  
+Reddit-Morphe-Dev: 2026.42.0
+YouTube-Morphe-Dev: 21.42.241  
