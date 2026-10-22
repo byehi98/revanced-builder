@@ -56,6 +56,7 @@ jobs:
           curl -sL https://github.com/EFForg/apkeep/releases/latest/download/apkeep-x86_64-unknown-linux-gnu -o apkeep
           chmod +x apkeep
           sudo mv apkeep /usr/local/bin/apkeep
+          sudo apt-get update
           sudo apt-get install -y aapt
           pipx install gplaydl
 
