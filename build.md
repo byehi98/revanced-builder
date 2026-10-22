@@ -1,19 +1,28 @@
 
-**10 apps built.**
+**6 apps built.**
   
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
 CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
-Patches: dh6k/patches-1.9.0.mpp  
-[Changelog](https://github.com/dh6k/morphe-patches/releases/tag/v1.9.0)
+Patches: byehi98/patches-1.46.0-dev.7.mpp  
+[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.46.0-dev.8)
 
 CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
-Patches: heval99/patches-1.18.0.mpp  
-[Changelog](https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v1.18.0)
+Patches: byehi98/patches-1.46.0-dev.7.mpp  
+[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.46.0-dev.8)
 
 CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
+Patches: byehi98/patches-1.46.0-dev.7.mpp  
+[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.46.0-dev.8)
+
+CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
+Patches: byehi98/patches-1.46.0-dev.7.mpp  
+[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.46.0-dev.8)
+
+CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
+Patches: byehi98/patches-1.46.0-dev.7.mpp  
+[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.46.0-dev.8)
+
 CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
 Patches: hoo-dles/patches-1.47.0.mpp  
 [Changelog](https://github.com/hoo-dles/morphe-patches/releases/tag/v1.47.0)
@@ -24,13 +33,7 @@ Patches: legendsciber/patches-1.51.0.mpp
 
 CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
 Patches: MorpheApp/patches-1.48.0.mpp  
-[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.48.0)
-
-CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.19.0-all.jar    
+[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.48.0)  
 
 Skipped:  
 Google-Photos-Akash-Sriram: 7.97.0.997578476
@@ -68,8 +71,13 @@ Oddmar: latest
 Plants-vs-Zombies: latest  
 The-Battle-of-Polytopia: 2.17.3.16375  
 Zombie-Catchers: latest  
+Reddit-Morphe: 2026.24.0
 Patches: MorpheApp/patches-1.48.0.mpp  
+Reddit-Morphe-Dev: 2026.42.0
 Patches: MorpheApp/patches-1.48.0.mpp  
+YouTube-Morphe: 21.20.405
+YouTube-Morphe-Dev: 21.42.241
+YouTube-Music-Morphe: 9.20.53  
 Adobe-Photoshop-Mix: latest
 Patches: RookieEnough/patches-1.5.1.mpp  
 Cricbuzz: 6.24.01
@@ -117,9 +125,7 @@ Lumina-Walls: 1.0.2.6
 Missiles: 1.41
 Onlyone: 1.3052
 Plagueinc: 1.26.1
-Plants-vs-Zombies-Free: 3.18.0
 Rodeo-Stampede: 4.25.0
-Smashit: 1.5.14
 Swamp-Attack: 4.8.7.0
 Swift-Backup: 5.1.0
 Swordigo: 1.4.13
@@ -127,18 +133,21 @@ Tentaclewars: 2.1.27
 Traffic-Racer: 4.0
 Traffic-Rider: 2.11
 Truecloud: 4.6.5.13
-Vector: 2.10.2
-Vita-Mahjong: 3.43.0  
 Minesweeper: 1.21.3  
 Patches: cesbar/patches-1.13.1.mpp  
 Solitaire: 1.20.3  
+Brave-Beta-dh6k: latest
+Patches: dh6k/patches-1.9.0.mpp  
+Brave-Nightly-dh6k: latest
+Brave-dh6k: latest
 Arrow-Puzzle: 1.7.0
 Patches: durgesh0505/patches-1.25.0.mpp  
 Does-Not-Commute-chiggi: 1.5.5
 Letterboxd-ethanm6: latest
 Patches: ethanm6/patches-1.4.4.mpp  
-AdGuard-hoo-dles: 4.14.2
-Patches: hoo-dles/patches-1.47.0.mpp  
+AnyDesk: latest
+Patches: heval99/patches-1.18.0.mpp  
+AquaMail: 2.7.0
 CamScanner-hoo-dles: 7.20.0.2606230000
 Google-News-hoo-dles: 5.161.0.931240252
 ProtonVPN-Hoodles: 5.20.57.0
@@ -146,8 +155,6 @@ Showly: 3.70.0
 Solid-Explorer: 3.6.1
 WPS-Office: 18.24
 Wallcraft: 3.61.01  
-Cx-File-Explorer: 2.8.1
-Patches: hxreborn/patches-1.58.0.mpp  
 MovieBox-hxreborn: 4.0.03.0918.03
 ProtonVPN-hxreborn: 5.20.98.0
 Protonmail: 7.11.10
@@ -205,16 +212,12 @@ qBitConnect: 2.0.6
 Imgur: 7.34.0.0  
 Patches: sushruth/patches-1.0.0.mpp  
 Lemmy-Sync: latest  
-Patches: wchill/patches-1.4.0.mpp                                                                                      
+Patches: wchill/patches-1.4.0.mpp                                                                                        
 
 ### Built versions  
-AnyDesk: latest
-AquaMail: 2.7.0
-Brave-Beta-dh6k: latest
-Brave-Nightly-dh6k: latest
-Brave-dh6k: latest
-Reddit-Morphe-Dev: 2026.42.0
-Reddit-Morphe: 2026.24.0
-YouTube-Morphe-Dev: 21.42.241
-YouTube-Morphe: 21.20.405
-YouTube-Music-Morphe: 9.20.53  
+Freejobalert: 1.0.0
+Plants-vs-Zombies-Free: 3.18.0
+Smashit: 1.5.14
+Vector: 2.10.2
+Vita-Mahjong: 3.43.0
+YouTube-Music-Morphe-Dev: 9.42.52  
