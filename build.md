@@ -1,8 +1,13 @@
 
-**1 apps built.**
+**2 apps built.**
   
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
+CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
+Patches: BlazeFTL/patches-1.43.6.mpp  
+[Changelog](https://github.com/BlazeFTL/FTL-Patches/releases/tag/v1.43.6)
+
+CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
 CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
 Patches: byehi98/patches-1.46.0.mpp  
 [Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.46.0)
@@ -13,11 +18,7 @@ Patches: hoo-dles/patches-1.47.0.mpp
 
 CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
 Patches: legendsciber/patches-1.51.0.mpp  
-[Changelog](https://github.com/legendsciber/morphe-patches/releases/tag/v1.52.0)
-
-CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
-Patches: SysAdminDoc/patches-0.0.20.mpp  
-[Changelog](https://github.com/SysAdminDoc/HushTelegram/releases/tag/v0.0.20)  
+[Changelog](https://github.com/legendsciber/morphe-patches/releases/tag/v1.52.0)  
 
 Skipped:  
 Google-Photos-Akash-Sriram: 7.97.0.997578476
@@ -31,9 +32,6 @@ Patches: BholeyKaBhakt/patches-2.12.0.mpp
 Backdrops: 6.1.2  
 Patches: BholeyKaBhakt/patches-2.12.0.mpp  
 Speedtest: 7.0.4  
-All-Video-Downloader-and-Ace-Player: 1.9.8
-Patches: BlazeFTL/patches-1.43.5.mpp  
-RS-File-Manager-BlazeFTL: latest
 Arm-Workout: 2.4.3  
 Patches: Entree3k/patches-1.22.0.mpp  
 Does-Not-Commute-Entree3k: 1.5.5  
@@ -73,6 +71,8 @@ Irplus: latest
 Letterboxd: latest
 Photomath: latest
 SoundCloud-RookieEnough: latest
+Telegram-Hush: 13.1.0  
+Patches: SysAdminDoc/patches-0.0.20.mpp  
 Advanced-Download-Manager: 14.0.39  
 Patches: arandomhooman/patches-1.53.0.mpp  
 FolderSync: 4.12.0  
@@ -204,7 +204,8 @@ qBitConnect: 2.0.6
 Imgur: 7.34.0.0  
 Patches: sushruth/patches-1.0.0.mpp  
 Lemmy-Sync: latest  
-Patches: wchill/patches-1.4.0.mpp                                                                                                
+Patches: wchill/patches-1.4.0.mpp                                                                                                  
 
 ### Built versions  
-Telegram-Hush: 13.1.0  
+All-Video-Downloader-and-Ace-Player: 1.9.8
+RS-File-Manager-BlazeFTL: latest  
