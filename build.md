@@ -1,5 +1,5 @@
 
-**9 apps built.**
+**1 apps built.**
   
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
@@ -8,16 +8,8 @@ Patches: byehi98/patches-1.46.0.mpp
 [Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.46.0)
 
 CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
-Patches: jkennethcarino/patches-1.7.0-dev.1.mpp  
-[Changelog](https://github.com/jkennethcarino/adobo/releases/tag/v1.7.0-dev.1)  
+Patches: jkennethcarino/patches-1.7.0-dev.2.mpp  
+[Changelog](https://github.com/jkennethcarino/adobo/releases/tag/v1.7.0-dev.2)  
 
 Skipped:  
 Google-Photos-Akash-Sriram: 7.97.0.997578476
@@ -84,6 +76,7 @@ Brave-Bufferk: 1.92.140
 Patches: bufferk/patches-1.8.0.mpp  
 Medium: 4.5.1302097  
 Truecaller-bufferk: 26.10.6  
+20-Minutes-Till-Dawn: 8.6
 Patches: byehi98/patches-1.46.0.mpp  
 Adda247: 12.7.8
 Aliens-Drive-Me-Crazy: 3.2.10
@@ -94,6 +87,7 @@ Burrito-Bison: 3.75
 Crash-of-Cars: 1.9.36
 Crossy-Road: 7.14.0
 Dan-The-Man: 1.14.06
+Dead-Target: 4.185.0
 Dead-Trigger: 2.3.4
 Document-Scanner: 6.9.9
 Doodle-Jump: 3.11.40
@@ -102,7 +96,10 @@ Earn-to-Die-2: 1.5.6
 Fancy-Pants: 1.0.30
 Freejobalert: 1.0.0
 Patches: byehi98/patches-1.46.0.mpp  
+Grimvalor: 1.2.13
 HAAK: 1.4.3
+Head-Basketball: 4.6.4
+Head-Soccer: 7.1.8
 Hill-Climb-Racing: 1.72.2
 Injustice: 3.5.1
 Into-The-Dead: 2.9.5
@@ -113,9 +110,12 @@ Missiles: 1.41
 Onlyone: 1.3052
 Plagueinc: 1.27.3
 Plants-vs-Zombies-Free: 3.18.0
+Progressbar95: 1.1111
 Rodeo-Stampede: 4.26.0
+Shooty-Skies: 3.441.100103
 Smashit: 1.5.14
 Swamp-Attack: 4.8.8.0
+Swamp-Attack-2: 1.3.10  
 Swift-Backup: 5.1.0
 Swordigo: 1.4.13
 Tentaclewars: 2.1.27
@@ -208,15 +208,7 @@ qBitConnect: 2.0.6
 Imgur: 7.34.0.0  
 Patches: sushruth/patches-1.0.0.mpp  
 Lemmy-Sync: latest  
-Patches: wchill/patches-1.4.0.mpp                                                                                                            
+Patches: wchill/patches-1.4.0.mpp                                                                                                              
 
 ### Built versions  
-20-Minutes-Till-Dawn: 8.6
-Dead-Target: 4.185.0
-Grimvalor: 1.2.13
-Head-Basketball: 4.6.4
-Head-Soccer: 7.1.8
-Progressbar95: 1.1111
-Reddit-Adobo: 2026.42.0
-Shooty-Skies: 3.441.100103
-Swamp-Attack-2: 1.3.10  
+Reddit-Adobo: 2026.42.0  
