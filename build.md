@@ -1,19 +1,15 @@
 
-**3 apps built.**
+**2 apps built.**
   
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
 CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
-Patches: byehi98/patches-1.46.0.mpp  
-[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.46.0)
+Patches: Akash-Sriram/patches-1.15.4.mpp  
+[Changelog](https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.15.4)
 
 CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
-Patches: hoo-dles/patches-1.47.0.mpp  
-[Changelog](https://github.com/hoo-dles/morphe-patches/releases/tag/v1.47.0)
-
-CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
-Patches: legendsciber/patches-1.51.0.mpp  
-[Changelog](https://github.com/legendsciber/morphe-patches/releases/tag/v1.52.0)  
+Patches: Alastor-Kaneki/patches-1.15.3.mpp  
+[Changelog](https://github.com/Alastor-Kaneki/Morphe-Patches/releases/tag/v1.16.0)  
 
 Skipped:  
 Telegram: 12.10.1  
@@ -98,6 +94,7 @@ HAAK: 1.4.3
 Hill-Climb-Racing: 1.72.2
 Injustice: 3.5.1
 Into-The-Dead: 2.9.5
+Into-The-Dead-2: 1.88.0
 Jetpack-Joyride: 1.104.1
 Lumina-Walls: 1.0.2.6
 Missiles: 1.41
@@ -135,6 +132,7 @@ AdGuard-hoo-dles: 4.14.2
 Patches: hoo-dles/patches-1.47.0.mpp  
 CamScanner-hoo-dles: 7.20.0.2606230000
 Google-News-hoo-dles: 5.161.0.931240252
+Lightroom: 11.5.31
 ProtonVPN-Hoodles: 5.20.57.0
 Showly: 3.70.0
 Solid-Explorer: 3.6.1
@@ -155,6 +153,7 @@ Hidden-Settings: 7.34
 iLovePDF: 4.0.1    
 Subway-Surfers: 3.70.0
 Patches: legendsciber/patches-1.51.0.mpp  
+Temple-Run-2: 1.136.0  
 Letterboxd-mvaishak: latest
 Patches: mvaishak/patches-2.2.0.mpp  
 Chess-com: 4.10.0  
@@ -199,9 +198,8 @@ qBitConnect: 2.0.6
 Imgur: 7.34.0.0  
 Patches: sushruth/patches-1.0.0.mpp  
 Lemmy-Sync: latest  
-Patches: wchill/patches-1.4.0.mpp                                                                                                        
+Patches: wchill/patches-1.4.0.mpp                                                                                                          
 
 ### Built versions  
-Into-The-Dead-2: 1.88.0
-Lightroom: 11.5.31
-Temple-Run-2: 1.136.0  
+Google-Photos-Akash-Sriram: 7.97.0.997578476
+Opera-GX: latest  
