@@ -39,17 +39,17 @@ jobs:
           fetch-depth: 0
           submodules: true
 
-      - name: Restore stock APK cache
-        uses: actions/cache/restore@v6
-        with:
-          path: |
-            temp/*.apk
-            temp/*.apkm
-            temp/apkeditor.jar
-            temp/cache_manifest.txt
-          key: apks-${{ github.run_id }}
-          restore-keys: |
-            apks-
+      # - name: Restore stock APK cache
+      #   uses: actions/cache/restore@v6
+      #   with:
+      #     path: |
+      #       temp/*.apk
+      #       temp/*.apkm
+      #       temp/apkeditor.jar
+      #       temp/cache_manifest.txt
+      #     key: apks-${{ github.run_id }}
+      #     restore-keys: |
+      #       apks-
 
       - name: Install tools
         run: |

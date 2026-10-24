@@ -26,3 +26,14 @@ apkcombo-dlurl  	= "https://apkcombo.com/aqua-mail/org.kman.AquaMail/"
 apkpure-dlurl   	= "https://apkpure.net/aquamail-email/org.kman.AquaMail"
 uptodown-dlurl  	= "https://aqua-mail.en.uptodown.com/android"
 # no apkmirror-dlurl: apkmirror 404s on every slug tried for this app
+
+[Truecaller]
+patches-source  = "heval99/Heval-Morphe-Patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "heval99"
+apkeep-dlurl    	= "com.truecaller"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/true-software-scandinavia-ab/truecaller-caller-id-block/"
+apkpure-dlurl   	= "https://apkpure.net/truecaller/com.truecaller"
+# no apkcombo-dlurl: apkcombo has been failing for days, do not rely on it
+# no gplaydl-dlurl: not needed, apkmirror already serves every supported version
+# no uptodown-dlurl: its listing is stale (15.28.7) and cannot serve the patched 26.41.5
