@@ -3,6 +3,17 @@
 # Patches bundle: https://github.com/byehi98/okish-morphe-patches
 # CLI:            https://github.com/MorpheApp/morphe-cli
 
+[20-Minutes-Till-Dawn]
+patches-source  = "byehi98/okish-morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "okish"
+apkeep-dlurl 	= "com.Flanne.MinutesTillDawn.roguelike.shooting.fr.gp"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/erabit-studios/20-minutes-till-dawn/"
+apkpure-dlurl 	= "https://apkpure.net/20-minutes-till-dawn/com.Flanne.MinutesTillDawn.roguelike.shooting.fr.gp"
+apkcombo-dlurl 	= "https://apkcombo.com/20-minutes-till-dawn/com.Flanne.MinutesTillDawn.roguelike.shooting.fr.gp/"
+gplaydl-dlurl 	= "com.Flanne.MinutesTillDawn.roguelike.shooting.fr.gp"
+uptodown-dlurl 	= "https://20-minutes-till-dawn.en.uptodown.com/android"
+
 [Adda247]
 patches-source  = "byehi98/okish-morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
@@ -98,6 +109,17 @@ apkmirror-dlurl 	= "https://www.apkmirror.com/apk/halfbrick-studios/dan-the-man/
 apkcombo-dlurl 	= "https://apkcombo.com/dan-the-man/com.halfbrick.dantheman/"
 gplaydl-dlurl 	= "com.halfbrick.dantheman"
 
+[Dead-Target]
+patches-source  = "byehi98/okish-morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "okish"
+apkeep-dlurl 	= "com.vng.g6.a.zombie"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/vng-game-studios/dead-target-fps-zombie-apocalypse-survival-games/"
+apkpure-dlurl 	= "https://apkpure.net/dead-target/com.vng.g6.a.zombie"
+apkcombo-dlurl 	= "https://apkcombo.com/dead-target/com.vng.g6.a.zombie/"
+gplaydl-dlurl 	= "com.vng.g6.a.zombie"
+uptodown-dlurl 	= "https://dead-target.en.uptodown.com/android"
+
 [Dead-Trigger]
 patches-source  = "byehi98/okish-morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
@@ -173,6 +195,28 @@ apkcombo-dlurl 	= "https://apkcombo.com/freejobalert/com.freejobalert/"
 gplaydl-dlurl 	= "com.freejobalert"
 uptodown-dlurl 	= "https://freejobalert-com.en.uptodown.com/android"
 
+[Fruit-Ninja]
+patches-source  = "byehi98/okish-morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "okish"
+apkeep-dlurl 	= "com.halfbrick.fruitninjafree"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/halfbrick-studios/fruit-ninja-free/"
+apkpure-dlurl 	= "https://apkpure.net/fruit-ninja/com.halfbrick.fruitninjafree"
+apkcombo-dlurl 	= "https://apkcombo.com/fruit-ninja/com.halfbrick.fruitninjafree/"
+gplaydl-dlurl 	= "com.halfbrick.fruitninjafree"
+uptodown-dlurl 	= "https://fruit-ninja.en.uptodown.com/android"
+
+[Grimvalor]
+patches-source  = "byehi98/okish-morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "okish"
+apkeep-dlurl 	= "com.direlight.grimvalor"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/direlight/grimvalor/"
+apkpure-dlurl 	= "https://apkpure.net/grimvalor/com.direlight.grimvalor"
+apkcombo-dlurl 	= "https://apkcombo.com/grimvalor/com.direlight.grimvalor/"
+gplaydl-dlurl 	= "com.direlight.grimvalor"
+uptodown-dlurl 	= "https://grimvalor.en.uptodown.com/android"
+
 [HAAK]
 patches-source  = "byehi98/okish-morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
@@ -182,6 +226,26 @@ apkpure-dlurl 	= "https://apkpure.net/haak/com.blingame.haaktestb"
 apkcombo-dlurl 	= "https://apkcombo.com/haak/com.blingame.haaktestb/"
 gplaydl-dlurl 	= "com.blingame.haaktestb"
 uptodown-dlurl 	= "https://haak.en.uptodown.com/android"
+
+[Head-Basketball]
+patches-source  = "byehi98/okish-morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "okish"
+apkeep-dlurl 	= "com.dnddream.HeadBasketball"
+apkpure-dlurl 	= "https://apkpure.net/head-basketball/com.dnddream.HeadBasketball"
+apkcombo-dlurl 	= "https://apkcombo.com/head-basketball/com.dnddream.HeadBasketball/"
+gplaydl-dlurl 	= "com.dnddream.HeadBasketball"
+uptodown-dlurl 	= "https://head-basketball.en.uptodown.com/android"
+
+[Head-Soccer]
+patches-source  = "byehi98/okish-morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "okish"
+apkeep-dlurl 	= "com.dnddream.headsoccer.android"
+apkpure-dlurl 	= "https://apkpure.net/head-soccer/com.dnddream.headsoccer.android"
+apkcombo-dlurl 	= "https://apkcombo.com/head-soccer/com.dnddream.headsoccer.android/"
+gplaydl-dlurl 	= "com.dnddream.headsoccer.android"
+uptodown-dlurl 	= "https://head-soccer.en.uptodown.com/android"
 
 [Hill-Climb-Racing]
 patches-source  = "byehi98/okish-morphe-patches"
@@ -289,15 +353,16 @@ uptodown-dlurl 	= "https://plants-vs-zombies-free.en.uptodown.com/android"
 # no apkcombo-dlurl: apkcombo has been failing for days, do not rely on it
 # no gplaydl-dlurl: not needed, apkmirror already serves every supported version
 
-# [Prince-of-Persia-Lost-Crown]
-# patches-source  = "byehi98/okish-morphe-patches"
-# cli-source      = "MorpheApp/morphe-cli"
-# rv-brand        = "okish"
-# apkeep-dlurl 	= "com.ubisoft.princeofpersia.thelostcrown.mobile.action.adventure.platform"
-# apkmirror-dlurl 	= "https://www.apkmirror.com/apk/ubisoft-entertainment/prince-of-persia-lost-crown/"
-# apkpure-dlurl 	= "https://apkpure.net/prince-of-persia-lost-crown/com.ubisoft.princeofpersia.thelostcrown.mobile.action.adventure.platform"
-# apkcombo-dlurl 	= "https://apkcombo.com/prince-of-persia-the-lost-crown/com.ubisoft.princeofpersia.thelostcrown.mobile.action.adventure.platform/"
-# gplaydl-dlurl 	= "com.ubisoft.princeofpersia.thelostcrown.mobile.action.adventure.platform"
+[Progressbar95]
+patches-source  = "byehi98/okish-morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "okish"
+apkeep-dlurl 	= "com.spookyhousestudios.progressbar95"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/spooky-house-studios-ug-haftungsbeschraenkt/progressbar95-nostalgic-game/"
+apkpure-dlurl 	= "https://apkpure.net/progressbar95/com.spookyhousestudios.progressbar95"
+apkcombo-dlurl 	= "https://apkcombo.com/progressbar95/com.spookyhousestudios.progressbar95/"
+gplaydl-dlurl 	= "com.spookyhousestudios.progressbar95"
+uptodown-dlurl 	= "https://progressbar95.en.uptodown.com/android"
 
 [Rodeo-Stampede]
 patches-source  = "byehi98/okish-morphe-patches"
@@ -309,6 +374,17 @@ apkpure-dlurl 	= "https://apkpure.net/rodeo-stampede-sky-zoo-safari/com.yodo1.ro
 apkcombo-dlurl 	= "https://apkcombo.com/rodeo-stampede/com.yodo1.rodeo.safari/"
 gplaydl-dlurl 	= "com.yodo1.rodeo.safari"
 uptodown-dlurl 	= "https://rodeo-stampede.en.uptodown.com/android"
+
+[Shooty-Skies]
+patches-source  = "byehi98/okish-morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "okish"
+apkeep-dlurl 	= "com.mightygamesgroup.shootyskies"
+apkmirror-dlurl 	= "https://www.apkmirror.com/apk/mighty-games-group-pty-ltd/shooty-skies/"
+apkpure-dlurl 	= "https://apkpure.net/shooty-skies/com.mightygamesgroup.shootyskies"
+apkcombo-dlurl 	= "https://apkcombo.com/shooty-skies/com.mightygamesgroup.shootyskies/"
+gplaydl-dlurl 	= "com.mightygamesgroup.shootyskies"
+uptodown-dlurl 	= "https://shooty-skies.en.uptodown.com/android"
 
 [Smashit]
 patches-source  = "byehi98/okish-morphe-patches"
@@ -332,6 +408,16 @@ apkpure-dlurl 	= "https://apkpure.net/swamp-attack/com.outfit7.movingeye.swampat
 uptodown-dlurl 	= "https://swamp-attack.en.uptodown.com/android"
 # no apkcombo-dlurl: apkcombo has been failing for days, do not rely on it
 # no gplaydl-dlurl: not needed, apkmirror already serves every supported version
+
+[Swamp-Attack-2]
+patches-source  = "byehi98/okish-morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "okish"
+apkeep-dlurl 	= "com.hyperdotstudios.swampattack2"
+apkpure-dlurl 	= "https://apkpure.net/swamp-attack-2/com.hyperdotstudios.swampattack2"
+apkcombo-dlurl 	= "https://apkcombo.com/swamp-attack-2/com.hyperdotstudios.swampattack2/"
+gplaydl-dlurl 	= "com.hyperdotstudios.swampattack2"
+uptodown-dlurl 	= "https://swamp-attack-2.en.uptodown.com/android"
 
 [Swordigo]
 patches-source  = "byehi98/okish-morphe-patches"
