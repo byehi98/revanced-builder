@@ -1,5 +1,5 @@
 
-**1 apps built.**
+**4 apps built.**
   
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
@@ -8,8 +8,15 @@ Patches: byehi98/patches-1.46.0.mpp
 [Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.46.0)
 
 CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
-Patches: jkennethcarino/patches-1.7.0-dev.2.mpp  
-[Changelog](https://github.com/jkennethcarino/adobo/releases/tag/v1.7.0-dev.2)  
+Patches: jkennethcarino/patches-1.7.0-dev.3.mpp  
+[Changelog](https://github.com/jkennethcarino/adobo/releases/tag/v1.7.0-dev.3)
+
+CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
+Patches: MorpheApp/patches-1.49.0-dev.5.mpp  
+[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.49.0-dev.5)
+
+CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.19.0-all.jar    
 
 Skipped:  
 Google-Photos-Akash-Sriram: 7.97.0.997578476
@@ -49,12 +56,8 @@ The-Battle-of-Polytopia: 2.17.3.16375
 Zombie-Catchers: latest  
 Reddit-Morphe: 2026.24.0
 Patches: MorpheApp/patches-1.48.0.mpp  
-Reddit-Morphe-Dev: 2026.42.0
-Patches: MorpheApp/patches-1.49.0-dev.4.mpp  
 YouTube-Morphe: 21.20.405
-YouTube-Morphe-Dev: 21.43.523
 YouTube-Music-Morphe: 9.20.53  
-YouTube-Music-Morphe-Dev: 9.42.52  
 Adobe-Photoshop-Mix: latest
 Patches: RookieEnough/patches-1.6.0.mpp  
 Cricbuzz: 6.24.01
@@ -208,7 +211,10 @@ qBitConnect: 2.0.6
 Imgur: 7.34.0.0  
 Patches: sushruth/patches-1.0.0.mpp  
 Lemmy-Sync: latest  
-Patches: wchill/patches-1.4.0.mpp                                                                                                              
+Patches: wchill/patches-1.4.0.mpp                                                                                                                
 
 ### Built versions  
-Reddit-Adobo: 2026.42.0  
+Reddit-Adobo: 2026.42.0
+Reddit-Morphe-Dev: 2026.42.0
+YouTube-Morphe-Dev: 21.43.523
+YouTube-Music-Morphe-Dev: 9.42.52  
