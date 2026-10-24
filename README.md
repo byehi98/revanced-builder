@@ -15,13 +15,13 @@ Get the [latest CI release](https://github.com/j-hc/revanced-magisk-module/relea
 
 | App | Status | Obtainium |
 | :--- | :---: | :---: |
-| `Google-Photos-Akash-Sriram` ([APK](https://github.com/byehi98/revanced-builder/releases/download/296/google-photos-akash-sriram-akash-sriram-v7.97.0.997578476-all.apk)) | ✅ | [![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22app.morphe.android.apps.photos%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Google-Photos-Akash-Sriram%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22google-photos-akash-sriram-akash-sriram%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%7D%22%7D) |
+| `Google-Photos-Akash-Sriram` ([APK](https://github.com/byehi98/revanced-builder/releases/download/321/google-photos-akash-sriram-akash-sriram-v7.97.0.997578476-all.apk)) | ✅ | [![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22app.morphe.android.apps.photos%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Google-Photos-Akash-Sriram%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22google-photos-akash-sriram-akash-sriram%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%7D%22%7D) |
 
 #### `Alastor-Kaneki/Morphe-Patches` · `patches-1.15.3.mpp`
 
 | App | Status | Obtainium |
 | :--- | :---: | :---: |
-| `Opera-GX` ([APK](https://github.com/byehi98/revanced-builder/releases/download/295/opera-gx-kaneki-vlatest-all.apk)) | ✅ | [![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.opera.gx%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Opera-GX%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22opera-gx-kaneki%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%7D%22%7D) |
+| `Opera-GX` ([APK](https://github.com/byehi98/revanced-builder/releases/download/321/opera-gx-kaneki-vlatest-all.apk)) | ✅ | [![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.opera.gx%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Opera-GX%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22opera-gx-kaneki%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%7D%22%7D) |
 
 #### `arandomhooman/hoomans-morphe-patches` · `patches-1.53.0.mpp`
 
@@ -204,7 +204,7 @@ Get the [latest CI release](https://github.com/j-hc/revanced-magisk-module/relea
 | App | Status | Obtainium |
 | :--- | :---: | :---: |
 | `Subway-Surfers` ([APK](https://github.com/byehi98/revanced-builder/releases/download/294/subway-surfers-legendsciber-v3.70.0-all.apk)) | ✅ | [![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.kiloo.subwaysurf%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Subway-Surfers%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22subway-surfers-legendsciber%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%7D%22%7D) |
-| `Temple-Run-2` | ❌ | [![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22app.revanced.builder.temple-run-2%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Temple-Run-2%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22temple-run-2-legendsciber%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%7D%22%7D) |
+| `Temple-Run-2` | ❌ | [![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.imangi.templerun2%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Temple-Run-2%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22temple-run-2-legendsciber%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%7D%22%7D) |
 
 #### `MiguelNinja19/miguel-morphe-patches` · `patches-1.13.6.mpp`
 
@@ -219,7 +219,7 @@ Get the [latest CI release](https://github.com/j-hc/revanced-magisk-module/relea
 | `The-Battle-of-Polytopia` ([APK](https://github.com/byehi98/revanced-builder/releases/download/263/the-battle-of-polytopia-miguelninja19-v2.17.3.16375-all.apk)) | ✅ | [![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22air.com.midjiwan.polytopia%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22The-Battle-of-Polytopia%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22the-battle-of-polytopia-miguelninja19%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%7D%22%7D) |
 | `Zombie-Catchers` ([APK](https://github.com/byehi98/revanced-builder/releases/download/262/zombie-catchers-miguelninja19-vlatest-all.apk)) | ✅ | [![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22fi.twomenandadog.zombiecatchers%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Zombie-Catchers%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22zombie-catchers-miguelninja19%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%7D%22%7D) |
 
-#### `MorpheApp/morphe-patches` · `patches-1.48.0.mpp`
+#### `MorpheApp/morphe-patches` · `patches-1.49.0-dev.4.mpp`
 
 | App | Status | Obtainium |
 | :--- | :---: | :---: |
