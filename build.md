@@ -1,24 +1,51 @@
 
-**2 apps built.**
+**19 apps built.**
   
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
-CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
-Patches: BlazeFTL/patches-1.43.6.mpp  
-[Changelog](https://github.com/BlazeFTL/FTL-Patches/releases/tag/v1.43.6)
-
-CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
 CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
 Patches: byehi98/patches-1.46.0.mpp  
 [Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.46.0)
 
 CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
+Patches: heval99/patches-1.19.0.mpp  
+[Changelog](https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v1.19.0)
+
+CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
 Patches: hoo-dles/patches-1.47.0.mpp  
 [Changelog](https://github.com/hoo-dles/morphe-patches/releases/tag/v1.47.0)
 
 CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
+Patches: hxreborn/patches-1.60.0.mpp  
+[Changelog](https://github.com/hxreborn/morphe-patches/releases/tag/v1.60.0)
+
+CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
 Patches: legendsciber/patches-1.51.0.mpp  
-[Changelog](https://github.com/legendsciber/morphe-patches/releases/tag/v1.52.0)  
+[Changelog](https://github.com/legendsciber/morphe-patches/releases/tag/v1.52.0)
+
+CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
+Patches: MorpheApp/patches-1.49.0-dev.3.mpp  
+[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.49.0-dev.3)
+
+CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
+Patches: RookieEnough/patches-1.6.0.mpp  
+[Changelog](https://github.com/RookieEnough/De-Vanced/releases/tag/v1.6.0)
+
+CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.19.0-all.jar    
 
 Skipped:  
 Google-Photos-Akash-Sriram: 7.97.0.997578476
@@ -32,6 +59,9 @@ Patches: BholeyKaBhakt/patches-2.12.0.mpp
 Backdrops: 6.1.2  
 Patches: BholeyKaBhakt/patches-2.12.0.mpp  
 Speedtest: 7.0.4  
+All-Video-Downloader-and-Ace-Player: 1.9.8
+Patches: BlazeFTL/patches-1.43.6.mpp  
+RS-File-Manager-BlazeFTL: latest  
 Arm-Workout: 2.4.3  
 Patches: Entree3k/patches-1.22.0.mpp  
 Does-Not-Commute-Entree3k: 1.5.5  
@@ -55,22 +85,8 @@ The-Battle-of-Polytopia: 2.17.3.16375
 Zombie-Catchers: latest  
 Reddit-Morphe: 2026.24.0
 Patches: MorpheApp/patches-1.48.0.mpp  
-Reddit-Morphe-Dev: 2026.42.0
-Patches: MorpheApp/patches-1.49.0-dev.1.mpp  
 YouTube-Morphe: 21.20.405
-YouTube-Morphe-Dev: 21.42.241
 YouTube-Music-Morphe: 9.20.53  
-YouTube-Music-Morphe-Dev: 9.42.52  
-Adobe-Photoshop-Mix: latest
-Patches: RookieEnough/patches-1.5.1.mpp  
-Cricbuzz: 6.24.01
-Google-News-RookieEnough: latest
-Google-Photos: 7.92.0.977185651
-Icon-Pack-Studio: 2.2
-Irplus: latest
-Letterboxd: latest
-Photomath: latest
-SoundCloud-RookieEnough: latest
 Telegram-Hush: 13.1.0  
 Patches: SysAdminDoc/patches-0.0.20.mpp  
 Advanced-Download-Manager: 14.0.39  
@@ -133,9 +149,6 @@ Patches: durgesh0505/patches-1.25.0.mpp
 Does-Not-Commute-chiggi: 1.5.5
 Letterboxd-ethanm6: latest
 Patches: ethanm6/patches-1.4.4.mpp  
-AnyDesk: latest
-Patches: heval99/patches-1.18.0.mpp  
-AquaMail: 2.7.0
 AdGuard-hoo-dles: 4.14.2
 Patches: hoo-dles/patches-1.47.0.mpp  
 CamScanner-hoo-dles: 7.20.0.2606230000
@@ -145,12 +158,6 @@ Showly: 3.70.0
 Solid-Explorer: 3.6.1
 WPS-Office: 18.24
 Wallcraft: 3.61.01  
-Cx-File-Explorer: 2.8.1
-Patches: hxreborn/patches-1.59.0.mpp  
-MovieBox-hxreborn: 4.0.03.0918.03
-ProtonVPN-hxreborn: 5.20.98.0
-Protonmail: 7.11.10
-Symfonium: 15.1.0
 Reddit-Adobo: 2026.42.0  
 Patches: jkennethcarino/patches-1.6.0.mpp  
 AudioRelay: 0.26.1  
@@ -204,8 +211,25 @@ qBitConnect: 2.0.6
 Imgur: 7.34.0.0  
 Patches: sushruth/patches-1.0.0.mpp  
 Lemmy-Sync: latest  
-Patches: wchill/patches-1.4.0.mpp                                                                                                  
+Patches: wchill/patches-1.4.0.mpp                                                                                                    
 
 ### Built versions  
-All-Video-Downloader-and-Ace-Player: 1.9.8
-RS-File-Manager-BlazeFTL: latest  
+Adobe-Photoshop-Mix: latest
+AnyDesk: latest
+AquaMail: 2.7.0
+Cricbuzz: 6.24.01
+Cx-File-Explorer: 2.8.1
+Google-News-RookieEnough: latest
+Google-Photos: 7.92.0.977185651
+Icon-Pack-Studio: 2.2
+Irplus: latest
+Letterboxd: latest
+MovieBox-hxreborn: 4.0.03.0918.03
+Photomath: latest
+ProtonVPN-hxreborn: 5.20.98.0
+Protonmail: 7.11.10
+Reddit-Morphe-Dev: 2026.42.0
+SoundCloud-RookieEnough: latest
+Symfonium: 15.1.0
+YouTube-Morphe-Dev: 21.43.523
+YouTube-Music-Morphe-Dev: 9.42.52  
