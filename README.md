@@ -193,11 +193,11 @@ Get the [latest CI release](https://github.com/j-hc/revanced-magisk-module/relea
 | :--- | :---: | :---: |
 | `Trakt` ([APK](https://github.com/byehi98/revanced-builder/releases/download/262/trakt-imxeren-v3.13.0-all.apk)) | ✅ | [![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22tv.trakt.trakt%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Trakt%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22trakt-imxeren%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%7D%22%7D) |
 
-#### `jkennethcarino/adobo` · `patches-1.7.0-dev.1.mpp`
+#### `jkennethcarino/adobo` · `patches-1.7.0-dev.2.mpp`
 
 | App | Status | Obtainium |
 | :--- | :---: | :---: |
-| `Reddit-Adobo` ([APK](https://github.com/byehi98/revanced-builder/releases/download/322/reddit-adobo-adobo-v2026.42.0-all.apk)) | ✅ | [![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.reddit.frontpage%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Reddit-Adobo%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22reddit-adobo-adobo%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%7D%22%7D) |
+| `Reddit-Adobo` ([APK](https://github.com/byehi98/revanced-builder/releases/download/323/reddit-adobo-adobo-v2026.42.0-all.apk)) | ✅ | [![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.reddit.frontpage%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Reddit-Adobo%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22reddit-adobo-adobo%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%7D%22%7D) |
 
 #### `kiraio-moe/Lain-Patches` · `patches-1.3.0.mpp`
 
