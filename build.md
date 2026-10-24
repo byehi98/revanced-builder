@@ -1,5 +1,5 @@
 
-**4 apps built.**
+**3 apps built.**
   
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
@@ -8,29 +8,14 @@ Patches: byehi98/patches-1.46.0.mpp
 [Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.46.0)
 
 CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
-Patches: heval99/patches-1.19.0.mpp  
-[Changelog](https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v1.19.0)
-
-CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
 Patches: hoo-dles/patches-1.47.0.mpp  
 [Changelog](https://github.com/hoo-dles/morphe-patches/releases/tag/v1.47.0)
 
 CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
 Patches: legendsciber/patches-1.51.0.mpp  
-[Changelog](https://github.com/legendsciber/morphe-patches/releases/tag/v1.52.0)
-
-CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
-Patches: MorpheApp/patches-1.49.0-dev.4.mpp  
-[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.49.0-dev.4)
-
-CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.19.0-all.jar    
+[Changelog](https://github.com/legendsciber/morphe-patches/releases/tag/v1.52.0)  
 
 Skipped:  
-Google-Photos-Akash-Sriram: 7.97.0.997578476
-Patches: Akash-Sriram/patches-1.15.4.mpp  
-Opera-GX: latest
-Patches: Alastor-Kaneki/patches-1.15.3.mpp  
 Telegram: 12.10.1  
 Patches: Aunali321/patches-2.0.0.rvp  
 Automate: 1.51.1  
@@ -64,8 +49,12 @@ The-Battle-of-Polytopia: 2.17.3.16375
 Zombie-Catchers: latest  
 Reddit-Morphe: 2026.24.0
 Patches: MorpheApp/patches-1.48.0.mpp  
+Reddit-Morphe-Dev: 2026.42.0
+Patches: MorpheApp/patches-1.49.0-dev.4.mpp  
 YouTube-Morphe: 21.20.405
+YouTube-Morphe-Dev: 21.43.523
 YouTube-Music-Morphe: 9.20.53  
+YouTube-Music-Morphe-Dev: 9.42.52  
 Adobe-Photoshop-Mix: latest
 Patches: RookieEnough/patches-1.6.0.mpp  
 Cricbuzz: 6.24.01
@@ -141,6 +130,7 @@ Patches: ethanm6/patches-1.4.4.mpp
 AnyDesk: latest
 Patches: heval99/patches-1.19.0.mpp  
 AquaMail: 2.7.0
+Truecaller: 26.41.5
 AdGuard-hoo-dles: 4.14.2
 Patches: hoo-dles/patches-1.47.0.mpp  
 CamScanner-hoo-dles: 7.20.0.2606230000
@@ -209,10 +199,9 @@ qBitConnect: 2.0.6
 Imgur: 7.34.0.0  
 Patches: sushruth/patches-1.0.0.mpp  
 Lemmy-Sync: latest  
-Patches: wchill/patches-1.4.0.mpp                                                                                                      
+Patches: wchill/patches-1.4.0.mpp                                                                                                        
 
 ### Built versions  
-Reddit-Morphe-Dev: 2026.42.0
-Truecaller: 26.41.5
-YouTube-Morphe-Dev: 21.43.523
-YouTube-Music-Morphe-Dev: 9.42.52  
+Into-The-Dead-2: 1.88.0
+Lightroom: 11.5.31
+Temple-Run-2: 1.136.0  
