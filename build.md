@@ -1,17 +1,29 @@
 
-**2 apps built.**
+**9 apps built.**
   
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
 CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
-Patches: Akash-Sriram/patches-1.15.4.mpp  
-[Changelog](https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.15.4)
+Patches: byehi98/patches-1.46.0.mpp  
+[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.46.0)
 
 CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
-Patches: Alastor-Kaneki/patches-1.15.3.mpp  
-[Changelog](https://github.com/Alastor-Kaneki/Morphe-Patches/releases/tag/v1.16.0)  
+CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
+Patches: jkennethcarino/patches-1.7.0-dev.1.mpp  
+[Changelog](https://github.com/jkennethcarino/adobo/releases/tag/v1.7.0-dev.1)  
 
 Skipped:  
+Google-Photos-Akash-Sriram: 7.97.0.997578476
+Patches: Akash-Sriram/patches-1.15.4.mpp  
+Opera-GX: latest  
+Patches: Alastor-Kaneki/patches-1.15.3.mpp  
 Telegram: 12.10.1  
 Patches: Aunali321/patches-2.0.0.rvp  
 Automate: 1.51.1  
@@ -72,8 +84,8 @@ Brave-Bufferk: 1.92.140
 Patches: bufferk/patches-1.8.0.mpp  
 Medium: 4.5.1302097  
 Truecaller-bufferk: 26.10.6  
-Adda247: 12.7.8
 Patches: byehi98/patches-1.46.0.mpp  
+Adda247: 12.7.8
 Aliens-Drive-Me-Crazy: 3.2.10
 Alto-Adventure: 1.8.27
 Alto-Odyssey: 1.0.42
@@ -144,8 +156,6 @@ MovieBox-hxreborn: 4.0.03.0918.03
 ProtonVPN-hxreborn: 5.20.98.0
 Protonmail: 7.11.10
 Symfonium: 15.1.0
-Reddit-Adobo: 2026.42.0  
-Patches: jkennethcarino/patches-1.6.0.mpp  
 AudioRelay: 0.26.1  
 Patches: kiraio-moe/patches-1.3.0.mpp  
 Camera: 5.4.0  
@@ -198,8 +208,15 @@ qBitConnect: 2.0.6
 Imgur: 7.34.0.0  
 Patches: sushruth/patches-1.0.0.mpp  
 Lemmy-Sync: latest  
-Patches: wchill/patches-1.4.0.mpp                                                                                                          
+Patches: wchill/patches-1.4.0.mpp                                                                                                            
 
 ### Built versions  
-Google-Photos-Akash-Sriram: 7.97.0.997578476
-Opera-GX: latest  
+20-Minutes-Till-Dawn: 8.6
+Dead-Target: 4.185.0
+Grimvalor: 1.2.13
+Head-Basketball: 4.6.4
+Head-Soccer: 7.1.8
+Progressbar95: 1.1111
+Reddit-Adobo: 2026.42.0
+Shooty-Skies: 3.441.100103
+Swamp-Attack-2: 1.3.10  
