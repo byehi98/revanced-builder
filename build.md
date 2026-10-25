@@ -1,15 +1,41 @@
 
-**5 apps built.**
+**22 apps built.**
   
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
 CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
-Patches: byehi98/patches-1.46.1-dev.2.mpp  
-[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.46.1-dev.2)
+Patches: bufferk/patches-1.8.1.mpp  
+[Changelog](https://github.com/bufferk/morphe-patches/releases/tag/v1.8.1)
+
+CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
+Patches: byehi98/patches-1.46.1-dev.3.mpp  
+[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.46.1-dev.3)
 
 CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
 Patches: byehi98/patches-1.46.0.mpp  
 [Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.46.0)
+
+CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
+Patches: hoo-dles/patches-1.47.0.mpp  
+[Changelog](https://github.com/hoo-dles/morphe-patches/releases/tag/v1.47.0)
+
+CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
+Patches: hxreborn/patches-1.60.0.mpp  
+[Changelog](https://github.com/hxreborn/morphe-patches/releases/tag/v1.60.0)
 
 CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
 CLI: MorpheApp/morphe-desktop-1.19.0-all.jar  
@@ -77,10 +103,6 @@ Patches: arandomhooman/patches-1.53.0.mpp
 FolderSync: 4.12.0  
 Microsoft-SwiftKey: 9.13.13.5  
 Poweramp: build-1025-bundle-play  
-Brave-Bufferk: 1.92.140  
-Patches: bufferk/patches-1.8.0.mpp  
-Medium: 4.5.1302097  
-Truecaller-bufferk: 26.10.6  
 20-Minutes-Till-Dawn: 8.6
 Patches: byehi98/patches-1.46.0.mpp  
 Adda247: 12.7.8
@@ -139,18 +161,6 @@ AnyDesk: latest
 Patches: heval99/patches-1.19.0.mpp  
 AquaMail: 2.7.0
 Truecaller: 26.41.5
-CamScanner-hoo-dles: 7.20.0.2606230000
-Google-News-hoo-dles: 5.161.0.931240252
-Lightroom: 11.5.31
-ProtonVPN-Hoodles: 5.20.57.0
-Showly: 3.70.0
-Solid-Explorer: 3.6.1
-WPS-Office: 18.24
-Wallcraft: 3.61.01  
-MovieBox-hxreborn: 4.0.03.0918.03
-ProtonVPN-hxreborn: 5.20.98.0
-Protonmail: 7.11.10
-Symfonium: 15.1.0
 Reddit-Adobo: 2026.42.0
 Patches: jkennethcarino/patches-1.7.0-dev.3.mpp  
 AudioRelay: 0.26.1  
@@ -205,11 +215,28 @@ qBitConnect: 2.0.6
 Imgur: 7.34.0.0  
 Patches: sushruth/patches-1.0.0.mpp  
 Lemmy-Sync: latest  
-Patches: wchill/patches-1.4.0.mpp                                                                                                                  
+Patches: wchill/patches-1.4.0.mpp                                                                                                                    
 
 ### Built versions  
+AdGuard-hoo-dles: 4.14.2
+Brave-Bufferk: 1.92.140
+CamScanner-hoo-dles: 7.20.0.2606230000
+Cx-File-Explorer: 2.8.1
 Freejobalert: 1.0.0
+Google-News-hoo-dles: 5.161.0.931240252
+Lightroom: 11.5.31
+Medium: 4.5.1784910928
+MovieBox-hxreborn: 4.0.03.0918.03
 Plants-vs-Zombies-Free: 3.18.0
+ProtonVPN-Hoodles: 5.20.57.0
+ProtonVPN-hxreborn: 5.20.98.0
+Protonmail: 7.11.10
+Showly: 3.70.0
 Smashit: 1.5.14
+Solid-Explorer: 3.6.1
+Symfonium: 15.1.0
+Truecaller-bufferk: 26.10.6
 Vector: 2.10.2
-Vita-Mahjong: 3.43.0  
+Vita-Mahjong: 3.43.0
+WPS-Office: 18.24
+Wallcraft: 3.61.01  
