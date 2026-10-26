@@ -1,15 +1,11 @@
 
-**11 apps built.**
+**9 apps built.**
   
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
 CLI: MorpheApp/morphe-desktop-1.19.1-all.jar  
-Patches: Akash-Sriram/patches-1.16.1.mpp  
-[Changelog](https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.16.1)
-
-CLI: MorpheApp/morphe-desktop-1.19.1-all.jar  
-Patches: byehi98/patches-1.46.1-dev.4.mpp  
-[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.46.1-dev.4)
+Patches: byehi98/patches-1.47.0-dev.1.mpp  
+[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.47.0-dev.1)
 
 CLI: MorpheApp/morphe-desktop-1.19.1-all.jar  
 Patches: byehi98/patches-1.46.0.mpp  
@@ -20,9 +16,11 @@ CLI: MorpheApp/morphe-desktop-1.19.1-all.jar
 CLI: MorpheApp/morphe-desktop-1.19.1-all.jar  
 CLI: MorpheApp/morphe-desktop-1.19.1-all.jar  
 CLI: MorpheApp/morphe-desktop-1.19.1-all.jar  
-Patches: heval99/patches-2.0.0.mpp  
-[Changelog](https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v2.0.0)
+Patches: hxreborn/patches-1.63.0.mpp  
+[Changelog](https://github.com/hxreborn/morphe-patches/releases/tag/v1.63.0)
 
+CLI: MorpheApp/morphe-desktop-1.19.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.19.1-all.jar  
 CLI: MorpheApp/morphe-desktop-1.19.1-all.jar  
 CLI: MorpheApp/morphe-desktop-1.19.1-all.jar  
 CLI: MorpheApp/morphe-desktop-1.19.1-all.jar  
@@ -31,12 +29,11 @@ Patches: jkennethcarino/patches-1.7.0.mpp
 
 CLI: MorpheApp/morphe-desktop-1.19.1-all.jar  
 Patches: MorpheApp/patches-1.49.0-dev.7.mpp  
-[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.49.0-dev.7)
-
-CLI: MorpheApp/morphe-desktop-1.19.1-all.jar  
-CLI: MorpheApp/morphe-desktop-1.19.1-all.jar    
+[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.49.0-dev.7)  
 
 Skipped:  
+Google-Photos-Akash-Sriram: 7.98.0.1001971222
+Patches: Akash-Sriram/patches-1.16.1.mpp  
 Opera-GX: latest  
 Patches: Alastor-Kaneki/patches-1.15.3.mpp  
 Telegram: 12.10.1  
@@ -72,8 +69,11 @@ The-Battle-of-Polytopia: 2.17.3.16375
 Zombie-Catchers: latest  
 Reddit-Morphe: 2026.24.0
 Patches: MorpheApp/patches-1.48.0.mpp  
+Patches: MorpheApp/patches-1.49.0-dev.7.mpp  
 YouTube-Morphe: 21.20.405
+YouTube-Morphe-Dev: 21.43.523
 YouTube-Music-Morphe: 9.20.53  
+YouTube-Music-Morphe-Dev: 9.42.52  
 Adobe-Photoshop-Mix: latest
 Patches: RookieEnough/patches-1.6.0.mpp  
 Cricbuzz: 6.24.01
@@ -149,6 +149,10 @@ Patches: durgesh0505/patches-1.25.0.mpp
 Does-Not-Commute-chiggi: 1.5.5
 Letterboxd-ethanm6: latest
 Patches: ethanm6/patches-1.4.4.mpp  
+AnyDesk: latest
+Patches: heval99/patches-2.0.0.mpp  
+AquaMail: 2.7.0
+Truecaller: 26.41.5
 AdGuard-hoo-dles: 4.14.2
 Patches: hoo-dles/patches-1.47.0.mpp  
 CamScanner-hoo-dles: 7.20.0.2606230000
@@ -159,12 +163,6 @@ Showly: 3.70.0
 Solid-Explorer: 3.6.1
 WPS-Office: 18.24
 Wallcraft: 3.61.01  
-Cx-File-Explorer: 2.8.1
-Patches: hxreborn/patches-1.61.0.mpp  
-MovieBox-hxreborn: 4.0.03.0918.03
-ProtonVPN-hxreborn: 5.20.98.0
-Protonmail: 7.11.11
-Symfonium: 15.1.0
 Patches: jkennethcarino/patches-1.7.0.mpp  
 AudioRelay: 0.26.1  
 Patches: kiraio-moe/patches-1.3.0.mpp  
@@ -218,17 +216,15 @@ qBitConnect: 2.0.6
 Imgur: 7.34.0.0  
 Patches: sushruth/patches-1.0.0.mpp  
 Lemmy-Sync: latest  
-Patches: wchill/patches-1.4.0.mpp                                                                                                                          
+Patches: wchill/patches-1.4.0.mpp                                                                                                                            
 
 ### Built versions  
-AnyDesk: latest
-AquaMail: 2.7.0
+Cx-File-Explorer: 2.8.1
 Freejobalert: 1.0.0
-Google-Photos-Akash-Sriram: 7.98.0.1001971222
 Plants-vs-Zombies-Free: 3.18.0
+ProtonVPN-hxreborn: 5.20.98.0
+Protonmail: 7.11.11
 Smashit: 1.5.14
-Truecaller: 26.41.5
+Symfonium: 15.1.0
 Vector: 2.10.2
-Vita-Mahjong: 3.44.0
-YouTube-Morphe-Dev: 21.43.523
-YouTube-Music-Morphe-Dev: 9.42.52  
+Vita-Mahjong: 3.44.0  
