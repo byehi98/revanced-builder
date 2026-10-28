@@ -1,5 +1,5 @@
 
-**4 apps built.**
+**1 apps built.**
   
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
@@ -12,14 +12,8 @@ Patches: hxreborn/patches-1.64.0.mpp
 [Changelog](https://github.com/hxreborn/morphe-patches/releases/tag/v1.64.0)
 
 CLI: MorpheApp/morphe-desktop-1.19.1-all.jar  
-Patches: MorpheApp/patches-1.49.0-dev.9.mpp  
-[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.49.0-dev.9)
-
-CLI: MorpheApp/morphe-desktop-1.19.1-all.jar  
-CLI: MorpheApp/morphe-desktop-1.19.1-all.jar  
-CLI: MorpheApp/morphe-desktop-1.19.1-all.jar  
-Patches: SysAdminDoc/patches-0.0.21.mpp  
-[Changelog](https://github.com/SysAdminDoc/HushTelegram/releases/tag/v0.0.21)  
+Patches: wchill/patches-2.0.0.mpp  
+[Changelog](https://github.com/wchill/patcheddit/releases/tag/v2.0.0)  
 
 Skipped:  
 Google-Photos-Akash-Sriram: 7.98.0.1001971222
@@ -59,8 +53,12 @@ The-Battle-of-Polytopia: 2.17.3.16375
 Zombie-Catchers: latest  
 Reddit-Morphe: 2026.24.0
 Patches: MorpheApp/patches-1.48.0.mpp  
+Reddit-Morphe-Dev: 2026.43.0
+Patches: MorpheApp/patches-1.49.0-dev.9.mpp  
 YouTube-Morphe: 21.20.405
+YouTube-Morphe-Dev: 21.43.523
 YouTube-Music-Morphe: 9.20.53  
+YouTube-Music-Morphe-Dev: 9.43.51  
 Adobe-Photoshop-Mix: latest
 Patches: RookieEnough/patches-1.6.0.mpp  
 Cricbuzz: 6.24.01
@@ -71,6 +69,8 @@ Irplus: latest
 Letterboxd: latest
 Photomath: latest
 SoundCloud-RookieEnough: latest
+Telegram-Hush: 13.1.1
+Patches: SysAdminDoc/patches-0.0.21.mpp  
 Advanced-Download-Manager: 14.0.39  
 Patches: arandomhooman/patches-1.53.0.mpp  
 FolderSync: 4.12.0  
@@ -211,12 +211,7 @@ Unimote: 1.8.1
 Yatri: 5.0.6
 qBitConnect: 2.0.6  
 Imgur: 7.34.0.0  
-Patches: sushruth/patches-1.0.0.mpp  
-Lemmy-Sync: latest  
-Patches: wchill/patches-1.4.0.mpp                                                                                                                                      
+Patches: sushruth/patches-1.0.0.mpp    
 
 ### Built versions  
-Reddit-Morphe-Dev: 2026.43.0
-Telegram-Hush: 13.1.1
-YouTube-Morphe-Dev: 21.43.523
-YouTube-Music-Morphe-Dev: 9.43.51  
+Lemmy-Sync: latest  
