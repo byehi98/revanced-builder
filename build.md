@@ -1,67 +1,12 @@
 
-**52 apps built.**
+**3 apps built.**
   
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
 CLI: MorpheApp/morphe-desktop-1.19.1-all.jar  
-Patches: byehi98/patches-1.47.0.mpp  
-[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.47.0)
+Patches: MorpheApp/patches-2.0.0-dev.1.mpp  
+[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v2.0.0-dev.1)
 
-CLI: MorpheApp/morphe-desktop-1.19.1-all.jar  
-CLI: MorpheApp/morphe-desktop-1.19.1-all.jar  
-CLI: MorpheApp/morphe-desktop-1.19.1-all.jar  
-CLI: MorpheApp/morphe-desktop-1.19.1-all.jar  
-CLI: MorpheApp/morphe-desktop-1.19.1-all.jar  
-CLI: MorpheApp/morphe-desktop-1.19.1-all.jar  
-CLI: MorpheApp/morphe-desktop-1.19.1-all.jar  
-CLI: MorpheApp/morphe-desktop-1.19.1-all.jar  
-CLI: MorpheApp/morphe-desktop-1.19.1-all.jar  
-CLI: MorpheApp/morphe-desktop-1.19.1-all.jar  
-CLI: MorpheApp/morphe-desktop-1.19.1-all.jar  
-CLI: MorpheApp/morphe-desktop-1.19.1-all.jar  
-CLI: MorpheApp/morphe-desktop-1.19.1-all.jar  
-CLI: MorpheApp/morphe-desktop-1.19.1-all.jar  
-CLI: MorpheApp/morphe-desktop-1.19.1-all.jar  
-CLI: MorpheApp/morphe-desktop-1.19.1-all.jar  
-CLI: MorpheApp/morphe-desktop-1.19.1-all.jar  
-Patches: byehi98/patches-1.47.1-dev.1.mpp  
-[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.47.1-dev.1)
-
-CLI: MorpheApp/morphe-desktop-1.19.1-all.jar  
-CLI: MorpheApp/morphe-desktop-1.19.1-all.jar  
-CLI: MorpheApp/morphe-desktop-1.19.1-all.jar  
-CLI: MorpheApp/morphe-desktop-1.19.1-all.jar  
-CLI: MorpheApp/morphe-desktop-1.19.1-all.jar  
-CLI: MorpheApp/morphe-desktop-1.19.1-all.jar  
-CLI: MorpheApp/morphe-desktop-1.19.1-all.jar  
-CLI: MorpheApp/morphe-desktop-1.19.1-all.jar  
-CLI: MorpheApp/morphe-desktop-1.19.1-all.jar  
-CLI: MorpheApp/morphe-desktop-1.19.1-all.jar  
-CLI: MorpheApp/morphe-desktop-1.19.1-all.jar  
-CLI: MorpheApp/morphe-desktop-1.19.1-all.jar  
-CLI: MorpheApp/morphe-desktop-1.19.1-all.jar  
-CLI: MorpheApp/morphe-desktop-1.19.1-all.jar  
-CLI: MorpheApp/morphe-desktop-1.19.1-all.jar  
-CLI: MorpheApp/morphe-desktop-1.19.1-all.jar  
-CLI: MorpheApp/morphe-desktop-1.19.1-all.jar  
-CLI: MorpheApp/morphe-desktop-1.19.1-all.jar  
-CLI: MorpheApp/morphe-desktop-1.19.1-all.jar  
-CLI: MorpheApp/morphe-desktop-1.19.1-all.jar  
-CLI: MorpheApp/morphe-desktop-1.19.1-all.jar  
-CLI: MorpheApp/morphe-desktop-1.19.1-all.jar  
-CLI: MorpheApp/morphe-desktop-1.19.1-all.jar  
-CLI: MorpheApp/morphe-desktop-1.19.1-all.jar  
-CLI: MorpheApp/morphe-desktop-1.19.1-all.jar  
-CLI: MorpheApp/morphe-desktop-1.19.1-all.jar  
-CLI: MorpheApp/morphe-desktop-1.19.1-all.jar  
-CLI: MorpheApp/morphe-desktop-1.19.1-all.jar  
-CLI: MorpheApp/morphe-desktop-1.19.1-all.jar  
-CLI: MorpheApp/morphe-desktop-1.19.1-all.jar  
-Patches: hxreborn/patches-1.66.0.mpp  
-[Changelog](https://github.com/hxreborn/morphe-patches/releases/tag/v1.66.0)
-
-CLI: MorpheApp/morphe-desktop-1.19.1-all.jar  
-CLI: MorpheApp/morphe-desktop-1.19.1-all.jar  
 CLI: MorpheApp/morphe-desktop-1.19.1-all.jar  
 CLI: MorpheApp/morphe-desktop-1.19.1-all.jar    
 
@@ -103,12 +48,8 @@ The-Battle-of-Polytopia: 2.17.3.16375
 Zombie-Catchers: latest  
 Reddit-Morphe: 2026.24.0
 Patches: MorpheApp/patches-1.48.0.mpp  
-Reddit-Morphe-Dev: 2026.44.0
-Patches: MorpheApp/patches-1.49.0-dev.11.mpp  
 YouTube-Morphe: 21.20.405
-YouTube-Morphe-Dev: 21.43.523
 YouTube-Music-Morphe: 9.20.53  
-YouTube-Music-Morphe-Dev: 9.43.51  
 Adobe-Photoshop-Mix: latest
 Patches: RookieEnough/patches-1.6.2.mpp  
 Cricbuzz: 6.24.01
@@ -130,6 +71,55 @@ Brave-Bufferk: 1.92.140
 Patches: bufferk/patches-1.8.1.mpp  
 Medium: 4.5.1784910928
 Truecaller-bufferk: 26.10.6
+20-Minutes-Till-Dawn: 8.7
+Patches: byehi98/patches-1.47.0.mpp  
+Adda247: 12.7.8
+Aliens-Drive-Me-Crazy: 3.2.10
+Alto-Adventure: 1.8.27
+Alto-Odyssey: 1.0.42
+Big-Hunter: 3.1.2
+Burrito-Bison: 3.75
+Crash-of-Cars: 1.9.36
+Crossy-Road: 7.14.2
+Dan-The-Man: 1.14.10
+Dead-Target: 4.185.0
+Dead-Trigger: 2.3.4
+Document-Scanner: 6.9.9
+Doodle-Jump: 3.11.40
+Dr-Driving: 1.73
+Earn-to-Die-2: 1.5.6
+Fancy-Pants: 1.0.30
+Freejobalert: 1.0.0
+Patches: byehi98/patches-1.47.1-dev.1.mpp  
+Fruit-Ninja: 3.97.9
+Grimvalor: 1.2.13
+HAAK: 1.4.3
+Head-Basketball: 4.6.4
+Head-Soccer: 7.1.10
+Hill-Climb-Racing: 1.73.1
+Injustice: 3.5.1
+Into-The-Dead: 2.9.5
+Into-The-Dead-2: 1.88.0
+Jetpack-Joyride: 1.104.2
+Lumina-Walls: 1.0.2.6
+Missiles: 1.41
+Onlyone: 1.3052
+Plagueinc: 1.27.3
+Plants-vs-Zombies-Free: 3.18.0
+Progressbar95: 1.1111
+Rodeo-Stampede: 4.26.0
+Shooty-Skies: 3.441.100103
+Smashit: 1.5.14
+Swamp-Attack: 4.8.9.0
+Swamp-Attack-2: 1.3.10
+Swift-Backup: 5.1.0
+Swordigo: 1.4.13
+Tentaclewars: 2.1.27
+Traffic-Racer: 4.0
+Traffic-Rider: 2.11
+Truecloud: 4.6.5.13
+Vector: 2.10.2
+Vita-Mahjong: 3.44.1  
 Minesweeper: 1.21.3  
 Patches: cesbar/patches-1.13.1.mpp  
 Solitaire: 1.20.3  
@@ -156,6 +146,12 @@ Showly: 3.70.0
 Solid-Explorer: 3.6.1
 WPS-Office: 18.24
 Wallcraft: 3.61.01  
+Cx-File-Explorer: 2.8.1
+Patches: hxreborn/patches-1.66.0.mpp  
+MovieBox-hxreborn: 4.0.03.1020.03
+ProtonVPN-hxreborn: 5.20.98.0
+Protonmail: 7.11.11
+Symfonium: 15.1.0
 Reddit-Adobo: 2026.43.0
 Patches: jkennethcarino/patches-1.7.0.mpp  
 AudioRelay: 0.26.1  
@@ -210,58 +206,9 @@ qBitConnect: 2.0.6
 Imgur: 7.34.0.0  
 Patches: sushruth/patches-1.0.0.mpp    
 Lemmy-Sync: latest  
-Patches: wchill/patches-2.0.0.mpp            
+Patches: wchill/patches-2.0.0.mpp              
 
 ### Built versions  
-20-Minutes-Till-Dawn: 8.7
-Adda247: 12.7.8
-Aliens-Drive-Me-Crazy: 3.2.10
-Alto-Adventure: 1.8.27
-Alto-Odyssey: 1.0.42
-Big-Hunter: 3.1.2
-Burrito-Bison: 3.75
-Crash-of-Cars: 1.9.36
-Crossy-Road: 7.14.2
-Cx-File-Explorer: 2.8.1
-Dan-The-Man: 1.14.10
-Dead-Target: 4.185.0
-Dead-Trigger: 2.3.4
-Document-Scanner: 6.9.9
-Doodle-Jump: 3.11.40
-Dr-Driving: 1.73
-Earn-to-Die-2: 1.5.6
-Fancy-Pants: 1.0.30
-Freejobalert: 1.0.0
-Fruit-Ninja: 3.97.9
-Grimvalor: 1.2.13
-HAAK: 1.4.3
-Head-Basketball: 4.6.4
-Head-Soccer: 7.1.10
-Hill-Climb-Racing: 1.73.1
-Injustice: 3.5.1
-Into-The-Dead-2: 1.88.0
-Into-The-Dead: 2.9.5
-Jetpack-Joyride: 1.104.2
-Lumina-Walls: 1.0.2.6
-Missiles: 1.41
-MovieBox-hxreborn: 4.0.03.1020.03
-Onlyone: 1.3052
-Plagueinc: 1.27.3
-Plants-vs-Zombies-Free: 3.18.0
-Progressbar95: 1.1111
-ProtonVPN-hxreborn: 5.20.98.0
-Protonmail: 7.11.11
-Rodeo-Stampede: 4.26.0
-Shooty-Skies: 3.441.100103
-Smashit: 1.5.14
-Swamp-Attack-2: 1.3.10
-Swamp-Attack: 4.8.9.0
-Swift-Backup: 5.1.0
-Swordigo: 1.4.13
-Symfonium: 15.1.0
-Tentaclewars: 2.1.27
-Traffic-Racer: 4.0
-Traffic-Rider: 2.11
-Truecloud: 4.6.5.13
-Vector: 2.10.2
-Vita-Mahjong: 3.44.1  
+Reddit-Morphe-Dev: 2026.44.0
+YouTube-Morphe-Dev: 21.43.523
+YouTube-Music-Morphe-Dev: 9.43.51  
