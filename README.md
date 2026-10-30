@@ -11,11 +11,11 @@ Get the [latest CI release](https://github.com/j-hc/revanced-magisk-module/relea
 <details>
 <summary><b>166 of 168 apps built</b> — click to expand the full list</summary>
 
-#### `Akash-Sriram/morphe-google-photos` · `patches-1.16.1.mpp`
+#### `Akash-Sriram/morphe-google-photos` · `patches-1.17.0.mpp`
 
 | App | Status | Obtainium |
 | :--- | :---: | :---: |
-| `Google-Photos-Akash-Sriram` ([APK](https://github.com/byehi98/revanced-builder/releases/download/329/google-photos-akash-sriram-akash-sriram-v7.98.0.1001971222-all.apk)) | ✅ | [![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22app.morphe.android.apps.photos%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Google-Photos-Akash-Sriram%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22google-photos-akash-sriram-akash-sriram%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%7D%22%7D) |
+| `Google-Photos-Akash-Sriram` ([APK](https://github.com/byehi98/revanced-builder/releases/download/345/google-photos-akash-sriram-akash-sriram-v7.99.0.1007655401-all.apk)) | ✅ | [![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22app.morphe.android.apps.photos%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Google-Photos-Akash-Sriram%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22google-photos-akash-sriram-akash-sriram%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%7D%22%7D) |
 
 #### `Alastor-Kaneki/Morphe-Patches` · `patches-1.15.3.mpp`
 
@@ -318,11 +318,11 @@ Get the [latest CI release](https://github.com/j-hc/revanced-magisk-module/relea
 | :--- | :---: | :---: |
 | `Telegram-Hush` ([APK](https://github.com/byehi98/revanced-builder/releases/download/335/telegram-hush-hush-v13.1.1-all.apk)) | ✅ | [![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22org.telegram.messenger%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Telegram-Hush%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22telegram-hush-hush%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%7D%22%7D) |
 
-#### `wchill/patcheddit` · `patches-2.0.0.mpp`
+#### `wchill/patcheddit` · `patches-2.0.2.mpp`
 
 | App | Status | Obtainium |
 | :--- | :---: | :---: |
-| `Lemmy-Sync` ([APK](https://github.com/byehi98/revanced-builder/releases/download/336/lemmy-sync-patcheddit-vlatest-all.apk)) | ✅ | [![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22io.syncapps.lemmy_sync%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Lemmy-Sync%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22lemmy-sync-patcheddit%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%7D%22%7D) |
+| `Lemmy-Sync` ([APK](https://github.com/byehi98/revanced-builder/releases/download/345/lemmy-sync-patcheddit-vlatest-all.apk)) | ✅ | [![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22io.syncapps.lemmy_sync%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Lemmy-Sync%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22lemmy-sync-patcheddit%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%7D%22%7D) |
 
 </details>
 <!-- BUILD_STATUS_END -->
