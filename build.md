@@ -1,25 +1,21 @@
 
-**6 apps built.**
+**2 apps built.**
   
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
+CLI: MorpheApp/morphe-desktop-1.20.0-all.jar  
+Patches: Akash-Sriram/patches-1.17.0.mpp  
+[Changelog](https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.17.0)
+
 CLI: MorpheApp/morphe-desktop-1.20.0-all.jar  
 Patches: byehi98/patches-1.47.1-dev.3.mpp  
 [Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.47.1-dev.3)
 
 CLI: MorpheApp/morphe-desktop-1.20.0-all.jar  
-Patches: MorpheApp/patches-2.0.0.mpp  
-[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v2.0.0)
-
-CLI: MorpheApp/morphe-desktop-1.20.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.20.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.20.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.20.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.20.0-all.jar    
+Patches: wchill/patches-2.0.2.mpp  
+[Changelog](https://github.com/wchill/patcheddit/releases/tag/v2.0.2)  
 
 Skipped:  
-Google-Photos-Akash-Sriram: 7.98.0.1001971222
-Patches: Akash-Sriram/patches-1.16.1.mpp  
 Opera-GX: latest  
 Patches: Alastor-Kaneki/patches-1.15.3.mpp  
 Telegram: 12.10.1  
@@ -53,6 +49,14 @@ Oddmar: latest
 Plants-vs-Zombies: latest  
 The-Battle-of-Polytopia: 2.17.3.16375  
 Zombie-Catchers: latest  
+Reddit-Morphe: 2026.40.0
+Patches: MorpheApp/patches-2.0.0.mpp  
+Reddit-Morphe-Dev: 2026.44.0
+Patches: MorpheApp/patches-2.0.0.mpp  
+YouTube-Morphe: 21.30.216
+YouTube-Morphe-Dev: 21.43.523
+YouTube-Music-Morphe: 9.30.53  
+YouTube-Music-Morphe-Dev: 9.43.51
 Adobe-Photoshop-Mix: latest
 Patches: RookieEnough/patches-1.6.2.mpp  
 Cricbuzz: 6.24.01
@@ -206,14 +210,8 @@ Unimote: 1.8.1
 Yatri: 5.0.6
 qBitConnect: 2.0.6  
 Imgur: 7.34.0.0  
-Patches: sushruth/patches-1.0.0.mpp    
-Lemmy-Sync: latest  
-Patches: wchill/patches-2.0.0.mpp                  
+Patches: sushruth/patches-1.0.0.mpp      
 
 ### Built versions  
-Reddit-Morphe-Dev: 2026.44.0
-Reddit-Morphe: 2026.40.0
-YouTube-Morphe-Dev: 21.43.523
-YouTube-Morphe: 21.30.216
-YouTube-Music-Morphe-Dev: 9.43.51
-YouTube-Music-Morphe: 9.30.53  
+Google-Photos-Akash-Sriram: 7.99.0.1007655401
+Lemmy-Sync: latest  
