@@ -1,11 +1,19 @@
 
-**3 apps built.**
+**7 apps built.**
   
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
 CLI: MorpheApp/morphe-desktop-1.19.1-all.jar  
-Patches: MorpheApp/patches-2.0.0-dev.1.mpp  
-[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v2.0.0-dev.1)
+Patches: byehi98/patches-1.47.1-dev.3.mpp  
+[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.47.1-dev.3)
+
+CLI: MorpheApp/morphe-desktop-1.19.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.19.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.19.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.19.1-all.jar  
+CLI: MorpheApp/morphe-desktop-1.19.1-all.jar  
+Patches: MorpheApp/patches-2.0.0-dev.2.mpp  
+[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v2.0.0-dev.2)
 
 CLI: MorpheApp/morphe-desktop-1.19.1-all.jar  
 CLI: MorpheApp/morphe-desktop-1.19.1-all.jar    
@@ -89,8 +97,6 @@ Doodle-Jump: 3.11.40
 Dr-Driving: 1.73
 Earn-to-Die-2: 1.5.6
 Fancy-Pants: 1.0.30
-Freejobalert: 1.0.0
-Patches: byehi98/patches-1.47.1-dev.1.mpp  
 Fruit-Ninja: 3.97.9
 Grimvalor: 1.2.13
 HAAK: 1.4.3
@@ -105,11 +111,9 @@ Lumina-Walls: 1.0.2.6
 Missiles: 1.41
 Onlyone: 1.3052
 Plagueinc: 1.27.3
-Plants-vs-Zombies-Free: 3.18.0
 Progressbar95: 1.1111
 Rodeo-Stampede: 4.26.0
 Shooty-Skies: 3.441.100103
-Smashit: 1.5.14
 Swamp-Attack: 4.8.9.0
 Swamp-Attack-2: 1.3.10
 Swift-Backup: 5.1.0
@@ -118,8 +122,6 @@ Tentaclewars: 2.1.27
 Traffic-Racer: 4.0
 Traffic-Rider: 2.11
 Truecloud: 4.6.5.13
-Vector: 2.10.2
-Vita-Mahjong: 3.44.1  
 Minesweeper: 1.21.3  
 Patches: cesbar/patches-1.13.1.mpp  
 Solitaire: 1.20.3  
@@ -206,9 +208,13 @@ qBitConnect: 2.0.6
 Imgur: 7.34.0.0  
 Patches: sushruth/patches-1.0.0.mpp    
 Lemmy-Sync: latest  
-Patches: wchill/patches-2.0.0.mpp              
+Patches: wchill/patches-2.0.0.mpp                
 
 ### Built versions  
+Freejobalert: 1.0.0
+Plants-vs-Zombies-Free: 3.18.0
 Reddit-Morphe-Dev: 2026.44.0
+Smashit: 1.5.14
+Vita-Mahjong: 3.45.0
 YouTube-Morphe-Dev: 21.43.523
 YouTube-Music-Morphe-Dev: 9.43.51  
