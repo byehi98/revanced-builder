@@ -1,14 +1,28 @@
 
-**4 apps built.**
+**12 apps built.**
   
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
 CLI: MorpheApp/morphe-desktop-1.20.0-all.jar  
-Patches: byehi98/patches-1.47.1-dev.4.mpp  
-[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.47.1-dev.4)
+Patches: byehi98/patches-1.47.1-dev.9.mpp  
+[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.47.1-dev.9)
 
 CLI: MorpheApp/morphe-desktop-1.20.0-all.jar  
 CLI: MorpheApp/morphe-desktop-1.20.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.20.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.20.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.20.0-all.jar  
+Patches: hxreborn/patches-1.67.0.mpp  
+[Changelog](https://github.com/hxreborn/morphe-patches/releases/tag/v1.67.0)
+
+CLI: MorpheApp/morphe-desktop-1.20.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.20.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.20.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.20.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.20.0-all.jar  
+Patches: MorpheApp/patches-2.1.0-dev.2.mpp  
+[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v2.1.0-dev.2)
+
 CLI: MorpheApp/morphe-desktop-1.20.0-all.jar  
 CLI: MorpheApp/morphe-desktop-1.20.0-all.jar    
 
@@ -50,12 +64,8 @@ The-Battle-of-Polytopia: 2.17.3.16375
 Zombie-Catchers: latest  
 Reddit-Morphe: 2026.40.0
 Patches: MorpheApp/patches-2.0.0.mpp  
-Reddit-Morphe-Dev: 2026.44.0
-Patches: MorpheApp/patches-2.0.0.mpp  
 YouTube-Morphe: 21.30.216
-YouTube-Morphe-Dev: 21.43.523
 YouTube-Music-Morphe: 9.30.53  
-YouTube-Music-Morphe-Dev: 9.43.51
 Adobe-Photoshop-Mix: latest
 Patches: RookieEnough/patches-1.6.2.mpp  
 Cricbuzz: 6.24.01
@@ -146,12 +156,6 @@ Showly: 3.70.0
 Solid-Explorer: 3.6.1
 WPS-Office: 18.24
 Wallcraft: 3.61.01  
-Cx-File-Explorer: 2.8.1
-Patches: hxreborn/patches-1.66.0.mpp  
-MovieBox-hxreborn: 4.0.03.1020.03
-ProtonVPN-hxreborn: 5.20.98.0
-Protonmail: 7.11.11
-Symfonium: 15.1.0
 Reddit-Adobo: 2026.43.0
 Patches: jkennethcarino/patches-1.7.0.mpp  
 AudioRelay: 0.26.1  
@@ -206,10 +210,18 @@ qBitConnect: 2.0.6
 Imgur: 7.34.0.0  
 Patches: sushruth/patches-1.0.0.mpp        
 Lemmy-Sync: latest
-Patches: wchill/patches-2.0.3.mpp    
+Patches: wchill/patches-2.0.3.mpp      
 
 ### Built versions  
+Cx-File-Explorer: 2.8.1
 Freejobalert: 1.0.0
+MovieBox-hxreborn: 4.0.03.1020.03
 Plants-vs-Zombies-Free: 3.18.0
+ProtonVPN-hxreborn: 5.21.9.0
+Protonmail: 7.11.11
+Reddit-Morphe-Dev: 2026.44.0
 Smashit: 1.5.14
-Vita-Mahjong: 3.45.0  
+Symfonium: 15.1.0
+Vita-Mahjong: 3.45.0
+YouTube-Morphe-Dev: 21.44.528-BETA
+YouTube-Music-Morphe-Dev: 9.43.51  
