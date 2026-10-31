@@ -4,18 +4,20 @@
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
 CLI: MorpheApp/morphe-desktop-1.20.0-all.jar  
-Patches: Akash-Sriram/patches-1.17.0.mpp  
-[Changelog](https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.17.0)
-
-CLI: MorpheApp/morphe-desktop-1.20.0-all.jar  
 Patches: byehi98/patches-1.47.1-dev.3.mpp  
 [Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.47.1-dev.3)
 
 CLI: MorpheApp/morphe-desktop-1.20.0-all.jar  
-Patches: wchill/patches-2.0.2.mpp  
-[Changelog](https://github.com/wchill/patcheddit/releases/tag/v2.0.2)  
+Patches: SysAdminDoc/patches-0.0.22.mpp  
+[Changelog](https://github.com/SysAdminDoc/HushTelegram/releases/tag/v0.0.22)
+
+CLI: MorpheApp/morphe-desktop-1.20.0-all.jar  
+Patches: wchill/patches-2.0.3.mpp  
+[Changelog](https://github.com/wchill/patcheddit/releases/tag/v2.0.3)  
 
 Skipped:  
+Google-Photos-Akash-Sriram: 7.99.0.1007655401
+Patches: Akash-Sriram/patches-1.17.0.mpp  
 Opera-GX: latest  
 Patches: Alastor-Kaneki/patches-1.15.3.mpp  
 Telegram: 12.10.1  
@@ -67,8 +69,6 @@ Irplus: latest
 Letterboxd: latest
 Photomath: latest
 SoundCloud-RookieEnough: latest
-Telegram-Hush: 13.1.1
-Patches: SysAdminDoc/patches-0.0.21.mpp  
 Advanced-Download-Manager: 14.0.39  
 Patches: arandomhooman/patches-1.53.0.mpp  
 FolderSync: 4.12.0  
@@ -210,8 +210,8 @@ Unimote: 1.8.1
 Yatri: 5.0.6
 qBitConnect: 2.0.6  
 Imgur: 7.34.0.0  
-Patches: sushruth/patches-1.0.0.mpp      
+Patches: sushruth/patches-1.0.0.mpp        
 
 ### Built versions  
-Google-Photos-Akash-Sriram: 7.99.0.1007655401
-Lemmy-Sync: latest  
+Lemmy-Sync: latest
+Telegram-Hush: 13.1.1  
