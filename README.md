@@ -312,17 +312,17 @@ Get the [latest CI release](https://github.com/j-hc/revanced-magisk-module/relea
 | :--- | :---: | :---: |
 | `Imgur` ([APK](https://github.com/byehi98/revanced-builder/releases/download/262/imgur-imgur-v7.34.0.0-all.apk)) | ✅ | [![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.imgur.mobile%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Imgur%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22imgur-imgur%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%7D%22%7D) |
 
-#### `SysAdminDoc/HushTelegram` · `patches-0.0.21.mpp`
+#### `SysAdminDoc/HushTelegram` · `patches-0.0.22.mpp`
 
 | App | Status | Obtainium |
 | :--- | :---: | :---: |
-| `Telegram-Hush` ([APK](https://github.com/byehi98/revanced-builder/releases/download/335/telegram-hush-hush-v13.1.1-all.apk)) | ✅ | [![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22org.telegram.messenger%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Telegram-Hush%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22telegram-hush-hush%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%7D%22%7D) |
+| `Telegram-Hush` ([APK](https://github.com/byehi98/revanced-builder/releases/download/346/telegram-hush-hush-v13.1.1-all.apk)) | ✅ | [![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22org.telegram.messenger%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Telegram-Hush%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22telegram-hush-hush%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%7D%22%7D) |
 
-#### `wchill/patcheddit` · `patches-2.0.2.mpp`
+#### `wchill/patcheddit` · `patches-2.0.3.mpp`
 
 | App | Status | Obtainium |
 | :--- | :---: | :---: |
-| `Lemmy-Sync` ([APK](https://github.com/byehi98/revanced-builder/releases/download/345/lemmy-sync-patcheddit-vlatest-all.apk)) | ✅ | [![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22io.syncapps.lemmy_sync%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Lemmy-Sync%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22lemmy-sync-patcheddit%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%7D%22%7D) |
+| `Lemmy-Sync` ([APK](https://github.com/byehi98/revanced-builder/releases/download/346/lemmy-sync-patcheddit-vlatest-all.apk)) | ✅ | [![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22io.syncapps.lemmy_sync%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Lemmy-Sync%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22lemmy-sync-patcheddit%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%7D%22%7D) |
 
 </details>
 <!-- BUILD_STATUS_END -->
