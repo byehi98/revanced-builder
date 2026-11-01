@@ -1,30 +1,19 @@
 
-**9 apps built.**
+**2 apps built.**
   
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
 CLI: MorpheApp/morphe-desktop-1.20.0-all.jar  
-Patches: Akash-Sriram/patches-1.17.4.mpp  
-[Changelog](https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.17.4)
+Patches: Akash-Sriram/patches-1.17.6.mpp  
+[Changelog](https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.17.6)
 
 CLI: MorpheApp/morphe-desktop-1.20.0-all.jar  
 Patches: byehi98/patches-1.48.0-dev.1.mpp  
 [Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.48.0-dev.1)
 
 CLI: MorpheApp/morphe-desktop-1.20.0-all.jar  
-Patches: hxreborn/patches-1.68.0.mpp  
-[Changelog](https://github.com/hxreborn/morphe-patches/releases/tag/v1.68.0)
-
-CLI: MorpheApp/morphe-desktop-1.20.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.20.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.20.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.20.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.20.0-all.jar  
-Patches: MorpheApp/patches-2.1.0-dev.5.mpp  
-[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v2.1.0-dev.5)
-
-CLI: MorpheApp/morphe-desktop-1.20.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.20.0-all.jar    
+Patches: jkennethcarino/patches-2.0.0-dev.3.mpp  
+[Changelog](https://github.com/jkennethcarino/adobo/releases/tag/v2.0.0-dev.3)  
 
 Skipped:  
 Opera-GX: latest  
@@ -62,8 +51,12 @@ The-Battle-of-Polytopia: 2.17.3.16375
 Zombie-Catchers: latest  
 Reddit-Morphe: 2026.40.0
 Patches: MorpheApp/patches-2.0.0.mpp  
+Reddit-Morphe-Dev: 2026.44.0
+Patches: MorpheApp/patches-2.1.0-dev.5.mpp  
 YouTube-Morphe: 21.30.216
+YouTube-Morphe-Dev: 21.44.528
 YouTube-Music-Morphe: 9.30.53  
+YouTube-Music-Morphe-Dev: 9.43.51  
 Adobe-Photoshop-Mix: latest
 Patches: RookieEnough/patches-1.6.2.mpp  
 Cricbuzz: 6.24.01
@@ -159,8 +152,12 @@ Showly: 3.70.0
 Solid-Explorer: 3.6.1
 WPS-Office: 18.24
 Wallcraft: 3.61.01  
-Reddit-Adobo: 2026.43.0
-Patches: jkennethcarino/patches-1.7.0.mpp  
+Cx-File-Explorer: 2.8.1
+Patches: hxreborn/patches-1.68.0.mpp  
+MovieBox-hxreborn: 4.0.03.1020.03
+ProtonVPN-hxreborn: 5.21.9.0
+Protonmail: 7.11.12
+Symfonium: 15.1.0
 AudioRelay: 0.26.1  
 Patches: kiraio-moe/patches-1.3.0.mpp  
 Camera: 5.4.0  
@@ -213,15 +210,8 @@ qBitConnect: 2.0.6
 Imgur: 7.34.0.0  
 Patches: sushruth/patches-1.0.0.mpp        
 Lemmy-Sync: latest
-Patches: wchill/patches-2.0.3.mpp            
+Patches: wchill/patches-2.0.3.mpp              
 
 ### Built versions  
-Cx-File-Explorer: 2.8.1
 Google-Photos-Akash-Sriram: 7.99.0.1007655401
-MovieBox-hxreborn: 4.0.03.1020.03
-ProtonVPN-hxreborn: 5.21.9.0
-Protonmail: 7.11.12
-Reddit-Morphe-Dev: 2026.44.0
-Symfonium: 15.1.0
-YouTube-Morphe-Dev: 21.44.528
-YouTube-Music-Morphe-Dev: 9.43.51  
+Reddit-Adobo: 2026.44.0  
