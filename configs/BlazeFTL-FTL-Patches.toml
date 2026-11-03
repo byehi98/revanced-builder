@@ -29,3 +29,11 @@ apkcombo-dlurl  	= "https://apkcombo.com/rs-file-manager/com.rs.explorer.fileman
 apkmirror-dlurl 	= "https://www.apkmirror.com/apk/rs-mobile-group/rs-file/"
 apkpure-dlurl   	= "https://apkpure.net/rs-file-manager/com.rs.explorer.filemanager"
 uptodown-dlurl  	= "https://rs-file-manager.en.uptodown.com/android"
+
+[1DM_FTL-Patches]
+patches-source 	= "BlazeFTL/FTL-Patches"
+cli-source 	= "MorpheApp/morphe-cli"
+rv-brand 	= "BlazeFTL"
+morphe-dlurl 	= "idm.internet.download.manager.plus"
+aptoide-dlurl 	= "idm.internet.download.manager.plus"
+apkeep-dlurl 	= "idm.internet.download.manager.plus"
