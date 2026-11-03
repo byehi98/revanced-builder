@@ -1,30 +1,13 @@
 
-**12 apps built.**
+**1 apps built.**
   
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
 CLI: MorpheApp/morphe-desktop-1.20.0-all.jar  
-Patches: heval99/patches-2.1.0.mpp  
-[Changelog](https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v2.1.0)
-
-CLI: MorpheApp/morphe-desktop-1.20.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.20.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.20.0-all.jar  
-Patches: RookieEnough/patches-1.6.3.mpp  
-[Changelog](https://github.com/RookieEnough/De-Vanced/releases/tag/v1.6.3)
-
-CLI: MorpheApp/morphe-desktop-1.20.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.20.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.20.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.20.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.20.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.20.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.20.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.20.0-all.jar    
+Patches: Akash-Sriram/patches-1.17.8.mpp  
+[Changelog](https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.17.8)  
 
 Skipped:  
-Google-Photos-Akash-Sriram: 7.99.0.1007655401
-Patches: Akash-Sriram/patches-1.17.7.mpp  
 Opera-GX: latest  
 Patches: Alastor-Kaneki/patches-1.15.3.mpp  
 Telegram: 12.10.1  
@@ -66,6 +49,16 @@ YouTube-Morphe: 21.30.216
 YouTube-Morphe-Dev: 21.44.528
 YouTube-Music-Morphe: 9.30.53  
 YouTube-Music-Morphe-Dev: 9.43.51  
+Adobe-Photoshop-Mix: latest
+Patches: RookieEnough/patches-1.6.3.mpp  
+Cricbuzz: 6.24.01
+Google-News-RookieEnough: latest
+Google-Photos: 7.92.0.977185651
+Icon-Pack-Studio: 2.2
+Irplus: latest
+Letterboxd: latest
+Photomath: latest
+SoundCloud-RookieEnough: latest
 Telegram-Hush: 13.1.1
 Patches: SysAdminDoc/patches-0.0.23.mpp  
 Advanced-Download-Manager: 14.0.39  
@@ -138,6 +131,10 @@ Patches: durgesh0505/patches-1.25.0.mpp
 Does-Not-Commute-chiggi: 1.5.5
 Letterboxd-ethanm6: latest
 Patches: ethanm6/patches-1.4.4.mpp  
+AnyDesk: latest
+Patches: heval99/patches-2.1.0.mpp  
+AquaMail: 2.8.1
+Truecaller: 26.42.5  
 AdGuard-hoo-dles: 4.14.2
 Patches: hoo-dles/patches-1.47.0.mpp  
 CamScanner-hoo-dles: 7.20.0.2606230000
@@ -208,18 +205,7 @@ qBitConnect: 2.0.6
 Imgur: 7.34.0.0  
 Patches: sushruth/patches-1.0.0.mpp        
 Lemmy-Sync: latest
-Patches: wchill/patches-2.0.3.mpp                  
+Patches: wchill/patches-2.0.3.mpp                    
 
 ### Built versions  
-Adobe-Photoshop-Mix: latest
-AnyDesk: latest
-AquaMail: 2.8.1
-Cricbuzz: 6.24.01
-Google-News-RookieEnough: latest
-Google-Photos: 7.92.0.977185651
-Icon-Pack-Studio: 2.2
-Irplus: latest
-Letterboxd: latest
-Photomath: latest
-SoundCloud-RookieEnough: latest
-Truecaller: 26.42.5  
+Google-Photos-Akash-Sriram: 7.99.0.1007655401  
