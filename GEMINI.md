@@ -59,4 +59,5 @@ Only keep sources that actually work for a given package. `apkpure` in particula
 - `./build.sh --list-apps`: Print every app table name found in the config.
 - `./build.sh clean`: Remove temporary and build directories.
 - `./build.sh <config.toml> --config-update`: Update the configuration file.
+- `./add-app.sh <app-name> <patch-source> [package-name]`: Add an app table to `configs/<owner>-<repo>.toml` configured with `rv-brand = "<owner>"`, `cli-source = "MorpheApp/morphe-cli"`, and `morphe-dlurl` + `apkeep-dlurl`.
 - `bash build-termux.sh`: Specialized build script for Termux environments.

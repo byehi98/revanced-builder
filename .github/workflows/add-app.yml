@@ -1,0 +1,55 @@
+name: Add App Config
+
+on:
+  workflow_dispatch:
+    inputs:
+      app_name:
+        description: "Application name (e.g. YouTube, Reddit, or package name)"
+        required: true
+        type: string
+      patch_source:
+        description: "Patch source repository in owner/repo format (e.g. MorpheApp/morphe-patches)"
+        required: true
+        type: string
+      package_name:
+        description: "Android package name (optional, automatically resolved if left empty)"
+        required: false
+        type: string
+
+jobs:
+  add-app:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Add App Configuration
+        run: |
+          chmod +x ./add-app.sh ./scripts/add_app.py
+          ./add-app.sh "${{ inputs.app_name }}" "${{ inputs.patch_source }}" "${{ inputs.package_name }}"
+
+      - name: Validate Configurations
+        run: |
+          chmod +x ./bin/toml/tq-x86_64
+          ./build.sh --list-apps
+
+      - name: Commit and Push Changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add configs/
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Add ${{ inputs.app_name }} with patch source ${{ inputs.patch_source }}"
+            git push
+          fi
