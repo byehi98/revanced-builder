@@ -9,7 +9,7 @@ Get the [latest CI release](https://github.com/j-hc/revanced-magisk-module/relea
 ## Build Status
 <!-- BUILD_STATUS_START -->
 <details>
-<summary><b>167 of 168 apps built</b> — click to expand the full list</summary>
+<summary><b>168 of 168 apps built</b> — click to expand the full list</summary>
 
 #### `Akash-Sriram/morphe-google-photos` · `patches-1.17.8.mpp`
 
@@ -227,7 +227,7 @@ Get the [latest CI release](https://github.com/j-hc/revanced-magisk-module/relea
 | `The-Battle-of-Polytopia` ([APK](https://github.com/byehi98/revanced-builder/releases/download/263/the-battle-of-polytopia-miguelninja19-v2.17.3.16375-all.apk)) | ✅ | [![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22air.com.midjiwan.polytopia%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22The-Battle-of-Polytopia%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22the-battle-of-polytopia-miguelninja19%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%7D%22%7D) |
 | `Zombie-Catchers` ([APK](https://github.com/byehi98/revanced-builder/releases/download/262/zombie-catchers-miguelninja19-vlatest-all.apk)) | ✅ | [![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22fi.twomenandadog.zombiecatchers%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Zombie-Catchers%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22zombie-catchers-miguelninja19%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%7D%22%7D) |
 
-#### `MorpheApp/morphe-patches` · `patches-2.0.0.mpp`
+#### `MorpheApp/morphe-patches` · `patches-2.1.0-dev.7.mpp`
 
 | App | Status | Obtainium |
 | :--- | :---: | :---: |
@@ -317,11 +317,11 @@ Get the [latest CI release](https://github.com/j-hc/revanced-magisk-module/relea
 | :--- | :---: | :---: |
 | `Telegram-Hush` ([APK](https://github.com/byehi98/revanced-builder/releases/download/349/telegram-hush-hush-v13.1.1-all.apk)) | ✅ | [![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22org.telegram.messenger%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Telegram-Hush%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22telegram-hush-hush%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%7D%22%7D) |
 
-#### `VenusIsJaded/Venus-Patches`
+#### `VenusIsJaded/Venus-Patches` · `patches-1.21.1.mpp`
 
 | App | Status | Obtainium |
 | :--- | :---: | :---: |
-| `Discord_Venus-Patches` | ❌ | [![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22app.revanced.builder.discord_venus-patches%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Discord_Venus-Patches%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22discord_venus-patches-venusisjaded%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%7D%22%7D) |
+| `Discord_Venus-Patches` ([APK](https://github.com/byehi98/revanced-builder/releases/download/357/discord_venus-patches-venusisjaded-v351.11-all.apk)) | ✅ | [![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.discord%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Discord_Venus-Patches%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22discord_venus-patches-venusisjaded%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%7D%22%7D) |
 
 #### `wchill/patcheddit` · `patches-2.0.3.mpp`
 
