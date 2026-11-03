@@ -1,11 +1,46 @@
 
-**1 apps built.**
+**12 apps built.**
   
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
 CLI: MorpheApp/morphe-desktop-1.20.0-all.jar  
-Patches: VenusIsJaded/patches-1.21.1.mpp  
-[Changelog](https://github.com/VenusIsJaded/Venus-Patches/releases/tag/v1.21.1)  
+Patches: bearinmindcat/patches-2.8.5.mpp  
+[Changelog](https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.8.5)
+
+CLI: MorpheApp/morphe-desktop-1.20.0-all.jar  
+Patches: BlazeFTL/patches-1.43.7.3.mpp  
+[Changelog](https://github.com/BlazeFTL/FTL-Patches/releases/tag/v1.43.7.3)
+
+CLI: MorpheApp/morphe-desktop-1.20.0-all.jar  
+Patches: byehi98/patches-1.47.0.mpp  
+[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.47.0)
+
+CLI: MorpheApp/morphe-desktop-1.20.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.20.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.20.0-all.jar  
+Patches: heval99/patches-2.1.0.mpp  
+[Changelog](https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v2.1.0)
+
+CLI: MorpheApp/morphe-desktop-1.20.0-all.jar  
+Patches: hxreborn/patches-1.70.0.mpp  
+[Changelog](https://github.com/hxreborn/morphe-patches/releases/tag/v1.70.0)
+
+CLI: MorpheApp/morphe-desktop-1.20.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.20.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.20.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.20.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.20.0-all.jar  
+CLI: MorpheApp/morphe-desktop-1.20.0-all.jar  
+Patches: rushiranpise/patches-1.23.1.mpp  
+[Changelog](https://github.com/rushiranpise/morphe-patches/releases/tag/v1.23.1)
+
+CLI: MorpheApp/morphe-desktop-1.20.0-all.jar  
+Patches: spicetify/patches-1.2.0.mpp  
+[Changelog](https://github.com/spicetify/morphe-patches/releases/tag/v1.2.0)
+
+CLI: MorpheApp/morphe-desktop-1.20.0-all.jar  
+Patches: SysAdminDoc/patches-0.0.13.mpp  
+[Changelog](https://github.com/SysAdminDoc/HushPinterest/releases/tag/v0.0.13)  
 
 Skipped:  
 Google-Photos-Akash-Sriram: 7.99.0.1007655401  
@@ -19,8 +54,8 @@ Patches: BholeyKaBhakt/patches-2.12.0.mpp
 Backdrops: 6.1.2  
 Patches: BholeyKaBhakt/patches-2.12.0.mpp  
 Speedtest: 7.0.4  
-All-Video-Downloader-and-Ace-Player: 1.9.8
 Patches: BlazeFTL/patches-1.43.7.3.mpp  
+All-Video-Downloader-and-Ace-Player: 1.9.8
 RS-File-Manager-BlazeFTL: latest
 Arm-Workout: 2.4.3  
 Patches: Entree3k/patches-1.22.0.mpp  
@@ -63,6 +98,8 @@ Photomath: latest
 SoundCloud-RookieEnough: latest
 Telegram-Hush: 13.1.1
 Patches: SysAdminDoc/patches-0.0.23.mpp  
+Discord_Venus-Patches: 351.11  
+Patches: VenusIsJaded/patches-1.21.1.mpp  
 Advanced-Download-Manager: 14.0.39  
 Patches: arandomhooman/patches-1.53.0.mpp  
 FolderSync: 4.12.0  
@@ -147,12 +184,6 @@ Showly: 3.70.0
 Solid-Explorer: 3.6.1
 WPS-Office: 18.24
 Wallcraft: 3.61.01  
-Cx-File-Explorer: 2.8.1
-Patches: hxreborn/patches-1.69.0.mpp  
-MovieBox-hxreborn: 4.0.03.1020.03
-ProtonVPN-hxreborn: 5.21.9.0
-Protonmail: 7.11.12
-Symfonium: 15.1.0
 Reddit-Adobo: 2026.44.0  
 Patches: jkennethcarino/patches-2.0.0-dev.3.mpp  
 AudioRelay: 0.26.1  
@@ -206,7 +237,18 @@ qBitConnect: 2.0.6
 Imgur: 7.34.0.0  
 Patches: sushruth/patches-1.0.0.mpp        
 Lemmy-Sync: latest
-Patches: wchill/patches-2.0.3.mpp                        
+Patches: wchill/patches-2.0.3.mpp                          
 
 ### Built versions  
-Discord_Venus-Patches: 351.11  
+Cx-File-Explorer: 2.8.1
+Firefox_Heval-Morphe-Patches: 158.0.2
+Google-Maps_morphe-patches: 26.36.04.973607363
+Magic-Survival_okish-morphe-patches: 0.9941
+Minutes-Till-Dawn_okish-morphe-patches: 8.7
+MovieBox-hxreborn: 4.0.03.1020.03
+Pinterest_HushPinterest: 14.41.0
+Plants-vs-Zombies_okish-morphe-patches: 3.18.0
+ProtonVPN-hxreborn: 5.21.9.0
+Protonmail: 7.11.12
+Spotify_morphe-patches: latest
+Symfonium: 15.1.0  
