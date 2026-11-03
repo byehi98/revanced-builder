@@ -66,11 +66,3 @@ rv-brand        = "hxreborn"
 morphe-dlurl  	= "com.community.oneroom"
 aptoide-dlurl  	= "com.community.oneroom"
 uptodown-dlurl  	= "https://com-community-oneroom.en.uptodown.com/android"
-
-[TeraBox_morphe-patches]
-patches-source 	= "hxreborn/morphe-patches"
-cli-source 	= "MorpheApp/morphe-cli"
-rv-brand 	= "hxreborn"
-morphe-dlurl 	= "com.dubox.drive"
-aptoide-dlurl 	= "com.dubox.drive"
-apkeep-dlurl 	= "com.dubox.drive"
