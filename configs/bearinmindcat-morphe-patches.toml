@@ -1,0 +1,16 @@
+# bearinmindcat/morphe-patches
+#
+# Patches bundle: https://github.com/bearinmindcat/morphe-patches
+# CLI:            https://github.com/MorpheApp/morphe-cli
+
+# every <source>-dlurl below is tried in DL_SRCS order
+# (morphe, apkeep, apkcombo, apkmirror, apkpure, archive, direct, gplaydl, uptodown) and the next one
+# is used when the current one cannot serve the required version.
+
+[Google-Maps_morphe-patches]
+patches-source 	= "bearinmindcat/morphe-patches"
+cli-source 	= "MorpheApp/morphe-cli"
+rv-brand 	= "bearinmindcat"
+morphe-dlurl 	= "com.google.android.apps.maps"
+aptoide-dlurl 	= "com.google.android.apps.maps"
+apkeep-dlurl 	= "com.google.android.apps.maps"
