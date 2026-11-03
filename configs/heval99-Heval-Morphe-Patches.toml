@@ -4,13 +4,14 @@
 # CLI:            https://github.com/MorpheApp/morphe-cli
 
 # every <source>-dlurl below is tried in DL_SRCS order
-# (apkeep, apkcombo, apkmirror, apkpure, gplaydl, uptodown) and the next one
+# (morphe, apkeep, apkcombo, apkmirror, apkpure, gplaydl, uptodown) and the next one
 # is used when the current one cannot serve the required version.
 
 [AnyDesk]
 patches-source  = "heval99/Heval-Morphe-Patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "heval99"
+morphe-dlurl    	= "com.anydesk.anydeskandroid"
 apkeep-dlurl    	= "com.anydesk.anydeskandroid"
 apkcombo-dlurl  	= "https://apkcombo.com/anydesk/com.anydesk.anydeskandroid/"
 apkpure-dlurl   	= "https://apkpure.net/anydesk-remote-desktop/com.anydesk.anydeskandroid"
@@ -21,6 +22,7 @@ uptodown-dlurl  	= "https://anydesk.en.uptodown.com/android"
 patches-source  = "heval99/Heval-Morphe-Patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "heval99"
+morphe-dlurl    	= "org.kman.AquaMail"
 apkeep-dlurl    	= "org.kman.AquaMail"
 apkcombo-dlurl  	= "https://apkcombo.com/aqua-mail/org.kman.AquaMail/"
 apkpure-dlurl   	= "https://apkpure.net/aquamail-email/org.kman.AquaMail"
@@ -31,6 +33,7 @@ uptodown-dlurl  	= "https://aqua-mail.en.uptodown.com/android"
 patches-source  = "heval99/Heval-Morphe-Patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "heval99"
+morphe-dlurl    	= "com.truecaller"
 apkeep-dlurl    	= "com.truecaller"
 apkmirror-dlurl 	= "https://www.apkmirror.com/apk/true-software-scandinavia-ab/truecaller-caller-id-block/"
 apkpure-dlurl   	= "https://apkpure.net/truecaller/com.truecaller"

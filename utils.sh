@@ -5,7 +5,7 @@ CWD=$(pwd)
 TEMP_DIR="temp"
 BIN_DIR="bin"
 BUILD_DIR="build"
-DL_SRCS=("apkeep" "apkcombo" "apkmirror" "apkpure" "archive" "direct" "gplaydl" "uptodown")
+DL_SRCS=("morphe" "apkeep" "apkcombo" "apkmirror" "apkpure" "archive" "direct" "gplaydl" "uptodown")
 
 if [ "${GITHUB_TOKEN-}" ]; then GH_HEADER="Authorization: token ${GITHUB_TOKEN}"; else GH_HEADER=; fi
 if [ "${GL_TOKEN-}" ]; then GL_HEADER="PRIVATE-TOKEN: ${GL_TOKEN}"; else GL_HEADER=; fi
@@ -1496,6 +1496,114 @@ dl_gplaydl() {
 get_gplaydl_vers() { echo "latest"; }
 get_gplaydl_pkg_name() { echo "$__GPLAYDL_PKG_NAME__"; }
 get_gplaydl_resp() { __GPLAYDL_PKG_NAME__="$1"; }
+# -------------------- morphe --------------------
+get_morphe_resp() {
+	local val="${1%/}"
+	val="${val##*/}"
+	__MORPHE_PKG_NAME__="$val"
+}
+
+get_morphe_pkg_name() {
+	echo "$__MORPHE_PKG_NAME__"
+}
+
+get_morphe_vers() {
+	local loc raw_ver
+	loc=$(curl -sIL -A "Morphe-Manager/1.0" --max-redirs 5 "https://api.morphe.software/v2/web-search/${__MORPHE_PKG_NAME__}~any~arm64-v8a" | grep -i "^location:" | tail -n 1 | awk '{print $2}' | tr -d '\r')
+	if [[ "$loc" =~ /([^/]+)-([0-9]+-[0-9]+-[0-9]+[0-9a-zA-Z_-]*)-release/ ]]; then
+		raw_ver="${BASH_REMATCH[2]}"
+		echo "${raw_ver//-/.}"
+	else
+		echo "latest"
+	fi
+}
+
+dl_morphe() {
+	local pkg=$1 version=${2// /-} output=$3 arch=$4 dpi=$5 get_latest_ver=$6
+	local clean_pkg="${pkg%/}"
+	clean_pkg="${clean_pkg##*/}"
+
+	local abi="arm64-v8a"
+	if [ "$arch" = "arm-v7a" ] || [ "$arch" = "armeabi-v7a" ]; then
+		abi="armeabi-v7a"
+	elif [ "$arch" = "x86_64" ]; then
+		abi="x86_64"
+	elif [ "$arch" = "x86" ]; then
+		abi="x86"
+	elif [ "$arch" = "all" ] || [ "$arch" = "both" ]; then
+		abi="arm64-v8a"
+	fi
+
+	local req_ver="${version:-any}"
+	if [ "$get_latest_ver" = "true" ] || [ "$version" = "latest" ] || [ "$version" = "auto" ]; then
+		req_ver="any"
+	fi
+
+	local query="${clean_pkg}~${req_ver}~${abi}"
+	pr "Querying Morphe resolver for '${query}'"
+	local resolved_url
+	resolved_url=$(curl -sIL -A "Morphe-Manager/1.0" --max-redirs 5 "https://api.morphe.software/v2/web-search/${query}" | grep -i "^location:" | tail -n 1 | awk '{print $2}' | tr -d '\r')
+
+	if [ -z "$resolved_url" ] || [[ "$resolved_url" == *google.com/search* ]] || [[ "$resolved_url" == *api.morphe.software* ]] || [[ "$resolved_url" == *fallback* ]]; then
+		wpr "Morphe resolver did not find a direct download target for '${clean_pkg}' (${req_ver})"
+		return 1
+	fi
+
+	pr "Morphe resolved '${clean_pkg}' to: ${resolved_url}"
+
+	if [[ "$resolved_url" == *apkmirror.com* ]]; then
+		if [[ "$resolved_url" == *"-android-apk-download"* ]]; then
+			local resp referer_url final_url
+			resp=$(_cf_get "$resolved_url") || return 1
+			referer_url=$(echo "$resp" | $HTMLQ --base https://www.apkmirror.com --attribute href "a.btn") || return 1
+			final_url=$(_cf_get "$referer_url" | $HTMLQ --base https://www.apkmirror.com --attribute href "span > a[rel = nofollow]") || return 1
+
+			local is_bundle=false
+			if grep -qi "bundle" <<<"$($HTMLQ 'a.btn' --text <<<"$resp")"; then
+				is_bundle=true
+			fi
+
+			local cookie_args=()
+			[ -n "${CF_COOKIES:-}" ] && cookie_args=(--header "Cookie: $CF_COOKIES")
+			local ua="${CF_UA:-Mozilla/5.0 (X11; Linux x86_64; rv:108.0) Gecko/20100101 Firefox/108.0}"
+
+			if [ "$is_bundle" = true ]; then
+				wget -nv -O "${output}.apkm" --header="User-Agent: $ua" --referer="$referer_url" "${cookie_args[@]}" --timeout=300 "$final_url" || return 1
+				merge_splits "${output}.apkm" "${output}"
+			else
+				wget -nv -O "${output}" --header="User-Agent: $ua" --referer="$referer_url" "${cookie_args[@]}" --timeout=300 "$final_url" || return 1
+			fi
+			return 0
+		else
+			dl_apkmirror "$resolved_url" "$version" "$output" "$arch" "$dpi" "$get_latest_ver"
+			return $?
+		fi
+	elif [[ "$resolved_url" == *uptodown.com* ]]; then
+		if [[ "$resolved_url" =~ /android/download/([0-9]+) ]]; then
+			local file_id="${BASH_REMATCH[1]}"
+			local app_host="${resolved_url#*://}"
+			app_host="${app_host%%/*}"
+			local data_code
+			data_code=$(_req "https://${app_host}/android" - | $HTMLQ "#detail-app-name" --attribute data-code) || data_code=""
+			if [ -n "$data_code" ]; then
+				local utd_dl
+				utd_dl=$(_utd_eapi_dlurl "$data_code" "$file_id") || utd_dl=""
+				if [ -n "$utd_dl" ]; then
+					if _req "$utd_dl" "$output"; then
+						return 0
+					fi
+				fi
+			fi
+		fi
+		local base_utd="${resolved_url%/download/*}"
+		base_utd="${base_utd%/android/*}/android"
+		dl_uptodown "$base_utd" "$version" "$output" "$arch" "$dpi"
+		return $?
+	else
+		wpr "Unsupported destination host from Morphe: ${resolved_url}"
+		return 1
+	fi
+}
 # --------------------------------------------------
 
 patch_apk() {
@@ -1612,6 +1720,9 @@ build_rv() {
 	version_f=${version_f#v}
 	local stock_apk="${TEMP_DIR}/${pkg_name}-${version_f}-${arch_f}.apk"
 	if [ ! -f "$stock_apk" ]; then
+		if [ -z "${args[morphe_dlurl]}" ] && [ -n "$pkg_name" ]; then
+			args[morphe_dlurl]="$pkg_name"
+		fi
 		for dl_p in "${DL_SRCS[@]}"; do
 			if [ -z "${args[${dl_p}_dlurl]}" ]; then continue; fi
 			pr "Downloading '${table}' from '${dl_p}'"

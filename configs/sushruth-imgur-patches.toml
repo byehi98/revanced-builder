@@ -4,13 +4,14 @@
 # CLI:            https://github.com/MorpheApp/morphe-cli
 
 # every <source>-dlurl below is tried in DL_SRCS order
-# (apkeep, apkcombo, apkmirror, apkpure, gplaydl, uptodown) and the next one
+# (morphe, apkeep, apkcombo, apkmirror, apkpure, gplaydl, uptodown) and the next one
 # is used when the current one cannot serve the required version.
 
 [Imgur]
 patches-source  = "sushruth/imgur-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "imgur"
+morphe-dlurl    = "com.imgur.mobile"
 apkeep-dlurl    = "com.imgur.mobile"
 apkcombo-dlurl 	= "https://apkcombo.com/imgur/com.imgur.mobile/"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/imgur/imgur-imgur/"

@@ -4,13 +4,14 @@
 # CLI:            https://github.com/MorpheApp/morphe-cli
 
 # every <source>-dlurl below is tried in DL_SRCS order
-# (apkeep, apkcombo, apkmirror, apkpure, gplaydl, uptodown) and the next one
+# (morphe, apkeep, apkcombo, apkmirror, apkpure, gplaydl, uptodown) and the next one
 # is used when the current one cannot serve the required version.
 
 [All-Video-Downloader-and-Ace-Player]
 patches-source  = "BlazeFTL/FTL-Patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "FTL"
+morphe-dlurl    = "videoplayer.videodownloader.downloader"
 apkeep-dlurl    = "videoplayer.videodownloader.downloader"
 apkcombo-dlurl 	= "https://apkcombo.com/all-video-downloader-and-ace-player/videoplayer.videodownloader.downloader/"
 apkpure-dlurl 	= "https://apkpure.net/video-downloader-and-ace-player/videoplayer.videodownloader.downloader"
@@ -20,6 +21,7 @@ uptodown-dlurl	= "https://video-downloader-and-ace-player.en.uptodown.com/androi
 patches-source  = "BlazeFTL/FTL-Patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "FTL"
+morphe-dlurl    	= "com.rs.explorer.filemanager"
 apkeep-dlurl    	= "com.rs.explorer.filemanager"
 apkcombo-dlurl  	= "https://apkcombo.com/rs-file-manager/com.rs.explorer.filemanager/"
 apkmirror-dlurl 	= "https://www.apkmirror.com/apk/rs-mobile-group/rs-file/"

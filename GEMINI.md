@@ -37,8 +37,8 @@ Paths are resolved relative to the directory of the file that names them, and ea
 2. **Configuration Parsing:** The script parses the root config, merging in every file under `app-configs`/`imports`, to determine build parameters (compression, parallel jobs, etc.).
 3. **Prebuilt Acquisition:** Fetches the latest (or specified) ReVanced CLI and patches JARs from GitHub or GitLab.
 4. **App Processing:** For each enabled app in `config.toml`:
-    - Finds the correct APK version (from APKeep, APKCombo, APKMirror, APKPure, archive, direct, gplaydl, or Uptodown — see `DL_SRCS` in `utils.sh`).
-    - Downloads the APK, walking the sources in `DL_SRCS` order and falling through to the next one whenever the current source cannot serve the required version.
+    - Finds the correct APK version (from Morphe, APKeep, APKCombo, APKMirror, APKPure, archive, direct, gplaydl, or Uptodown — see `DL_SRCS` in `utils.sh`).
+    - Downloads the APK, walking the sources in `DL_SRCS` order (with `morphe` tested first whenever package name is known) and falling through to the next one whenever the current source cannot serve the required version.
     - Applies patches using ReVanced CLI.
     - Packages the result as an APK or Magisk module.
 

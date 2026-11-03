@@ -4,13 +4,14 @@
 # CLI:            https://github.com/MorpheApp/morphe-cli
 
 # every <source>-dlurl below is tried in DL_SRCS order
-# (apkeep, apkcombo, apkmirror, apkpure, gplaydl, uptodown) and the next one
+# (morphe, apkeep, apkcombo, apkmirror, apkpure, gplaydl, uptodown) and the next one
 # is used when the current one cannot serve the required version.
 
 [Chess-com]
 patches-source  = "prathxmOp/prathxm-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "Prathxm"
+morphe-dlurl    	= "com.chess"
 apkeep-dlurl    	= "com.chess"
 apkcombo-dlurl  	= "https://apkcombo.com/chess-com/com.chess/"
 apkmirror-dlurl 	= "https://www.apkmirror.com/apk/chess-com/chess-play-learn/"

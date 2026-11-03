@@ -4,7 +4,7 @@
 # CLI:            https://github.com/MorpheApp/morphe-cli
 
 # every <source>-dlurl below is tried in DL_SRCS order
-# (apkeep, apkcombo, apkmirror, apkpure, gplaydl, uptodown) and the next one
+# (morphe, apkeep, apkcombo, apkmirror, apkpure, gplaydl, uptodown) and the next one
 # is used when the current one cannot serve the required version.
 # no uptodown-dlurl: no slug for this package resolved while this file was written.
 
@@ -13,6 +13,7 @@ patches-source  = "wchill/patcheddit"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "patcheddit"
 # patches-version = "dev"
+morphe-dlurl 	= "io.syncapps.lemmy_sync"
 apkeep-dlurl 	= "io.syncapps.lemmy_sync"
 apkcombo-dlurl 	= "https://apkcombo.com/lemmy-sync/io.syncapps.lemmy_sync/"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/sync-apps-ltd/sync-for-lemmy/"

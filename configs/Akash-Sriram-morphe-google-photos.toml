@@ -4,13 +4,14 @@
 # CLI:            https://github.com/MorpheApp/morphe-cli
 
 # every <source>-dlurl below is tried in DL_SRCS order
-# (apkeep, apkcombo, apkmirror, apkpure, gplaydl, uptodown) and the next one
+# (morphe, apkeep, apkcombo, apkmirror, apkpure, gplaydl, uptodown) and the next one
 # is used when the current one cannot serve the required version.
 
 [Google-Photos-Akash-Sriram]
 patches-source  = "Akash-Sriram/morphe-google-photos"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "Akash-Sriram"
+morphe-dlurl    = "com.google.android.apps.photos"
 apkeep-dlurl    = "com.google.android.apps.photos"
 apkcombo-dlurl 	= "https://apkcombo.com/google-photos/com.google.android.apps.photos/"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/photos/"

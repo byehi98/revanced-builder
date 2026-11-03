@@ -34,7 +34,8 @@ Find the file in `configs/` for that patches author (or create one), then add a
 table:
 ```toml
 [Some-App]
-apkmirror-dlurl = "https://www.apkmirror.com/apk/inc/app"
+morphe-dlurl = "package.name" # or morphe-helper-dlurl
+# or apkmirror-dlurl = "https://www.apkmirror.com/apk/inc/app"
 # or uptodown-dlurl = "https://app.en.uptodown.com/android"
 # or apkpure-dlurl = "https://apkpure.net/app-slug/package.name"
 # or apkcombo-dlurl = "https://apkcombo.com/app-slug/package.name"
@@ -42,10 +43,12 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/inc/app"
 # or gplaydl-dlurl = "package.name"
 ```
 
-These are tried in the fixed order `apkeep → apkcombo → apkmirror → apkpure →
-archive → direct → gplaydl → uptodown`, and any source that cannot deliver the
+These are tried in the fixed order `morphe → apkeep → apkcombo → apkmirror →
+apkpure → archive → direct → gplaydl → uptodown`, and any source that cannot deliver the
 required version falls through to the next one, so list as many as apply to make
-the build resilient to a single site being down.
+the build resilient to a single site being down. When a package name is known,
+`morphe` is tested first automatically to resolve direct variant download URLs via
+the Morphe resolver.
 
 > [!WARNING]
 > When a patch name itself contains a single quote, double it inside the string (e.g. 'Hide ''Get Music Premium''').

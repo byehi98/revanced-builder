@@ -4,7 +4,7 @@
 # CLI:            https://github.com/MorpheApp/morphe-cli
 
 # every <source>-dlurl below is tried in DL_SRCS order
-# (apkeep, apkcombo, apkmirror, apkpure, gplaydl, uptodown) and the next one
+# (morphe, apkeep, apkcombo, apkmirror, apkpure, gplaydl, uptodown) and the next one
 # is used when the current one cannot serve the required version.
 
 [Solitaire]
@@ -12,6 +12,7 @@ patches-source  = "cesbar/zpatches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "cesbar"
 # patches-version = "dev"
+morphe-dlurl    	= "ee.dustland.android.solitaire"
 apkeep-dlurl    	= "ee.dustland.android.solitaire"
 apkcombo-dlurl  	= "https://apkcombo.com/solitaire/ee.dustland.android.solitaire/"
 apkpure-dlurl   	= "https://apkpure.net/solitaire/ee.dustland.android.solitaire"
@@ -22,6 +23,7 @@ patches-source  = "cesbar/zpatches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "cesbar"
 # patches-version = "dev"
+morphe-dlurl    	= "ee.dustland.android.minesweeper"
 apkeep-dlurl    	= "ee.dustland.android.minesweeper"
 apkcombo-dlurl  	= "https://apkcombo.com/minesweeper/ee.dustland.android.minesweeper/"
 apkpure-dlurl   	= "https://apkpure.net/minesweeper/ee.dustland.android.minesweeper"

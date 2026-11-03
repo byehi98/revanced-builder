@@ -182,6 +182,12 @@ for table_name in $(toml_get_table_names); do
 			app_args[${dl_from}_dlurl]=${app_args[${dl_from}_dlurl]%versions}
 			app_args[${dl_from}_dlurl]=${app_args[${dl_from}_dlurl]%/}
 			app_args[dl_from]=${dl_from}
+		elif [ "$dl_from" = "morphe" ] && app_args[morphe_dlurl]=$(toml_get "$t" "morphe-helper-dlurl"); then
+			app_args[morphe_dlurl]=${app_args[morphe_dlurl]%/}
+			app_args[morphe_dlurl]=${app_args[morphe_dlurl]%download}
+			app_args[morphe_dlurl]=${app_args[morphe_dlurl]%versions}
+			app_args[morphe_dlurl]=${app_args[morphe_dlurl]%/}
+			app_args[dl_from]=morphe
 		else
 			app_args[${dl_from}_dlurl]=""
 		fi
@@ -193,6 +199,15 @@ for table_name in $(toml_get_table_names); do
 	fi
 
 	app_args[pkg_name]=$(toml_get "$t" pkg-name) || app_args[pkg_name]=""
+	if [ -z "${app_args[morphe_dlurl]}" ]; then
+		if [ -n "${app_args[pkg_name]}" ]; then
+			app_args[morphe_dlurl]="${app_args[pkg_name]}"
+		elif [ -n "${app_args[apkeep_dlurl]}" ]; then
+			app_args[morphe_dlurl]="${app_args[apkeep_dlurl]}"
+		elif [ -n "${app_args[gplaydl_dlurl]}" ]; then
+			app_args[morphe_dlurl]="${app_args[gplaydl_dlurl]}"
+		fi
+	fi
 	app_args[dpi]=$(toml_get "$t" dpi) || app_args[dpi]=""
 	table_name_f=${table_name,,}
 	table_name_f=${table_name_f// /-}

@@ -4,13 +4,14 @@
 # CLI:            https://github.com/MorpheApp/morphe-cli
 
 # every <source>-dlurl below is tried in DL_SRCS order
-# (apkeep, apkcombo, apkmirror, apkpure, gplaydl, uptodown) and the next one
+# (morphe, apkeep, apkcombo, apkmirror, apkpure, gplaydl, uptodown) and the next one
 # is used when the current one cannot serve the required version.
 
 [Brave-dh6k]
 patches-source  = "dh6k/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "dh6k"
+morphe-dlurl    	= "com.brave.browser"
 apkeep-dlurl    	= "com.brave.browser"
 apkcombo-dlurl  	= "https://apkcombo.com/brave-dh6k/com.brave.browser/"
 apkmirror-dlurl 	= "https://www.apkmirror.com/apk/brave-software/brave-browser/"
@@ -20,6 +21,7 @@ uptodown-dlurl  	= "https://brave-software-brave.en.uptodown.com/android"
 patches-source  = "dh6k/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "dh6k-beta"
+morphe-dlurl    	= "com.brave.browser_beta"
 apkeep-dlurl    	= "com.brave.browser_beta"
 apkcombo-dlurl  	= "https://apkcombo.com/brave-beta-dh6k/com.brave.browser_beta/"
 apkmirror-dlurl 	= "http://apkmirror.com/apk/brave-software/brave-browser-beta/"
@@ -29,6 +31,7 @@ uptodown-dlurl  	= "https://brave-browser-beta.en.uptodown.com/android"
 patches-source  = "dh6k/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "dh6k-nightly"
+morphe-dlurl    	= "com.brave.browser_nightly"
 apkeep-dlurl    	= "com.brave.browser_nightly"
 apkcombo-dlurl  	= "https://apkcombo.com/brave-nightly-dh6k/com.brave.browser_nightly/"
 apkmirror-dlurl 	= "https://www.apkmirror.com/apk/brave-software/brave-browser-nightly/"

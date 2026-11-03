@@ -4,7 +4,7 @@
 # CLI:            https://github.com/MorpheApp/morphe-cli
 
 # every <source>-dlurl below is tried in DL_SRCS order
-# (apkeep, apkcombo, apkmirror, apkpure, gplaydl, uptodown) and the next one
+# (morphe, apkeep, apkcombo, apkmirror, apkpure, gplaydl, uptodown) and the next one
 # is used when the current one cannot serve the required version.
 
 [Trakt]
@@ -12,6 +12,7 @@ patches-source  = "IMXEren/mix-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "IMXEren"
 # patches-version = "dev"
+morphe-dlurl 	= "tv.trakt.trakt"
 apkeep-dlurl 	= "tv.trakt.trakt"
 apkcombo-dlurl 	= "https://apkcombo.com/trakt/tv.trakt.trakt/"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/trakt/trakt/"
