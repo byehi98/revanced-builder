@@ -422,3 +422,11 @@ apkcombo-dlurl  	= "https://apkcombo.com/rar/com.rarlab.rar/"
 apkmirror-dlurl 	= "https://www.apkmirror.com/apk/rarlab/rar/"
 apkpure-dlurl   	= "https://apkpure.net/rar/com.rarlab.rar"
 # no uptodown-dlurl: uptodown 404s on every slug tried for this app
+
+[Home-Workout_morphe-patches]
+patches-source 	= "rushiranpise/morphe-patches"
+cli-source 	= "MorpheApp/morphe-cli"
+rv-brand 	= "rushiranpise"
+morphe-dlurl 	= "homeworkout.homeworkouts.noequipment"
+aptoide-dlurl 	= "homeworkout.homeworkouts.noequipment"
+apkeep-dlurl 	= "homeworkout.homeworkouts.noequipment"
