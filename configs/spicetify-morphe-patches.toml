@@ -1,0 +1,16 @@
+# spicetify/morphe-patches
+#
+# Patches bundle: https://github.com/spicetify/morphe-patches
+# CLI:            https://github.com/MorpheApp/morphe-cli
+
+# every <source>-dlurl below is tried in DL_SRCS order
+# (morphe, apkeep, apkcombo, apkmirror, apkpure, archive, direct, gplaydl, uptodown) and the next one
+# is used when the current one cannot serve the required version.
+
+[Spotify_morphe-patches]
+patches-source 	= "spicetify/morphe-patches"
+cli-source 	= "MorpheApp/morphe-cli"
+rv-brand 	= "spicetify"
+morphe-dlurl 	= "com.spotify.music"
+aptoide-dlurl 	= "com.spotify.music"
+apkeep-dlurl 	= "com.spotify.music"
