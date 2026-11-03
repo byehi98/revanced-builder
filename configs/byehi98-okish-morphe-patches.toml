@@ -603,3 +603,11 @@ apkpure-dlurl 	= "https://apkpure.net/vector/com.nekki.vector"
 apkcombo-dlurl 	= "https://apkcombo.com/vector/com.nekki.vector/"
 gplaydl-dlurl 	= "com.nekki.vector"
 uptodown-dlurl 	= "https://vector.en.uptodown.com/android"
+
+[Minutes-Till-Dawn_okish-morphe-patches]
+patches-source 	= "byehi98/okish-morphe-patches"
+cli-source 	= "MorpheApp/morphe-cli"
+rv-brand 	= "byehi98"
+morphe-dlurl 	= "com.Flanne.MinutesTillDawn.roguelike.shooting.fr.gp"
+aptoide-dlurl 	= "com.Flanne.MinutesTillDawn.roguelike.shooting.fr.gp"
+apkeep-dlurl 	= "com.Flanne.MinutesTillDawn.roguelike.shooting.fr.gp"
