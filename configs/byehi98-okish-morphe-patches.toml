@@ -619,3 +619,11 @@ rv-brand 	= "byehi98"
 morphe-dlurl 	= "com.ea.game.pvzfree_row"
 aptoide-dlurl 	= "com.ea.game.pvzfree_row"
 apkeep-dlurl 	= "com.ea.game.pvzfree_row"
+
+[Magic-Survival_okish-morphe-patches]
+patches-source 	= "byehi98/okish-morphe-patches"
+cli-source 	= "MorpheApp/morphe-cli"
+rv-brand 	= "byehi98"
+morphe-dlurl 	= "com.vkslrzm.Zombie"
+aptoide-dlurl 	= "com.vkslrzm.Zombie"
+apkeep-dlurl 	= "com.vkslrzm.Zombie"
