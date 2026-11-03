@@ -1,0 +1,15 @@
+# VenusIsJaded/Venus-Patches
+#
+# Patches bundle: https://github.com/VenusIsJaded/Venus-Patches
+# CLI:            https://github.com/MorpheApp/morphe-cli
+
+# every <source>-dlurl below is tried in DL_SRCS order
+# (morphe, apkeep, apkcombo, apkmirror, apkpure, archive, direct, gplaydl, uptodown) and the next one
+# is used when the current one cannot serve the required version.
+
+[Discord_Venus-Patches]
+patches-source 	= "VenusIsJaded/Venus-Patches"
+cli-source 	= "MorpheApp/morphe-cli"
+rv-brand 	= "VenusIsJaded"
+morphe-dlurl 	= "com.discord"
+apkeep-dlurl 	= "com.discord"
