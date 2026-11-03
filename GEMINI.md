@@ -37,13 +37,21 @@ Paths are resolved relative to the directory of the file that names them, and ea
 2. **Configuration Parsing:** The script parses the root config, merging in every file under `app-configs`/`imports`, to determine build parameters (compression, parallel jobs, etc.).
 3. **Prebuilt Acquisition:** Fetches the latest (or specified) ReVanced CLI and patches JARs from GitHub or GitLab.
 4. **App Processing:** For each enabled app in `config.toml`:
-    - Finds the correct APK version (from Morphe, APKeep, APKCombo, APKMirror, APKPure, archive, direct, gplaydl, or Uptodown — see `DL_SRCS` in `utils.sh`).
-    - Downloads the APK, walking the sources in `DL_SRCS` order (with `morphe` tested first whenever package name is known) and falling through to the next one whenever the current source cannot serve the required version.
+    - Finds the correct APK version (from Morphe, Aptoide, APKeep, APKCombo, APKMirror, APKPure, archive, direct, gplaydl, or Uptodown — see `DL_SRCS` in `utils.sh`).
+    - Downloads the APK, walking the sources in `DL_SRCS` order (with `morphe` and `aptoide` tested first whenever package name is known) and falling through to the next one whenever the current source cannot serve the required version. `apkeep` and `apkpure` also utilize 1-hop signed direct CDN downloads (`d.apkpure.com`) to bypass scraping blocks and Cloudflare issues.
     - Applies patches using ReVanced CLI.
     - Packages the result as an APK or Magisk module.
 
 ### Download Source Fallbacks
 An app table may declare several `<source>-dlurl` keys at once. Every key that is present takes part in the fallback chain, so listing more sources makes a build more resilient to a single site being down, rate-limited or missing a version. Every table needs at least one of them or `build.sh` aborts.
+
+The fallback order is:
+`morphe` → `aptoide` → `apkeep` → `apkcombo` → `apkmirror` → `apkpure` → `archive` → `direct` → `gplaydl` → `uptodown`.
+
+Sources from `helper-for-morphe` integrated into the builder:
+- **Morphe Resolver (`morphe`):** Fast API query to `api.morphe.software` which discovers direct APKMirror and Uptodown download links.
+- **Aptoide API (`aptoide`):** Native REST integration (`ws75.aptoide.com/api/7/`) with zero Cloudflare, no CAPTCHAs, full version history, and direct downloads from `pool.apk.aptoide.com`.
+- **APKPure Direct CDN (`d.apkpure.com`):** 1-hop signed CDN download for fast headless acquisition of APK/XAPK builds before running apkeep or scraping.
 
 Only keep sources that actually work for a given package. `apkpure` in particular scrapes `<url>/versions`, and APKPure returns `410` for apps it has no version history for — a dead entry there is just a wasted request, so omit it rather than shipping a URL that can never resolve.
 
@@ -59,5 +67,5 @@ Only keep sources that actually work for a given package. `apkpure` in particula
 - `./build.sh --list-apps`: Print every app table name found in the config.
 - `./build.sh clean`: Remove temporary and build directories.
 - `./build.sh <config.toml> --config-update`: Update the configuration file.
-- `./add-app.sh <app-name> <patch-source> [package-name]`: Add an app table to `configs/<owner>-<repo>.toml` configured with `rv-brand = "<owner>"`, `cli-source = "MorpheApp/morphe-cli"`, and `morphe-dlurl` + `apkeep-dlurl`.
+- `./add-app.sh <app-name> <patch-source> [package-name]`: Add an app table to `configs/<owner>-<repo>.toml` configured with `rv-brand = "<owner>"`, `cli-source = "MorpheApp/morphe-cli"`, and `morphe-dlurl` + `aptoide-dlurl` + `apkeep-dlurl`.
 - `bash build-termux.sh`: Specialized build script for Termux environments.

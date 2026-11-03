@@ -5,7 +5,7 @@ CWD=$(pwd)
 TEMP_DIR="temp"
 BIN_DIR="bin"
 BUILD_DIR="build"
-DL_SRCS=("morphe" "apkeep" "apkcombo" "apkmirror" "apkpure" "archive" "direct" "gplaydl" "uptodown")
+DL_SRCS=("morphe" "aptoide" "apkeep" "apkcombo" "apkmirror" "apkpure" "archive" "direct" "gplaydl" "uptodown")
 
 if [ "${GITHUB_TOKEN-}" ]; then GH_HEADER="Authorization: token ${GITHUB_TOKEN}"; else GH_HEADER=; fi
 if [ "${GL_TOKEN-}" ]; then GL_HEADER="PRIVATE-TOKEN: ${GL_TOKEN}"; else GL_HEADER=; fi
@@ -635,7 +635,7 @@ _cf_get() {
 	export CF_COOKIES=""
 	export CF_UA=""
 
-	if [ "${GITHUB_ACTIONS:-false}" = "true" ]; then
+	if [ "${GITHUB_ACTIONS:-false}" = "true" ] || [ -n "${CF_SOLVER_URL:-}" ] || curl -s -m 1 "${CF_SOLVER_URL:-http://localhost:8000}/html" >/dev/null 2>&1; then
 		_cf_ensure_services
 
 		if [ "${CF_HAS_TRAWL:-false}" = true ]; then
@@ -1254,8 +1254,47 @@ get_apkpure_vers() {
 		echo "$vers"
 	fi
 }
+# Fast direct 1-hop signed download via d.apkpure.com CDN (from helper-for-morphe)
+_dl_apkpure_direct() {
+	local pkg=$1 version=${2// /-} output=$3
+	local target_ver="${version:-latest}"
+	if [ "$target_ver" = "auto" ]; then target_ver="latest"; fi
+
+	for kind in "APK" "XAPK"; do
+		local direct_url="https://d.apkpure.com/b/${kind}/${pkg}?version=latest"
+		local loc
+		loc=$(curl -sIL -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64)" --max-redirs 3 "$direct_url" | grep -i "^location:" | tail -n 1 | awk '{print $2}' | tr -d '\r') || loc=""
+		if [ -n "$loc" ] && [[ "$loc" == *winudf.com* ]]; then
+			local fname=""
+			if [[ "$loc" =~ filename=([^&]+) ]]; then
+				fname="${BASH_REMATCH[1]}"
+			fi
+			local ver_hyphen="${target_ver//./-}"
+			local ver_underscore="${target_ver//./_}"
+			if [ "$target_ver" = "latest" ] || [[ "$fname" == *"$target_ver"* ]] || [[ "$fname" == *"$ver_hyphen"* ]] || [[ "$fname" == *"$ver_underscore"* ]] || [[ "$loc" == *"$ver_hyphen"* ]]; then
+				pr "Found direct APKPure CDN download for '${pkg}' (${target_ver})"
+				if [ "$kind" = "XAPK" ]; then
+					_req "$loc" "${output}.apkm" || return 1
+					merge_splits "${output}.apkm" "${output}"
+				else
+					_req "$loc" "${output}" || return 1
+				fi
+				return 0
+			fi
+		fi
+	done
+	return 1
+}
+
 dl_apkpure() {
 	local url=$1 version=$2 output=$3 arch=$4 _dpi=$5
+	local clean_pkg="${url%/}"
+	clean_pkg="${clean_pkg##*/}"
+
+	if _dl_apkpure_direct "$clean_pkg" "$version" "$output"; then
+		return 0
+	fi
+
 	url="${url%/}"
 	url="${url%/versions}"
 	url="${url%/download}"
@@ -1349,6 +1388,11 @@ _dl_apkeep_locked() {
 
 	# another job may have downloaded it while we waited for the lock
 	if [ -f "$output" ]; then return 0; fi
+
+	# Fast 1-hop signed direct CDN download before running apkeep
+	if _dl_apkpure_direct "$pkg" "$version" "$output"; then
+		return 0
+	fi
 
 	if ! command -v apkeep >/dev/null 2>&1; then
 		epr "apkeep is not installed or not in PATH. Are you in the nix shell?"
@@ -1545,6 +1589,21 @@ dl_morphe() {
 	resolved_url=$(curl -sIL -A "Morphe-Manager/1.0" --max-redirs 5 "https://api.morphe.software/v2/web-search/${query}" | grep -i "^location:" | tail -n 1 | awk '{print $2}' | tr -d '\r')
 
 	if [ -z "$resolved_url" ] || [[ "$resolved_url" == *google.com/search* ]] || [[ "$resolved_url" == *api.morphe.software* ]] || [[ "$resolved_url" == *fallback* ]]; then
+		# If specific version failed, check if latest ("any") matches the requested version (e.g. 351.11 matching 351-11-stable)
+		if [ "$req_ver" != "any" ]; then
+			local query_any="${clean_pkg}~any~${abi}"
+			local resolved_any
+			resolved_any=$(curl -sIL -A "Morphe-Manager/1.0" --max-redirs 5 "https://api.morphe.software/v2/web-search/${query_any}" | grep -i "^location:" | tail -n 1 | awk '{print $2}' | tr -d '\r')
+			if [ -n "$resolved_any" ] && [[ "$resolved_any" != *google.com/search* ]] && [[ "$resolved_any" != *api.morphe.software* ]] && [[ "$resolved_any" != *fallback* ]]; then
+				local ver_hyphen="${req_ver//./-}"
+				if [[ "$resolved_any" == *"$ver_hyphen"* ]] || [[ "$resolved_any" == *"$req_ver"* ]]; then
+					resolved_url="$resolved_any"
+				fi
+			fi
+		fi
+	fi
+
+	if [ -z "$resolved_url" ] || [[ "$resolved_url" == *google.com/search* ]] || [[ "$resolved_url" == *api.morphe.software* ]] || [[ "$resolved_url" == *fallback* ]]; then
 		wpr "Morphe resolver did not find a direct download target for '${clean_pkg}' (${req_ver})"
 		return 1
 	fi
@@ -1602,6 +1661,88 @@ dl_morphe() {
 	else
 		wpr "Unsupported destination host from Morphe: ${resolved_url}"
 		return 1
+	fi
+}
+# -------------------- aptoide --------------------
+get_aptoide_resp() {
+	local val="${1%/}"
+	val="${val##*/}"
+	__APTOIDE_PKG_NAME__="$val"
+	__APTOIDE_RESP__=$(curl -s "https://ws75.aptoide.com/api/7/listAppVersions?package_name=${val}&limit=100") || return 1
+	local status
+	status=$(jq -r '.info.status // empty' <<<"$__APTOIDE_RESP__" 2>/dev/null)
+	if [ "$status" != "OK" ]; then
+		__APTOIDE_RESP__=$(curl -s -X POST "https://ws75.aptoide.com/api/7/listSearchApps" -H "Content-Type: application/json" -d "{\"query\":\"${val}\",\"limit\":20}") || return 1
+		status=$(jq -r '.info.status // empty' <<<"$__APTOIDE_RESP__" 2>/dev/null)
+		[ "$status" = "OK" ] || return 1
+	fi
+}
+
+get_aptoide_pkg_name() {
+	echo "$__APTOIDE_PKG_NAME__"
+}
+
+get_aptoide_vers() {
+	local vers
+	vers=$(jq -r '(.list[]?.file.vername // .datalist?.list[]?.file.vername // empty)' <<<"$__APTOIDE_RESP__" 2>/dev/null | awk '{$1=$1}1' | grep -v "^$" || :)
+	if [ "$__AAV__" = false ]; then
+		echo "$vers" | grep -iv "\(beta\|alpha\)" || :
+	else
+		echo "$vers"
+	fi
+}
+
+dl_aptoide() {
+	local pkg=$1 version=${2// /-} output=$3 arch=$4 dpi=$5 get_latest_ver=$6
+	local clean_pkg="${pkg%/}"
+	clean_pkg="${clean_pkg##*/}"
+
+	local app_id="" dl_url=""
+	if [ "$get_latest_ver" = "true" ] || [ "$version" = "latest" ] || [ "$version" = "auto" ]; then
+		local latest_meta
+		latest_meta=$(curl -s "https://ws75.aptoide.com/api/7/getApp?package_name=${clean_pkg}")
+		dl_url=$(jq -r '.nodes.meta.data.file.path // .nodes.meta.data.file.path_alt // empty' <<<"$latest_meta" 2>/dev/null)
+	else
+		if [ -z "${__APTOIDE_RESP__:-}" ]; then
+			__APTOIDE_RESP__=$(curl -s "https://ws75.aptoide.com/api/7/listAppVersions?package_name=${clean_pkg}&limit=100") || true
+		fi
+
+		local clean_ver="${version#v}"
+		clean_ver="${clean_ver// /}"
+		app_id=$(jq -r --arg ver "$clean_ver" '
+			(.list[]?, .datalist?.list[]?) |
+			select((.file.vername // "") == $ver or (.file.vername // "" | split(" ")[0]) == $ver or (.file.vername // "" | sub("^v";"")) == $ver) |
+			.id
+		' <<<"$__APTOIDE_RESP__" 2>/dev/null | head -n 1)
+
+		if [ -z "$app_id" ]; then
+			local search_resp
+			search_resp=$(curl -s -X POST "https://ws75.aptoide.com/api/7/listSearchApps" -H "Content-Type: application/json" -d "{\"query\":\"${clean_pkg} ${clean_ver}\",\"limit\":15}")
+			app_id=$(jq -r --arg pkg "$clean_pkg" --arg ver "$clean_ver" '
+				.datalist.list[]? |
+				select(.package == $pkg and ((.file.vername // "") == $ver or (.file.vername // "" | split(" ")[0]) == $ver or (.file.vername // "" | sub("^v";"")) == $ver)) |
+				.id
+			' <<<"$search_resp" 2>/dev/null | head -n 1)
+		fi
+
+		if [ -n "$app_id" ]; then
+			local app_meta
+			app_meta=$(curl -s "https://ws75.aptoide.com/api/7/getApp?app_id=${app_id}")
+			dl_url=$(jq -r '.nodes.meta.data.file.path // .nodes.meta.data.file.path_alt // empty' <<<"$app_meta" 2>/dev/null)
+		fi
+	fi
+
+	if [ -z "$dl_url" ]; then
+		epr "Could not resolve Aptoide download URL for '${clean_pkg}' (${version})"
+		return 1
+	fi
+
+	pr "Downloading '${clean_pkg}' (${version}) from Aptoide: ${dl_url}"
+	if grep -qiE "\.(xapk|apkm)" <<<"$dl_url"; then
+		_req "$dl_url" "${output}.apkm" || return 1
+		merge_splits "${output}.apkm" "${output}"
+	else
+		_req "$dl_url" "$output" || return 1
 	fi
 }
 # --------------------------------------------------
@@ -1722,6 +1863,9 @@ build_rv() {
 	if [ ! -f "$stock_apk" ]; then
 		if [ -z "${args[morphe_dlurl]}" ] && [ -n "$pkg_name" ]; then
 			args[morphe_dlurl]="$pkg_name"
+		fi
+		if [ -z "${args[aptoide_dlurl]}" ] && [ -n "$pkg_name" ]; then
+			args[aptoide_dlurl]="$pkg_name"
 		fi
 		for dl_p in "${DL_SRCS[@]}"; do
 			if [ -z "${args[${dl_p}_dlurl]}" ]; then continue; fi

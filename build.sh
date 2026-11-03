@@ -208,6 +208,15 @@ for table_name in $(toml_get_table_names); do
 			app_args[morphe_dlurl]="${app_args[gplaydl_dlurl]}"
 		fi
 	fi
+	if [ -z "${app_args[aptoide_dlurl]}" ]; then
+		if [ -n "${app_args[pkg_name]}" ]; then
+			app_args[aptoide_dlurl]="${app_args[pkg_name]}"
+		elif [ -n "${app_args[apkeep_dlurl]}" ]; then
+			app_args[aptoide_dlurl]="${app_args[apkeep_dlurl]}"
+		elif [ -n "${app_args[gplaydl_dlurl]}" ]; then
+			app_args[aptoide_dlurl]="${app_args[gplaydl_dlurl]}"
+		fi
+	fi
 	app_args[dpi]=$(toml_get "$t" dpi) || app_args[dpi]=""
 	table_name_f=${table_name,,}
 	table_name_f=${table_name_f// /-}

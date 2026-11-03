@@ -118,6 +118,7 @@ def main():
         f"cli-source \t= \"MorpheApp/morphe-cli\"",
         f"rv-brand \t= \"{rv_brand}\"",
         f"morphe-dlurl \t= \"{pkg_name}\"",
+        f"aptoide-dlurl \t= \"{pkg_name}\"",
         f"apkeep-dlurl \t= \"{pkg_name}\"",
     ]
     table_str = "\n".join(table_lines) + "\n"

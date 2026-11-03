@@ -34,21 +34,23 @@ Find the file in `configs/` for that patches author (or create one), then add a
 table:
 ```toml
 [Some-App]
-morphe-dlurl = "package.name" # or morphe-helper-dlurl
+morphe-dlurl  = "package.name" # queries Morphe resolver for direct APKMirror / Uptodown variants
+aptoide-dlurl = "package.name" # direct Aptoide API queries
+apkeep-dlurl  = "package.name" # APKPure via apkeep + 1-hop direct signed CDN fallback
 # or apkmirror-dlurl = "https://www.apkmirror.com/apk/inc/app"
 # or uptodown-dlurl = "https://app.en.uptodown.com/android"
 # or apkpure-dlurl = "https://apkpure.net/app-slug/package.name"
 # or apkcombo-dlurl = "https://apkcombo.com/app-slug/package.name"
-# or apkeep-dlurl = "package.name"
 # or gplaydl-dlurl = "package.name"
 ```
 
-These are tried in the fixed order `morphe → apkeep → apkcombo → apkmirror →
+These are tried in the fixed order `morphe → aptoide → apkeep → apkcombo → apkmirror →
 apkpure → archive → direct → gplaydl → uptodown`, and any source that cannot deliver the
 required version falls through to the next one, so list as many as apply to make
 the build resilient to a single site being down. When a package name is known,
-`morphe` is tested first automatically to resolve direct variant download URLs via
-the Morphe resolver.
+`morphe` and `aptoide` are tested first automatically to resolve direct variant download URLs.
+In addition, `apkeep` and `apkpure` automatically attempt 1-hop signed CDN downloads (`d.apkpure.com`)
+before falling back to slow web scraping or retries.
 
 > [!WARNING]
 > When a patch name itself contains a single quote, double it inside the string (e.g. 'Hide ''Get Music Premium''').
