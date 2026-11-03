@@ -43,3 +43,11 @@ apkpure-dlurl   	= "https://apkpure.net/truecaller/com.truecaller"
 # no apkcombo-dlurl: apkcombo has been failing for days, do not rely on it
 # no gplaydl-dlurl: not needed, apkmirror already serves every supported version
 # no uptodown-dlurl: its listing is stale (15.28.7) and cannot serve the patched 26.41.5
+
+[Firefox_Heval-Morphe-Patches]
+patches-source 	= "heval99/Heval-Morphe-Patches"
+cli-source 	= "MorpheApp/morphe-cli"
+rv-brand 	= "heval99"
+morphe-dlurl 	= "org.mozilla.firefox"
+aptoide-dlurl 	= "org.mozilla.firefox"
+apkeep-dlurl 	= "org.mozilla.firefox"
