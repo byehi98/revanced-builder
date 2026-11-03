@@ -1,19 +1,11 @@
 
-**5 apps built.**
+**1 apps built.**
   
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
 CLI: MorpheApp/morphe-desktop-1.20.0-all.jar  
-Patches: BlazeFTL/patches-1.43.7.3.mpp  
-[Changelog](https://github.com/BlazeFTL/FTL-Patches/releases/tag/v1.43.7.3)
-
-CLI: MorpheApp/morphe-desktop-1.20.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.20.0-all.jar  
-Patches: MorpheApp/patches-2.1.0-dev.7.mpp  
-[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v2.1.0-dev.7)
-
-CLI: MorpheApp/morphe-desktop-1.20.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.20.0-all.jar    
+Patches: VenusIsJaded/patches-1.21.1.mpp  
+[Changelog](https://github.com/VenusIsJaded/Venus-Patches/releases/tag/v1.21.1)  
 
 Skipped:  
 Google-Photos-Akash-Sriram: 7.99.0.1007655401  
@@ -27,6 +19,9 @@ Patches: BholeyKaBhakt/patches-2.12.0.mpp
 Backdrops: 6.1.2  
 Patches: BholeyKaBhakt/patches-2.12.0.mpp  
 Speedtest: 7.0.4  
+All-Video-Downloader-and-Ace-Player: 1.9.8
+Patches: BlazeFTL/patches-1.43.7.3.mpp  
+RS-File-Manager-BlazeFTL: latest
 Arm-Workout: 2.4.3  
 Patches: Entree3k/patches-1.22.0.mpp  
 Does-Not-Commute-Entree3k: 1.5.5  
@@ -50,8 +45,12 @@ The-Battle-of-Polytopia: 2.17.3.16375
 Zombie-Catchers: latest  
 Reddit-Morphe: 2026.40.0
 Patches: MorpheApp/patches-2.0.0.mpp  
+Reddit-Morphe-Dev: 2026.44.0
+Patches: MorpheApp/patches-2.1.0-dev.7.mpp  
 YouTube-Morphe: 21.30.216
+YouTube-Morphe-Dev: 21.44.528
 YouTube-Music-Morphe: 9.30.53  
+YouTube-Music-Morphe-Dev: 9.44.52  
 Adobe-Photoshop-Mix: latest
 Patches: RookieEnough/patches-1.6.3.mpp  
 Cricbuzz: 6.24.01
@@ -207,11 +206,7 @@ qBitConnect: 2.0.6
 Imgur: 7.34.0.0  
 Patches: sushruth/patches-1.0.0.mpp        
 Lemmy-Sync: latest
-Patches: wchill/patches-2.0.3.mpp                      
+Patches: wchill/patches-2.0.3.mpp                        
 
 ### Built versions  
-All-Video-Downloader-and-Ace-Player: 1.9.8
-RS-File-Manager-BlazeFTL: latest
-Reddit-Morphe-Dev: 2026.44.0
-YouTube-Morphe-Dev: 21.44.528
-YouTube-Music-Morphe-Dev: 9.44.52  
+Discord_Venus-Patches: 351.11  
