@@ -611,3 +611,11 @@ rv-brand 	= "byehi98"
 morphe-dlurl 	= "com.Flanne.MinutesTillDawn.roguelike.shooting.fr.gp"
 aptoide-dlurl 	= "com.Flanne.MinutesTillDawn.roguelike.shooting.fr.gp"
 apkeep-dlurl 	= "com.Flanne.MinutesTillDawn.roguelike.shooting.fr.gp"
+
+[Plants-vs-Zombies_okish-morphe-patches]
+patches-source 	= "byehi98/okish-morphe-patches"
+cli-source 	= "MorpheApp/morphe-cli"
+rv-brand 	= "byehi98"
+morphe-dlurl 	= "com.ea.game.pvzfree_row"
+aptoide-dlurl 	= "com.ea.game.pvzfree_row"
+apkeep-dlurl 	= "com.ea.game.pvzfree_row"
