@@ -1,20 +1,13 @@
 
-**5 apps built.**
+**1 apps built.**
   
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
 CLI: MorpheApp/morphe-desktop-1.20.0-all.jar  
-Patches: byehi98/patches-1.48.0-dev.5.mpp  
-[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.48.0-dev.5)
-
-CLI: MorpheApp/morphe-desktop-1.20.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.20.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.20.0-all.jar  
-CLI: MorpheApp/morphe-desktop-1.20.0-all.jar    
+Patches: Akash-Sriram/patches-1.17.9.mpp  
+[Changelog](https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.17.9)  
 
 Skipped:  
-Google-Photos-Akash-Sriram: 7.99.0.1007655401  
-Patches: Akash-Sriram/patches-1.17.8.mpp  
 Opera-GX: latest  
 Patches: Alastor-Kaneki/patches-1.15.3.mpp  
 Telegram: 12.10.1  
@@ -101,6 +94,8 @@ Doodle-Jump: 3.11.40
 Dr-Driving: 1.73
 Earn-to-Die-2: 1.5.6
 Fancy-Pants: 1.0.30
+Freejobalert: 1.0.0
+Patches: byehi98/patches-1.48.0-dev.5.mpp  
 Fruit-Ninja: 3.97.9
 Grimvalor: 1.2.13
 HAAK: 1.4.3
@@ -117,10 +112,12 @@ Minutes-Till-Dawn_okish-morphe-patches: 8.7
 Missiles: 1.41
 Onlyone: 1.3052
 Plagueinc: 1.27.3
+Plants-vs-Zombies-Free: 3.18.0
 Plants-vs-Zombies_okish-morphe-patches: 3.18.0
 Progressbar95: 1.1111
 Rodeo-Stampede: 4.26.0
 Shooty-Skies: 3.441.100103
+Smashit: 1.5.14
 Swamp-Attack: 4.8.9.0
 Swamp-Attack-2: 1.3.10
 Swift-Backup: 5.1.0
@@ -129,6 +126,8 @@ Tentaclewars: 2.1.27
 Traffic-Racer: 4.0
 Traffic-Rider: 2.11
 Truecloud: 4.6.5.13
+Vector: 2.10.2
+Vita-Mahjong: 3.45.0  
 Minesweeper: 1.21.3  
 Patches: cesbar/patches-1.13.1.mpp  
 Solitaire: 1.20.3  
@@ -217,11 +216,7 @@ Patches: spicetify/patches-1.2.0.mpp
 Imgur: 7.34.0.0  
 Patches: sushruth/patches-1.0.0.mpp        
 Lemmy-Sync: latest
-Patches: wchill/patches-2.0.3.mpp                            
+Patches: wchill/patches-2.0.3.mpp                              
 
 ### Built versions  
-Freejobalert: 1.0.0
-Plants-vs-Zombies-Free: 3.18.0
-Smashit: 1.5.14
-Vector: 2.10.2
-Vita-Mahjong: 3.45.0  
+Google-Photos-Akash-Sriram: 7.99.0.1007655401  
