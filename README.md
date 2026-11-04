@@ -11,11 +11,11 @@ Get the [latest CI release](https://github.com/j-hc/revanced-magisk-module/relea
 <details>
 <summary><b>175 of 175 apps built</b> — click to expand the full list</summary>
 
-#### `Akash-Sriram/morphe-google-photos` · `patches-1.17.8.mpp`
+#### `Akash-Sriram/morphe-google-photos` · `patches-1.17.9.mpp`
 
 | App | Status | Obtainium |
 | :--- | :---: | :---: |
-| `Google-Photos-Akash-Sriram` ([APK](https://github.com/byehi98/revanced-builder/releases/download/355/google-photos-akash-sriram-akash-sriram-v7.99.0.1007655401-all.apk)) | ✅ | [![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22app.morphe.android.apps.photos%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Google-Photos-Akash-Sriram%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22google-photos-akash-sriram-akash-sriram%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%7D%22%7D) |
+| `Google-Photos-Akash-Sriram` ([APK](https://github.com/byehi98/revanced-builder/releases/download/360/google-photos-akash-sriram-akash-sriram-v7.99.0.1007655401-all.apk)) | ✅ | [![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22app.morphe.android.apps.photos%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Google-Photos-Akash-Sriram%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22google-photos-akash-sriram-akash-sriram%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%7D%22%7D) |
 
 #### `Alastor-Kaneki/Morphe-Patches` · `patches-1.15.3.mpp`
 
@@ -67,7 +67,7 @@ Get the [latest CI release](https://github.com/j-hc/revanced-magisk-module/relea
 | `Medium` ([APK](https://github.com/byehi98/revanced-builder/releases/download/326/medium-bufferk-v4.5.1784910928-all.apk)) | ✅ | [![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.medium.reader%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Medium%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22medium-bufferk%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%7D%22%7D) |
 | `Truecaller-bufferk` ([APK](https://github.com/byehi98/revanced-builder/releases/download/326/truecaller-bufferk-bufferk-v26.10.6-all.apk)) | ✅ | [![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.truecaller%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Truecaller-bufferk%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22truecaller-bufferk-bufferk%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%7D%22%7D) |
 
-#### `byehi98/okish-morphe-patches` · `patches-1.47.0.mpp`
+#### `byehi98/okish-morphe-patches` · `patches-1.48.0-dev.5.mpp`
 
 | App | Status | Obtainium |
 | :--- | :---: | :---: |
