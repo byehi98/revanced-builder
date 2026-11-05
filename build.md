@@ -1,23 +1,22 @@
 
-**6 apps built.**
+**8 apps built.**
   
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
 CLI: MorpheApp/morphe-desktop-2.0.0-all.jar  
-Patches: byehi98/patches-1.49.0-dev.1.mpp  
-[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.49.0-dev.1)
+Patches: byehi98/patches-1.49.0-dev.2.mpp  
+[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.49.0-dev.2)
 
 CLI: MorpheApp/morphe-desktop-2.0.0-all.jar  
 CLI: MorpheApp/morphe-desktop-2.0.0-all.jar  
 CLI: MorpheApp/morphe-desktop-2.0.0-all.jar  
-Patches: byehi98/patches-1.48.0.mpp  
-[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.48.0)
+CLI: MorpheApp/morphe-desktop-2.0.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.0.0-all.jar  
+Patches: MorpheApp/patches-2.1.0-dev.11.mpp  
+[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v2.1.0-dev.11)
 
 CLI: MorpheApp/morphe-desktop-2.0.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.0.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.0.0-all.jar  
-Patches: MorpheApp/patches-2.1.0-dev.9.mpp  
-[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v2.1.0-dev.9)  
+CLI: MorpheApp/morphe-desktop-2.0.0-all.jar    
 
 Skipped:  
 Google-Photos-Akash-Sriram: 7.99.0.1007655401
@@ -57,10 +56,7 @@ The-Battle-of-Polytopia: 2.17.3.16375
 Zombie-Catchers: latest  
 Reddit-Morphe: 2026.40.0
 Patches: MorpheApp/patches-2.0.0.mpp  
-Reddit-Morphe-Dev: 2026.44.0
-Patches: MorpheApp/patches-2.1.0-dev.9.mpp  
 YouTube-Morphe: 21.30.216
-YouTube-Morphe-Dev: 21.44.528  
 YouTube-Music-Morphe: 9.30.53  
 Adobe-Photoshop-Mix: 2.6.3
 Patches: RookieEnough/patches-1.6.4.mpp  
@@ -129,6 +125,7 @@ Rodeo-Stampede: 4.26.0
 Shooty-Skies: 3.441.100103
 Swamp-Attack: 4.8.9.0
 Swamp-Attack-2: 1.4.1
+Swift-Backup: 5.1.0
 Swordigo: 1.4.13
 Tentaclewars: 2.1.27
 Traffic-Racer: 4.0
@@ -222,12 +219,14 @@ Patches: spicetify/patches-1.2.0.mpp
 Imgur: 7.34.0.0  
 Patches: sushruth/patches-1.0.0.mpp        
 Lemmy-Sync: latest
-Patches: wchill/patches-2.0.3.mpp                                        
+Patches: wchill/patches-2.0.3.mpp                                          
 
 ### Built versions  
 Freejobalert: 1.0.0
 Plants-vs-Zombies-Free: 3.18.0
+Reddit-Morphe-Dev: 2026.44.0
 Smashit: 1.5.14
-Swift-Backup: 5.1.0
 Vector: 2.10.2
-Vita-Mahjong: 3.45.0  
+Vita-Mahjong: 3.45.0
+YouTube-Morphe-Dev: 21.44.528
+YouTube-Music-Morphe-Dev: 9.44.52  
