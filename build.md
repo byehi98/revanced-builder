@@ -1,12 +1,14 @@
 
-**2 apps built.**
+**6 apps built.**
   
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
 CLI: MorpheApp/morphe-desktop-2.0.0-all.jar  
-Patches: bearinmindcat/patches-2.8.6.mpp  
-[Changelog](https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.8.6)
+Patches: byehi98/patches-1.49.0-dev.1.mpp  
+[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.49.0-dev.1)
 
+CLI: MorpheApp/morphe-desktop-2.0.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.0.0-all.jar  
 CLI: MorpheApp/morphe-desktop-2.0.0-all.jar  
 Patches: byehi98/patches-1.48.0.mpp  
 [Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.48.0)
@@ -81,6 +83,8 @@ Patches: arandomhooman/patches-1.53.0.mpp
 FolderSync: 4.12.0  
 Microsoft-SwiftKey: 9.13.13.5  
 Poweramp: build-1025-bundle-play  
+Google-Maps_morphe-patches: 26.36.04.973607363
+Patches: bearinmindcat/patches-2.8.6.mpp  
 Brave-Bufferk: 1.92.140
 Patches: bufferk/patches-1.8.1.mpp  
 Medium: 4.5.1784910928
@@ -103,8 +107,6 @@ Doodle-Jump: 3.11.40
 Dr-Driving: 1.73
 Earn-to-Die-2: 1.5.6
 Fancy-Pants: 1.0.30
-Freejobalert: 1.0.0
-Patches: byehi98/patches-1.48.0.mpp  
 Fruit-Ninja: 3.97.9
 Grimvalor: 1.2.13
 HAAK: 1.4.3
@@ -113,6 +115,7 @@ Head-Soccer: 7.1.12
 Hill-Climb-Racing: 1.73.2
 Injustice: 3.5.1
 Into-The-Dead: 2.9.5
+Into-The-Dead-2: 1.88.0  
 Jetpack-Joyride: 1.104.2
 Lumina-Walls: 1.0.2.6
 Magic-Survival_okish-morphe-patches: 0.9941
@@ -120,7 +123,6 @@ Minutes-Till-Dawn_okish-morphe-patches: 8.7
 Missiles: 1.41
 Onlyone: 1.3053
 Plagueinc: 1.27.5
-Plants-vs-Zombies-Free: 3.18.0
 Plants-vs-Zombies_okish-morphe-patches: 3.18.0
 Progressbar95: 1.1111
 Rodeo-Stampede: 4.26.0
@@ -132,8 +134,6 @@ Tentaclewars: 2.1.27
 Traffic-Racer: 4.0
 Traffic-Rider: 2.11
 Truecloud: 4.6.5.13
-Vector: 2.10.2
-Vita-Mahjong: 3.45.0  
 Minesweeper: 1.21.3  
 Patches: cesbar/patches-1.13.1.mpp  
 Solitaire: 1.20.3  
@@ -222,8 +222,12 @@ Patches: spicetify/patches-1.2.0.mpp
 Imgur: 7.34.0.0  
 Patches: sushruth/patches-1.0.0.mpp        
 Lemmy-Sync: latest
-Patches: wchill/patches-2.0.3.mpp                                      
+Patches: wchill/patches-2.0.3.mpp                                        
 
 ### Built versions  
-Google-Maps_morphe-patches: 26.36.04.973607363
-Into-The-Dead-2: 1.88.0  
+Freejobalert: 1.0.0
+Plants-vs-Zombies-Free: 3.18.0
+Smashit: 1.5.14
+Swift-Backup: 5.1.0
+Vector: 2.10.2
+Vita-Mahjong: 3.45.0  
