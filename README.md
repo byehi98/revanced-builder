@@ -1,8 +1,13 @@
 # ReVanced Magisk Module
 [![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/rvc_magisk)
+[![Obtainium Catalog](https://img.shields.io/badge/Obtainium%20Catalog-8b5cf6?style=for-the-badge&logo=obtainium&logoColor=white)](https://byehi98.github.io/revanced-builder/)
 [![CI](https://github.com/j-hc/revanced-magisk-module/actions/workflows/ci.yml/badge.svg?event=schedule)](https://github.com/j-hc/revanced-magisk-module/actions/workflows/ci.yml)
 
 Extensive ReVanced builder — Magisk modules and non-root APKs for many patched apps, updated daily.
+
+Browse every app and copy its one-tap **Obtainium** install link on the
+**[Obtainium catalog website](https://byehi98.github.io/revanced-builder/)**. The site is rebuilt
+automatically after each release from the same configs and release metadata this builder uses.
 
 Get the [latest CI release](https://github.com/j-hc/revanced-magisk-module/releases).
 

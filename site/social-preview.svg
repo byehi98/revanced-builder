@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="ReVanced Builder Obtainium Catalog">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b0912"/>
+      <stop offset="1" stop-color="#171022"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7c3aed"/>
+      <stop offset="1" stop-color="#a855f7"/>
+    </linearGradient>
+    <linearGradient id="title" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#b49cff"/>
+      <stop offset="0.55" stop-color="#22d3ee"/>
+      <stop offset="1" stop-color="#34d399"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.15" cy="0.1" r="0.75">
+      <stop offset="0" stop-color="#7c3aed" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#7c3aed" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+
+  <g transform="translate(80 86)">
+    <rect width="76" height="76" rx="19" fill="url(#accent)"/>
+    <path d="M20 25h36M20 38h25M20 51h17" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="55" cy="52" r="13" fill="#1a1327" stroke="#34d399" stroke-width="4"/>
+    <path d="m49 52 4 4 7-8" fill="none" stroke="#34d399" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="98" y="33" fill="#f5f3fb" font-family="ui-sans-serif, system-ui, sans-serif" font-size="34" font-weight="700" letter-spacing="-0.5">ReVanced Builder</text>
+    <text x="98" y="62" fill="#a79fba" font-family="ui-sans-serif, system-ui, sans-serif" font-size="20" font-weight="500" letter-spacing="3">OBTAINIUM CATALOG</text>
+  </g>
+
+  <text x="80" y="312" fill="#f5f3fb" font-family="ui-sans-serif, system-ui, sans-serif" font-size="88" font-weight="800" letter-spacing="-3">Install patched apps.</text>
+  <text x="80" y="410" fill="url(#title)" font-family="ui-sans-serif, system-ui, sans-serif" font-size="88" font-weight="800" letter-spacing="-3">Keep them updated.</text>
+
+  <text x="80" y="498" fill="#a79fba" font-family="ui-sans-serif, system-ui, sans-serif" font-size="26" font-weight="500">Every patched app, with a one-tap Obtainium link.</text>
+
+  <g transform="translate(80 540)">
+    <rect width="640" height="1" fill="#2b2440"/>
+    <text x="0" y="45" fill="#7d748f" font-family="ui-sans-serif, system-ui, sans-serif" font-size="20" font-weight="600" letter-spacing="1.5">175 APPS  ·  33 PATCH SOURCES  ·  AUTO-UPDATED</text>
+  </g>
+</svg>
