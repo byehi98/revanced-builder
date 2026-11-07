@@ -1,12 +1,17 @@
 
-**1 apps built.**
+**3 apps built.**
   
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
 CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
-Patches: bearinmindcat/patches-2.9.1.mpp  
-[Changelog](https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.9.1)
+Patches: bearinmindcat/patches-2.9.2.mpp  
+[Changelog](https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.9.2)
 
+CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
+Patches: BlazeFTL/patches-1.43.7.4.mpp  
+[Changelog](https://github.com/BlazeFTL/FTL-Patches/releases/tag/v1.43.7.4)
+
+CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
 CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
 Patches: wchill/patches-2.1.0.mpp  
 [Changelog](https://github.com/wchill/patcheddit/releases/tag/v2.1.0)  
@@ -23,9 +28,6 @@ Patches: BholeyKaBhakt/patches-2.12.0.mpp
 Backdrops: 6.1.2  
 Patches: BholeyKaBhakt/patches-2.12.0.mpp  
 Speedtest: 7.0.4  
-All-Video-Downloader-and-Ace-Player: 1.9.8
-Patches: BlazeFTL/patches-1.43.7.3.mpp  
-RS-File-Manager-BlazeFTL: latest
 Arm-Workout: 2.4.3  
 Patches: Entree3k/patches-1.22.0.mpp  
 Does-Not-Commute-Entree3k: 1.5.5  
@@ -220,6 +222,9 @@ Spotify_morphe-patches: latest
 Patches: spicetify/patches-1.2.0.mpp  
 Imgur: 7.34.0.0  
 Patches: sushruth/patches-1.0.0.mpp          
+Patches: wchill/patches-2.1.0.mpp    
 
 ### Built versions  
-Google-Maps_morphe-patches: 26.36.04.973607363  
+All-Video-Downloader-and-Ace-Player: 1.9.8
+Google-Maps_morphe-patches: 26.36.04.973607363
+RS-File-Manager-BlazeFTL: latest  
