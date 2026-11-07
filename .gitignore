@@ -1,5 +1,6 @@
 *.apk
 *.zip
+/site/apps
 /temp
 /build
 test*

@@ -37,6 +37,19 @@ jobs:
       - name: Fetch build.md
         run: wget https://raw.githubusercontent.com/${{ github.repository }}/update/build.md -O build.md || touch build.md
 
+      - name: Setup Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: Generate Obtainium catalog
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: >-
+          python3 scripts/generate_site.py
+          --repo "${{ github.repository }}"
+          --output site/data.json
+
       - name: Generate Build Status Table
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -51,7 +64,22 @@ jobs:
           
           with open("config.json", "r") as f:
               config = json.load(f)
-              
+
+          # The catalogue generator is the single source of truth for Obtainium
+          # links. It automatically switches apps whose builds fell outside the
+          # newest 100 releases to a generated HTML source page.
+          catalog_links = {}
+          try:
+              with open("site/data.json", "r") as cf:
+                  catalog = json.load(cf)
+              catalog_links = {
+                  app["table"]: app["obtainium"]
+                  for app in catalog.get("apps", [])
+                  if app.get("table") and app.get("obtainium") and app.get("package")
+              }
+          except Exception as e:
+              print(f"warning: could not read site/data.json: {e}", file=sys.stderr)
+
           try:
               release_info = subprocess.check_output(["gh", "release", "view", "--json", "tagName,assets"]).decode("utf-8")
               release_data = json.loads(release_info)
@@ -254,21 +282,23 @@ jobs:
               if status == "✅":
                   built_count += 1
 
-              dummy_id = package_ids.get(app_name_l, f"app.revanced.builder.{app_name_l}")
-              additional_settings = json.dumps({
-                  "apkFilterRegEx": prefix,
-                  "autoApkFilterByArch": True
-              }, separators=(',', ':'))
-              
-              obtainium_json = json.dumps({
-                  "id": dummy_id,
-                  "url": f"https://github.com/{repository}",
-                  "author": author,
-                  "name": app_name,
-                  "additionalSettings": additional_settings
-              }, separators=(',', ':'))
-              encoded_json = urllib.parse.quote(obtainium_json)
-              obtainium_link = f"https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/{encoded_json}"
+              obtainium_link = catalog_links.get(table)
+              if not obtainium_link:
+                  dummy_id = package_ids.get(app_name_l, f"app.revanced.builder.{app_name_l}")
+                  additional_settings = json.dumps({
+                      "apkFilterRegEx": prefix,
+                      "autoApkFilterByArch": True,
+                      "fallbackToOlderReleases": True
+                  }, separators=(',', ':'))
+                  obtainium_json = json.dumps({
+                      "id": dummy_id,
+                      "url": f"https://github.com/{repository}",
+                      "author": author,
+                      "name": app_name,
+                      "additionalSettings": additional_settings
+                  }, separators=(',', ':'))
+                  encoded_json = urllib.parse.quote(obtainium_json)
+                  obtainium_link = f"https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/{encoded_json}"
               obtainium_badge = f"[![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)]({obtainium_link})"
 
               total += 1

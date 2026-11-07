@@ -15,6 +15,7 @@ once.
 | `add-all.html` | Intermediate page that hands the bulk import to Obtainium |
 | `add-all.js` | Builds the deep link from the URL fragment and offers fallbacks |
 | `data.json` | Generated catalogue (do not edit by hand) |
+| `apps/*.html` | Generated Obtainium HTML source pages for old builds (do not edit) |
 
 ## Local preview
 
@@ -28,7 +29,9 @@ python3 -m http.server -d site 8000
 ```
 
 `data.json` has to be fetched over HTTP; opening `index.html` directly with
-`file://` will show a loading error in most browsers.
+`file://` will show a loading error in most browsers. The generator also writes
+`site/apps/*.html`; they are git-ignored and rebuilt before each deployment.
+Pass `--site-url http://localhost:8000/` when testing old-build links locally.
 
 ## Deployment
 
@@ -60,12 +63,36 @@ The Obtainium payload is identical to the README generator:
   "url": "https://github.com/<owner>/<repo>",
   "author": "<owner>",
   "name": "<app name>",
-  "additionalSettings": "{\"apkFilterRegEx\":\"<app>-<brand>\",\"autoApkFilterByArch\":true}"
+  "additionalSettings": "{\"apkFilterRegEx\":\"<app>-<brand>\",\"autoApkFilterByArch\":true,\"fallbackToOlderReleases\":true}"
 }
 ```
 
 `apkFilterRegEx` scopes each link to that app's files so Obtainium does not pick
-up another app from the same release.
+up another app from the same release. `fallbackToOlderReleases` makes the import
+scan the whole release page instead of only the newest release.
+
+### Apps older than the newest 100 releases
+
+Obtainium's GitHub source requests only `.../releases?per_page=100` and does not
+paginate. A build older than that window can never be found, even with
+`fallbackToOlderReleases` enabled. For those apps the generator writes a small
+page under `apps/` and emits an Obtainium **HTML** source config instead:
+
+```json
+{
+  "id": "<package id>",
+  "url": "https://<owner>.github.io/<repo>/apps/<table>.html",
+  "author": "<owner>",
+  "name": "<app name>",
+  "additionalSettings": "{\"apkFilterRegEx\":\"(?:/|-)<app>-<brand>-[^/]*$\",\"autoApkFilterByArch\":true,\"versionExtractWholePage\":true,\"versionExtractionRegEx\":\"name=\\\"obtainium-version\\\" content=\\\"([^\\\"]+)\\\"\",\"matchGroupToUse\":\"1\"}",
+  "overrideSource": "HTML"
+}
+```
+
+The page embeds the app version in a meta tag and links to the exact APK in the
+old release, so Obtainium can still detect updates when the build is rebuilt.
+The choice is automatic: apps on the first release page keep the native GitHub
+source, and apps outside it move to HTML. No releases are deleted or rewritten.
 
 ## Bulk import
 
