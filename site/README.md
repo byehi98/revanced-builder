@@ -2,15 +2,18 @@
 
 A static, dependency-free catalogue of every app this builder produces. Each card
 contains the same Obtainium deep link as the README build table, plus the latest
-APK download.
+APK download. One button in the hero imports every built app into Obtainium at
+once.
 
 ## Files
 
 | File | Purpose |
 | :--- | :--- |
 | `index.html` | Page shell and copy |
-| `style.css` | Dark/light theme, layout and cards |
-| `app.js` | Search, source filter, sorting, theme, copy-link |
+| `style.css` | Dark/light theme, layout, cards and redirect page |
+| `app.js` | Search, source filter, sorting, theme, copy-link, bulk import |
+| `add-all.html` | Intermediate page that hands the bulk import to Obtainium |
+| `add-all.js` | Builds the deep link from the URL fragment and offers fallbacks |
 | `data.json` | Generated catalogue (do not edit by hand) |
 
 ## Local preview
@@ -63,3 +66,20 @@ The Obtainium payload is identical to the README generator:
 
 `apkFilterRegEx` scopes each link to that app's files so Obtainium does not pick
 up another app from the same release.
+
+## Bulk import
+
+The hero button collects each built app's config and opens
+`obtainium://apps/<url-encoded JSON array>`, the bulk deep link Obtainium
+documents on its [wiki](https://wiki.obtainium.imranr.dev/deep_links/).
+
+Obtainium keys apps by Android package ID, so variants of the same package
+cannot coexist. The bulk import keeps one config per package — the most
+recently built variant — while every variant remains available as its own card.
+
+The payload is passed to `add-all.html` in the URL fragment rather than a query
+string. Fragments are never sent to GitHub Pages, so the 60+ KB import is not
+rejected by request URL length limits. That page attempts the deep link and, if
+Obtainium is not installed or the browser blocks the handoff, offers the same
+configs as a downloadable `revanced-builder-obtainium.json` for
+**Settings → Import/export → Obtainium import**.

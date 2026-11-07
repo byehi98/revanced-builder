@@ -46,6 +46,11 @@
     repoLink: $("#repoLink"),
     releasesLink: $("#releasesLink"),
     readmeLink: $("#readmeLink"),
+    obtainiumAll: $("#obtainiumAll"),
+    obtainiumAllLabel: $("#obtainiumAllLabel"),
+    obtainiumAllNote: $("#obtainiumAllNote"),
+    obtainiumAllDetail: $("#obtainiumAllDetail"),
+    obtainiumDownload: $("#obtainiumDownload"),
   };
 
   /* --------------------------------------------------------------------- */
@@ -128,6 +133,81 @@
   function primaryAsset(app) {
     if (!Array.isArray(app.assets) || app.assets.length === 0) return null;
     return app.assets.find((asset) => asset.kind === "apk") || app.assets[0];
+  }
+
+  const OBTAINIUM_APP_PREFIX = "obtainium://app/";
+
+  function obtainiumConfig(app) {
+    if (!app.obtainium) return null;
+    const match = /[?&]r=([^&]+)/.exec(app.obtainium);
+    if (!match) return null;
+    try {
+      const link = decodeURIComponent(match[1]);
+      if (!link.startsWith(OBTAINIUM_APP_PREFIX)) return null;
+      const config = JSON.parse(link.slice(OBTAINIUM_APP_PREFIX.length));
+      return config && config.id && config.url ? config : null;
+    } catch {
+      return null;
+    }
+  }
+
+  // Obtainium keys apps by package ID, so variants of the same package cannot
+  // coexist. Keep the most recent build of each package for the bulk import.
+  function bulkObtainiumConfigs() {
+    const isDev = (app) => /(?:^|[-_.])dev(?:[-_.]|$)/i.test(app.name);
+    const built = state.apps
+      .filter(isBuilt)
+      .slice()
+      .sort((a, b) => {
+        const recent = (b.updated_at || "").localeCompare(a.updated_at || "");
+        if (recent) return recent;
+        const popular = (b.downloads || 0) - (a.downloads || 0);
+        if (popular) return popular;
+        const dev = Number(isDev(a)) - Number(isDev(b));
+        if (dev) return dev;
+        return a.name.length - b.name.length || a.name.localeCompare(b.name);
+      });
+
+    const unique = new Map();
+    for (const app of built) {
+      const config = obtainiumConfig(app);
+      if (config && !unique.has(config.id)) unique.set(config.id, config);
+    }
+    return [...unique.values()];
+  }
+
+  function initBulkImport() {
+    const configs = bulkObtainiumConfigs();
+    if (configs.length === 0) return;
+
+    const deepLink = `obtainium://apps/${encodeURIComponent(JSON.stringify(configs))}`;
+
+    if (els.obtainiumAll) {
+      // The payload lives in the fragment so GitHub Pages never sees it as a
+      // query string, which would exceed server URL limits for large imports.
+      els.obtainiumAll.href = `add-all.html#${encodeURIComponent(deepLink)}`;
+      els.obtainiumAll.removeAttribute("aria-disabled");
+      els.obtainiumAll.title = `Add ${configs.length.toLocaleString()} apps to Obtainium in one import`;
+    }
+    if (els.obtainiumAllLabel) {
+      els.obtainiumAllLabel.textContent = `Add all ${configs.length.toLocaleString()} apps to Obtainium`;
+    }
+
+    const builds = state.apps.filter(isBuilt).length;
+    if (els.obtainiumAllDetail) {
+      els.obtainiumAllDetail.textContent =
+        builds > configs.length
+          ? `${builds.toLocaleString()} builds, one config per package.`
+          : "One import for every built app.";
+    }
+
+    if (els.obtainiumDownload) {
+      const blob = new Blob([JSON.stringify(configs, null, 2)], { type: "application/json" });
+      els.obtainiumDownload.href = URL.createObjectURL(blob);
+      els.obtainiumDownload.setAttribute("download", "revanced-builder-obtainium.json");
+    }
+
+    if (els.obtainiumAllNote) els.obtainiumAllNote.hidden = false;
   }
 
   function buildHaystack(app) {
@@ -452,6 +532,7 @@
 
       applyMeta(data);
       renderSources();
+      initBulkImport();
 
       els.search.value = state.query;
       els.searchClear.hidden = !state.query;

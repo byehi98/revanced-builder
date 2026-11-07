@@ -424,6 +424,44 @@ html[data-theme="light"] .icon-moon {
   background: var(--surface-2);
 }
 
+.btn-obtainium {
+  background: linear-gradient(140deg, #4f46e5, #4500ff 58%, #6d28d9);
+  color: #fff;
+  box-shadow: 0 10px 26px rgba(69, 0, 255, 0.32);
+}
+
+.btn-obtainium:hover {
+  background: linear-gradient(140deg, #6366f1, #5b21ff 58%, #7c3aed);
+  box-shadow: 0 12px 30px rgba(69, 0, 255, 0.42);
+}
+
+.btn-obtainium[aria-disabled="true"] {
+  opacity: 0.55;
+  pointer-events: none;
+}
+
+.hero-import-note {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 8px;
+  margin: 12px 0 0;
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+.hero-import-note a {
+  color: var(--accent-strong);
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: var(--accent-border);
+  text-underline-offset: 3px;
+}
+
+.hero-import-note a:hover {
+  text-decoration-color: var(--accent-strong);
+}
+
 .btn-large {
   height: 46px;
   padding-inline: 20px;
@@ -1241,5 +1279,73 @@ html[data-theme="light"] .icon-moon {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
+  }
+}
+
+/* ------------------------------------------------------------------------- */
+/* bulk import redirect page                                                  */
+/* ------------------------------------------------------------------------- */
+
+.redirect-page {
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+.redirect-card {
+  width: min(100%, 30rem);
+  padding: 34px 28px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+.redirect-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  background: linear-gradient(140deg, #4f46e5, #4500ff 58%, #6d28d9);
+  color: #fff;
+  box-shadow: 0 12px 28px rgba(69, 0, 255, 0.32);
+}
+
+.redirect-card h1 {
+  margin: 18px 0 0;
+  font-size: 1.45rem;
+  letter-spacing: -0.02em;
+}
+
+.redirect-card > p {
+  margin: 10px 0 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.redirect-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.redirect-card .redirect-hint {
+  margin-top: 16px;
+  color: var(--faint);
+  font-size: 0.82rem;
+}
+
+.redirect-card .redirect-hint a {
+  color: var(--accent-strong);
+}
+
+@media (max-width: 420px) {
+  .redirect-actions .btn {
+    flex: 1 1 100%;
   }
 }

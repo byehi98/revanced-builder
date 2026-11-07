@@ -6,7 +6,8 @@
 Extensive ReVanced builder — Magisk modules and non-root APKs for many patched apps, updated daily.
 
 Browse every app and copy its one-tap **Obtainium** install link on the
-**[Obtainium catalog website](https://byehi98.github.io/revanced-builder/)**. The site is rebuilt
+**[Obtainium catalog website](https://byehi98.github.io/revanced-builder/)** — or use the
+**Add all apps to Obtainium** button to import every built app in one go. The site is rebuilt
 automatically after each release from the same configs and release metadata this builder uses.
 
 Get the [latest CI release](https://github.com/j-hc/revanced-magisk-module/releases).

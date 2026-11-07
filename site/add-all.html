@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" content="#0d0b14">
+  <meta name="robots" content="noindex">
+  <title>Opening Obtainium — ReVanced Builder</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%23110f1c'/%3E%3Cpath d='M28 31h44M28 50h31M28 69h21' stroke='%238b5cf6' stroke-width='9' stroke-linecap='round'/%3E%3Ccircle cx='73' cy='67' r='17' fill='%23110f1c' stroke='%2322c55e' stroke-width='6'/%3E%3Cpath d='m66 67 5 5 9-10' fill='none' stroke='%2322c55e' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <script>
+    try {
+      var theme = localStorage.getItem("rvb-theme");
+      if (theme === "light" || theme === "dark") document.documentElement.dataset.theme = theme;
+    } catch (error) {
+      /* storage may be unavailable */
+    }
+  </script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="redirect-page">
+  <main class="redirect-card">
+    <span class="redirect-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 3v11m0 0 4-4m-4 4-4-4"></path>
+        <path d="M4 16v3a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-3"></path>
+      </svg>
+    </span>
+    <h1>Opening Obtainium…</h1>
+    <p id="redirectStatus">Handing the bulk import to the Obtainium app.</p>
+
+    <div class="redirect-actions" id="redirectFallback" hidden>
+      <a class="btn btn-obtainium" id="redirectRetry" href="#">Open Obtainium again</a>
+      <a class="btn btn-ghost" id="redirectDownload" href="#" download="revanced-builder-obtainium.json">Download import file</a>
+    </div>
+
+    <p class="redirect-hint" id="redirectHint">
+      If Obtainium opens, confirm the import there. Nothing to install on this page.
+    </p>
+    <p class="redirect-hint">
+      <a href="./">Back to the catalog</a>
+    </p>
+  </main>
+  <script src="add-all.js"></script>
+</body>
+</html>
