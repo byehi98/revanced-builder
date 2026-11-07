@@ -1,23 +1,19 @@
 
-**11 apps built.**
+**7 apps built.**
   
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
 CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
-Patches: bearinmindcat/patches-2.8.9.mpp  
-[Changelog](https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.8.9)
+Patches: bearinmindcat/patches-2.8.10.mpp  
+[Changelog](https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.8.10)
 
 CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
-Patches: byehi98/patches-1.49.0-dev.5.mpp  
-[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.49.0-dev.5)
+Patches: byehi98/patches-1.49.0-dev.8.mpp  
+[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.49.0-dev.8)
 
 CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
-CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
-CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
-CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
-CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
-Patches: hxreborn/patches-1.73.0.mpp  
-[Changelog](https://github.com/hxreborn/morphe-patches/releases/tag/v1.73.0)
+Patches: byehi98/patches-1.48.0.mpp  
+[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.48.0)
 
 CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
 CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
@@ -166,6 +162,12 @@ Showly: 3.70.0
 Solid-Explorer: 3.6.1
 WPS-Office: 18.24
 Wallcraft: 3.61.01  
+Cx-File-Explorer: 2.8.1
+Patches: hxreborn/patches-1.73.0.mpp  
+MovieBox-hxreborn: 4.0.03.1020.03
+ProtonVPN-hxreborn: 5.21.9.0
+Protonmail: 7.11.12
+Symfonium: 15.1.0
 Reddit-Adobo: 2026.44.0  
 Patches: jkennethcarino/patches-2.0.0-dev.3.mpp  
 AudioRelay: 0.26.1  
@@ -221,17 +223,13 @@ Patches: spicetify/patches-1.2.0.mpp
 Imgur: 7.34.0.0  
 Patches: sushruth/patches-1.0.0.mpp        
 Lemmy-Sync: latest
-Patches: wchill/patches-2.0.3.mpp                                                  
+Patches: wchill/patches-2.0.3.mpp                                                    
 
 ### Built versions  
-Cx-File-Explorer: 2.8.1
 Freejobalert: 1.0.0
 Google-Maps_morphe-patches: 26.36.04.973607363
-MovieBox-hxreborn: 4.0.03.1020.03
+Lemmings-Puzzle-Survival_okish-morphe-patches: 9.5.0
 Plants-vs-Zombies-Free: 3.18.0
-ProtonVPN-hxreborn: 5.21.9.0
-Protonmail: 7.11.12
 Smashit: 1.5.14
-Symfonium: 15.1.0
 Vector: 2.10.2
-Vita-Mahjong: 3.45.0  
+Vita-Mahjong: 3.46.0  
