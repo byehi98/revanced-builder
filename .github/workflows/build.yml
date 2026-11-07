@@ -81,6 +81,23 @@ jobs:
             source utils.sh
             set_prebuilts
             toml_prep config.toml
+
+            # build.md is the machine-readable log that the next config_update
+            # run uses to decide which apps still need building. Keep the
+            # entries for every app we are not rebuilding here; otherwise the
+            # next run thinks those apps were never built and rebuilds all of
+            # them.
+            mkdir -p "$TEMP_DIR"
+            : > "$TEMP_DIR/skipped"
+            if git show origin/update:build.md > build_prev.md 2>/dev/null; then
+              grep '^Patches: ' build_prev.md >> "$TEMP_DIR/skipped" || true
+              while IFS= read -r table; do
+                [ -n "$table" ] || continue
+                [ "$table" = "$APP" ] && continue
+                grep -m1 "^${table}:" build_prev.md >> "$TEMP_DIR/skipped" 2>/dev/null || true
+              done < <(toml_get_table_names)
+            fi
+
             jq --arg k "$APP" \
               'to_entries | map(select(.key == $k or (.value | type != "object"))) | from_entries' \
               <<< "$__TOML__" > config.json
