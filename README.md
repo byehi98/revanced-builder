@@ -15,7 +15,7 @@ Get the [latest CI release](https://github.com/j-hc/revanced-magisk-module/relea
 ## Build Status
 <!-- BUILD_STATUS_START -->
 <details>
-<summary><b>175 of 177 apps built</b> — click to expand the full list</summary>
+<summary><b>175 of 176 apps built</b> — click to expand the full list</summary>
 
 #### `Akash-Sriram/morphe-google-photos` · `patches-1.17.11.mpp`
 
@@ -230,12 +230,6 @@ Get the [latest CI release](https://github.com/j-hc/revanced-magisk-module/relea
 | App | Status | Obtainium |
 | :--- | :---: | :---: |
 | `Subway-Surfers` ([APK](https://github.com/byehi98/revanced-builder/releases/download/294/subway-surfers-legendsciber-v3.70.0-all.apk)) | ✅ | [![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.kiloo.subwaysurf%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Subway-Surfers%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22subway-surfers-legendsciber%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D) |
-
-#### `mich111discord/MightyMichs-Patches` · `patches-1.13.0.mpp`
-
-| App | Status | Obtainium |
-| :--- | :---: | :---: |
-| `Adobe-Photoshop_MightyMichs-Patches` | ❌ | [![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.adobe.photoshop.retail%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Adobe-Photoshop_MightyMichs-Patches%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22adobe-photoshop_mightymichs-patches-mich111discord%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D) |
 
 #### `MiguelNinja19/miguel-morphe-patches` · `patches-1.13.6.mpp`
 
