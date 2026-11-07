@@ -514,7 +514,10 @@
     readUrlState();
 
     try {
-      const response = await fetch("data.json", { headers: { Accept: "application/json" } });
+      const response = await fetch(`data.json?v=${Date.now()}`, {
+        cache: "no-store",
+        headers: { Accept: "application/json" },
+      });
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
       const data = await response.json();
       if (!data || !Array.isArray(data.apps)) throw new Error("Invalid data.json");

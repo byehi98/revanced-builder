@@ -20,12 +20,14 @@ jobs:
   add-app:
     permissions:
       contents: write
+      actions: write
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v7
         with:
           fetch-depth: 0
+          ref: main
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -33,9 +35,17 @@ jobs:
           python-version: "3.11"
 
       - name: Add App Configuration
+        id: add
         run: |
           chmod +x ./add-app.sh ./scripts/add_app.py
-          ./add-app.sh "${{ inputs.app_name }}" "${{ inputs.patch_source }}" "${{ inputs.package_name }}"
+          OUTPUT=$(./add-app.sh "${{ inputs.app_name }}" "${{ inputs.patch_source }}" "${{ inputs.package_name }}")
+          printf '%s\n' "$OUTPUT"
+          TABLE=$(printf '%s\n' "$OUTPUT" | sed -n 's/^\[+\] Successfully added table \[\(.*\)\] to .*$/\1/p' | tail -n1)
+          if [ -z "$TABLE" ]; then
+            echo "::error::Could not determine the table name that was added"
+            exit 1
+          fi
+          echo "table=$TABLE" >> "$GITHUB_OUTPUT"
 
       - name: Validate Configurations
         run: |
@@ -43,13 +53,37 @@ jobs:
           ./build.sh --list-apps
 
       - name: Commit and Push Changes
+        id: commit
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add configs/
           if git diff --staged --quiet; then
             echo "No changes to commit."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
           else
             git commit -m "Add ${{ inputs.app_name }} with patch source ${{ inputs.patch_source }}"
-            git push
+            git push origin HEAD:main
+            echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
+
+      # A push made with GITHUB_TOKEN does not trigger other workflows, so the
+      # build has to be dispatched explicitly. workflow_dispatch is the one
+      # event GITHUB_TOKEN is allowed to start.
+      - name: Trigger CI build
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          for attempt in 1 2 3 4 5; do
+            if gh workflow run ci.yml --ref main \
+                -f force_build=true \
+                -f app="${{ steps.add.outputs.table }}"; then
+              echo "Dispatched CI build for the new app."
+              exit 0
+            fi
+            echo "CI dispatch attempt ${attempt} failed, retrying..."
+            sleep 5
+          done
+          echo "::error::Could not dispatch ci.yml"
+          exit 1

@@ -37,6 +37,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v7
+        with:
+          # Always publish the latest catalog and config, not the (older)
+          # triggering run's SHA.
+          ref: main
 
       - name: Setup Python
         uses: actions/setup-python@v7

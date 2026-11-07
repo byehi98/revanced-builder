@@ -6,8 +6,18 @@ on:
         type: boolean
         required: false
         default: true
+      app:
+        type: string
+        required: false
+        default: ""
 
   workflow_dispatch:
+    inputs:
+      app:
+        description: "Only build this app table (optional)"
+        required: false
+        type: string
+        default: ""
 
 jobs:
   run:
@@ -61,9 +71,20 @@ jobs:
           pipx install gplaydl
 
       - name: Update config
-        if: ${{ inputs.from_ci }}
+        if: ${{ inputs.from_ci || inputs.app != '' }}
+        env:
+          APP: ${{ inputs.app }}
         run: |
-          if git checkout origin/update build.md; then
+          if [ -n "$APP" ]; then
+            # A forced build after adding an app builds just that table. This
+            # avoids either skipping the new app or rebuilding the whole config.
+            source utils.sh
+            set_prebuilts
+            toml_prep config.toml
+            jq --arg k "$APP" \
+              'to_entries | map(select(.key == $k or (.value | type != "object"))) | from_entries' \
+              <<< "$__TOML__" > config.json
+          elif git checkout origin/update build.md; then
             UPDATE_CFG=$(./build.sh config.toml --config-update)
             if [ -n "$UPDATE_CFG" ]; then
               echo "$UPDATE_CFG" > config.json

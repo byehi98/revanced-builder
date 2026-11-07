@@ -22,6 +22,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v7
+        with:
+          # workflow_run checks out the triggering run's SHA by default, which
+          # can be older than the config commit that was just pushed.
+          ref: main
 
 
       - name: Install tools
