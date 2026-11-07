@@ -4,10 +4,15 @@
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
 CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
-Patches: Akash-Sriram/patches-1.17.11.mpp  
-[Changelog](https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.17.11)  
+Patches: bearinmindcat/patches-2.9.1.mpp  
+[Changelog](https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.9.1)
+
+CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
+Patches: wchill/patches-2.1.0.mpp  
+[Changelog](https://github.com/wchill/patcheddit/releases/tag/v2.1.0)  
 
 Skipped:  
+Google-Photos-Akash-Sriram: 7.99.0.1007655401  
 Patches: Akash-Sriram/patches-1.17.11.mpp  
 Opera-GX: latest  
 Patches: Alastor-Kaneki/patches-1.15.3.mpp  
@@ -71,8 +76,6 @@ Patches: arandomhooman/patches-1.53.0.mpp
 FolderSync: 4.12.0  
 Microsoft-SwiftKey: 9.13.13.5  
 Poweramp: build-1025-bundle-play  
-Google-Maps_morphe-patches: 26.36.04.973607363
-Patches: bearinmindcat/patches-2.8.11.mpp  
 Brave-Bufferk: 1.92.140
 Patches: bufferk/patches-1.8.1.mpp  
 Medium: 4.5.1784910928
@@ -216,9 +219,7 @@ qBitConnect: 2.0.6
 Spotify_morphe-patches: latest
 Patches: spicetify/patches-1.2.0.mpp  
 Imgur: 7.34.0.0  
-Patches: sushruth/patches-1.0.0.mpp        
-Lemmy-Sync: latest
-Patches: wchill/patches-2.0.3.mpp                                                        
+Patches: sushruth/patches-1.0.0.mpp          
 
 ### Built versions  
-Google-Photos-Akash-Sriram: 7.99.0.1007655401  
+Google-Maps_morphe-patches: 26.36.04.973607363  
