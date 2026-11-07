@@ -1,0 +1,791 @@
+{
+  "air.com.midjiwan.polytopia": {
+    "file": "air.com.midjiwan.polytopia.png",
+    "source": "google-play",
+    "play_package": "air.com.midjiwan.polytopia"
+  },
+  "app.morphe.android.apps.photos": {
+    "file": "app.morphe.android.apps.photos.png",
+    "source": "google-play",
+    "play_package": "com.google.android.apps.photos"
+  },
+  "app.morphe.android.apps.youtube.music": {
+    "file": "app.morphe.android.apps.youtube.music.png",
+    "source": "google-play",
+    "play_package": "com.google.android.apps.youtube.music"
+  },
+  "app.morphe.android.youtube": {
+    "file": "app.morphe.android.youtube.png",
+    "source": "google-play",
+    "play_package": "com.google.android.youtube"
+  },
+  "app.symfonik.music.player": {
+    "file": "app.symfonik.music.player.png",
+    "source": "google-play",
+    "play_package": "app.symfonik.music.player"
+  },
+  "armworkout.armworkoutformen.armexercises": {
+    "file": "armworkout.armworkoutformen.armexercises.png",
+    "source": "apk",
+    "app": "Arm-Workout",
+    "asset": "arm-workout-entree3k-v2.4.3-all.apk",
+    "drawable": "res/mipmap-anydpi-v26/ic_launcher.xml"
+  },
+  "ch.protonmail.android": {
+    "file": "ch.protonmail.android.png",
+    "source": "google-play",
+    "play_package": "ch.protonmail.android"
+  },
+  "ch.protonvpn.android": {
+    "file": "ch.protonvpn.android.png",
+    "source": "apk",
+    "app": "ProtonVPN-hxreborn",
+    "asset": "protonvpn-hxreborn-hxreborn-v5.21.9.0-all.apk",
+    "drawable": "res/mipmap-anydpi-v26/ic_launcher_round.xml"
+  },
+  "cn.wps.moffice_eng": {
+    "file": "cn.wps.moffice_eng.png",
+    "source": "google-play",
+    "play_package": "cn.wps.moffice_eng"
+  },
+  "com.Flanne.MinutesTillDawn.roguelike.shooting.fr.gp": {
+    "file": "com.Flanne.MinutesTillDawn.roguelike.shooting.fr.gp.png",
+    "source": "google-play",
+    "play_package": "com.Flanne.MinutesTillDawn.roguelike.shooting.fr.gp"
+  },
+  "com.IvanAF.ClimbAMIYPfree": {
+    "file": "com.IvanAF.ClimbAMIYPfree.png",
+    "source": "google-play",
+    "play_package": "com.IvanAF.ClimbAMIYPfree"
+  },
+  "com.accuweather.android": {
+    "file": "com.accuweather.android.png",
+    "source": "google-play",
+    "play_package": "com.accuweather.android"
+  },
+  "com.adda247.app": {
+    "file": "com.adda247.app.png",
+    "source": "google-play",
+    "play_package": "com.adda247.app"
+  },
+  "com.adguard.android": {
+    "file": "com.adguard.android.png",
+    "source": "apk",
+    "app": "AdGuard-rushiranpise",
+    "asset": "adguard-rushiranpise-rushiranpise-v4.14.68-all.apk",
+    "drawable": "res/BW.xml"
+  },
+  "com.adobe.lrmobile": {
+    "file": "com.adobe.lrmobile.png",
+    "source": "google-play",
+    "play_package": "com.adobe.lrmobile"
+  },
+  "com.adobe.photoshopmix": {
+    "file": "com.adobe.photoshopmix.png",
+    "source": "apk",
+    "app": "Adobe-Photoshop-Mix",
+    "asset": "adobe-photoshop-mix-rookieenough-v2.6.3-all.apk",
+    "drawable": "res/drawable-xxxhdpi-v4/launcher_icon.png"
+  },
+  "com.androholic.amoledpix": {
+    "file": "com.androholic.amoledpix.png",
+    "source": "google-play",
+    "play_package": "com.androholic.amoledpix"
+  },
+  "com.ansangha.drdriving": {
+    "file": "com.ansangha.drdriving.png",
+    "source": "google-play",
+    "play_package": "com.ansangha.drdriving"
+  },
+  "com.anydesk.anydeskandroid": {
+    "file": "com.anydesk.anydeskandroid.png",
+    "source": "google-play",
+    "play_package": "com.anydesk.anydeskandroid"
+  },
+  "com.apkmirror.helper.prod": {
+    "file": "com.apkmirror.helper.prod.png",
+    "source": "google-play",
+    "play_package": "com.apkmirror.helper.prod"
+  },
+  "com.arlosoft.macrodroid": {
+    "file": "com.arlosoft.macrodroid.png",
+    "source": "google-play",
+    "play_package": "com.arlosoft.macrodroid"
+  },
+  "com.azefsw.audioconnect": {
+    "file": "com.azefsw.audioconnect.png",
+    "source": "google-play",
+    "play_package": "com.azefsw.audioconnect"
+  },
+  "com.backdrops.wallpapers": {
+    "file": "com.backdrops.wallpapers.png",
+    "source": "google-play",
+    "play_package": "com.backdrops.wallpapers"
+  },
+  "com.blingame.haaktestb": {
+    "file": "com.blingame.haaktestb.png",
+    "source": "google-play",
+    "play_package": "com.blingame.haaktestb"
+  },
+  "com.block.juggle": {
+    "file": "com.block.juggle.png",
+    "source": "apk",
+    "app": "Block-Blast",
+    "asset": "block-blast-rushiranpise-v10.4.5-all.apk",
+    "drawable": "res/mipmap-anydpi-v26/ic_launcher.xml"
+  },
+  "com.bluematter.qbitconnect": {
+    "file": "com.bluematter.qbitconnect.png",
+    "source": "google-play",
+    "play_package": "com.bluematter.qbitconnect"
+  },
+  "com.brave.browser": {
+    "file": "com.brave.browser.png",
+    "source": "google-play",
+    "play_package": "com.brave.browser"
+  },
+  "com.brave.browser_beta": {
+    "file": "com.brave.browser_beta.png",
+    "source": "google-play",
+    "play_package": "com.brave.browser_beta"
+  },
+  "com.brave.browser_nightly": {
+    "file": "com.brave.browser_nightly.png",
+    "source": "google-play",
+    "play_package": "com.brave.browser_nightly"
+  },
+  "com.ceyhan.sets": {
+    "file": "com.ceyhan.sets.png",
+    "source": "google-play",
+    "play_package": "com.ceyhan.sets"
+  },
+  "com.chess": {
+    "file": "com.chess.png",
+    "source": "google-play",
+    "play_package": "com.chess"
+  },
+  "com.cloudflare.onedotonedotonedotone": {
+    "file": "com.cloudflare.onedotonedotonedotone.png",
+    "source": "google-play",
+    "play_package": "com.cloudflare.onedotonedotonedotone"
+  },
+  "com.community.oneroom": {
+    "file": "com.community.oneroom.png",
+    "source": "apk",
+    "app": "MovieBox-hxreborn",
+    "asset": "moviebox-hxreborn-hxreborn-v4.0.03.1020.03-all.apk",
+    "drawable": "res/BWP.xml"
+  },
+  "com.cricbuzz.android": {
+    "file": "com.cricbuzz.android.png",
+    "source": "google-play",
+    "play_package": "com.cricbuzz.android"
+  },
+  "com.cv.docscanner": {
+    "file": "com.cv.docscanner.png",
+    "source": "google-play",
+    "play_package": "com.cv.docscanner"
+  },
+  "com.cxinventor.file.explorer": {
+    "file": "com.cxinventor.file.explorer.png",
+    "source": "google-play",
+    "play_package": "com.cxinventor.file.explorer"
+  },
+  "com.digibites.accubattery": {
+    "file": "com.digibites.accubattery.png",
+    "source": "google-play",
+    "play_package": "com.digibites.accubattery"
+  },
+  "com.direlight.grimvalor": {
+    "file": "com.direlight.grimvalor.png",
+    "source": "google-play",
+    "play_package": "com.direlight.grimvalor"
+  },
+  "com.discord": {
+    "file": "com.discord.png",
+    "source": "google-play",
+    "play_package": "com.discord"
+  },
+  "com.dnddream.HeadBasketball": {
+    "file": "com.dnddream.HeadBasketball.png",
+    "source": "google-play",
+    "play_package": "com.dnddream.HeadBasketball"
+  },
+  "com.dnddream.headsoccer.android": {
+    "file": "com.dnddream.headsoccer.android.png",
+    "source": "google-play",
+    "play_package": "com.dnddream.headsoccer.android"
+  },
+  "com.dubox.drive": {
+    "file": "com.dubox.drive.png",
+    "source": "google-play",
+    "play_package": "com.dubox.drive"
+  },
+  "com.dv.adm": {
+    "file": "com.dv.adm.png",
+    "source": "google-play",
+    "play_package": "com.dv.adm"
+  },
+  "com.ea.game.pvzfree_row": {
+    "file": "com.ea.game.pvzfree_row.png",
+    "source": "google-play",
+    "play_package": "com.ea.game.pvzfree_row"
+  },
+  "com.easybrain.arrow.puzzle.game.morphe": {
+    "file": "com.easybrain.arrow.puzzle.game.morphe.png",
+    "source": "google-play",
+    "play_package": "com.easybrain.arrow.puzzle.game"
+  },
+  "com.eterno": {
+    "file": "com.eterno.png",
+    "source": "google-play",
+    "play_package": "com.eterno"
+  },
+  "com.fdgentertainment.tentaclewars.gp.free": {
+    "file": "com.fdgentertainment.tentaclewars.gp.free.png",
+    "source": "google-play",
+    "play_package": "com.fdgentertainment.tentaclewars.gp.free"
+  },
+  "com.fingersoft.hillclimb": {
+    "file": "com.fingersoft.hillclimb.png",
+    "source": "google-play",
+    "play_package": "com.fingersoft.hillclimb"
+  },
+  "com.flavionet.android.camera.lite": {
+    "file": "com.flavionet.android.camera.lite.png",
+    "source": "google-play",
+    "play_package": "com.flavionet.android.camera.lite"
+  },
+  "com.freejobalert": {
+    "file": "com.freejobalert.png",
+    "source": "google-play",
+    "play_package": "com.freejobalert"
+  },
+  "com.generalcomp.truecloud": {
+    "file": "com.generalcomp.truecloud.png",
+    "source": "google-play",
+    "play_package": "com.generalcomp.truecloud"
+  },
+  "com.google.android.apps.magazines": {
+    "file": "com.google.android.apps.magazines.png",
+    "source": "google-play",
+    "play_package": "com.google.android.apps.magazines"
+  },
+  "com.halfbrick.dantheman": {
+    "file": "com.halfbrick.dantheman.png",
+    "source": "apk",
+    "app": "Dan-The-Man",
+    "asset": "dan-the-man-okish-v1.14.11-all.apk",
+    "drawable": "res/mipmap-anydpi-v26/ic_launcher.xml"
+  },
+  "com.halfbrick.fruitninjafree": {
+    "file": "com.halfbrick.fruitninjafree.png",
+    "source": "google-play",
+    "play_package": "com.halfbrick.fruitninjafree"
+  },
+  "com.halfbrick.jetpackjoyride": {
+    "file": "com.halfbrick.jetpackjoyride.png",
+    "source": "google-play",
+    "play_package": "com.halfbrick.jetpackjoyride"
+  },
+  "com.hyperdotstudios.swampattack2": {
+    "file": "com.hyperdotstudios.swampattack2.png",
+    "source": "google-play",
+    "play_package": "com.hyperdotstudios.swampattack2"
+  },
+  "com.ilovepdf.www": {
+    "file": "com.ilovepdf.www.png",
+    "source": "google-play",
+    "play_package": "com.ilovepdf.www"
+  },
+  "com.imgur.mobile": {
+    "file": "com.imgur.mobile.png",
+    "source": "google-play",
+    "play_package": "com.imgur.mobile"
+  },
+  "com.intsig.camscanner": {
+    "file": "com.intsig.camscanner.png",
+    "source": "google-play",
+    "play_package": "com.intsig.camscanner"
+  },
+  "com.kakarod.bighunter": {
+    "file": "com.kakarod.bighunter.png",
+    "source": "google-play",
+    "play_package": "com.kakarod.bighunter"
+  },
+  "com.kevinforeman.nzb360": {
+    "file": "com.kevinforeman.nzb360.png",
+    "source": "google-play",
+    "play_package": "com.kevinforeman.nzb360"
+  },
+  "com.kiloo.subwaysurf": {
+    "file": "com.kiloo.subwaysurf.png",
+    "source": "google-play",
+    "play_package": "com.kiloo.subwaysurf"
+  },
+  "com.kongregate.mobile.burritobison3.google": {
+    "file": "com.kongregate.mobile.burritobison3.google.png",
+    "source": "google-play",
+    "play_package": "com.kongregate.mobile.burritobison3.google"
+  },
+  "com.letterboxd.letterboxd": {
+    "file": "com.letterboxd.letterboxd.png",
+    "source": "google-play",
+    "play_package": "com.letterboxd.letterboxd"
+  },
+  "com.lima.doodlejump": {
+    "file": "com.lima.doodlejump.png",
+    "source": "google-play",
+    "play_package": "com.lima.doodlejump"
+  },
+  "com.llamalab.automate": {
+    "file": "com.llamalab.automate.png",
+    "source": "google-play",
+    "play_package": "com.llamalab.automate"
+  },
+  "com.lumina.wallpapers": {
+    "file": "com.lumina.wallpapers.png",
+    "source": "apk",
+    "app": "Lumina-Walls",
+    "asset": "lumina-walls-okish-v1.0.2.6-all.apk",
+    "drawable": "res/mipmap-anydpi-v26/ic_launcher_round.xml"
+  },
+  "com.madfingergames.deadtrigger": {
+    "file": "com.madfingergames.deadtrigger.png",
+    "source": "google-play",
+    "play_package": "com.madfingergames.deadtrigger"
+  },
+  "com.maxmpz.audioplayer": {
+    "file": "com.maxmpz.audioplayer.png",
+    "source": "apk",
+    "app": "Poweramp",
+    "asset": "poweramp-hoomans-vbuild-1025-bundle-play-all.apk",
+    "drawable": "res/mipmap-anydpi-v31/app_icon_rounded.xml"
+  },
+  "com.mediocre.commute": {
+    "file": "com.mediocre.commute.png",
+    "source": "apk",
+    "app": "Does-Not-Commute-chiggi",
+    "asset": "does-not-commute-chiggi-durgesh0505-v1.5.5-all.apk",
+    "drawable": "res/mipmap-anydpi-v21/ic_launcher_round.xml"
+  },
+  "com.mediocre.pinout": {
+    "file": "com.mediocre.pinout.png",
+    "source": "apk",
+    "app": "PinOut",
+    "asset": "pinout-entree3k-v1.0.7-all.apk",
+    "drawable": "res/E4.xml"
+  },
+  "com.mediocre.smashhit": {
+    "file": "com.mediocre.smashhit.png",
+    "source": "apk",
+    "app": "Smashit",
+    "asset": "smashit-okish-v1.5.14-all.apk",
+    "drawable": "res/E4.xml"
+  },
+  "com.medium.reader": {
+    "file": "com.medium.reader.png",
+    "source": "google-play",
+    "play_package": "com.medium.reader"
+  },
+  "com.michaldrabik.showly2": {
+    "file": "com.michaldrabik.showly2.png",
+    "source": "google-play",
+    "play_package": "com.michaldrabik.showly2"
+  },
+  "com.microblink.photomath": {
+    "file": "com.microblink.photomath.png",
+    "source": "google-play",
+    "play_package": "com.microblink.photomath"
+  },
+  "com.mightygamesgroup.shootyskies": {
+    "file": "com.mightygamesgroup.shootyskies.png",
+    "source": "google-play",
+    "play_package": "com.mightygamesgroup.shootyskies"
+  },
+  "com.miniclip.plagueinc": {
+    "file": "com.miniclip.plagueinc.png",
+    "source": "google-play",
+    "play_package": "com.miniclip.plagueinc"
+  },
+  "com.mobge.Oddmar": {
+    "file": "com.mobge.Oddmar.png",
+    "source": "google-play",
+    "play_package": "com.mobge.Oddmar"
+  },
+  "com.mobisystems.office": {
+    "file": "com.mobisystems.office.png",
+    "source": "google-play",
+    "play_package": "com.mobisystems.office"
+  },
+  "com.mobond.mindicator": {
+    "file": "com.mobond.mindicator.png",
+    "source": "google-play",
+    "play_package": "com.mobond.mindicator"
+  },
+  "com.nekki.vector": {
+    "file": "com.nekki.vector.png",
+    "source": "google-play",
+    "play_package": "com.nekki.vector"
+  },
+  "com.noodlecake.altosadventure": {
+    "file": "com.noodlecake.altosadventure.png",
+    "source": "google-play",
+    "play_package": "com.noodlecake.altosadventure"
+  },
+  "com.noodlecake.altosodyssey": {
+    "file": "com.noodlecake.altosodyssey.png",
+    "source": "google-play",
+    "play_package": "com.noodlecake.altosodyssey"
+  },
+  "com.notdoppler.crashofcars": {
+    "file": "com.notdoppler.crashofcars.png",
+    "source": "google-play",
+    "play_package": "com.notdoppler.crashofcars"
+  },
+  "com.notdoppler.earntodie2": {
+    "file": "com.notdoppler.earntodie2.png",
+    "source": "google-play",
+    "play_package": "com.notdoppler.earntodie2"
+  },
+  "com.nytimes.crossword": {
+    "file": "com.nytimes.crossword.png",
+    "source": "google-play",
+    "play_package": "com.nytimes.crossword"
+  },
+  "com.oasisfeng.greenify": {
+    "file": "com.oasisfeng.greenify.png",
+    "source": "google-play",
+    "play_package": "com.oasisfeng.greenify"
+  },
+  "com.opera.app.news": {
+    "file": "com.opera.app.news.png",
+    "source": "google-play",
+    "play_package": "com.opera.app.news"
+  },
+  "com.opera.gx": {
+    "file": "com.opera.gx.png",
+    "source": "google-play",
+    "play_package": "com.opera.gx"
+  },
+  "com.outfit7.movingeye.swampattack": {
+    "file": "com.outfit7.movingeye.swampattack.png",
+    "source": "google-play",
+    "play_package": "com.outfit7.movingeye.swampattack"
+  },
+  "com.overthetopgames.fancypants": {
+    "file": "com.overthetopgames.fancypants.png",
+    "source": "google-play",
+    "play_package": "com.overthetopgames.fancypants"
+  },
+  "com.parallel.space.pro": {
+    "file": "com.parallel.space.pro.png",
+    "source": "google-play",
+    "play_package": "com.parallel.space.pro"
+  },
+  "com.pikpok.dr2.play": {
+    "file": "com.pikpok.dr2.play.png",
+    "source": "google-play",
+    "play_package": "com.pikpok.dr2.play"
+  },
+  "com.pinterest": {
+    "file": "com.pinterest.png",
+    "source": "google-play",
+    "play_package": "com.pinterest"
+  },
+  "com.playit.videoplayer": {
+    "file": "com.playit.videoplayer.png",
+    "source": "google-play",
+    "play_package": "com.playit.videoplayer"
+  },
+  "com.psiphon3.subscription": {
+    "file": "com.psiphon3.subscription.png",
+    "source": "google-play",
+    "play_package": "com.psiphon3.subscription"
+  },
+  "com.rarlab.rar": {
+    "file": "com.rarlab.rar.png",
+    "source": "google-play",
+    "play_package": "com.rarlab.rar"
+  },
+  "com.rebelbinary.onlyone": {
+    "file": "com.rebelbinary.onlyone.png",
+    "source": "google-play",
+    "play_package": "com.rebelbinary.onlyone"
+  },
+  "com.rebeltwins.aliensdrivemecrazy": {
+    "file": "com.rebeltwins.aliensdrivemecrazy.png",
+    "source": "google-play",
+    "play_package": "com.rebeltwins.aliensdrivemecrazy"
+  },
+  "com.reddit.frontpage": {
+    "file": "com.reddit.frontpage.png",
+    "source": "google-play",
+    "play_package": "com.reddit.frontpage"
+  },
+  "com.rs.explorer.filemanager": {
+    "file": "com.rs.explorer.filemanager.png",
+    "source": "google-play",
+    "play_package": "com.rs.explorer.filemanager"
+  },
+  "com.rubygames.assassin": {
+    "file": "com.rubygames.assassin.png",
+    "source": "google-play",
+    "play_package": "com.rubygames.assassin"
+  },
+  "com.server.auditor.ssh.client": {
+    "file": "com.server.auditor.ssh.client.png",
+    "source": "google-play",
+    "play_package": "com.server.auditor.ssh.client"
+  },
+  "com.sidheinteractive.sif.DR": {
+    "file": "com.sidheinteractive.sif.DR.png",
+    "source": "google-play",
+    "play_package": "com.sidheinteractive.sif.DR"
+  },
+  "com.skgames.trafficracer": {
+    "file": "com.skgames.trafficracer.png",
+    "source": "google-play",
+    "play_package": "com.skgames.trafficracer"
+  },
+  "com.skgames.trafficrider": {
+    "file": "com.skgames.trafficrider.png",
+    "source": "google-play",
+    "play_package": "com.skgames.trafficrider"
+  },
+  "com.soundcloud.android": {
+    "file": "com.soundcloud.android.png",
+    "source": "google-play",
+    "play_package": "com.soundcloud.android"
+  },
+  "com.spookyhousestudios.progressbar95": {
+    "file": "com.spookyhousestudios.progressbar95.png",
+    "source": "google-play",
+    "play_package": "com.spookyhousestudios.progressbar95"
+  },
+  "com.spotify.music": {
+    "file": "com.spotify.music.png",
+    "source": "apk",
+    "app": "Spotify_morphe-patches",
+    "asset": "spotify_morphe-patches-spicetify-vlatest-all.apk",
+    "drawable": "res/mipmap-xxhdpi-v4/icon.png"
+  },
+  "com.tafayor.killall": {
+    "file": "com.tafayor.killall.png",
+    "source": "google-play",
+    "play_package": "com.tafayor.killall"
+  },
+  "com.touchfoo.swordigo": {
+    "file": "com.touchfoo.swordigo.png",
+    "source": "google-play",
+    "play_package": "com.touchfoo.swordigo"
+  },
+  "com.touchtype.swiftkey": {
+    "file": "com.touchtype.swiftkey.png",
+    "source": "google-play",
+    "play_package": "com.touchtype.swiftkey"
+  },
+  "com.truecaller": {
+    "file": "com.truecaller.png",
+    "source": "google-play",
+    "play_package": "com.truecaller"
+  },
+  "com.vitastudio.mahjong": {
+    "file": "com.vitastudio.mahjong.png",
+    "source": "apk",
+    "app": "Vita-Mahjong",
+    "asset": "vita-mahjong-okish-v3.45.0-all.apk",
+    "drawable": "res/mipmap-nodpi-v4/app_icon_round.png"
+  },
+  "com.vkslrzm.Zombie": {
+    "file": "com.vkslrzm.Zombie.png",
+    "source": "google-play",
+    "play_package": "com.vkslrzm.Zombie"
+  },
+  "com.vng.g6.a.zombie": {
+    "file": "com.vng.g6.a.zombie.png",
+    "source": "google-play",
+    "play_package": "com.vng.g6.a.zombie"
+  },
+  "com.wallpaperscraft.wallpaper": {
+    "file": "com.wallpaperscraft.wallpaper.png",
+    "source": "google-play",
+    "play_package": "com.wallpaperscraft.wallpaper"
+  },
+  "com.wb.goog.injustice": {
+    "file": "com.wb.goog.injustice.png",
+    "source": "google-play",
+    "play_package": "com.wb.goog.injustice"
+  },
+  "com.yablio.sendfilestotv": {
+    "file": "com.yablio.sendfilestotv.png",
+    "source": "google-play",
+    "play_package": "com.yablio.sendfilestotv"
+  },
+  "com.yatrirailways.yatri": {
+    "file": "com.yatrirailways.yatri.png",
+    "source": "google-play",
+    "play_package": "com.yatrirailways.yatri"
+  },
+  "com.yodo1.crossyroad": {
+    "file": "com.yodo1.crossyroad.png",
+    "source": "google-play",
+    "play_package": "com.yodo1.crossyroad"
+  },
+  "com.yodo1.rodeo.safari": {
+    "file": "com.yodo1.rodeo.safari.png",
+    "source": "google-play",
+    "play_package": "com.yodo1.rodeo.safari"
+  },
+  "dev.km.android.chargemeter": {
+    "file": "dev.km.android.chargemeter.png",
+    "source": "apk",
+    "app": "Charge-Meter",
+    "asset": "charge-meter-rushiranpise-v3.0.1-all.apk",
+    "drawable": "res/mipmap-xxxhdpi-v4/ic_launcher.png"
+  },
+  "diozz.cubex": {
+    "file": "diozz.cubex.png",
+    "source": "google-play",
+    "play_package": "diozz.cubex"
+  },
+  "dk.tacit.android.foldersync.lite": {
+    "file": "dk.tacit.android.foldersync.lite.png",
+    "source": "google-play",
+    "play_package": "dk.tacit.android.foldersync.lite"
+  },
+  "ee.dustland.android.minesweeper": {
+    "file": "ee.dustland.android.minesweeper.png",
+    "source": "google-play",
+    "play_package": "ee.dustland.android.minesweeper"
+  },
+  "ee.dustland.android.solitaire": {
+    "file": "ee.dustland.android.solitaire.png",
+    "source": "google-play",
+    "play_package": "ee.dustland.android.solitaire"
+  },
+  "eu.darken.octi": {
+    "file": "eu.darken.octi.png",
+    "source": "google-play",
+    "play_package": "eu.darken.octi"
+  },
+  "fi.twomenandadog.zombiecatchers": {
+    "file": "fi.twomenandadog.zombiecatchers.png",
+    "source": "google-play",
+    "play_package": "fi.twomenandadog.zombiecatchers"
+  },
+  "game.puzzle.blockpuzzle": {
+    "file": "game.puzzle.blockpuzzle.png",
+    "source": "google-play",
+    "play_package": "game.puzzle.blockpuzzle"
+  },
+  "ginlemon.iconpackstudio": {
+    "file": "ginlemon.iconpackstudio.png",
+    "source": "google-play",
+    "play_package": "ginlemon.iconpackstudio"
+  },
+  "homeworkout.homeworkouts.noequipment": {
+    "file": "homeworkout.homeworkouts.noequipment.png",
+    "source": "apk",
+    "app": "Home-Workout",
+    "asset": "home-workout-entree3k-v1.7.6-all.apk",
+    "drawable": "res/drawable-anydpi-v26/ic_launcher.xml"
+  },
+  "io.syncapps.lemmy_sync": {
+    "file": "io.syncapps.lemmy_sync.png",
+    "source": "google-play",
+    "play_package": "io.syncapps.lemmy_sync"
+  },
+  "jpark.AOS5": {
+    "file": "jpark.AOS5.png",
+    "source": "google-play",
+    "play_package": "jpark.AOS5"
+  },
+  "mega.privacy.android.app": {
+    "file": "mega.privacy.android.app.png",
+    "source": "google-play",
+    "play_package": "mega.privacy.android.app"
+  },
+  "menloseweight.loseweightappformen.weightlossformen": {
+    "file": "menloseweight.loseweightappformen.weightlossformen.png",
+    "source": "google-play",
+    "play_package": "menloseweight.loseweightappformen.weightlossformen"
+  },
+  "net.binarymode.android.irplus": {
+    "file": "net.binarymode.android.irplus.png",
+    "source": "google-play",
+    "play_package": "net.binarymode.android.irplus"
+  },
+  "net.myanimelist.app": {
+    "file": "net.myanimelist.app.png",
+    "source": "google-play",
+    "play_package": "net.myanimelist.app"
+  },
+  "org.kman.AquaMail": {
+    "file": "org.kman.AquaMail.png",
+    "source": "google-play",
+    "play_package": "org.kman.AquaMail"
+  },
+  "org.mozilla.firefox": {
+    "file": "org.mozilla.firefox.png",
+    "source": "google-play",
+    "play_package": "org.mozilla.firefox"
+  },
+  "org.swiftapps.swiftbackup": {
+    "file": "org.swiftapps.swiftbackup.png",
+    "source": "google-play",
+    "play_package": "org.swiftapps.swiftbackup"
+  },
+  "org.telegram.messenger": {
+    "file": "org.telegram.messenger.png",
+    "source": "google-play",
+    "play_package": "org.telegram.messenger"
+  },
+  "org.ungoogled.android.apps.maps": {
+    "file": "org.ungoogled.android.apps.maps.png",
+    "source": "apk",
+    "app": "Google-Maps_morphe-patches",
+    "asset": "google-maps_morphe-patches-bearinmindcat-v26.36.04.973607363-all.apk",
+    "drawable": "res/mipmap-anydpi/ungoogled_legacy_icon.xml"
+  },
+  "org.zwanoo.android.speedtest": {
+    "file": "org.zwanoo.android.speedtest.png",
+    "source": "google-play",
+    "play_package": "org.zwanoo.android.speedtest"
+  },
+  "pl.macaque.Missiles": {
+    "file": "pl.macaque.Missiles.png",
+    "source": "google-play",
+    "play_package": "pl.macaque.Missiles"
+  },
+  "pl.solidexplorer2": {
+    "file": "pl.solidexplorer2.png",
+    "source": "google-play",
+    "play_package": "pl.solidexplorer2"
+  },
+  "sensustech.universal.tv.remote.control": {
+    "file": "sensustech.universal.tv.remote.control.png",
+    "source": "google-play",
+    "play_package": "sensustech.universal.tv.remote.control"
+  },
+  "sixpack.sixpackabs.absworkout": {
+    "file": "sixpack.sixpackabs.absworkout.png",
+    "source": "google-play",
+    "play_package": "sixpack.sixpackabs.absworkout"
+  },
+  "torrent.search.revolutionv2": {
+    "file": "torrent.search.revolutionv2.png",
+    "source": "google-play",
+    "play_package": "torrent.search.revolutionv2"
+  },
+  "tv.trakt.trakt": {
+    "file": "tv.trakt.trakt.png",
+    "source": "google-play",
+    "play_package": "tv.trakt.trakt"
+  },
+  "videoplayer.videodownloader.downloader": {
+    "file": "videoplayer.videodownloader.downloader.png",
+    "source": "google-play",
+    "play_package": "videoplayer.videodownloader.downloader"
+  }
+}

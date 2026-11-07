@@ -351,10 +351,15 @@
       ? `<a class="btn btn-ghost" href="${esc(safeUrl(primary.url))}" target="_blank" rel="noopener" title="Download ${esc(primary.name)}">${ICONS.download}<span>Download</span></a>`
       : `<a class="btn btn-ghost" aria-disabled="true" href="#" title="No release asset yet">${ICONS.download}<span>Download</span></a>`;
     const copyTitle = `Copy Obtainium link for ${app.name}`;
+    const icon = app.icon || (app.package ? `icons/${app.package}.png` : "");
+    const iconHTML = icon
+      ? `<img class="app-icon" src="${esc(icon)}" alt="" width="40" height="40" loading="lazy" decoding="async" onerror="this.remove()">`
+      : "";
 
     return `<article class="app-card">
       <div class="card-head">
         <div class="app-title">
+          ${iconHTML}
           <span class="status-dot ${statusClass}" title="${esc(statusTitle)}" aria-label="${esc(statusTitle)}"></span>
           <h3>${esc(app.name)}</h3>
         </div>

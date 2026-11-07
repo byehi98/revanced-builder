@@ -13,6 +13,8 @@ per built app.
 | `style.css` | Dark/light theme, layout, cards and redirect page |
 | `app.js` | Search, source filter, sorting, theme, copy-link, import file |
 | `data.json` | Generated catalogue (do not edit by hand) |
+| `icons/*.png` | Committed 96×96 circular launcher icons (third-party artwork) |
+| `icons/sources.json` | Generated provenance for each icon (do not edit by hand) |
 | `apps/*.html` | Generated Obtainium HTML source pages for old builds (do not edit) |
 
 ## Local preview
@@ -91,6 +93,34 @@ The page embeds the app version in a meta tag and links to the exact APK in the
 old release, so Obtainium can still detect updates when the build is rebuilt.
 The choice is automatic: apps on the first release page keep the native GitHub
 source, and apps outside it move to HTML. No releases are deleted or rewritten.
+
+## Launcher icons
+
+Every card shows the app's real launcher icon, stored as
+`site/icons/<package id>.png`. Icons are 96×96 PNGs cut to a circle, following
+the approach used by
+[`hxreborn/morphe-patches`](https://github.com/hxreborn/morphe-patches/tree/main/.github/assets/icons).
+
+`scripts/fetch_icons.py` fills in missing icons:
+
+1. It fetches the app's Google Play listing icon (`=s96-cc`), using an override
+   for patched package IDs that do not exist on Play.
+2. If Play has no listing, it extracts the launcher icon from the built APK with
+   HTTP range requests (`scripts/apk_icons.py`), rendering adaptive layers,
+   vector drawables and density-specific PNG/WebP icons with ImageMagick.
+
+```sh
+# fetch icons for apps that do not have one yet
+python3 scripts/fetch_icons.py
+
+# refresh everything (requires ImageMagick for APK fallbacks)
+python3 scripts/fetch_icons.py --force
+```
+
+The icons are the property of their respective app developers. They are used
+only to identify the app a build applies to, and are not covered by this
+repository's licence. `icons/sources.json` records whether each file came from
+Google Play or from an APK and which drawable was used.
 
 ## Bulk import
 

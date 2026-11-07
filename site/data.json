@@ -275,7 +275,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.Flanne.MinutesTillDawn.roguelike.shooting.fr.gp%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%2220-Minutes-Till-Dawn%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%2220-minutes-till-dawn-okish%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.Flanne.MinutesTillDawn.roguelike.shooting.fr.gp.png"
   },
   {
    "table": "AccuBattery",
@@ -307,7 +308,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.digibites.accubattery%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22AccuBattery%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22accubattery-rushiranpise%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.digibites.accubattery.png"
   },
   {
    "table": "Accuweather",
@@ -339,7 +341,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.accuweather.android%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Accuweather%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22accuweather-rushiranpise%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.accuweather.android.png"
   },
   {
    "table": "Adda247",
@@ -371,7 +374,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.adda247.app%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Adda247%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22adda247-okish%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.adda247.app.png"
   },
   {
    "table": "AdGuard-hoo-dles",
@@ -403,7 +407,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.adguard.android%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22AdGuard-hoo-dles%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22adguard-hoo-dles-hoo-dles%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.adguard.android.png"
   },
   {
    "table": "AdGuard-rushiranpise",
@@ -435,7 +440,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.adguard.android%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22AdGuard-rushiranpise%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22adguard-rushiranpise-rushiranpise%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.adguard.android.png"
   },
   {
    "table": "Adobe-Photoshop-Mix",
@@ -467,7 +473,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.adobe.photoshopmix%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Adobe-Photoshop-Mix%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22adobe-photoshop-mix-rookieenough%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.adobe.photoshopmix.png"
   },
   {
    "table": "Advanced-Download-Manager",
@@ -499,7 +506,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.dv.adm%22%2C%22url%22%3A%22https%3A//byehi98.github.io/revanced-builder/apps/advanced-download-manager.html%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Advanced-Download-Manager%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22%28%3F%3A/%7C-%29advanced-download-manager-hoomans-%5B%5E/%5D%2A%24%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22versionExtractWholePage%5C%22%3Atrue%2C%5C%22versionExtractionRegEx%5C%22%3A%5C%22name%3D%5C%5C%5C%22obtainium-version%5C%5C%5C%22%20content%3D%5C%5C%5C%22%28%5B%5E%5C%5C%5C%22%5D%2B%29%5C%5C%5C%22%5C%22%2C%5C%22matchGroupToUse%5C%22%3A%5C%221%5C%22%7D%22%2C%22overrideSource%22%3A%22HTML%22%7D",
-   "obtainium_source": "html"
+   "obtainium_source": "html",
+   "icon": "icons/com.dv.adm.png"
   },
   {
    "table": "Aliens-Drive-Me-Crazy",
@@ -531,7 +539,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.rebeltwins.aliensdrivemecrazy%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Aliens-Drive-Me-Crazy%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22aliens-drive-me-crazy-okish%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.rebeltwins.aliensdrivemecrazy.png"
   },
   {
    "table": "All-Video-Downloader-and-Ace-Player",
@@ -563,7 +572,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22videoplayer.videodownloader.downloader%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22All-Video-Downloader-and-Ace-Player%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22all-video-downloader-and-ace-player-ftl%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/videoplayer.videodownloader.downloader.png"
   },
   {
    "table": "Alto-Adventure",
@@ -595,7 +605,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.noodlecake.altosadventure%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Alto-Adventure%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22alto-adventure-okish%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.noodlecake.altosadventure.png"
   },
   {
    "table": "Alto-Odyssey",
@@ -627,7 +638,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.noodlecake.altosodyssey%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Alto-Odyssey%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22alto-odyssey-okish%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.noodlecake.altosodyssey.png"
   },
   {
    "table": "Amoledpix",
@@ -659,7 +671,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.androholic.amoledpix%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Amoledpix%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22amoledpix-rushiranpise%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.androholic.amoledpix.png"
   },
   {
    "table": "Anger-of-Stick-5",
@@ -691,7 +704,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22jpark.AOS5%22%2C%22url%22%3A%22https%3A//byehi98.github.io/revanced-builder/apps/anger-of-stick-5.html%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Anger-of-Stick-5%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22%28%3F%3A/%7C-%29anger-of-stick-5-miguelninja19-%5B%5E/%5D%2A%24%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22versionExtractWholePage%5C%22%3Atrue%2C%5C%22versionExtractionRegEx%5C%22%3A%5C%22name%3D%5C%5C%5C%22obtainium-version%5C%5C%5C%22%20content%3D%5C%5C%5C%22%28%5B%5E%5C%5C%5C%22%5D%2B%29%5C%5C%5C%22%5C%22%2C%5C%22matchGroupToUse%5C%22%3A%5C%221%5C%22%7D%22%2C%22overrideSource%22%3A%22HTML%22%7D",
-   "obtainium_source": "html"
+   "obtainium_source": "html",
+   "icon": "icons/jpark.AOS5.png"
   },
   {
    "table": "AnyDesk",
@@ -723,7 +737,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.anydesk.anydeskandroid%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22AnyDesk%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22anydesk-heval99%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.anydesk.anydeskandroid.png"
   },
   {
    "table": "Apkmirror-Installer",
@@ -755,7 +770,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.apkmirror.helper.prod%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Apkmirror-Installer%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22apkmirror-installer-rushiranpise%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.apkmirror.helper.prod.png"
   },
   {
    "table": "AquaMail",
@@ -787,7 +803,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22org.kman.AquaMail%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22AquaMail%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22aquamail-heval99%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/org.kman.AquaMail.png"
   },
   {
    "table": "Arm-Workout",
@@ -819,7 +836,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22armworkout.armworkoutformen.armexercises%22%2C%22url%22%3A%22https%3A//byehi98.github.io/revanced-builder/apps/arm-workout.html%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Arm-Workout%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22%28%3F%3A/%7C-%29arm-workout-entree3k-%5B%5E/%5D%2A%24%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22versionExtractWholePage%5C%22%3Atrue%2C%5C%22versionExtractionRegEx%5C%22%3A%5C%22name%3D%5C%5C%5C%22obtainium-version%5C%5C%5C%22%20content%3D%5C%5C%5C%22%28%5B%5E%5C%5C%5C%22%5D%2B%29%5C%5C%5C%22%5C%22%2C%5C%22matchGroupToUse%5C%22%3A%5C%221%5C%22%7D%22%2C%22overrideSource%22%3A%22HTML%22%7D",
-   "obtainium_source": "html"
+   "obtainium_source": "html",
+   "icon": "icons/armworkout.armworkoutformen.armexercises.png"
   },
   {
    "table": "Arrow-Puzzle",
@@ -851,7 +869,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.easybrain.arrow.puzzle.game.morphe%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Arrow-Puzzle%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22arrow-puzzle-durgesh0505%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.easybrain.arrow.puzzle.game.morphe.png"
   },
   {
    "table": "AudioRelay",
@@ -883,7 +902,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.azefsw.audioconnect%22%2C%22url%22%3A%22https%3A//byehi98.github.io/revanced-builder/apps/audiorelay.html%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22AudioRelay%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22%28%3F%3A/%7C-%29audiorelay-lain-%5B%5E/%5D%2A%24%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22versionExtractWholePage%5C%22%3Atrue%2C%5C%22versionExtractionRegEx%5C%22%3A%5C%22name%3D%5C%5C%5C%22obtainium-version%5C%5C%5C%22%20content%3D%5C%5C%5C%22%28%5B%5E%5C%5C%5C%22%5D%2B%29%5C%5C%5C%22%5C%22%2C%5C%22matchGroupToUse%5C%22%3A%5C%221%5C%22%7D%22%2C%22overrideSource%22%3A%22HTML%22%7D",
-   "obtainium_source": "html"
+   "obtainium_source": "html",
+   "icon": "icons/com.azefsw.audioconnect.png"
   },
   {
    "table": "Automate",
@@ -915,7 +935,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.llamalab.automate%22%2C%22url%22%3A%22https%3A//byehi98.github.io/revanced-builder/apps/automate.html%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Automate%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22%28%3F%3A/%7C-%29automate-xtra-%5B%5E/%5D%2A%24%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22versionExtractWholePage%5C%22%3Atrue%2C%5C%22versionExtractionRegEx%5C%22%3A%5C%22name%3D%5C%5C%5C%22obtainium-version%5C%5C%5C%22%20content%3D%5C%5C%5C%22%28%5B%5E%5C%5C%5C%22%5D%2B%29%5C%5C%5C%22%5C%22%2C%5C%22matchGroupToUse%5C%22%3A%5C%221%5C%22%7D%22%2C%22overrideSource%22%3A%22HTML%22%7D",
-   "obtainium_source": "html"
+   "obtainium_source": "html",
+   "icon": "icons/com.llamalab.automate.png"
   },
   {
    "table": "Backdrops",
@@ -947,7 +968,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.backdrops.wallpapers%22%2C%22url%22%3A%22https%3A//byehi98.github.io/revanced-builder/apps/backdrops.html%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Backdrops%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22%28%3F%3A/%7C-%29backdrops-xtra-%5B%5E/%5D%2A%24%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22versionExtractWholePage%5C%22%3Atrue%2C%5C%22versionExtractionRegEx%5C%22%3A%5C%22name%3D%5C%5C%5C%22obtainium-version%5C%5C%5C%22%20content%3D%5C%5C%5C%22%28%5B%5E%5C%5C%5C%22%5D%2B%29%5C%5C%5C%22%5C%22%2C%5C%22matchGroupToUse%5C%22%3A%5C%221%5C%22%7D%22%2C%22overrideSource%22%3A%22HTML%22%7D",
-   "obtainium_source": "html"
+   "obtainium_source": "html",
+   "icon": "icons/com.backdrops.wallpapers.png"
   },
   {
    "table": "Big-Hunter",
@@ -979,7 +1001,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.kakarod.bighunter%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Big-Hunter%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22big-hunter-okish%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.kakarod.bighunter.png"
   },
   {
    "table": "Block-Blast",
@@ -1011,7 +1034,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.block.juggle%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Block-Blast%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22block-blast-rushiranpise%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.block.juggle.png"
   },
   {
    "table": "Block-Puzzle",
@@ -1043,7 +1067,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22game.puzzle.blockpuzzle%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Block-Puzzle%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22block-puzzle-rushiranpise%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/game.puzzle.blockpuzzle.png"
   },
   {
    "table": "Brave-Beta-dh6k",
@@ -1075,7 +1100,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.brave.browser_beta%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Brave-Beta-dh6k%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22brave-beta-dh6k-dh6k-beta%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.brave.browser_beta.png"
   },
   {
    "table": "Brave-Bufferk",
@@ -1107,7 +1133,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.brave.browser%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Brave-Bufferk%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22brave-bufferk-bufferk%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.brave.browser.png"
   },
   {
    "table": "Brave-dh6k",
@@ -1139,7 +1166,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.brave.browser%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Brave-dh6k%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22brave-dh6k-dh6k%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.brave.browser.png"
   },
   {
    "table": "Brave-Nightly-dh6k",
@@ -1171,7 +1199,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.brave.browser_nightly%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Brave-Nightly-dh6k%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22brave-nightly-dh6k-dh6k-nightly%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.brave.browser_nightly.png"
   },
   {
    "table": "Burrito-Bison",
@@ -1203,7 +1232,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.kongregate.mobile.burritobison3.google%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Burrito-Bison%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22burrito-bison-okish%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.kongregate.mobile.burritobison3.google.png"
   },
   {
    "table": "Camera",
@@ -1235,7 +1265,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.flavionet.android.camera.lite%22%2C%22url%22%3A%22https%3A//byehi98.github.io/revanced-builder/apps/camera.html%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Camera%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22%28%3F%3A/%7C-%29camera-lain-%5B%5E/%5D%2A%24%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22versionExtractWholePage%5C%22%3Atrue%2C%5C%22versionExtractionRegEx%5C%22%3A%5C%22name%3D%5C%5C%5C%22obtainium-version%5C%5C%5C%22%20content%3D%5C%5C%5C%22%28%5B%5E%5C%5C%5C%22%5D%2B%29%5C%5C%5C%22%5C%22%2C%5C%22matchGroupToUse%5C%22%3A%5C%221%5C%22%7D%22%2C%22overrideSource%22%3A%22HTML%22%7D",
-   "obtainium_source": "html"
+   "obtainium_source": "html",
+   "icon": "icons/com.flavionet.android.camera.lite.png"
   },
   {
    "table": "CamScanner-hoo-dles",
@@ -1267,7 +1298,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.intsig.camscanner%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22CamScanner-hoo-dles%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22camscanner-hoo-dles-hoo-dles%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.intsig.camscanner.png"
   },
   {
    "table": "CamScanner-rushiranpise",
@@ -1299,7 +1331,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.intsig.camscanner%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22CamScanner-rushiranpise%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22camscanner-rushiranpise-rushiranpise%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.intsig.camscanner.png"
   },
   {
    "table": "Charge-Meter",
@@ -1331,7 +1364,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22dev.km.android.chargemeter%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Charge-Meter%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22charge-meter-rushiranpise%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/dev.km.android.chargemeter.png"
   },
   {
    "table": "Chess-com",
@@ -1363,7 +1397,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.chess%22%2C%22url%22%3A%22https%3A//byehi98.github.io/revanced-builder/apps/chess-com.html%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Chess-com%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22%28%3F%3A/%7C-%29chess-com-prathxm-%5B%5E/%5D%2A%24%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22versionExtractWholePage%5C%22%3Atrue%2C%5C%22versionExtractionRegEx%5C%22%3A%5C%22name%3D%5C%5C%5C%22obtainium-version%5C%5C%5C%22%20content%3D%5C%5C%5C%22%28%5B%5E%5C%5C%5C%22%5D%2B%29%5C%5C%5C%22%5C%22%2C%5C%22matchGroupToUse%5C%22%3A%5C%221%5C%22%7D%22%2C%22overrideSource%22%3A%22HTML%22%7D",
-   "obtainium_source": "html"
+   "obtainium_source": "html",
+   "icon": "icons/com.chess.png"
   },
   {
    "table": "Climb",
@@ -1395,7 +1430,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.IvanAF.ClimbAMIYPfree%22%2C%22url%22%3A%22https%3A//byehi98.github.io/revanced-builder/apps/climb.html%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Climb%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22%28%3F%3A/%7C-%29climb-miguelninja19-%5B%5E/%5D%2A%24%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22versionExtractWholePage%5C%22%3Atrue%2C%5C%22versionExtractionRegEx%5C%22%3A%5C%22name%3D%5C%5C%5C%22obtainium-version%5C%5C%5C%22%20content%3D%5C%5C%5C%22%28%5B%5E%5C%5C%5C%22%5D%2B%29%5C%5C%5C%22%5C%22%2C%5C%22matchGroupToUse%5C%22%3A%5C%221%5C%22%7D%22%2C%22overrideSource%22%3A%22HTML%22%7D",
-   "obtainium_source": "html"
+   "obtainium_source": "html",
+   "icon": "icons/com.IvanAF.ClimbAMIYPfree.png"
   },
   {
    "table": "Cloudflare-Warp",
@@ -1427,7 +1463,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.cloudflare.onedotonedotonedotone%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Cloudflare-Warp%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22cloudflare-warp-rushiranpise%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.cloudflare.onedotonedotonedotone.png"
   },
   {
    "table": "Crash-of-Cars",
@@ -1459,7 +1496,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.notdoppler.crashofcars%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Crash-of-Cars%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22crash-of-cars-okish%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.notdoppler.crashofcars.png"
   },
   {
    "table": "Cricbuzz",
@@ -1491,7 +1529,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.cricbuzz.android%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Cricbuzz%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22cricbuzz-rookieenough%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.cricbuzz.android.png"
   },
   {
    "table": "Crossy-Road",
@@ -1523,7 +1562,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.yodo1.crossyroad%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Crossy-Road%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22crossy-road-okish%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.yodo1.crossyroad.png"
   },
   {
    "table": "CubeX-Solver",
@@ -1555,7 +1595,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22diozz.cubex%22%2C%22url%22%3A%22https%3A//byehi98.github.io/revanced-builder/apps/cubex-solver.html%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22CubeX-Solver%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22%28%3F%3A/%7C-%29cubex-solver-miguelninja19-%5B%5E/%5D%2A%24%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22versionExtractWholePage%5C%22%3Atrue%2C%5C%22versionExtractionRegEx%5C%22%3A%5C%22name%3D%5C%5C%5C%22obtainium-version%5C%5C%5C%22%20content%3D%5C%5C%5C%22%28%5B%5E%5C%5C%5C%22%5D%2B%29%5C%5C%5C%22%5C%22%2C%5C%22matchGroupToUse%5C%22%3A%5C%221%5C%22%7D%22%2C%22overrideSource%22%3A%22HTML%22%7D",
-   "obtainium_source": "html"
+   "obtainium_source": "html",
+   "icon": "icons/diozz.cubex.png"
   },
   {
    "table": "Cx-File-Explorer",
@@ -1587,7 +1628,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.cxinventor.file.explorer%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Cx-File-Explorer%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22cx-file-explorer-hxreborn%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.cxinventor.file.explorer.png"
   },
   {
    "table": "Dailyhunt",
@@ -1619,7 +1661,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.eterno%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Dailyhunt%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22dailyhunt-rushiranpise%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.eterno.png"
   },
   {
    "table": "Dan-The-Man",
@@ -1651,7 +1694,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.halfbrick.dantheman%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Dan-The-Man%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22dan-the-man-okish%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.halfbrick.dantheman.png"
   },
   {
    "table": "Dead-Target",
@@ -1683,7 +1727,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.vng.g6.a.zombie%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Dead-Target%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22dead-target-okish%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.vng.g6.a.zombie.png"
   },
   {
    "table": "Dead-Trigger",
@@ -1715,7 +1760,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.madfingergames.deadtrigger%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Dead-Trigger%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22dead-trigger-okish%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.madfingergames.deadtrigger.png"
   },
   {
    "table": "Discord_Venus-Patches",
@@ -1747,7 +1793,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.discord%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Discord_Venus-Patches%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22discord_venus-patches-venusisjaded%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.discord.png"
   },
   {
    "table": "Document-Scanner",
@@ -1779,7 +1826,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.cv.docscanner%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Document-Scanner%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22document-scanner-okish%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.cv.docscanner.png"
   },
   {
    "table": "Does-Not-Commute-chiggi",
@@ -1811,7 +1859,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.mediocre.commute%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Does-Not-Commute-chiggi%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22does-not-commute-chiggi-durgesh0505%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.mediocre.commute.png"
   },
   {
    "table": "Does-Not-Commute-Entree3k",
@@ -1843,7 +1892,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.mediocre.commute%22%2C%22url%22%3A%22https%3A//byehi98.github.io/revanced-builder/apps/does-not-commute-entree3k.html%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Does-Not-Commute-Entree3k%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22%28%3F%3A/%7C-%29does-not-commute-entree3k-entree3k-%5B%5E/%5D%2A%24%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22versionExtractWholePage%5C%22%3Atrue%2C%5C%22versionExtractionRegEx%5C%22%3A%5C%22name%3D%5C%5C%5C%22obtainium-version%5C%5C%5C%22%20content%3D%5C%5C%5C%22%28%5B%5E%5C%5C%5C%22%5D%2B%29%5C%5C%5C%22%5C%22%2C%5C%22matchGroupToUse%5C%22%3A%5C%221%5C%22%7D%22%2C%22overrideSource%22%3A%22HTML%22%7D",
-   "obtainium_source": "html"
+   "obtainium_source": "html",
+   "icon": "icons/com.mediocre.commute.png"
   },
   {
    "table": "Doodle-Jump",
@@ -1875,7 +1925,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.lima.doodlejump%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Doodle-Jump%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22doodle-jump-okish%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.lima.doodlejump.png"
   },
   {
    "table": "Dr-Driving",
@@ -1907,7 +1958,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.ansangha.drdriving%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Dr-Driving%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22dr-driving-okish%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.ansangha.drdriving.png"
   },
   {
    "table": "Earn-to-Die-2",
@@ -1939,7 +1991,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.notdoppler.earntodie2%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Earn-to-Die-2%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22earn-to-die-2-okish%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.notdoppler.earntodie2.png"
   },
   {
    "table": "Fancy-Pants",
@@ -1971,7 +2024,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.overthetopgames.fancypants%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Fancy-Pants%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22fancy-pants-okish%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.overthetopgames.fancypants.png"
   },
   {
    "table": "Firefox_Heval-Morphe-Patches",
@@ -2003,7 +2057,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22org.mozilla.firefox%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Firefox_Heval-Morphe-Patches%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22firefox_heval-morphe-patches-heval99%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/org.mozilla.firefox.png"
   },
   {
    "table": "FolderSync",
@@ -2035,7 +2090,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22dk.tacit.android.foldersync.lite%22%2C%22url%22%3A%22https%3A//byehi98.github.io/revanced-builder/apps/foldersync.html%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22FolderSync%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22%28%3F%3A/%7C-%29foldersync-hoomans-%5B%5E/%5D%2A%24%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22versionExtractWholePage%5C%22%3Atrue%2C%5C%22versionExtractionRegEx%5C%22%3A%5C%22name%3D%5C%5C%5C%22obtainium-version%5C%5C%5C%22%20content%3D%5C%5C%5C%22%28%5B%5E%5C%5C%5C%22%5D%2B%29%5C%5C%5C%22%5C%22%2C%5C%22matchGroupToUse%5C%22%3A%5C%221%5C%22%7D%22%2C%22overrideSource%22%3A%22HTML%22%7D",
-   "obtainium_source": "html"
+   "obtainium_source": "html",
+   "icon": "icons/dk.tacit.android.foldersync.lite.png"
   },
   {
    "table": "Freejobalert",
@@ -2067,7 +2123,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.freejobalert%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Freejobalert%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22freejobalert-okish%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.freejobalert.png"
   },
   {
    "table": "Fruit-Ninja",
@@ -2099,7 +2156,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.halfbrick.fruitninjafree%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Fruit-Ninja%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22fruit-ninja-okish%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.halfbrick.fruitninjafree.png"
   },
   {
    "table": "Google-Maps_morphe-patches",
@@ -2131,7 +2189,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22org.ungoogled.android.apps.maps%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Google-Maps_morphe-patches%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22google-maps_morphe-patches-bearinmindcat%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/org.ungoogled.android.apps.maps.png"
   },
   {
    "table": "Google-News-hoo-dles",
@@ -2163,7 +2222,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.google.android.apps.magazines%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Google-News-hoo-dles%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22google-news-hoo-dles-hoo-dles%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.google.android.apps.magazines.png"
   },
   {
    "table": "Google-News-RookieEnough",
@@ -2195,7 +2255,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.google.android.apps.magazines%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Google-News-RookieEnough%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22google-news-rookieenough-rookieenough%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.google.android.apps.magazines.png"
   },
   {
    "table": "Google-Photos",
@@ -2227,7 +2288,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22app.morphe.android.apps.photos%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Google-Photos%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22google-photos-rookieenough%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/app.morphe.android.apps.photos.png"
   },
   {
    "table": "Google-Photos-Akash-Sriram",
@@ -2259,7 +2321,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22app.morphe.android.apps.photos%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Google-Photos-Akash-Sriram%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22google-photos-akash-sriram-akash-sriram%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/app.morphe.android.apps.photos.png"
   },
   {
    "table": "Google-Photos-rushiranpise",
@@ -2291,7 +2354,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22app.morphe.android.apps.photos%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Google-Photos-rushiranpise%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22google-photos-rushiranpise-rushiranpise%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/app.morphe.android.apps.photos.png"
   },
   {
    "table": "Greenify",
@@ -2323,7 +2387,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.oasisfeng.greenify%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Greenify%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22greenify-rushiranpise%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.oasisfeng.greenify.png"
   },
   {
    "table": "Grimvalor",
@@ -2355,7 +2420,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.direlight.grimvalor%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Grimvalor%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22grimvalor-okish%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.direlight.grimvalor.png"
   },
   {
    "table": "HAAK",
@@ -2387,7 +2453,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.blingame.haaktestb%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22HAAK%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22haak-okish%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.blingame.haaktestb.png"
   },
   {
    "table": "Head-Basketball",
@@ -2419,7 +2486,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.dnddream.HeadBasketball%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Head-Basketball%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22head-basketball-okish%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.dnddream.HeadBasketball.png"
   },
   {
    "table": "Head-Soccer",
@@ -2451,7 +2519,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.dnddream.headsoccer.android%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Head-Soccer%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22head-soccer-okish%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.dnddream.headsoccer.android.png"
   },
   {
    "table": "Hidden-Settings",
@@ -2483,7 +2552,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.ceyhan.sets%22%2C%22url%22%3A%22https%3A//byehi98.github.io/revanced-builder/apps/hidden-settings.html%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Hidden-Settings%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22%28%3F%3A/%7C-%29hidden-settings-lain-%5B%5E/%5D%2A%24%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22versionExtractWholePage%5C%22%3Atrue%2C%5C%22versionExtractionRegEx%5C%22%3A%5C%22name%3D%5C%5C%5C%22obtainium-version%5C%5C%5C%22%20content%3D%5C%5C%5C%22%28%5B%5E%5C%5C%5C%22%5D%2B%29%5C%5C%5C%22%5C%22%2C%5C%22matchGroupToUse%5C%22%3A%5C%221%5C%22%7D%22%2C%22overrideSource%22%3A%22HTML%22%7D",
-   "obtainium_source": "html"
+   "obtainium_source": "html",
+   "icon": "icons/com.ceyhan.sets.png"
   },
   {
    "table": "Hill-Climb-Racing",
@@ -2515,7 +2585,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.fingersoft.hillclimb%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Hill-Climb-Racing%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22hill-climb-racing-okish%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.fingersoft.hillclimb.png"
   },
   {
    "table": "Home-Workout",
@@ -2547,7 +2618,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22homeworkout.homeworkouts.noequipment%22%2C%22url%22%3A%22https%3A//byehi98.github.io/revanced-builder/apps/home-workout.html%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Home-Workout%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22%28%3F%3A/%7C-%29home-workout-entree3k-%5B%5E/%5D%2A%24%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22versionExtractWholePage%5C%22%3Atrue%2C%5C%22versionExtractionRegEx%5C%22%3A%5C%22name%3D%5C%5C%5C%22obtainium-version%5C%5C%5C%22%20content%3D%5C%5C%5C%22%28%5B%5E%5C%5C%5C%22%5D%2B%29%5C%5C%5C%22%5C%22%2C%5C%22matchGroupToUse%5C%22%3A%5C%221%5C%22%7D%22%2C%22overrideSource%22%3A%22HTML%22%7D",
-   "obtainium_source": "html"
+   "obtainium_source": "html",
+   "icon": "icons/homeworkout.homeworkouts.noequipment.png"
   },
   {
    "table": "Hunter-Assassin",
@@ -2579,7 +2651,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.rubygames.assassin%22%2C%22url%22%3A%22https%3A//byehi98.github.io/revanced-builder/apps/hunter-assassin.html%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Hunter-Assassin%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22%28%3F%3A/%7C-%29hunter-assassin-miguelninja19-%5B%5E/%5D%2A%24%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22versionExtractWholePage%5C%22%3Atrue%2C%5C%22versionExtractionRegEx%5C%22%3A%5C%22name%3D%5C%5C%5C%22obtainium-version%5C%5C%5C%22%20content%3D%5C%5C%5C%22%28%5B%5E%5C%5C%5C%22%5D%2B%29%5C%5C%5C%22%5C%22%2C%5C%22matchGroupToUse%5C%22%3A%5C%221%5C%22%7D%22%2C%22overrideSource%22%3A%22HTML%22%7D",
-   "obtainium_source": "html"
+   "obtainium_source": "html",
+   "icon": "icons/com.rubygames.assassin.png"
   },
   {
    "table": "Icon-Pack-Studio",
@@ -2611,7 +2684,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22ginlemon.iconpackstudio%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Icon-Pack-Studio%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22icon-pack-studio-rookieenough%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/ginlemon.iconpackstudio.png"
   },
   {
    "table": "iLovePDF",
@@ -2643,7 +2717,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.ilovepdf.www%22%2C%22url%22%3A%22https%3A//byehi98.github.io/revanced-builder/apps/ilovepdf.html%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22iLovePDF%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22%28%3F%3A/%7C-%29ilovepdf-lain-%5B%5E/%5D%2A%24%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22versionExtractWholePage%5C%22%3Atrue%2C%5C%22versionExtractionRegEx%5C%22%3A%5C%22name%3D%5C%5C%5C%22obtainium-version%5C%5C%5C%22%20content%3D%5C%5C%5C%22%28%5B%5E%5C%5C%5C%22%5D%2B%29%5C%5C%5C%22%5C%22%2C%5C%22matchGroupToUse%5C%22%3A%5C%221%5C%22%7D%22%2C%22overrideSource%22%3A%22HTML%22%7D",
-   "obtainium_source": "html"
+   "obtainium_source": "html",
+   "icon": "icons/com.ilovepdf.www.png"
   },
   {
    "table": "Imgur",
@@ -2675,7 +2750,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.imgur.mobile%22%2C%22url%22%3A%22https%3A//byehi98.github.io/revanced-builder/apps/imgur.html%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Imgur%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22%28%3F%3A/%7C-%29imgur-imgur-%5B%5E/%5D%2A%24%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22versionExtractWholePage%5C%22%3Atrue%2C%5C%22versionExtractionRegEx%5C%22%3A%5C%22name%3D%5C%5C%5C%22obtainium-version%5C%5C%5C%22%20content%3D%5C%5C%5C%22%28%5B%5E%5C%5C%5C%22%5D%2B%29%5C%5C%5C%22%5C%22%2C%5C%22matchGroupToUse%5C%22%3A%5C%221%5C%22%7D%22%2C%22overrideSource%22%3A%22HTML%22%7D",
-   "obtainium_source": "html"
+   "obtainium_source": "html",
+   "icon": "icons/com.imgur.mobile.png"
   },
   {
    "table": "Injustice",
@@ -2707,7 +2783,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.wb.goog.injustice%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Injustice%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22injustice-okish%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.wb.goog.injustice.png"
   },
   {
    "table": "Into-The-Dead",
@@ -2739,7 +2816,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.sidheinteractive.sif.DR%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Into-The-Dead%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22into-the-dead-okish%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.sidheinteractive.sif.DR.png"
   },
   {
    "table": "Into-The-Dead-2",
@@ -2771,7 +2849,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.pikpok.dr2.play%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Into-The-Dead-2%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22into-the-dead-2-okish%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.pikpok.dr2.play.png"
   },
   {
    "table": "Irplus",
@@ -2803,7 +2882,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22net.binarymode.android.irplus%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Irplus%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22irplus-rookieenough%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/net.binarymode.android.irplus.png"
   },
   {
    "table": "Jetpack-Joyride",
@@ -2835,7 +2915,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.halfbrick.jetpackjoyride%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Jetpack-Joyride%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22jetpack-joyride-okish%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.halfbrick.jetpackjoyride.png"
   },
   {
    "table": "Killapps",
@@ -2867,7 +2948,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.tafayor.killall%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Killapps%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22killapps-rushiranpise%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.tafayor.killall.png"
   },
   {
    "table": "Lemmy-Sync",
@@ -2899,7 +2981,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22io.syncapps.lemmy_sync%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Lemmy-Sync%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22lemmy-sync-patcheddit%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/io.syncapps.lemmy_sync.png"
   },
   {
    "table": "Letterboxd",
@@ -2931,7 +3014,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.letterboxd.letterboxd%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Letterboxd%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22letterboxd-rookieenough%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.letterboxd.letterboxd.png"
   },
   {
    "table": "Letterboxd-ethanm6",
@@ -2963,7 +3047,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.letterboxd.letterboxd%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Letterboxd-ethanm6%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22letterboxd-ethanm6-ethanm6%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.letterboxd.letterboxd.png"
   },
   {
    "table": "Letterboxd-mvaishak",
@@ -2995,7 +3080,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.letterboxd.letterboxd%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Letterboxd-mvaishak%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22letterboxd-mvaishak-mvaishak%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.letterboxd.letterboxd.png"
   },
   {
    "table": "Lightroom",
@@ -3027,7 +3113,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.adobe.lrmobile%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Lightroom%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22lightroom-hoo-dles%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.adobe.lrmobile.png"
   },
   {
    "table": "Lose-Weight-App-for-Men",
@@ -3059,7 +3146,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22menloseweight.loseweightappformen.weightlossformen%22%2C%22url%22%3A%22https%3A//byehi98.github.io/revanced-builder/apps/lose-weight-app-for-men.html%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Lose-Weight-App-for-Men%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22%28%3F%3A/%7C-%29lose-weight-app-for-men-entree3k-%5B%5E/%5D%2A%24%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22versionExtractWholePage%5C%22%3Atrue%2C%5C%22versionExtractionRegEx%5C%22%3A%5C%22name%3D%5C%5C%5C%22obtainium-version%5C%5C%5C%22%20content%3D%5C%5C%5C%22%28%5B%5E%5C%5C%5C%22%5D%2B%29%5C%5C%5C%22%5C%22%2C%5C%22matchGroupToUse%5C%22%3A%5C%221%5C%22%7D%22%2C%22overrideSource%22%3A%22HTML%22%7D",
-   "obtainium_source": "html"
+   "obtainium_source": "html",
+   "icon": "icons/menloseweight.loseweightappformen.weightlossformen.png"
   },
   {
    "table": "Lumina-Walls",
@@ -3091,7 +3179,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.lumina.wallpapers%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Lumina-Walls%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22lumina-walls-okish%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.lumina.wallpapers.png"
   },
   {
    "table": "M-Indicator",
@@ -3123,7 +3212,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.mobond.mindicator%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22M-Indicator%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22m-indicator-rushiranpise%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.mobond.mindicator.png"
   },
   {
    "table": "MacroDroid-Entree3k",
@@ -3155,7 +3245,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.arlosoft.macrodroid%22%2C%22url%22%3A%22https%3A//byehi98.github.io/revanced-builder/apps/macrodroid-entree3k.html%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22MacroDroid-Entree3k%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22%28%3F%3A/%7C-%29macrodroid-entree3k-entree3k-%5B%5E/%5D%2A%24%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22versionExtractWholePage%5C%22%3Atrue%2C%5C%22versionExtractionRegEx%5C%22%3A%5C%22name%3D%5C%5C%5C%22obtainium-version%5C%5C%5C%22%20content%3D%5C%5C%5C%22%28%5B%5E%5C%5C%5C%22%5D%2B%29%5C%5C%5C%22%5C%22%2C%5C%22matchGroupToUse%5C%22%3A%5C%221%5C%22%7D%22%2C%22overrideSource%22%3A%22HTML%22%7D",
-   "obtainium_source": "html"
+   "obtainium_source": "html",
+   "icon": "icons/com.arlosoft.macrodroid.png"
   },
   {
    "table": "MacroDroid-rushiranpise",
@@ -3187,7 +3278,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.arlosoft.macrodroid%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22MacroDroid-rushiranpise%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22macrodroid-rushiranpise-rushiranpise%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.arlosoft.macrodroid.png"
   },
   {
    "table": "Magic-Survival_okish-morphe-patches",
@@ -3219,7 +3311,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.vkslrzm.Zombie%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Magic-Survival_okish-morphe-patches%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22magic-survival_okish-morphe-patches-byehi98%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.vkslrzm.Zombie.png"
   },
   {
    "table": "Medium",
@@ -3251,7 +3344,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.medium.reader%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Medium%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22medium-bufferk%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.medium.reader.png"
   },
   {
    "table": "Mega",
@@ -3283,7 +3377,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22mega.privacy.android.app%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Mega%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22mega-rushiranpise%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/mega.privacy.android.app.png"
   },
   {
    "table": "Microsoft-SwiftKey",
@@ -3315,7 +3410,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.touchtype.swiftkey%22%2C%22url%22%3A%22https%3A//byehi98.github.io/revanced-builder/apps/microsoft-swiftkey.html%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Microsoft-SwiftKey%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22%28%3F%3A/%7C-%29microsoft-swiftkey-hoomans-%5B%5E/%5D%2A%24%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22versionExtractWholePage%5C%22%3Atrue%2C%5C%22versionExtractionRegEx%5C%22%3A%5C%22name%3D%5C%5C%5C%22obtainium-version%5C%5C%5C%22%20content%3D%5C%5C%5C%22%28%5B%5E%5C%5C%5C%22%5D%2B%29%5C%5C%5C%22%5C%22%2C%5C%22matchGroupToUse%5C%22%3A%5C%221%5C%22%7D%22%2C%22overrideSource%22%3A%22HTML%22%7D",
-   "obtainium_source": "html"
+   "obtainium_source": "html",
+   "icon": "icons/com.touchtype.swiftkey.png"
   },
   {
    "table": "Minesweeper",
@@ -3347,7 +3443,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22ee.dustland.android.minesweeper%22%2C%22url%22%3A%22https%3A//byehi98.github.io/revanced-builder/apps/minesweeper.html%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Minesweeper%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22%28%3F%3A/%7C-%29minesweeper-cesbar-%5B%5E/%5D%2A%24%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22versionExtractWholePage%5C%22%3Atrue%2C%5C%22versionExtractionRegEx%5C%22%3A%5C%22name%3D%5C%5C%5C%22obtainium-version%5C%5C%5C%22%20content%3D%5C%5C%5C%22%28%5B%5E%5C%5C%5C%22%5D%2B%29%5C%5C%5C%22%5C%22%2C%5C%22matchGroupToUse%5C%22%3A%5C%221%5C%22%7D%22%2C%22overrideSource%22%3A%22HTML%22%7D",
-   "obtainium_source": "html"
+   "obtainium_source": "html",
+   "icon": "icons/ee.dustland.android.minesweeper.png"
   },
   {
    "table": "Minutes-Till-Dawn_okish-morphe-patches",
@@ -3379,7 +3476,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.Flanne.MinutesTillDawn.roguelike.shooting.fr.gp%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Minutes-Till-Dawn_okish-morphe-patches%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22minutes-till-dawn_okish-morphe-patches-byehi98%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.Flanne.MinutesTillDawn.roguelike.shooting.fr.gp.png"
   },
   {
    "table": "Missiles",
@@ -3411,7 +3509,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22pl.macaque.Missiles%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Missiles%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22missiles-okish%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/pl.macaque.Missiles.png"
   },
   {
    "table": "MobiOffice",
@@ -3443,7 +3542,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.mobisystems.office%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22MobiOffice%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22mobioffice-rushiranpise%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.mobisystems.office.png"
   },
   {
    "table": "MovieBox-hxreborn",
@@ -3475,7 +3575,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.community.oneroom%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22MovieBox-hxreborn%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22moviebox-hxreborn-hxreborn%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.community.oneroom.png"
   },
   {
    "table": "MyAnimeList",
@@ -3507,7 +3608,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22net.myanimelist.app%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22MyAnimeList%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22myanimelist-rushiranpise%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/net.myanimelist.app.png"
   },
   {
    "table": "NYT-Crossword",
@@ -3539,7 +3641,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.nytimes.crossword%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22NYT-Crossword%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22nyt-crossword-rushiranpise%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.nytimes.crossword.png"
   },
   {
    "table": "NZB360",
@@ -3571,7 +3674,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.kevinforeman.nzb360%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22NZB360%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22nzb360-rushiranpise%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.kevinforeman.nzb360.png"
   },
   {
    "table": "NZB360-Entree3k",
@@ -3603,7 +3707,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.kevinforeman.nzb360%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22NZB360-Entree3k%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22nzb360-entree3k-entree3k%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.kevinforeman.nzb360.png"
   },
   {
    "table": "Octi",
@@ -3635,7 +3740,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22eu.darken.octi%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Octi%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22octi-rushiranpise%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/eu.darken.octi.png"
   },
   {
    "table": "Oddmar",
@@ -3667,7 +3773,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.mobge.Oddmar%22%2C%22url%22%3A%22https%3A//byehi98.github.io/revanced-builder/apps/oddmar.html%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Oddmar%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22%28%3F%3A/%7C-%29oddmar-miguelninja19-%5B%5E/%5D%2A%24%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22versionExtractWholePage%5C%22%3Atrue%2C%5C%22versionExtractionRegEx%5C%22%3A%5C%22name%3D%5C%5C%5C%22obtainium-version%5C%5C%5C%22%20content%3D%5C%5C%5C%22%28%5B%5E%5C%5C%5C%22%5D%2B%29%5C%5C%5C%22%5C%22%2C%5C%22matchGroupToUse%5C%22%3A%5C%221%5C%22%7D%22%2C%22overrideSource%22%3A%22HTML%22%7D",
-   "obtainium_source": "html"
+   "obtainium_source": "html",
+   "icon": "icons/com.mobge.Oddmar.png"
   },
   {
    "table": "Onlyone",
@@ -3699,7 +3806,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.rebelbinary.onlyone%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Onlyone%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22onlyone-okish%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.rebelbinary.onlyone.png"
   },
   {
    "table": "Opera-GX",
@@ -3731,7 +3839,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.opera.gx%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Opera-GX%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22opera-gx-kaneki%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.opera.gx.png"
   },
   {
    "table": "Opera-News",
@@ -3763,7 +3872,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.opera.app.news%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Opera-News%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22opera-news-rushiranpise%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.opera.app.news.png"
   },
   {
    "table": "Parallel-Space-Pro",
@@ -3795,7 +3905,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.parallel.space.pro%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Parallel-Space-Pro%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22parallel-space-pro-rushiranpise%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.parallel.space.pro.png"
   },
   {
    "table": "Photomath",
@@ -3827,7 +3938,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.microblink.photomath%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Photomath%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22photomath-rookieenough%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.microblink.photomath.png"
   },
   {
    "table": "PinOut",
@@ -3859,7 +3971,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.mediocre.pinout%22%2C%22url%22%3A%22https%3A//byehi98.github.io/revanced-builder/apps/pinout.html%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22PinOut%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22%28%3F%3A/%7C-%29pinout-entree3k-%5B%5E/%5D%2A%24%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22versionExtractWholePage%5C%22%3Atrue%2C%5C%22versionExtractionRegEx%5C%22%3A%5C%22name%3D%5C%5C%5C%22obtainium-version%5C%5C%5C%22%20content%3D%5C%5C%5C%22%28%5B%5E%5C%5C%5C%22%5D%2B%29%5C%5C%5C%22%5C%22%2C%5C%22matchGroupToUse%5C%22%3A%5C%221%5C%22%7D%22%2C%22overrideSource%22%3A%22HTML%22%7D",
-   "obtainium_source": "html"
+   "obtainium_source": "html",
+   "icon": "icons/com.mediocre.pinout.png"
   },
   {
    "table": "Pinterest_HushPinterest",
@@ -3891,7 +4004,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.pinterest%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Pinterest_HushPinterest%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22pinterest_hushpinterest-sysadmindoc%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.pinterest.png"
   },
   {
    "table": "Plagueinc",
@@ -3923,7 +4037,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.miniclip.plagueinc%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Plagueinc%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22plagueinc-okish%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.miniclip.plagueinc.png"
   },
   {
    "table": "Plants-vs-Zombies",
@@ -3955,7 +4070,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.ea.game.pvzfree_row%22%2C%22url%22%3A%22https%3A//byehi98.github.io/revanced-builder/apps/plants-vs-zombies.html%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Plants-vs-Zombies%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22%28%3F%3A/%7C-%29plants-vs-zombies-miguelninja19-%5B%5E/%5D%2A%24%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22versionExtractWholePage%5C%22%3Atrue%2C%5C%22versionExtractionRegEx%5C%22%3A%5C%22name%3D%5C%5C%5C%22obtainium-version%5C%5C%5C%22%20content%3D%5C%5C%5C%22%28%5B%5E%5C%5C%5C%22%5D%2B%29%5C%5C%5C%22%5C%22%2C%5C%22matchGroupToUse%5C%22%3A%5C%221%5C%22%7D%22%2C%22overrideSource%22%3A%22HTML%22%7D",
-   "obtainium_source": "html"
+   "obtainium_source": "html",
+   "icon": "icons/com.ea.game.pvzfree_row.png"
   },
   {
    "table": "Plants-vs-Zombies-Free",
@@ -3987,7 +4103,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.ea.game.pvzfree_row%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Plants-vs-Zombies-Free%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22plants-vs-zombies-free-okish%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.ea.game.pvzfree_row.png"
   },
   {
    "table": "Plants-vs-Zombies_okish-morphe-patches",
@@ -4019,7 +4136,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.ea.game.pvzfree_row%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Plants-vs-Zombies_okish-morphe-patches%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22plants-vs-zombies_okish-morphe-patches-byehi98%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.ea.game.pvzfree_row.png"
   },
   {
    "table": "Playit",
@@ -4051,7 +4169,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.playit.videoplayer%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Playit%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22playit-rushiranpise%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.playit.videoplayer.png"
   },
   {
    "table": "Poweramp",
@@ -4083,7 +4202,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.maxmpz.audioplayer%22%2C%22url%22%3A%22https%3A//byehi98.github.io/revanced-builder/apps/poweramp.html%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Poweramp%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22%28%3F%3A/%7C-%29poweramp-hoomans-%5B%5E/%5D%2A%24%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22versionExtractWholePage%5C%22%3Atrue%2C%5C%22versionExtractionRegEx%5C%22%3A%5C%22name%3D%5C%5C%5C%22obtainium-version%5C%5C%5C%22%20content%3D%5C%5C%5C%22%28%5B%5E%5C%5C%5C%22%5D%2B%29%5C%5C%5C%22%5C%22%2C%5C%22matchGroupToUse%5C%22%3A%5C%221%5C%22%7D%22%2C%22overrideSource%22%3A%22HTML%22%7D",
-   "obtainium_source": "html"
+   "obtainium_source": "html",
+   "icon": "icons/com.maxmpz.audioplayer.png"
   },
   {
    "table": "Progressbar95",
@@ -4115,7 +4235,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.spookyhousestudios.progressbar95%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Progressbar95%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22progressbar95-okish%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.spookyhousestudios.progressbar95.png"
   },
   {
    "table": "Protonmail",
@@ -4147,7 +4268,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22ch.protonmail.android%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Protonmail%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22protonmail-hxreborn%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/ch.protonmail.android.png"
   },
   {
    "table": "ProtonVPN-Hoodles",
@@ -4179,7 +4301,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22ch.protonvpn.android%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22ProtonVPN-Hoodles%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22protonvpn-hoodles-hoo-dles%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/ch.protonvpn.android.png"
   },
   {
    "table": "ProtonVPN-hxreborn",
@@ -4211,7 +4334,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22ch.protonvpn.android%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22ProtonVPN-hxreborn%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22protonvpn-hxreborn-hxreborn%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/ch.protonvpn.android.png"
   },
   {
    "table": "ProtonVPN-Rushiranpise",
@@ -4243,7 +4367,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22ch.protonvpn.android%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22ProtonVPN-Rushiranpise%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22protonvpn-rushiranpise-rushiranpise%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/ch.protonvpn.android.png"
   },
   {
    "table": "Psiphon",
@@ -4275,7 +4400,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.psiphon3.subscription%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Psiphon%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22psiphon-rushiranpise%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.psiphon3.subscription.png"
   },
   {
    "table": "qBitConnect",
@@ -4307,7 +4433,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.bluematter.qbitconnect%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22qBitConnect%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22qbitconnect-rushiranpise%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.bluematter.qbitconnect.png"
   },
   {
    "table": "RAR",
@@ -4339,7 +4466,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.rarlab.rar%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22RAR%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22rar-rushiranpise%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.rarlab.rar.png"
   },
   {
    "table": "Reddit-Adobo",
@@ -4371,7 +4499,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.reddit.frontpage%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Reddit-Adobo%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22reddit-adobo-adobo%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.reddit.frontpage.png"
   },
   {
    "table": "Reddit-Morphe",
@@ -4403,7 +4532,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.reddit.frontpage%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Reddit-Morphe%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22reddit-morphe-morphe%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.reddit.frontpage.png"
   },
   {
    "table": "Reddit-Morphe-Dev",
@@ -4435,7 +4565,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.reddit.frontpage%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Reddit-Morphe-Dev%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22reddit-morphe-dev-morphe-dev%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.reddit.frontpage.png"
   },
   {
    "table": "Rodeo-Stampede",
@@ -4467,7 +4598,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.yodo1.rodeo.safari%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Rodeo-Stampede%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22rodeo-stampede-okish%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.yodo1.rodeo.safari.png"
   },
   {
    "table": "RS-File-Manager",
@@ -4499,7 +4631,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.rs.explorer.filemanager%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22RS-File-Manager%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22rs-file-manager-rushiranpise%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.rs.explorer.filemanager.png"
   },
   {
    "table": "RS-File-Manager-BlazeFTL",
@@ -4531,7 +4664,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.rs.explorer.filemanager%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22RS-File-Manager-BlazeFTL%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22rs-file-manager-blazeftl-ftl%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.rs.explorer.filemanager.png"
   },
   {
    "table": "Send-Files-To-TV",
@@ -4563,7 +4697,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.yablio.sendfilestotv%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Send-Files-To-TV%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22send-files-to-tv-rushiranpise%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.yablio.sendfilestotv.png"
   },
   {
    "table": "Send-Files-To-TV-Entree3k",
@@ -4595,7 +4730,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.yablio.sendfilestotv%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Send-Files-To-TV-Entree3k%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22send-files-to-tv-entree3k-entree3k%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.yablio.sendfilestotv.png"
   },
   {
    "table": "Server-Auditor",
@@ -4627,7 +4763,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.server.auditor.ssh.client%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Server-Auditor%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22server-auditor-rushiranpise%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.server.auditor.ssh.client.png"
   },
   {
    "table": "Shooty-Skies",
@@ -4659,7 +4796,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.mightygamesgroup.shootyskies%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Shooty-Skies%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22shooty-skies-okish%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.mightygamesgroup.shootyskies.png"
   },
   {
    "table": "Showly",
@@ -4691,7 +4829,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.michaldrabik.showly2%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Showly%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22showly-hoo-dles%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.michaldrabik.showly2.png"
   },
   {
    "table": "Six-Pack-in-30-Days",
@@ -4723,7 +4862,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22sixpack.sixpackabs.absworkout%22%2C%22url%22%3A%22https%3A//byehi98.github.io/revanced-builder/apps/six-pack-in-30-days.html%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Six-Pack-in-30-Days%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22%28%3F%3A/%7C-%29six-pack-in-30-days-entree3k-%5B%5E/%5D%2A%24%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22versionExtractWholePage%5C%22%3Atrue%2C%5C%22versionExtractionRegEx%5C%22%3A%5C%22name%3D%5C%5C%5C%22obtainium-version%5C%5C%5C%22%20content%3D%5C%5C%5C%22%28%5B%5E%5C%5C%5C%22%5D%2B%29%5C%5C%5C%22%5C%22%2C%5C%22matchGroupToUse%5C%22%3A%5C%221%5C%22%7D%22%2C%22overrideSource%22%3A%22HTML%22%7D",
-   "obtainium_source": "html"
+   "obtainium_source": "html",
+   "icon": "icons/sixpack.sixpackabs.absworkout.png"
   },
   {
    "table": "Smashit",
@@ -4755,7 +4895,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.mediocre.smashhit%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Smashit%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22smashit-okish%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.mediocre.smashhit.png"
   },
   {
    "table": "Solid-Explorer",
@@ -4787,7 +4928,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22pl.solidexplorer2%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Solid-Explorer%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22solid-explorer-hoo-dles%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/pl.solidexplorer2.png"
   },
   {
    "table": "Solitaire",
@@ -4819,7 +4961,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22ee.dustland.android.solitaire%22%2C%22url%22%3A%22https%3A//byehi98.github.io/revanced-builder/apps/solitaire.html%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Solitaire%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22%28%3F%3A/%7C-%29solitaire-cesbar-%5B%5E/%5D%2A%24%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22versionExtractWholePage%5C%22%3Atrue%2C%5C%22versionExtractionRegEx%5C%22%3A%5C%22name%3D%5C%5C%5C%22obtainium-version%5C%5C%5C%22%20content%3D%5C%5C%5C%22%28%5B%5E%5C%5C%5C%22%5D%2B%29%5C%5C%5C%22%5C%22%2C%5C%22matchGroupToUse%5C%22%3A%5C%221%5C%22%7D%22%2C%22overrideSource%22%3A%22HTML%22%7D",
-   "obtainium_source": "html"
+   "obtainium_source": "html",
+   "icon": "icons/ee.dustland.android.solitaire.png"
   },
   {
    "table": "SoundCloud-RookieEnough",
@@ -4851,7 +4994,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.soundcloud.android%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22SoundCloud-RookieEnough%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22soundcloud-rookieenough-rookieenough%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.soundcloud.android.png"
   },
   {
    "table": "Speedtest",
@@ -4883,7 +5027,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22org.zwanoo.android.speedtest%22%2C%22url%22%3A%22https%3A//byehi98.github.io/revanced-builder/apps/speedtest.html%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Speedtest%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22%28%3F%3A/%7C-%29speedtest-xtra-%5B%5E/%5D%2A%24%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22versionExtractWholePage%5C%22%3Atrue%2C%5C%22versionExtractionRegEx%5C%22%3A%5C%22name%3D%5C%5C%5C%22obtainium-version%5C%5C%5C%22%20content%3D%5C%5C%5C%22%28%5B%5E%5C%5C%5C%22%5D%2B%29%5C%5C%5C%22%5C%22%2C%5C%22matchGroupToUse%5C%22%3A%5C%221%5C%22%7D%22%2C%22overrideSource%22%3A%22HTML%22%7D",
-   "obtainium_source": "html"
+   "obtainium_source": "html",
+   "icon": "icons/org.zwanoo.android.speedtest.png"
   },
   {
    "table": "Spotify_morphe-patches",
@@ -4915,7 +5060,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.spotify.music%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Spotify_morphe-patches%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22spotify_morphe-patches-spicetify%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.spotify.music.png"
   },
   {
    "table": "Subway-Surfers",
@@ -4947,7 +5093,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.kiloo.subwaysurf%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Subway-Surfers%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22subway-surfers-legendsciber%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.kiloo.subwaysurf.png"
   },
   {
    "table": "Swamp-Attack",
@@ -4979,7 +5126,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.outfit7.movingeye.swampattack%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Swamp-Attack%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22swamp-attack-okish%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.outfit7.movingeye.swampattack.png"
   },
   {
    "table": "Swamp-Attack-2",
@@ -5011,7 +5159,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.hyperdotstudios.swampattack2%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Swamp-Attack-2%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22swamp-attack-2-okish%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.hyperdotstudios.swampattack2.png"
   },
   {
    "table": "Swift-Backup",
@@ -5043,7 +5192,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22org.swiftapps.swiftbackup%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Swift-Backup%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22swift-backup-okish%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/org.swiftapps.swiftbackup.png"
   },
   {
    "table": "Swordigo",
@@ -5075,7 +5225,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.touchfoo.swordigo%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Swordigo%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22swordigo-okish%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.touchfoo.swordigo.png"
   },
   {
    "table": "Symfonium",
@@ -5107,7 +5258,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22app.symfonik.music.player%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Symfonium%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22symfonium-hxreborn%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/app.symfonik.music.player.png"
   },
   {
    "table": "Telegram",
@@ -5139,7 +5291,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22org.telegram.messenger%22%2C%22url%22%3A%22https%3A//byehi98.github.io/revanced-builder/apps/telegram.html%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Telegram%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22%28%3F%3A/%7C-%29telegram-aunali321-%5B%5E/%5D%2A%24%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22versionExtractWholePage%5C%22%3Atrue%2C%5C%22versionExtractionRegEx%5C%22%3A%5C%22name%3D%5C%5C%5C%22obtainium-version%5C%5C%5C%22%20content%3D%5C%5C%5C%22%28%5B%5E%5C%5C%5C%22%5D%2B%29%5C%5C%5C%22%5C%22%2C%5C%22matchGroupToUse%5C%22%3A%5C%221%5C%22%7D%22%2C%22overrideSource%22%3A%22HTML%22%7D",
-   "obtainium_source": "html"
+   "obtainium_source": "html",
+   "icon": "icons/org.telegram.messenger.png"
   },
   {
    "table": "Telegram-Hush",
@@ -5171,7 +5324,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22org.telegram.messenger%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Telegram-Hush%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22telegram-hush-hush%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/org.telegram.messenger.png"
   },
   {
    "table": "Tentaclewars",
@@ -5203,7 +5357,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.fdgentertainment.tentaclewars.gp.free%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Tentaclewars%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22tentaclewars-okish%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.fdgentertainment.tentaclewars.gp.free.png"
   },
   {
    "table": "TeraBox",
@@ -5235,7 +5390,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.dubox.drive%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22TeraBox%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22terabox-rushiranpise%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.dubox.drive.png"
   },
   {
    "table": "The-Battle-of-Polytopia",
@@ -5267,7 +5423,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22air.com.midjiwan.polytopia%22%2C%22url%22%3A%22https%3A//byehi98.github.io/revanced-builder/apps/the-battle-of-polytopia.html%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22The-Battle-of-Polytopia%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22%28%3F%3A/%7C-%29the-battle-of-polytopia-miguelninja19-%5B%5E/%5D%2A%24%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22versionExtractWholePage%5C%22%3Atrue%2C%5C%22versionExtractionRegEx%5C%22%3A%5C%22name%3D%5C%5C%5C%22obtainium-version%5C%5C%5C%22%20content%3D%5C%5C%5C%22%28%5B%5E%5C%5C%5C%22%5D%2B%29%5C%5C%5C%22%5C%22%2C%5C%22matchGroupToUse%5C%22%3A%5C%221%5C%22%7D%22%2C%22overrideSource%22%3A%22HTML%22%7D",
-   "obtainium_source": "html"
+   "obtainium_source": "html",
+   "icon": "icons/air.com.midjiwan.polytopia.png"
   },
   {
    "table": "Torrent-Search",
@@ -5299,7 +5456,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22torrent.search.revolutionv2%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Torrent-Search%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22torrent-search-rushiranpise%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/torrent.search.revolutionv2.png"
   },
   {
    "table": "Traffic-Racer",
@@ -5331,7 +5489,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.skgames.trafficracer%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Traffic-Racer%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22traffic-racer-okish%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.skgames.trafficracer.png"
   },
   {
    "table": "Traffic-Rider",
@@ -5363,7 +5522,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.skgames.trafficrider%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Traffic-Rider%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22traffic-rider-okish%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.skgames.trafficrider.png"
   },
   {
    "table": "Trakt",
@@ -5395,7 +5555,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22tv.trakt.trakt%22%2C%22url%22%3A%22https%3A//byehi98.github.io/revanced-builder/apps/trakt.html%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Trakt%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22%28%3F%3A/%7C-%29trakt-imxeren-%5B%5E/%5D%2A%24%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22versionExtractWholePage%5C%22%3Atrue%2C%5C%22versionExtractionRegEx%5C%22%3A%5C%22name%3D%5C%5C%5C%22obtainium-version%5C%5C%5C%22%20content%3D%5C%5C%5C%22%28%5B%5E%5C%5C%5C%22%5D%2B%29%5C%5C%5C%22%5C%22%2C%5C%22matchGroupToUse%5C%22%3A%5C%221%5C%22%7D%22%2C%22overrideSource%22%3A%22HTML%22%7D",
-   "obtainium_source": "html"
+   "obtainium_source": "html",
+   "icon": "icons/tv.trakt.trakt.png"
   },
   {
    "table": "Truecaller",
@@ -5427,7 +5588,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.truecaller%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Truecaller%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22truecaller-heval99%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.truecaller.png"
   },
   {
    "table": "Truecaller-bufferk",
@@ -5459,7 +5621,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.truecaller%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Truecaller-bufferk%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22truecaller-bufferk-bufferk%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.truecaller.png"
   },
   {
    "table": "Truecloud",
@@ -5491,7 +5654,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.generalcomp.truecloud%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Truecloud%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22truecloud-okish%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.generalcomp.truecloud.png"
   },
   {
    "table": "Unimote",
@@ -5523,7 +5687,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22sensustech.universal.tv.remote.control%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Unimote%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22unimote-rushiranpise%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/sensustech.universal.tv.remote.control.png"
   },
   {
    "table": "Vector",
@@ -5555,7 +5720,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.nekki.vector%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Vector%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22vector-okish%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.nekki.vector.png"
   },
   {
    "table": "Vita-Mahjong",
@@ -5587,7 +5753,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.vitastudio.mahjong%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Vita-Mahjong%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22vita-mahjong-okish%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.vitastudio.mahjong.png"
   },
   {
    "table": "Wallcraft",
@@ -5619,7 +5786,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.wallpaperscraft.wallpaper%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Wallcraft%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22wallcraft-hoo-dles%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.wallpaperscraft.wallpaper.png"
   },
   {
    "table": "WPS-Office",
@@ -5651,7 +5819,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22cn.wps.moffice_eng%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22WPS-Office%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22wps-office-hoo-dles%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/cn.wps.moffice_eng.png"
   },
   {
    "table": "Yatri",
@@ -5683,7 +5852,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.yatrirailways.yatri%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Yatri%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22yatri-rushiranpise%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/com.yatrirailways.yatri.png"
   },
   {
    "table": "YouTube-Morphe",
@@ -5715,7 +5885,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22app.morphe.android.youtube%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22YouTube-Morphe%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22youtube-morphe-morphe%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/app.morphe.android.youtube.png"
   },
   {
    "table": "YouTube-Morphe-Dev",
@@ -5747,7 +5918,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22app.morphe.android.youtube%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22YouTube-Morphe-Dev%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22youtube-morphe-dev-morphe-dev%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/app.morphe.android.youtube.png"
   },
   {
    "table": "YouTube-Music-Morphe",
@@ -5779,7 +5951,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22app.morphe.android.apps.youtube.music%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22YouTube-Music-Morphe%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22youtube-music-morphe-morphe%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/app.morphe.android.apps.youtube.music.png"
   },
   {
    "table": "YouTube-Music-Morphe-Dev",
@@ -5811,7 +5984,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22app.morphe.android.apps.youtube.music%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22YouTube-Music-Morphe-Dev%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22youtube-music-morphe-dev-morphe-dev%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D",
-   "obtainium_source": "github"
+   "obtainium_source": "github",
+   "icon": "icons/app.morphe.android.apps.youtube.music.png"
   },
   {
    "table": "Zombie-Catchers",
@@ -5843,7 +6017,8 @@
     }
    ],
    "obtainium": "https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22fi.twomenandadog.zombiecatchers%22%2C%22url%22%3A%22https%3A//byehi98.github.io/revanced-builder/apps/zombie-catchers.html%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Zombie-Catchers%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22%28%3F%3A/%7C-%29zombie-catchers-miguelninja19-%5B%5E/%5D%2A%24%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22versionExtractWholePage%5C%22%3Atrue%2C%5C%22versionExtractionRegEx%5C%22%3A%5C%22name%3D%5C%5C%5C%22obtainium-version%5C%5C%5C%22%20content%3D%5C%5C%5C%22%28%5B%5E%5C%5C%5C%22%5D%2B%29%5C%5C%5C%22%5C%22%2C%5C%22matchGroupToUse%5C%22%3A%5C%221%5C%22%7D%22%2C%22overrideSource%22%3A%22HTML%22%7D",
-   "obtainium_source": "html"
+   "obtainium_source": "html",
+   "icon": "icons/fi.twomenandadog.zombiecatchers.png"
   }
  ]
 }

@@ -818,6 +818,9 @@ def main(argv: list[str] | None = None) -> int:
         write_app_pages(output.parent / "apps", pages)
 
     for entry in entries:
+        icon = output.parent / "icons" / f"{entry['package']}.png"
+        if entry["package"] and icon.is_file():
+            entry["icon"] = f"icons/{entry['package']}.png"
         entry.pop("_prefix", None)
         entry.pop("_readme", None)
 

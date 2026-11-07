@@ -803,6 +803,17 @@ html[data-theme="light"] .icon-moon {
   overflow-wrap: anywhere;
 }
 
+.app-icon {
+  flex: none;
+  align-self: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: var(--surface-2);
+  box-shadow: 0 0 0 1px var(--border), 0 2px 8px rgba(0, 0, 0, 0.18);
+}
+
 .status-dot {
   flex: none;
   width: 8px;
@@ -1249,6 +1260,11 @@ html[data-theme="light"] .icon-moon {
 
   .card-actions .grow {
     flex-basis: calc(100% - 46px);
+  }
+
+  .app-icon {
+    width: 36px;
+    height: 36px;
   }
 }
 
