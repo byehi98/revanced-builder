@@ -1,28 +1,28 @@
 
-**7 apps built.**
+**4 apps built.**
   
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
 CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
-Patches: bearinmindcat/patches-2.8.10.mpp  
-[Changelog](https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.8.10)
+Patches: Akash-Sriram/patches-1.17.11.mpp  
+[Changelog](https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.17.11)
 
 CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
-Patches: byehi98/patches-1.49.0-dev.8.mpp  
-[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.49.0-dev.8)
+Patches: bearinmindcat/patches-2.8.11.mpp  
+[Changelog](https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.8.11)
 
 CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
-Patches: byehi98/patches-1.48.0.mpp  
-[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.48.0)
+Patches: mich111discord/patches-1.13.0.mpp  
+[Changelog](https://github.com/mich111discord/MightyMichs-Patches/releases/tag/v1.13.0)
 
 CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
-CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
+Patches: MorpheApp/patches-2.2.0-dev.1.mpp  
+[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v2.2.0-dev.1)
+
 CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
 CLI: MorpheApp/morphe-desktop-2.1.1-all.jar    
 
 Skipped:  
-Google-Photos-Akash-Sriram: 7.99.0.1007655401
-Patches: Akash-Sriram/patches-1.17.10.mpp  
 Opera-GX: latest  
 Patches: Alastor-Kaneki/patches-1.15.3.mpp  
 Telegram: 12.10.1  
@@ -58,12 +58,8 @@ The-Battle-of-Polytopia: 2.17.3.16375
 Zombie-Catchers: latest  
 Reddit-Morphe: 2026.40.0
 Patches: MorpheApp/patches-2.1.0.mpp  
-Reddit-Morphe-Dev: 2026.45.0
-Patches: MorpheApp/patches-2.1.0.mpp  
 YouTube-Morphe: 21.30.216
-YouTube-Morphe-Dev: 21.44.528
 YouTube-Music-Morphe: 9.30.53  
-YouTube-Music-Morphe-Dev: 9.44.52
 Adobe-Photoshop-Mix: 2.6.3
 Patches: RookieEnough/patches-1.6.4.mpp  
 Cricbuzz: 6.24.01
@@ -107,6 +103,8 @@ Doodle-Jump: 3.11.40
 Dr-Driving: 1.73
 Earn-to-Die-2: 1.5.6
 Fancy-Pants: 1.0.30
+Freejobalert: 1.0.0
+Patches: byehi98/patches-1.49.0-dev.8.mpp  
 Fruit-Ninja: 3.97.9
 Grimvalor: 1.2.13
 HAAK: 1.4.3
@@ -117,16 +115,19 @@ Injustice: 3.5.1
 Into-The-Dead: 2.9.5
 Into-The-Dead-2: 1.88.0  
 Jetpack-Joyride: 1.104.2
+Lemmings-Puzzle-Survival_okish-morphe-patches: 9.5.0
 Lumina-Walls: 1.0.2.6
 Magic-Survival_okish-morphe-patches: 0.9941
 Minutes-Till-Dawn_okish-morphe-patches: 8.7
 Missiles: 1.41
 Onlyone: 1.3053
 Plagueinc: 1.27.5
+Plants-vs-Zombies-Free: 3.18.0
 Plants-vs-Zombies_okish-morphe-patches: 3.18.0
 Progressbar95: 1.1111
 Rodeo-Stampede: 4.26.0
 Shooty-Skies: 3.441.100103
+Smashit: 1.5.14
 Swamp-Attack: 4.8.9.0
 Swamp-Attack-2: 1.4.1
 Swift-Backup: 5.1.0
@@ -135,6 +136,8 @@ Tentaclewars: 2.1.27
 Traffic-Racer: 4.0
 Traffic-Rider: 2.11
 Truecloud: 4.6.5.13
+Vector: 2.10.2
+Vita-Mahjong: 3.46.0  
 Minesweeper: 1.21.3  
 Patches: cesbar/patches-1.13.1.mpp  
 Solitaire: 1.20.3  
@@ -223,13 +226,10 @@ Patches: spicetify/patches-1.2.0.mpp
 Imgur: 7.34.0.0  
 Patches: sushruth/patches-1.0.0.mpp        
 Lemmy-Sync: latest
-Patches: wchill/patches-2.0.3.mpp                                                    
+Patches: wchill/patches-2.0.3.mpp                                                      
 
 ### Built versions  
-Freejobalert: 1.0.0
 Google-Maps_morphe-patches: 26.36.04.973607363
-Lemmings-Puzzle-Survival_okish-morphe-patches: 9.5.0
-Plants-vs-Zombies-Free: 3.18.0
-Smashit: 1.5.14
-Vector: 2.10.2
-Vita-Mahjong: 3.46.0  
+Reddit-Morphe-Dev: 2026.45.0
+YouTube-Morphe-Dev: 21.44.528
+YouTube-Music-Morphe-Dev: 9.45.51  
