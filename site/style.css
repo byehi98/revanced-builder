@@ -424,22 +424,6 @@ html[data-theme="light"] .icon-moon {
   background: var(--surface-2);
 }
 
-.btn-obtainium {
-  background: linear-gradient(140deg, #4f46e5, #4500ff 58%, #6d28d9);
-  color: #fff;
-  box-shadow: 0 10px 26px rgba(69, 0, 255, 0.32);
-}
-
-.btn-obtainium:hover {
-  background: linear-gradient(140deg, #6366f1, #5b21ff 58%, #7c3aed);
-  box-shadow: 0 12px 30px rgba(69, 0, 255, 0.42);
-}
-
-.btn-obtainium[aria-disabled="true"] {
-  opacity: 0.55;
-  pointer-events: none;
-}
-
 .hero-import-note {
   display: flex;
   flex-wrap: wrap;

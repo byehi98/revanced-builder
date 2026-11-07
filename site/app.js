@@ -46,10 +46,8 @@
     repoLink: $("#repoLink"),
     releasesLink: $("#releasesLink"),
     readmeLink: $("#readmeLink"),
-    obtainiumAll: $("#obtainiumAll"),
-    obtainiumAllLabel: $("#obtainiumAllLabel"),
-    obtainiumAllNote: $("#obtainiumAllNote"),
-    obtainiumAllDetail: $("#obtainiumAllDetail"),
+    obtainiumImportNote: $("#obtainiumImportNote"),
+    obtainiumImportDetail: $("#obtainiumImportDetail"),
     obtainiumDownload: $("#obtainiumDownload"),
   };
 
@@ -180,34 +178,23 @@
     const configs = bulkObtainiumConfigs();
     if (configs.length === 0) return;
 
-    const deepLink = `obtainium://apps/${encodeURIComponent(JSON.stringify(configs))}`;
-
-    if (els.obtainiumAll) {
-      // The payload lives in the fragment so GitHub Pages never sees it as a
-      // query string, which would exceed server URL limits for large imports.
-      els.obtainiumAll.href = `add-all.html#${encodeURIComponent(deepLink)}`;
-      els.obtainiumAll.removeAttribute("aria-disabled");
-      els.obtainiumAll.title = `Add ${configs.length.toLocaleString()} apps to Obtainium in one import`;
-    }
-    if (els.obtainiumAllLabel) {
-      els.obtainiumAllLabel.textContent = `Add all ${configs.length.toLocaleString()} apps to Obtainium`;
-    }
-
     const builds = state.apps.filter(isBuilt).length;
-    if (els.obtainiumAllDetail) {
-      els.obtainiumAllDetail.textContent =
+    if (els.obtainiumImportDetail) {
+      els.obtainiumImportDetail.textContent =
         builds > configs.length
           ? `${builds.toLocaleString()} builds, one config per package.`
-          : "One import for every built app.";
+          : `${configs.length.toLocaleString()} apps in one import file.`;
     }
 
     if (els.obtainiumDownload) {
       const blob = new Blob([JSON.stringify(configs, null, 2)], { type: "application/json" });
       els.obtainiumDownload.href = URL.createObjectURL(blob);
       els.obtainiumDownload.setAttribute("download", "revanced-builder-obtainium.json");
+      els.obtainiumDownload.title =
+        `Download ${configs.length.toLocaleString()} app configs for Obtainium`;
     }
 
-    if (els.obtainiumAllNote) els.obtainiumAllNote.hidden = false;
+    if (els.obtainiumImportNote) els.obtainiumImportNote.hidden = false;
   }
 
   function buildHaystack(app) {
