@@ -8,11 +8,13 @@ Patches: jkennethcarino/patches-2.0.0-dev.4.mpp
 [Changelog](https://github.com/jkennethcarino/adobo/releases/tag/v2.0.0-dev.4)
 
 CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
-Patches: MorpheApp/patches-2.2.0-dev.2.mpp  
-[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v2.2.0-dev.2)
+Patches: legendsciber/patches-1.54.0.mpp  
+[Changelog](https://github.com/legendsciber/morphe-patches/releases/tag/v1.54.1)
 
 CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
-CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
+Patches: SysAdminDoc/patches-0.0.24.mpp  
+[Changelog](https://github.com/SysAdminDoc/HushTelegram/releases/tag/v0.0.24)
+
 CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
 Patches: wchill/patches-2.1.0.mpp  
 [Changelog](https://github.com/wchill/patcheddit/releases/tag/v2.1.0)  
@@ -55,8 +57,12 @@ The-Battle-of-Polytopia: 2.17.3.16375
 Zombie-Catchers: latest  
 Reddit-Morphe: 2026.40.0
 Patches: MorpheApp/patches-2.1.0.mpp  
+Reddit-Morphe-Dev: 2026.45.0
+Patches: MorpheApp/patches-2.2.0-dev.2.mpp  
 YouTube-Morphe: 21.30.216
+YouTube-Morphe-Dev: 21.44.528
 YouTube-Music-Morphe: 9.30.53  
+YouTube-Music-Morphe-Dev: 9.45.51  
 Adobe-Photoshop-Mix: 2.6.3
 Patches: RookieEnough/patches-1.6.4.mpp  
 Cricbuzz: 6.24.01
@@ -69,8 +75,6 @@ Photomath: 8.48.0
 SoundCloud-RookieEnough: 2026.10.28.release
 Pinterest_HushPinterest: 14.41.0
 Patches: SysAdminDoc/patches-0.0.13.mpp  
-Telegram-Hush: 13.1.1
-Patches: SysAdminDoc/patches-0.0.23.mpp  
 Discord_Venus-Patches: 351.11  
 Patches: VenusIsJaded/patches-1.21.1.mpp  
 Advanced-Download-Manager: 14.0.39  
@@ -170,13 +174,12 @@ MovieBox-hxreborn: 4.0.03.1020.03
 ProtonVPN-hxreborn: 5.21.9.0
 Protonmail: 7.11.12
 Symfonium: 15.1.0
+Patches: jkennethcarino/patches-2.0.0-dev.4.mpp  
 AudioRelay: 0.26.1  
 Patches: kiraio-moe/patches-1.3.0.mpp  
 Camera: 5.4.0  
 Hidden-Settings: 7.34  
 iLovePDF: 4.0.1    
-Subway-Surfers: 3.70.0
-Patches: legendsciber/patches-1.51.0.mpp  
 Letterboxd-mvaishak: latest
 Patches: mvaishak/patches-2.2.0.mpp  
 Chess-com: 4.10.0  
@@ -225,6 +228,6 @@ Patches: sushruth/patches-1.0.0.mpp
 Patches: wchill/patches-2.1.0.mpp    
 
 ### Built versions  
-Reddit-Morphe-Dev: 2026.45.0
-YouTube-Morphe-Dev: 21.44.528
-YouTube-Music-Morphe-Dev: 9.45.51  
+Reddit-Adobo: 2026.45.0
+Subway-Surfers: 3.71.0
+Telegram-Hush: 13.2.1  
