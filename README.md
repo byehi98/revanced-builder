@@ -15,7 +15,7 @@ Get the [latest CI release](https://github.com/j-hc/revanced-magisk-module/relea
 ## Build Status
 <!-- BUILD_STATUS_START -->
 <details>
-<summary><b>174 of 176 apps built</b> — click to expand the full list</summary>
+<summary><b>175 of 176 apps built</b> — click to expand the full list</summary>
 
 #### `Akash-Sriram/morphe-google-photos` · `patches-1.17.11.mpp`
 
@@ -214,7 +214,7 @@ Get the [latest CI release](https://github.com/j-hc/revanced-magisk-module/relea
 
 | App | Status | Obtainium |
 | :--- | :---: | :---: |
-| `Reddit-Adobo` | ❌ | [![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.reddit.frontpage%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Reddit-Adobo%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22reddit-adobo-adobo%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D) |
+| `Reddit-Adobo` ([APK](https://github.com/byehi98/revanced-builder/releases/download/380/reddit-adobo-adobo-v2026.45.0-all.apk)) | ✅ | [![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.reddit.frontpage%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Reddit-Adobo%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22reddit-adobo-adobo%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D) |
 
 #### `kiraio-moe/Lain-Patches` · `patches-1.3.0.mpp`
 
@@ -225,11 +225,11 @@ Get the [latest CI release](https://github.com/j-hc/revanced-magisk-module/relea
 | `Hidden-Settings` ([APK](https://github.com/byehi98/revanced-builder/releases/download/262/hidden-settings-lain-v7.34-all.apk)) | ✅ | [![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.ceyhan.sets%22%2C%22url%22%3A%22https%3A//byehi98.github.io/revanced-builder/apps/hidden-settings.html%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Hidden-Settings%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22%28%3F%3A/%7C-%29hidden-settings-lain-%5B%5E/%5D%2A%24%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22versionExtractWholePage%5C%22%3Atrue%2C%5C%22versionExtractionRegEx%5C%22%3A%5C%22name%3D%5C%5C%5C%22obtainium-version%5C%5C%5C%22%20content%3D%5C%5C%5C%22%28%5B%5E%5C%5C%5C%22%5D%2B%29%5C%5C%5C%22%5C%22%2C%5C%22matchGroupToUse%5C%22%3A%5C%221%5C%22%7D%22%2C%22overrideSource%22%3A%22HTML%22%7D) |
 | `iLovePDF` ([APK](https://github.com/byehi98/revanced-builder/releases/download/262/ilovepdf-lain-v4.0.1-all.apk)) | ✅ | [![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.ilovepdf.www%22%2C%22url%22%3A%22https%3A//byehi98.github.io/revanced-builder/apps/ilovepdf.html%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22iLovePDF%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22%28%3F%3A/%7C-%29ilovepdf-lain-%5B%5E/%5D%2A%24%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22versionExtractWholePage%5C%22%3Atrue%2C%5C%22versionExtractionRegEx%5C%22%3A%5C%22name%3D%5C%5C%5C%22obtainium-version%5C%5C%5C%22%20content%3D%5C%5C%5C%22%28%5B%5E%5C%5C%5C%22%5D%2B%29%5C%5C%5C%22%5C%22%2C%5C%22matchGroupToUse%5C%22%3A%5C%221%5C%22%7D%22%2C%22overrideSource%22%3A%22HTML%22%7D) |
 
-#### `legendsciber/morphe-patches` · `patches-1.51.0.mpp`
+#### `legendsciber/morphe-patches` · `patches-1.54.0.mpp`
 
 | App | Status | Obtainium |
 | :--- | :---: | :---: |
-| `Subway-Surfers` ([APK](https://github.com/byehi98/revanced-builder/releases/download/294/subway-surfers-legendsciber-v3.70.0-all.apk)) | ✅ | [![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.kiloo.subwaysurf%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Subway-Surfers%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22subway-surfers-legendsciber%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D) |
+| `Subway-Surfers` ([APK](https://github.com/byehi98/revanced-builder/releases/download/380/subway-surfers-legendsciber-v3.71.0-all.apk)) | ✅ | [![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.kiloo.subwaysurf%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Subway-Surfers%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22subway-surfers-legendsciber%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D) |
 
 #### `MiguelNinja19/miguel-morphe-patches` · `patches-1.13.6.mpp`
 
@@ -244,7 +244,7 @@ Get the [latest CI release](https://github.com/j-hc/revanced-magisk-module/relea
 | `The-Battle-of-Polytopia` ([APK](https://github.com/byehi98/revanced-builder/releases/download/263/the-battle-of-polytopia-miguelninja19-v2.17.3.16375-all.apk)) | ✅ | [![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22air.com.midjiwan.polytopia%22%2C%22url%22%3A%22https%3A//byehi98.github.io/revanced-builder/apps/the-battle-of-polytopia.html%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22The-Battle-of-Polytopia%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22%28%3F%3A/%7C-%29the-battle-of-polytopia-miguelninja19-%5B%5E/%5D%2A%24%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22versionExtractWholePage%5C%22%3Atrue%2C%5C%22versionExtractionRegEx%5C%22%3A%5C%22name%3D%5C%5C%5C%22obtainium-version%5C%5C%5C%22%20content%3D%5C%5C%5C%22%28%5B%5E%5C%5C%5C%22%5D%2B%29%5C%5C%5C%22%5C%22%2C%5C%22matchGroupToUse%5C%22%3A%5C%221%5C%22%7D%22%2C%22overrideSource%22%3A%22HTML%22%7D) |
 | `Zombie-Catchers` ([APK](https://github.com/byehi98/revanced-builder/releases/download/262/zombie-catchers-miguelninja19-vlatest-all.apk)) | ✅ | [![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22fi.twomenandadog.zombiecatchers%22%2C%22url%22%3A%22https%3A//byehi98.github.io/revanced-builder/apps/zombie-catchers.html%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Zombie-Catchers%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22%28%3F%3A/%7C-%29zombie-catchers-miguelninja19-%5B%5E/%5D%2A%24%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22versionExtractWholePage%5C%22%3Atrue%2C%5C%22versionExtractionRegEx%5C%22%3A%5C%22name%3D%5C%5C%5C%22obtainium-version%5C%5C%5C%22%20content%3D%5C%5C%5C%22%28%5B%5E%5C%5C%5C%22%5D%2B%29%5C%5C%5C%22%5C%22%2C%5C%22matchGroupToUse%5C%22%3A%5C%221%5C%22%7D%22%2C%22overrideSource%22%3A%22HTML%22%7D) |
 
-#### `MorpheApp/morphe-patches` · `patches-2.1.0.mpp`
+#### `MorpheApp/morphe-patches` · `patches-2.2.0-dev.2.mpp`
 
 | App | Status | Obtainium |
 | :--- | :---: | :---: |
@@ -334,17 +334,17 @@ Get the [latest CI release](https://github.com/j-hc/revanced-magisk-module/relea
 | :--- | :---: | :---: |
 | `Imgur` ([APK](https://github.com/byehi98/revanced-builder/releases/download/262/imgur-imgur-v7.34.0.0-all.apk)) | ✅ | [![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.imgur.mobile%22%2C%22url%22%3A%22https%3A//byehi98.github.io/revanced-builder/apps/imgur.html%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Imgur%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22%28%3F%3A/%7C-%29imgur-imgur-%5B%5E/%5D%2A%24%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22versionExtractWholePage%5C%22%3Atrue%2C%5C%22versionExtractionRegEx%5C%22%3A%5C%22name%3D%5C%5C%5C%22obtainium-version%5C%5C%5C%22%20content%3D%5C%5C%5C%22%28%5B%5E%5C%5C%5C%22%5D%2B%29%5C%5C%5C%22%5C%22%2C%5C%22matchGroupToUse%5C%22%3A%5C%221%5C%22%7D%22%2C%22overrideSource%22%3A%22HTML%22%7D) |
 
-#### `SysAdminDoc/HushPinterest` · `patches-0.0.23.mpp`
+#### `SysAdminDoc/HushPinterest` · `patches-0.0.13.mpp`
 
 | App | Status | Obtainium |
 | :--- | :---: | :---: |
 | `Pinterest_HushPinterest` ([APK](https://github.com/byehi98/revanced-builder/releases/download/358/pinterest_hushpinterest-sysadmindoc-v14.41.0-all.apk)) | ✅ | [![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.pinterest%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Pinterest_HushPinterest%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22pinterest_hushpinterest-sysadmindoc%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D) |
 
-#### `SysAdminDoc/HushTelegram` · `patches-0.0.23.mpp`
+#### `SysAdminDoc/HushTelegram` · `patches-0.0.13.mpp`
 
 | App | Status | Obtainium |
 | :--- | :---: | :---: |
-| `Telegram-Hush` ([APK](https://github.com/byehi98/revanced-builder/releases/download/349/telegram-hush-hush-v13.1.1-all.apk)) | ✅ | [![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22org.telegram.messenger%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Telegram-Hush%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22telegram-hush-hush%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D) |
+| `Telegram-Hush` ([APK](https://github.com/byehi98/revanced-builder/releases/download/380/telegram-hush-hush-v13.2.1-all.apk)) | ✅ | [![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22org.telegram.messenger%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Telegram-Hush%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22telegram-hush-hush%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D) |
 
 #### `VenusIsJaded/Venus-Patches` · `patches-1.21.1.mpp`
 
