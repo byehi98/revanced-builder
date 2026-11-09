@@ -1,20 +1,13 @@
 
-**3 apps built.**
+**2 apps built.**
   
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
 CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
-Patches: jkennethcarino/patches-2.0.0-dev.4.mpp  
-[Changelog](https://github.com/jkennethcarino/adobo/releases/tag/v2.0.0-dev.4)
+Patches: durgesh0505/patches-1.26.1.mpp  
+[Changelog](https://github.com/durgesh0505/chiggi_morphe_patches/releases/tag/v1.26.1)
 
 CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
-Patches: legendsciber/patches-1.54.0.mpp  
-[Changelog](https://github.com/legendsciber/morphe-patches/releases/tag/v1.54.1)
-
-CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
-Patches: SysAdminDoc/patches-0.0.24.mpp  
-[Changelog](https://github.com/SysAdminDoc/HushTelegram/releases/tag/v0.0.24)
-
 CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
 Patches: wchill/patches-2.1.0.mpp  
 [Changelog](https://github.com/wchill/patcheddit/releases/tag/v2.1.0)  
@@ -75,6 +68,8 @@ Photomath: 8.48.0
 SoundCloud-RookieEnough: 2026.10.28.release
 Pinterest_HushPinterest: 14.41.0
 Patches: SysAdminDoc/patches-0.0.13.mpp  
+Telegram-Hush: 13.2.1  
+Patches: SysAdminDoc/patches-0.0.24.mpp  
 Discord_Venus-Patches: 351.11  
 Patches: VenusIsJaded/patches-1.21.1.mpp  
 Advanced-Download-Manager: 14.0.39  
@@ -148,9 +143,6 @@ Brave-Beta-dh6k: latest
 Patches: dh6k/patches-1.9.0.mpp  
 Brave-Nightly-dh6k: latest
 Brave-dh6k: latest
-Arrow-Puzzle: 1.7.0
-Patches: durgesh0505/patches-1.25.0.mpp  
-Does-Not-Commute-chiggi: 1.5.5
 Letterboxd-ethanm6: latest
 Patches: ethanm6/patches-1.4.4.mpp  
 AnyDesk: latest
@@ -174,12 +166,15 @@ MovieBox-hxreborn: 4.0.03.1020.03
 ProtonVPN-hxreborn: 5.21.9.0
 Protonmail: 7.11.12
 Symfonium: 15.1.0
+Reddit-Adobo: 2026.45.0
 Patches: jkennethcarino/patches-2.0.0-dev.4.mpp  
 AudioRelay: 0.26.1  
 Patches: kiraio-moe/patches-1.3.0.mpp  
 Camera: 5.4.0  
 Hidden-Settings: 7.34  
 iLovePDF: 4.0.1    
+Subway-Surfers: 3.71.0
+Patches: legendsciber/patches-1.54.0.mpp  
 Letterboxd-mvaishak: latest
 Patches: mvaishak/patches-2.2.0.mpp  
 Chess-com: 4.10.0  
@@ -228,6 +223,5 @@ Patches: sushruth/patches-1.0.0.mpp
 Patches: wchill/patches-2.1.0.mpp    
 
 ### Built versions  
-Reddit-Adobo: 2026.45.0
-Subway-Surfers: 3.71.0
-Telegram-Hush: 13.2.1  
+Arrow-Puzzle: 1.7.0
+Does-Not-Commute-chiggi: 1.5.5  
