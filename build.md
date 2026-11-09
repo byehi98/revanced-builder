@@ -1,12 +1,34 @@
 
-**2 apps built.**
+**15 apps built.**
   
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
 CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
-Patches: durgesh0505/patches-1.27.4.mpp  
-[Changelog](https://github.com/durgesh0505/chiggi_morphe_patches/releases/tag/v1.27.4)
+Patches: byehi98/patches-1.49.0-dev.13.mpp  
+[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.49.0-dev.13)
 
+CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
+CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
+CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
+CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
+CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
+Patches: durgesh0505/patches-1.27.7.mpp  
+[Changelog](https://github.com/durgesh0505/chiggi_morphe_patches/releases/tag/v1.27.7)
+
+CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
+CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
+Patches: hxreborn/patches-1.75.1.mpp  
+[Changelog](https://github.com/hxreborn/morphe-patches/releases/tag/v1.75.1)
+
+CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
+CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
+CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
+CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
+CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
+Patches: MorpheApp/patches-2.2.0-dev.4.mpp  
+[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v2.2.0-dev.4)
+
+CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
 CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
 CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
 Patches: wchill/patches-2.1.0.mpp  
@@ -50,12 +72,8 @@ The-Battle-of-Polytopia: 2.17.3.16375
 Zombie-Catchers: latest  
 Reddit-Morphe: 2026.40.0
 Patches: MorpheApp/patches-2.1.0.mpp  
-Reddit-Morphe-Dev: 2026.45.0
-Patches: MorpheApp/patches-2.2.0-dev.2.mpp  
 YouTube-Morphe: 21.30.216
-YouTube-Morphe-Dev: 21.44.528
 YouTube-Music-Morphe: 9.30.53  
-YouTube-Music-Morphe-Dev: 9.45.51  
 Adobe-Photoshop-Mix: 2.6.3
 Patches: RookieEnough/patches-1.6.4.mpp  
 Cricbuzz: 6.24.01
@@ -101,8 +119,6 @@ Doodle-Jump: 3.11.40
 Dr-Driving: 1.73
 Earn-to-Die-2: 1.5.6
 Fancy-Pants: 1.0.30
-Freejobalert: 1.0.0
-Patches: byehi98/patches-1.49.0-dev.9.mpp  
 Fruit-Ninja: 3.97.9
 Grimvalor: 1.2.13
 HAAK: 1.4.3
@@ -120,12 +136,10 @@ Minutes-Till-Dawn_okish-morphe-patches: 8.7
 Missiles: 1.41
 Onlyone: 1.3053
 Plagueinc: 1.27.5
-Plants-vs-Zombies-Free: 3.18.0
 Plants-vs-Zombies_okish-morphe-patches: 3.18.0
 Progressbar95: 1.1111
 Rodeo-Stampede: 4.26.0
 Shooty-Skies: 3.441.100103
-Smashit: 1.5.14
 Swamp-Attack: 4.8.9.0
 Swamp-Attack-2: 1.4.1
 Swift-Backup: 5.1.0
@@ -134,8 +148,6 @@ Tentaclewars: 2.1.27
 Traffic-Racer: 4.0
 Traffic-Rider: 2.11
 Truecloud: 4.6.5.13
-Vector: 2.10.2
-Vita-Mahjong: 3.46.0  
 Minesweeper: 1.21.3  
 Patches: cesbar/patches-1.13.1.mpp  
 Solitaire: 1.20.3  
@@ -160,12 +172,6 @@ Showly: 3.70.0
 Solid-Explorer: 3.6.1
 WPS-Office: 18.24
 Wallcraft: 3.61.01  
-Cx-File-Explorer: 2.8.1
-Patches: hxreborn/patches-1.74.0.mpp  
-MovieBox-hxreborn: 4.0.03.1020.03
-ProtonVPN-hxreborn: 5.21.9.0
-Protonmail: 7.11.12
-Symfonium: 15.1.0
 Reddit-Adobo: 2026.45.0
 Patches: jkennethcarino/patches-2.0.0-dev.4.mpp  
 AudioRelay: 0.26.1  
@@ -224,4 +230,17 @@ Patches: wchill/patches-2.1.0.mpp
 
 ### Built versions  
 Arrow-Puzzle: 1.7.0
-Does-Not-Commute-chiggi: 1.5.5  
+Cx-File-Explorer: 2.8.1
+Does-Not-Commute-chiggi: 1.5.5
+Freejobalert: 1.0.0
+MovieBox-hxreborn: 4.0.03.1020.03
+Plants-vs-Zombies-Free: 3.18.0
+ProtonVPN-hxreborn: 5.21.9.0
+Protonmail: 7.11.12
+Reddit-Morphe-Dev: 2026.45.0
+Smashit: 1.5.14
+Symfonium: 15.1.0
+Vector: 2.10.2
+Vita-Mahjong: 3.46.0
+YouTube-Morphe-Dev: 21.45.82
+YouTube-Music-Morphe-Dev: 9.45.51  
