@@ -13,7 +13,12 @@ on:
         type: string
         default: ""
   schedule:
-    - cron: "17 * * * *"
+    - cron: "11 0 * * *"
+    - cron: "46 4 * * *"
+    - cron: "08 8 * * *"
+    - cron: "52 12 * * *"
+    - cron: "29 16 * * *"
+    - cron: "03 20 * * *"
 
 concurrency:
   group: ci
