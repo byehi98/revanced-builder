@@ -883,6 +883,62 @@ _merge_splits_locked() {
 	return 0
 }
 
+# Content-based bundle detection. Some download sources hand us split-bundle bytes
+# under a plain ".apk" filename — most notably APKPure's /b/APK/<pkg> endpoint, which
+# keeps serving the XAPK payload when a release only publishes a split bundle (Dead
+# Target 4.186.0 is one: /b/APK/ and /b/XAPK/ both redirect to the same 410 MB
+# Dead+Target…APKPure.xapk, and ?arch= is ignored).
+#
+# A real APK always has a root AndroidManifest.xml. A bundle never does: it carries
+# manifest.json and/or the inner *.apk modules instead. Checking the entry list (not
+# the extension) is what makes this robust — .apk / .apkm / .xapk / .apks are all
+# just ZIPs and the builder renames files around freely.
+is_split_bundle() {
+	local file=$1 entries
+	[ -f "$file" ] || return 1
+	entries=$(unzip -Z1 "$file" 2>/dev/null) || return 1
+	if grep -qx "AndroidManifest.xml" <<<"$entries"; then
+		return 1
+	fi
+	grep -qx "manifest.json" <<<"$entries" && return 0
+	grep -qE "\.apk$" <<<"$entries" && return 0
+	return 1
+}
+
+# Merge a disguised split bundle in place, so the rest of the pipeline (ApkPrep,
+# morphe-cli) only ever sees a real APK. morphe-cli in particular cannot read bundle
+# bytes: it looks for the root AndroidManifest.xml during ResourcePatchContext
+# construction and dies with
+#   NullPointerException: … AndroidManifestBlock.isExtractNativeLibs() because "manifest" is null
+# before a single patch executes.
+#
+# merge_splits() refuses to run when its output already exists, so the bundle is moved
+# aside first and restored if the merge fails.
+normalize_stock_apk() {
+	local apk=$1 bundle
+	is_split_bundle "$apk" || return 0
+	pr "Stock file is a split bundle, merging splits"
+	bundle="${apk}.bundle"
+	rm -f "$bundle"
+	if ! mv -f "$apk" "$bundle"; then
+		epr "Could not move split bundle aside: $apk"
+		return 1
+	fi
+	if ! merge_splits "$bundle" "$apk"; then
+		epr "Could not merge split bundle: $bundle"
+		mv -f "$bundle" "$apk" 2>/dev/null || :
+		return 1
+	fi
+	rm -f "$bundle"
+	return 0
+}
+
+# Space-separated list of ABIs that actually ship under lib/ in the APK.
+apk_abis() {
+	local file=$1
+	unzip -Z1 "$file" 2>/dev/null | sed -n 's|^lib/\([^/]*\)/.*|\1|p' | sort -u | tr '\n' ' ' | sed 's/ $//'
+}
+
 # -------------------- apkmirror --------------------
 apkmirror_search() {
 	local resp="$1" dpi="$2" arch="$3" apk_bundle="$4"
@@ -1885,6 +1941,33 @@ build_rv() {
 		if [ ! -f "$stock_apk" ]; then
 			epr "Stock apk not found ($stock_apk)"
 			return 1
+		fi
+	fi
+
+	# Downloaders cache the payload under "<pkg>-<ver>-<arch>.apk" and a few sources
+	# return split-bundle bytes for that name (APKPure's /b/APK/ endpoint does this for
+	# releases that only ship an XAPK). Merge such a bundle into a real APK before
+	# ApkPrep / morphe-cli touch it, otherwise morphe-cli aborts during
+	# ResourcePatchContext construction with a NullPointerException on a null
+	# AndroidManifestBlock. Runs on every build, so already-cached broken files heal.
+	if ! normalize_stock_apk "$stock_apk"; then
+		epr "Could not normalize '$stock_apk' into a single APK"
+		return 1
+	fi
+
+	# Warn when the source does not actually publish the requested architecture. APKPure
+	# only ships armeabi-v7a for some releases (Dead Target 4.186.0), so the "arm64-v8a"
+	# build silently ends up 32-bit; ApkPrep then keeps the shipped ABI instead of
+	# stripping the only native library. Better to say so than to ship a surprise.
+	if ! isoneof "$arch" all universal noarch ""; then
+		local have_abis want_abi
+		have_abis=$(apk_abis "$stock_apk")
+		want_abi=$arch
+		case "$want_abi" in
+			arm-v7a|armv7|armv7a) want_abi=armeabi-v7a ;;
+		esac
+		if [ -n "$have_abis" ] && ! grep -qw "$want_abi" <<<"$have_abis"; then
+			wpr "Requested arch '$arch' is not in the stock APK (has: ${have_abis}), so the build will contain the shipped ABI(s)"
 		fi
 	fi
 
