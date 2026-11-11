@@ -1,12 +1,13 @@
 
-**2 apps built.**
+**3 apps built.**
   
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
 CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
-Patches: byehi98/patches-1.50.0-dev.6.mpp  
-[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.50.0-dev.6)
+Patches: MorpheApp/patches-2.3.0-dev.1.mpp  
+[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v2.3.0-dev.1)
 
+CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
 CLI: MorpheApp/morphe-desktop-2.1.1-all.jar    
 
 Skipped:  
@@ -47,12 +48,8 @@ The-Battle-of-Polytopia: 2.17.3.16375
 Zombie-Catchers: latest  
 Reddit-Morphe: 2026.40.0
 Patches: MorpheApp/patches-2.2.0.mpp  
-Reddit-Morphe-Dev: 2026.45.0
-Patches: MorpheApp/patches-2.2.0.mpp  
 YouTube-Morphe: 21.30.216
-YouTube-Morphe-Dev: 21.45.82
 YouTube-Music-Morphe: 9.30.53  
-YouTube-Music-Morphe-Dev: 9.45.51
 Adobe-Photoshop-Mix: 2.6.3
 Patches: RookieEnough/patches-1.6.4.mpp  
 Cricbuzz: 6.24.01
@@ -91,6 +88,7 @@ Burrito-Bison: 3.75
 Crash-of-Cars: 1.9.36
 Crossy-Road: 7.14.3
 Dan-The-Man: 1.14.11
+Dead-Target: 4.186.0
 Patches: byehi98/patches-1.50.0-dev.6.mpp  
 Dead-Trigger: 2.3.4
 Document-Scanner: 6.9.9
@@ -109,6 +107,7 @@ Injustice: 3.5.1
 Into-The-Dead: 2.9.5
 Into-The-Dead-2: 1.88.0
 Jetpack-Joyride: 1.104.2
+Lemmings-Puzzle-Survival_okish-morphe-patches: 9.5.1  
 Lumina-Walls: 1.0.2.6
 Magic-Survival_okish-morphe-patches: 0.9941
 Minutes-Till-Dawn_okish-morphe-patches: 8.7
@@ -217,8 +216,9 @@ qBitConnect: 2.0.6
 Spotify_morphe-patches: latest
 Patches: spicetify/patches-1.2.0.mpp  
 Imgur: 7.34.0.0  
-Patches: sushruth/patches-1.0.0.mpp              
+Patches: sushruth/patches-1.0.0.mpp                
 
 ### Built versions  
-Dead-Target: 4.186.0
-Lemmings-Puzzle-Survival_okish-morphe-patches: 9.5.1  
+Reddit-Morphe-Dev: 2026.45.0
+YouTube-Morphe-Dev: 21.45.82
+YouTube-Music-Morphe-Dev: 9.45.51  
