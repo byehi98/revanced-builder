@@ -8,17 +8,14 @@ Patches: byehi98/patches-1.49.0.mpp
 [Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.49.0)
 
 CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
-Patches: byehi98/patches-1.50.0-dev.4.mpp  
-[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.50.0-dev.4)
+Patches: byehi98/patches-1.50.0-dev.6.mpp  
+[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.50.0-dev.6)
 
 CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
 CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
 CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
 CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
-CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
-CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
-Patches: wchill/patches-2.1.0.mpp  
-[Changelog](https://github.com/wchill/patcheddit/releases/tag/v2.1.0)  
+CLI: MorpheApp/morphe-desktop-2.1.1-all.jar    
 
 Skipped:  
 Google-Photos-Akash-Sriram: 7.99.0.1007655401  
@@ -222,8 +219,7 @@ qBitConnect: 2.0.6
 Spotify_morphe-patches: latest
 Patches: spicetify/patches-1.2.0.mpp  
 Imgur: 7.34.0.0  
-Patches: sushruth/patches-1.0.0.mpp          
-Patches: wchill/patches-2.1.0.mpp    
+Patches: sushruth/patches-1.0.0.mpp            
 
 ### Built versions  
 Freejobalert: 1.0.0
