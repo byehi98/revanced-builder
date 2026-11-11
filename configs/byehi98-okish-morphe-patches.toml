@@ -133,6 +133,11 @@ gplaydl-dlurl 	= "com.halfbrick.dantheman"
 patches-source  = "byehi98/okish-morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "okish"
+# The dual-ABI fix (arm64-v8a + armeabi-v7a, no FileNotFoundException on arm64-only
+# merged APKs) only exists from 1.50.0-dev.4 onwards; the stable 1.49.0 bundle still
+# hard-codes lib/armeabi-v7a/libil2cpp.so. Stay on the dev channel until a stable
+# 1.50.0 is released.
+patches-version = "dev"
 # morphe-dlurl 	= "com.vng.g6.a.zombie"
 # aptoide-dlurl 	= "com.vng.g6.a.zombie"
 apkeep-dlurl 	= "com.vng.g6.a.zombie"
@@ -632,6 +637,9 @@ apkeep-dlurl 	= "com.vkslrzm.Zombie"
 patches-source 	= "byehi98/okish-morphe-patches"
 cli-source 	= "MorpheApp/morphe-cli"
 rv-brand 	= "byehi98"
+# 9.5.1 armeabi-v7a anchors were added in 1.50.0-dev.6; the stable 1.49.0 bundle
+# leaves that ABI unpatched and then aborts the dependent grant-hook patch.
+patches-version = "dev"
 morphe-dlurl 	= "com.sadpuppy.lemmings"
 aptoide-dlurl 	= "com.sadpuppy.lemmings"
 apkeep-dlurl 	= "com.sadpuppy.lemmings"
