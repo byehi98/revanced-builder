@@ -1,20 +1,12 @@
 
-**5 apps built.**
+**2 apps built.**
   
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
 CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
-Patches: byehi98/patches-1.49.0.mpp  
-[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.49.0)
-
-CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
 Patches: byehi98/patches-1.50.0-dev.6.mpp  
 [Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.50.0-dev.6)
 
-CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
-CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
-CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
-CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
 CLI: MorpheApp/morphe-desktop-2.1.1-all.jar    
 
 Skipped:  
@@ -99,12 +91,14 @@ Burrito-Bison: 3.75
 Crash-of-Cars: 1.9.36
 Crossy-Road: 7.14.3
 Dan-The-Man: 1.14.11
+Patches: byehi98/patches-1.50.0-dev.6.mpp  
 Dead-Trigger: 2.3.4
 Document-Scanner: 6.9.9
 Doodle-Jump: 3.11.40
 Dr-Driving: 1.73
 Earn-to-Die-2: 1.5.6
 Fancy-Pants: 1.0.48
+Freejobalert: 1.0.0
 Fruit-Ninja: 3.97.9
 Grimvalor: 1.2.13
 HAAK: 1.4.3
@@ -121,10 +115,12 @@ Minutes-Till-Dawn_okish-morphe-patches: 8.7
 Missiles: 1.42
 Onlyone: 1.3053
 Plagueinc: 1.27.5
+Plants-vs-Zombies-Free: 3.18.0
 Plants-vs-Zombies_okish-morphe-patches: 3.18.0
 Progressbar95: 1.1111
 Rodeo-Stampede: 4.26.0
 Shooty-Skies: 3.441.100104
+Smashit: 1.5.14
 Swamp-Attack: 4.8.10.0
 Swamp-Attack-2: 1.4.1
 Swift-Backup: 5.1.1
@@ -133,6 +129,8 @@ Tentaclewars: 2.1.27
 Traffic-Racer: 4.0
 Traffic-Rider: 2.11
 Truecloud: 4.6.5.13
+Vector: 2.10.2
+Vita-Mahjong: 3.46.0  
 Minesweeper: 1.21.3  
 Patches: cesbar/patches-1.13.1.mpp  
 Solitaire: 1.20.3  
@@ -219,11 +217,8 @@ qBitConnect: 2.0.6
 Spotify_morphe-patches: latest
 Patches: spicetify/patches-1.2.0.mpp  
 Imgur: 7.34.0.0  
-Patches: sushruth/patches-1.0.0.mpp            
+Patches: sushruth/patches-1.0.0.mpp              
 
 ### Built versions  
-Freejobalert: 1.0.0
-Plants-vs-Zombies-Free: 3.18.0
-Smashit: 1.5.14
-Vector: 2.10.2
-Vita-Mahjong: 3.46.0  
+Dead-Target: 4.186.0
+Lemmings-Puzzle-Survival_okish-morphe-patches: 9.5.1  
