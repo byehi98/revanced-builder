@@ -1,24 +1,19 @@
 
-**12 apps built.**
+**7 apps built.**
   
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
 CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
-Patches: byehi98/patches-1.50.0-dev.9.mpp  
-[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.50.0-dev.9)
+Patches: heval99/patches-2.3.0.mpp  
+[Changelog](https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v2.3.0)
 
 CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
 CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
 CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
 CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
-CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
-CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
-CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
-Patches: hxreborn/patches-1.77.0.mpp  
-[Changelog](https://github.com/hxreborn/morphe-patches/releases/tag/v1.77.0)
+Patches: MorpheApp/patches-2.3.0-dev.2.mpp  
+[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v2.3.0-dev.2)
 
-CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
-CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
 CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
 CLI: MorpheApp/morphe-desktop-2.1.1-all.jar    
 
@@ -60,12 +55,8 @@ The-Battle-of-Polytopia: 2.17.3.16375
 Zombie-Catchers: latest  
 Reddit-Morphe: 2026.40.0
 Patches: MorpheApp/patches-2.2.0.mpp  
-Reddit-Morphe-Dev: 2026.45.0
-Patches: MorpheApp/patches-2.3.0-dev.1.mpp  
 YouTube-Morphe: 21.30.216
-YouTube-Morphe-Dev: 21.45.82
 YouTube-Music-Morphe: 9.30.53  
-YouTube-Music-Morphe-Dev: 9.45.51  
 Adobe-Photoshop-Mix: 2.6.3
 Patches: RookieEnough/patches-1.6.4.mpp  
 Cricbuzz: 6.24.01
@@ -104,12 +95,15 @@ Burrito-Bison: 3.75
 Crash-of-Cars: 1.9.36
 Crossy-Road: 7.14.3
 Dan-The-Man: 1.14.11
+Dead-Target: 4.186.0
+Patches: byehi98/patches-1.50.0-dev.9.mpp  
 Dead-Trigger: 2.3.4
 Document-Scanner: 6.9.9
 Doodle-Jump: 3.11.40
 Dr-Driving: 1.73
 Earn-to-Die-2: 1.5.6
 Fancy-Pants: 1.0.48
+Freejobalert: 1.0.0
 Fruit-Ninja: 3.97.9
 Grimvalor: 1.2.13
 HAAK: 1.4.3
@@ -120,16 +114,19 @@ Injustice: 3.5.1
 Into-The-Dead: 2.9.5
 Into-The-Dead-2: 1.88.0
 Jetpack-Joyride: 1.104.2
+Lemmings-Puzzle-Survival_okish-morphe-patches: 9.5.1
 Lumina-Walls: 1.0.2.6
 Magic-Survival_okish-morphe-patches: 0.9941
 Minutes-Till-Dawn_okish-morphe-patches: 8.7
 Missiles: 1.42
 Onlyone: 1.3053
 Plagueinc: 1.27.5
+Plants-vs-Zombies-Free: 3.18.0
 Plants-vs-Zombies_okish-morphe-patches: 3.18.0
 Progressbar95: 1.1111
 Rodeo-Stampede: 4.26.0
 Shooty-Skies: 3.441.100104
+Smashit: 1.5.14
 Swamp-Attack: 4.8.10.0
 Swamp-Attack-2: 1.4.1
 Swift-Backup: 5.1.1
@@ -138,6 +135,8 @@ Tentaclewars: 2.1.27
 Traffic-Racer: 4.0
 Traffic-Rider: 2.11
 Truecloud: 4.6.5.13
+Vector: 2.10.2
+Vita-Mahjong: 3.46.0  
 Minesweeper: 1.21.3  
 Patches: cesbar/patches-1.13.1.mpp  
 Solitaire: 1.20.3  
@@ -150,11 +149,6 @@ Patches: durgesh0505/patches-1.27.8.mpp
 Does-Not-Commute-chiggi: 1.5.5
 Letterboxd-ethanm6: latest
 Patches: ethanm6/patches-1.4.4.mpp  
-AnyDesk: latest
-Patches: heval99/patches-2.2.0.mpp  
-AquaMail: 2.8.1
-Firefox_Heval-Morphe-Patches: 159.0
-Truecaller: 26.43.5  
 AdGuard-hoo-dles: 4.14.2
 Patches: hoo-dles/patches-1.47.0.mpp  
 CamScanner-hoo-dles: 7.20.0.2606230000
@@ -165,6 +159,12 @@ Showly: 3.70.0
 Solid-Explorer: 3.6.1
 WPS-Office: 18.24
 Wallcraft: 3.61.01  
+Cx-File-Explorer: 2.8.1
+Patches: hxreborn/patches-1.77.0.mpp  
+MovieBox-hxreborn: 4.0.03.1020.03
+ProtonVPN-hxreborn: 5.21.9.0
+Protonmail: 7.11.12
+Symfonium: 15.1.0
 Reddit-Adobo: 2026.45.0
 Patches: jkennethcarino/patches-2.0.0-dev.4.mpp  
 AudioRelay: 0.26.1  
@@ -218,18 +218,13 @@ qBitConnect: 2.0.6
 Spotify_morphe-patches: latest
 Patches: spicetify/patches-1.2.0.mpp  
 Imgur: 7.34.0.0  
-Patches: sushruth/patches-1.0.0.mpp                    
+Patches: sushruth/patches-1.0.0.mpp                      
 
 ### Built versions  
-Cx-File-Explorer: 2.8.1
-Dead-Target: 4.186.0
-Freejobalert: 1.0.0
-Lemmings-Puzzle-Survival_okish-morphe-patches: 9.5.1
-MovieBox-hxreborn: 4.0.03.1020.03
-Plants-vs-Zombies-Free: 3.18.0
-ProtonVPN-hxreborn: 5.21.9.0
-Protonmail: 7.11.12
-Smashit: 1.5.14
-Symfonium: 15.1.0
-Vector: 2.10.2
-Vita-Mahjong: 3.46.0  
+AnyDesk: latest
+AquaMail: 2.8.1
+Firefox_Heval-Morphe-Patches: 159.0.1
+Reddit-Morphe-Dev: 2026.45.0
+Truecaller: 26.44.6
+YouTube-Morphe-Dev: 21.45.82
+YouTube-Music-Morphe-Dev: 9.45.51  
