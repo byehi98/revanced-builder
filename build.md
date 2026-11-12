@@ -1,14 +1,22 @@
 
-**7 apps built.**
+**12 apps built.**
   
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
 CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
-Patches: byehi98/patches-1.50.0-dev.7.mpp  
-[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.50.0-dev.7)
+Patches: byehi98/patches-1.50.0-dev.9.mpp  
+[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.50.0-dev.9)
 
 CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
 CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
+CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
+CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
+CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
+CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
+CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
+Patches: hxreborn/patches-1.77.0.mpp  
+[Changelog](https://github.com/hxreborn/morphe-patches/releases/tag/v1.77.0)
+
 CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
 CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
 CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
@@ -157,12 +165,6 @@ Showly: 3.70.0
 Solid-Explorer: 3.6.1
 WPS-Office: 18.24
 Wallcraft: 3.61.01  
-Cx-File-Explorer: 2.8.1
-Patches: hxreborn/patches-1.76.0.mpp  
-MovieBox-hxreborn: 4.0.03.1020.03
-ProtonVPN-hxreborn: 5.21.9.0  
-Protonmail: 7.11.12
-Symfonium: 15.1.0
 Reddit-Adobo: 2026.45.0
 Patches: jkennethcarino/patches-2.0.0-dev.4.mpp  
 AudioRelay: 0.26.1  
@@ -216,13 +218,18 @@ qBitConnect: 2.0.6
 Spotify_morphe-patches: latest
 Patches: spicetify/patches-1.2.0.mpp  
 Imgur: 7.34.0.0  
-Patches: sushruth/patches-1.0.0.mpp                  
+Patches: sushruth/patches-1.0.0.mpp                    
 
 ### Built versions  
+Cx-File-Explorer: 2.8.1
 Dead-Target: 4.186.0
 Freejobalert: 1.0.0
 Lemmings-Puzzle-Survival_okish-morphe-patches: 9.5.1
+MovieBox-hxreborn: 4.0.03.1020.03
 Plants-vs-Zombies-Free: 3.18.0
+ProtonVPN-hxreborn: 5.21.9.0
+Protonmail: 7.11.12
 Smashit: 1.5.14
+Symfonium: 15.1.0
 Vector: 2.10.2
 Vita-Mahjong: 3.46.0  
