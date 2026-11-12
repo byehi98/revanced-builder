@@ -1,21 +1,16 @@
 
-**7 apps built.**
+**3 apps built.**
   
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
 CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
-Patches: heval99/patches-2.3.0.mpp  
-[Changelog](https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v2.3.0)
+Patches: cesbar/patches-1.14.0.mpp  
+[Changelog](https://github.com/cesbar/zpatches/releases/tag/v1.14.0)
 
 CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
 CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
-CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
-CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
-Patches: MorpheApp/patches-2.3.0-dev.2.mpp  
-[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v2.3.0-dev.2)
-
-CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
-CLI: MorpheApp/morphe-desktop-2.1.1-all.jar    
+Patches: SysAdminDoc/patches-0.0.25.mpp  
+[Changelog](https://github.com/SysAdminDoc/HushTelegram/releases/tag/v0.0.25)  
 
 Skipped:  
 Google-Photos-Akash-Sriram: 7.99.0.1007655401  
@@ -55,8 +50,12 @@ The-Battle-of-Polytopia: 2.17.3.16375
 Zombie-Catchers: latest  
 Reddit-Morphe: 2026.40.0
 Patches: MorpheApp/patches-2.2.0.mpp  
+Reddit-Morphe-Dev: 2026.45.0
+Patches: MorpheApp/patches-2.3.0-dev.2.mpp  
 YouTube-Morphe: 21.30.216
+YouTube-Morphe-Dev: 21.45.82
 YouTube-Music-Morphe: 9.30.53  
+YouTube-Music-Morphe-Dev: 9.45.51  
 Adobe-Photoshop-Mix: 2.6.3
 Patches: RookieEnough/patches-1.6.4.mpp  
 Cricbuzz: 6.24.01
@@ -69,8 +68,6 @@ Photomath: 8.48.0
 SoundCloud-RookieEnough: 2026.10.28.release
 Pinterest_HushPinterest: 14.41.0
 Patches: SysAdminDoc/patches-0.0.13.mpp  
-Telegram-Hush: 13.2.1  
-Patches: SysAdminDoc/patches-0.0.24.mpp  
 Discord_Venus-Patches: 351.11  
 Patches: VenusIsJaded/patches-1.21.1.mpp  
 Advanced-Download-Manager: 14.0.39  
@@ -137,9 +134,6 @@ Traffic-Rider: 2.11
 Truecloud: 4.6.5.13
 Vector: 2.10.2
 Vita-Mahjong: 3.46.0  
-Minesweeper: 1.21.3  
-Patches: cesbar/patches-1.13.1.mpp  
-Solitaire: 1.20.3  
 Brave-Beta-dh6k: latest
 Patches: dh6k/patches-1.9.0.mpp  
 Brave-Nightly-dh6k: latest
@@ -149,6 +143,11 @@ Patches: durgesh0505/patches-1.27.8.mpp
 Does-Not-Commute-chiggi: 1.5.5
 Letterboxd-ethanm6: latest
 Patches: ethanm6/patches-1.4.4.mpp  
+AnyDesk: latest
+Patches: heval99/patches-2.3.0.mpp  
+AquaMail: 2.8.1
+Firefox_Heval-Morphe-Patches: 159.0.1
+Truecaller: 26.44.6
 AdGuard-hoo-dles: 4.14.2
 Patches: hoo-dles/patches-1.47.0.mpp  
 CamScanner-hoo-dles: 7.20.0.2606230000
@@ -218,13 +217,9 @@ qBitConnect: 2.0.6
 Spotify_morphe-patches: latest
 Patches: spicetify/patches-1.2.0.mpp  
 Imgur: 7.34.0.0  
-Patches: sushruth/patches-1.0.0.mpp                      
+Patches: sushruth/patches-1.0.0.mpp                        
 
 ### Built versions  
-AnyDesk: latest
-AquaMail: 2.8.1
-Firefox_Heval-Morphe-Patches: 159.0.1
-Reddit-Morphe-Dev: 2026.45.0
-Truecaller: 26.44.6
-YouTube-Morphe-Dev: 21.45.82
-YouTube-Music-Morphe-Dev: 9.45.51  
+Minesweeper: 1.21.3
+Solitaire: 1.20.3
+Telegram-Hush: 13.2.1  
