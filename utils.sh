@@ -1917,9 +1917,9 @@ build_rv() {
 	version_f=${version_f#v}
 	local stock_apk="${TEMP_DIR}/${pkg_name}-${version_f}-${arch_f}.apk"
 	if [ ! -f "$stock_apk" ]; then
-		if [ -z "${args[morphe_dlurl]}" ] && [ -n "$pkg_name" ]; then
-			args[morphe_dlurl]="$pkg_name"
-		fi
+		# Only use the Morphe resolver when the config explicitly has a
+		# morphe-dlurl. It can return a different packaging/signature than the
+		# app's stock APK, so it must not be an implicit default.
 		if [ -z "${args[aptoide_dlurl]}" ] && [ -n "$pkg_name" ]; then
 			args[aptoide_dlurl]="$pkg_name"
 		fi

@@ -38,7 +38,7 @@ Paths are resolved relative to the directory of the file that names them, and ea
 3. **Prebuilt Acquisition:** Fetches the latest (or specified) ReVanced CLI and patches JARs from GitHub or GitLab.
 4. **App Processing:** For each enabled app in `config.toml`:
     - Finds the correct APK version (from Morphe, Aptoide, APKeep, APKCombo, APKMirror, APKPure, archive, direct, gplaydl, or Uptodown — see `DL_SRCS` in `utils.sh`).
-    - Downloads the APK, walking the sources in `DL_SRCS` order (with `morphe` and `aptoide` tested first whenever package name is known) and falling through to the next one whenever the current source cannot serve the required version. `apkeep` and `apkpure` also utilize 1-hop signed direct CDN downloads (`d.apkpure.com`) to bypass scraping blocks and Cloudflare issues.
+    - Downloads the APK, walking the sources in `DL_SRCS` order (with `aptoide` tested first whenever the package name is known; `morphe` only when the table explicitly sets `morphe-dlurl` or `morphe-helper-dlurl`) and falling through to the next one whenever the current source cannot serve the required version. `apkeep` and `apkpure` also utilize 1-hop signed direct CDN downloads (`d.apkpure.com`) to bypass scraping blocks and Cloudflare issues.
     - Applies patches using ReVanced CLI.
     - Packages the result as an APK or Magisk module.
 
@@ -67,5 +67,5 @@ Only keep sources that actually work for a given package. `apkpure` in particula
 - `./build.sh --list-apps`: Print every app table name found in the config.
 - `./build.sh clean`: Remove temporary and build directories.
 - `./build.sh <config.toml> --config-update`: Update the configuration file.
-- `./add-app.sh <app-name> <patch-source> [package-name]`: Add or update an app table in `configs/<owner>-<repo>.toml` using the canonical config style (standard header, key order, aligned `=`) and a plain table name like `[TradingView]`. Supports `--link <morphe-add-source-url>`, `--json`, `--dry-run`, `--table`, `--brand`, `--cli-source` and preserves existing comments/unmanaged keys.
+- `./add-app.sh <app-name> <patch-source> [package-name]`: Add or update an app table in `configs/<owner>-<repo>.toml` using the canonical config style (standard header, key order, aligned `=`) and a plain table name like `[TradingView]`. Supports `--link <morphe-add-source-url>`, `--json`, `--dry-run`, `--table`, `--brand`, `--cli-source` and preserves existing comments/unmanaged keys. New tables get `aptoide-dlurl` and `apkeep-dlurl`; `morphe-dlurl` is only added with `--morphe`.
 - `bash build-termux.sh`: Specialized build script for Termux environments.

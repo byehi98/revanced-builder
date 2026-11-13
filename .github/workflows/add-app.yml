@@ -36,6 +36,11 @@ on:
         required: false
         type: boolean
         default: false
+      use_morphe:
+        description: "Include morphe-dlurl (default: aptoide/apkeep only)"
+        required: false
+        type: boolean
+        default: false
 
 concurrency:
   group: add-app
@@ -71,6 +76,7 @@ jobs:
           RV_BRAND: ${{ inputs.rv_brand }}
           CLI_SOURCE: ${{ inputs.cli_source }}
           DRY_RUN: ${{ inputs.dry_run }}
+          USE_MORPHE: ${{ inputs.use_morphe }}
         run: |
           chmod +x ./add-app.sh ./scripts/add_app.py
 
@@ -82,6 +88,7 @@ jobs:
           if [ -n "$TABLE_NAME" ]; then args+=(--table "$TABLE_NAME"); fi
           if [ -n "$RV_BRAND" ]; then args+=(--brand "$RV_BRAND"); fi
           if [ -n "$CLI_SOURCE" ]; then args+=(--cli-source "$CLI_SOURCE"); fi
+          if [ "$USE_MORPHE" = "true" ]; then args+=(--morphe); fi
           if [ "$DRY_RUN" = "true" ]; then args+=(--dry-run); fi
 
           ./add-app.sh "${args[@]}" | tee /tmp/add-app.json

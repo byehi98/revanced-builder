@@ -682,6 +682,11 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser.add_argument("--table", help="exact config table name")
     parser.add_argument("--brand", help="rv-brand value")
     parser.add_argument("--cli-source", help="cli-source value")
+    parser.add_argument(
+        "--morphe",
+        action="store_true",
+        help="include morphe-dlurl (default: aptoide and apkeep only)",
+    )
     parser.add_argument("--config-file", dest="config_file_flag", help="destination config file")
     parser.add_argument("--json", action="store_true", help="print one JSON object")
     parser.add_argument("--dry-run", action="store_true", help="do not write the config")
@@ -806,10 +811,11 @@ def main(argv: list[str] | None = None) -> int:
         "patches-source": source,
         "cli-source": cli,
         "rv-brand": brand,
-        "morphe-dlurl": package,
-        "aptoide-dlurl": package,
-        "apkeep-dlurl": package,
     }
+    if args.morphe:
+        managed_plain["morphe-dlurl"] = package
+    managed_plain["aptoide-dlurl"] = package
+    managed_plain["apkeep-dlurl"] = package
     managed = {key: quote(value) for key, value in managed_plain.items()}
 
     if existing is None:

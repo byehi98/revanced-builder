@@ -17,6 +17,7 @@ Options:
   --table <name>       exact config table name (default: canonical app name)
   --brand <name>       rv-brand override (default: file brand, then owner)
   --cli-source <repo>  cli-source override (default: MorpheApp/morphe-cli)
+  --morphe             include morphe-dlurl (default: aptoide/apkeep only)
   --config-file <f>    destination config file
   --json               print one machine-readable JSON object
   --dry-run            show the proposed table without writing it
