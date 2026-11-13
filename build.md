@@ -1,11 +1,25 @@
 
-**1 apps built.**
+**8 apps built.**
   
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
 CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
-Patches: bearinmindcat/patches-2.9.5.mpp  
-[Changelog](https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.9.5)  
+Patches: bearinmindcat/patches-2.9.6.mpp  
+[Changelog](https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.9.6)
+
+CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
+Patches: byehi98/patches-1.50.0-dev.10.mpp  
+[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.50.0-dev.10)
+
+CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
+CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
+CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
+CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
+CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
+CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
+CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
+Patches: hxreborn/patches-1.77.0.mpp  
+[Changelog](https://github.com/hxreborn/morphe-patches/releases/tag/v1.77.0)  
 
 Skipped:  
 Google-Photos-Akash-Sriram: 7.99.0.1007655401  
@@ -87,15 +101,12 @@ Burrito-Bison: 3.75
 Crash-of-Cars: 1.9.36
 Crossy-Road: 7.14.3
 Dan-The-Man: 1.14.11
-Dead-Target: 4.186.0
-Patches: byehi98/patches-1.50.0-dev.9.mpp  
 Dead-Trigger: 2.3.4
 Document-Scanner: 6.9.9
 Doodle-Jump: 3.11.40
 Dr-Driving: 1.73
 Earn-to-Die-2: 1.5.6
 Fancy-Pants: 1.0.48
-Freejobalert: 1.0.0
 Fruit-Ninja: 3.97.9
 Grimvalor: 1.2.13
 HAAK: 1.4.3
@@ -106,19 +117,16 @@ Injustice: 3.5.1
 Into-The-Dead: 2.9.5
 Into-The-Dead-2: 1.88.0
 Jetpack-Joyride: 1.104.2
-Lemmings-Puzzle-Survival_okish-morphe-patches: 9.5.1
 Lumina-Walls: 1.0.2.6
 Magic-Survival_okish-morphe-patches: 0.9941
 Minutes-Till-Dawn_okish-morphe-patches: 8.7
 Missiles: 1.42
 Onlyone: 1.3053
 Plagueinc: 1.27.5
-Plants-vs-Zombies-Free: 3.18.0
 Plants-vs-Zombies_okish-morphe-patches: 3.18.0
 Progressbar95: 1.1111
 Rodeo-Stampede: 4.26.0
 Shooty-Skies: 3.441.100104
-Smashit: 1.5.14
 Swamp-Attack: 4.8.10.0
 Swamp-Attack-2: 1.4.1
 Swift-Backup: 5.1.1
@@ -127,8 +135,6 @@ Tentaclewars: 2.1.27
 Traffic-Racer: 4.0
 Traffic-Rider: 2.11
 Truecloud: 4.6.5.13
-Vector: 2.10.2
-Vita-Mahjong: 3.46.0  
 Minesweeper: 1.21.3
 Patches: cesbar/patches-1.14.0.mpp  
 Solitaire: 1.20.3
@@ -215,7 +221,14 @@ qBitConnect: 2.0.6
 Spotify_morphe-patches: latest
 Patches: spicetify/patches-1.2.0.mpp  
 Imgur: 7.34.0.0  
-Patches: sushruth/patches-1.0.0.mpp                          
+Patches: sushruth/patches-1.0.0.mpp                            
 
 ### Built versions  
-Google-Maps_morphe-patches: 26.36.04.973607363  
+Dead-Target: 4.186.0
+Freejobalert: 1.0.0
+Google-Maps_morphe-patches: 26.36.04.973607363
+Lemmings-Puzzle-Survival_okish-morphe-patches: 9.5.1
+Plants-vs-Zombies-Free: 3.18.0
+Smashit: 1.5.14
+Vector: 2.10.2
+Vita-Mahjong: 3.46.0  
