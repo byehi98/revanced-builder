@@ -1,0 +1,17 @@
+# crimera/piko-newx
+#
+# Patches bundle: https://github.com/crimera/piko-newx
+# CLI:            https://github.com/MorpheApp/morphe-cli
+
+# every <source>-dlurl below is tried in DL_SRCS order
+# (morphe, aptoide, apkeep, apkcombo, apkmirror, apkpure, archive, direct, gplaydl, uptodown) and the next one
+# is used when the current one cannot serve the required version.
+
+[Twitter]
+patches-source  = "crimera/piko-newx"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "crimera"
+morphe-dlurl    = "com.twitter.android"
+aptoide-dlurl   = "com.twitter.android"
+apkeep-dlurl    = "com.twitter.android"
+gplaydl-dlurl   = "com.twitter.android"
