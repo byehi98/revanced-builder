@@ -1,41 +1,11 @@
 
-**12 apps built.**
+**1 apps built.**
   
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
 CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
-Patches: bearinmindcat/patches-2.9.6.mpp  
-[Changelog](https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.9.6)
-
-CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
-Patches: byehi98/patches-1.50.0-dev.11.mpp  
-[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.50.0-dev.11)
-
-CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
-CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
-CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
-Patches: byehi98/patches-1.49.0.mpp  
-[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.49.0)
-
-CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
-CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
-CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
-CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
-CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
-Patches: heval99/patches-2.3.0.mpp  
-[Changelog](https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v2.3.0)
-
-CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
 Patches: hxreborn/patches-1.77.0.mpp  
 [Changelog](https://github.com/hxreborn/morphe-patches/releases/tag/v1.77.0)
-
-CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
-Patches: spicetify/patches-1.2.0.mpp  
-[Changelog](https://github.com/spicetify/morphe-patches/releases/tag/v1.2.0)
-
-CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
-Patches: SysAdminDoc/patches-0.0.13.mpp  
-[Changelog](https://github.com/SysAdminDoc/HushPinterest/releases/tag/v0.0.13)
 
 CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
 Patches: VenusIsJaded/patches-1.21.1.mpp  
@@ -95,6 +65,7 @@ Irplus: 1.9.13
 Letterboxd: 3.6.5
 Photomath: 8.48.0
 SoundCloud-RookieEnough: 2026.10.28.release
+Pinterest: 14.41.0
 Patches: SysAdminDoc/patches-0.0.13.mpp  
 Telegram-Hush: 13.2.1  
 Patches: SysAdminDoc/patches-0.0.25.mpp  
@@ -104,6 +75,7 @@ Patches: arandomhooman/patches-1.53.0.mpp
 FolderSync: 4.12.0  
 Microsoft-SwiftKey: 9.13.13.5  
 Poweramp: build-1025-bundle-play  
+Google-Maps: 26.36.04.973607363
 Patches: bearinmindcat/patches-2.9.6.mpp  
 Brave-Bufferk: 1.92.140
 Patches: bufferk/patches-1.8.1.mpp  
@@ -120,12 +92,15 @@ Burrito-Bison: 3.75
 Crash-of-Cars: 1.9.36
 Crossy-Road: 7.14.3
 Dan-The-Man: 1.14.11
+Dead-Target: 4.186.0
+Patches: byehi98/patches-1.50.0-dev.11.mpp  
 Dead-Trigger: 2.3.4
 Document-Scanner: 6.9.9
 Doodle-Jump: 3.11.40
 Dr-Driving: 1.73
 Earn-to-Die-2: 1.5.6
 Fancy-Pants: 1.0.48
+Freejobalert: 1.0.0
 Fruit-Ninja: 3.97.9
 Grimvalor: 1.2.13
 HAAK: 1.4.3
@@ -136,13 +111,17 @@ Injustice: 3.5.1
 Into-The-Dead: 2.9.5
 Into-The-Dead-2: 1.88.0
 Jetpack-Joyride: 1.104.2
+Lemmings-Puzzle-Survival: 9.5.1
 Lumina-Walls: 1.0.2.6
+Magic-Survival: 0.9941
 Missiles: 1.42
 Onlyone: 1.3053
 Plagueinc: 1.27.5
+Plants-vs-Zombies-Free: 3.18.0
 Progressbar95: 1.1111
 Rodeo-Stampede: 4.26.0
 Shooty-Skies: 3.441.100104
+Smashit: 1.5.14
 Swamp-Attack: 4.8.10.0
 Swamp-Attack-2: 1.4.1
 Swift-Backup: 5.1.1
@@ -151,6 +130,8 @@ Tentaclewars: 2.1.27
 Traffic-Racer: 4.0
 Traffic-Rider: 2.11
 Truecloud: 4.6.5.13
+Vector: 2.10.2
+Vita-Mahjong: 3.46.0  
 Minesweeper: 1.21.3
 Patches: cesbar/patches-1.14.0.mpp  
 Solitaire: 1.20.3
@@ -166,6 +147,7 @@ Patches: ethanm6/patches-1.4.4.mpp
 AnyDesk: latest
 Patches: heval99/patches-2.3.0.mpp  
 AquaMail: 2.8.1
+Firefox: 159.0.1
 Truecaller: 26.44.6
 AdGuard-hoo-dles: 4.14.2
 Patches: hoo-dles/patches-1.47.0.mpp  
@@ -233,20 +215,10 @@ Torrent-Search: 2.3.3
 Unimote: 1.8.1
 Yatri: 5.0.6
 qBitConnect: 2.0.6  
+Spotify: 2.2.553
 Patches: spicetify/patches-1.2.0.mpp  
 Imgur: 7.34.0.0  
-Patches: sushruth/patches-1.0.0.mpp                              
+Patches: sushruth/patches-1.0.0.mpp                                
 
 ### Built versions  
-Dead-Target: 4.186.0
-Firefox: 159.0.1
-Freejobalert: 1.0.0
-Google-Maps: 26.36.04.973607363
-Lemmings-Puzzle-Survival: 9.5.1
-Magic-Survival: 0.9941
-Pinterest: 14.41.0
-Plants-vs-Zombies-Free: 3.18.0
-Smashit: 1.5.14
-Spotify: 2.2.553
-Vector: 2.10.2
-Vita-Mahjong: 3.46.0  
+TradingView: 1.20.86.0.1002565  
