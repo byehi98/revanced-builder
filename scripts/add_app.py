@@ -44,6 +44,7 @@ DEFAULT_CLI = "MorpheApp/morphe-cli"
 ARCHIVE_URL = (
     "https://raw.githubusercontent.com/rushiforai/morphe-archive/refs/heads/main/docs/data.json"
 )
+CATALOG_URL = "https://morphe-patches.software/data/catalog.json"
 PACKAGE_RE = re.compile(r"^[A-Za-z][A-Za-z0-9_]*(\.[A-Za-z0-9_]+)+$")
 SOURCE_PART_RE = re.compile(r"^[A-Za-z0-9][A-Za-z0-9_.-]*$")
 BRAND_RE = re.compile(r"^[A-Za-z0-9][A-Za-z0-9._-]*$")
@@ -212,6 +213,7 @@ class Resolved:
 class BundleIndex:
     name_to_packages: dict[str, set[str]] = field(default_factory=dict)
     package_to_name: dict[str, str] = field(default_factory=dict)
+    display_name: dict[str, str] = field(default_factory=dict)
     packages: set[str] = field(default_factory=set)
     error: str | None = None
 
@@ -222,6 +224,7 @@ class BundleIndex:
         if not normalized:
             return
         self.name_to_packages.setdefault(normalized, set()).add(package)
+        self.display_name.setdefault(normalized, name.strip())
         self.package_to_name.setdefault(package, name)
         self.packages.add(package)
 
@@ -247,6 +250,74 @@ def load_bundle_index(source: str) -> BundleIndex:
 
     if not index.packages:
         index.error = "patches-list.json contains no compatible packages"
+    return index
+
+
+def compatibility_entries(value: object) -> list[dict]:
+    """Return compatibility records; the catalog mixes lists and bare objects."""
+    if isinstance(value, dict):
+        return [value]
+    if isinstance(value, list):
+        return [item for item in value if isinstance(item, dict)]
+    return []
+
+
+def load_site_index(source: str) -> BundleIndex:
+    """Load the target apps for ``source`` from the Morphe site catalog.
+
+    The catalog is a community-maintained internal endpoint, so every failure is
+    recoverable: callers fall back to existing configs, the GitHub release
+    index and the Morphe archive.
+    """
+    index = BundleIndex()
+    try:
+        data = fetch_json(CATALOG_URL, timeout=20)
+    except urllib.error.HTTPError as error:
+        index.error = f"HTTP {error.code} from {CATALOG_URL}"
+        return index
+    except Exception as error:  # noqa: BLE001 - best-effort fallback
+        index.error = f"{type(error).__name__}: {error}"
+        return index
+
+    bundles = data.get("bundles") if isinstance(data, dict) else None
+    if not isinstance(bundles, list):
+        index.error = "catalog.json has no bundles list"
+        return index
+
+    bundle = next(
+        (
+            item
+            for item in bundles
+            if isinstance(item, dict)
+            and str(item.get("repo") or "").lower() == source.lower()
+        ),
+        None,
+    )
+    if bundle is None:
+        index.error = f"{source} is not listed in the site catalog"
+        return index
+
+    compatibilities = data.get("compatibilities") or []
+    seen_keys: set[int] = set()
+    for patch in bundle.get("patches") or []:
+        if not isinstance(patch, dict):
+            continue
+        key = patch.get("compatiblePackagesKey")
+        if not isinstance(key, int) or isinstance(key, bool) or key in seen_keys:
+            continue
+        seen_keys.add(key)
+        if not 0 <= key < len(compatibilities):
+            continue
+        for entry in compatibility_entries(compatibilities[key]):
+            index.add(entry.get("name") or "", entry.get("packageName") or "")
+
+    # targetApps also covers packages that have no named compatibility entry.
+    for package in bundle.get("targetApps") or []:
+        if isinstance(package, str) and PACKAGE_RE.fullmatch(package):
+            index.packages.add(package)
+
+    if not index.packages:
+        index.error = f"site catalog has no target packages for {source}"
     return index
 
 
@@ -316,12 +387,17 @@ def load_index() -> tuple[list[AppRecord], dict[str, list[AppRecord]]]:
     return records, by_table
 
 
-def candidate_lines(name_to_packages: dict[str, set[str]], keys: list[str]) -> str:
+def candidate_lines(
+    name_to_packages: dict[str, set[str]],
+    keys: list[str],
+    display_name: dict[str, str] | None = None,
+) -> str:
     lines = []
     for key in keys:
+        label = (display_name or {}).get(key, key)
         packages = sorted(name_to_packages[key])
         for package in packages:
-            lines.append(f"  {key}  {package}")
+            lines.append(f"  {label}  {package}")
     return "\n".join(lines)
 
 
@@ -336,7 +412,10 @@ class Resolver:
         self.source = source
         self.records = records
         self.verbose = verbose
+        self.site = load_site_index(source)
         self.bundle = load_bundle_index(source)
+        if verbose and self.site.error:
+            warn(f"site catalog for {source}: {self.site.error}")
         if verbose and self.bundle.error:
             warn(f"bundle index for {source}: {self.bundle.error}")
 
@@ -344,54 +423,73 @@ class Resolver:
         if self.verbose:
             print(f"resolver: {message}", file=sys.stderr)
 
+    def from_site(self, query: str) -> Resolved | None:
+        return self.from_index(self.site, query, f"the site catalog for {self.source}")
+
     def from_bundle(self, query: str) -> Resolved | None:
-        bundle = self.bundle
-        if bundle.error or not bundle.packages:
+        return self.from_index(self.bundle, query, f"the {self.source} bundle")
+
+    def from_index(
+        self, index: BundleIndex, query: str, origin: str
+    ) -> Resolved | None:
+        if index.error or not index.packages:
             return None
 
         if PACKAGE_RE.fullmatch(query):
-            name = bundle.package_to_name.get(query)
-            if name:
-                self.note(f"matched package {query} in {self.source}")
-                return Resolved(query, name, None, "bundle package")
-            return None
+            if query not in index.packages:
+                return None
+            self.note(f"matched package {query} in {origin}")
+            return Resolved(
+                query, index.package_to_name.get(query), None, f"{origin} package"
+            )
 
         normalized = normalize_name(query)
-        packages = bundle.name_to_packages.get(normalized)
+        packages = index.name_to_packages.get(normalized)
         if packages:
-            self.note(f"exact name match for '{query}' in {self.source}")
-            return self.single_choice(normalized, packages, "bundle")
+            self.note(f"exact name match for '{query}' in {origin}")
+            return self.single_choice(normalized, packages, index, origin)
 
         close = difflib.get_close_matches(
-            normalized, list(bundle.name_to_packages), n=5, cutoff=0.85
+            normalized, list(index.name_to_packages), n=5, cutoff=0.85
         )
-        close = [key for key in close if bundle.name_to_packages.get(key)]
+        close = [key for key in close if index.name_to_packages.get(key)]
         if len(close) > 1:
             raise Failure(
-                f"'{query}' is ambiguous in {self.source}.\n"
-                f"Candidates:\n{candidate_lines(bundle.name_to_packages, close)}\n"
+                f"'{query}' is ambiguous in {origin}.\n"
+                f"Candidates:\n"
+                f"{candidate_lines(index.name_to_packages, close, index.display_name)}\n"
                 "Pass --package or a more specific app name.",
                 EXIT_AMBIGUOUS,
             )
         if len(close) == 1:
+            self.note(f"close match for '{query}' -> '{close[0]}' in {origin}")
             return self.single_choice(
-                close[0], bundle.name_to_packages[close[0]], "bundle (close match)"
+                close[0],
+                index.name_to_packages[close[0]],
+                index,
+                f"{origin} (close match)",
             )
         return None
 
     def single_choice(
-        self, normalized: str, packages: set[str], origin: str
+        self,
+        normalized: str,
+        packages: set[str],
+        index: BundleIndex,
+        origin: str,
     ) -> Resolved:
         if len(packages) > 1:
-            lines = "\n".join(f"  {package}" for package in sorted(packages))
+            lines = "\n".join(
+                f"  {index.package_to_name.get(package) or package}  {package}"
+                for package in sorted(packages)
+            )
             raise Failure(
-                f"'{normalized}' matches more than one package in {self.source}:\n"
+                f"'{normalized}' matches more than one package in {origin}:\n"
                 f"{lines}\nPass --package to choose one.",
                 EXIT_AMBIGUOUS,
             )
         package = next(iter(packages))
-        name = self.bundle.package_to_name.get(package) if self.bundle else None
-        return Resolved(package, name, None, origin)
+        return Resolved(package, index.package_to_name.get(package), None, origin)
 
     def from_configs(self, query: str) -> Resolved | None:
         same_source = [
@@ -504,17 +602,30 @@ class Resolver:
     def resolve(self, query: str, explicit_package: str | None) -> Resolved:
         if explicit_package:
             name = None
-            if not self.bundle.error and self.bundle.packages:
-                name = self.bundle.package_to_name.get(explicit_package)
-                if not name:
-                    warn(
-                        f"package {explicit_package} is not listed in "
-                        f"{self.source} target packages; writing it anyway"
-                    )
+            known = False
+            for index in (self.site, self.bundle):
+                if index.error or not index.packages:
+                    continue
+                if explicit_package in index.packages:
+                    known = True
+                    name = index.package_to_name.get(explicit_package) or name
+            if not known:
+                warn(
+                    f"package {explicit_package} is not listed in "
+                    f"{self.source} target packages; writing it anyway"
+                )
             self.note(f"using explicit package {explicit_package}")
             return Resolved(explicit_package, name, None, "explicit package")
 
-        for resolver in (self.from_bundle, self.from_configs, self.from_archive):
+        # The site catalog is the upstream source of truth. Only fall back to
+        # local configs, the GitHub release index and the archive when it cannot
+        # answer (unknown bundle, network error, app not indexed).
+        for resolver in (
+            self.from_site,
+            self.from_configs,
+            self.from_bundle,
+            self.from_archive,
+        ):
             resolved = resolver(query)
             if resolved and resolved.package:
                 return resolved
