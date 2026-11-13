@@ -1,16 +1,11 @@
 
-**3 apps built.**
+**1 apps built.**
   
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
 CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
-Patches: cesbar/patches-1.14.0.mpp  
-[Changelog](https://github.com/cesbar/zpatches/releases/tag/v1.14.0)
-
-CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
-CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
-Patches: SysAdminDoc/patches-0.0.25.mpp  
-[Changelog](https://github.com/SysAdminDoc/HushTelegram/releases/tag/v0.0.25)  
+Patches: bearinmindcat/patches-2.9.5.mpp  
+[Changelog](https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.9.5)  
 
 Skipped:  
 Google-Photos-Akash-Sriram: 7.99.0.1007655401  
@@ -68,6 +63,8 @@ Photomath: 8.48.0
 SoundCloud-RookieEnough: 2026.10.28.release
 Pinterest_HushPinterest: 14.41.0
 Patches: SysAdminDoc/patches-0.0.13.mpp  
+Telegram-Hush: 13.2.1  
+Patches: SysAdminDoc/patches-0.0.25.mpp  
 Discord_Venus-Patches: 351.11  
 Patches: VenusIsJaded/patches-1.21.1.mpp  
 Advanced-Download-Manager: 14.0.39  
@@ -75,8 +72,6 @@ Patches: arandomhooman/patches-1.53.0.mpp
 FolderSync: 4.12.0  
 Microsoft-SwiftKey: 9.13.13.5  
 Poweramp: build-1025-bundle-play  
-Google-Maps_morphe-patches: 26.36.04.973607363  
-Patches: bearinmindcat/patches-2.9.4.mpp  
 Brave-Bufferk: 1.92.140
 Patches: bufferk/patches-1.8.1.mpp  
 Medium: 4.5.1784910928
@@ -134,6 +129,9 @@ Traffic-Rider: 2.11
 Truecloud: 4.6.5.13
 Vector: 2.10.2
 Vita-Mahjong: 3.46.0  
+Minesweeper: 1.21.3
+Patches: cesbar/patches-1.14.0.mpp  
+Solitaire: 1.20.3
 Brave-Beta-dh6k: latest
 Patches: dh6k/patches-1.9.0.mpp  
 Brave-Nightly-dh6k: latest
@@ -217,9 +215,7 @@ qBitConnect: 2.0.6
 Spotify_morphe-patches: latest
 Patches: spicetify/patches-1.2.0.mpp  
 Imgur: 7.34.0.0  
-Patches: sushruth/patches-1.0.0.mpp                        
+Patches: sushruth/patches-1.0.0.mpp                          
 
 ### Built versions  
-Minesweeper: 1.21.3
-Solitaire: 1.20.3
-Telegram-Hush: 13.2.1  
+Google-Maps_morphe-patches: 26.36.04.973607363  
