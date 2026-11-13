@@ -67,10 +67,8 @@ morphe-dlurl  	= "com.community.oneroom"
 aptoide-dlurl  	= "com.community.oneroom"
 uptodown-dlurl  	= "https://com-community-oneroom.en.uptodown.com/android"
 
-[TradingView_morphe-patches]
+[TradingView_hxreborn]
 patches-source 	= "hxreborn/morphe-patches"
 cli-source 	= "MorpheApp/morphe-cli"
 rv-brand 	= "hxreborn"
-morphe-dlurl 	= "com.tradingview.tradingviewapp"
-aptoide-dlurl 	= "com.tradingview.tradingviewapp"
 apkeep-dlurl 	= "com.tradingview.tradingviewapp"
