@@ -36,8 +36,13 @@ on:
         required: false
         type: boolean
         default: false
+      no_probe:
+        description: "Skip probing; write morphe/aptoide/apkeep without checking them"
+        required: false
+        type: boolean
+        default: false
       use_morphe:
-        description: "Include morphe-dlurl (default: aptoide/apkeep only)"
+        description: "With no_probe: also write morphe-dlurl (probes add it automatically)"
         required: false
         type: boolean
         default: false
@@ -53,6 +58,15 @@ jobs:
       actions: write
     runs-on: ubuntu-latest
     timeout-minutes: 15
+    env:
+      # lets add_app.py probe Cloudflare-protected stores (apkpure/apkcombo/
+      # apkmirror/uptodown) exactly like the build workflows do
+      CF_SOLVER_URL: http://localhost:8000
+    services:
+      cf-solver:
+        image: ghcr.io/sarperavci/cloudflarebypassforscraping:latest
+        ports:
+          - 8000:8000
     steps:
       - name: Checkout
         uses: actions/checkout@v7
@@ -76,6 +90,7 @@ jobs:
           RV_BRAND: ${{ inputs.rv_brand }}
           CLI_SOURCE: ${{ inputs.cli_source }}
           DRY_RUN: ${{ inputs.dry_run }}
+          NO_PROBE: ${{ inputs.no_probe }}
           USE_MORPHE: ${{ inputs.use_morphe }}
         run: |
           chmod +x ./add-app.sh ./scripts/add_app.py
@@ -89,6 +104,7 @@ jobs:
           if [ -n "$RV_BRAND" ]; then args+=(--brand "$RV_BRAND"); fi
           if [ -n "$CLI_SOURCE" ]; then args+=(--cli-source "$CLI_SOURCE"); fi
           if [ "$USE_MORPHE" = "true" ]; then args+=(--morphe); fi
+          if [ "$NO_PROBE" = "true" ]; then args+=(--no-probe); fi
           if [ "$DRY_RUN" = "true" ]; then args+=(--dry-run); fi
 
           ./add-app.sh "${args[@]}" | tee /tmp/add-app.json

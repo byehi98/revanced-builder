@@ -1377,13 +1377,25 @@ _dl_apkpure_direct() {
 	if [ "$target_ver" = "auto" ]; then target_ver="latest"; fi
 
 	# `version=latest` only works while a patch tracks APKPure's newest release.
-	# For a pinned version, ask for the version code when the last version
-	# component looks like one (e.g. 1.20.86.0.1002565 -> 1002565); APKPure
-	# accepts that and still serves the original, signed single APK.
+	# For a pinned version, ask for the version code; APKPure accepts that and
+	# still serves the original, signed APK. Version codes vary by app:
+	#   1.20.86.0.1002565 -> 1002565        (last component is the code)
+	#   351.11            -> 351011         (major + zero-padded minor)
+	#   24.10.1           -> 241001         (major*10000 + minor*100 + patch)
+	# Every candidate is verified against the returned filename below, so an
+	# unrelated code can never download the wrong version.
 	local -a queries=("version=latest")
 	local last_segment="${target_ver##*.}"
 	if [[ "$last_segment" =~ ^[0-9]+$ ]]; then
-		queries+=("versionCode=${last_segment}")
+		queries+=("versionCode=$((10#$last_segment))")
+	fi
+	local major minor patch
+	if [[ "$target_ver" =~ ^([0-9]+)\.([0-9]+)$ ]]; then
+		major=${BASH_REMATCH[1]} minor=${BASH_REMATCH[2]}
+		queries+=("versionCode=$(printf '%s%03d' "$((10#$major))" "$((10#$minor))")")
+	elif [[ "$target_ver" =~ ^([0-9]+)\.([0-9]+)\.([0-9]+)$ ]]; then
+		major=${BASH_REMATCH[1]} minor=${BASH_REMATCH[2]} patch=${BASH_REMATCH[3]}
+		queries+=("versionCode=$((10#$major * 10000 + 10#$minor * 100 + 10#$patch))")
 	fi
 
 	for kind in "APK" "XAPK"; do

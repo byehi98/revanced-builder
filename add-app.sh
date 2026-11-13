@@ -17,11 +17,13 @@ Options:
   --table <name>       exact config table name (default: canonical app name)
   --brand <name>       rv-brand override (default: file brand, then owner)
   --cli-source <repo>  cli-source override (default: MorpheApp/morphe-cli)
-  --morphe             include morphe-dlurl (default: aptoide/apkeep only)
+  --morphe             force morphe-dlurl with --no-probe (auto-added when probed)
+  --no-probe           skip probing; write morphe/aptoide/apkeep unchecked
   --config-file <f>    destination config file
   --json               print one machine-readable JSON object
   --dry-run            show the proposed table without writing it
-  --force              overwrite a conflicting table / uncomment managed keys
+  --force              overwrite a conflicting table, uncomment managed keys,
+                       and add newly probed sources to an existing table
   --force-new          create a new table even if the app/source pair exists
   --verbose            explain each resolver step
 

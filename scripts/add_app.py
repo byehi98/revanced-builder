@@ -5,6 +5,11 @@ The generated config follows the repository-wide style enforced by
 ``scripts/config_style.py``: canonical header, key order, aligned ``=`` and
 plain app table names (``[TradingView]``, not ``[TradingView_morphe-patches]``).
 
+By default every download source is probed and only the sources that can
+confirm the package are written.  Sources that are unreachable, do not list
+the app, or whose store slug cannot be verified are skipped.  Use
+``--no-probe`` to write the legacy morphe/aptoide/apkeep defaults unchecked.
+
 Usage:
     python3 scripts/add_app.py <app-name> <patch-source> [package-name] [config-file]
     python3 scripts/add_app.py --app TradingView --source hxreborn/morphe-patches --json
@@ -15,14 +20,19 @@ from __future__ import annotations
 import argparse
 import difflib
 import glob
+import hashlib
+import hmac
 import json
+import os
 import re
 import sys
+import time
 import tomllib
 import urllib.error
 import urllib.parse
 import urllib.request
 from collections import Counter
+from concurrent.futures import ThreadPoolExecutor
 from dataclasses import dataclass, field
 from pathlib import Path
 
@@ -154,6 +164,352 @@ def validate_brand(brand: str) -> str:
             "(allowed: letters, digits, '.', '-' and '_')"
         )
     return brand
+
+
+# ---------------------------------------------------------------------------
+# Download-source probing
+#
+# New tables get every download source that can be confirmed to know the
+# package; sources that cannot be reached, that do not list the app, or whose
+# slug cannot be verified are skipped rather than guessed.  The probes mirror
+# the URLs used by ``utils.sh``, so a source that passes here is one the build
+# can actually resolve.
+# ---------------------------------------------------------------------------
+
+PROBE_TIMEOUT = int(os.environ.get("ADD_APP_PROBE_TIMEOUT", "15"))
+PROBE_AGENT = (
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+    "(KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+)
+# Optional Cloudflare-bypass service (same image the build workflow uses).
+CF_SOLVER_URL = os.environ.get("CF_SOLVER_URL", "").rstrip("/")
+UTD_EAPI_SECRET = b"MDGMXUMdvHJBG/vjdFgmqX6LUdy7ecfwvYNd0gyfOCs="
+UTD_EAPI_HEADERS = {
+    "Identificador": "Uptodown_Android",
+    "Identificador-Version": "736",
+    "User-Agent": "Dalvik/2.1.0 (Linux; U; Android 14; SM-G955F Build/AP2A.240805.005)",
+}
+# DL_SRCS order from utils.sh; archive/direct are not auto-derivable.
+PROBE_ORDER = [
+    "morphe",
+    "aptoide",
+    "apkeep",
+    "apkcombo",
+    "apkmirror",
+    "apkpure",
+    "gplaydl",
+    "uptodown",
+]
+
+_utd_token: tuple[str, float] = ("", 0.0)
+
+
+class _NoRedirect(urllib.request.HTTPRedirectHandler):
+    def redirect_request(self, req, fp, code, msg, headers, newurl):  # noqa: ANN001
+        return None
+
+
+_NO_REDIRECT_OPENER = urllib.request.build_opener(_NoRedirect)
+
+
+def http_get(
+    url: str,
+    *,
+    data: bytes | None = None,
+    headers: dict[str, str] | None = None,
+    timeout: int = PROBE_TIMEOUT,
+) -> tuple[int, str, str]:
+    """Return ``(status, body, final_url)``, never raising for HTTP errors."""
+    request = urllib.request.Request(url, data=data)
+    request.add_header("User-Agent", PROBE_AGENT)
+    for key, value in (headers or {}).items():
+        request.add_header(key, value)
+    try:
+        with urllib.request.urlopen(request, timeout=timeout) as response:
+            body = response.read().decode("utf-8", "replace")
+            return response.status, body, response.geturl()
+    except urllib.error.HTTPError as error:
+        try:
+            body = error.read().decode("utf-8", "replace")
+        except Exception:  # noqa: BLE001 - best-effort probe
+            body = ""
+        return error.code, body, error.geturl()
+    except Exception:  # noqa: BLE001 - network errors mean "not reachable"
+        return 0, "", url
+
+
+def head_location(url: str) -> tuple[int, str]:
+    """Fetch only the redirect headers, so APKPure's CDN file is not downloaded."""
+    for method in ("HEAD", "GET"):
+        request = urllib.request.Request(url, method=method)
+        request.add_header("User-Agent", PROBE_AGENT)
+        try:
+            with _NO_REDIRECT_OPENER.open(request, timeout=PROBE_TIMEOUT) as response:
+                return response.status, response.headers.get("Location", "")
+        except urllib.error.HTTPError as error:
+            location = error.headers.get("Location", "") if error.headers else ""
+            return error.code, location
+        except Exception:  # noqa: BLE001 - try GET when HEAD is unsupported
+            continue
+    return 0, ""
+
+
+def fetch_page(url: str) -> str:
+    """Fetch a page directly, falling back to the Cloudflare solver if set."""
+    status, body, _ = http_get(url)
+    if status == 200 and body.strip():
+        return body
+    if CF_SOLVER_URL:
+        solver_url = (
+            f"{CF_SOLVER_URL}/html?url={urllib.parse.quote(url, safe='')}"
+        )
+        status, body, _ = http_get(solver_url, timeout=max(PROBE_TIMEOUT, 60))
+        if status == 200 and body.strip():
+            return body
+    return ""
+
+
+def wait_for_solver(timeout: int = 60) -> bool:
+    """Wait until the workflow's ``cf-solver`` container is accepting requests.
+
+    The service starts in parallel with checkout/setup-python, so without this
+    the first probes can race it and wrongly report the protected stores as
+    unavailable.
+    """
+    if not CF_SOLVER_URL:
+        return False
+    deadline = time.monotonic() + timeout
+    while time.monotonic() < deadline:
+        status, _, _ = http_get(f"{CF_SOLVER_URL}/html", timeout=5)
+        if status:
+            return True
+        time.sleep(2)
+    return False
+
+
+def slug_candidates(package: str, app_name: str | None) -> list[str]:
+    """Likely store slugs: display name, its first chunk, then the package tail."""
+    values: list[str] = []
+    if app_name:
+        values.append(slugify(app_name))
+        values.append(slugify(re.split(r"[:|(\[]", app_name, maxsplit=1)[0]))
+    values.append(package.rsplit(".", 1)[-1])
+    candidates: list[str] = []
+    for value in values:
+        slug = value.strip("-").lower()
+        if slug and slug not in candidates:
+            candidates.append(slug)
+    return candidates[:4]
+
+
+def probe_morphe(package: str) -> str | None:
+    url = f"https://api.morphe.software/v2/web-search/{package}~any~arm64-v8a"
+    _, _, final = http_get(url, headers={"User-Agent": "Morphe-Manager/1.0"})
+    final_l = final.lower()
+    if not final_l.startswith(("http://", "https://")):
+        return None
+    # A fallback/Google result means the resolver has no target for this package.
+    if "google.com/search" in final_l or "fallback" in final_l:
+        return None
+    if "api.morphe.software" in final_l:
+        return None
+    return package
+
+
+def probe_aptoide(package: str) -> str | None:
+    url = (
+        "https://ws75.aptoide.com/api/7/listAppVersions"
+        f"?package_name={urllib.parse.quote(package)}&limit=100"
+    )
+    status, body, _ = http_get(url)
+    if status != 200 or not body:
+        return None
+    try:
+        data = json.loads(body)
+    except json.JSONDecodeError:
+        return None
+    if (data.get("info") or {}).get("status") != "OK":
+        return None
+    versions = data.get("list") or (data.get("datalist") or {}).get("list") or []
+    return package if versions else None
+
+
+def probe_apkeep(package: str) -> str | None:
+    url = f"https://d.apkpure.com/b/APK/{package}?version=latest"
+    status, location = head_location(url)
+    if status in (301, 302, 303, 307, 308) and "filename=" in location:
+        return package
+    return None
+
+
+def probe_gplaydl(package: str) -> str | None:
+    url = (
+        "https://play.google.com/store/apps/details"
+        f"?id={urllib.parse.quote(package)}&hl=en&gl=US"
+    )
+    status, body, _ = http_get(url)
+    if status == 200 and package in body:
+        return package
+    return None
+
+
+def probe_apkpure(package: str, app_name: str | None) -> str | None:
+    for slug in slug_candidates(package, app_name):
+        url = f"https://apkpure.net/{slug}/{package}"
+        body = fetch_page(f"{url}/versions")
+        if not body:
+            continue
+        if re.search(
+            rf'data-dt-package-name=["\']?{re.escape(package)}', body
+        ) or package in body:
+            return url
+    return None
+
+
+def probe_apkcombo(package: str, app_name: str | None) -> str | None:
+    for slug in slug_candidates(package, app_name):
+        page = f"https://apkcombo.com/{slug}/{package}/"
+        body = fetch_page(f"{page}versions/")
+        if not body:
+            # apkcombo blocks direct requests from some networks; its pages are
+            # reachable through the same translate wrapper utils.sh uses.
+            translated = (
+                "https://translate.google.com/website?sl=auto&tl=en&hl=en"
+                f"&client=webapp&u={urllib.parse.quote(f'{page}versions/', safe='')}"
+            )
+            body = fetch_page(translated)
+        if body and package in body:
+            return page
+    return None
+
+
+def probe_apkmirror(package: str, app_name: str | None) -> str | None:
+    queries = [package]
+    if app_name:
+        queries.append(app_name)
+    for query in queries[:2]:
+        search = (
+            "https://www.apkmirror.com/?post_type=app_release"
+            f"&searchtype=apk&s={urllib.parse.quote(query)}"
+        )
+        body = fetch_page(search)
+        if not body:
+            continue
+        candidates: list[str] = []
+        for href in re.findall(r'href="([^"]+)"', body):
+            href = href.split("?")[0]
+            if href.startswith("/apk/"):
+                href = "https://www.apkmirror.com" + href
+            if not re.fullmatch(
+                r"https://www\.apkmirror\.com/apk/[^/]+/[^/]+/?", href
+            ):
+                continue
+            if href not in candidates:
+                candidates.append(href)
+        for candidate in candidates[:6]:
+            page = fetch_page(candidate)
+            match = re.search(r'id=([^"\s]+)"\s+class="accent_color', page or "")
+            if match and match.group(1) == package:
+                return candidate
+    return None
+
+
+def _uptodown_eapi_token() -> str:
+    global _utd_token
+    cached, fetched_at = _utd_token
+    now = time.time()
+    if cached and now - fetched_at < 1500:
+        return cached
+
+    stamp = str(int(now))
+    digest = hmac.new(
+        UTD_EAPI_SECRET, stamp.encode(), hashlib.sha256
+    ).hexdigest()
+    status, body, _ = http_get(
+        "https://www.uptodown.app/eapi/auth/token",
+        data=f"hmac={digest}&unixtime={stamp}".encode(),
+        headers={**UTD_EAPI_HEADERS, "Content-Type": "application/x-www-form-urlencoded"},
+    )
+    if status != 200 or not body:
+        return ""
+    try:
+        token = json.loads(body).get("token") or ""
+    except json.JSONDecodeError:
+        return ""
+    if token:
+        _utd_token = (token, now)
+    return token
+
+
+def _uptodown_package(app_code: str) -> str | None:
+    token = _uptodown_eapi_token()
+    if not token:
+        return None
+    status, body, _ = http_get(
+        "https://www.uptodown.app/eapi/v3/apps/"
+        f"{urllib.parse.quote(app_code)}/device/0?countryIsoCode=US",
+        headers={**UTD_EAPI_HEADERS, "Authorization": f"Bearer {token}"},
+    )
+    if status != 200 or not body:
+        return None
+    try:
+        return (json.loads(body).get("data") or {}).get("packagename") or None
+    except json.JSONDecodeError:
+        return None
+
+
+def probe_uptodown(package: str, app_name: str | None) -> str | None:
+    for slug in slug_candidates(package, app_name):
+        url = f"https://{slug}.en.uptodown.com/android"
+        body = fetch_page(url)
+        if not body:
+            continue
+        match = re.search(
+            r'id="detail-app-name"[^>]*data-code="([^"]+)"', body
+        ) or re.search(r'data-code="([^"]+)"', body)
+        if not match:
+            continue
+        if _uptodown_package(match.group(1)) == package:
+            return url
+    return None
+
+
+def probe_download_sources(
+    package: str, app_name: str | None, *, verbose: bool = False
+) -> dict[str, str]:
+    """Return the download sources that can be confirmed to serve *package*."""
+    probes = {
+        "morphe": lambda: probe_morphe(package),
+        "aptoide": lambda: probe_aptoide(package),
+        "apkeep": lambda: probe_apkeep(package),
+        "apkcombo": lambda: probe_apkcombo(package, app_name),
+        "apkmirror": lambda: probe_apkmirror(package, app_name),
+        "apkpure": lambda: probe_apkpure(package, app_name),
+        "gplaydl": lambda: probe_gplaydl(package),
+        "uptodown": lambda: probe_uptodown(package, app_name),
+    }
+
+    results: dict[str, str] = {}
+    wait_for_solver()
+    with ThreadPoolExecutor(max_workers=5) as pool:
+        futures = {key: pool.submit(run) for key, run in probes.items()}
+        for key in PROBE_ORDER:
+            future = futures.get(key)
+            if future is None:
+                continue
+            try:
+                value = future.result()
+            except Exception as error:  # noqa: BLE001 - one probe must not fail add
+                if verbose:
+                    warn(f"probe {key}: {type(error).__name__}: {error}")
+                continue
+            if value:
+                results[key] = value
+                if verbose:
+                    print(f"probe: {key} -> {value}", file=sys.stderr)
+            elif verbose:
+                print(f"probe: {key} -> unavailable", file=sys.stderr)
+    return results
 
 
 @dataclass
@@ -759,6 +1115,7 @@ def build_output(
     brand: str,
     cli: str,
     dry_run: bool,
+    download_sources: dict[str, str] | None = None,
 ) -> dict:
     return {
         "status": status,
@@ -770,6 +1127,7 @@ def build_output(
         "app_name": app_name,
         "rv_brand": brand,
         "cli_source": cli,
+        "download_sources": download_sources or {},
         "dry_run": dry_run,
         "table_toml": "\n".join(render_table(table)),
     }
@@ -796,7 +1154,13 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser.add_argument(
         "--morphe",
         action="store_true",
-        help="include morphe-dlurl (default: aptoide and apkeep only)",
+        help="include morphe-dlurl when probing is disabled (probes add it automatically)",
+    )
+    parser.add_argument(
+        "--no-probe",
+        dest="no_probe",
+        action="store_true",
+        help="skip source probing; write morphe/aptoide/apkeep without checking them",
     )
     parser.add_argument("--config-file", dest="config_file_flag", help="destination config file")
     parser.add_argument("--json", action="store_true", help="print one JSON object")
@@ -804,7 +1168,10 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser.add_argument(
         "--force",
         action="store_true",
-        help="overwrite a conflicting table and uncomment managed keys",
+        help=(
+            "overwrite a conflicting table, uncomment managed keys, and add "
+            "probed sources that the table does not have yet"
+        ),
     )
     parser.add_argument(
         "--force-new",
@@ -923,10 +1290,26 @@ def main(argv: list[str] | None = None) -> int:
         "cli-source": cli,
         "rv-brand": brand,
     }
-    if args.morphe:
-        managed_plain["morphe-dlurl"] = package
-    managed_plain["aptoide-dlurl"] = package
-    managed_plain["apkeep-dlurl"] = package
+    probed: dict[str, str] = {}
+    if args.no_probe:
+        if args.morphe:
+            managed_plain["morphe-dlurl"] = package
+        managed_plain["aptoide-dlurl"] = package
+        managed_plain["apkeep-dlurl"] = package
+    else:
+        probed = probe_download_sources(
+            package, resolved.name or app_input, verbose=args.verbose
+        )
+        if not probed:
+            raise Failure(
+                f"no download source could be confirmed for {package}.\n"
+                "Sources were unreachable or do not list the app. Retry with\n"
+                "  --no-probe\n"
+                "to write morphe/aptoide/apkeep without checking them."
+            )
+        managed_plain.update(
+            {f"{key}-dlurl": value for key, value in probed.items()}
+        )
     managed = {key: quote(value) for key, value in managed_plain.items()}
 
     if existing is None:
@@ -935,7 +1318,12 @@ def main(argv: list[str] | None = None) -> int:
         status = "added"
     else:
         new_table = merge_table(
-            existing, managed, uncomment_managed=args.force, add_missing=False
+            existing,
+            managed,
+            uncomment_managed=args.force,
+            # --force also lets probing add sources the table does not have yet;
+            # a plain re-run still never reintroduces a key a maintainer removed.
+            add_missing=args.force,
         )
         tables[tables.index(existing)] = new_table
         status = "updated"
@@ -992,6 +1380,11 @@ def main(argv: list[str] | None = None) -> int:
         brand=brand,
         cli=cli,
         dry_run=args.dry_run,
+        download_sources=probed if not args.no_probe else {
+            key.removesuffix("-dlurl"): value
+            for key, value in managed_plain.items()
+            if key.endswith("-dlurl")
+        },
     )
 
     if args.json:
@@ -1008,6 +1401,11 @@ def main(argv: list[str] | None = None) -> int:
         print(f"    Patch Source: {source}")
         print(f"    CLI Source: {cli}")
         print(f"    Brand: {brand}")
+        if result["download_sources"]:
+            print(
+                "    Download Sources: "
+                + ", ".join(result["download_sources"].keys())
+            )
         if changed:
             print(f"    Resolution: {resolved.origin}")
 
