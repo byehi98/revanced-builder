@@ -1316,28 +1316,51 @@ _dl_apkpure_direct() {
 	local target_ver="${version:-latest}"
 	if [ "$target_ver" = "auto" ]; then target_ver="latest"; fi
 
+	# `version=latest` only works while a patch tracks APKPure's newest release.
+	# For a pinned version, ask for the version code when the last version
+	# component looks like one (e.g. 1.20.86.0.1002565 -> 1002565); APKPure
+	# accepts that and still serves the original, signed single APK.
+	local -a queries=("version=latest")
+	local last_segment="${target_ver##*.}"
+	if [[ "$last_segment" =~ ^[0-9]+$ ]]; then
+		queries+=("versionCode=${last_segment}")
+	fi
+
 	for kind in "APK" "XAPK"; do
-		local direct_url="https://d.apkpure.com/b/${kind}/${pkg}?version=latest"
-		local loc
-		loc=$(curl -sIL -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64)" --max-redirs 3 "$direct_url" | grep -i "^location:" | tail -n 1 | awk '{print $2}' | tr -d '\r') || loc=""
-		if [ -n "$loc" ] && [[ "$loc" == *winudf.com* ]]; then
+		for query in "${queries[@]}"; do
+			local direct_url="https://d.apkpure.com/b/${kind}/${pkg}?${query}"
+			local loc
+			# Read only the first redirect. Following it lands on a CDN host that
+			# varies by region (data.winudf.com, a signed object URL, ...), while
+			# the first Location already points at the file.
+			loc=$(curl -sI -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64)" --max-time 20 "$direct_url" | grep -i "^location:" | head -n 1 | awk '{print $2}' | tr -d '\r') || loc=""
+			if [ -z "$loc" ] || [[ "$loc" != *"filename="* ]]; then
+				continue
+			fi
+
 			local fname=""
 			if [[ "$loc" =~ filename=([^&]+) ]]; then
 				fname="${BASH_REMATCH[1]}"
 			fi
 			local ver_hyphen="${target_ver//./-}"
 			local ver_underscore="${target_ver//./_}"
-			if [ "$target_ver" = "latest" ] || [[ "$fname" == *"$target_ver"* ]] || [[ "$fname" == *"$ver_hyphen"* ]] || [[ "$fname" == *"$ver_underscore"* ]] || [[ "$loc" == *"$ver_hyphen"* ]]; then
-				pr "Found direct APKPure CDN download for '${pkg}' (${target_ver})"
-				if [ "$kind" = "XAPK" ]; then
-					_req "$loc" "${output}.apkm" || return 1
-					merge_splits "${output}.apkm" "${output}"
-				else
-					_req "$loc" "${output}" || return 1
-				fi
-				return 0
+			if [ "$target_ver" != "latest" ] &&
+				[[ "$fname" != *"$target_ver"* ]] &&
+				[[ "$loc" != *"$target_ver"* ]] &&
+				[[ "$loc" != *"$ver_hyphen"* ]] &&
+				[[ "$loc" != *"$ver_underscore"* ]]; then
+				continue
 			fi
-		fi
+
+			pr "Found direct APKPure CDN download for '${pkg}' (${target_ver})"
+			if [ "$kind" = "XAPK" ]; then
+				_req "$loc" "${output}.apkm" || return 1
+				merge_splits "${output}.apkm" "${output}"
+			else
+				_req "$loc" "${output}" || return 1
+			fi
+			return 0
+		done
 	done
 	return 1
 }
@@ -1449,6 +1472,7 @@ _dl_apkeep_locked() {
 	if _dl_apkpure_direct "$pkg" "$version" "$output"; then
 		return 0
 	fi
+	pr "Direct APKPure APK unavailable for '$pkg' ($version); falling back to apkeep"
 
 	if ! command -v apkeep >/dev/null 2>&1; then
 		epr "apkeep is not installed or not in PATH. Are you in the nix shell?"
