@@ -1,15 +1,14 @@
 
-**1 apps built.**
+**3 apps built.**
   
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
 CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
-Patches: crimera/patches-3.75.0.mpp  
-[Changelog](https://github.com/crimera/piko-newx/releases/tag/v3.75.0)
+Patches: MorpheApp/patches-2.3.0-dev.3.mpp  
+[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v2.3.0-dev.3)
 
 CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
-Patches: VenusIsJaded/patches-1.21.1.mpp  
-[Changelog](https://github.com/VenusIsJaded/Venus-Patches/releases/tag/v1.21.1)  
+CLI: MorpheApp/morphe-desktop-2.1.1-all.jar    
 
 Skipped:  
 Google-Photos-Akash-Sriram: 7.99.0.1007655401  
@@ -21,7 +20,7 @@ Patches: Aunali321/patches-2.0.0.rvp
 Automate: 1.51.1  
 Patches: BholeyKaBhakt/patches-2.12.0.mpp  
 Backdrops: 6.1.2  
-Patches: BholeyKaBhakt/patches-2.13.0-dev.1.mpp  
+Patches: BholeyKaBhakt/patches-2.12.0.mpp  
 Speedtest: 7.0.4  
 All-Video-Downloader-and-Ace-Player: 1.9.8
 Patches: BlazeFTL/patches-1.43.7.4.mpp  
@@ -49,12 +48,8 @@ The-Battle-of-Polytopia: 2.17.3.16375
 Zombie-Catchers: latest  
 Reddit-Morphe: 2026.40.0
 Patches: MorpheApp/patches-2.2.0.mpp  
-Reddit-Morphe-Dev: 2026.45.0
-Patches: MorpheApp/patches-2.3.0-dev.2.mpp  
 YouTube-Morphe: 21.30.216
-YouTube-Morphe-Dev: 21.45.82
 YouTube-Music-Morphe: 9.30.53  
-YouTube-Music-Morphe-Dev: 9.45.51  
 Adobe-Photoshop-Mix: 2.6.3
 Patches: RookieEnough/patches-1.6.4.mpp  
 Cricbuzz: 6.24.01
@@ -69,7 +64,6 @@ Pinterest: 14.41.0
 Patches: SysAdminDoc/patches-0.0.13.mpp  
 Telegram-Hush: 13.2.1  
 Patches: SysAdminDoc/patches-0.0.25.mpp  
-Patches: VenusIsJaded/patches-1.21.1.mpp  
 Advanced-Download-Manager: 14.0.39  
 Patches: arandomhooman/patches-1.53.0.mpp  
 FolderSync: 4.12.0  
@@ -135,6 +129,8 @@ Vita-Mahjong: 3.46.0
 Minesweeper: 1.21.3
 Patches: cesbar/patches-1.14.0.mpp  
 Solitaire: 1.20.3
+Twitter: 12.41.0-prod.01  
+Patches: crimera/patches-3.75.0.mpp  
 Brave-Beta-dh6k: latest
 Patches: dh6k/patches-1.9.0.mpp  
 Brave-Nightly-dh6k: latest
@@ -219,7 +215,9 @@ qBitConnect: 2.0.6
 Spotify: 2.2.553
 Patches: spicetify/patches-1.2.0.mpp  
 Imgur: 7.34.0.0  
-Patches: sushruth/patches-1.0.0.mpp                                    
+Patches: sushruth/patches-1.0.0.mpp                                      
 
 ### Built versions  
-Twitter: 12.41.0-prod.01  
+Reddit-Morphe-Dev: 2026.46.0
+YouTube-Morphe-Dev: 21.45.82
+YouTube-Music-Morphe-Dev: 9.45.51  
