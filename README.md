@@ -15,7 +15,7 @@ Get the [latest CI release](https://github.com/j-hc/revanced-magisk-module/relea
 ## Build Status
 <!-- BUILD_STATUS_START -->
 <details>
-<summary><b>174 of 175 apps built</b> — click to expand the full list</summary>
+<summary><b>174 of 174 apps built</b> — click to expand the full list</summary>
 
 #### `Akash-Sriram/morphe-google-photos` · `patches-1.17.11.mpp`
 
@@ -350,12 +350,6 @@ Get the [latest CI release](https://github.com/j-hc/revanced-magisk-module/relea
 | App | Status | Obtainium |
 | :--- | :---: | :---: |
 | `Telegram-Hush` ([APK](https://github.com/byehi98/revanced-builder/releases/download/395/telegram-hush-hush-v13.2.1-all.apk)) | ✅ | [![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22org.telegram.messenger%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Telegram-Hush%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22telegram-hush-hush%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D) |
-
-#### `VenusIsJaded/Venus-Patches` · `patches-1.21.1.mpp`
-
-| App | Status | Obtainium |
-| :--- | :---: | :---: |
-| `Discord` | ❌ | [![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.discord%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Discord%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22discord-venusisjaded%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D) |
 
 </details>
 <!-- BUILD_STATUS_END -->
