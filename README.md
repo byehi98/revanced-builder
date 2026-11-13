@@ -44,11 +44,11 @@ Get the [latest CI release](https://github.com/j-hc/revanced-magisk-module/relea
 | :--- | :---: | :---: |
 | `Telegram` ([APK](https://github.com/byehi98/revanced-builder/releases/download/262/telegram-aunali321-v12.10.5-all.apk)) | ✅ | [![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22org.telegram.messenger%22%2C%22url%22%3A%22https%3A//byehi98.github.io/revanced-builder/apps/telegram.html%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Telegram%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22%28%3F%3A/%7C-%29telegram-aunali321-%5B%5E/%5D%2A%24%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22versionExtractWholePage%5C%22%3Atrue%2C%5C%22versionExtractionRegEx%5C%22%3A%5C%22name%3D%5C%5C%5C%22obtainium-version%5C%5C%5C%22%20content%3D%5C%5C%5C%22%28%5B%5E%5C%5C%5C%22%5D%2B%29%5C%5C%5C%22%5C%22%2C%5C%22matchGroupToUse%5C%22%3A%5C%221%5C%22%7D%22%2C%22overrideSource%22%3A%22HTML%22%7D) |
 
-#### `bearinmindcat/morphe-patches` · `patches-2.9.4.mpp`
+#### `bearinmindcat/morphe-patches` · `patches-2.9.5.mpp`
 
 | App | Status | Obtainium |
 | :--- | :---: | :---: |
-| `Google-Maps_morphe-patches` ([APK](https://github.com/byehi98/revanced-builder/releases/download/377/google-maps_morphe-patches-bearinmindcat-v26.36.04.973607363-all.apk)) | ✅ | [![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22org.ungoogled.android.apps.maps%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Google-Maps_morphe-patches%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22google-maps_morphe-patches-bearinmindcat%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D) |
+| `Google-Maps_morphe-patches` ([APK](https://github.com/byehi98/revanced-builder/releases/download/396/google-maps_morphe-patches-bearinmindcat-v26.36.04.973607363-all.apk)) | ✅ | [![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22org.ungoogled.android.apps.maps%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Google-Maps_morphe-patches%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22google-maps_morphe-patches-bearinmindcat%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D) |
 
 #### `BholeyKaBhakt/android-patches-xtra` · `patches-2.12.0.mpp`
 
@@ -334,13 +334,13 @@ Get the [latest CI release](https://github.com/j-hc/revanced-magisk-module/relea
 | :--- | :---: | :---: |
 | `Imgur` ([APK](https://github.com/byehi98/revanced-builder/releases/download/262/imgur-imgur-v7.34.0.0-all.apk)) | ✅ | [![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.imgur.mobile%22%2C%22url%22%3A%22https%3A//byehi98.github.io/revanced-builder/apps/imgur.html%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Imgur%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22%28%3F%3A/%7C-%29imgur-imgur-%5B%5E/%5D%2A%24%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22versionExtractWholePage%5C%22%3Atrue%2C%5C%22versionExtractionRegEx%5C%22%3A%5C%22name%3D%5C%5C%5C%22obtainium-version%5C%5C%5C%22%20content%3D%5C%5C%5C%22%28%5B%5E%5C%5C%5C%22%5D%2B%29%5C%5C%5C%22%5C%22%2C%5C%22matchGroupToUse%5C%22%3A%5C%221%5C%22%7D%22%2C%22overrideSource%22%3A%22HTML%22%7D) |
 
-#### `SysAdminDoc/HushPinterest` · `patches-0.0.13.mpp`
+#### `SysAdminDoc/HushPinterest` · `patches-0.0.25.mpp`
 
 | App | Status | Obtainium |
 | :--- | :---: | :---: |
 | `Pinterest_HushPinterest` ([APK](https://github.com/byehi98/revanced-builder/releases/download/358/pinterest_hushpinterest-sysadmindoc-v14.41.0-all.apk)) | ✅ | [![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.pinterest%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Pinterest_HushPinterest%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22pinterest_hushpinterest-sysadmindoc%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D) |
 
-#### `SysAdminDoc/HushTelegram` · `patches-0.0.13.mpp`
+#### `SysAdminDoc/HushTelegram` · `patches-0.0.25.mpp`
 
 | App | Status | Obtainium |
 | :--- | :---: | :---: |
