@@ -4,8 +4,8 @@
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
 CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
-Patches: hxreborn/patches-1.77.0.mpp  
-[Changelog](https://github.com/hxreborn/morphe-patches/releases/tag/v1.77.0)
+Patches: BholeyKaBhakt/patches-2.13.0-dev.1.mpp  
+[Changelog](https://github.com/BholeyKaBhakt/android-patches-xtra/releases/tag/v2.13.0-dev.1)
 
 CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
 Patches: VenusIsJaded/patches-1.21.1.mpp  
@@ -19,8 +19,6 @@ Patches: Alastor-Kaneki/patches-1.15.3.mpp
 Telegram: 12.10.1  
 Patches: Aunali321/patches-2.0.0.rvp  
 Automate: 1.51.1  
-Patches: BholeyKaBhakt/patches-2.12.0.mpp  
-Backdrops: 6.1.2  
 Patches: BholeyKaBhakt/patches-2.12.0.mpp  
 Speedtest: 7.0.4  
 All-Video-Downloader-and-Ace-Player: 1.9.8
@@ -165,6 +163,7 @@ MovieBox-hxreborn: 4.0.03.1020.03
 ProtonVPN-hxreborn: 5.21.9.0
 Protonmail: 7.11.12
 Symfonium: 15.1.0
+TradingView: 1.20.86.0.1002565  
 Reddit-Adobo: 2026.45.0
 Patches: jkennethcarino/patches-2.0.0-dev.4.mpp  
 AudioRelay: 0.26.1  
@@ -218,7 +217,7 @@ qBitConnect: 2.0.6
 Spotify: 2.2.553
 Patches: spicetify/patches-1.2.0.mpp  
 Imgur: 7.34.0.0  
-Patches: sushruth/patches-1.0.0.mpp                                
+Patches: sushruth/patches-1.0.0.mpp                                  
 
 ### Built versions  
-TradingView: 1.20.86.0.1002565  
+Backdrops: 6.1.2  
