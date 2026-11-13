@@ -4,13 +4,13 @@
 # CLI:            https://github.com/MorpheApp/morphe-cli
 
 # every <source>-dlurl below is tried in DL_SRCS order
-# (morphe, apkeep, apkcombo, apkmirror, apkpure, archive, direct, gplaydl, uptodown) and the next one
+# (morphe, aptoide, apkeep, apkcombo, apkmirror, apkpure, archive, direct, gplaydl, uptodown) and the next one
 # is used when the current one cannot serve the required version.
 
-[Pinterest_HushPinterest]
-patches-source 	= "SysAdminDoc/HushPinterest"
-cli-source 	= "MorpheApp/morphe-cli"
-rv-brand 	= "SysAdminDoc"
-morphe-dlurl 	= "com.pinterest"
-aptoide-dlurl 	= "com.pinterest"
-apkeep-dlurl 	= "com.pinterest"
+[Pinterest]
+patches-source  = "SysAdminDoc/HushPinterest"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "SysAdminDoc"
+morphe-dlurl    = "com.pinterest"
+aptoide-dlurl   = "com.pinterest"
+apkeep-dlurl    = "com.pinterest"

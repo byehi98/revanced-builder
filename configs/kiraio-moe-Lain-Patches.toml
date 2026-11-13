@@ -4,49 +4,49 @@
 # CLI:            https://github.com/MorpheApp/morphe-cli
 
 # every <source>-dlurl below is tried in DL_SRCS order
-# (morphe, apkeep, apkcombo, apkmirror, apkpure, gplaydl, uptodown) and the next one
+# (morphe, aptoide, apkeep, apkcombo, apkmirror, apkpure, archive, direct, gplaydl, uptodown) and the next one
 # is used when the current one cannot serve the required version.
 
 [AudioRelay]
 patches-source  = "kiraio-moe/Lain-Patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "lain"
-morphe-dlurl    	= "com.azefsw.audioconnect"
-aptoide-dlurl    	= "com.azefsw.audioconnect"
-apkeep-dlurl    	= "com.azefsw.audioconnect"
-apkcombo-dlurl  	= "https://apkcombo.com/audiorelay/com.azefsw.audioconnect/"
-uptodown-dlurl  	= "https://audiorelay.en.uptodown.com/android"
+morphe-dlurl    = "com.azefsw.audioconnect"
+aptoide-dlurl   = "com.azefsw.audioconnect"
+apkeep-dlurl    = "com.azefsw.audioconnect"
+apkcombo-dlurl  = "https://apkcombo.com/audiorelay/com.azefsw.audioconnect/"
+uptodown-dlurl  = "https://audiorelay.en.uptodown.com/android"
 
 [Camera]
 patches-source  = "kiraio-moe/Lain-Patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "lain"
-morphe-dlurl    	= "com.flavionet.android.camera.lite"
-aptoide-dlurl    	= "com.flavionet.android.camera.lite"
-apkeep-dlurl    	= "com.flavionet.android.camera.lite"
-apkcombo-dlurl  	= "https://apkcombo.com/camera/com.flavionet.android.camera.lite/"
-apkmirror-dlurl 	= "https://www.apkmirror.com/apk/fgae-apps/camera-fv-5-lite/"
-uptodown-dlurl  	= "https://camera-fv-5-lite.en.uptodown.com/android"
+morphe-dlurl    = "com.flavionet.android.camera.lite"
+aptoide-dlurl   = "com.flavionet.android.camera.lite"
+apkeep-dlurl    = "com.flavionet.android.camera.lite"
+apkcombo-dlurl  = "https://apkcombo.com/camera/com.flavionet.android.camera.lite/"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/fgae-apps/camera-fv-5-lite/"
+uptodown-dlurl  = "https://camera-fv-5-lite.en.uptodown.com/android"
 
 [iLovePDF]
 patches-source  = "kiraio-moe/Lain-Patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "lain"
-morphe-dlurl    	= "com.ilovepdf.www"
-aptoide-dlurl    	= "com.ilovepdf.www"
-apkeep-dlurl    	= "com.ilovepdf.www"
-apkcombo-dlurl  	= "https://apkcombo.com/ilovepdf/com.ilovepdf.www/"
-apkpure-dlurl   	= "https://apkpure.net/ilovepdf/com.ilovepdf.www"
-uptodown-dlurl  	= "https://ilovepdf.en.uptodown.com/android"
+morphe-dlurl    = "com.ilovepdf.www"
+aptoide-dlurl   = "com.ilovepdf.www"
+apkeep-dlurl    = "com.ilovepdf.www"
+apkcombo-dlurl  = "https://apkcombo.com/ilovepdf/com.ilovepdf.www/"
+apkpure-dlurl   = "https://apkpure.net/ilovepdf/com.ilovepdf.www"
+uptodown-dlurl  = "https://ilovepdf.en.uptodown.com/android"
 
 [Hidden-Settings]
 patches-source  = "kiraio-moe/Lain-Patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "lain"
-morphe-dlurl    	= "com.ceyhan.sets"
-aptoide-dlurl    	= "com.ceyhan.sets"
-apkeep-dlurl    	= "com.ceyhan.sets"
-apkcombo-dlurl  	= "https://apkcombo.com/hidden-settings/com.ceyhan.sets/"
-apkmirror-dlurl 	= "https://www.apkmirror.com/apk/yunus-ceyhan/hidden-settings-miui-hyperos/"
-apkpure-dlurl   	= "https://apkpure.net/hidden-settings/com.ceyhan.sets"
-uptodown-dlurl  	= "https://hidden-settings-for-miui.en.uptodown.com/android"
+morphe-dlurl    = "com.ceyhan.sets"
+aptoide-dlurl   = "com.ceyhan.sets"
+apkeep-dlurl    = "com.ceyhan.sets"
+apkcombo-dlurl  = "https://apkcombo.com/hidden-settings/com.ceyhan.sets/"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/yunus-ceyhan/hidden-settings-miui-hyperos/"
+apkpure-dlurl   = "https://apkpure.net/hidden-settings/com.ceyhan.sets"
+uptodown-dlurl  = "https://hidden-settings-for-miui.en.uptodown.com/android"

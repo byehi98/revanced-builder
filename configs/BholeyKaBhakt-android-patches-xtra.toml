@@ -4,17 +4,17 @@
 # CLI:            https://github.com/MorpheApp/morphe-cli
 
 # every <source>-dlurl below is tried in DL_SRCS order
-# (morphe, apkeep, apkcombo, apkmirror, apkpure, gplaydl, uptodown) and the next one
+# (morphe, aptoide, apkeep, apkcombo, apkmirror, apkpure, archive, direct, gplaydl, uptodown) and the next one
 # is used when the current one cannot serve the required version.
 
 [Automate]
 patches-source  = "BholeyKaBhakt/android-patches-xtra"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "xtra"
-morphe-dlurl 	= "com.llamalab.automate"
-aptoide-dlurl 	= "com.llamalab.automate"
-apkeep-dlurl 	= "com.llamalab.automate"
-apkcombo-dlurl 	= "https://apkcombo.com/automate/com.llamalab.automate/"
+morphe-dlurl    = "com.llamalab.automate"
+aptoide-dlurl   = "com.llamalab.automate"
+apkeep-dlurl    = "com.llamalab.automate"
+apkcombo-dlurl  = "https://apkcombo.com/automate/com.llamalab.automate/"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/llamalab/automate-llamalab/"
 
 [Backdrops]
@@ -22,20 +22,20 @@ patches-source  = "BholeyKaBhakt/android-patches-xtra"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "xtra"
 patches-version = "dev"
-morphe-dlurl 	= "com.backdrops.wallpapers"
-aptoide-dlurl 	= "com.backdrops.wallpapers"
-apkeep-dlurl 	= "com.backdrops.wallpapers"
-apkcombo-dlurl 	= "https://apkcombo.com/backdrops/com.backdrops.wallpapers/"
+morphe-dlurl    = "com.backdrops.wallpapers"
+aptoide-dlurl   = "com.backdrops.wallpapers"
+apkeep-dlurl    = "com.backdrops.wallpapers"
+apkcombo-dlurl  = "https://apkcombo.com/backdrops/com.backdrops.wallpapers/"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/backdrops/backdrops-wallpapers/"
-uptodown-dlurl 	= "https://backdrops.en.uptodown.com/android"
+uptodown-dlurl  = "https://backdrops.en.uptodown.com/android"
 
 [Speedtest]
 patches-source  = "BholeyKaBhakt/android-patches-xtra"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "xtra"
-morphe-dlurl 	= "org.zwanoo.android.speedtest"
-aptoide-dlurl 	= "org.zwanoo.android.speedtest"
-apkeep-dlurl 	= "org.zwanoo.android.speedtest"
-apkcombo-dlurl 	= "https://apkcombo.com/speedtest/org.zwanoo.android.speedtest/"
+morphe-dlurl    = "org.zwanoo.android.speedtest"
+aptoide-dlurl   = "org.zwanoo.android.speedtest"
+apkeep-dlurl    = "org.zwanoo.android.speedtest"
+apkcombo-dlurl  = "https://apkcombo.com/speedtest/org.zwanoo.android.speedtest/"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/ookla/speedtest/"
-apkpure-dlurl 	= "https://apkpure.net/speedtest/org.zwanoo.android.speedtest"
+apkpure-dlurl   = "https://apkpure.net/speedtest/org.zwanoo.android.speedtest"

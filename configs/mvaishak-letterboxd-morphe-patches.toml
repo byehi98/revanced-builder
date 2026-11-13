@@ -4,17 +4,17 @@
 # CLI:            https://github.com/MorpheApp/morphe-cli
 
 # every <source>-dlurl below is tried in DL_SRCS order
-# (morphe, apkeep, apkcombo, apkmirror, apkpure, gplaydl, uptodown) and the next one
+# (morphe, aptoide, apkeep, apkcombo, apkmirror, apkpure, archive, direct, gplaydl, uptodown) and the next one
 # is used when the current one cannot serve the required version.
 
 [Letterboxd-mvaishak]
 patches-source  = "mvaishak/letterboxd-morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "mvaishak"
-morphe-dlurl    	= "com.letterboxd.letterboxd"
-aptoide-dlurl    	= "com.letterboxd.letterboxd"
-apkeep-dlurl    	= "com.letterboxd.letterboxd"
-apkcombo-dlurl  	= "https://apkcombo.com/letterboxd/com.letterboxd.letterboxd/"
-apkmirror-dlurl 	= "https://www.apkmirror.com/apk/letterboxd-limited/letterboxd/"
-apkpure-dlurl   	= "https://apkpure.net/letterboxd/com.letterboxd.letterboxd"
-uptodown-dlurl  	= "https://letterboxd.en.uptodown.com/android"
+morphe-dlurl    = "com.letterboxd.letterboxd"
+aptoide-dlurl   = "com.letterboxd.letterboxd"
+apkeep-dlurl    = "com.letterboxd.letterboxd"
+apkcombo-dlurl  = "https://apkcombo.com/letterboxd/com.letterboxd.letterboxd/"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/letterboxd-limited/letterboxd/"
+apkpure-dlurl   = "https://apkpure.net/letterboxd/com.letterboxd.letterboxd"
+uptodown-dlurl  = "https://letterboxd.en.uptodown.com/android"
