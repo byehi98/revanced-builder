@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       app_name:
-        description: "Application name (e.g. YouTube, Reddit, or package name)"
+        description: "Application name or Android package (e.g. YouTube, com.spotify.music)"
         required: true
         type: string
       patch_source:
@@ -15,6 +15,27 @@ on:
         description: "Android package name (optional, automatically resolved if left empty)"
         required: false
         type: string
+      table_name:
+        description: "Exact config table name (optional, defaults to the canonical app name)"
+        required: false
+        type: string
+      rv_brand:
+        description: "rv-brand override (optional, defaults to the config file's brand)"
+        required: false
+        type: string
+      cli_source:
+        description: "cli-source override (optional, defaults to MorpheApp/morphe-cli)"
+        required: false
+        type: string
+      dry_run:
+        description: "Resolve and preview only; do not commit"
+        required: false
+        type: boolean
+        default: false
+
+concurrency:
+  group: add-app
+  cancel-in-progress: false
 
 jobs:
   add-app:
@@ -22,6 +43,7 @@ jobs:
       contents: write
       actions: write
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - name: Checkout
         uses: actions/checkout@v7
@@ -32,40 +54,120 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v7
         with:
-          python-version: "3.11"
+          python-version: "3.12"
 
-      - name: Add App Configuration
+      - name: Resolve and write config
         id: add
+        env:
+          APP_NAME: ${{ inputs.app_name }}
+          PATCH_SOURCE: ${{ inputs.patch_source }}
+          PACKAGE_NAME: ${{ inputs.package_name }}
+          TABLE_NAME: ${{ inputs.table_name }}
+          RV_BRAND: ${{ inputs.rv_brand }}
+          CLI_SOURCE: ${{ inputs.cli_source }}
+          DRY_RUN: ${{ inputs.dry_run }}
         run: |
           chmod +x ./add-app.sh ./scripts/add_app.py
-          OUTPUT=$(./add-app.sh "${{ inputs.app_name }}" "${{ inputs.patch_source }}" "${{ inputs.package_name }}")
-          printf '%s\n' "$OUTPUT"
-          TABLE=$(printf '%s\n' "$OUTPUT" | sed -n 's/^\[+\] Successfully added table \[\(.*\)\] to .*$/\1/p' | tail -n1)
-          if [ -z "$TABLE" ]; then
-            echo "::error::Could not determine the table name that was added"
-            exit 1
-          fi
-          echo "table=$TABLE" >> "$GITHUB_OUTPUT"
 
-      - name: Validate Configurations
+          args=(--json --app "$APP_NAME" --source "$PATCH_SOURCE")
+          if [ -n "$PACKAGE_NAME" ]; then args+=(--package "$PACKAGE_NAME"); fi
+          if [ -n "$TABLE_NAME" ]; then args+=(--table "$TABLE_NAME"); fi
+          if [ -n "$RV_BRAND" ]; then args+=(--brand "$RV_BRAND"); fi
+          if [ -n "$CLI_SOURCE" ]; then args+=(--cli-source "$CLI_SOURCE"); fi
+          if [ "$DRY_RUN" = "true" ]; then args+=(--dry-run); fi
+
+          ./add-app.sh "${args[@]}" | tee /tmp/add-app.json
+          jq -e . /tmp/add-app.json >/dev/null
+
+          echo "table=$(jq -r '.table' /tmp/add-app.json)" >> "$GITHUB_OUTPUT"
+          echo "config_file=$(jq -r '.config_file' /tmp/add-app.json)" >> "$GITHUB_OUTPUT"
+          echo "package=$(jq -r '.package' /tmp/add-app.json)" >> "$GITHUB_OUTPUT"
+          echo "patch_source=$(jq -r '.patch_source' /tmp/add-app.json)" >> "$GITHUB_OUTPUT"
+          echo "changed=$(jq -r '.changed' /tmp/add-app.json)" >> "$GITHUB_OUTPUT"
+
+      - name: Validate configurations
+        if: ${{ !inputs.dry_run }}
+        env:
+          TABLE: ${{ steps.add.outputs.table }}
+          CONFIG_FILE: ${{ steps.add.outputs.config_file }}
         run: |
           chmod +x ./bin/toml/tq-x86_64
-          ./build.sh --list-apps
+          python3 - "$CONFIG_FILE" "$TABLE" <<'PY'
+          import collections
+          import glob
+          import sys
+          import tomllib
+
+          config_file, table = sys.argv[1], sys.argv[2]
+          raw = open(config_file, encoding="utf-8").read()
+          if not raw.endswith("\n"):
+              raise SystemExit(f"{config_file}: missing final newline")
+          if "\t" in raw:
+              raise SystemExit(f"{config_file}: contains a tab character")
+          if any(line.rstrip() != line for line in raw.splitlines()):
+              raise SystemExit(f"{config_file}: contains trailing whitespace")
+
+          data = tomllib.load(open(config_file, "rb"))
+          if not isinstance(data.get(table), dict):
+              raise SystemExit(f"[{table}] is missing from {config_file}")
+
+          names = collections.Counter()
+          for file in glob.glob("configs/*.toml"):
+              parsed = tomllib.load(open(file, "rb"))
+              names.update(key for key, value in parsed.items() if isinstance(value, dict))
+          duplicates = sorted(name for name, count in names.items() if count > 1)
+          if duplicates:
+              raise SystemExit("duplicate table names: " + ", ".join(duplicates))
+          print(f"OK: {len(names)} tables; [{table}] is present in {config_file}")
+          PY
+          ./build.sh --list-apps >/dev/null
+          git diff --check
 
       - name: Commit and Push Changes
         id: commit
+        if: ${{ !inputs.dry_run && steps.add.outputs.changed == 'true' }}
+        env:
+          APP_NAME: ${{ inputs.app_name }}
+          PATCH_SOURCE: ${{ steps.add.outputs.patch_source }}
+          TABLE: ${{ steps.add.outputs.table }}
+          PACKAGE: ${{ steps.add.outputs.package }}
+          CONFIG_FILE: ${{ steps.add.outputs.config_file }}
+          ACTOR: ${{ github.actor }}
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add configs/
+          git add -- "$CONFIG_FILE"
+
           if git diff --staged --quiet; then
             echo "No changes to commit."
             echo "changed=false" >> "$GITHUB_OUTPUT"
-          else
-            git commit -m "Add ${{ inputs.app_name }} with patch source ${{ inputs.patch_source }}"
-            git push origin HEAD:main
-            echo "changed=true" >> "$GITHUB_OUTPUT"
+            exit 0
           fi
+
+          git commit -F - <<EOF
+          Add ${APP_NAME} with patch source ${PATCH_SOURCE}
+
+          Table: ${TABLE}
+          Package: ${PACKAGE}
+          Triggered-by: @${ACTOR}
+          EOF
+
+          pushed=false
+          for attempt in 1 2 3; do
+            if git push origin HEAD:main; then
+              pushed=true
+              break
+            fi
+            echo "Push attempt ${attempt} failed; rebasing on origin/main."
+            git pull --rebase origin main || true
+            sleep 5
+          done
+          if [ "$pushed" != "true" ]; then
+            echo "::error::Could not push the config update"
+            exit 1
+          fi
+
+          echo "changed=true" >> "$GITHUB_OUTPUT"
 
       # A push made with GITHUB_TOKEN does not trigger other workflows, so the
       # build has to be dispatched explicitly. workflow_dispatch is the one
@@ -74,12 +176,13 @@ jobs:
         if: steps.commit.outputs.changed == 'true'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TABLE: ${{ steps.add.outputs.table }}
         run: |
           for attempt in 1 2 3 4 5; do
             if gh workflow run ci.yml --ref main \
                 -f force_build=true \
-                -f app="${{ steps.add.outputs.table }}"; then
-              echo "Dispatched CI build for the new app."
+                -f app="$TABLE"; then
+              echo "Dispatched CI build for $TABLE."
               exit 0
             fi
             echo "CI dispatch attempt ${attempt} failed, retrying..."
@@ -87,3 +190,41 @@ jobs:
           done
           echo "::error::Could not dispatch ci.yml"
           exit 1
+
+      - name: Job summary
+        if: always()
+        env:
+          JOB_STATUS: ${{ job.status }}
+          DRY_RUN: ${{ inputs.dry_run }}
+          TABLE: ${{ steps.add.outputs.table }}
+          CONFIG_FILE: ${{ steps.add.outputs.config_file }}
+          PACKAGE: ${{ steps.add.outputs.package }}
+          PATCH_SOURCE: ${{ steps.add.outputs.patch_source }}
+          CHANGED: ${{ steps.add.outputs.changed }}
+        run: |
+          {
+            echo "### Add App result"
+            echo ""
+            echo "| Field | Value |"
+            echo "|---|---|"
+            echo "| Status | \`$JOB_STATUS\` |"
+            echo "| Table | \`${TABLE:-n/a}\` |"
+            echo "| Config | \`${CONFIG_FILE:-n/a}\` |"
+            echo "| Package | \`${PACKAGE:-n/a}\` |"
+            echo "| Patch source | \`${PATCH_SOURCE:-n/a}\` |"
+            echo "| Changed | \`${CHANGED:-n/a}\` |"
+            echo "| Dry run | \`$DRY_RUN\` |"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+          if [ -s /tmp/add-app.json ]; then
+            {
+              echo ""
+              echo "<details><summary>Proposed table</summary>"
+              echo ""
+              echo '```toml'
+              jq -r '.table_toml' /tmp/add-app.json
+              echo '```'
+              echo ""
+              echo "</details>"
+            } >> "$GITHUB_STEP_SUMMARY"
+          fi
