@@ -6,6 +6,10 @@ TEMP_DIR="temp"
 BIN_DIR="bin"
 BUILD_DIR="build"
 DL_SRCS=("morphe" "aptoide" "apkeep" "apkcombo" "apkmirror" "apkpure" "archive" "direct" "gplaydl" "uptodown")
+# Set per build in build_rv(): patches that check the developer certificate
+# (GmsCore/MicroG support) need the untouched stock signature, so a split bundle
+# must not be merged and re-signed. merge_splits() reads this flag.
+REQUIRE_STOCK_SIGNATURE=false
 
 if [ "${GITHUB_TOKEN-}" ]; then GH_HEADER="Authorization: token ${GITHUB_TOKEN}"; else GH_HEADER=; fi
 if [ "${GL_TOKEN-}" ]; then GL_HEADER="PRIVATE-TOKEN: ${GL_TOKEN}"; else GL_HEADER=; fi
@@ -863,10 +867,66 @@ merge_splits() {
 	_with_lock "merge.$(_lock_key "$output")" _merge_splits_locked "$bundle" "$output"
 }
 
+# Extract the original, developer-signed base APK from a split bundle. Used when
+# a patch validates the stock certificate: an APKEditor merge is re-signed with
+# ks-p12.keystore, which invalidates that certificate (Morphe then aborts with
+# "Patch a stock APK instead").
+extract_base_apk() {
+	local bundle=$1 output=$2 entry="" entries
+	# Capture the listing once: `unzip -Z1 | grep -q` would make grep close the
+	# pipe on the first match, and pipefail (set in build.sh) would then report
+	# unzip's SIGPIPE as a failure.
+	entries=$(unzip -Z1 "$bundle" 2>/dev/null) || entries=""
+	if [ -z "$entries" ]; then
+		epr "Could not read split bundle: $bundle"
+		return 1
+	fi
+
+	# XAPK/APKM manifests name the base module explicitly.
+	if grep -qx "manifest.json" <<<"$entries"; then
+		entry=$(unzip -p "$bundle" manifest.json 2>/dev/null |
+			jq -r '[(.split_apks // [])[] | select(.id == "base") | .file][0] // empty' 2>/dev/null) || entry=""
+	fi
+
+	# No usable manifest: the base is the largest module that is not a config split.
+	if [ -z "$entry" ] || ! grep -qxF -- "$entry" <<<"$entries"; then
+		entry=$(unzip -Z -l "$bundle" 2>/dev/null |
+			awk '$1 ~ /^-/ && $NF ~ /\.apk$/ && $NF !~ /(^|\/)config\./ {print $4, $NF}' |
+			sort -rn | sed -n '1p' | cut -d' ' -f2-) || entry=""
+	fi
+	if [ -z "$entry" ]; then
+		epr "No base APK module in '$bundle'"
+		return 1
+	fi
+
+	local tmp="${output}.base" inner
+	rm -f "$tmp"
+	if ! unzip -p "$bundle" "$entry" >"$tmp" 2>/dev/null; then
+		epr "Could not extract '$entry' from '$bundle'"
+		rm -f "$tmp" || :
+		return 1
+	fi
+	inner=$(unzip -Z1 "$tmp" 2>/dev/null) || inner=""
+	if ! grep -qx "AndroidManifest.xml" <<<"$inner"; then
+		epr "Extracted '$entry' from '$bundle' is not an APK"
+		rm -f "$tmp" || :
+		return 1
+	fi
+	mv -f "$tmp" "$output"
+}
+
 _merge_splits_locked() {
 	local bundle=$1 output=$2
 	# another job may have merged it while we waited for the lock
 	if [ -f "$output" ]; then return 0; fi
+	if [ "$REQUIRE_STOCK_SIGNATURE" = true ]; then
+		pr "Extracting signed base APK from split bundle"
+		if ! extract_base_apk "$bundle" "$output"; then
+			epr "Could not extract base APK from split bundle: $bundle"
+			return 1
+		fi
+		return 0
+	fi
 	pr "Merging splits"
 	gh_dl "$TEMP_DIR/apkeditor.jar" "https://github.com/REAndroid/APKEditor/releases/download/V1.4.7/APKEditor-1.4.7.jar" >/dev/null || return 1
 	if ! OP=$(java -jar "$TEMP_DIR/apkeditor.jar" merge -i "$bundle" -o "${output}-unsigned" -clean-meta -f 2>&1); then
@@ -917,7 +977,7 @@ is_split_bundle() {
 normalize_stock_apk() {
 	local apk=$1 bundle
 	is_split_bundle "$apk" || return 0
-	pr "Stock file is a split bundle, merging splits"
+	pr "Stock file is a split bundle, preparing a full APK"
 	bundle="${apk}.bundle"
 	rm -f "$bundle"
 	if ! mv -f "$apk" "$bundle"; then
@@ -1904,6 +1964,14 @@ build_rv() {
 	if isoneof "$version_mode" experiment experimental; then is_exp=true; fi
 	local list_patches
 	list_patches=$(patches_list "$cli_jar" "$patches_jar" "$pkg_name" "$is_exp") || return 1
+	# GmsCore/MicroG support depends on the stock signing certificate. Merge a
+	# split bundle for such a build and the re-signing step invalidates that
+	# certificate, so use the bundle's signed base APK instead (see merge_splits).
+	local microg_patch
+	microg_patch=$(grep "^Name: " <<<"$list_patches" | grep -i "gmscore\|microg" || :)
+	microg_patch=${microg_patch#*: }
+	REQUIRE_STOCK_SIGNATURE=false
+	if [ -n "$microg_patch" ] && [ "$mode_arg" != module ]; then REQUIRE_STOCK_SIGNATURE=true; fi
 	local get_latest_ver=false
 	if isoneof "$version_mode" auto experiment experimental; then
 		if ! version=$(get_patch_last_supported_ver "$list_patches" "$pkg_name" \
@@ -1940,6 +2008,9 @@ build_rv() {
 	local version_f=${version// /}
 	version_f=${version_f#v}
 	local stock_apk="${TEMP_DIR}/${pkg_name}-${version_f}-${arch_f}.apk"
+	# tracked by run_build_rv_bg so a failed build does not leave (and cache) the
+	# stock artifact it failed on
+	BUILD_STOCK_APK="$stock_apk"
 	if [ ! -f "$stock_apk" ]; then
 		# Only use the Morphe resolver when the config explicitly has a
 		# morphe-dlurl. It can return a different packaging/signature than the
@@ -2013,8 +2084,6 @@ build_rv() {
 		fi
 	fi
 
-	local microg_patch
-	microg_patch=$(grep "^Name: " <<<"$list_patches" | grep -i "gmscore\|microg" || :) microg_patch=${microg_patch#*: }
 	if [ -n "$microg_patch" ] && [[ ${p_patcher_args[*]} =~ $microg_patch ]]; then
 		wpr "You cant include/exclude microg patch as that's done by rvmm builder automatically."
 		p_patcher_args=("${p_patcher_args[@]//-[ei] ${microg_patch}/}")
@@ -2032,6 +2101,8 @@ build_rv() {
 		else
 			patched_apk="${TEMP_DIR}/${app_name_l}-${rv_brand_f}-${version_f}-${arch_f}.apk"
 		fi
+		# tracked by run_build_rv_bg so a failed build leaves nothing cacheable
+		BUILD_PATCHED_APK="$patched_apk"
 		if [ -n "$microg_patch" ]; then
 			if [ "$build_mode" = apk ]; then
 				patcher_args+=("-e \"${microg_patch}\"")
@@ -2164,6 +2235,9 @@ run_build_rv_bg() {
 	local log_file="${TEMP_DIR}/build_${table_name_f}_$$.${RANDOM}.log"
 
 	local ret=0
+	# set by build_rv once it knows which stock file the build uses
+	BUILD_STOCK_APK=""
+	BUILD_PATCHED_APK=""
 	build_rv "$app_args_str" > "$log_file" 2>&1 || ret=$?
 
 	local lock_dir="${TEMP_DIR}/print_lock.dir"
@@ -2179,6 +2253,15 @@ run_build_rv_bg() {
 
 	if [ $ret -ne 0 ]; then
 		touch "$TEMP_DIR/some_job_failed"
+		# Never cache the stock artifact of a failed build: a bad download (for
+		# example a re-signed split merge) would otherwise poison every later run
+		# from the actions/cache restore. Intermediate patched APKs go too.
+		if [ -n "${BUILD_STOCK_APK:-}" ]; then
+			rm -f "$BUILD_STOCK_APK" "${BUILD_STOCK_APK}.apkm" "${BUILD_STOCK_APK}.bundle" 2>/dev/null || :
+		fi
+		if [ -n "${BUILD_PATCHED_APK:-}" ]; then
+			rm -f "$BUILD_PATCHED_APK" "${BUILD_PATCHED_APK}.stripped.apk" 2>/dev/null || :
+		fi
 	fi
 
 	return $ret
