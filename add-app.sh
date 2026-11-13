@@ -4,13 +4,15 @@ set -euo pipefail
 CWD=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &>/dev/null && pwd)
 cd "$CWD"
 
-if [ $# -lt 2 ] && [[ "${1:-}" != "--help" && "${1:-}" != "-h" ]]; then
+if [ $# -lt 2 ] && [[ "${1:-}" != "--help" && "${1:-}" != "-h" && "${1:-}" != http* ]]; then
     cat <<'EOF'
 Usage:
   ./add-app.sh <app-name> <patch-source> [package-name] [config-file]
+  ./add-app.sh --link <morphe-add-source-url>
   ./add-app.sh --app <name> --source <owner/repo> [options]
 
 Options:
+  --link <url>         Morphe add-source URL (fills app, source and package)
   --package <pkg>      Android package name (otherwise resolved)
   --table <name>       exact config table name (default: canonical app name)
   --brand <name>       rv-brand override (default: file brand, then owner)
@@ -23,6 +25,7 @@ Options:
   --verbose            explain each resolver step
 
 Examples:
+  ./add-app.sh --link "https://morphe.software/add-source?github=legendsciber/morphe-patches&app=com.kiloo.subwaysurf&appName=Subway%20Surfers"
   ./add-app.sh YouTube MorpheApp/morphe-patches
   ./add-app.sh Spotify MorpheApp/morphe-patches com.spotify.music
   ./add-app.sh --app TradingView --source hxreborn/morphe-patches --dry-run

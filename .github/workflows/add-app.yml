@@ -3,13 +3,17 @@ name: Add App Config
 on:
   workflow_dispatch:
     inputs:
+      morphe_link:
+        description: "Morphe add-source URL (optional; fills app name, patch source and package)"
+        required: false
+        type: string
       app_name:
-        description: "Application name or Android package (e.g. YouTube, com.spotify.music)"
-        required: true
+        description: "Application name or Android package (required unless morphe_link is supplied)"
+        required: false
         type: string
       patch_source:
-        description: "Patch source repository in owner/repo format (e.g. MorpheApp/morphe-patches)"
-        required: true
+        description: "Patch source in owner/repo form (required unless morphe_link is supplied)"
+        required: false
         type: string
       package_name:
         description: "Android package name (optional, automatically resolved if left empty)"
@@ -59,6 +63,7 @@ jobs:
       - name: Resolve and write config
         id: add
         env:
+          MORPHE_LINK: ${{ inputs.morphe_link }}
           APP_NAME: ${{ inputs.app_name }}
           PATCH_SOURCE: ${{ inputs.patch_source }}
           PACKAGE_NAME: ${{ inputs.package_name }}
@@ -69,7 +74,10 @@ jobs:
         run: |
           chmod +x ./add-app.sh ./scripts/add_app.py
 
-          args=(--json --app "$APP_NAME" --source "$PATCH_SOURCE")
+          args=(--json)
+          if [ -n "$MORPHE_LINK" ]; then args+=(--link "$MORPHE_LINK"); fi
+          if [ -n "$APP_NAME" ]; then args+=(--app "$APP_NAME"); fi
+          if [ -n "$PATCH_SOURCE" ]; then args+=(--source "$PATCH_SOURCE"); fi
           if [ -n "$PACKAGE_NAME" ]; then args+=(--package "$PACKAGE_NAME"); fi
           if [ -n "$TABLE_NAME" ]; then args+=(--table "$TABLE_NAME"); fi
           if [ -n "$RV_BRAND" ]; then args+=(--brand "$RV_BRAND"); fi
@@ -82,6 +90,7 @@ jobs:
           echo "table=$(jq -r '.table' /tmp/add-app.json)" >> "$GITHUB_OUTPUT"
           echo "config_file=$(jq -r '.config_file' /tmp/add-app.json)" >> "$GITHUB_OUTPUT"
           echo "package=$(jq -r '.package' /tmp/add-app.json)" >> "$GITHUB_OUTPUT"
+          echo "app_name=$(jq -r '.app_name' /tmp/add-app.json)" >> "$GITHUB_OUTPUT"
           echo "patch_source=$(jq -r '.patch_source' /tmp/add-app.json)" >> "$GITHUB_OUTPUT"
           echo "changed=$(jq -r '.changed' /tmp/add-app.json)" >> "$GITHUB_OUTPUT"
 
@@ -127,7 +136,7 @@ jobs:
         id: commit
         if: ${{ !inputs.dry_run && steps.add.outputs.changed == 'true' }}
         env:
-          APP_NAME: ${{ inputs.app_name }}
+          APP_NAME: ${{ steps.add.outputs.app_name }}
           PATCH_SOURCE: ${{ steps.add.outputs.patch_source }}
           TABLE: ${{ steps.add.outputs.table }}
           PACKAGE: ${{ steps.add.outputs.package }}

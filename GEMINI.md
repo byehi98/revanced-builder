@@ -67,5 +67,5 @@ Only keep sources that actually work for a given package. `apkpure` in particula
 - `./build.sh --list-apps`: Print every app table name found in the config.
 - `./build.sh clean`: Remove temporary and build directories.
 - `./build.sh <config.toml> --config-update`: Update the configuration file.
-- `./add-app.sh <app-name> <patch-source> [package-name]`: Add or update an app table in `configs/<owner>-<repo>.toml` using the canonical config style (standard header, key order, aligned `=`) and a plain table name like `[TradingView]`. Supports `--json`, `--dry-run`, `--table`, `--brand`, `--cli-source` and preserves existing comments/unmanaged keys.
+- `./add-app.sh <app-name> <patch-source> [package-name]`: Add or update an app table in `configs/<owner>-<repo>.toml` using the canonical config style (standard header, key order, aligned `=`) and a plain table name like `[TradingView]`. Supports `--link <morphe-add-source-url>`, `--json`, `--dry-run`, `--table`, `--brand`, `--cli-source` and preserves existing comments/unmanaged keys.
 - `bash build-termux.sh`: Specialized build script for Termux environments.

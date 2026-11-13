@@ -20,6 +20,7 @@ import re
 import sys
 import tomllib
 import urllib.error
+import urllib.parse
 import urllib.request
 from collections import Counter
 from dataclasses import dataclass, field
@@ -63,6 +64,13 @@ BRAND_ALIASES = {
 }
 CLI_ALIASES = {
     "Aunali321/ReVancedExperiments": "ReVanced/revanced-cli",
+}
+# Links produced by the Morphe website's "add source" button.
+MORPHE_LINK_HOSTS = {
+    "morphe.software",
+    "www.morphe.software",
+    "morphe-patches.software",
+    "www.morphe-patches.software",
 }
 
 EXIT_ERROR = 1
@@ -145,6 +153,45 @@ def validate_brand(brand: str) -> str:
             "(allowed: letters, digits, '.', '-' and '_')"
         )
     return brand
+
+
+@dataclass
+class MorpheLink:
+    source: str
+    package: str
+    app_name: str | None = None
+
+
+def parse_morphe_link(url: str) -> MorpheLink:
+    """Parse a Morphe ``add-source`` URL into source, package and app name."""
+    url = url.strip()
+    parsed = urllib.parse.urlparse(url)
+    if parsed.scheme not in {"http", "https"} or not parsed.netloc:
+        raise Failure("morphe link must be a full http(s) URL")
+
+    host = (parsed.hostname or "").lower()
+    if host not in MORPHE_LINK_HOSTS:
+        raise Failure(
+            f"unsupported morphe link host '{host}'; "
+            f"expected one of: {', '.join(sorted(MORPHE_LINK_HOSTS))}"
+        )
+
+    query = urllib.parse.parse_qs(parsed.query)
+    github = (query.get("github") or [""])[0].strip()
+    package = (query.get("app") or [""])[0].strip()
+    app_name = (query.get("appName") or [""])[0].strip() or None
+
+    if not github:
+        raise Failure("morphe link is missing the 'github' parameter")
+    if not package:
+        raise Failure("morphe link is missing the 'app' parameter")
+
+    owner, repo = validate_source(github)
+    return MorpheLink(
+        source=f"{owner}/{repo}",
+        package=validate_package(package),
+        app_name=validate_app_name(app_name) if app_name else None,
+    )
 
 
 def fetch_json(url: str, timeout: int = 10) -> object:
@@ -535,6 +582,8 @@ def choose_target(
             return Target(record.table, record.file, record)
 
     display = resolved.table_hint or resolved.name
+    if display and PACKAGE_RE.fullmatch(display):
+        display = display.rsplit(".", 1)[-1].replace("_", " ")
     if not display and PACKAGE_RE.fullmatch(app_input):
         display = app_input.rsplit(".", 1)[-1].replace("_", " ")
     base = validate_table_name(slugify(display or app_input))
@@ -626,6 +675,10 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser.add_argument("--app", dest="app_flag", help="app name or package name")
     parser.add_argument("--source", dest="source_flag", help="patch source owner/repo")
     parser.add_argument("--package", dest="package_flag", help="Android package")
+    parser.add_argument(
+        "--link",
+        help="Morphe add-source URL (fills app name, patch source and package)",
+    )
     parser.add_argument("--table", help="exact config table name")
     parser.add_argument("--brand", help="rv-brand value")
     parser.add_argument("--cli-source", help="cli-source value")
@@ -654,19 +707,60 @@ def main(argv: list[str] | None = None) -> int:
     package_input = (args.package_flag or args.package_name or "").strip() or None
     config_input = (args.config_file_flag or args.config_file or "").strip() or None
 
+    # Let a pasted Morphe link work in the app-name field as well.
+    if not args.link and app_input.lower().startswith(("http://", "https://")):
+        args.link = app_input
+        app_input = ""
+
+    link = parse_morphe_link(args.link) if args.link else None
+
+    if link:
+        if source_input:
+            owner, repo = validate_source(source_input)
+            source = f"{owner}/{repo}"
+            if source.lower() != link.source.lower():
+                raise Failure(
+                    f"patch source '{source}' conflicts with the morphe link "
+                    f"source '{link.source}'"
+                )
+        else:
+            source = link.source
+
+        if package_input:
+            explicit_package = validate_package(package_input)
+            if explicit_package != link.package:
+                raise Failure(
+                    f"package '{explicit_package}' conflicts with the morphe "
+                    f"link package '{link.package}'"
+                )
+        else:
+            explicit_package = link.package
+
+        if not app_input:
+            app_input = link.app_name or link.package
+    else:
+        if not source_input:
+            raise Failure(
+                "missing patch source (pass it positionally, with --source, or use --link)"
+            )
+        owner, repo = validate_source(source_input)
+        source = f"{owner}/{repo}"
+        explicit_package = validate_package(package_input) if package_input else None
+
     if not app_input:
-        raise Failure("missing app name (pass it positionally or with --app)")
-    if not source_input:
-        raise Failure("missing patch source (pass it positionally or with --source)")
+        raise Failure(
+            "missing app name (pass it positionally, with --app, or use --link)"
+        )
 
     app_input = validate_app_name(app_input)
-    owner, repo = validate_source(source_input)
-    source = f"{owner}/{repo}"
-    explicit_package = validate_package(package_input) if package_input else None
+    owner, repo = source.split("/", 1)
 
     records, by_table = load_index()
-    resolver = Resolver(source, records, verbose=args.verbose)
-    resolved = resolver.resolve(app_input, explicit_package)
+    if link:
+        resolved = Resolved(link.package, app_input, None, "morphe link")
+    else:
+        resolver = Resolver(source, records, verbose=args.verbose)
+        resolved = resolver.resolve(app_input, explicit_package)
     package = resolved.package
 
     target = choose_target(
