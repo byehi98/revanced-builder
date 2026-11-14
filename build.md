@@ -4,8 +4,8 @@
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
 CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
-Patches: SysAdminDoc/patches-0.0.14.mpp  
-[Changelog](https://github.com/SysAdminDoc/HushPinterest/releases/tag/v0.0.14)  
+Patches: bearinmindcat/patches-2.9.8.mpp  
+[Changelog](https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.9.8)  
 
 Skipped:  
 Google-Photos-Akash-Sriram: 7.99.0.1007655401  
@@ -61,6 +61,8 @@ Irplus: 1.9.13
 Letterboxd: 3.6.5
 Photomath: 8.48.0
 SoundCloud-RookieEnough: 2026.10.28.release
+Pinterest: 14.44.0  
+Patches: SysAdminDoc/patches-0.0.14.mpp  
 Telegram-Hush: 13.2.1  
 Patches: SysAdminDoc/patches-0.0.25.mpp  
 Advanced-Download-Manager: 14.0.39  
@@ -68,8 +70,6 @@ Patches: arandomhooman/patches-1.53.0.mpp
 FolderSync: 4.12.0  
 Microsoft-SwiftKey: 9.13.13.5  
 Poweramp: build-1025-bundle-play  
-Google-Maps: 26.36.04.973607363  
-Patches: bearinmindcat/patches-2.9.7.mpp  
 Brave-Bufferk: 1.92.140
 Patches: bufferk/patches-1.8.1.mpp  
 Medium: 4.5.1784910928
@@ -215,7 +215,7 @@ qBitConnect: 2.0.6
 Spotify: 2.2.553
 Patches: spicetify/patches-1.2.0.mpp  
 Imgur: 7.34.0.0    
-Patches: sushruth/patches-1.0.0.mpp                                                      
+Patches: sushruth/patches-1.0.0.mpp                                                        
 
 ### Built versions  
-Pinterest: 14.44.0  
+Google-Maps: 26.36.04.973607363  
