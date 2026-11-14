@@ -72,3 +72,12 @@ patches-source  = "hxreborn/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "hxreborn"
 apkeep-dlurl    = "com.tradingview.tradingviewapp"
+
+[Candy-Crush-Saga]
+patches-source  = "hxreborn/morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "hxreborn"
+morphe-dlurl    = "com.king.candycrushsaga"
+apkcombo-dlurl  = "https://apkcombo.com/candy-crush-saga/com.king.candycrushsaga/"
+apkpure-dlurl   = "https://apkpure.net/candy-crush-saga/com.king.candycrushsaga"
+gplaydl-dlurl   = "com.king.candycrushsaga"
