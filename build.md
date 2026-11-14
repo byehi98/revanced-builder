@@ -1,14 +1,11 @@
 
-**3 apps built.**
+**1 apps built.**
   
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
 CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
-Patches: BholeyKaBhakt/patches-2.14.0.mpp  
-[Changelog](https://github.com/BholeyKaBhakt/android-patches-xtra/releases/tag/v2.14.0)
-
-CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
-CLI: MorpheApp/morphe-desktop-2.1.1-all.jar    
+Patches: SysAdminDoc/patches-0.0.14.mpp  
+[Changelog](https://github.com/SysAdminDoc/HushPinterest/releases/tag/v0.0.14)  
 
 Skipped:  
 Google-Photos-Akash-Sriram: 7.99.0.1007655401  
@@ -17,6 +14,11 @@ Opera-GX: latest
 Patches: Alastor-Kaneki/patches-1.15.3.mpp  
 Telegram: 12.10.1  
 Patches: Aunali321/patches-2.0.0.rvp  
+Automate: 1.51.1
+Patches: BholeyKaBhakt/patches-2.14.0.mpp  
+Backdrops: 6.6
+Patches: BholeyKaBhakt/patches-2.14.0.mpp  
+Speedtest: 7.1.4  
 All-Video-Downloader-and-Ace-Player: 1.9.8
 Patches: BlazeFTL/patches-1.43.7.4.mpp  
 RS-File-Manager-BlazeFTL: latest  
@@ -59,8 +61,6 @@ Irplus: 1.9.13
 Letterboxd: 3.6.5
 Photomath: 8.48.0
 SoundCloud-RookieEnough: 2026.10.28.release
-Pinterest: 14.41.0
-Patches: SysAdminDoc/patches-0.0.13.mpp  
 Telegram-Hush: 13.2.1  
 Patches: SysAdminDoc/patches-0.0.25.mpp  
 Advanced-Download-Manager: 14.0.39  
@@ -215,9 +215,7 @@ qBitConnect: 2.0.6
 Spotify: 2.2.553
 Patches: spicetify/patches-1.2.0.mpp  
 Imgur: 7.34.0.0    
-Patches: sushruth/patches-1.0.0.mpp                                                    
+Patches: sushruth/patches-1.0.0.mpp                                                      
 
 ### Built versions  
-Automate: 1.51.1
-Backdrops: 6.6
-Speedtest: 7.1.4  
+Pinterest: 14.44.0  
