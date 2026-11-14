@@ -8,10 +8,8 @@ Patches: bearinmindcat/patches-2.9.7.mpp
 [Changelog](https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.9.7)
 
 CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
-Patches: byehi98/patches-1.50.0.mpp  
-[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.50.0)
-
-CLI: MorpheApp/morphe-desktop-2.1.1-all.jar    
+Patches: BholeyKaBhakt/patches-2.14.0-dev.1.mpp  
+[Changelog](https://github.com/BholeyKaBhakt/android-patches-xtra/releases/tag/v2.14.0-dev.1)  
 
 Skipped:  
 Google-Photos-Akash-Sriram: 7.99.0.1007655401  
@@ -21,8 +19,6 @@ Patches: Alastor-Kaneki/patches-1.15.3.mpp
 Telegram: 12.10.1  
 Patches: Aunali321/patches-2.0.0.rvp  
 Automate: 1.51.1
-Patches: BholeyKaBhakt/patches-2.13.0.mpp  
-Backdrops: 6.6
 Patches: BholeyKaBhakt/patches-2.13.0.mpp  
 Speedtest: 7.1.4
 All-Video-Downloader-and-Ace-Player: 1.9.8
@@ -109,6 +105,7 @@ Head-Soccer: 7.1.12
 Hill-Climb-Racing: 1.73.3
 Injustice: 3.5.1
 Into-The-Dead: 2.9.5
+Into-The-Dead-2: 1.88.0
 Jetpack-Joyride: 1.104.2
 Lemmings-Puzzle-Survival: 9.5.1
 Lumina-Walls: 1.0.2.6
@@ -123,6 +120,7 @@ Shooty-Skies: 3.441.100104
 Smashit: 1.5.14
 Swamp-Attack: 4.8.10.0
 Swamp-Attack-2: 1.4.1
+Swift-Backup: 5.1.1  
 Swordigo: 1.4.13
 Tentaclewars: 2.1.27
 Traffic-Racer: 4.0
@@ -220,8 +218,8 @@ qBitConnect: 2.0.6
 Spotify: 2.2.553
 Patches: spicetify/patches-1.2.0.mpp  
 Imgur: 7.34.0.0    
-Patches: sushruth/patches-1.0.0.mpp                                                
+Patches: sushruth/patches-1.0.0.mpp                                                  
 
 ### Built versions  
-Into-The-Dead-2: 1.88.0
-Swift-Backup: 5.1.1  
+Backdrops: 6.6
+Google-Maps: 26.36.04.973607363  
