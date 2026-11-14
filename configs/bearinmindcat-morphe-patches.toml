@@ -11,6 +11,6 @@
 patches-source  = "bearinmindcat/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "bearinmindcat"
-morphe-dlurl    = "com.google.android.apps.maps"
+# morphe-dlurl    = "com.google.android.apps.maps"
 aptoide-dlurl   = "com.google.android.apps.maps"
 apkeep-dlurl    = "com.google.android.apps.maps"
