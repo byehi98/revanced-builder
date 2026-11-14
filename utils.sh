@@ -867,12 +867,11 @@ merge_splits() {
 	_with_lock "merge.$(_lock_key "$output")" _merge_splits_locked "$bundle" "$output"
 }
 
-# Extract the original, developer-signed base APK from a split bundle. Used when
-# a patch validates the stock certificate: an APKEditor merge is re-signed with
-# ks-p12.keystore, which invalidates that certificate (Morphe then aborts with
-# "Patch a stock APK instead").
-extract_base_apk() {
-	local bundle=$1 output=$2 entry="" entries
+# Print the archive path of the base module inside a split bundle. XAPK/APKM
+# manifests name it explicitly; without a usable manifest it is the largest
+# module that is not a config split.
+split_bundle_base_entry() {
+	local bundle=$1 entry="" entries
 	# Capture the listing once: `unzip -Z1 | grep -q` would make grep close the
 	# pipe on the first match, and pipefail (set in build.sh) would then report
 	# unzip's SIGPIPE as a failure.
@@ -882,13 +881,11 @@ extract_base_apk() {
 		return 1
 	fi
 
-	# XAPK/APKM manifests name the base module explicitly.
 	if grep -qx "manifest.json" <<<"$entries"; then
 		entry=$(unzip -p "$bundle" manifest.json 2>/dev/null |
 			jq -r '[(.split_apks // [])[] | select(.id == "base") | .file][0] // empty' 2>/dev/null) || entry=""
 	fi
 
-	# No usable manifest: the base is the largest module that is not a config split.
 	if [ -z "$entry" ] || ! grep -qxF -- "$entry" <<<"$entries"; then
 		entry=$(unzip -Z -l "$bundle" 2>/dev/null |
 			awk '$1 ~ /^-/ && $NF ~ /\.apk$/ && $NF !~ /(^|\/)config\./ {print $4, $NF}' |
@@ -896,6 +893,18 @@ extract_base_apk() {
 	fi
 	if [ -z "$entry" ]; then
 		epr "No base APK module in '$bundle'"
+		return 1
+	fi
+	echo "$entry"
+}
+
+# Extract the original, developer-signed base APK from a split bundle. Used when
+# a patch validates the stock certificate: an APKEditor merge is re-signed with
+# ks-p12.keystore, which invalidates that certificate (Morphe then aborts with
+# "Patch a stock APK instead").
+extract_base_apk() {
+	local bundle=$1 output=$2 entry
+	if ! entry=$(split_bundle_base_entry "$bundle"); then
 		return 1
 	fi
 
@@ -989,7 +998,89 @@ normalize_stock_apk() {
 		mv -f "$bundle" "$apk" 2>/dev/null || :
 		return 1
 	fi
-	rm -f "$bundle"
+	# merge_splits() only extracts the developer-signed base when
+	# REQUIRE_STOCK_SIGNATURE is set, so keep the bundle under the conventional
+	# .apkm name for merge_patched_splits() to fuse back in after patching.
+	# Dropping it here leaves an uninstallable split base.
+	if [ "$REQUIRE_STOCK_SIGNATURE" = true ]; then
+		if ! mv -f "$bundle" "${apk}.apkm"; then
+			epr "Could not keep split bundle for '$apk'"
+			return 1
+		fi
+	else
+		rm -f "$bundle"
+	fi
+	return 0
+}
+
+# A split base carries android:requiredSplitTypes / android:isSplitRequired and
+# cannot be installed on its own (adb reports INSTALL_FAILED_MISSING_SPLIT).
+# AndroidManifest.xml is binary, so strip the NUL bytes of its UTF-16 string
+# pool before matching.
+apk_requires_splits() {
+	# grep without -q: closing the pipe early would make tr die with SIGPIPE and
+	# pipefail (set in build.sh) would report the pipeline as failed.
+	unzip -p "$1" AndroidManifest.xml 2>/dev/null | tr -d '\000' | grep -aE 'requiredSplitTypes|isSplitRequired' >/dev/null
+}
+
+# Turn a patched split base into a standalone APK: fuse the stock bundle's
+# matching ABI/density/feature modules back in and re-sign the result. Needed for
+# GmsCore builds, where the base is extracted with its stock signature instead of
+# being merged before patching (see extract_base_apk). Re-merging an already
+# standalone APK is a no-op.
+merge_patched_splits() {
+	local patched=$1 bundle=$2 arch=$3 base_entry tmp
+	[ -f "$patched" ] || return 1
+	apk_requires_splits "$patched" || return 0
+	if ! base_entry=$(split_bundle_base_entry "$bundle"); then
+		return 1
+	fi
+
+	local -a excl
+	case "$arch" in
+		arm64-v8a) excl=('*x86_64.apk' '*x86.apk' '*armeabi_v7a.apk') ;;
+		arm-v7a) excl=('*x86_64.apk' '*x86.apk' '*arm64_v8a.apk') ;;
+		x86) excl=('*x86_64.apk' '*arm64_v8a.apk' '*armeabi_v7a.apk') ;;
+		x86_64) excl=('*x86.apk' '*arm64_v8a.apk' '*armeabi_v7a.apk') ;;
+		*) excl=('*x86_64.apk' '*x86.apk') ;;
+	esac
+	local -a unzip_excl=()
+	local g
+	for g in "${excl[@]}"; do unzip_excl+=(-x "$g"); done
+
+	tmp=$(mktemp -d -p "$TEMP_DIR")
+	# -j flattens the modules; the stock base is skipped and replaced by the
+	# patched one under the name APKEditor expects.
+	unzip -j "$bundle" '*.apk' -x "$base_entry" "${unzip_excl[@]}" -d "$tmp" >/dev/null 2>&1 || :
+	if [ -z "$(find "$tmp" -maxdepth 1 -name '*.apk' -print -quit)" ]; then
+		rm -rf "$tmp"
+		return 0
+	fi
+	cp -f "$patched" "${tmp}/base.apk" || {
+		rm -rf "$tmp"
+		return 1
+	}
+
+	pr "Merging patched base with stock splits"
+	local merged="${patched}.merged" OP
+	rm -f "$merged"
+	if ! OP=$(java -jar "$TEMP_DIR/apkeditor.jar" merge -i "$tmp" -o "$merged" -clean-meta -f 2>&1); then
+		epr "APKEditor error: $OP"
+		rm -rf "$tmp" "$merged"
+		return 1
+	fi
+	rm -rf "$tmp"
+	if ! OP=$(java -jar "$APKSIGNER" sign --ks ks-p12.keystore --ks-pass pass:123456789 --key-pass pass:123456789 --ks-key-alias jhc "$merged"); then
+		epr "apksigner error: $OP"
+		rm -f "$merged"
+		return 1
+	fi
+	mv -f "$merged" "$patched"
+	rm -f "${patched}.idsig" "${merged}.idsig"
+	if apk_requires_splits "$patched"; then
+		epr "Merged APK still requires splits: '$patched'"
+		return 1
+	fi
 	return 0
 }
 
@@ -1430,6 +1521,15 @@ _dl_apkpure_direct() {
 				merge_splits "${output}.apkm" "${output}"
 			else
 				_req "$loc" "${output}" || return 1
+				# APKPure sometimes serves only the base module of a split app
+				# through /b/APK/: it declares requiredSplitTypes but contains no
+				# splits, so it can never be installed or turned into a standalone
+				# APK. Retry the same version through /b/XAPK/.
+				if apk_requires_splits "${output}"; then
+					wpr "APKPure served a split-only base APK for '${pkg}', retrying as XAPK"
+					rm -f "${output}"
+					break
+				fi
 			fi
 			return 0
 		done
@@ -2154,6 +2254,16 @@ build_rv() {
 			fi
 		fi
 		rm "$stock_apk_to_patch"
+		if [ "$build_mode" = apk ] && [ -f "$patched_apk" ] && apk_requires_splits "$patched_apk"; then
+			if [ ! -f "${stock_apk}.apkm" ]; then
+				epr "Patched '${table}' is a split base but '${stock_apk}.apkm' is missing, so it cannot be made installable"
+				return 1
+			fi
+			if ! merge_patched_splits "$patched_apk" "${stock_apk}.apkm" "$arch"; then
+				epr "Could not merge '${table}' with its stock splits"
+				return 1
+			fi
+		fi
 		if [ "$build_mode" = apk ]; then
 			if [ "${NORB:-}" != true ] || { [ ! -f "$patched_apk" ] && [ ! -f "$apk_output" ]; }; then
 				mv -f "$patched_apk" "$apk_output"
