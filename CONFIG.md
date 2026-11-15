@@ -115,3 +115,17 @@ module-prop-name = "some-app-module"                       # module prop name.
 dpi = "360-480dpi"                                         # used to select apk variant from apkmirror. default: nodpi
 arch = "arm64-v8a"                                         # 'arm64-v8a', 'arm-v7a', 'all', 'both'. 'both' downloads both arm64-v8a and arm-v7a. default: all
 ```
+
+## Validating config changes
+
+Run `python3 scripts/validate_configs.py` (or `make check`) before committing a
+config change. It validates the merged `config.toml` + `configs/*.toml` tree for
+unique tables, known keys, valid sources, package names, enums, and at least one
+download source per app.
+
+## Signing
+
+`ks.keystore` and `ks-p12.keystore` are public test keys, not production secrets.
+The default alias is `jhc` and the default password is `123456789`. See
+[`README.md`](README.md#signing-keys) for the full explanation and the
+`RVB_KEYSTORE*` / `RVB_PATCHER_KEYSTORE` environment overrides.

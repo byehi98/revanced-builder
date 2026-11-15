@@ -12,7 +12,7 @@ per built app.
 | `index.html` | Page shell and copy |
 | `style.css` | Dark/light theme, layout, cards and redirect page |
 | `app.js` | Search, source/update filters, sorting, theme, copy actions, import file |
-| `data.json` | Generated catalogue (do not edit by hand) |
+| `data.json` | Generated catalogue (git-ignored; do not edit by hand) |
 | `icons/*.png` | Committed 96×96 circular launcher icons (third-party artwork) |
 | `icons/sources.json` | Generated provenance for each icon (do not edit by hand) |
 | `apps/*.html` | Generated Obtainium HTML source pages for old builds (do not edit) |
@@ -20,18 +20,24 @@ per built app.
 ## Local preview
 
 ```sh
-# regenerate the catalogue from this checkout (add --offline to skip GitHub)
-python3 scripts/generate_site.py
-
-# serve the site
-python3 -m http.server -d site 8000
+# regenerate data.json and site/apps/*.html, then serve the result
+make preview
 # then open http://localhost:8000
 ```
 
-`data.json` has to be fetched over HTTP; opening `index.html` directly with
-`file://` will show a loading error in most browsers. The generator also writes
-`site/apps/*.html`; they are git-ignored and rebuilt before each deployment.
-Pass `--site-url http://localhost:8000/` when testing old-build links locally.
+`make site` only regenerates the catalogue. Use `python3 scripts/generate_site.py
+--offline` when working without network access (the offline output has no release
+download metadata, but it still reflects every enabled config table).
+
+`data.json` is fetched over HTTP; opening `index.html` directly with `file://`
+will show a loading error in most browsers. The generator also writes
+`site/apps/*.html`; both data and app pages are git-ignored and rebuilt before
+each deployment. Pass `--site-url http://localhost:8000/` when testing
+old-build links locally.
+
+Run `make check` before opening a pull request. It validates shell/Python/JS
+syntax, ShellCheck, config style and schema, a fresh offline catalogue, and
+project links.
 
 ## Deployment
 

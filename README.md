@@ -1,7 +1,7 @@
 # ReVanced Magisk Module
 [![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/rvc_magisk)
 [![Obtainium Catalog](https://img.shields.io/badge/Obtainium%20Catalog-8b5cf6?style=for-the-badge&logo=obtainium&logoColor=white)](https://byehi98.github.io/revanced-builder/)
-[![CI](https://github.com/j-hc/revanced-magisk-module/actions/workflows/ci.yml/badge.svg?event=schedule)](https://github.com/j-hc/revanced-magisk-module/actions/workflows/ci.yml)
+[![CI](https://github.com/byehi98/revanced-builder/actions/workflows/ci.yml/badge.svg?event=schedule)](https://github.com/byehi98/revanced-builder/actions/workflows/ci.yml)
 
 Extensive ReVanced builder — Magisk modules and non-root APKs for many patched apps, updated daily.
 
@@ -10,7 +10,7 @@ Browse every app and copy its one-tap **Obtainium** install link on the
 **all-apps Obtainium import file** to add every built app at once. The site is rebuilt
 automatically after each release from the same configs and release metadata this builder uses.
 
-Get the [latest CI release](https://github.com/j-hc/revanced-magisk-module/releases).
+Get the [latest CI release](https://github.com/byehi98/revanced-builder/releases).
 
 ## Build Status
 <!-- BUILD_STATUS_START -->
@@ -379,7 +379,7 @@ Use [**zygisk-detach**](https://github.com/j-hc/zygisk-detach) to detach YouTube
 ## To include/exclude patches or patch other apps
 
  * Star the repo :eyes:
- * Use the repo as a [template](https://github.com/new?template_name=revanced-magisk-module&template_owner=j-hc)
+ * Use the repo as a [template](https://github.com/new?template_name=revanced-builder&template_owner=byehi98)
  * Customize [`config.toml`](./config.toml) using [rvmm-config-gen](https://j-hc.github.io/rvmm-config-gen/)
  * Add your app to the file in [`configs/`](./configs) for that patches author (one file per author, all merged automatically — the root `config.toml` only holds global settings and the `app-configs = "configs"` pointer)
  * Run the build [workflow](../../actions/workflows/build.yml)
@@ -397,12 +397,47 @@ You can consider using [rvmm-zygisk-mount](https://github.com/j-hc/rvmm-zygisk-m
 ## Building Locally
 ### On Termux
 ```console
-bash <(curl -sSf https://raw.githubusercontent.com/j-hc/revanced-magisk-module/main/build-termux.sh)
+bash <(curl -sSf https://raw.githubusercontent.com/byehi98/revanced-builder/main/build-termux.sh)
 ```
 
 ### On Linux
 ```console
-$ git clone https://github.com/j-hc/revanced-magisk-module --depth 1
-$ cd revanced-magisk-module
+$ git clone https://github.com/byehi98/revanced-builder --depth 1
+$ cd revanced-builder
 $ ./build.sh
 ```
+
+Run `make check` before opening a pull request. It runs the same shell, Python,
+JavaScript, config, generated-catalogue and project-link checks as CI. Use
+`make site` to regenerate the catalogue and `make preview` to serve it locally.
+
+## Signing keys
+
+This repository includes **public test signing material** so local builds and CI
+produce APKs signed with the same certificate as the published releases:
+
+| File | Used by | Notes |
+| :--- | :--- | :--- |
+| `ks-p12.keystore` | `apksigner` when merging/signing splits | PKCS#12, alias `jhc` |
+| `ks.keystore` | the patcher CLI | keystore in the format the CLI expects |
+
+The default password for both is `123456789`. These values are public because
+they are committed here. They are **not secret**, and builds made with them are
+not identity-protected: anyone with this repository can create an APK with the
+same signing identity. Use your own certificate if you need that guarantee.
+
+Every signing path, password and alias can be overridden for a local build or a
+fork without editing `utils.sh`:
+
+```console
+$ export RVB_KEYSTORE=/path/to/your-pkcs12.keystore
+$ export RVB_KEYSTORE_PASS='your-store-password'
+$ export RVB_KEYSTORE_ENTRY_PASS='your-key-password'  # defaults to RVB_KEYSTORE_PASS
+$ export RVB_KEYSTORE_ALIAS='your-key-alias'
+$ export RVB_PATCHER_KEYSTORE=/path/to/patcher.keystore
+$ ./build.sh
+```
+
+`RVB_PATCHER_KEYSTORE` defaults to `ks.keystore`; the other defaults are the
+committed test values above. Put overrides in your shell, CI secrets or a local
+`.envrc`—never commit production signing keys.

@@ -6,6 +6,16 @@ TEMP_DIR="temp"
 BIN_DIR="bin"
 BUILD_DIR="build"
 DL_SRCS=("morphe" "aptoide" "apkeep" "apkcombo" "apkmirror" "apkpure" "archive" "direct" "gplaydl" "uptodown")
+
+# Public test signing material (see README "Signing keys").  Every value can be
+# replaced from the environment so a fork or a local build can use its own
+# certificate without editing this file.  The patcher CLI takes a different
+# keystore file from apksigner, but shares the same alias and passwords.
+RVB_KEYSTORE=${RVB_KEYSTORE:-ks-p12.keystore}
+RVB_KEYSTORE_PASS=${RVB_KEYSTORE_PASS:-123456789}
+RVB_KEYSTORE_ENTRY_PASS=${RVB_KEYSTORE_ENTRY_PASS:-$RVB_KEYSTORE_PASS}
+RVB_KEYSTORE_ALIAS=${RVB_KEYSTORE_ALIAS:-jhc}
+RVB_PATCHER_KEYSTORE=${RVB_PATCHER_KEYSTORE:-ks.keystore}
 # Set per build in build_rv(): patches that check the developer certificate
 # (GmsCore/MicroG support) need the untouched stock signature, so a split bundle
 # must not be merged and re-signed. merge_splits() reads this flag.
@@ -473,7 +483,8 @@ _req_locked() {
 	local ip="$1" op="$2"
 	shift 2
 	if [ -f "$op" ]; then return 0; fi
-	local dlp="$(dirname "$op")/tmp.$(basename "$op")"
+	local dlp
+	dlp="$(dirname "$op")/tmp.$(basename "$op")"
 	rm -f "$dlp"
 	if ! curl -L -c "$TEMP_DIR/cookie.txt" -b "$TEMP_DIR/cookie.txt" --connect-timeout 15 --retry 5 --retry-all-errors --retry-delay 5 --fail -s -S "$@" "$ip" -o "$dlp"; then
 		epr "Request failed: $ip"
@@ -580,8 +591,8 @@ _cf_lazy_spawn_trawl_locked() {
 }
 
 _cf_try_trawl() {
-	local url=$1 attempt response status html
-	for attempt in $(seq 1 3); do
+	local url=$1 response status html
+	for _ in $(seq 1 3); do
 		response=$(curl -s -X POST "${CF_TRAWL_URL:-http://localhost:8191}/scrape" \
 			-H 'Content-Type: application/json' \
 			-d "{\"url\":\"$url\",\"maxTimeout\":60000,\"skipHttp\":true}") || true
@@ -604,8 +615,8 @@ _cf_try_trawl() {
 }
 
 _cf_try_solver() {
-	local url=$1 attempt response_file headers_file http_code html
-	for attempt in $(seq 1 3); do
+	local url=$1 response_file headers_file http_code html
+	for _ in $(seq 1 3); do
 		response_file=$(mktemp)
 		headers_file=$(mktemp)
 		http_code=$(curl -s -o "$response_file" -w '%{http_code}' \
@@ -943,7 +954,7 @@ _merge_splits_locked() {
 		return 1
 	fi
 	# sign the merged stock apk
-	if ! OP=$(java -jar "$APKSIGNER" sign --ks ks-p12.keystore --ks-pass pass:123456789 --key-pass pass:123456789 --ks-key-alias jhc \
+	if ! OP=$(java -jar "$APKSIGNER" sign --ks "$RVB_KEYSTORE" --ks-pass "pass:$RVB_KEYSTORE_PASS" --key-pass "pass:$RVB_KEYSTORE_ENTRY_PASS" --ks-key-alias "$RVB_KEYSTORE_ALIAS" \
 		--out "${output}" "${output}-unsigned"); then
 		epr "apksigner error: $OP"
 		return 1
@@ -1070,7 +1081,7 @@ merge_patched_splits() {
 		return 1
 	fi
 	rm -rf "$tmp"
-	if ! OP=$(java -jar "$APKSIGNER" sign --ks ks-p12.keystore --ks-pass pass:123456789 --key-pass pass:123456789 --ks-key-alias jhc "$merged"); then
+	if ! OP=$(java -jar "$APKSIGNER" sign --ks "$RVB_KEYSTORE" --ks-pass "pass:$RVB_KEYSTORE_PASS" --key-pass "pass:$RVB_KEYSTORE_ENTRY_PASS" --ks-key-alias "$RVB_KEYSTORE_ALIAS" "$merged"); then
 		epr "apksigner error: $OP"
 		rm -f "$merged"
 		return 1
@@ -1104,7 +1115,7 @@ apkmirror_search() {
 
 	local appdpi=("nodpi" "anydpi")
 	if [ "$dpi" ]; then
-		appdpi+=($dpi)
+		appdpi+=("$dpi")
 	fi
 
 	for ((n = 1; n < 40; n++)); do
@@ -2004,8 +2015,8 @@ patch_apk() {
 	local tmp_files
 	tmp_files="$(pwd)/$(mktemp -d -p "$TEMP_DIR")"
 
-	local cmd="java -jar '$cli_jar' patch '$stock_input' -o '$patched_apk' -p '$patches_jar' --keystore=ks.keystore \
---keystore-entry-password=123456789 --keystore-password=123456789 --signer=jhc --keystore-entry-alias=jhc -t '$tmp_files' $patcher_args"
+	local cmd="java -jar '$cli_jar' patch '$stock_input' -o '$patched_apk' -p '$patches_jar' --keystore='$RVB_PATCHER_KEYSTORE' \
+--keystore-entry-password='$RVB_KEYSTORE_ENTRY_PASS' --keystore-password='$RVB_KEYSTORE_PASS' --signer='$RVB_KEYSTORE_ALIAS' --keystore-entry-alias='$RVB_KEYSTORE_ALIAS' -t '$tmp_files' $patcher_args"
 
 	# TODO: remove this later
 	local cli_name
@@ -2013,7 +2024,8 @@ patch_apk() {
 	if [ "${cli_name::8}" = revanced ]; then cmd+=" -b"; fi
 
 	if [ "$OS" = Android ]; then cmd+=" --custom-aapt2-binary='${AAPT2}'"; fi
-	pr "$cmd"
+	# Keep the useful command in the log without echoing a production password.
+	pr "java -jar '$cli_jar' patch '$stock_input' -o '$patched_apk' -p '$patches_jar' --keystore='$RVB_PATCHER_KEYSTORE' [signing arguments hidden] -t '$tmp_files' $patcher_args"
 	if eval "$cmd"; then [ -f "$patched_apk" ]; else
 		rm "$patched_apk" 2>/dev/null || :
 		return 1
@@ -2023,7 +2035,8 @@ patch_apk() {
 check_sig() {
 	local file=$1 pkg_name=$2
 	local sig
-	if grep -q "$pkg_name" sig.txt; then
+	[ -f sig.txt ] || return 0
+	if grep -qF -- "$pkg_name" sig.txt; then
 		sig=$(java -jar "$APKSIGNER" verify --print-certs "$file" | grep ^Signer | grep SHA-256 | tail -1 | awk '{print $NF}')
 		echo "$pkg_name signature: ${sig}"
 		grep -qFx "$sig $pkg_name" sig.txt

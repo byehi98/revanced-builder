@@ -19,8 +19,12 @@ updating an existing app without touching keys the script does not own.
 
 from __future__ import annotations
 
+import argparse
+import difflib
 import re
+import sys
 from dataclasses import dataclass, field
+from pathlib import Path
 
 KEY_WIDTH = 16
 
@@ -293,3 +297,117 @@ def normalise_document(
 
 def is_valid_table_name(name: str) -> bool:
     return bool(re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9_-]*", name))
+
+
+def check_document(text: str) -> tuple[list[str], str]:
+    """Return human-readable problems and the canonical rendering of *text*."""
+    problems: list[str] = []
+
+    for lineno, line in enumerate(text.splitlines(), 1):
+        if line != line.rstrip():
+            problems.append(f"line {lineno}: trailing whitespace")
+        if "\t" in line:
+            problems.append(f"line {lineno}: tab character; configs use spaces")
+
+    if not text.endswith("\n"):
+        problems.append("file has no final newline")
+
+    header, tables = parse_document(text)
+    source, cli = header_source_and_cli(header)
+    if not source:
+        problems.append("header does not name a patches source")
+    if not cli:
+        problems.append("header does not name a CLI source")
+    if not tables:
+        problems.append("file contains no app tables")
+
+    canonical = normalise_document(
+        text,
+        source=source or "owner/repo",
+        cli=cli or "owner/repo",
+    )
+    if canonical != text:
+        diff = difflib.unified_diff(
+            text.splitlines(keepends=True),
+            canonical.splitlines(keepends=True),
+            fromfile="current",
+            tofile="canonical",
+        )
+        problems.append("file is not in canonical config style:\n" + "".join(diff).rstrip())
+
+    return problems, canonical
+
+
+def main(argv: list[str] | None = None) -> int:
+    root = Path(__file__).resolve().parent.parent
+    parser = argparse.ArgumentParser(description="Format or check configs/*.toml")
+    parser.add_argument(
+        "--check",
+        action="store_true",
+        help="do not write files; exit non-zero when any file is not canonical",
+    )
+    parser.add_argument(
+        "paths",
+        nargs="*",
+        type=Path,
+        help="config files (default: <root>/configs/*.toml)",
+    )
+    args = parser.parse_args(argv)
+
+    paths = args.paths or sorted((root / "configs").glob("*.toml"))
+    if not paths:
+        print("error: no config files found", file=sys.stderr)
+        return 1
+
+    failed = 0
+    for path in paths:
+        try:
+            text = path.read_text(encoding="utf-8")
+        except OSError as exc:
+            print(f"{path}: {exc}", file=sys.stderr)
+            failed += 1
+            continue
+
+        problems, canonical = check_document(text)
+        if args.check:
+            if problems:
+                failed += 1
+                print(f"{path}:", file=sys.stderr)
+                for problem in problems:
+                    print(f"  - {problem}", file=sys.stderr)
+            continue
+
+        # Formatting mode can repair whitespace/key order, but it must not guess
+        # which patches source or CLI a file belongs to.
+        blocking = [
+            problem
+            for problem in problems
+            if problem.startswith("header does not") or problem == "file contains no app tables"
+        ]
+        if blocking:
+            failed += 1
+            print(f"{path}:", file=sys.stderr)
+            for problem in blocking:
+                print(f"  - {problem}", file=sys.stderr)
+            continue
+
+        path.write_text(canonical, encoding="utf-8")
+
+    if args.check:
+        if failed:
+            print(
+                f"config style: {failed} of {len(paths)} file(s) need formatting",
+                file=sys.stderr,
+            )
+            return 1
+        print(f"config style: {len(paths)} file(s) ok")
+    else:
+        if failed:
+            return 1
+        print(f"config style: rewrote {len(paths)} file(s)")
+
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

@@ -1,0 +1,62 @@
+name: Validate
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: validate-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Setup Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: Install ShellCheck
+        run: sudo apt-get update && sudo apt-get install -y shellcheck
+
+      - name: Shell syntax
+        run: |
+          for file in build.sh utils.sh add-app.sh build-termux.sh .github/scripts/*.sh; do
+            bash -n "$file"
+          done
+
+      - name: ShellCheck
+        run: >-
+          shellcheck -S warning
+          build.sh utils.sh add-app.sh build-termux.sh .github/scripts/*.sh
+
+      - name: Python syntax
+        run: python3 -m compileall -q scripts
+
+      - name: JavaScript syntax
+        run: node --check site/app.js
+
+      - name: Config style
+        run: python3 scripts/config_style.py --check configs/*.toml
+
+      - name: Config schema
+        run: python3 scripts/validate_configs.py
+
+      - name: Generated site data
+        run: |
+          tmp=$(mktemp -d)
+          python3 scripts/generate_site.py --offline --output "$tmp/data.json"
+          python3 scripts/check_site_data.py "$tmp/data.json"
+
+      - name: Project links
+        run: python3 scripts/check_project_links.py

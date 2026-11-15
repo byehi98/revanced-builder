@@ -6,6 +6,7 @@ This project is an extensive ReVanced builder that can create Magisk modules and
 - **Primary Language:** Bash
 - **Environment Management:** Nix (`flake.nix`, `flake.lock`)
 - **Key Dependencies:** OpenJDK 21, `jq`, `zip`, `curl`/`wget`, `aapt2`, `apksigner`, `apkeep`, `gplaydl`
+- **Validation Dependencies:** Python 3.12+, ShellCheck and Node.js. They are part of the Nix dev shell and are installed by `.github/workflows/validate.yml`.
 - **apkeep:** pinned in `flake.nix` to a specific upstream release binary, because nixpkgs-unstable still carries 0.18.0. Only apkeep's `apk-pure` source is used — Google Play is deliberately not, since it is unusable here (anonymous requests are rejected on apkeep >= 1.0.0, and authenticated ones exit 0 while downloading nothing). `apk-pure` needs `-o acknowledge_dangers=true` or apkeep >= 1.1.0 refuses to run, and it exits 0 even when a version is unavailable, so `dl_apkeep` checks for a downloaded file rather than trusting the exit code.
 - **Configuration:** TOML (`config.toml`)
 
@@ -15,6 +16,9 @@ This project is an extensive ReVanced builder that can create Magisk modules and
 - `config.toml`: The root config — global settings plus a pointer to the app config directory.
 - `configs/`: One TOML file per patch author, each holding that author's app tables. All of them are merged into the root config by `toml_prep`.
 - `CONFIG.md`: Documentation for the configuration options available in `config.toml` and the per-author files.
+- `Makefile`: Local entry points — `make site`, `make preview`, `make check`, `make clean`.
+- `scripts/`: Dependency-free Python tooling for config generation/validation, site generation, icons and project-link checks.
+- `site/`: Static Obtainium catalogue. `site/data.json` and `site/apps/` are generated and git-ignored; `site/icons/` is committed.
 - `bin/`: Contains pre-compiled binary utilities for different architectures and tools (`aapt2`, `htmlq`, `toml`, `apksigner.jar`, `apkprep.jar`, `ApkPrep.java`).
 - `module/`: Template for the Magisk module structure.
 - `ksu_profile/`: Source code for KernelSU profile integration.
@@ -55,6 +59,18 @@ Sources from `helper-for-morphe` integrated into the builder:
 
 Only keep sources that actually work for a given package. `apkpure` in particular scrapes `<url>/versions`, and APKPure returns `410` for apps it has no version history for — a dead entry there is just a wasted request, so omit it rather than shipping a URL that can never resolve.
 
+### Validation
+`make check` runs the same gate as `.github/workflows/validate.yml`: shell syntax
+and ShellCheck, Python/JavaScript syntax, canonical config style, config schema,
+a fresh offline catalogue plus `check_site_data.py`, and the project-link check.
+Never hand-edit generated site data; regenerate it with `make site`.
+
+### Signing
+`ks.keystore` and `ks-p12.keystore` are public test keys; they are not secrets.
+`utils.sh` exposes `RVB_KEYSTORE`, `RVB_KEYSTORE_PASS`,
+`RVB_KEYSTORE_ENTRY_PASS`, `RVB_KEYSTORE_ALIAS` and `RVB_PATCHER_KEYSTORE` so a
+fork can sign with its own certificate without editing tracked files.
+
 ### Development Conventions
 - **Error Handling:** Use `abort "message"` to terminate the script with an error message and cleanup.
 - **Logging:** Use `pr` for success/info messages, `epr` for errors, and `wpr` for warnings.
@@ -69,3 +85,7 @@ Only keep sources that actually work for a given package. `apkpure` in particula
 - `./build.sh <config.toml> --config-update`: Update the configuration file.
 - `./add-app.sh <app-name> <patch-source> [package-name]`: Add or update an app table in `configs/<owner>-<repo>.toml` using the canonical config style (standard header, key order, aligned `=`) and a plain table name like `[TradingView]`. Supports `--link <morphe-add-source-url>`, `--json`, `--dry-run`, `--table`, `--brand`, `--cli-source` and preserves existing comments/unmanaged keys. Name/package resolution checks the site catalog (`morphe-patches.software/data/catalog.json`) first, using exact normalized matches and failing with a candidate list when ambiguous, then falls back to existing configs, the GitHub release index and the Morphe archive. New tables get `aptoide-dlurl` and `apkeep-dlurl`; `morphe-dlurl` is only added with `--morphe`.
 - `bash build-termux.sh`: Specialized build script for Termux environments.
+- `make site`: Generate `site/data.json` and `site/apps/*.html`.
+- `make preview`: Generate the site and serve it on `http://localhost:8000`.
+- `make check`: Run the full local validation gate.
+- `make clean`: Remove build, temp and generated site artifacts.

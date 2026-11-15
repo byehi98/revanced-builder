@@ -817,8 +817,12 @@ def main(argv: list[str] | None = None) -> int:
     if pages:
         write_app_pages(output.parent / "apps", pages)
 
+    # Icons live in the checkout, not next to --output.  Keeping the lookup
+    # rooted at site/ also lets CI generate a temporary data.json outside the
+    # published directory without losing every icon path.
+    icon_dir = root / "site" / "icons"
     for entry in entries:
-        icon = output.parent / "icons" / f"{entry['package']}.png"
+        icon = icon_dir / f"{entry['package']}.png"
         if entry["package"] and icon.is_file():
             entry["icon"] = f"icons/{entry['package']}.png"
         entry.pop("_prefix", None)
