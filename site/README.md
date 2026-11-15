@@ -11,7 +11,7 @@ per built app.
 | :--- | :--- |
 | `index.html` | Page shell and copy |
 | `style.css` | Dark/light theme, layout, cards and redirect page |
-| `app.js` | Search, source filter, sorting, theme, copy-link, import file |
+| `app.js` | Search, source/update filters, sorting, theme, copy actions, import file |
 | `data.json` | Generated catalogue (do not edit by hand) |
 | `icons/*.png` | Committed 96×96 circular launcher icons (third-party artwork) |
 | `icons/sources.json` | Generated provenance for each icon (do not edit by hand) |
@@ -125,8 +125,9 @@ Google Play or from an APK and which drawable was used.
 ## Bulk import
 
 The hero offers a downloadable `revanced-builder-obtainium.json` containing one
-config per built app. Import it from **Settings → Import/export → Obtainium
-import**.
+config per built app. When a search, source filter or update filter is active,
+the file contains one config per matching package instead. Import it from
+**Settings → Import/export → Obtainium import**.
 
 Obtainium keys apps by Android package ID, so variants of the same package
 cannot coexist. The import file keeps one config per package — the most

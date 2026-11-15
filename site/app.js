@@ -22,7 +22,9 @@
     apps: [],
     query: "",
     source: "all",
+    updated: "any",
     sort: "recent",
+    hasPreviousVisit: false,
   };
 
   const els = {
@@ -33,6 +35,7 @@
     search: $("#searchInput"),
     searchClear: $("#searchClear"),
     source: $("#sourceFilter"),
+    update: $("#updateFilter"),
     sort: $("#sortSelect"),
     clearFilters: $("#clearFilters"),
     statApps: $("#statApps"),
@@ -151,9 +154,9 @@
 
   // Obtainium keys apps by package ID, so variants of the same package cannot
   // coexist. Keep the most recent build of each package for the bulk import.
-  function bulkObtainiumConfigs() {
+  function bulkObtainiumConfigs(apps = state.apps) {
     const isDev = (app) => /(?:^|[-_.])dev(?:[-_.]|$)/i.test(app.name);
-    const built = state.apps
+    const built = apps
       .filter(isBuilt)
       .slice()
       .sort((a, b) => {
@@ -174,27 +177,44 @@
     return [...unique.values()];
   }
 
-  function initBulkImport() {
-    const configs = bulkObtainiumConfigs();
-    if (configs.length === 0) return;
+  function hasActiveFilters() {
+    return Boolean(state.query.trim()) || state.source !== "all" || state.updated !== "any";
+  }
 
-    const builds = state.apps.filter(isBuilt).length;
+  let bulkImportUrl = "";
+
+  function updateBulkImport(apps = filteredApps()) {
+    const configs = bulkObtainiumConfigs(apps);
+    if (!els.obtainiumImportNote || !els.obtainiumDownload) return;
+    if (configs.length === 0) {
+      els.obtainiumImportNote.hidden = true;
+      return;
+    }
+
+    const builds = apps.filter(isBuilt).length;
+    const scoped = hasActiveFilters();
+    const noun = configs.length === 1 ? "app" : "apps";
+    const verb = configs.length === 1 ? "matches" : "match";
+
     if (els.obtainiumImportDetail) {
-      els.obtainiumImportDetail.textContent =
-        builds > configs.length
+      els.obtainiumImportDetail.textContent = scoped
+        ? `${configs.length.toLocaleString()} ${noun} ${verb} the current filters.`
+        : builds > configs.length
           ? `${builds.toLocaleString()} builds, one config per package.`
           : `${configs.length.toLocaleString()} apps in one import file.`;
     }
 
-    if (els.obtainiumDownload) {
-      const blob = new Blob([JSON.stringify(configs, null, 2)], { type: "application/json" });
-      els.obtainiumDownload.href = URL.createObjectURL(blob);
-      els.obtainiumDownload.setAttribute("download", "revanced-builder-obtainium.json");
-      els.obtainiumDownload.title =
-        `Download ${configs.length.toLocaleString()} app configs for Obtainium`;
-    }
-
-    if (els.obtainiumImportNote) els.obtainiumImportNote.hidden = false;
+    if (bulkImportUrl) URL.revokeObjectURL(bulkImportUrl);
+    const blob = new Blob([JSON.stringify(configs, null, 2)], { type: "application/json" });
+    bulkImportUrl = URL.createObjectURL(blob);
+    els.obtainiumDownload.href = bulkImportUrl;
+    els.obtainiumDownload.setAttribute("download", "revanced-builder-obtainium.json");
+    els.obtainiumDownload.textContent = scoped
+      ? `Download import for these ${configs.length.toLocaleString()} ${noun}`
+      : "Download the all-apps import file";
+    els.obtainiumDownload.title =
+      `Download ${configs.length.toLocaleString()} ${noun} for Obtainium`;
+    els.obtainiumImportNote.hidden = false;
   }
 
   function buildHaystack(app) {
@@ -297,6 +317,46 @@
   }
 
   /* --------------------------------------------------------------------- */
+  /* visit tracking                                                        */
+  /* --------------------------------------------------------------------- */
+
+  const LAST_VISIT_KEY = "rvb-last-visit";
+  const NEW_MARKER_MAX_AGE = 30 * 86400000;
+
+  function readLastVisit() {
+    try {
+      const saved = localStorage.getItem(LAST_VISIT_KEY);
+      const time = Date.parse(saved || "");
+      return Number.isFinite(time) ? time : null;
+    } catch {
+      return null;
+    }
+  }
+
+  function storeLastVisit() {
+    try {
+      localStorage.setItem(LAST_VISIT_KEY, new Date().toISOString());
+    } catch {
+      /* storage may be unavailable */
+    }
+  }
+
+  function initCatalogApps(data) {
+    const previous = readLastVisit();
+    const cutoff = previous === null ? null : Math.max(previous, Date.now() - NEW_MARKER_MAX_AGE);
+    state.hasPreviousVisit = previous !== null;
+    state.apps = data.apps.map((app) => {
+      const updated = Date.parse(app.updated_at || "");
+      return {
+        ...app,
+        _haystack: buildHaystack(app),
+        _isNew: cutoff !== null && Number.isFinite(updated) && updated > cutoff,
+      };
+    });
+    storeLastVisit();
+  }
+
+  /* --------------------------------------------------------------------- */
   /* rendering                                                             */
   /* --------------------------------------------------------------------- */
 
@@ -304,7 +364,11 @@
     const version = app.patch_version
       ? `<span class="badge-muted">· patches ${esc(app.patch_version)}</span>`
       : "";
-    return `<a class="badge source" href="${esc(safeUrl(app.source_url))}" target="_blank" rel="noopener" title="Patches source: ${esc(app.source)}"><span class="source-name">${esc(app.source)}</span> ${version}</a>`;
+    return `<span class="badge source">
+      <button class="source-filter" type="button" data-source-filter="${esc(app.source)}" title="Filter by ${esc(app.source)}">${esc(app.source)}</button>
+      ${version}
+      <a class="source-link" href="${esc(safeUrl(app.source_url))}" target="_blank" rel="noopener" title="Open patches source" aria-label="Open ${esc(app.source)} repository">↗</a>
+    </span>`;
   }
 
   function archBadges(app) {
@@ -345,15 +409,19 @@
     const statusClass = built ? "built" : app.status === "failed" ? "failed" : "";
     const version = app.version ? `<span class="version-badge" title="Patched app version">${esc(versionLabel(app.version))}</span>` : "";
     const packageLine = app.package
-      ? `<code class="package" title="Android package ID">${esc(app.package)}</code>`
+      ? `<button class="package" type="button" data-copy-package="${esc(app.package)}" title="Copy package ID" aria-label="Copy package ID ${esc(app.package)}">${esc(app.package)}</button>`
       : "";
+    const metaParts = [];
+    if (app.updated_at) metaParts.push(`Updated ${esc(relativeDate(app.updated_at))}`);
+    if (app._isNew) metaParts.push(`<span class="new-marker">New</span>`);
+    const metaLine = metaParts.length ? `<div class="card-meta">${metaParts.join(" · ")}</div>` : "";
     const download = primary
       ? `<a class="btn btn-ghost" href="${esc(safeUrl(primary.url))}" target="_blank" rel="noopener" title="Download ${esc(primary.name)}">${ICONS.download}<span>Download</span></a>`
       : `<a class="btn btn-ghost" aria-disabled="true" href="#" title="No release asset yet">${ICONS.download}<span>Download</span></a>`;
     const copyTitle = `Copy Obtainium link for ${app.name}`;
     const icon = app.icon || (app.package ? `icons/${app.package}.png` : "");
     const iconHTML = icon
-      ? `<img class="app-icon" src="${esc(icon)}" alt="" width="40" height="40" loading="lazy" decoding="async" onerror="this.remove()">`
+      ? `<img class="app-icon" src="${esc(icon)}" alt="" width="28" height="28" loading="lazy" decoding="async" onerror="this.remove()">`
       : "";
 
     return `<article class="app-card">
@@ -366,6 +434,7 @@
         ${version}
       </div>
       ${packageLine}
+      ${metaLine}
       <div class="badges">${sourceBadge(app)}</div>
       <div class="badges">${archBadges(app)}</div>
       <div class="card-actions">
@@ -379,8 +448,18 @@
 
   function filteredApps() {
     const query = state.query.trim().toLowerCase();
+    const now = Date.now();
     const list = state.apps.filter((app) => {
       if (state.source !== "all" && app.source !== state.source) return false;
+
+      if (state.updated === "new") {
+        if (!app._isNew) return false;
+      } else if (state.updated !== "any") {
+        const days = state.updated === "30d" ? 30 : 7;
+        const updated = Date.parse(app.updated_at || "");
+        if (!Number.isFinite(updated) || updated < now - days * 86400000) return false;
+      }
+
       if (!query) return true;
       return app._haystack.includes(query);
     });
@@ -407,7 +486,7 @@
   function updateResultCount(shown) {
     const total = state.apps.length;
     const sources = state.data?.counts?.sources ?? 0;
-    if (shown === total && state.source === "all" && !state.query.trim()) {
+    if (shown === total && !hasActiveFilters()) {
       els.resultCount.textContent = `${total.toLocaleString()} apps across ${sources} patch sources`;
     } else {
       els.resultCount.textContent = `Showing ${shown.toLocaleString()} of ${total.toLocaleString()} apps`;
@@ -418,6 +497,7 @@
     if (!state.data) return;
     const list = filteredApps();
     updateResultCount(list.length);
+    updateBulkImport(list);
 
     if (list.length === 0) {
       els.grid.innerHTML = "";
@@ -454,6 +534,7 @@
       const params = new URLSearchParams();
       if (state.query.trim()) params.set("q", state.query.trim());
       if (state.source !== "all") params.set("source", state.source);
+      if (state.updated === "7d" || state.updated === "30d") params.set("updated", state.updated);
       if (state.sort !== "recent") params.set("sort", state.sort);
       const query = params.toString();
       const next = `${window.location.pathname}${query ? `?${query}` : ""}${window.location.hash}`;
@@ -468,6 +549,8 @@
       const params = new URLSearchParams(window.location.search);
       state.query = params.get("q") || "";
       state.source = params.get("source") || "all";
+      const updated = params.get("updated");
+      if (["7d", "30d"].includes(updated)) state.updated = updated;
       const sort = params.get("sort");
       if (["recent", "name", "source", "downloads"].includes(sort)) state.sort = sort;
     } catch {
@@ -523,15 +606,21 @@
       if (!data || !Array.isArray(data.apps)) throw new Error("Invalid data.json");
 
       state.data = data;
-      state.apps = data.apps.map((app) => ({ ...app, _haystack: buildHaystack(app) }));
+      initCatalogApps(data);
 
       applyMeta(data);
       renderSources();
-      initBulkImport();
+
+      const newOption = $('option[value="new"]', els.update);
+      if (newOption) {
+        newOption.disabled = !state.hasPreviousVisit;
+        newOption.title = state.hasPreviousVisit ? "" : "Available after your next visit";
+      }
 
       els.search.value = state.query;
       els.searchClear.hidden = !state.query;
       els.sort.value = state.sort;
+      els.update.value = state.updated;
       els.source.value = state.source;
       if (els.source.value !== state.source) {
         state.source = "all";
@@ -559,12 +648,16 @@
   );
 
   els.search?.addEventListener("keydown", (event) => {
-    if (event.key === "Escape" && state.query) {
+    if (event.key !== "Escape") return;
+    if (state.query) {
+      event.preventDefault();
       els.search.value = "";
       state.query = "";
       els.searchClear.hidden = true;
       syncUrl();
       render();
+    } else {
+      els.search.blur();
     }
   });
 
@@ -583,6 +676,12 @@
     render();
   });
 
+  els.update?.addEventListener("change", () => {
+    state.updated = els.update.value;
+    syncUrl();
+    render();
+  });
+
   els.sort?.addEventListener("change", () => {
     state.sort = els.sort.value;
     syncUrl();
@@ -592,10 +691,12 @@
   els.clearFilters?.addEventListener("click", () => {
     state.query = "";
     state.source = "all";
+    state.updated = "any";
     state.sort = "recent";
     els.search.value = "";
     els.searchClear.hidden = true;
     els.source.value = "all";
+    els.update.value = "any";
     els.sort.value = "recent";
     syncUrl();
     render();
@@ -603,10 +704,52 @@
   });
 
   els.grid?.addEventListener("click", async (event) => {
-    const button = event.target.closest("[data-copy]");
-    if (!button) return;
-    const ok = await copyText(button.dataset.copy || "");
-    toast(ok ? "Obtainium link copied" : "Could not copy the link");
+    const copyButton = event.target.closest("[data-copy]");
+    if (copyButton) {
+      const ok = await copyText(copyButton.dataset.copy || "");
+      toast(ok ? "Obtainium link copied" : "Could not copy the link");
+      return;
+    }
+
+    const packageButton = event.target.closest("[data-copy-package]");
+    if (packageButton) {
+      const ok = await copyText(packageButton.dataset.copyPackage || "");
+      toast(ok ? "Package ID copied" : "Could not copy the package ID");
+      return;
+    }
+
+    const sourceButton = event.target.closest("[data-source-filter]");
+    if (sourceButton) {
+      const source = sourceButton.dataset.sourceFilter || "all";
+      if (els.source && [...els.source.options].some((option) => option.value === source)) {
+        state.source = source;
+        els.source.value = source;
+      } else {
+        state.source = "all";
+        els.source.value = "all";
+      }
+      syncUrl();
+      render();
+    }
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.defaultPrevented || event.ctrlKey || event.metaKey || event.altKey) return;
+    const target = event.target;
+    if (
+      target instanceof HTMLElement &&
+      (target.tagName === "INPUT" ||
+        target.tagName === "TEXTAREA" ||
+        target.tagName === "SELECT" ||
+        target.isContentEditable)
+    ) {
+      return;
+    }
+    if (event.key === "/") {
+      event.preventDefault();
+      els.search?.focus();
+      els.search?.select();
+    }
   });
 
   boot();

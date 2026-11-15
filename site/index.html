@@ -84,7 +84,7 @@
         <div class="filter">
           <label for="searchInput">Search</label>
           <div class="search-control">
-            <input id="searchInput" type="search" placeholder="App, package, or patch source" autocomplete="off" spellcheck="false">
+            <input id="searchInput" type="search" placeholder="App, package, or patch source" autocomplete="off" spellcheck="false" aria-keyshortcuts="/">
             <button class="clear-btn" id="searchClear" type="button" aria-label="Clear search" hidden>Clear</button>
           </div>
         </div>
@@ -93,6 +93,16 @@
           <label for="sourceFilter">Patch source</label>
           <select id="sourceFilter">
             <option value="all">All patch sources</option>
+          </select>
+        </div>
+
+        <div class="filter">
+          <label for="updateFilter">Updated</label>
+          <select id="updateFilter">
+            <option value="any">Any time</option>
+            <option value="7d">Last 7 days</option>
+            <option value="30d">Last 30 days</option>
+            <option value="new">New since last visit</option>
           </select>
         </div>
 

@@ -352,7 +352,7 @@ svg {
 
 .search-row {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 210px 170px;
+  grid-template-columns: minmax(0, 1fr) 190px 150px 150px;
   gap: 12px;
   margin-top: 14px;
 }
@@ -497,10 +497,30 @@ svg {
 }
 
 .package {
+  align-self: flex-start;
+  padding: 0;
+  border: 0;
+  background: none;
   color: var(--faint);
   font-family: var(--mono);
   font-size: 0.7rem;
+  text-align: left;
   overflow-wrap: anywhere;
+}
+
+.package:hover {
+  color: var(--text);
+  text-decoration: underline;
+}
+
+.card-meta {
+  color: var(--faint);
+  font-size: 0.72rem;
+}
+
+.new-marker {
+  color: var(--green);
+  font-weight: 650;
 }
 
 .badges {
@@ -519,10 +539,30 @@ svg {
 }
 
 .badge.source {
+  display: inline;
   color: var(--text);
 }
 
-.badge.source:hover {
+.source-filter {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+}
+
+.source-filter:hover {
+  text-decoration: underline;
+}
+
+.source-link {
+  color: var(--faint);
+  text-decoration: none;
+}
+
+.source-link:hover {
+  color: var(--text);
   text-decoration: underline;
 }
 
@@ -729,6 +769,17 @@ svg {
 /* ------------------------------------------------------------------------- */
 /* responsive                                                                 */
 /* ------------------------------------------------------------------------- */
+
+@media (max-width: 920px) {
+  .search-row {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .search-row .filter:first-child,
+  .search-row .filter:last-child {
+    grid-column: 1 / -1;
+  }
+}
 
 @media (max-width: 760px) {
   .container {
