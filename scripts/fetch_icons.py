@@ -41,6 +41,8 @@ DATA_FILE = ROOT / "site" / "data.json"
 ICON_DIR = ROOT / "site" / "icons"
 SOURCES_FILE = ICON_DIR / "sources.json"
 PLAY_URL = "https://play.google.com/store/apps/details?id={}&hl=en&gl=US"
+PLAY_ICON_SUFFIX = "=s96-cc"
+PNG_SIGNATURE = b"\x89PNG\r\n\x1a\n"
 USER_AGENT = (
     "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
     "(KHTML, like Gecko) Chrome/124.0 Safari/537.36"
@@ -109,6 +111,26 @@ def download(url: str, destination: Path) -> bytes:
     return data
 
 
+def _convert_to_png(path: Path) -> None:
+    """Convert a downloaded Play image to PNG (Play serves JPEG for some apps)."""
+
+    magick = shutil.which("magick") or shutil.which("convert")
+    if not magick:
+        raise RuntimeError("Play icon was not a PNG and ImageMagick is unavailable")
+    converted = path.with_name(path.name + ".png")
+    try:
+        result = subprocess.run(
+            [magick, str(path), "-strip", f"png:{converted}"],
+            capture_output=True,
+            text=True,
+        )
+        if result.returncode != 0:
+            raise RuntimeError(f"could not convert Play icon to PNG: {result.stderr.strip()}")
+        converted.replace(path)
+    finally:
+        converted.unlink(missing_ok=True)
+
+
 def fetch_from_play(package: str, destination: Path) -> dict[str, str]:
     lookup = PLAY_OVERRIDES.get(package, package)
     icon = play_icon_url(lookup)
@@ -116,9 +138,9 @@ def fetch_from_play(package: str, destination: Path) -> dict[str, str]:
         raise RuntimeError(f"no Play listing icon for {lookup}")
     temporary = destination.with_name(destination.name + ".tmp")
     try:
-        data = download(icon + "=s96-cc", temporary)
-        if not data.startswith(b"\x89PNG\r\n\x1a\n"):
-            raise RuntimeError("Play icon was not a PNG")
+        data = download(icon + PLAY_ICON_SUFFIX, temporary)
+        if not data.startswith(PNG_SIGNATURE):
+            _convert_to_png(temporary)
         temporary.replace(destination)
     finally:
         temporary.unlink(missing_ok=True)

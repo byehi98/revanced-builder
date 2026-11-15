@@ -201,11 +201,6 @@
     "source": "google-play",
     "play_package": "com.direlight.grimvalor"
   },
-  "com.discord": {
-    "file": "com.discord.png",
-    "source": "google-play",
-    "play_package": "com.discord"
-  },
   "com.dnddream.HeadBasketball": {
     "file": "com.dnddream.HeadBasketball.png",
     "source": "google-play",
@@ -271,6 +266,11 @@
     "source": "google-play",
     "play_package": "com.google.android.apps.magazines"
   },
+  "com.google.android.apps.maps": {
+    "file": "com.google.android.apps.maps.png",
+    "source": "google-play",
+    "play_package": "com.google.android.apps.maps"
+  },
   "com.halfbrick.dantheman": {
     "file": "com.halfbrick.dantheman.png",
     "source": "apk",
@@ -322,6 +322,16 @@
     "file": "com.kiloo.subwaysurf.png",
     "source": "google-play",
     "play_package": "com.kiloo.subwaysurf"
+  },
+  "com.king.candycrushsaga": {
+    "file": "com.king.candycrushsaga.png",
+    "source": "google-play",
+    "play_package": "com.king.candycrushsaga"
+  },
+  "com.king.candycrushsodasaga": {
+    "file": "com.king.candycrushsodasaga.png",
+    "source": "google-play",
+    "play_package": "com.king.candycrushsodasaga"
   },
   "com.kongregate.mobile.burritobison3.google": {
     "file": "com.kongregate.mobile.burritobison3.google.png",
@@ -533,6 +543,11 @@
     "source": "google-play",
     "play_package": "com.rubygames.assassin"
   },
+  "com.sadpuppy.lemmings": {
+    "file": "com.sadpuppy.lemmings.png",
+    "source": "google-play",
+    "play_package": "com.sadpuppy.lemmings"
+  },
   "com.server.auditor.ssh.client": {
     "file": "com.server.auditor.ssh.client.png",
     "source": "google-play",
@@ -585,10 +600,20 @@
     "source": "google-play",
     "play_package": "com.touchtype.swiftkey"
   },
+  "com.tradingview.tradingviewapp": {
+    "file": "com.tradingview.tradingviewapp.png",
+    "source": "google-play",
+    "play_package": "com.tradingview.tradingviewapp"
+  },
   "com.truecaller": {
     "file": "com.truecaller.png",
     "source": "google-play",
     "play_package": "com.truecaller"
+  },
+  "com.twitter.android": {
+    "file": "com.twitter.android.png",
+    "source": "google-play",
+    "play_package": "com.twitter.android"
   },
   "com.vitastudio.mahjong": {
     "file": "com.vitastudio.mahjong.png",
@@ -691,11 +716,6 @@
     "asset": "home-workout-entree3k-v1.7.6-all.apk",
     "drawable": "res/drawable-anydpi-v26/ic_launcher.xml"
   },
-  "io.syncapps.lemmy_sync": {
-    "file": "io.syncapps.lemmy_sync.png",
-    "source": "google-play",
-    "play_package": "io.syncapps.lemmy_sync"
-  },
   "jpark.AOS5": {
     "file": "jpark.AOS5.png",
     "source": "google-play",
@@ -740,13 +760,6 @@
     "file": "org.telegram.messenger.png",
     "source": "google-play",
     "play_package": "org.telegram.messenger"
-  },
-  "org.ungoogled.android.apps.maps": {
-    "file": "org.ungoogled.android.apps.maps.png",
-    "source": "apk",
-    "app": "Google-Maps_morphe-patches",
-    "asset": "google-maps_morphe-patches-bearinmindcat-v26.36.04.973607363-all.apk",
-    "drawable": "res/mipmap-anydpi/ungoogled_legacy_icon.xml"
   },
   "org.zwanoo.android.speedtest": {
     "file": "org.zwanoo.android.speedtest.png",

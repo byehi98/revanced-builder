@@ -257,7 +257,7 @@
     const next = theme === "light" ? "light" : "dark";
     document.documentElement.dataset.theme = next;
     if (els.themeColor) {
-      els.themeColor.setAttribute("content", next === "dark" ? "#0d0b14" : "#f7f5fc");
+      els.themeColor.setAttribute("content", next === "dark" ? "#111111" : "#ffffff");
     }
     if (els.themeToggle) {
       els.themeToggle.setAttribute(
