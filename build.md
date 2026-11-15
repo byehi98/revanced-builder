@@ -1,18 +1,11 @@
 
-**4 apps built.**
+**1 apps built.**
   
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
-CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
-Patches: legendsciber/patches-1.54.2.mpp  
-[Changelog](https://github.com/legendsciber/morphe-patches/releases/tag/v1.55.0)
-
-CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
-Patches: MorpheApp/patches-2.3.0-dev.7.mpp  
-[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v2.3.0-dev.7)
-
-CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
-CLI: MorpheApp/morphe-desktop-2.1.1-all.jar    
+CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
+Patches: bearinmindcat/patches-2.9.10.mpp  
+[Changelog](https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.9.10)  
 
 Skipped:  
 Google-Photos-Akash-Sriram: 7.99.0.1007655401  
@@ -52,8 +45,12 @@ The-Battle-of-Polytopia: 2.17.3.16375
 Zombie-Catchers: latest  
 Reddit-Morphe: 2026.40.0
 Patches: MorpheApp/patches-2.2.0.mpp  
+Reddit-Morphe-Dev: 2026.46.0
+Patches: MorpheApp/patches-2.3.0-dev.7.mpp  
 YouTube-Morphe: 21.30.216
+YouTube-Morphe-Dev: 21.45.82
 YouTube-Music-Morphe: 9.30.53  
+YouTube-Music-Morphe-Dev: 9.46.51  
 Adobe-Photoshop-Mix: 2.6.3
 Patches: RookieEnough/patches-1.6.4.mpp  
 Cricbuzz: 6.24.01
@@ -73,8 +70,6 @@ Patches: arandomhooman/patches-1.53.0.mpp
 FolderSync: 4.12.0  
 Microsoft-SwiftKey: 9.13.13.5  
 Poweramp: build-1025-bundle-play  
-Google-Maps: 26.36.04.973607363
-Patches: bearinmindcat/patches-2.9.9.mpp  
 Brave-Bufferk: 1.92.140
 Patches: bufferk/patches-1.8.1.mpp  
 Medium: 4.5.1784910928
@@ -175,6 +170,8 @@ Patches: kiraio-moe/patches-1.3.0.mpp
 Camera: 5.4.0  
 Hidden-Settings: 7.34  
 iLovePDF: 4.0.1    
+Subway-Surfers: 3.71.0
+Patches: legendsciber/patches-1.54.2.mpp  
 Letterboxd-mvaishak: 3.6.7
 Patches: mvaishak/patches-3.0.1.mpp  
 Chess-com: 4.10.0  
@@ -219,10 +216,7 @@ qBitConnect: 2.0.6
 Spotify: 2.2.553
 Patches: spicetify/patches-1.2.0.mpp  
 Imgur: 7.34.0.0      
-Patches: sushruth/patches-1.0.0.mpp                                                            
+Patches: sushruth/patches-1.0.0.mpp                                                              
 
 ### Built versions  
-Reddit-Morphe-Dev: 2026.46.0
-Subway-Surfers: 3.71.0
-YouTube-Morphe-Dev: 21.45.82
-YouTube-Music-Morphe-Dev: 9.46.51  
+Google-Maps: 26.44.06.1006895251  
