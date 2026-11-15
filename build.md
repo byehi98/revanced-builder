@@ -1,57 +1,36 @@
 
-**1 apps built.**
+**4 apps built.**
   
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
 CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
-Patches: hxreborn/patches-1.79.0.mpp  
-[Changelog](https://github.com/hxreborn/morphe-patches/releases/tag/v1.79.0)  
+Patches: legendsciber/patches-1.54.2.mpp  
+[Changelog](https://github.com/legendsciber/morphe-patches/releases/tag/v1.55.0)
+
+CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
+Patches: MorpheApp/patches-2.3.0-dev.7.mpp  
+[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v2.3.0-dev.7)
+
+CLI: MorpheApp/morphe-desktop-2.1.1-all.jar  
+CLI: MorpheApp/morphe-desktop-2.1.1-all.jar    
 
 Skipped:  
-Patches: bearinmindcat/patches-2.9.9.mpp  
-Patches: byehi98/patches-1.51.0-dev.2.mpp  
-Patches: legendsciber/patches-1.54.1.mpp  
-Patches: Akash-Sriram/patches-1.17.11.mpp  
-Patches: Alastor-Kaneki/patches-1.15.3.mpp  
-Patches: Aunali321/patches-2.0.0.rvp  
-Patches: BholeyKaBhakt/patches-2.14.0.mpp  
-Patches: BholeyKaBhakt/patches-2.14.0.mpp  
-Patches: BlazeFTL/patches-1.43.7.4.mpp  
-Patches: Entree3k/patches-1.22.0.mpp  
-Patches: IMXEren/patches-1.4.1.mpp  
-Patches: MiguelNinja19/patches-1.13.6.mpp  
-Patches: MorpheApp/patches-2.2.0.mpp  
-Patches: MorpheApp/patches-2.3.0-dev.5.mpp  
-Patches: RookieEnough/patches-1.6.4.mpp  
-Patches: SysAdminDoc/patches-0.0.14.mpp  
-Patches: SysAdminDoc/patches-0.0.25.mpp  
-Patches: arandomhooman/patches-1.53.0.mpp  
-Patches: bufferk/patches-1.8.1.mpp  
-Patches: byehi98/patches-1.50.0.mpp  
-Patches: cesbar/patches-1.14.0.mpp  
-Patches: crimera/patches-3.75.0.mpp  
-Patches: dh6k/patches-1.9.0.mpp  
-Patches: durgesh0505/patches-1.27.8.mpp  
-Patches: ethanm6/patches-1.4.4.mpp  
-Patches: heval99/patches-2.3.0.mpp  
-Patches: hoo-dles/patches-1.47.0.mpp  
-Patches: hxreborn/patches-1.78.1.mpp  
-Patches: jkennethcarino/patches-2.0.0-dev.4.mpp  
-Patches: kiraio-moe/patches-1.3.0.mpp  
-Patches: mvaishak/patches-3.0.1.mpp  
-Patches: prathxmOp/patches-1.15.0.mpp  
-Patches: rushiranpise/patches-1.23.1.mpp  
-Patches: spicetify/patches-1.2.0.mpp  
-Patches: sushruth/patches-1.0.0.mpp                                                          
 Google-Photos-Akash-Sriram: 7.99.0.1007655401  
+Patches: Akash-Sriram/patches-1.17.11.mpp  
 Opera-GX: latest  
+Patches: Alastor-Kaneki/patches-1.15.3.mpp  
 Telegram: 12.10.1  
+Patches: Aunali321/patches-2.0.0.rvp  
 Automate: 1.51.1
+Patches: BholeyKaBhakt/patches-2.14.0.mpp  
 Backdrops: 6.6
+Patches: BholeyKaBhakt/patches-2.14.0.mpp  
 Speedtest: 7.1.4  
 All-Video-Downloader-and-Ace-Player: 1.9.8
+Patches: BlazeFTL/patches-1.43.7.4.mpp  
 RS-File-Manager-BlazeFTL: latest  
 Arm-Workout: 2.4.3  
+Patches: Entree3k/patches-1.22.0.mpp  
 Does-Not-Commute-Entree3k: 1.5.5  
 Home-Workout: 1.7.6  
 Lose-Weight-App-for-Men: 2.4.37  
@@ -61,7 +40,9 @@ PinOut: 1.0.7
 Send-Files-To-TV-Entree3k: 1.4.22
 Six-Pack-in-30-Days: 1.4.8  
 Trakt: 3.13.0  
+Patches: IMXEren/patches-1.4.1.mpp  
 Anger-of-Stick-5: latest  
+Patches: MiguelNinja19/patches-1.13.6.mpp  
 Climb: 6.0.8  
 CubeX-Solver: latest  
 Hunter-Assassin: latest  
@@ -70,12 +51,11 @@ Plants-vs-Zombies: latest
 The-Battle-of-Polytopia: 2.17.3.16375  
 Zombie-Catchers: latest  
 Reddit-Morphe: 2026.40.0
-Reddit-Morphe-Dev: 2026.46.0
+Patches: MorpheApp/patches-2.2.0.mpp  
 YouTube-Morphe: 21.30.216
-YouTube-Morphe-Dev: 21.45.82
 YouTube-Music-Morphe: 9.30.53  
-YouTube-Music-Morphe-Dev: 9.45.51  
 Adobe-Photoshop-Mix: 2.6.3
+Patches: RookieEnough/patches-1.6.4.mpp  
 Cricbuzz: 6.24.01
 Google-News-RookieEnough: latest
 Google-Photos: 7.92.0.977185651
@@ -85,16 +65,22 @@ Letterboxd: 3.6.5
 Photomath: 8.48.0
 SoundCloud-RookieEnough: 2026.10.28.release
 Pinterest: 14.44.0  
+Patches: SysAdminDoc/patches-0.0.14.mpp  
 Telegram-Hush: 13.2.1  
+Patches: SysAdminDoc/patches-0.0.25.mpp  
 Advanced-Download-Manager: 14.0.39  
+Patches: arandomhooman/patches-1.53.0.mpp  
 FolderSync: 4.12.0  
 Microsoft-SwiftKey: 9.13.13.5  
 Poweramp: build-1025-bundle-play  
 Google-Maps: 26.36.04.973607363
+Patches: bearinmindcat/patches-2.9.9.mpp  
 Brave-Bufferk: 1.92.140
+Patches: bufferk/patches-1.8.1.mpp  
 Medium: 4.5.1784910928
 Truecaller-bufferk: 26.10.6
 20-Minutes-Till-Dawn: 8.7
+Patches: byehi98/patches-1.50.0.mpp  
 Adda247: 12.8.3
 Aliens-Drive-Me-Crazy: 3.2.10
 Alto-Adventure: 1.8.27
@@ -105,6 +91,7 @@ Crash-of-Cars: 1.9.36
 Crossy-Road: 7.14.3
 Dan-The-Man: 1.14.11
 Dead-Target: 4.186.0
+Patches: byehi98/patches-1.51.0-dev.2.mpp  
 Dead-Trigger: 2.3.4
 Document-Scanner: 6.9.9
 Doodle-Jump: 3.11.40
@@ -144,19 +131,26 @@ Truecloud: 4.6.5.13
 Vector: 2.10.2
 Vita-Mahjong: 3.47.0  
 Minesweeper: 1.21.3
+Patches: cesbar/patches-1.14.0.mpp  
 Solitaire: 1.20.3
 Twitter: 12.41.0-prod.01  
+Patches: crimera/patches-3.75.0.mpp  
 Brave-Beta-dh6k: latest
+Patches: dh6k/patches-1.9.0.mpp  
 Brave-Nightly-dh6k: latest
 Brave-dh6k: latest
 Arrow-Puzzle: 1.7.0
+Patches: durgesh0505/patches-1.27.8.mpp  
 Does-Not-Commute-chiggi: 1.5.5
 Letterboxd-ethanm6: latest
+Patches: ethanm6/patches-1.4.4.mpp  
 AnyDesk: latest
+Patches: heval99/patches-2.3.0.mpp  
 AquaMail: 2.8.1
 Firefox: 159.0.1
 Truecaller: 26.44.6
 AdGuard-hoo-dles: 4.14.2
+Patches: hoo-dles/patches-1.47.0.mpp  
 CamScanner-hoo-dles: 7.20.0.2606230000
 Google-News-hoo-dles: 5.161.0.931240252
 Lightroom: 11.5.31
@@ -166,6 +160,8 @@ Solid-Explorer: 3.6.1
 WPS-Office: 18.24
 Wallcraft: 3.61.01  
 Candy-Crush-Saga: 1.340.0.1  
+Patches: hxreborn/patches-1.79.0.mpp  
+Candy-Crush-Soda-Saga: 1.331.3  
 Cx-File-Explorer: 2.8.1
 MovieBox-hxreborn: 4.0.03.1020.03
 ProtonVPN-hxreborn: 5.21.9.0
@@ -173,14 +169,18 @@ Protonmail: 7.11.12
 Symfonium: 15.1.0
 TradingView: 1.20.86.0.1002565
 Reddit-Adobo: 2026.45.0
+Patches: jkennethcarino/patches-2.0.0-dev.4.mpp  
 AudioRelay: 0.26.1  
+Patches: kiraio-moe/patches-1.3.0.mpp  
 Camera: 5.4.0  
 Hidden-Settings: 7.34  
 iLovePDF: 4.0.1    
-Subway-Surfers: 3.71.0
 Letterboxd-mvaishak: 3.6.7
+Patches: mvaishak/patches-3.0.1.mpp  
 Chess-com: 4.10.0  
+Patches: prathxmOp/patches-1.15.0.mpp  
 AccuBattery: 2.1.8
+Patches: rushiranpise/patches-1.23.1.mpp  
 Accuweather: 21.1.15-3-rc
 AdGuard-rushiranpise: 4.14.68
 Amoledpix: 7.3
@@ -217,7 +217,12 @@ Unimote: 1.8.1
 Yatri: 5.0.6
 qBitConnect: 2.0.6  
 Spotify: 2.2.553
+Patches: spicetify/patches-1.2.0.mpp  
 Imgur: 7.34.0.0      
+Patches: sushruth/patches-1.0.0.mpp                                                            
 
 ### Built versions  
-Candy-Crush-Soda-Saga: 1.331.3  
+Reddit-Morphe-Dev: 2026.46.0
+Subway-Surfers: 3.71.0
+YouTube-Morphe-Dev: 21.45.82
+YouTube-Music-Morphe-Dev: 9.46.51  
