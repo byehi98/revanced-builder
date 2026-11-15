@@ -4,8 +4,8 @@
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
 CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
-Patches: bearinmindcat/patches-2.9.10.mpp  
-[Changelog](https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.9.10)  
+Patches: bearinmindcat/patches-2.9.11.mpp  
+[Changelog](https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.9.11)  
 
 Skipped:  
 Google-Photos-Akash-Sriram: 7.99.0.1007655401  
@@ -216,7 +216,7 @@ qBitConnect: 2.0.6
 Spotify: 2.2.553
 Patches: spicetify/patches-1.2.0.mpp  
 Imgur: 7.34.0.0      
-Patches: sushruth/patches-1.0.0.mpp                                                              
+Patches: sushruth/patches-1.0.0.mpp                                                                
 
 ### Built versions  
 Google-Maps: 26.44.06.1006895251  
