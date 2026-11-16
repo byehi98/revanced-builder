@@ -42,12 +42,12 @@ Paths are resolved relative to the directory of the file that names them, and ea
 3. **Prebuilt Acquisition:** Fetches the latest (or specified) ReVanced CLI and patches JARs from GitHub or GitLab.
 4. **App Processing:** For each enabled app in `config.toml`:
     - Finds the correct APK version (from Morphe, Aptoide, APKeep, APKCombo, APKMirror, APKPure, archive, direct, gplaydl, or Uptodown — see `DL_SRCS` in `utils.sh`).
-    - Downloads the APK, walking the sources in `DL_SRCS` order (with `aptoide` tested first whenever the package name is known; `morphe` only when the table explicitly sets `morphe-dlurl` or `morphe-helper-dlurl`) and falling through to the next one whenever the current source cannot serve the required version. `apkeep` and `apkpure` also utilize 1-hop signed direct CDN downloads (`d.apkpure.com`) to bypass scraping blocks and Cloudflare issues.
+    - Downloads the APK, walking only the sources the table explicitly configures in `DL_SRCS` order (nothing is added implicitly; `aptoide` is never derived from `pkg-name`/`apkeep`/`gplaydl`) and falling through to the next configured source whenever the current one cannot serve the required version. `apkeep` and `apkpure` also utilize 1-hop signed direct CDN downloads (`d.apkpure.com`) to bypass scraping blocks and Cloudflare issues.
     - Applies patches using ReVanced CLI.
     - Packages the result as an APK or Magisk module.
 
 ### Download Source Fallbacks
-An app table may declare several `<source>-dlurl` keys at once. Every key that is present takes part in the fallback chain, so listing more sources makes a build more resilient to a single site being down, rate-limited or missing a version. Every table needs at least one of them or `build.sh` aborts.
+An app table may declare several `<source>-dlurl` keys at once. Only the keys that are present take part in the fallback chain (none are added implicitly), so listing more sources makes a build more resilient to a single site being down, rate-limited or missing a version. Every table needs at least one of them or `build.sh` aborts.
 
 The fallback order is:
 `morphe` → `aptoide` → `apkeep` → `apkcombo` → `apkmirror` → `apkpure` → `archive` → `direct` → `gplaydl` → `uptodown`.

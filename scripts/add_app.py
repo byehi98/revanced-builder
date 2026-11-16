@@ -34,6 +34,7 @@ import urllib.request
 from collections import Counter
 from concurrent.futures import ThreadPoolExecutor
 from dataclasses import dataclass, field
+from functools import lru_cache
 from pathlib import Path
 
 from config_style import (
@@ -302,18 +303,28 @@ def slug_candidates(package: str, app_name: str | None) -> list[str]:
     return candidates[:4]
 
 
-def probe_morphe(package: str) -> str | None:
+@lru_cache(maxsize=128)
+def morphe_resolve_url(package: str) -> str:
+    """Return the store page URL the Morphe resolver picks for *package*.
+
+    The resolver is not Cloudflare protected, so it is also used as a discovery
+    fallback for APKMirror/Uptodown when their own search pages are blocked.
+    """
     url = f"https://api.morphe.software/v2/web-search/{package}~any~arm64-v8a"
     _, _, final = http_get(url, headers={"User-Agent": "Morphe-Manager/1.0"})
     final_l = final.lower()
     if not final_l.startswith(("http://", "https://")):
-        return None
+        return ""
     # A fallback/Google result means the resolver has no target for this package.
     if "google.com/search" in final_l or "fallback" in final_l:
-        return None
+        return ""
     if "api.morphe.software" in final_l:
-        return None
-    return package
+        return ""
+    return final
+
+
+def probe_morphe(package: str) -> str | None:
+    return package if morphe_resolve_url(package) else None
 
 
 def probe_aptoide(package: str) -> str | None:
@@ -353,8 +364,36 @@ def probe_gplaydl(package: str) -> str | None:
     return None
 
 
+def _apkpure_app_exists(package: str) -> bool:
+    """Ask APKPure's own app API, which is not Cloudflare protected.
+
+    This is the same endpoint apkeep/APKPure's CDN use to look up a package.
+    """
+    url = (
+        "https://api.pureapk.com/m/v3/cms/app_version"
+        f"?hl=en-US&package_name={urllib.parse.quote(package)}"
+    )
+    status, body, _ = http_get(
+        url,
+        headers={
+            "x-sv": "29",
+            "x-abis": "arm64-v8a,armeabi-v7a,armeabi",
+            "x-gp": "1",
+        },
+    )
+    return status == 200 and package in body
+
+
 def probe_apkpure(package: str, app_name: str | None) -> str | None:
-    for slug in slug_candidates(package, app_name):
+    # APKPure resolves an app by the package in the URL and treats the first
+    # path segment as a cosmetic slug, so any slug works once the package is
+    # confirmed. The API confirms it without going through Cloudflare.
+    slugs = slug_candidates(package, app_name) or [package.rsplit(".", 1)[-1]]
+    if _apkpure_app_exists(package):
+        return f"https://apkpure.net/{slugs[0]}/{package}"
+
+    # Fall back to the public pages for old deployments where the API is down.
+    for slug in slugs:
         url = f"https://apkpure.net/{slug}/{package}"
         body = fetch_page(f"{url}/versions")
         if not body:
@@ -383,6 +422,28 @@ def probe_apkcombo(package: str, app_name: str | None) -> str | None:
     return None
 
 
+def _apkmirror_app_urls(body: str) -> list[str]:
+    """Extract app-root URLs from APKMirror search/listing markup.
+
+    Search results point at release pages
+    (``/apk/developer/app/app-1.2.3-release/``), while the config wants the
+    app root (``/apk/developer/app/``). Older markup also links the root
+    directly, and developer pages (``/apk/developer/``) are skipped.
+    """
+    urls: list[str] = []
+    for href in re.findall(r'href="([^"]+)"', body):
+        href = href.split("?")[0].split("#")[0]
+        path = urllib.parse.urlparse(href).path if href.startswith("http") else href
+        match = re.match(r"^/apk/[^/]+/[^/]+(?:/[^/]+)?/?$", path)
+        if not match:
+            continue
+        parts = path.strip("/").split("/")
+        url = "https://www.apkmirror.com/" + "/".join(parts[:3]) + "/"
+        if url not in urls:
+            urls.append(url)
+    return urls
+
+
 def probe_apkmirror(package: str, app_name: str | None) -> str | None:
     queries = [package]
     if app_name:
@@ -395,22 +456,21 @@ def probe_apkmirror(package: str, app_name: str | None) -> str | None:
         body = fetch_page(search)
         if not body:
             continue
-        candidates: list[str] = []
-        for href in re.findall(r'href="([^"]+)"', body):
-            href = href.split("?")[0]
-            if href.startswith("/apk/"):
-                href = "https://www.apkmirror.com" + href
-            if not re.fullmatch(
-                r"https://www\.apkmirror\.com/apk/[^/]+/[^/]+/?", href
-            ):
-                continue
-            if href not in candidates:
-                candidates.append(href)
-        for candidate in candidates[:6]:
+        for candidate in _apkmirror_app_urls(body)[:6]:
             page = fetch_page(candidate)
             match = re.search(r'id=([^"\s]+)"\s+class="accent_color', page or "")
             if match and match.group(1) == package:
                 return candidate
+
+    # APKMirror's search page is Cloudflare protected. The Morphe resolver is
+    # not, and for APKMirror targets it redirects to the release/download page,
+    # which contains the app root this table needs.
+    resolved = morphe_resolve_url(package)
+    match = re.match(
+        r"(https://www\.apkmirror\.com/apk/[^/]+/[^/]+/)", resolved
+    )
+    if match:
+        return match.group(1)
     return None
 
 
@@ -471,6 +531,14 @@ def probe_uptodown(package: str, app_name: str | None) -> str | None:
             continue
         if _uptodown_package(match.group(1)) == package:
             return url
+
+    # Uptodown's search/pages can be geo-blocked or Cloudflare protected. When
+    # the resolver picked Uptodown for this package, its host is the app page.
+    resolved = morphe_resolve_url(package)
+    host = urllib.parse.urlparse(resolved).hostname or ""
+    labels = host.split(".")
+    if len(labels) >= 3 and host.endswith(".uptodown.com"):
+        return f"https://{host}/android"
     return None
 
 

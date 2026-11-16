@@ -199,18 +199,10 @@ for table_name in $(toml_get_table_names); do
 	fi
 
 	app_args[pkg_name]=$(toml_get "$t" pkg-name) || app_args[pkg_name]=""
-	# morphe-dlurl is opt-in only: the Morphe resolver can return a different
-	# packaging/signature than the app's stock APK, so it must never be derived
-	# from other download sources.
-	if [ -z "${app_args[aptoide_dlurl]}" ]; then
-		if [ -n "${app_args[pkg_name]}" ]; then
-			app_args[aptoide_dlurl]="${app_args[pkg_name]}"
-		elif [ -n "${app_args[apkeep_dlurl]}" ]; then
-			app_args[aptoide_dlurl]="${app_args[apkeep_dlurl]}"
-		elif [ -n "${app_args[gplaydl_dlurl]}" ]; then
-			app_args[aptoide_dlurl]="${app_args[gplaydl_dlurl]}"
-		fi
-	fi
+	# Download sources are opt-in only: each one is used exactly when its
+	# <source>-dlurl is set. Never derive one from another (pkg-name, apkeep,
+	# gplaydl, ...): a source can return a different packaging/signature than
+	# the stock APK the user asked for.
 	app_args[dpi]=$(toml_get "$t" dpi) || app_args[dpi]=""
 	table_name_f=${table_name,,}
 	table_name_f=${table_name_f// /-}

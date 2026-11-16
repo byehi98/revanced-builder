@@ -2137,12 +2137,10 @@ build_rv() {
 	# stock artifact it failed on
 	BUILD_STOCK_APK="$stock_apk"
 	if [ ! -f "$stock_apk" ]; then
-		# Only use the Morphe resolver when the config explicitly has a
-		# morphe-dlurl. It can return a different packaging/signature than the
-		# app's stock APK, so it must not be an implicit default.
-		if [ -z "${args[aptoide_dlurl]}" ] && [ -n "$pkg_name" ]; then
-			args[aptoide_dlurl]="$pkg_name"
-		fi
+		# Only the download sources the config explicitly sets are used. Never
+		# derive one from another (e.g. aptoide from pkg-name/apkeep/gplaydl):
+		# sources can differ in packaging/signature, so adding one implicitly can
+		# download a build the user did not ask for.
 		for dl_p in "${DL_SRCS[@]}"; do
 			if [ -z "${args[${dl_p}_dlurl]}" ]; then continue; fi
 			pr "Downloading '${table}' from '${dl_p}'"

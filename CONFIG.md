@@ -44,14 +44,14 @@ apkeep-dlurl  = "package.name" # APKPure via apkeep + 1-hop direct signed CDN fa
 # or gplaydl-dlurl = "package.name"
 ```
 
-These are tried in the fixed order `morphe → aptoide → apkeep → apkcombo → apkmirror →
-apkpure → archive → direct → gplaydl → uptodown`, and any source that cannot deliver the
-required version falls through to the next one, so list as many as apply to make
-the build resilient to a single site being down. When a package name is known,
-`aptoide` is tested first automatically to resolve a direct download URL.
-`morphe` is never added implicitly: it is only used when the table explicitly
-sets `morphe-dlurl` (or the legacy `morphe-helper-dlurl`), because the resolver
-can return a differently packaged/signed APK.
+Only the sources a table explicitly sets are used, and they are tried in the fixed
+order `morphe → aptoide → apkeep → apkcombo → apkmirror → apkpure → archive → direct
+→ gplaydl → uptodown`. Any source that cannot deliver the required version falls
+through to the next *configured* source, so list as many as apply to make the build
+resilient to a single site being down. No source is ever added implicitly: in
+particular `aptoide` is not derived from `pkg-name`/`apkeep-dlurl`/`gplaydl-dlurl`,
+and `morphe` is only used when the table sets `morphe-dlurl` (or the legacy
+`morphe-helper-dlurl`), because those can return a differently packaged/signed APK.
 In addition, `apkeep` and `apkpure` automatically attempt 1-hop signed CDN downloads (`d.apkpure.com`)
 before falling back to slow web scraping or retries.
 
