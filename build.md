@@ -1,48 +1,24 @@
 
-**15 apps built.**
+**17 apps built.**
   
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
-CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
-Patches: Entree3k/patches-1.22.0.mpp  
-[Changelog](https://github.com/Entree3k/Morning-Entree-Patches/releases/tag/v1.22.0)
-
-CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
-Patches: heval99/patches-2.3.0.mpp  
-[Changelog](https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v2.3.0)
-
 CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
 Patches: hoo-dles/patches-1.47.0.mpp  
 [Changelog](https://github.com/hoo-dles/morphe-patches/releases/tag/v1.47.0)
 
 CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
 Patches: hxreborn/patches-1.79.0.mpp  
 [Changelog](https://github.com/hxreborn/morphe-patches/releases/tag/v1.79.0)
 
-CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
 CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
 Patches: MiguelNinja19/patches-1.13.6.mpp  
 [Changelog](https://github.com/MiguelNinja19/miguel-morphe-patches/releases/tag/v1.13.6)
 
 CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
-Patches: MorpheApp/patches-2.3.0-dev.8.mpp  
-[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v2.3.0-dev.8)
-
-CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
 Patches: rushiranpise/patches-1.23.1.mpp  
 [Changelog](https://github.com/rushiranpise/morphe-patches/releases/tag/v1.23.1)
 
-CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
 CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
 CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
 CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
@@ -75,6 +51,7 @@ Speedtest-xtra: 7.1.4
 All-Video-Downloader-and-Ace-Player-FTL: 1.9.8
 Patches: BlazeFTL/patches-1.43.7.4.mpp  
 RS-File-Manager-BlazeFTL: latest  
+Arm-Workout-Entree3k: 2.4.3
 Patches: Entree3k/patches-1.22.0.mpp  
 Does-Not-Commute-Entree3k: 1.5.5  
 Home-Workout-Entree3k: 1.7.6
@@ -83,6 +60,7 @@ MacroDroid-Entree3k: 5.65.9
 NZB360-Entree3k: 24.1
 PinOut-Entree3k: 1.0.7
 Send-Files-To-TV-Entree3k: 1.4.22
+Six-Pack-in-30-Days-Entree3k: 1.4.8
 Trakt-IMXEren: 3.13.0
 Patches: IMXEren/patches-1.4.1.mpp  
 Anger-of-Stick-5-MiguelNinja19: 1.1.94
@@ -95,8 +73,12 @@ The-Battle-of-Polytopia-MiguelNinja19: 18.0.16748
 Zombie-Catchers-MiguelNinja19: latest
 Reddit-Morphe: 2026.40.0
 Patches: MorpheApp/patches-2.2.0.mpp  
+Reddit-Morphe-Dev: 2026.46.0
+Patches: MorpheApp/patches-2.3.0-dev.8.mpp  
 YouTube-Morphe: 21.30.216
+YouTube-Morphe-Dev: 21.45.82
 YouTube-Music-Morphe: 9.30.53  
+YouTube-Music-Morphe-Dev: 9.46.51  
 Adobe-Photoshop-Mix-RookieEnough: 2.6.3
 Patches: RookieEnough/patches-1.6.4.mpp  
 Cricbuzz-RookieEnough: 6.24.01
@@ -191,16 +173,19 @@ AnyDesk-heval99: 9.0.2
 Patches: heval99/patches-2.3.0.mpp  
 AquaMail-heval99: 2.8.1
 Firefox-heval99: 159.0.1
+Truecaller-heval99: 26.44.6
 AdGuard-hoo-dles: 4.14.2
 Patches: hoo-dles/patches-1.47.0.mpp  
 CamScanner-hoo-dles: 7.20.0.2606230000
 Google-News-hoo-dles: 5.161.0.931240252
 ProtonVPN-hoo-dles: 5.20.57.0
 Showly-hoo-dles: 3.70.0
+Solid-Explorer-hoo-dles: 3.6.1
 WPS-Office-hoo-dles: 18.24
 Wallcraft-hoo-dles: 3.61.01
 Candy-Crush-Soda-Saga-hxreborn: 1.331.3
 Patches: hxreborn/patches-1.79.0.mpp  
+Cx-File-Explorer-hxreborn: 2.8.1
 MovieBox-hxreborn: 4.0.03.1020.03
 ProtonVPN-hxreborn: 5.21.9.0
 Protonmail-hxreborn: 7.11.12
@@ -231,10 +216,17 @@ Charge-Meter-rushiranpise: 3.0.1
 Dailyhunt-rushiranpise: 34.0.4
 Google-Photos-rushiranpise: 7.98.0.1001971222
 Greenify-rushiranpise: 5.1.1
+Killapps-rushiranpise: 1.58.0
 MacroDroid-rushiranpise: 5.66.9
+NZB360-rushiranpise: 25.2.1
+Octi-rushiranpise: 1.3.0-rc0
+Opera-News-rushiranpise: 14.4.2254.84848
 Parallel-Space-Pro-rushiranpise: 4.0.9159
 ProtonVPN-Rushiranpise: 5.19.78.0
+Psiphon-rushiranpise: 486
 RAR-rushiranpise: 7.23.build134
+RS-File-Manager-rushiranpise: 2.3.0.4
+Send-Files-To-TV-rushiranpise: 1.4.22
 TeraBox-rushiranpise: 4.28.5
 Torrent-Search-rushiranpise: 2.3.3
 Spotify-spicetify: 2.2.553
@@ -242,18 +234,20 @@ Patches: spicetify/patches-1.2.0.mpp
 Patches: sushruth/patches-1.0.0.mpp    
 
 ### Built versions  
-Arm-Workout-Entree3k: 2.4.3
-Cx-File-Explorer-hxreborn: 2.8.1
-Killapps-rushiranpise: 1.58.0
-NZB360-rushiranpise: 25.2.1
-Octi-rushiranpise: 1.3.0-rc0
-Opera-News-rushiranpise: 14.4.2254.84848
-Psiphon-rushiranpise: 486
-RS-File-Manager-rushiranpise: 2.3.0.4
-Reddit-Morphe-Dev: 2026.46.0
-Send-Files-To-TV-rushiranpise: 1.4.22
-Six-Pack-in-30-Days-Entree3k: 1.4.8
-Solid-Explorer-hoo-dles: 3.6.1
-Truecaller-heval99: 26.44.6
-YouTube-Morphe-Dev: 21.45.82
-YouTube-Music-Morphe-Dev: 9.46.51  
+Amoledpix-rushiranpise: 7.3
+Block-Blast-rushiranpise: 10.4.5
+Block-Puzzle-rushiranpise: 6.1
+Cloudflare-Warp-rushiranpise: 6.38.11
+Imgur-sushruth: 7.34.0.0
+M-Indicator-rushiranpise: 18.0.365
+Mega-rushiranpise: 16.12(262370820)(dcdf0a7f27)
+MobiOffice-rushiranpise: 16.5.60515
+MyAnimeList-rushiranpise: 2.3.16
+NYT-Crossword-rushiranpise: 6.41.0
+Oddmar-MiguelNinja19: 0.111
+Playit-rushiranpise: 2.7.50.12
+Server-Auditor-rushiranpise: 7.11.2
+TradingView-hxreborn: 1.20.86.0.1002565
+Unimote-rushiranpise: 1.8.1
+Yatri-rushiranpise: 5.0.6
+qBitConnect-rushiranpise: 2.0.6  
