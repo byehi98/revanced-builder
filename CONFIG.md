@@ -26,14 +26,17 @@ configs/
 A file may set its own `app-configs`/`imports`; those are resolved relative to
 that file, so `configs/` files can pull in shared configs of their own. Table
 names must be unique across every file — a duplicate is a hard error rather than
-a silent overwrite.
+a silent overwrite. Every app table is named `<App>-<rv-brand>` (e.g.
+`[TradingView-hxreborn]`), so the same app can be built from more than one patch
+source without colliding, and the brand is visible in the table name and release
+filename. `./add-app.sh` creates tables in that shape automatically.
 
 ## Adding another revanced app
 
 Find the file in `configs/` for that patches author (or create one), then add a
-table:
+table named after the app and its `rv-brand`:
 ```toml
-[Some-App]
+[Some-App-hxreborn]
 # morphe-dlurl = "package.name" # opt-in: Morphe resolver for direct APKMirror / Uptodown variants
 aptoide-dlurl = "package.name" # direct Aptoide API queries
 apkeep-dlurl  = "package.name" # APKPure via apkeep + 1-hop direct signed CDN fallback
@@ -79,8 +82,8 @@ rv-brand = "ReVanced Extended" # rebrand from 'ReVanced' to something different.
 patches-version = "v2.160.0" # 'latest', 'dev', or a version number. default: "latest"
 cli-version = "v5.0.0"       # 'latest', 'dev', or a version number. default: "latest"
 
-[Some-App]
-app-name = "SomeApp" # if set, release name becomes SomeApp instead of Some-App. default is same as table name, which is 'Some-App' here.
+[Some-App-hxreborn]
+app-name = "SomeApp" # if set, release name becomes SomeApp instead of the table name. default is the table name, which is 'Some-App-hxreborn' here.
 enabled = true       # whether to build the app. default: true
 build-mode = "apk"   # 'both', 'apk' or 'module'. default: apk
 
@@ -120,8 +123,8 @@ arch = "arm64-v8a"                                         # 'arm64-v8a', 'arm-v
 
 Run `python3 scripts/validate_configs.py` (or `make check`) before committing a
 config change. It validates the merged `config.toml` + `configs/*.toml` tree for
-unique tables, known keys, valid sources, package names, enums, and at least one
-download source per app.
+unique and correctly named tables (`<App>-<rv-brand>`), known keys, valid
+sources, package names, enums, and at least one download source per app.
 
 ## Signing
 

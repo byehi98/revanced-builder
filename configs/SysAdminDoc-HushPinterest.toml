@@ -7,7 +7,7 @@
 # (morphe, aptoide, apkeep, apkcombo, apkmirror, apkpure, archive, direct, gplaydl, uptodown) and the next one
 # is used when the current one cannot serve the required version.
 
-[Pinterest]
+[Pinterest-SysAdminDoc]
 patches-source  = "SysAdminDoc/HushPinterest"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "SysAdminDoc"

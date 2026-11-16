@@ -29,7 +29,7 @@ apkcombo-dlurl  = "https://apkcombo.com/camscanner-hoo-dles/com.intsig.camscanne
 apkmirror-dlurl = "https://www.apkmirror.com/apk/intsig-pte/camscanner-phone-pdf-creator/"
 uptodown-dlurl  = "https://camscanner.en.uptodown.com/android"
 
-[ProtonVPN-Hoodles]
+[ProtonVPN-hoo-dles]
 patches-source  = "hoo-dles/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "hoo-dles"
@@ -52,7 +52,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/google-news/"
 apkpure-dlurl   = "https://apkpure.net/google-news-hoo-dles/com.google.android.apps.magazines"
 uptodown-dlurl  = "https://google-play-newsstand.en.uptodown.com/android"
 
-[Solid-Explorer]
+[Solid-Explorer-hoo-dles]
 patches-source  = "hoo-dles/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "hoo-dles"
@@ -64,7 +64,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/neatbytes/solid-explorer-file-m
 apkpure-dlurl   = "https://apkpure.net/solid-explorer/pl.solidexplorer2"
 uptodown-dlurl  = "https://solid-explorer-file-manager.en.uptodown.com/android"
 
-[Showly]
+[Showly-hoo-dles]
 patches-source  = "hoo-dles/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "hoo-dles"
@@ -76,7 +76,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/trakt/showly/"
 apkpure-dlurl   = "https://apkpure.net/showly/com.michaldrabik.showly2"
 uptodown-dlurl  = "https://showly-2-0.en.uptodown.com/android"
 
-[Wallcraft]
+[Wallcraft-hoo-dles]
 patches-source  = "hoo-dles/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "hoo-dles"
@@ -87,7 +87,7 @@ apkcombo-dlurl  = "https://apkcombo.com/wallcraft/com.wallpaperscraft.wallpaper/
 apkmirror-dlurl = "https://www.apkmirror.com/apk/nebuchadnezzar-doo/wallpapers-hd-4k-backgrounds/"
 uptodown-dlurl  = "https://wallpaperscraft.en.uptodown.com/android"
 
-[WPS-Office]
+[WPS-Office-hoo-dles]
 patches-source  = "hoo-dles/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "hoo-dles"
@@ -99,7 +99,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/wps-software-pte-ltd/wps-office
 apkpure-dlurl   = "https://apkpure.net/wps-office/cn.wps.moffice_eng"
 uptodown-dlurl  = "https://wps-office.en.uptodown.com/android"
 
-[Lightroom]
+[Lightroom-hoo-dles]
 patches-source  = "hoo-dles/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "hoo-dles"

@@ -7,7 +7,7 @@
 # (morphe, aptoide, apkeep, apkcombo, apkmirror, apkpure, archive, direct, gplaydl, uptodown) and the next one
 # is used when the current one cannot serve the required version.
 
-[Automate]
+[Automate-xtra]
 patches-source  = "BholeyKaBhakt/android-patches-xtra"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "xtra"
@@ -17,7 +17,7 @@ apkeep-dlurl    = "com.llamalab.automate"
 apkcombo-dlurl  = "https://apkcombo.com/automate/com.llamalab.automate/"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/llamalab/automate-llamalab/"
 
-[Backdrops]
+[Backdrops-xtra]
 patches-source  = "BholeyKaBhakt/android-patches-xtra"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "xtra"
@@ -29,7 +29,7 @@ apkcombo-dlurl  = "https://apkcombo.com/backdrops/com.backdrops.wallpapers/"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/backdrops/backdrops-wallpapers/"
 uptodown-dlurl  = "https://backdrops.en.uptodown.com/android"
 
-[Speedtest]
+[Speedtest-xtra]
 patches-source  = "BholeyKaBhakt/android-patches-xtra"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "xtra"

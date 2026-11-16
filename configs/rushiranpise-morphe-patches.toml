@@ -7,7 +7,7 @@
 # (morphe, aptoide, apkeep, apkcombo, apkmirror, apkpure, archive, direct, gplaydl, uptodown) and the next one
 # is used when the current one cannot serve the required version.
 
-[AccuBattery]
+[AccuBattery-rushiranpise]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
@@ -18,7 +18,7 @@ apkcombo-dlurl  = "https://apkcombo.com/accubattery/com.digibites.accubattery/"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/digibites/accubattery/"
 uptodown-dlurl  = "https://accubattery.en.uptodown.com/android"
 
-[Amoledpix]
+[Amoledpix-rushiranpise]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
@@ -38,7 +38,7 @@ apkcombo-dlurl  = "https://apkcombo.com/adguard-rushiranpise/com.adguard.android
 apkmirror-dlurl = "https://www.apkmirror.com/apk/adguard-software-limited/adguard/"
 uptodown-dlurl  = "https://adguard-for-android.en.uptodown.com/android"
 
-[Accuweather]
+[Accuweather-rushiranpise]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
@@ -50,7 +50,7 @@ apkcombo-dlurl  = "https://apkcombo.com/accuweather/com.accuweather.android/"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/accuweather/accuweather/"
 uptodown-dlurl  = "https://accuweather.en.uptodown.com/android"
 
-[Apkmirror-Installer]
+[Apkmirror-Installer-rushiranpise]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
@@ -61,7 +61,7 @@ apkcombo-dlurl  = "https://apkcombo.com/apkmirror-installer/com.apkmirror.helper
 apkmirror-dlurl = "https://www.apkmirror.com/apk/apkmirror/apkmirror-installer-official/"
 uptodown-dlurl  = "https://apkmirror-installer-official.en.uptodown.com/android"
 
-[Block-Blast]
+[Block-Blast-rushiranpise]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
@@ -72,7 +72,7 @@ apkcombo-dlurl  = "https://apkcombo.com/block-blast/com.block.juggle/"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/hungrystudio/block-blast-puzzle-games/"
 uptodown-dlurl  = "https://block-blast.en.uptodown.com/android"
 
-[Block-Puzzle]
+[Block-Puzzle-rushiranpise]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
@@ -93,7 +93,7 @@ apkcombo-dlurl  = "https://apkcombo.com/camscanner-rushiranpise/com.intsig.camsc
 apkmirror-dlurl = "https://www.apkmirror.com/apk/intsig-pte/camscanner-phone-pdf-creator/"
 uptodown-dlurl  = "https://camscanner.en.uptodown.com/android"
 
-[Cloudflare-Warp]
+[Cloudflare-Warp-rushiranpise]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
@@ -104,7 +104,7 @@ apkcombo-dlurl  = "https://apkcombo.com/cloudflare-warp/com.cloudflare.onedotone
 apkmirror-dlurl = "https://www.apkmirror.com/apk/cloudflare/1-1-1-1-faster-safer-internet/"
 uptodown-dlurl  = "https://1-1-1-1.en.uptodown.com/android"
 
-[Charge-Meter]
+[Charge-Meter-rushiranpise]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
@@ -115,7 +115,7 @@ apkcombo-dlurl  = "https://apkcombo.com/charge-meter/dev.km.android.chargemeter/
 apkmirror-dlurl = "https://www.apkmirror.com/apk/heartinz-technologies-pvt-ltd/charge-meter/"
 uptodown-dlurl  = "https://charge-meter.en.uptodown.com/android"
 
-[Dailyhunt]
+[Dailyhunt-rushiranpise]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
@@ -127,7 +127,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/eterno-infotech/dailyhunt-newsh
 apkpure-dlurl   = "https://apkpure.net/dailyhunt/com.eterno"
 uptodown-dlurl  = "https://newshunt-india-news-ebooks.en.uptodown.com/android"
 
-[Greenify]
+[Greenify-rushiranpise]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
@@ -152,7 +152,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/photos/"
 apkpure-dlurl   = "https://apkpure.net/google-photos/com.google.android.apps.photos"
 uptodown-dlurl  = "https://google-photos.en.uptodown.com/android"
 
-[Killapps]
+[Killapps-rushiranpise]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
@@ -163,7 +163,7 @@ apkcombo-dlurl  = "https://apkcombo.com/killapps/com.tafayor.killall/"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/appdev-quebec/killapps-close-all-apps-running/"
 apkpure-dlurl   = "https://apkpure.net/killapps/com.tafayor.killall"
 
-[M-Indicator]
+[M-Indicator-rushiranpise]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
@@ -175,7 +175,7 @@ apkcombo-dlurl  = "https://apkcombo.com/m-indicator/com.mobond.mindicator/"
 apkpure-dlurl   = "https://apkpure.net/m-indicator/com.mobond.mindicator"
 uptodown-dlurl  = "https://m-indicator.en.uptodown.com/android"
 
-[NZB360]
+[NZB360-rushiranpise]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
@@ -188,7 +188,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/kevin-foreman/nzb360/"
 apkpure-dlurl   = "https://apkpure.net/nzb360/com.kevinforeman.nzb360"
 uptodown-dlurl  = "https://nzb360.en.uptodown.com/android"
 
-[Mega]
+[Mega-rushiranpise]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
@@ -200,7 +200,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/mega-ltd/mega-official/"
 apkpure-dlurl   = "https://apkpure.net/mega/mega.privacy.android.app"
 uptodown-dlurl  = "https://mega.en.uptodown.com/android"
 
-[MobiOffice]
+[MobiOffice-rushiranpise]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
@@ -213,7 +213,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/mobisystems/officesuite/"
 apkpure-dlurl   = "https://apkpure.net/mobioffice/com.mobisystems.office"
 uptodown-dlurl  = "https://officesuite-pro-7.en.uptodown.com/android"
 
-[NYT-Crossword]
+[NYT-Crossword-rushiranpise]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
@@ -225,7 +225,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/the-new-york-times-company/nyti
 apkpure-dlurl   = "https://apkpure.net/nyt-crossword/com.nytimes.crossword"
 uptodown-dlurl  = "https://nytimes-crossword.en.uptodown.com/android"
 
-[Octi]
+[Octi-rushiranpise]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
@@ -237,7 +237,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/darken/octi-multi-device-monito
 apkpure-dlurl   = "https://apkpure.net/octi/eu.darken.octi"
 uptodown-dlurl  = "https://octi.en.uptodown.com/android"
 
-[Opera-News]
+[Opera-News-rushiranpise]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
@@ -249,7 +249,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/opera-software-asa/opera-news-t
 apkpure-dlurl   = "https://apkpure.net/opera-news/com.opera.app.news"
 uptodown-dlurl  = "https://opera-news.en.uptodown.com/android"
 
-[Parallel-Space-Pro]
+[Parallel-Space-Pro-rushiranpise]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
@@ -273,7 +273,7 @@ apkcombo-dlurl  = "https://apkcombo.com/protonvpn-rushiranpise/ch.protonvpn.andr
 apkmirror-dlurl = "https://www.apkmirror.com/apk/proton-technologies-ag/protonvpn-secure-and-free-vpn/"
 uptodown-dlurl  = "https://protonvpn.en.uptodown.com/android"
 
-[Playit]
+[Playit-rushiranpise]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
@@ -285,7 +285,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/playit-technology-pte-ltd/playi
 apkpure-dlurl   = "https://apkpure.net/playit/com.playit.videoplayer"
 uptodown-dlurl  = "https://playit-hd-video-player-all-format-video-player.en.uptodown.com/android"
 
-[Psiphon]
+[Psiphon-rushiranpise]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
@@ -297,7 +297,7 @@ apkcombo-dlurl  = "https://apkcombo.com/psiphon/com.psiphon3.subscription/"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/psiphon-inc/psiphon-pro-the-internet-freedom-vpn/"
 uptodown-dlurl  = "https://psiphon-pro.en.uptodown.com/android"
 
-[qBitConnect]
+[qBitConnect-rushiranpise]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
@@ -307,7 +307,7 @@ apkeep-dlurl    = "com.bluematter.qbitconnect"
 apkcombo-dlurl  = "https://apkcombo.com/qbitconnect/com.bluematter.qbitconnect/"
 apkpure-dlurl   = "https://apkpure.net/qbitconnect/com.bluematter.qbitconnect"
 
-[RS-File-Manager]
+[RS-File-Manager-rushiranpise]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
@@ -319,7 +319,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/rs-mobile-group/rs-file/"
 apkpure-dlurl   = "https://apkpure.net/rs-file-manager/com.rs.explorer.filemanager"
 uptodown-dlurl  = "https://rs-file-manager.en.uptodown.com/android"
 
-[Send-Files-To-TV]
+[Send-Files-To-TV-rushiranpise]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
@@ -331,7 +331,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/yablio/send-files-to-tv/"
 apkpure-dlurl   = "https://apkpure.net/send-files-to-tv/com.yablio.sendfilestotv"
 uptodown-dlurl  = "https://send-files-to-tv.en.uptodown.com/android"
 
-[Server-Auditor]
+[Server-Auditor-rushiranpise]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
@@ -343,7 +343,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/termius-corporation/termius-ssh
 apkpure-dlurl   = "https://apkpure.net/server-auditor/com.server.auditor.ssh.client"
 uptodown-dlurl  = "https://serverauditor.en.uptodown.com/android"
 
-[TeraBox]
+[TeraBox-rushiranpise]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
@@ -354,7 +354,7 @@ apkcombo-dlurl  = "https://apkcombo.com/terabox/com.dubox.drive/"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/flextech-inc/terabox-cloud-storage-cloud-backup-data-backup/"
 apkpure-dlurl   = "https://apkpure.net/terabox/com.dubox.drive"
 
-[Torrent-Search]
+[Torrent-Search-rushiranpise]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
@@ -365,7 +365,7 @@ apkcombo-dlurl  = "https://apkcombo.com/torrent-search/torrent.search.revolution
 apkpure-dlurl   = "https://apkpure.net/torrent-search/torrent.search.revolutionv2"
 uptodown-dlurl  = "https://torrent-search-revolution.en.uptodown.com/android"
 
-[Unimote]
+[Unimote-rushiranpise]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
@@ -376,7 +376,7 @@ apkcombo-dlurl  = "https://apkcombo.com/unimote/sensustech.universal.tv.remote.c
 apkpure-dlurl   = "https://apkpure.net/unimote/sensustech.universal.tv.remote.control"
 uptodown-dlurl  = "https://unimote.en.uptodown.com/android"
 
-[Yatri]
+[Yatri-rushiranpise]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
@@ -399,7 +399,7 @@ apkpure-dlurl   = "https://apkpure.net/macrodroid/com.arlosoft.macrodroid"
 uptodown-dlurl  = "https://macrodroid.en.uptodown.com/android"
 # no apkmirror-dlurl: apkmirror was rate limited and could not be verified
 
-[MyAnimeList]
+[MyAnimeList-rushiranpise]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"
@@ -411,7 +411,7 @@ apkpure-dlurl   = "https://apkpure.net/my-animelist/net.myanimelist.app"
 uptodown-dlurl  = "https://myanimelist.en.uptodown.com/android"
 # no apkmirror-dlurl: apkmirror 404s on every slug tried for this app
 
-[RAR]
+[RAR-rushiranpise]
 patches-source  = "rushiranpise/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "rushiranpise"

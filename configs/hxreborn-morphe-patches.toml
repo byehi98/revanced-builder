@@ -7,7 +7,7 @@
 # (morphe, aptoide, apkeep, apkcombo, apkmirror, apkpure, archive, direct, gplaydl, uptodown) and the next one
 # is used when the current one cannot serve the required version.
 
-[Protonmail]
+[Protonmail-hxreborn]
 patches-source  = "hxreborn/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "hxreborn"
@@ -19,7 +19,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/proton-technologies-ag/protonma
 apkpure-dlurl   = "https://apkpure.net/protonmail/ch.protonmail.android"
 uptodown-dlurl  = "https://protonmail.en.uptodown.com/android"
 
-[Cx-File-Explorer]
+[Cx-File-Explorer-hxreborn]
 patches-source  = "hxreborn/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "hxreborn"
@@ -31,7 +31,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/cx-file-explorer/cx-file-explor
 apkpure-dlurl   = "https://apkpure.net/cx-file-explorer/com.cxinventor.file.explorer"
 uptodown-dlurl  = "https://cx-file-explorer.en.uptodown.com/android"
 
-[Symfonium]
+[Symfonium-hxreborn]
 patches-source  = "hxreborn/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "hxreborn"
@@ -67,13 +67,13 @@ morphe-dlurl    = "com.community.oneroom"
 aptoide-dlurl   = "com.community.oneroom"
 uptodown-dlurl  = "https://com-community-oneroom.en.uptodown.com/android"
 
-[TradingView]
+[TradingView-hxreborn]
 patches-source  = "hxreborn/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "hxreborn"
 apkeep-dlurl    = "com.tradingview.tradingviewapp"
 
-[Candy-Crush-Saga]
+[Candy-Crush-Saga-hxreborn]
 patches-source  = "hxreborn/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "hxreborn"
@@ -82,7 +82,7 @@ apkcombo-dlurl  = "https://apkcombo.com/candy-crush-saga/com.king.candycrushsaga
 apkpure-dlurl   = "https://apkpure.net/candy-crush-saga/com.king.candycrushsaga"
 gplaydl-dlurl   = "com.king.candycrushsaga"
 
-[Candy-Crush-Soda-Saga]
+[Candy-Crush-Soda-Saga-hxreborn]
 patches-source  = "hxreborn/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "hxreborn"

@@ -7,7 +7,7 @@
 # (morphe, aptoide, apkeep, apkcombo, apkmirror, apkpure, archive, direct, gplaydl, uptodown) and the next one
 # is used when the current one cannot serve the required version.
 
-[AudioRelay]
+[AudioRelay-lain]
 patches-source  = "kiraio-moe/Lain-Patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "lain"
@@ -17,7 +17,7 @@ apkeep-dlurl    = "com.azefsw.audioconnect"
 apkcombo-dlurl  = "https://apkcombo.com/audiorelay/com.azefsw.audioconnect/"
 uptodown-dlurl  = "https://audiorelay.en.uptodown.com/android"
 
-[Camera]
+[Camera-lain]
 patches-source  = "kiraio-moe/Lain-Patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "lain"
@@ -28,7 +28,7 @@ apkcombo-dlurl  = "https://apkcombo.com/camera/com.flavionet.android.camera.lite
 apkmirror-dlurl = "https://www.apkmirror.com/apk/fgae-apps/camera-fv-5-lite/"
 uptodown-dlurl  = "https://camera-fv-5-lite.en.uptodown.com/android"
 
-[iLovePDF]
+[iLovePDF-lain]
 patches-source  = "kiraio-moe/Lain-Patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "lain"
@@ -39,7 +39,7 @@ apkcombo-dlurl  = "https://apkcombo.com/ilovepdf/com.ilovepdf.www/"
 apkpure-dlurl   = "https://apkpure.net/ilovepdf/com.ilovepdf.www"
 uptodown-dlurl  = "https://ilovepdf.en.uptodown.com/android"
 
-[Hidden-Settings]
+[Hidden-Settings-lain]
 patches-source  = "kiraio-moe/Lain-Patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "lain"

@@ -7,7 +7,7 @@
 # (morphe, aptoide, apkeep, apkcombo, apkmirror, apkpure, archive, direct, gplaydl, uptodown) and the next one
 # is used when the current one cannot serve the required version.
 
-[Solitaire]
+[Solitaire-cesbar]
 patches-source  = "cesbar/zpatches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "cesbar"
@@ -19,7 +19,7 @@ apkcombo-dlurl  = "https://apkcombo.com/solitaire/ee.dustland.android.solitaire/
 apkpure-dlurl   = "https://apkpure.net/solitaire/ee.dustland.android.solitaire"
 uptodown-dlurl  = "https://solitaire-the-clean-one.en.uptodown.com/android"
 
-[Minesweeper]
+[Minesweeper-cesbar]
 patches-source  = "cesbar/zpatches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "cesbar"

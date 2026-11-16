@@ -7,7 +7,7 @@
 # (morphe, aptoide, apkeep, apkcombo, apkmirror, apkpure, archive, direct, gplaydl, uptodown) and the next one
 # is used when the current one cannot serve the required version.
 
-[Subway-Surfers]
+[Subway-Surfers-legendsciber]
 patches-source  = "legendsciber/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "legendsciber"
@@ -19,7 +19,7 @@ apkpure-dlurl   = "https://apkpure.net/subway-surfers/com.kiloo.subwaysurf"
 uptodown-dlurl  = "https://subway-surfers.en.uptodown.com/android"
 # no apkmirror-dlurl: apkmirror 404s on every slug tried for this app
 
-[Soccer-Star]
+[Soccer-Star-legendsciber]
 patches-source  = "legendsciber/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "legendsciber"

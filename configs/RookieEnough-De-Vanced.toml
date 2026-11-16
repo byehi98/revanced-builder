@@ -7,7 +7,7 @@
 # (morphe, aptoide, apkeep, apkcombo, apkmirror, apkpure, archive, direct, gplaydl, uptodown) and the next one
 # is used when the current one cannot serve the required version.
 
-[Adobe-Photoshop-Mix]
+[Adobe-Photoshop-Mix-RookieEnough]
 patches-source  = "RookieEnough/De-Vanced"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "RookieEnough"
@@ -16,7 +16,7 @@ aptoide-dlurl   = "com.adobe.photoshopmix"
 apkeep-dlurl    = "com.adobe.photoshopmix"
 apkcombo-dlurl  = "https://apkcombo.com/adobe-photoshop-mix/com.adobe.photoshopmix/"
 
-[Cricbuzz]
+[Cricbuzz-RookieEnough]
 patches-source  = "RookieEnough/De-Vanced"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "RookieEnough"
@@ -40,7 +40,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/google-news/"
 apkpure-dlurl   = "https://apkpure.net/google-news-rookieenough/com.google.android.apps.magazines"
 uptodown-dlurl  = "https://google-play-newsstand.en.uptodown.com/android"
 
-[Google-Photos]
+[Google-Photos-RookieEnough]
 patches-source  = "RookieEnough/De-Vanced"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "RookieEnough"
@@ -53,7 +53,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/photos/"
 apkpure-dlurl   = "https://apkpure.net/google-photos/com.google.android.apps.photos"
 uptodown-dlurl  = "https://google-photos.en.uptodown.com/android"
 
-[Icon-Pack-Studio]
+[Icon-Pack-Studio-RookieEnough]
 patches-source  = "RookieEnough/De-Vanced"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "RookieEnough"
@@ -65,7 +65,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/smart-launcher-team/icon-pack-s
 apkpure-dlurl   = "https://apkpure.net/icon-pack-studio/ginlemon.iconpackstudio"
 uptodown-dlurl  = "https://icon-pack-studio.en.uptodown.com/android"
 
-[Irplus]
+[Irplus-RookieEnough]
 patches-source  = "RookieEnough/De-Vanced"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "RookieEnough"
@@ -77,7 +77,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/binarymode/irplus-infrared-remo
 apkpure-dlurl   = "https://apkpure.net/irplus/net.binarymode.android.irplus"
 uptodown-dlurl  = "https://irplus.en.uptodown.com/android"
 
-[Letterboxd]
+[Letterboxd-RookieEnough]
 patches-source  = "RookieEnough/De-Vanced"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "RookieEnough"
@@ -89,7 +89,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/letterboxd-limited/letterboxd/"
 apkpure-dlurl   = "https://apkpure.net/letterboxd/com.letterboxd.letterboxd"
 uptodown-dlurl  = "https://letterboxd.en.uptodown.com/android"
 
-[Photomath]
+[Photomath-RookieEnough]
 patches-source  = "RookieEnough/De-Vanced"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "RookieEnough"

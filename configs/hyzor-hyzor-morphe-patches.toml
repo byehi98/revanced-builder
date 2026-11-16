@@ -1,0 +1,19 @@
+# hyzor/hyzor-morphe-patches
+#
+# Patches bundle: https://github.com/hyzor/hyzor-morphe-patches
+# CLI:            https://github.com/MorpheApp/morphe-cli
+
+# every <source>-dlurl below is tried in DL_SRCS order
+# (morphe, aptoide, apkeep, apkcombo, apkmirror, apkpure, archive, direct, gplaydl, uptodown) and the next one
+# is used when the current one cannot serve the required version.
+
+[nzb360-hyzor]
+patches-source  = "hyzor/hyzor-morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "hyzor"
+morphe-dlurl    = "com.kevinforeman.nzb360"
+aptoide-dlurl   = "com.kevinforeman.nzb360"
+apkeep-dlurl    = "com.kevinforeman.nzb360"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/kevin-foreman/nzb360/"
+apkpure-dlurl   = "https://apkpure.net/nzb360/com.kevinforeman.nzb360"
+gplaydl-dlurl   = "com.kevinforeman.nzb360"

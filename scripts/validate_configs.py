@@ -178,7 +178,29 @@ def check_settings(settings: dict[str, Any], root: Path, problems: Problems) -> 
             _check_nonempty_string("config.toml", key, settings[key], problems)
 
 
-def check_app(name: str, data: dict[str, Any], problems: Problems) -> None:
+def _table_name_tokens(data: dict[str, Any], default_brand: str, default_source: str) -> set[str]:
+    """Suffixes a table name may legitimately end with.
+
+    The canonical shape is ``<app>-<rv-brand>``; ``<app>-<owner>`` is also
+    accepted because a few tables already use the upstream owner when its brand
+    is shorter or differs (e.g. ``RS-File-Manager-BlazeFTL``, ``Brave-Beta-dh6k``).
+    """
+    source = data.get("patches-source") or data.get("patches-sources") or default_source
+    owner = str(source).split("/", 1)[0] if source else ""
+    tokens: set[str] = set()
+    for value in (data.get("rv-brand") or default_brand, owner):
+        if isinstance(value, str) and value.strip():
+            tokens.add(re.sub(r"\s+", "-", value.strip()).lower())
+    return tokens
+
+
+def check_app(
+    name: str,
+    data: dict[str, Any],
+    problems: Problems,
+    default_brand: str = "ReVanced",
+    default_source: str = "",
+) -> None:
     where = f"[{name}]"
 
     unknown = sorted(set(data) - APP_KEYS)
@@ -187,6 +209,11 @@ def check_app(name: str, data: dict[str, Any], problems: Problems) -> None:
 
     if not is_valid_table_name(name):
         problems.add(where, "table name must use letters, digits, '-' or '_' and start with a letter/digit")
+    else:
+        tokens = _table_name_tokens(data, default_brand, default_source)
+        if tokens and not any(name.lower().endswith("-" + token) for token in tokens):
+            expected = " or ".join(f"<app>-{token}" for token in sorted(tokens))
+            problems.add(where, f"table name must be shaped {expected} (app + source)")
 
     for key in ("patches-source", "patches-sources", "cli-source", "cli-sources"):
         if key in data:
@@ -260,8 +287,12 @@ def main(argv: list[str] | None = None) -> int:
         raise
 
     check_settings(settings, root, problems)
+    default_brand = settings.get("rv-brand", "ReVanced")
+    default_source = (
+        settings.get("patches-source") or settings.get("patches-sources") or ""
+    )
     for name, data in apps.items():
-        check_app(name, data, problems)
+        check_app(name, data, problems, default_brand, default_source)
 
     if problems.items:
         print(f"config validation failed ({len(problems.items)} problem(s)):", file=sys.stderr)

@@ -7,7 +7,7 @@
 # (morphe, aptoide, apkeep, apkcombo, apkmirror, apkpure, archive, direct, gplaydl, uptodown) and the next one
 # is used when the current one cannot serve the required version.
 
-[AnyDesk]
+[AnyDesk-heval99]
 patches-source  = "heval99/Heval-Morphe-Patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "heval99"
@@ -19,7 +19,7 @@ apkpure-dlurl   = "https://apkpure.net/anydesk-remote-desktop/com.anydesk.anydes
 uptodown-dlurl  = "https://anydesk.en.uptodown.com/android"
 # no apkmirror-dlurl: apkmirror 404s on every slug tried for this app
 
-[AquaMail]
+[AquaMail-heval99]
 patches-source  = "heval99/Heval-Morphe-Patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "heval99"
@@ -31,7 +31,7 @@ apkpure-dlurl   = "https://apkpure.net/aquamail-email/org.kman.AquaMail"
 uptodown-dlurl  = "https://aqua-mail.en.uptodown.com/android"
 # no apkmirror-dlurl: apkmirror 404s on every slug tried for this app
 
-[Truecaller]
+[Truecaller-heval99]
 patches-source  = "heval99/Heval-Morphe-Patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "heval99"
@@ -44,7 +44,7 @@ apkpure-dlurl   = "https://apkpure.net/truecaller/com.truecaller"
 # no gplaydl-dlurl: not needed, apkmirror already serves every supported version
 # no uptodown-dlurl: its listing is stale (15.28.7) and cannot serve the patched 26.41.5
 
-[Firefox]
+[Firefox-heval99]
 patches-source  = "heval99/Heval-Morphe-Patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "heval99"

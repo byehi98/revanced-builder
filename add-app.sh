@@ -14,7 +14,7 @@ Usage:
 Options:
   --link <url>         Morphe add-source URL (fills app, source and package)
   --package <pkg>      Android package name (otherwise resolved)
-  --table <name>       exact config table name (default: canonical app name)
+  --table <name>       exact config table name (default: <app>-<rv-brand>)
   --brand <name>       rv-brand override (default: file brand, then owner)
   --cli-source <repo>  cli-source override (default: MorpheApp/morphe-cli)
   --morphe             force morphe-dlurl with --no-probe (auto-added when probed)

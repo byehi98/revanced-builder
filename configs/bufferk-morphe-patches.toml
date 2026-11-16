@@ -18,7 +18,7 @@ apkcombo-dlurl  = "https://apkcombo.com/brave-bufferk/com.brave.browser/"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/brave-software/brave-browser/"
 uptodown-dlurl  = "https://brave-software-brave.en.uptodown.com/android"
 
-[Medium]
+[Medium-bufferk]
 patches-source  = "bufferk/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "bufferk"

@@ -7,7 +7,7 @@
 # (morphe, aptoide, apkeep, apkcombo, apkmirror, apkpure, archive, direct, gplaydl, uptodown) and the next one
 # is used when the current one cannot serve the required version.
 
-[Anger-of-Stick-5]
+[Anger-of-Stick-5-MiguelNinja19]
 patches-source  = "MiguelNinja19/miguel-morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "MiguelNinja19"
@@ -19,7 +19,7 @@ apkcombo-dlurl  = "https://apkcombo.com/anger-of-stick-5/jpark.AOS5/"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/button-em/anger-of-stick-5-zombie/"
 uptodown-dlurl  = "https://angerofstick5.en.uptodown.com/android"
 
-[Climb]
+[Climb-MiguelNinja19]
 patches-source  = "MiguelNinja19/miguel-morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "MiguelNinja19"
@@ -30,7 +30,7 @@ apkeep-dlurl    = "com.IvanAF.ClimbAMIYPfree"
 apkcombo-dlurl  = "https://apkcombo.com/climb-amiyp/com.IvanAF.ClimbAMIYPfree/"
 uptodown-dlurl  = "https://climb-free.en.uptodown.com/android"
 
-[CubeX-Solver]
+[CubeX-Solver-MiguelNinja19]
 patches-source  = "MiguelNinja19/miguel-morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "MiguelNinja19"
@@ -43,7 +43,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/pipi-chick-studio/cubex-solver-
 apkpure-dlurl   = "https://apkpure.net/cubex-solver/diozz.cubex"
 uptodown-dlurl  = "https://cubex.en.uptodown.com/android"
 
-[Hunter-Assassin]
+[Hunter-Assassin-MiguelNinja19]
 patches-source  = "MiguelNinja19/miguel-morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "MiguelNinja19"
@@ -56,7 +56,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/ruby-game-studio/hunter-assassi
 apkpure-dlurl   = "https://apkpure.net/hunter-assassin/com.rubygames.assassin"
 uptodown-dlurl  = "https://hunter-assassin.en.uptodown.com/android"
 
-[Oddmar]
+[Oddmar-MiguelNinja19]
 patches-source  = "MiguelNinja19/miguel-morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "MiguelNinja19"
@@ -68,7 +68,7 @@ apkcombo-dlurl  = "https://apkcombo.com/oddmar/com.mobge.Oddmar/"
 apkpure-dlurl   = "https://apkpure.net/oddmar/com.mobge.Oddmar"
 uptodown-dlurl  = "https://oddmar.en.uptodown.com/android"
 
-[Plants-vs-Zombies]
+[Plants-vs-Zombies-MiguelNinja19]
 patches-source  = "MiguelNinja19/miguel-morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "MiguelNinja19"
@@ -81,7 +81,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/electronic-arts/plants-vs-zombi
 apkpure-dlurl   = "https://apkpure.net/plants-vs-zombies/com.ea.game.pvzfree_row"
 uptodown-dlurl  = "https://plants-vs-zombies-free.en.uptodown.com/android"
 
-[The-Battle-of-Polytopia]
+[The-Battle-of-Polytopia-MiguelNinja19]
 patches-source  = "MiguelNinja19/miguel-morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "MiguelNinja19"
@@ -94,7 +94,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/midjiwan-ab/the-battle-of-polyt
 apkpure-dlurl   = "https://apkpure.net/the-battle-of-polytopia/air.com.midjiwan.polytopia"
 uptodown-dlurl  = "https://polytopia.en.uptodown.com/android"
 
-[Zombie-Catchers]
+[Zombie-Catchers-MiguelNinja19]
 patches-source  = "MiguelNinja19/miguel-morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "MiguelNinja19"

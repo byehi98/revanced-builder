@@ -2,8 +2,9 @@
 """Add or update an app table in ``configs/*.toml``.
 
 The generated config follows the repository-wide style enforced by
-``scripts/config_style.py``: canonical header, key order, aligned ``=`` and
-plain app table names (``[TradingView]``, not ``[TradingView_morphe-patches]``).
+``scripts/config_style.py``: canonical header, key order, aligned ``=`` and an
+app table name shaped ``<app>-<rv-brand>`` (``[TradingView-hxreborn]``), so the
+same app can be built from several patch sources without name collisions.
 
 By default every download source is probed and only the sources that can
 confirm the package are written.  Sources that are unreachable, do not list
@@ -1079,6 +1080,7 @@ def choose_target(
     by_table: dict[str, list[AppRecord]],
     owner: str,
     repo: str,
+    brand_hint: str,
 ) -> Target:
     if args.table:
         table = validate_table_name(args.table)
@@ -1122,10 +1124,13 @@ def choose_target(
     if not display and PACKAGE_RE.fullmatch(app_input):
         display = app_input.rsplit(".", 1)[-1].replace("_", " ")
     base = validate_table_name(slugify(display or app_input))
+    suffix = slugify(brand_hint) or slugify(owner)
+    if suffix.lower() == base.lower():
+        suffix = slugify(owner)
 
-    candidates = [base, f"{base}-{slugify(owner)}", f"{base}-{slugify(owner)}-{slugify(repo)}"]
+    candidates = [f"{base}-{suffix}", f"{base}-{suffix}-{slugify(repo)}"]
     if args.force_new:
-        candidates.extend(f"{base}-{slugify(owner)}-{index}" for index in range(2, 20))
+        candidates.extend(f"{base}-{suffix}-{index}" for index in range(2, 20))
 
     for candidate in candidates:
         existing = by_table.get(candidate)
@@ -1216,7 +1221,10 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         "--link",
         help="Morphe add-source URL (fills app name, patch source and package)",
     )
-    parser.add_argument("--table", help="exact config table name")
+    parser.add_argument(
+        "--table",
+        help="exact config table name (default: <app>-<rv-brand>)",
+    )
     parser.add_argument("--brand", help="rv-brand value")
     parser.add_argument("--cli-source", help="cli-source value")
     parser.add_argument(
@@ -1324,6 +1332,7 @@ def main(argv: list[str] | None = None) -> int:
         by_table=by_table,
         owner=owner,
         repo=repo,
+        brand_hint=args.brand or BRAND_ALIASES.get(source) or owner,
     )
     if config_input:
         if target.existing and Path(target.file) != Path(config_input):

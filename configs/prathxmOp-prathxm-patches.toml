@@ -7,7 +7,7 @@
 # (morphe, aptoide, apkeep, apkcombo, apkmirror, apkpure, archive, direct, gplaydl, uptodown) and the next one
 # is used when the current one cannot serve the required version.
 
-[Chess-com]
+[Chess-com-Prathxm]
 patches-source  = "prathxmOp/prathxm-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "Prathxm"
