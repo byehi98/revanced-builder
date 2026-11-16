@@ -1,46 +1,56 @@
 
-**11 apps built.**
+**18 apps built.**
   
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
 CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
-Patches: bearinmindcat/patches-2.10.0.mpp  
-[Changelog](https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.10.0)
+Patches: Alastor-Kaneki/patches-1.15.3.mpp  
+[Changelog](https://github.com/Alastor-Kaneki/Morphe-Patches/releases/tag/v1.16.0)
 
+CLI: ReVanced/revanced-cli-6.0.0-all.jar  
+Patches: Aunali321/patches-2.0.0.rvp  
+[Changelog](https://github.com/Aunali321/ReVancedExperiments/releases/tag/v2.0.0)
+
+CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
+Patches: BholeyKaBhakt/patches-2.14.0.mpp  
+[Changelog](https://github.com/BholeyKaBhakt/android-patches-xtra/releases/tag/v2.14.0)
+
+CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
+Patches: BlazeFTL/patches-1.43.7.4.mpp  
+[Changelog](https://github.com/BlazeFTL/FTL-Patches/releases/tag/v1.43.7.4)
+
+CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
+Patches: Entree3k/patches-1.22.0.mpp  
+[Changelog](https://github.com/Entree3k/Morning-Entree-Patches/releases/tag/v1.22.0)
+
+CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
 CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
 Patches: hoo-dles/patches-1.47.0.mpp  
 [Changelog](https://github.com/hoo-dles/morphe-patches/releases/tag/v1.47.0)
 
 CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
-Patches: hxreborn/patches-1.80.0.mpp  
-[Changelog](https://github.com/hxreborn/morphe-patches/releases/tag/v1.80.0)
+CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
+Patches: MorpheApp/patches-2.3.0.mpp  
+[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v2.3.0)
 
 CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
 CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
-Patches: MorpheApp/patches-2.3.0-dev.9.mpp  
-[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v2.3.0-dev.9)
-
 CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
 CLI: MorpheApp/morphe-desktop-2.2.0-all.jar    
 
 Skipped:  
 Google-Photos-Akash-Sriram: 7.99.0.1007655401
 Patches: Akash-Sriram/patches-1.18.0.mpp  
-Speedtest-xtra: 7.1.4
-RS-File-Manager-BlazeFTL: latest  
-Does-Not-Commute-Entree3k: 1.5.5  
-Home-Workout-Entree3k: 1.7.6
-Lose-Weight-App-for-Men-Entree3k: 2.4.37
-MacroDroid-Entree3k: 5.65.9  
-NZB360-Entree3k: 24.1
-PinOut-Entree3k: 1.0.7
-Send-Files-To-TV-Entree3k: 1.4.22
-Six-Pack-in-30-Days-Entree3k: 1.4.8
 Trakt-IMXEren: 3.13.0
 Patches: IMXEren/patches-1.4.1.mpp  
 Anger-of-Stick-5-MiguelNinja19: 1.1.94
@@ -52,10 +62,6 @@ Oddmar-MiguelNinja19: 0.111
 Plants-vs-Zombies-MiguelNinja19: 3.18.0
 The-Battle-of-Polytopia-MiguelNinja19: 18.0.16748
 Zombie-Catchers-MiguelNinja19: latest
-Reddit-Morphe: 2026.40.0
-Patches: MorpheApp/patches-2.2.0.mpp  
-YouTube-Morphe: 21.30.216
-YouTube-Music-Morphe: 9.30.53  
 Adobe-Photoshop-Mix-RookieEnough: 2.6.3
 Patches: RookieEnough/patches-1.6.4.mpp  
 Cricbuzz-RookieEnough: 6.24.01
@@ -75,6 +81,8 @@ Patches: arandomhooman/patches-1.53.0.mpp
 FolderSync-hoomans: 4.12.0
 Microsoft-SwiftKey-hoomans: 9.13.13.5
 Poweramp-hoomans: build-1025-bundle-play
+Google-Maps-bearinmindcat: 26.44.06.1006895251
+Patches: bearinmindcat/patches-2.10.0.mpp  
 Brave-Bufferk: 1.92.140
 Patches: bufferk/patches-1.8.1.mpp  
 Medium-bufferk: 4.5.1784910928
@@ -158,6 +166,14 @@ Showly-hoo-dles: 3.70.0
 Solid-Explorer-hoo-dles: 3.6.1
 WPS-Office-hoo-dles: 18.24
 Wallcraft-hoo-dles: 3.61.01
+Candy-Crush-Soda-Saga-hxreborn: 1.331.3
+Patches: hxreborn/patches-1.80.0.mpp  
+Cx-File-Explorer-hxreborn: 2.8.1
+MovieBox-hxreborn: 4.0.03.1020.03
+ProtonVPN-hxreborn: 5.21.9.0
+Protonmail-hxreborn: 7.11.12
+Symfonium-hxreborn: 15.1.0
+TradingView-hxreborn: 1.20.86.0.1002565
 nzb360-hyzor: 25.3  
 Patches: hyzor/patches-1.9.1.mpp  
 Reddit-Adobo: 2026.45.0
@@ -214,17 +230,24 @@ qBitConnect-rushiranpise: 2.0.6
 Spotify-spicetify: 2.2.553
 Patches: spicetify/patches-1.2.0.mpp  
 Imgur-sushruth: 7.34.0.0
-Patches: sushruth/patches-1.0.0.mpp    
+Patches: sushruth/patches-1.0.0.mpp      
 
 ### Built versions  
-Candy-Crush-Soda-Saga-hxreborn: 1.331.3
-Cx-File-Explorer-hxreborn: 2.8.1
-Google-Maps-bearinmindcat: 26.44.06.1006895251
-MovieBox-hxreborn: 4.0.03.1020.03
-ProtonVPN-hxreborn: 5.21.9.0
-Protonmail-hxreborn: 7.11.12
+All-Video-Downloader-and-Ace-Player-FTL: 1.9.8
+Arm-Workout-Entree3k: 2.4.3
+Automate-xtra: 1.51.1
+Backdrops-xtra: 6.6
+Does-Not-Commute-Entree3k: 1.5.5
+Home-Workout-Entree3k: 1.7.6
+Lose-Weight-App-for-Men-Entree3k: 2.4.37
+MacroDroid-Entree3k: 5.65.9
+NZB360-Entree3k: 24.1
+Opera-GX-Kaneki: 3.3.18
+PinOut-Entree3k: 1.0.7
+RS-File-Manager-BlazeFTL: 2.3.2
 Reddit-Morphe-Dev: 2026.46.0
-Symfonium-hxreborn: 15.1.0
-TradingView-hxreborn: 1.20.86.0.1002565
+Six-Pack-in-30-Days-Entree3k: 1.4.8
+Speedtest-xtra: 7.1.4
+Telegram-Aunali321: 13.2.1
 YouTube-Morphe-Dev: 21.45.82
 YouTube-Music-Morphe-Dev: 9.46.51  
