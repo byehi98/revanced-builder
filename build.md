@@ -1,56 +1,47 @@
 
-**18 apps built.**
+**4 apps built.**
   
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
-CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
-Patches: Alastor-Kaneki/patches-1.15.3.mpp  
-[Changelog](https://github.com/Alastor-Kaneki/Morphe-Patches/releases/tag/v1.16.0)
-
-CLI: ReVanced/revanced-cli-6.0.0-all.jar  
-Patches: Aunali321/patches-2.0.0.rvp  
-[Changelog](https://github.com/Aunali321/ReVancedExperiments/releases/tag/v2.0.0)
-
-CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
-Patches: BholeyKaBhakt/patches-2.14.0.mpp  
-[Changelog](https://github.com/BholeyKaBhakt/android-patches-xtra/releases/tag/v2.14.0)
-
-CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
-Patches: BlazeFTL/patches-1.43.7.4.mpp  
-[Changelog](https://github.com/BlazeFTL/FTL-Patches/releases/tag/v1.43.7.4)
-
-CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
 CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
 Patches: Entree3k/patches-1.22.0.mpp  
 [Changelog](https://github.com/Entree3k/Morning-Entree-Patches/releases/tag/v1.22.0)
 
 CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
 Patches: hoo-dles/patches-1.47.0.mpp  
 [Changelog](https://github.com/hoo-dles/morphe-patches/releases/tag/v1.47.0)
 
 CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
 Patches: MorpheApp/patches-2.3.0.mpp  
 [Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v2.3.0)
 
-CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
 CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
 CLI: MorpheApp/morphe-desktop-2.2.0-all.jar    
 
 Skipped:  
 Google-Photos-Akash-Sriram: 7.99.0.1007655401
 Patches: Akash-Sriram/patches-1.18.0.mpp  
+Opera-GX-Kaneki: 3.3.18
+Patches: Alastor-Kaneki/patches-1.15.3.mpp  
+Telegram-Aunali321: 13.2.1
+Patches: Aunali321/patches-2.0.0.rvp  
+Automate-xtra: 1.51.1
+Patches: BholeyKaBhakt/patches-2.14.0.mpp  
+Backdrops-xtra: 6.6
+Patches: BholeyKaBhakt/patches-2.14.0.mpp  
+Speedtest-xtra: 7.1.4
+All-Video-Downloader-and-Ace-Player-FTL: 1.9.8
+Patches: BlazeFTL/patches-1.43.7.4.mpp  
+RS-File-Manager-BlazeFTL: 2.3.2
+Arm-Workout-Entree3k: 2.4.3
+Patches: Entree3k/patches-1.22.0.mpp  
+Does-Not-Commute-Entree3k: 1.5.5
+Home-Workout-Entree3k: 1.7.6
+Lose-Weight-App-for-Men-Entree3k: 2.4.37
+MacroDroid-Entree3k: 5.65.9
+NZB360-Entree3k: 24.1
+PinOut-Entree3k: 1.0.7
+Six-Pack-in-30-Days-Entree3k: 1.4.8
 Trakt-IMXEren: 3.13.0
 Patches: IMXEren/patches-1.4.1.mpp  
 Anger-of-Stick-5-MiguelNinja19: 1.1.94
@@ -62,6 +53,11 @@ Oddmar-MiguelNinja19: 0.111
 Plants-vs-Zombies-MiguelNinja19: 3.18.0
 The-Battle-of-Polytopia-MiguelNinja19: 18.0.16748
 Zombie-Catchers-MiguelNinja19: latest
+Patches: MorpheApp/patches-2.3.0.mpp  
+Reddit-Morphe-Dev: 2026.46.0
+Patches: MorpheApp/patches-2.3.0.mpp  
+YouTube-Morphe-Dev: 21.45.82
+YouTube-Music-Morphe-Dev: 9.46.51  
 Adobe-Photoshop-Mix-RookieEnough: 2.6.3
 Patches: RookieEnough/patches-1.6.4.mpp  
 Cricbuzz-RookieEnough: 6.24.01
@@ -230,24 +226,10 @@ qBitConnect-rushiranpise: 2.0.6
 Spotify-spicetify: 2.2.553
 Patches: spicetify/patches-1.2.0.mpp  
 Imgur-sushruth: 7.34.0.0
-Patches: sushruth/patches-1.0.0.mpp      
+Patches: sushruth/patches-1.0.0.mpp        
 
 ### Built versions  
-All-Video-Downloader-and-Ace-Player-FTL: 1.9.8
-Arm-Workout-Entree3k: 2.4.3
-Automate-xtra: 1.51.1
-Backdrops-xtra: 6.6
-Does-Not-Commute-Entree3k: 1.5.5
-Home-Workout-Entree3k: 1.7.6
-Lose-Weight-App-for-Men-Entree3k: 2.4.37
-MacroDroid-Entree3k: 5.65.9
-NZB360-Entree3k: 24.1
-Opera-GX-Kaneki: 3.3.18
-PinOut-Entree3k: 1.0.7
-RS-File-Manager-BlazeFTL: 2.3.2
-Reddit-Morphe-Dev: 2026.46.0
-Six-Pack-in-30-Days-Entree3k: 1.4.8
-Speedtest-xtra: 7.1.4
-Telegram-Aunali321: 13.2.1
-YouTube-Morphe-Dev: 21.45.82
-YouTube-Music-Morphe-Dev: 9.46.51  
+Reddit-Morphe: 2026.40.0
+Send-Files-To-TV-Entree3k: 1.4.22
+YouTube-Morphe: 21.30.216
+YouTube-Music-Morphe: 9.30.53  
