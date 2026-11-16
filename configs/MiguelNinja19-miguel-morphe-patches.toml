@@ -60,13 +60,14 @@ uptodown-dlurl  = "https://hunter-assassin.en.uptodown.com/android"
 patches-source  = "MiguelNinja19/miguel-morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "MiguelNinja19"
-version         = "latest"
-morphe-dlurl    = "com.mobge.Oddmar"
-aptoide-dlurl   = "com.mobge.Oddmar"
+# The "Unlock full game" fingerprint only exists in the versionCode 265 build
+# (APKPure). APKMirror also hosts 0.111, but its Morphe-resolved variant is
+# versionCode 231, where OddmarPurchaseHandler was refactored and no longer
+# calls HasProductBeenPurchasedCallback.OnCallback directly, so the patch aborts
+# with "Failed to match the fingerprint: HasProductBeenPurchasedFingerprint".
+version         = "0.111"
 apkeep-dlurl    = "com.mobge.Oddmar"
-apkcombo-dlurl  = "https://apkcombo.com/oddmar/com.mobge.Oddmar/"
 apkpure-dlurl   = "https://apkpure.net/oddmar/com.mobge.Oddmar"
-uptodown-dlurl  = "https://oddmar.en.uptodown.com/android"
 
 [Plants-vs-Zombies-MiguelNinja19]
 patches-source  = "MiguelNinja19/miguel-morphe-patches"

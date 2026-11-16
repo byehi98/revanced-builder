@@ -898,9 +898,31 @@ split_bundle_base_entry() {
 	fi
 
 	if [ -z "$entry" ] || ! grep -qxF -- "$entry" <<<"$entries"; then
+		# Prefer an entry literally named base.apk. Otherwise pick the largest
+		# module whose basename does not look like a split. The basename check
+		# matters: modules are usually named split_config.<abi>.apk, so
+		# "config." is never at the start of the path and a path-based regex
+		# matched them. That selected a ~39 MB ABI split instead of the ~15 MB
+		# base for Cloudflare WARP, whose manifest lacks versionName and made
+		# Morphe fail with "getVersionName(...) must not be null".
 		entry=$(unzip -Z -l "$bundle" 2>/dev/null |
-			awk '$1 ~ /^-/ && $NF ~ /\.apk$/ && $NF !~ /(^|\/)config\./ {print $4, $NF}' |
-			sort -rn | sed -n '1p' | cut -d' ' -f2-) || entry=""
+			awk '$1 ~ /^-/ && $NF ~ /\.apk$/ {
+					name = $NF
+					sub(/^.*\//, "", name)
+					# APKMirror/APKPure name the base module base.apk; bundletool
+					# uses base-master.apk for the manifest module.
+					if (name == "base.apk" || name == "base-master.apk") {
+						print $NF; found = 1; exit
+					}
+					# Skip modules that are clearly not the base: config splits
+					# (split_config.*, config.*), bundletool config modules
+					# (base-arm64_v8a.apk, base-en.apk, base-xxhdpi.apk),
+					# feature modules, and asset packs.
+					if (name ~ /^split/ || name ~ /^config\./) next
+					if (name ~ /^base[-_]/ || name ~ /^feature/ || name ~ /assetpack/) next
+					if ($4 + 0 > best) { best = $4 + 0; bestname = $NF }
+				}
+				END { if (!found && bestname != "") print bestname }') || entry=""
 	fi
 	if [ -z "$entry" ]; then
 		epr "No base APK module in '$bundle'"
@@ -961,6 +983,17 @@ _merge_splits_locked() {
 	fi
 	rm "${output}.idsig" "${output}-unsigned" 2>/dev/null || :
 	return 0
+}
+
+# Reject truncated or non-ZIP payloads before they reach Morphe. A downloader can
+# exit 0 after writing an HTML error page or a half-finished transfer, and Morphe
+# then dies with "ArchiveException: Failed to find end record" while constructing a
+# ResourcePatchContext. Reading the central directory catches both cases cheaply.
+is_valid_archive() {
+	local file=$1 entries
+	[ -s "$file" ] || return 1
+	entries=$(unzip -Z1 "$file" 2>/dev/null) || return 1
+	[ -n "$entries" ]
 }
 
 # Content-based bundle detection. Some download sources hand us split-bundle bytes
@@ -1162,6 +1195,19 @@ apkmirror_search() {
 	fi
 	return 1
 }
+# Read an APKMirror download page on stdin and return its final download.php link.
+# The site has used both an id-tagged anchor and a span-wrapped anchor; a challenge
+# page yields neither, so callers must treat an empty result as a failure.
+_apkmirror_final_link() {
+	local page link=""
+	page=$(cat)
+	link=$($HTMLQ --base https://www.apkmirror.com --attribute href "a#download-link" <<<"$page" | head -n 1) || link=""
+	if [ -z "$link" ]; then
+		link=$($HTMLQ --base https://www.apkmirror.com --attribute href "span > a[rel = nofollow]" <<<"$page" | head -n 1) || link=""
+	fi
+	echo "$link"
+}
+
 dl_apkmirror() {
 	local url=$1 version=${2// /-} output=$3 arch=$4 dpi=$5 is_bundle=false
 
@@ -1230,8 +1276,16 @@ dl_apkmirror() {
 		resp=$(_cf_get "$dlurl")
 	fi
 	local referer_url
-	referer_url=$(echo "$resp" | $HTMLQ --base https://www.apkmirror.com --attribute href "a.btn") || return 1
-	url=$(_cf_get "$referer_url" | $HTMLQ --base https://www.apkmirror.com --attribute href "span > a[rel = nofollow]") || return 1
+	referer_url=$(echo "$resp" | $HTMLQ --base https://www.apkmirror.com --attribute href "a.btn" | head -n 1) || referer_url=""
+	if [ -z "$referer_url" ]; then
+		epr "Could not find APKMirror download button for '$url'"
+		return 1
+	fi
+	url=$(_cf_get "$referer_url" | _apkmirror_final_link) || url=""
+	if [ -z "$url" ]; then
+		epr "Could not resolve APKMirror download link for '$referer_url'"
+		return 1
+	fi
 
 	local cookie_args=()
 	[ -n "${CF_COOKIES:-}" ] && cookie_args=(--header "Cookie: $CF_COOKIES")
@@ -1741,7 +1795,11 @@ _dl_apkeep_locked() {
 	elif [ -n "$xapk_file" ]; then
 		mv -f "$xapk_file" "${output}.apkm"
 		merge_splits "${output}.apkm" "${output}"
-		rm -f "${output}.apkm"
+		# merge_splits() only extracts the developer-signed base when
+		# REQUIRE_STOCK_SIGNATURE is set. Keep the bundle under the conventional
+		# .apkm name so merge_patched_splits() can fuse the patched base back
+		# with its splits; deleting it here produced an uninstallable split base.
+		[ "$REQUIRE_STOCK_SIGNATURE" = true ] || rm -f "${output}.apkm"
 	elif [ -n "$downloaded_dir" ]; then
 		if ! (
 			cd "$downloaded_dir" || exit 1
@@ -1751,7 +1809,7 @@ _dl_apkeep_locked() {
 			return 1
 		fi
 		merge_splits "${output}.apkm" "${output}"
-		rm -f "${output}.apkm"
+		[ "$REQUIRE_STOCK_SIGNATURE" = true ] || rm -f "${output}.apkm"
 	else
 		epr "Could not find downloaded files in $out_dir"
 		rm -rf "$out_dir"
@@ -1899,9 +1957,21 @@ dl_morphe() {
 	if [[ "$resolved_url" == *apkmirror.com* ]]; then
 		if [[ "$resolved_url" == *"-android-apk-download"* ]]; then
 			local resp referer_url final_url
-			resp=$(_cf_get "$resolved_url") || return 1
-			referer_url=$(echo "$resp" | $HTMLQ --base https://www.apkmirror.com --attribute href "a.btn") || return 1
-			final_url=$(_cf_get "$referer_url" | $HTMLQ --base https://www.apkmirror.com --attribute href "span > a[rel = nofollow]") || return 1
+			resp=$(_cf_get "$resolved_url") || resp=""
+			referer_url=$(echo "$resp" | $HTMLQ --base https://www.apkmirror.com --attribute href "a.btn" | head -n 1) || referer_url=""
+			if [ -n "$referer_url" ]; then
+				# A challenge or layout change used to yield an empty URL and an
+				# obscure wget "http://: Invalid host name." failure here.
+				final_url=$(_cf_get "$referer_url" | _apkmirror_final_link) || final_url=""
+			fi
+			if [ -z "$referer_url" ] || [ -z "$final_url" ]; then
+				local app_url
+				app_url=$(sed -E 's#(https://www\.apkmirror\.com/apk/[^/]+/[^/]+/).*#\1#' <<<"$resolved_url")
+				wpr "Could not parse direct APKMirror link; falling back to scraper for '$app_url'"
+				get_apkmirror_resp "$app_url" >/dev/null 2>&1 || :
+				dl_apkmirror "$app_url" "$version" "$output" "$arch" "$dpi" "$get_latest_ver"
+				return $?
+			fi
 
 			local is_bundle=false
 			if grep -qi "bundle" <<<"$($HTMLQ 'a.btn' --text <<<"$resp")"; then
@@ -2175,6 +2245,14 @@ build_rv() {
 			fi
 			if ! dl_${dl_p} "${args[${dl_p}_dlurl]}" "$version" "$stock_apk" "$arch" "${args[dpi]}" "$get_latest_ver"; then
 				epr "ERROR: Could not download '${table}' from '${dl_p}' with version '${version}', arch '${arch}', dpi '${args[dpi]}'"
+				continue
+			fi
+			# A downloader can exit 0 after saving an HTML error page or a
+			# truncated transfer. Reject that here so the next configured source
+			# is tried instead of caching corrupt bytes for later builds.
+			if ! is_valid_archive "$stock_apk"; then
+				epr "'${dl_p}' returned an unreadable APK for '${table}'; trying next source"
+				rm -f "$stock_apk" "${stock_apk}.apkm" "${stock_apk}.bundle"
 				continue
 			fi
 			break
