@@ -1024,14 +1024,37 @@ normalize_stock_apk() {
 	return 0
 }
 
-# A split base carries android:requiredSplitTypes / android:isSplitRequired and
-# cannot be installed on its own (adb reports INSTALL_FAILED_MISSING_SPLIT).
-# AndroidManifest.xml is binary, so strip the NUL bytes of its UTF-16 string
-# pool before matching.
+# A split base that is missing its modules cannot be installed on its own (adb
+# reports INSTALL_FAILED_MISSING_SPLIT). The marker is a non-empty
+# android:requiredSplitTypes or android:isSplitRequired="true".
+#
+# The attribute names alone are not enough: bundletool's universal APKs (the
+# standalone build of an AAB that sources such as Aptoide/APKPure serve) also
+# declare android:requiredSplitTypes="" and android:splitTypes="", yet they
+# install fine. Checking only for the names therefore flags every universal APK
+# as an uninstallable split base. Read the actual values via APKEditor, which is
+# already downloaded for split merging.
 apk_requires_splits() {
+	local apk=$1 tree required split_required
+	if [ -f "$TEMP_DIR/apkeditor.jar" ] &&
+		tree=$(java -jar "$TEMP_DIR/apkeditor.jar" info -i "$apk" -xmltree AndroidManifest.xml 2>/dev/null); then
+		required=$(sed -nE 's/.*android:requiredSplitTypes\([^)]*\)=("[^"]*")?.*/\1/p' <<<"$tree")
+		if [ -n "$required" ] && [ "$required" != '""' ]; then
+			return 0
+		fi
+		split_required=$(sed -nE 's/.*android:isSplitRequired\([^)]*\)=("[^"]*")?.*/\1/p' <<<"$tree")
+		if [ -n "$split_required" ] && [ "$split_required" != '""' ] && [ "$split_required" != '"false"' ]; then
+			return 0
+		fi
+		return 1
+	fi
+
+	# Fallback when APKEditor is unavailable. AndroidManifest.xml is binary, so
+	# strip the NUL bytes of its UTF-16 string pool before matching. This can
+	# only over-report (it also trips on the empty universal-APK attributes).
 	# grep without -q: closing the pipe early would make tr die with SIGPIPE and
 	# pipefail (set in build.sh) would report the pipeline as failed.
-	unzip -p "$1" AndroidManifest.xml 2>/dev/null | tr -d '\000' | grep -aE 'requiredSplitTypes|isSplitRequired' >/dev/null
+	unzip -p "$apk" AndroidManifest.xml 2>/dev/null | tr -d '\000' | grep -aE 'requiredSplitTypes|isSplitRequired' >/dev/null
 }
 
 # Turn a patched split base into a standalone APK: fuse the stock bundle's
