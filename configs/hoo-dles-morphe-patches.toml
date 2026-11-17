@@ -98,16 +98,3 @@ apkcombo-dlurl  = "https://apkcombo.com/wps-office/cn.wps.moffice_eng/"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/wps-software-pte-ltd/wps-office-pdf/"
 apkpure-dlurl   = "https://apkpure.net/wps-office/cn.wps.moffice_eng"
 uptodown-dlurl  = "https://wps-office.en.uptodown.com/android"
-
-# [Lightroom-hoo-dles]
-# patches-source  = "hoo-dles/morphe-patches"
-# cli-source      = "MorpheApp/morphe-cli"
-# rv-brand        = "hoo-dles"
-# morphe-dlurl    = "com.adobe.lrmobile"
-# aptoide-dlurl   = "com.adobe.lrmobile"
-# apkmirror-dlurl = "https://www.apkmirror.com/apk/adobe/lightroom/"
-# uptodown-dlurl  = "https://adobe-lightroom-mobile.en.uptodown.com/android"
-# Adobe apps are not available on the other mirrors:
-#   apkeep   -> Google Play auth rejected / unreliable for paid apps
-#   apkcombo -> Cloudflare-blocked page
-#   apkpure  -> 410 Gone (delisted)
