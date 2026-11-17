@@ -1,14 +1,11 @@
 
-**3 apps built.**
+**1 apps built.**
   
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
 CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
-Patches: MorpheApp/patches-2.4.0-dev.1.mpp  
-[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v2.4.0-dev.1)
-
-CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.2.0-all.jar    
+Patches: SysAdminDoc/patches-0.0.26.mpp  
+[Changelog](https://github.com/SysAdminDoc/HushTelegram/releases/tag/v0.0.26)  
 
 Skipped:  
 Google-Photos-Akash-Sriram: 7.99.0.1007655401
@@ -48,8 +45,12 @@ The-Battle-of-Polytopia-MiguelNinja19: 18.0.16748
 Zombie-Catchers-MiguelNinja19: latest
 Reddit-Morphe: 2026.40.0
 Patches: MorpheApp/patches-2.3.0.mpp  
+Reddit-Morphe-Dev: 2026.46.0
+Patches: MorpheApp/patches-2.4.0-dev.1.mpp  
 YouTube-Morphe: 21.30.216
+YouTube-Morphe-Dev: 21.46.522
 YouTube-Music-Morphe: 9.30.53  
+YouTube-Music-Morphe-Dev: 9.46.51  
 Adobe-Photoshop-Mix-RookieEnough: 2.6.3
 Patches: RookieEnough/patches-1.6.4.mpp  
 Cricbuzz-RookieEnough: 6.24.01
@@ -62,8 +63,6 @@ Photomath-RookieEnough: 8.48.0
 SoundCloud-RookieEnough: 2026.10.28.release
 Pinterest-SysAdminDoc: 14.44.0
 Patches: SysAdminDoc/patches-0.0.14.mpp  
-Telegram-Hush: 13.2.1  
-Patches: SysAdminDoc/patches-0.0.25.mpp  
 Advanced-Download-Manager-hoomans: 14.0.39
 Patches: arandomhooman/patches-1.53.0.mpp  
 FolderSync-hoomans: 4.12.0
@@ -166,20 +165,10 @@ nzb360-hyzor: 25.3
 Patches: hyzor/patches-1.10.0.mpp  
 Reddit-Adobo: 2026.46.0
 Patches: jkennethcarino/patches-2.0.0-dev.5.mpp  
-AudioRelay-lain: 0.26.1
-Patches: kiraio-moe/patches-1.3.0.mpp  
 Camera-lain: 5.4.0
 Hidden-Settings-lain: 7.34
 iLovePDF-lain: 4.0.1  
-Soccer-Star-legendsciber: 0.3.88
-Patches: legendsciber/patches-1.54.2.mpp  
 Subway-Surfers-legendsciber: 3.71.0
-Letterboxd-mvaishak: 3.6.7
-Patches: mvaishak/patches-3.0.1.mpp  
-Chess-com-Prathxm: 4.10.0
-Patches: prathxmOp/patches-1.15.0.mpp  
-AccuBattery-rushiranpise: 2.1.8
-Patches: rushiranpise/patches-1.23.1.mpp  
 Accuweather-rushiranpise: 21.1.15-3-rc
 AdGuard-rushiranpise: 4.14.68
 Amoledpix-rushiranpise: 7.3
@@ -214,13 +203,7 @@ TeraBox-rushiranpise: 4.28.5
 Torrent-Search-rushiranpise: 2.3.3
 Unimote-rushiranpise: 1.8.1
 Yatri-rushiranpise: 5.0.6
-qBitConnect-rushiranpise: 2.0.6  
-Spotify-spicetify: 2.2.553
-Patches: spicetify/patches-1.2.0.mpp      
-Imgur-sushruth: 7.34.0.0  
-Patches: sushruth/patches-1.0.0.mpp      
+qBitConnect-rushiranpise: 2.0.6    
 
 ### Built versions  
-Reddit-Morphe-Dev: 2026.46.0
-YouTube-Morphe-Dev: 21.46.522
-YouTube-Music-Morphe-Dev: 9.46.51  
+Telegram-Hush: 13.2.2  
