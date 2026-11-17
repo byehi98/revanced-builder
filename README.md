@@ -345,7 +345,7 @@ Get the [latest CI release](https://github.com/byehi98/revanced-builder/releases
 
 | App | Status | Obtainium |
 | :--- | :---: | :---: |
-| `Imgur-sushruth` ([APK](https://github.com/byehi98/revanced-builder/releases/download/421/imgur-sushruth-imgur-v7.34.0.0-all.apk)) | ✅ | [![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.imgur.mobile%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Imgur-sushruth%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22imgur-sushruth-imgur%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D) |
+| `Imgur-sushruth` ([APK](https://github.com/byehi98/revanced-builder/releases/download/427/imgur-sushruth-imgur-v7.34.0.0-all.apk)) | ✅ | [![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.imgur.mobile%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Imgur-sushruth%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22imgur-sushruth-imgur%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D) |
 
 #### `SysAdminDoc/HushPinterest` · `patches-0.0.25.mpp`
 
