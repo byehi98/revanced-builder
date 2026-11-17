@@ -1,15 +1,31 @@
 
-**1 apps built.**
+**15 apps built.**
   
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
 CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
-Patches: hoo-dles/patches-1.47.0.mpp  
-[Changelog](https://github.com/hoo-dles/morphe-patches/releases/tag/v1.47.0)
+Patches: byehi98/patches-1.51.1-dev.4.mpp  
+[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.51.1-dev.4)
 
 CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
-Patches: sushruth/patches-1.0.0.mpp  
-[Changelog](https://github.com/sushruth/imgur-patches/releases/tag/v1.0.0)  
+CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
+Patches: hxreborn/patches-1.81.0.mpp  
+[Changelog](https://github.com/hxreborn/morphe-patches/releases/tag/v1.81.0)
+
+CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
+Patches: jkennethcarino/patches-2.0.0-dev.5.mpp  
+[Changelog](https://github.com/jkennethcarino/adobo/releases/tag/v2.0.0-dev.5)  
 
 Skipped:  
 Google-Photos-Akash-Sriram: 7.99.0.1007655401
@@ -91,15 +107,12 @@ Burrito-Bison-okish: 3.75
 Crash-of-Cars-okish: 1.9.36
 Crossy-Road-okish: 7.15.0
 Dan-The-Man-okish: 1.14.11
-Dead-Target-okish: 4.186.0
-Patches: byehi98/patches-1.51.0.mpp  
 Dead-Trigger-okish: 2.3.4
 Document-Scanner-okish: 6.9.9
 Doodle-Jump-okish: 3.11.40
 Dr-Driving-okish: 1.73
 Earn-to-Die-2-okish: 1.5.6
 Fancy-Pants-okish: 1.0.49
-Freejobalert-okish: 1.0.0
 Fruit-Ninja-okish: 3.97.9
 Grimvalor-okish: 1.2.13
 HAAK-okish: 1.4.3
@@ -110,17 +123,14 @@ Injustice-okish: 3.5.1
 Into-The-Dead-2-okish: 1.88.0
 Into-The-Dead-okish: 2.9.5
 Jetpack-Joyride-okish: 1.104.2
-Lemmings-Puzzle-Survival-okish: 9.5.1
 Lumina-Walls-okish: 1.0.2.6
 Magic-Survival-okish: 0.9941
 Missiles-okish: 1.43
 Onlyone-okish: 1.3053
 Plagueinc-okish: 1.27.5
-Plants-vs-Zombies-Free-okish: 3.18.0
 Progressbar95-okish: 1.1111
 Rodeo-Stampede-okish: 4.26.0
 Shooty-Skies-okish: 3.441.100105
-Smashit-okish: 1.5.14
 Swamp-Attack-2-okish: 1.5.0
 Swamp-Attack-okish: 4.8.10.0
 Swift-Backup-okish: 5.1.1
@@ -129,8 +139,6 @@ Tentaclewars-okish: 2.1.27
 Traffic-Racer-okish: 4.0
 Traffic-Rider-okish: 2.20
 Truecloud-okish: 4.6.5.13
-Vector-okish: 2.10.2
-Vita-Mahjong-okish: 3.47.0
 Minesweeper-cesbar: 1.21.3
 Patches: cesbar/patches-1.14.0.mpp  
 Solitaire-cesbar: 1.20.3
@@ -159,18 +167,8 @@ Showly-hoo-dles: 3.70.0
 Solid-Explorer-hoo-dles: 3.6.1
 WPS-Office-hoo-dles: 18.24
 Wallcraft-hoo-dles: 3.61.01
-Candy-Crush-Soda-Saga-hxreborn: 1.331.3
-Patches: hxreborn/patches-1.80.0.mpp  
-Cx-File-Explorer-hxreborn: 2.8.1
-MovieBox-hxreborn: 4.0.03.1020.03
-ProtonVPN-hxreborn: 5.21.9.0
-Protonmail-hxreborn: 7.11.12
-Symfonium-hxreborn: 15.1.0
-TradingView-hxreborn: 1.20.86.0.1002565
 nzb360-hyzor: 25.3  
 Patches: hyzor/patches-1.10.0.mpp  
-Reddit-Adobo: 2026.45.0
-Patches: jkennethcarino/patches-2.0.0-dev.4.mpp  
 AudioRelay-lain: 0.26.1
 Patches: kiraio-moe/patches-1.3.0.mpp  
 Camera-lain: 5.4.0
@@ -222,6 +220,22 @@ Yatri-rushiranpise: 5.0.6
 qBitConnect-rushiranpise: 2.0.6  
 Spotify-spicetify: 2.2.553
 Patches: spicetify/patches-1.2.0.mpp      
+Imgur-sushruth: 7.34.0.0  
+Patches: sushruth/patches-1.0.0.mpp    
 
 ### Built versions  
-Imgur-sushruth: 7.34.0.0  
+Candy-Crush-Soda-Saga-hxreborn: 1.331.3
+Cx-File-Explorer-hxreborn: 2.8.1
+Dead-Target-okish: 4.186.0
+Freejobalert-okish: 1.0.0
+Lemmings-Puzzle-Survival-okish: 9.5.1
+MovieBox-hxreborn: 4.0.03.1020.03
+Plants-vs-Zombies-Free-okish: 3.18.0
+ProtonVPN-hxreborn: 5.21.9.0
+Protonmail-hxreborn: 7.11.12
+Reddit-Adobo: 2026.46.0
+Smashit-okish: 1.5.14
+Symfonium-hxreborn: 15.1.0
+TradingView-hxreborn: 1.20.86.0.1002565
+Vector-okish: 2.10.2
+Vita-Mahjong-okish: 3.47.0  
