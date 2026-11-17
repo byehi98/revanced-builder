@@ -1,18 +1,15 @@
 
-**4 apps built.**
+**1 apps built.**
   
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
 CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
-Patches: heval99/patches-3.0.0.mpp  
-[Changelog](https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v3.0.0)
+Patches: hoo-dles/patches-1.47.0.mpp  
+[Changelog](https://github.com/hoo-dles/morphe-patches/releases/tag/v1.47.0)
 
 CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
-Patches: hoo-dles/patches-1.47.0.mpp  
-[Changelog](https://github.com/hoo-dles/morphe-patches/releases/tag/v1.47.0)  
+Patches: sushruth/patches-1.0.0.mpp  
+[Changelog](https://github.com/sushruth/imgur-patches/releases/tag/v1.0.0)  
 
 Skipped:  
 Google-Photos-Akash-Sriram: 7.99.0.1007655401
@@ -148,6 +145,11 @@ Patches: durgesh0505/patches-1.27.8.mpp
 Does-Not-Commute-durgesh0505: 1.5.5
 Letterboxd-ethanm6: latest
 Patches: ethanm6/patches-1.4.4.mpp  
+AnyDesk-heval99: 9.0.2
+Patches: heval99/patches-3.0.0.mpp  
+AquaMail-heval99: 2.8.1
+Firefox-heval99: 160.0
+Truecaller-heval99: 26.44.6  
 AdGuard-hoo-dles: 4.14.2
 Patches: hoo-dles/patches-1.47.0.mpp  
 CamScanner-hoo-dles: 7.20.0.2606230000
@@ -219,10 +221,7 @@ Unimote-rushiranpise: 1.8.1
 Yatri-rushiranpise: 5.0.6
 qBitConnect-rushiranpise: 2.0.6  
 Spotify-spicetify: 2.2.553
-Patches: spicetify/patches-1.2.0.mpp    
+Patches: spicetify/patches-1.2.0.mpp      
 
 ### Built versions  
-AnyDesk-heval99: 9.0.2
-AquaMail-heval99: 2.8.1
-Firefox-heval99: 160.0
-Truecaller-heval99: 26.44.6  
+Imgur-sushruth: 7.34.0.0  
