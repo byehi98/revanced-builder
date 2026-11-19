@@ -1,21 +1,18 @@
 
-**8 apps built.**
+**7 apps built.**
   
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
 CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
-Patches: byehi98/patches-1.52.0-dev.2.mpp  
-[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.52.0-dev.2)
+Patches: byehi98/patches-1.52.0-dev.3.mpp  
+[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.52.0-dev.3)
 
 CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
 CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
 CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
 CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
 CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
-Patches: jkennethcarino/patches-2.0.0-dev.6.mpp  
-[Changelog](https://github.com/jkennethcarino/adobo/releases/tag/v2.0.0-dev.6)  
+CLI: MorpheApp/morphe-desktop-2.2.0-all.jar    
 
 Skipped:  
 Google-Photos-Akash-Sriram: 7.99.0.1007655401
@@ -148,8 +145,6 @@ Patches: heval99/patches-3.0.0.mpp
 AquaMail-heval99: 2.8.1
 Firefox-heval99: 160.0
 Truecaller-heval99: 26.44.6  
-AdGuard-hoo-dles: 4.14.2
-Patches: hoo-dles/patches-1.47.0.mpp  
 CamScanner-hoo-dles: 7.20.0.2606230000
 Google-News-hoo-dles: 5.161.0.931240252
 ProtonVPN-hoo-dles: 5.20.57.0
@@ -167,6 +162,8 @@ Symfonium-hxreborn: 15.1.0
 TradingView-hxreborn: 1.20.86.0.1002565
 nzb360-hyzor: 25.3  
 Patches: hyzor/patches-1.10.0.mpp  
+Reddit-Adobo: 2026.46.0
+Patches: jkennethcarino/patches-2.0.0-dev.6.mpp  
 AudioRelay-lain: 0.26.1
 Patches: kiraio-moe/patches-1.3.0.mpp  
 Camera-lain: 5.4.0
@@ -217,16 +214,13 @@ Unimote-rushiranpise: 1.8.1
 Yatri-rushiranpise: 5.0.6
 qBitConnect-rushiranpise: 2.0.6  
 Spotify-spicetify: 2.2.553
-Patches: spicetify/patches-1.2.0.mpp  
-Imgur-sushruth: 7.34.0.0
-Patches: sushruth/patches-1.0.0.mpp        
+Patches: spicetify/patches-1.2.0.mpp    
 
 ### Built versions  
 Dead-Target-okish: 4.186.0
 Freejobalert-okish: 1.0.0
 Lemmings-Puzzle-Survival-okish: 9.5.1
 Plants-vs-Zombies-Free-okish: 3.18.0
-Reddit-Adobo: 2026.46.0
 Smashit-okish: 1.5.14
 Vector-okish: 2.10.2
 Vita-Mahjong-okish: 3.47.0  
