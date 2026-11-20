@@ -15,7 +15,7 @@ Get the [latest CI release](https://github.com/byehi98/revanced-builder/releases
 ## Build Status
 <!-- BUILD_STATUS_START -->
 <details>
-<summary><b>176 of 176 apps built</b> — click to expand the full list</summary>
+<summary><b>177 of 177 apps built</b> — click to expand the full list</summary>
 
 #### `Akash-Sriram/morphe-google-photos` · `patches-1.18.0.mpp`
 
@@ -64,6 +64,7 @@ Get the [latest CI release](https://github.com/byehi98/revanced-builder/releases
 | :--- | :---: | :---: |
 | `All-Video-Downloader-and-Ace-Player-FTL` ([APK](https://github.com/byehi98/revanced-builder/releases/download/423/all-video-downloader-and-ace-player-ftl-ftl-v1.9.8-all.apk)) | ✅ | [![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22videoplayer.videodownloader.downloader%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22All-Video-Downloader-and-Ace-Player-FTL%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22all-video-downloader-and-ace-player-ftl-ftl%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D) |
 | `RS-File-Manager-BlazeFTL` ([APK](https://github.com/byehi98/revanced-builder/releases/download/423/rs-file-manager-blazeftl-ftl-v2.3.2-all.apk)) | ✅ | [![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.rs.explorer.filemanager%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22RS-File-Manager-BlazeFTL%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22rs-file-manager-blazeftl-ftl%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D) |
+| `WIFI-WPS-WPA-TESTER-FTL` ([APK](https://github.com/byehi98/revanced-builder/releases/download/438/wifi-wps-wpa-tester-ftl-ftl-vrc-5.164-all.apk)) | ✅ | [![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.tester.wpswpatester%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22WIFI-WPS-WPA-TESTER-FTL%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22wifi-wps-wpa-tester-ftl-ftl%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D) |
 
 #### `bufferk/morphe-patches` · `patches-1.8.1.mpp`
 
@@ -73,7 +74,7 @@ Get the [latest CI release](https://github.com/byehi98/revanced-builder/releases
 | `Medium-bufferk` ([APK](https://github.com/byehi98/revanced-builder/releases/download/418/medium-bufferk-bufferk-v4.5.1784910928-all.apk)) | ✅ | [![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.medium.reader%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Medium-bufferk%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22medium-bufferk-bufferk%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D) |
 | `Truecaller-bufferk` ([APK](https://github.com/byehi98/revanced-builder/releases/download/326/truecaller-bufferk-bufferk-v26.10.6-all.apk)) | ✅ | [![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.truecaller%22%2C%22url%22%3A%22https%3A//byehi98.github.io/revanced-builder/apps/truecaller-bufferk.html%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Truecaller-bufferk%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22%28%3F%3A/%7C-%29truecaller-bufferk-bufferk-%5B%5E/%5D%2A%24%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22versionExtractWholePage%5C%22%3Atrue%2C%5C%22versionExtractionRegEx%5C%22%3A%5C%22name%3D%5C%5C%5C%22obtainium-version%5C%5C%5C%22%20content%3D%5C%5C%5C%22%28%5B%5E%5C%5C%5C%22%5D%2B%29%5C%5C%5C%22%5C%22%2C%5C%22matchGroupToUse%5C%22%3A%5C%221%5C%22%7D%22%2C%22overrideSource%22%3A%22HTML%22%7D) |
 
-#### `byehi98/okish-morphe-patches` · `patches-1.51.0.mpp`
+#### `byehi98/okish-morphe-patches` · `patches-1.52.0-dev.5.mpp`
 
 | App | Status | Obtainium |
 | :--- | :---: | :---: |
