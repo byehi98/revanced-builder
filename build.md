@@ -1,16 +1,77 @@
 
-**7 apps built.**
+**59 apps built.**
   
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
 CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
-Patches: byehi98/patches-1.52.0-dev.6.mpp  
-[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.52.0-dev.6)
+Patches: byehi98/patches-1.52.0.mpp  
+[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.52.0)
 
 CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
 CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
 CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
 CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
+Patches: byehi98/patches-1.52.1-dev.2.mpp  
+[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.52.1-dev.2)
+
+CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
+Patches: hxreborn/patches-1.84.0.mpp  
+[Changelog](https://github.com/hxreborn/morphe-patches/releases/tag/v1.84.0)
+
+CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
+Patches: MorpheApp/patches-2.4.0-dev.6.mpp  
+[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v2.4.0-dev.6)
+
 CLI: MorpheApp/morphe-desktop-2.2.0-all.jar  
 CLI: MorpheApp/morphe-desktop-2.2.0-all.jar    
 
@@ -53,12 +114,8 @@ The-Battle-of-Polytopia-MiguelNinja19: 18.0.16748
 Zombie-Catchers-MiguelNinja19: latest
 Reddit-Morphe: 2026.40.0
 Patches: MorpheApp/patches-2.3.0.mpp  
-Reddit-Morphe-Dev: 2026.46.0
-Patches: MorpheApp/patches-2.4.0-dev.5.mpp  
 YouTube-Morphe: 21.30.216
-YouTube-Morphe-Dev: 21.46.522
 YouTube-Music-Morphe: 9.30.53  
-YouTube-Music-Morphe-Dev: 9.46.51  
 Adobe-Photoshop-Mix-RookieEnough: 2.6.3
 Patches: RookieEnough/patches-1.6.4.mpp  
 Cricbuzz-RookieEnough: 6.24.01
@@ -84,49 +141,6 @@ Brave-Bufferk: 1.92.140
 Patches: bufferk/patches-1.8.1.mpp  
 Medium-bufferk: 4.5.1784910928
 Truecaller-bufferk: 26.10.6
-20-Minutes-Till-Dawn-okish: 8.7
-Patches: byehi98/patches-1.51.0.mpp  
-Adda247-okish: 12.8.3
-Aliens-Drive-Me-Crazy-okish: 3.2.11
-Alto-Adventure-okish: 1.8.27
-Alto-Odyssey-okish: 1.0.42
-Big-Hunter-okish: 3.1.2
-Burrito-Bison-okish: 3.75
-Crash-of-Cars-okish: 1.9.36
-Crossy-Road-okish: 7.15.0
-Dan-The-Man-okish: 1.14.11
-Dead-Trigger-okish: 2.3.4
-Document-Scanner-okish: 6.9.9
-Doodle-Jump-okish: 3.11.40
-Dr-Driving-okish: 1.73
-Earn-to-Die-2-okish: 1.5.6
-Fancy-Pants-okish: 1.0.49
-Fruit-Ninja-okish: 3.97.9
-Grimvalor-okish: 1.2.13
-HAAK-okish: 1.4.3
-Head-Basketball-okish: 4.6.4
-Head-Soccer-okish: 7.1.12
-Hill-Climb-Racing-okish: 1.73.3
-Injustice-okish: 3.5.1
-Into-The-Dead-2-okish: 1.88.0
-Into-The-Dead-okish: 2.9.5
-Jetpack-Joyride-okish: 1.104.2
-Lumina-Walls-okish: 1.0.2.6
-Magic-Survival-okish: 0.9941
-Missiles-okish: 1.43
-Onlyone-okish: 1.3053
-Plagueinc-okish: 1.27.5
-Progressbar95-okish: 1.1111
-Rodeo-Stampede-okish: 4.26.0
-Shooty-Skies-okish: 3.441.100105
-Swamp-Attack-2-okish: 1.5.0
-Swamp-Attack-okish: 4.8.10.0
-Swift-Backup-okish: 5.1.1
-Swordigo-okish: 1.4.13
-Tentaclewars-okish: 2.1.27
-Traffic-Racer-okish: 4.0
-Traffic-Rider-okish: 2.20
-Truecloud-okish: 4.6.5.13
 Minesweeper-cesbar: 1.21.3
 Patches: cesbar/patches-1.14.0.mpp  
 Solitaire-cesbar: 1.20.3
@@ -153,14 +167,6 @@ Showly-hoo-dles: 3.70.0
 Solid-Explorer-hoo-dles: 3.6.1
 WPS-Office-hoo-dles: 18.24
 Wallcraft-hoo-dles: 3.61.01
-Candy-Crush-Soda-Saga-hxreborn: 1.331.3
-Patches: hxreborn/patches-1.83.0.mpp  
-Cx-File-Explorer-hxreborn: 2.8.1
-MovieBox-hxreborn: 4.0.03.1020.03
-ProtonVPN-hxreborn: 5.21.57.0
-Protonmail-hxreborn: 7.12.1
-Symfonium-hxreborn: 15.1.0
-TradingView-hxreborn: 1.20.86.0.1002565
 nzb360-hyzor: 25.3  
 Patches: hyzor/patches-1.10.0.mpp  
 Reddit-Adobo: 2026.46.0
@@ -217,13 +223,65 @@ qBitConnect-rushiranpise: 2.0.6
 Spotify-spicetify: 2.2.553
 Patches: spicetify/patches-1.2.0.mpp      
 Imgur-sushruth: 7.34.0.0
-Patches: sushruth/patches-1.0.0.mpp        
+Patches: sushruth/patches-1.0.0.mpp          
 
 ### Built versions  
+20-Minutes-Till-Dawn-okish: 8.7
+Adda247-okish: 12.8.3
+Aliens-Drive-Me-Crazy-okish: 3.2.11
+Alto-Adventure-okish: 1.8.27
+Alto-Odyssey-okish: 1.0.42
+Big-Hunter-okish: 3.1.2
+Burrito-Bison-okish: 3.75
+Candy-Crush-Soda-Saga-hxreborn: 1.331.3
+Crash-of-Cars-okish: 1.9.36
+Crossy-Road-okish: 7.15.0
+Cx-File-Explorer-hxreborn: 2.8.1
+Dan-The-Man-okish: 1.14.12
 Dead-Target-okish: 4.186.0
+Dead-Trigger-okish: 2.3.4
+Document-Scanner-okish: 6.9.14
+Doodle-Jump-okish: 3.11.40
+Dr-Driving-okish: 1.73
+Earn-to-Die-2-okish: 1.5.6
+Fancy-Pants-okish: 1.0.50
 Freejobalert-okish: 1.0.0
+Fruit-Ninja-okish: 3.98.4
+Grimvalor-okish: 1.2.13
+HAAK-okish: 1.4.3
+Head-Basketball-okish: 4.6.4
+Head-Soccer-okish: 7.1.12
+Hill-Climb-Racing-okish: 1.74.0
+Injustice-okish: 3.5.1
+Into-The-Dead-2-okish: 1.88.0
+Into-The-Dead-okish: 2.9.5
+Jetpack-Joyride-okish: 1.104.2
 Lemmings-Puzzle-Survival-okish: 9.5.1
+Lumina-Walls-okish: 1.0.2.6
+Magic-Survival-okish: 0.9941
+Missiles-okish: 1.43
+MovieBox-hxreborn: 4.0.03.1020.03
+Onlyone-okish: 1.3053
+Plagueinc-okish: 1.27.5
 Plants-vs-Zombies-Free-okish: 3.19.0
+Progressbar95-okish: 1.1111
+ProtonVPN-hxreborn: 5.21.57.0
+Protonmail-hxreborn: 7.12.1
+Reddit-Morphe-Dev: 2026.47.0
+Rodeo-Stampede-okish: 4.26.0
+Shooty-Skies-okish: 3.441.100105
 Smashit-okish: 1.5.14
+Swamp-Attack-2-okish: 1.5.1
+Swamp-Attack-okish: 4.8.10.0
+Swift-Backup-okish: 5.1.1
+Swordigo-okish: 1.4.13
+Symfonium-hxreborn: 15.1.0
+Tentaclewars-okish: 2.1.27
+TradingView-hxreborn: 1.20.86.0.1002565
+Traffic-Racer-okish: 4.0
+Traffic-Rider-okish: 2.21
+Truecloud-okish: 4.6.5.13
 Vector-okish: 2.10.2
-Vita-Mahjong-okish: 3.48.0  
+Vita-Mahjong-okish: 3.48.0
+YouTube-Morphe-Dev: 21.46.522
+YouTube-Music-Morphe-Dev: 9.46.51  
