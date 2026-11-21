@@ -4,21 +4,23 @@
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
 CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
-Patches: BholeyKaBhakt/patches-2.16.0-dev.1.mpp  
-[Changelog](https://github.com/BholeyKaBhakt/android-patches-xtra/releases/tag/v2.16.0-dev.1)
+Patches: BholeyKaBhakt/patches-2.16.0.mpp  
+[Changelog](https://github.com/BholeyKaBhakt/android-patches-xtra/releases/tag/v2.16.0)
 
+CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
 CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
 Patches: BlazeFTL/patches-1.43.7.5.mpp  
 [Changelog](https://github.com/BlazeFTL/FTL-Patches/releases/tag/v1.43.7.5)
 
 CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
-Patches: hxreborn/patches-1.85.0.mpp  
-[Changelog](https://github.com/hxreborn/morphe-patches/releases/tag/v1.85.0)
+Patches: jkennethcarino/patches-2.0.1.mpp  
+[Changelog](https://github.com/jkennethcarino/adobo/releases/tag/v2.0.1)
 
 CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
+Patches: MorpheApp/patches-2.4.0-dev.7.mpp  
+[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v2.4.0-dev.7)
+
 CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
 CLI: MorpheApp/morphe-desktop-2.3.0-all.jar    
 
@@ -29,9 +31,6 @@ Opera-GX-Kaneki: 3.3.18
 Patches: Alastor-Kaneki/patches-1.15.3.mpp  
 Telegram-Aunali321: 13.2.1
 Patches: Aunali321/patches-2.0.0.rvp  
-Automate-xtra: 1.54.0-play
-Patches: BholeyKaBhakt/patches-2.15.0.mpp  
-Speedtest-xtra: 7.1.4
 All-Video-Downloader-and-Ace-Player-FTL: 1.9.8
 Patches: BlazeFTL/patches-1.43.7.5.mpp  
 WIFI-WPS-WPA-TESTER-FTL: rc-5.164  
@@ -58,12 +57,8 @@ The-Battle-of-Polytopia-MiguelNinja19: 18.0.16748
 Zombie-Catchers-MiguelNinja19: latest
 Reddit-Morphe: 2026.40.0
 Patches: MorpheApp/patches-2.3.0.mpp  
-Reddit-Morphe-Dev: 2026.47.0
-Patches: MorpheApp/patches-2.4.0-dev.6.mpp  
 YouTube-Morphe: 21.30.216
-YouTube-Morphe-Dev: 21.46.522
 YouTube-Music-Morphe: 9.30.53  
-YouTube-Music-Morphe-Dev: 9.46.51  
 Adobe-Photoshop-Mix-RookieEnough: 2.6.3
 Patches: RookieEnough/patches-1.6.4.mpp  
 Cricbuzz-RookieEnough: 6.24.01
@@ -166,10 +161,16 @@ Showly-hoo-dles: 3.70.0
 Solid-Explorer-hoo-dles: 3.6.1
 WPS-Office-hoo-dles: 18.24
 Wallcraft-hoo-dles: 3.61.01
+Candy-Crush-Soda-Saga-hxreborn: 1.331.3
+Patches: hxreborn/patches-1.85.0.mpp  
+Cx-File-Explorer-hxreborn: 2.8.1
+MovieBox-hxreborn: 4.0.03.1020.03
+ProtonVPN-hxreborn: 5.21.57.0
+Protonmail-hxreborn: 7.12.1
+Symfonium-hxreborn: 15.1.0
+TradingView-hxreborn: 1.20.86.0.1002565  
 nzb360-hyzor: 25.3  
 Patches: hyzor/patches-1.10.0.mpp  
-Reddit-Adobo: 2026.47.0
-Patches: jkennethcarino/patches-2.0.0-dev.9.mpp  
 AudioRelay-lain: 0.26.1
 Patches: kiraio-moe/patches-1.3.0.mpp  
 Camera-lain: 5.4.0
@@ -222,14 +223,14 @@ qBitConnect-rushiranpise: 2.0.6
 Spotify-spicetify: 2.2.553
 Patches: spicetify/patches-1.2.0.mpp      
 Imgur-sushruth: 7.34.0.0
-Patches: sushruth/patches-1.0.0.mpp                
+Patches: sushruth/patches-1.0.0.mpp                  
 
 ### Built versions  
+Automate-xtra: 1.54.0-play
 Backdrops-xtra: 6.6
-Candy-Crush-Soda-Saga-hxreborn: 1.331.3
-Cx-File-Explorer-hxreborn: 2.8.1
-MovieBox-hxreborn: 4.0.03.1020.03
-ProtonVPN-hxreborn: 5.21.57.0
-Protonmail-hxreborn: 7.12.1
-Symfonium-hxreborn: 15.1.0
-TradingView-hxreborn: 1.20.86.0.1002565  
+RS-File-Manager-BlazeFTL: 2.3.2
+Reddit-Adobo: 2026.47.0
+Reddit-Morphe-Dev: 2026.47.0
+Speedtest-xtra: 7.1.4
+YouTube-Morphe-Dev: 21.46.522
+YouTube-Music-Morphe-Dev: 9.46.51  
