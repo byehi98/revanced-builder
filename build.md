@@ -8,8 +8,8 @@ Patches: dh6k/patches-1.9.0.mpp
 [Changelog](https://github.com/dh6k/morphe-patches/releases/tag/v1.9.0)
 
 CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
-Patches: heval99/patches-3.1.0.mpp  
-[Changelog](https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v3.1.0)
+Patches: heval99/patches-3.2.0.mpp  
+[Changelog](https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v3.2.0)
 
 CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
 CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
@@ -220,7 +220,7 @@ qBitConnect-rushiranpise: 2.0.6
 Spotify-spicetify: 2.2.553
 Patches: spicetify/patches-1.2.0.mpp  
 Imgur-sushruth: 7.34.0.0
-Patches: sushruth/patches-1.0.0.mpp          
+Patches: sushruth/patches-1.0.0.mpp            
 
 ### Built versions  
 AnyDesk-heval99: latest
