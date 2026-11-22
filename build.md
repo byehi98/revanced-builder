@@ -1,32 +1,18 @@
 
-**39 apps built.**
+**13 apps built.**
   
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
 CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
-Patches: Akash-Sriram/patches-1.18.0.mpp  
-[Changelog](https://github.com/Akash-Sriram/morphe-google-photos/releases/tag/v1.18.0)
+Patches: byehi98/patches-1.53.0-dev.5.mpp  
+[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.53.0-dev.5)
 
 CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
-Patches: Alastor-Kaneki/patches-1.15.3.mpp  
-[Changelog](https://github.com/Alastor-Kaneki/Morphe-Patches/releases/tag/v1.16.0)
-
-CLI: ReVanced/revanced-cli-6.0.0-all.jar  
-Patches: Aunali321/patches-2.0.0.rvp  
-[Changelog](https://github.com/Aunali321/ReVancedExperiments/releases/tag/v2.0.0)
-
 CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
-Patches: BholeyKaBhakt/patches-2.16.0.mpp  
-[Changelog](https://github.com/BholeyKaBhakt/android-patches-xtra/releases/tag/v2.16.0)
-
 CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
-Patches: mvaishak/patches-3.1.0.mpp  
-[Changelog](https://github.com/mvaishak/letterboxd-morphe-patches/releases/tag/v3.1.0)
-
 CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
-Patches: prathxmOp/patches-1.15.0.mpp  
-[Changelog](https://github.com/prathxmOp/prathxm-patches/releases/tag/v1.15.0)
-
+CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
 CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
 Patches: rushiranpise/patches-1.23.1.mpp  
 [Changelog](https://github.com/rushiranpise/morphe-patches/releases/tag/v1.23.1)
@@ -35,50 +21,16 @@ CLI: MorpheApp/morphe-desktop-2.3.0-all.jar
 CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
 CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
 CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
-Patches: spicetify/patches-1.2.0.mpp  
-[Changelog](https://github.com/spicetify/morphe-patches/releases/tag/v1.2.0)
-
-CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
-Patches: sushruth/patches-1.0.0.mpp  
-[Changelog](https://github.com/sushruth/imgur-patches/releases/tag/v1.0.0)
-
-CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
-Patches: SysAdminDoc/patches-0.0.26.mpp  
-[Changelog](https://github.com/SysAdminDoc/HushTelegram/releases/tag/v0.0.26)  
+CLI: MorpheApp/morphe-desktop-2.3.0-all.jar    
 
 Skipped:  
+Google-Photos-Akash-Sriram: 7.99.0.1007655401
+Patches: Akash-Sriram/patches-1.18.0.mpp  
+Opera-GX-Kaneki: 3.3.18
+Patches: Alastor-Kaneki/patches-1.15.3.mpp  
+Telegram-Aunali321: 13.2.2
+Patches: Aunali321/patches-2.0.0.rvp  
+Automate-xtra: 1.54.0-play
 Patches: BholeyKaBhakt/patches-2.16.0.mpp  
 Backdrops-xtra: 6.6
 Patches: BholeyKaBhakt/patches-2.16.0.mpp  
@@ -128,6 +80,8 @@ Photomath-RookieEnough: 8.48.0
 SoundCloud-RookieEnough: 2026.10.28.release
 Pinterest-SysAdminDoc: 14.44.0
 Patches: SysAdminDoc/patches-0.0.14.mpp  
+Telegram-Hush: 13.2.2
+Patches: SysAdminDoc/patches-0.0.26.mpp  
 Advanced-Download-Manager-hoomans: 14.0.39
 Patches: arandomhooman/patches-1.53.0.mpp  
 FolderSync-hoomans: 4.12.0
@@ -150,15 +104,12 @@ Burrito-Bison-okish: 3.75
 Crash-of-Cars-okish: 1.9.36
 Crossy-Road-okish: 7.15.0
 Dan-The-Man-okish: 1.14.12
-Dead-Target-okish: 4.186.0
-Patches: byehi98/patches-1.53.0-dev.3.mpp  
 Dead-Trigger-okish: 2.3.4
 Document-Scanner-okish: 6.9.14
 Doodle-Jump-okish: 3.11.40
 Dr-Driving-okish: 1.73
 Earn-to-Die-2-okish: 1.5.6
 Fancy-Pants-okish: 1.0.50
-Freejobalert-okish: 1.0.0
 Fruit-Ninja-okish: 3.98.4
 Grimvalor-okish: 1.2.13
 HAAK-okish: 1.4.3
@@ -169,17 +120,14 @@ Injustice-okish: 3.5.1
 Into-The-Dead-2-okish: 1.88.0
 Into-The-Dead-okish: 2.9.5
 Jetpack-Joyride-okish: 1.104.2
-Lemmings-Puzzle-Survival-okish: 9.5.1
 Lumina-Walls-okish: 1.0.2.6
 Magic-Survival-okish: 0.9941
 Missiles-okish: 1.43
 Onlyone-okish: 1.3053
 Plagueinc-okish: 1.27.5
-Plants-vs-Zombies-Free-okish: 3.19.0
 Progressbar95-okish: 1.1111
 Rodeo-Stampede-okish: 4.26.0
 Shooty-Skies-okish: 3.441.100105
-Smashit-okish: 1.5.14
 Swamp-Attack-2-okish: 1.5.1
 Swamp-Attack-okish: 4.8.10.0
 Swift-Backup-okish: 5.1.1
@@ -188,8 +136,6 @@ Tentaclewars-okish: 2.1.27
 Traffic-Racer-okish: 4.0
 Traffic-Rider-okish: 2.21
 Truecloud-okish: 4.6.5.13
-Vector-okish: 2.10.2
-Vita-Mahjong-okish: 3.48.0  
 Minesweeper-cesbar: 1.21.3
 Patches: cesbar/patches-1.14.0.mpp  
 Solitaire-cesbar: 1.20.3
@@ -236,27 +182,25 @@ iLovePDF-lain: 4.0.1
 Soccer-Star-legendsciber: 0.3.88
 Patches: legendsciber/patches-1.55.0.mpp  
 Subway-Surfers-legendsciber: 3.71.0  
-
-### Built versions  
+Letterboxd-mvaishak: 3.6.9
+Patches: mvaishak/patches-3.1.0.mpp  
+Chess-com-Prathxm: 4.10.0
+Patches: prathxmOp/patches-1.15.0.mpp  
 AccuBattery-rushiranpise: 2.1.8
+Patches: rushiranpise/patches-1.23.1.mpp  
 Accuweather-rushiranpise: 21.1.15-3-rc
 AdGuard-rushiranpise: 4.14.68
 Amoledpix-rushiranpise: 7.3
 Apkmirror-Installer-rushiranpise: 2.0.3
-Automate-xtra: 1.54.0-play
 Block-Blast-rushiranpise: 10.4.5
 Block-Puzzle-rushiranpise: 6.1
 CamScanner-rushiranpise: 7.24.5.2608200000
 Charge-Meter-rushiranpise: 3.0.1
-Chess-com-Prathxm: 4.10.0
 Cloudflare-Warp-rushiranpise: 6.38.11
 Dailyhunt-rushiranpise: 34.0.4
-Google-Photos-Akash-Sriram: 7.99.0.1007655401
 Google-Photos-rushiranpise: 7.98.0.1001971222
 Greenify-rushiranpise: 5.1.1
-Imgur-sushruth: 7.34.0.0
 Killapps-rushiranpise: 1.58.0
-Letterboxd-mvaishak: 3.6.9
 M-Indicator-rushiranpise: 18.0.365
 MacroDroid-rushiranpise: 5.66.9
 MobiOffice-rushiranpise: 16.5.60515
@@ -264,16 +208,31 @@ MyAnimeList-rushiranpise: 2.3.16
 NYT-Crossword-rushiranpise: 6.41.0
 NZB360-rushiranpise: 25.2.1
 Octi-rushiranpise: 1.3.0-rc0
-Opera-GX-Kaneki: 3.3.18
 Parallel-Space-Pro-rushiranpise: 4.0.9159
 Playit-rushiranpise: 2.7.50.12
 ProtonVPN-Rushiranpise: 5.19.78.0
 Psiphon-rushiranpise: 486
 Send-Files-To-TV-rushiranpise: 1.4.22
-Spotify-spicetify: 2.2.553
-Telegram-Aunali321: 13.2.2
-Telegram-Hush: 13.2.2
 Torrent-Search-rushiranpise: 2.3.3
 Unimote-rushiranpise: 1.8.1
 Yatri-rushiranpise: 5.0.6
 qBitConnect-rushiranpise: 2.0.6  
+Spotify-spicetify: 2.2.553
+Patches: spicetify/patches-1.2.0.mpp  
+Imgur-sushruth: 7.34.0.0
+Patches: sushruth/patches-1.0.0.mpp    
+
+### Built versions  
+Dead-Target-okish: 4.186.0
+Freejobalert-okish: 1.0.0
+Lemmings-Puzzle-Survival-okish: 9.5.1
+Mega-rushiranpise: 16.12(262370820)(dcdf0a7f27)
+Opera-News-rushiranpise: 14.4.2254.84848
+Plants-vs-Zombies-Free-okish: 3.19.0
+RAR-rushiranpise: 7.23.build134
+RS-File-Manager-rushiranpise: 2.3.0.4
+Server-Auditor-rushiranpise: 7.11.2
+Smashit-okish: 1.5.14
+TeraBox-rushiranpise: 4.28.5
+Vector-okish: 2.10.2
+Vita-Mahjong-okish: 3.48.0  
