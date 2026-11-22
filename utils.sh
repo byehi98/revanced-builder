@@ -299,6 +299,13 @@ set_prebuilts() {
 	TOML="${BIN_DIR}/toml/tq-${arch}"
 }
 
+# True when the README build-status table marks this table as failed.
+# Rows are written as: | `Table-Name` | ❌ | ...
+readme_marks_failed() {
+	local table_name=$1
+	[ -f README.md ] && grep -qF -- "| \`${table_name}\` | ❌ |" README.md
+}
+
 config_update() {
 	if [ ! -f build.md ]; then abort "build.md not available"; fi
 	declare -A sources
@@ -323,7 +330,7 @@ config_update() {
 				upped+=("$table_name")
 				prcfg=true
 			else
-				if ! grep -q "^${table_name}:" build.md || { [ -f README.md ] && grep -q " ❌ | \`${table_name}\`" README.md; }; then
+				if ! grep -q "^${table_name}:" build.md || readme_marks_failed "$table_name"; then
 					upped+=("$table_name")
 					prcfg=true
 				else
@@ -383,7 +390,7 @@ config_update() {
 					prcfg=true
 					upped+=("$table_name")
 				else
-					if ! grep -q "^${table_name}:" build.md || { [ -f README.md ] && grep -q " ❌ | \`${table_name}\`" README.md; }; then
+					if ! grep -q "^${table_name}:" build.md || readme_marks_failed "$table_name"; then
 						prcfg=true
 						upped+=("$table_name")
 					else
