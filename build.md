@@ -1,11 +1,11 @@
 
-**13 apps built.**
+**10 apps built.**
   
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
 CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
-Patches: byehi98/patches-1.53.0-dev.5.mpp  
-[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.53.0-dev.5)
+Patches: byehi98/patches-1.53.0-dev.6.mpp  
+[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.53.0-dev.6)
 
 CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
 CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
@@ -14,12 +14,9 @@ CLI: MorpheApp/morphe-desktop-2.3.0-all.jar
 CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
 CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
 CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
-Patches: rushiranpise/patches-1.23.1.mpp  
-[Changelog](https://github.com/rushiranpise/morphe-patches/releases/tag/v1.23.1)
+Patches: MorpheApp/patches-2.4.0-dev.8.mpp  
+[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v2.4.0-dev.8)
 
-CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
 CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
 CLI: MorpheApp/morphe-desktop-2.3.0-all.jar    
 
@@ -62,12 +59,8 @@ The-Battle-of-Polytopia-MiguelNinja19: 18.0.16748
 Zombie-Catchers-MiguelNinja19: latest
 Reddit-Morphe: 2026.40.0
 Patches: MorpheApp/patches-2.3.0.mpp  
-Reddit-Morphe-Dev: 2026.47.0
-Patches: MorpheApp/patches-2.4.0-dev.7.mpp  
 YouTube-Morphe: 21.30.216
-YouTube-Morphe-Dev: 21.46.522
 YouTube-Music-Morphe: 9.30.53  
-YouTube-Music-Morphe-Dev: 9.46.51  
 Adobe-Photoshop-Mix-RookieEnough: 2.6.3
 Patches: RookieEnough/patches-1.6.4.mpp  
 Cricbuzz-RookieEnough: 6.24.01
@@ -203,16 +196,22 @@ Greenify-rushiranpise: 5.1.1
 Killapps-rushiranpise: 1.58.0
 M-Indicator-rushiranpise: 18.0.365
 MacroDroid-rushiranpise: 5.66.9
+Mega-rushiranpise: 16.12(262370820)(dcdf0a7f27)
 MobiOffice-rushiranpise: 16.5.60515
 MyAnimeList-rushiranpise: 2.3.16
 NYT-Crossword-rushiranpise: 6.41.0
 NZB360-rushiranpise: 25.2.1
 Octi-rushiranpise: 1.3.0-rc0
+Opera-News-rushiranpise: 14.4.2254.84848
 Parallel-Space-Pro-rushiranpise: 4.0.9159
 Playit-rushiranpise: 2.7.50.12
 ProtonVPN-Rushiranpise: 5.19.78.0
 Psiphon-rushiranpise: 486
+RAR-rushiranpise: 7.23.build134
+RS-File-Manager-rushiranpise: 2.3.0.4
 Send-Files-To-TV-rushiranpise: 1.4.22
+Server-Auditor-rushiranpise: 7.11.2
+TeraBox-rushiranpise: 4.28.5
 Torrent-Search-rushiranpise: 2.3.3
 Unimote-rushiranpise: 1.8.1
 Yatri-rushiranpise: 5.0.6
@@ -220,19 +219,16 @@ qBitConnect-rushiranpise: 2.0.6
 Spotify-spicetify: 2.2.553
 Patches: spicetify/patches-1.2.0.mpp  
 Imgur-sushruth: 7.34.0.0
-Patches: sushruth/patches-1.0.0.mpp    
+Patches: sushruth/patches-1.0.0.mpp      
 
 ### Built versions  
 Dead-Target-okish: 4.186.0
 Freejobalert-okish: 1.0.0
 Lemmings-Puzzle-Survival-okish: 9.5.1
-Mega-rushiranpise: 16.12(262370820)(dcdf0a7f27)
-Opera-News-rushiranpise: 14.4.2254.84848
 Plants-vs-Zombies-Free-okish: 3.19.0
-RAR-rushiranpise: 7.23.build134
-RS-File-Manager-rushiranpise: 2.3.0.4
-Server-Auditor-rushiranpise: 7.11.2
+Reddit-Morphe-Dev: 2026.47.0
 Smashit-okish: 1.5.14
-TeraBox-rushiranpise: 4.28.5
 Vector-okish: 2.10.2
-Vita-Mahjong-okish: 3.48.0  
+Vita-Mahjong-okish: 3.48.0
+YouTube-Morphe-Dev: 21.46.522
+YouTube-Music-Morphe-Dev: 9.46.51  
