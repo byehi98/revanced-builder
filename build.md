@@ -1,29 +1,17 @@
 
-**6 apps built.**
+**3 apps built.**
   
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
-CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
-Patches: arandomhooman/patches-1.53.0.mpp  
-[Changelog](https://github.com/arandomhooman/hoomans-morphe-patches/releases/tag/v1.53.0)
-
 CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
 Patches: dh6k/patches-1.9.0.mpp  
 [Changelog](https://github.com/dh6k/morphe-patches/releases/tag/v1.9.0)
 
 CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
-Patches: heval99/patches-3.0.0.mpp  
-[Changelog](https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v3.0.0)
+Patches: heval99/patches-3.1.0.mpp  
+[Changelog](https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v3.1.0)
 
 CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
-Patches: kiraio-moe/patches-1.3.0.mpp  
-[Changelog](https://github.com/kiraio-moe/Lain-Patches/releases/tag/v1.3.0)
-
-CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
-Patches: RookieEnough/patches-1.6.4.mpp  
-[Changelog](https://github.com/RookieEnough/De-Vanced/releases/tag/v1.6.4)
-
 CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
 CLI: MorpheApp/morphe-desktop-2.3.0-all.jar    
 
@@ -77,7 +65,10 @@ Patches: RookieEnough/patches-1.6.4.mpp
 Cricbuzz-RookieEnough: 6.24.01
 Google-News-RookieEnough: latest
 Google-Photos-RookieEnough: 7.92.0.977185651
+Icon-Pack-Studio-RookieEnough: 2.2
+Irplus-RookieEnough: 1.9.13
 Letterboxd-RookieEnough: 3.6.7
+Photomath-RookieEnough: 8.48.0
 SoundCloud-RookieEnough: 2026.10.28.release
 Pinterest-SysAdminDoc: 14.44.0
 Patches: SysAdminDoc/patches-0.0.14.mpp  
@@ -87,6 +78,7 @@ Advanced-Download-Manager-hoomans: 14.0.39
 Patches: arandomhooman/patches-1.53.0.mpp  
 FolderSync-hoomans: 4.12.0
 Microsoft-SwiftKey-hoomans: 9.13.13.5
+Poweramp-hoomans: build-1025-bundle-play  
 Google-Maps-bearinmindcat: 26.44.06.1006895251
 Patches: bearinmindcat/patches-2.10.0.mpp  
 Brave-Bufferk: 1.92.140
@@ -151,15 +143,12 @@ Twitter-crimera: 12.41.0-prod.01
 Patches: crimera/patches-3.75.0.mpp  
 Brave-Beta-dh6k: 1.101.52
 Patches: dh6k/patches-1.9.0.mpp  
+Brave-Nightly-dh6k: 1.102.23
 Arrow-Puzzle-durgesh0505: 1.7.0
 Patches: durgesh0505/patches-1.27.8.mpp  
 Does-Not-Commute-durgesh0505: 1.5.5
 Letterboxd-ethanm6: 3.6.7
 Patches: ethanm6/patches-1.4.4.mpp  
-AnyDesk-heval99: latest
-Patches: heval99/patches-3.0.0.mpp  
-AquaMail-heval99: 2.8.1
-Firefox-heval99: 160.0
 CamScanner-hoo-dles: 7.20.0.2606230000
 Google-News-hoo-dles: 5.161.0.931240252
 ProtonVPN-hoo-dles: 5.20.57.0
@@ -182,6 +171,7 @@ Patches: jkennethcarino/patches-2.0.1.mpp
 AudioRelay-lain: 0.26.1
 Patches: kiraio-moe/patches-1.3.0.mpp  
 Camera-lain: 5.4.0
+Hidden-Settings-lain: 7.34
 iLovePDF-lain: 4.0.1
 Soccer-Star-legendsciber: 0.3.88
 Patches: legendsciber/patches-1.55.0.mpp  
@@ -230,12 +220,9 @@ qBitConnect-rushiranpise: 2.0.6
 Spotify-spicetify: 2.2.553
 Patches: spicetify/patches-1.2.0.mpp  
 Imgur-sushruth: 7.34.0.0
-Patches: sushruth/patches-1.0.0.mpp        
+Patches: sushruth/patches-1.0.0.mpp          
 
 ### Built versions  
-Brave-Nightly-dh6k: 1.102.23
-Hidden-Settings-lain: 7.34
-Icon-Pack-Studio-RookieEnough: 2.2
-Irplus-RookieEnough: 1.9.13
-Photomath-RookieEnough: 8.48.0
-Poweramp-hoomans: build-1025-bundle-play  
+AnyDesk-heval99: latest
+AquaMail-heval99: 2.8.1
+Firefox-heval99: 160.0.1  
