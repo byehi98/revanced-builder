@@ -11,6 +11,8 @@
 patches-source  = "hoo-dles/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "hoo-dles"
+# upstream repository disabled by GitHub; re-enable when it is restored
+enabled         = false
 morphe-dlurl    = "com.adguard.android"
 aptoide-dlurl   = "com.adguard.android"
 apkeep-dlurl    = "com.adguard.android"
@@ -22,6 +24,8 @@ uptodown-dlurl  = "https://adguard-for-android.en.uptodown.com/android"
 patches-source  = "hoo-dles/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "hoo-dles"
+# upstream repository disabled by GitHub; re-enable when it is restored
+enabled         = false
 morphe-dlurl    = "com.intsig.camscanner"
 aptoide-dlurl   = "com.intsig.camscanner"
 apkeep-dlurl    = "com.intsig.camscanner"
@@ -33,6 +37,8 @@ uptodown-dlurl  = "https://camscanner.en.uptodown.com/android"
 patches-source  = "hoo-dles/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "hoo-dles"
+# upstream repository disabled by GitHub; re-enable when it is restored
+enabled         = false
 morphe-dlurl    = "ch.protonvpn.android"
 aptoide-dlurl   = "ch.protonvpn.android"
 apkeep-dlurl    = "ch.protonvpn.android"
@@ -44,6 +50,8 @@ uptodown-dlurl  = "https://protonvpn.en.uptodown.com/android"
 patches-source  = "hoo-dles/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "hoo-dles"
+# upstream repository disabled by GitHub; re-enable when it is restored
+enabled         = false
 morphe-dlurl    = "com.google.android.apps.magazines"
 aptoide-dlurl   = "com.google.android.apps.magazines"
 apkeep-dlurl    = "com.google.android.apps.magazines"
@@ -56,6 +64,8 @@ uptodown-dlurl  = "https://google-play-newsstand.en.uptodown.com/android"
 patches-source  = "hoo-dles/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "hoo-dles"
+# upstream repository disabled by GitHub; re-enable when it is restored
+enabled         = false
 morphe-dlurl    = "pl.solidexplorer2"
 aptoide-dlurl   = "pl.solidexplorer2"
 apkeep-dlurl    = "pl.solidexplorer2"
@@ -68,6 +78,8 @@ uptodown-dlurl  = "https://solid-explorer-file-manager.en.uptodown.com/android"
 patches-source  = "hoo-dles/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "hoo-dles"
+# upstream repository disabled by GitHub; re-enable when it is restored
+enabled         = false
 morphe-dlurl    = "com.michaldrabik.showly2"
 aptoide-dlurl   = "com.michaldrabik.showly2"
 apkeep-dlurl    = "com.michaldrabik.showly2"
@@ -80,6 +92,8 @@ uptodown-dlurl  = "https://showly-2-0.en.uptodown.com/android"
 patches-source  = "hoo-dles/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "hoo-dles"
+# upstream repository disabled by GitHub; re-enable when it is restored
+enabled         = false
 morphe-dlurl    = "com.wallpaperscraft.wallpaper"
 aptoide-dlurl   = "com.wallpaperscraft.wallpaper"
 apkeep-dlurl    = "com.wallpaperscraft.wallpaper"
@@ -91,6 +105,8 @@ uptodown-dlurl  = "https://wallpaperscraft.en.uptodown.com/android"
 patches-source  = "hoo-dles/morphe-patches"
 cli-source      = "MorpheApp/morphe-cli"
 rv-brand        = "hoo-dles"
+# upstream repository disabled by GitHub; re-enable when it is restored
+enabled         = false
 morphe-dlurl    = "cn.wps.moffice_eng"
 aptoide-dlurl   = "cn.wps.moffice_eng"
 apkeep-dlurl    = "cn.wps.moffice_eng"
