@@ -1,21 +1,28 @@
 
-**10 apps built.**
+**6 apps built.**
   
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
 CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
-Patches: byehi98/patches-1.53.0-dev.6.mpp  
-[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.53.0-dev.6)
+Patches: arandomhooman/patches-1.53.0.mpp  
+[Changelog](https://github.com/arandomhooman/hoomans-morphe-patches/releases/tag/v1.53.0)
+
+CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
+Patches: dh6k/patches-1.9.0.mpp  
+[Changelog](https://github.com/dh6k/morphe-patches/releases/tag/v1.9.0)
 
 CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
 CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
+Patches: heval99/patches-3.0.0.mpp  
+[Changelog](https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v3.0.0)
+
 CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
+Patches: kiraio-moe/patches-1.3.0.mpp  
+[Changelog](https://github.com/kiraio-moe/Lain-Patches/releases/tag/v1.3.0)
+
 CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
-Patches: MorpheApp/patches-2.4.0-dev.8.mpp  
-[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v2.4.0-dev.8)
+Patches: RookieEnough/patches-1.6.4.mpp  
+[Changelog](https://github.com/RookieEnough/De-Vanced/releases/tag/v1.6.4)
 
 CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
 CLI: MorpheApp/morphe-desktop-2.3.0-all.jar    
@@ -59,17 +66,18 @@ The-Battle-of-Polytopia-MiguelNinja19: 18.0.16748
 Zombie-Catchers-MiguelNinja19: latest
 Reddit-Morphe: 2026.40.0
 Patches: MorpheApp/patches-2.3.0.mpp  
+Reddit-Morphe-Dev: 2026.47.0
+Patches: MorpheApp/patches-2.4.0-dev.8.mpp  
 YouTube-Morphe: 21.30.216
+YouTube-Morphe-Dev: 21.46.522
 YouTube-Music-Morphe: 9.30.53  
+YouTube-Music-Morphe-Dev: 9.46.51  
 Adobe-Photoshop-Mix-RookieEnough: 2.6.3
 Patches: RookieEnough/patches-1.6.4.mpp  
 Cricbuzz-RookieEnough: 6.24.01
 Google-News-RookieEnough: latest
 Google-Photos-RookieEnough: 7.92.0.977185651
-Icon-Pack-Studio-RookieEnough: 2.2
-Irplus-RookieEnough: 1.9.13
 Letterboxd-RookieEnough: 3.6.7
-Photomath-RookieEnough: 8.48.0
 SoundCloud-RookieEnough: 2026.10.28.release
 Pinterest-SysAdminDoc: 14.44.0
 Patches: SysAdminDoc/patches-0.0.14.mpp  
@@ -79,7 +87,6 @@ Advanced-Download-Manager-hoomans: 14.0.39
 Patches: arandomhooman/patches-1.53.0.mpp  
 FolderSync-hoomans: 4.12.0
 Microsoft-SwiftKey-hoomans: 9.13.13.5
-Poweramp-hoomans: build-1025-bundle-play
 Google-Maps-bearinmindcat: 26.44.06.1006895251
 Patches: bearinmindcat/patches-2.10.0.mpp  
 Brave-Bufferk: 1.92.140
@@ -97,12 +104,15 @@ Burrito-Bison-okish: 3.75
 Crash-of-Cars-okish: 1.9.36
 Crossy-Road-okish: 7.15.0
 Dan-The-Man-okish: 1.14.12
+Dead-Target-okish: 4.186.0
+Patches: byehi98/patches-1.53.0-dev.6.mpp  
 Dead-Trigger-okish: 2.3.4
 Document-Scanner-okish: 6.9.14
 Doodle-Jump-okish: 3.11.40
 Dr-Driving-okish: 1.73
 Earn-to-Die-2-okish: 1.5.6
 Fancy-Pants-okish: 1.0.50
+Freejobalert-okish: 1.0.0
 Fruit-Ninja-okish: 3.98.4
 Grimvalor-okish: 1.2.13
 HAAK-okish: 1.4.3
@@ -113,14 +123,17 @@ Injustice-okish: 3.5.1
 Into-The-Dead-2-okish: 1.88.0
 Into-The-Dead-okish: 2.9.5
 Jetpack-Joyride-okish: 1.104.2
+Lemmings-Puzzle-Survival-okish: 9.5.1
 Lumina-Walls-okish: 1.0.2.6
 Magic-Survival-okish: 0.9941
 Missiles-okish: 1.43
 Onlyone-okish: 1.3053
 Plagueinc-okish: 1.27.5
+Plants-vs-Zombies-Free-okish: 3.19.0
 Progressbar95-okish: 1.1111
 Rodeo-Stampede-okish: 4.26.0
 Shooty-Skies-okish: 3.441.100105
+Smashit-okish: 1.5.14
 Swamp-Attack-2-okish: 1.5.1
 Swamp-Attack-okish: 4.8.10.0
 Swift-Backup-okish: 5.1.1
@@ -129,6 +142,8 @@ Tentaclewars-okish: 2.1.27
 Traffic-Racer-okish: 4.0
 Traffic-Rider-okish: 2.21
 Truecloud-okish: 4.6.5.13
+Vector-okish: 2.10.2
+Vita-Mahjong-okish: 3.48.0
 Minesweeper-cesbar: 1.21.3
 Patches: cesbar/patches-1.14.0.mpp  
 Solitaire-cesbar: 1.20.3
@@ -136,8 +151,6 @@ Twitter-crimera: 12.41.0-prod.01
 Patches: crimera/patches-3.75.0.mpp  
 Brave-Beta-dh6k: 1.101.52
 Patches: dh6k/patches-1.9.0.mpp  
-Brave-Nightly-dh6k: latest
-Brave-dh6k: latest
 Arrow-Puzzle-durgesh0505: 1.7.0
 Patches: durgesh0505/patches-1.27.8.mpp  
 Does-Not-Commute-durgesh0505: 1.5.5
@@ -147,7 +160,6 @@ AnyDesk-heval99: latest
 Patches: heval99/patches-3.0.0.mpp  
 AquaMail-heval99: 2.8.1
 Firefox-heval99: 160.0
-Truecaller-heval99: 26.44.6  
 CamScanner-hoo-dles: 7.20.0.2606230000
 Google-News-hoo-dles: 5.161.0.931240252
 ProtonVPN-hoo-dles: 5.20.57.0
@@ -170,7 +182,6 @@ Patches: jkennethcarino/patches-2.0.1.mpp
 AudioRelay-lain: 0.26.1
 Patches: kiraio-moe/patches-1.3.0.mpp  
 Camera-lain: 5.4.0
-Hidden-Settings-lain: 7.34
 iLovePDF-lain: 4.0.1
 Soccer-Star-legendsciber: 0.3.88
 Patches: legendsciber/patches-1.55.0.mpp  
@@ -219,16 +230,12 @@ qBitConnect-rushiranpise: 2.0.6
 Spotify-spicetify: 2.2.553
 Patches: spicetify/patches-1.2.0.mpp  
 Imgur-sushruth: 7.34.0.0
-Patches: sushruth/patches-1.0.0.mpp      
+Patches: sushruth/patches-1.0.0.mpp        
 
 ### Built versions  
-Dead-Target-okish: 4.186.0
-Freejobalert-okish: 1.0.0
-Lemmings-Puzzle-Survival-okish: 9.5.1
-Plants-vs-Zombies-Free-okish: 3.19.0
-Reddit-Morphe-Dev: 2026.47.0
-Smashit-okish: 1.5.14
-Vector-okish: 2.10.2
-Vita-Mahjong-okish: 3.48.0
-YouTube-Morphe-Dev: 21.46.522
-YouTube-Music-Morphe-Dev: 9.46.51  
+Brave-Nightly-dh6k: 1.102.23
+Hidden-Settings-lain: 7.34
+Icon-Pack-Studio-RookieEnough: 2.2
+Irplus-RookieEnough: 1.9.13
+Photomath-RookieEnough: 8.48.0
+Poweramp-hoomans: build-1025-bundle-play  
