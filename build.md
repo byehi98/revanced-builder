@@ -4,16 +4,18 @@
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
 CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
+Patches: BlazeFTL/patches-1.43.7.6.mpp  
+[Changelog](https://github.com/BlazeFTL/FTL-Patches/releases/tag/v1.43.7.6)
+
+CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
 Patches: dh6k/patches-1.9.0.mpp  
 [Changelog](https://github.com/dh6k/morphe-patches/releases/tag/v1.9.0)
 
 CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
 Patches: heval99/patches-3.2.0.mpp  
-[Changelog](https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v3.2.0)
-
-CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.3.0-all.jar    
+[Changelog](https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v3.2.0)  
 
 Skipped:  
 Google-Photos-Akash-Sriram: 7.99.0.1007655401
@@ -27,10 +29,6 @@ Patches: BholeyKaBhakt/patches-2.16.0.mpp
 Backdrops-xtra: 6.6
 Patches: BholeyKaBhakt/patches-2.16.0.mpp  
 Speedtest-xtra: 7.1.4
-All-Video-Downloader-and-Ace-Player-FTL: 1.9.8
-Patches: BlazeFTL/patches-1.43.7.5.mpp  
-RS-File-Manager-BlazeFTL: 2.3.2
-WIFI-WPS-WPA-TESTER-FTL: rc-5.164  
 Arm-Workout-Entree3k: 2.4.3
 Patches: Entree3k/patches-1.22.0.mpp  
 Does-Not-Commute-Entree3k: 1.5.5
@@ -149,6 +147,10 @@ Patches: durgesh0505/patches-1.27.8.mpp
 Does-Not-Commute-durgesh0505: 1.5.5
 Letterboxd-ethanm6: 3.6.7
 Patches: ethanm6/patches-1.4.4.mpp  
+AnyDesk-heval99: latest
+Patches: heval99/patches-3.2.0.mpp  
+AquaMail-heval99: 2.8.1
+Firefox-heval99: 160.0.1  
 CamScanner-hoo-dles: 7.20.0.2606230000
 Google-News-hoo-dles: 5.161.0.931240252
 ProtonVPN-hoo-dles: 5.20.57.0
@@ -220,9 +222,9 @@ qBitConnect-rushiranpise: 2.0.6
 Spotify-spicetify: 2.2.553
 Patches: spicetify/patches-1.2.0.mpp  
 Imgur-sushruth: 7.34.0.0
-Patches: sushruth/patches-1.0.0.mpp            
+Patches: sushruth/patches-1.0.0.mpp              
 
 ### Built versions  
-AnyDesk-heval99: latest
-AquaMail-heval99: 2.8.1
-Firefox-heval99: 160.0.1  
+All-Video-Downloader-and-Ace-Player-FTL: 1.9.8
+RS-File-Manager-BlazeFTL: 2.3.2
+WIFI-WPS-WPA-TESTER-FTL: rc-5.164  
