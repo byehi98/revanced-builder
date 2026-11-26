@@ -1,5 +1,5 @@
 
-**4 apps built.**
+**8 apps built.**
   
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
@@ -12,14 +12,14 @@ Patches: heval99/patches-3.2.0.mpp
 [Changelog](https://github.com/heval99/Heval-Morphe-Patches/releases/tag/v3.2.0)
 
 CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
-Patches: MorpheApp/patches-2.4.0-dev.15.mpp  
-[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v2.4.0-dev.15)
+Patches: MorpheApp/patches-2.4.0.mpp  
+[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v2.4.0)
 
 CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
 CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
 CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
-Patches: mvaishak/patches-3.1.1.mpp  
-[Changelog](https://github.com/mvaishak/letterboxd-morphe-patches/releases/tag/v3.1.1)  
+CLI: MorpheApp/morphe-desktop-2.3.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.3.0-all.jar    
 
 Skipped:  
 Google-Photos-Akash-Sriram: 7.99.0.1007655401
@@ -56,10 +56,6 @@ Oddmar-MiguelNinja19: 0.111
 Plants-vs-Zombies-MiguelNinja19: 3.18.0
 The-Battle-of-Polytopia-MiguelNinja19: 18.0.16748
 Zombie-Catchers-MiguelNinja19: latest
-Reddit-Morphe: 2026.40.0
-Patches: MorpheApp/patches-2.3.0.mpp  
-YouTube-Morphe: 21.30.216
-YouTube-Music-Morphe: 9.30.53  
 Adobe-Photoshop-Mix-RookieEnough: 2.6.3
 Patches: RookieEnough/patches-1.6.4.mpp  
 Cricbuzz-RookieEnough: 6.24.01
@@ -180,6 +176,8 @@ iLovePDF-lain: 4.0.1
 Soccer-Star-legendsciber: 0.3.88
 Patches: legendsciber/patches-1.58.0.mpp  
 Subway-Surfers-legendsciber: 3.72.0  
+Letterboxd-mvaishak: 3.6.9
+Patches: mvaishak/patches-3.1.1.mpp  
 Chess-com-Prathxm: 4.10.0
 Patches: prathxmOp/patches-1.15.0.mpp  
 AccuBattery-rushiranpise: 2.1.8
@@ -222,10 +220,14 @@ qBitConnect-rushiranpise: 2.0.6
 Spotify-spicetify: 2.2.553
 Patches: spicetify/patches-1.2.0.mpp  
 Imgur-sushruth: 7.34.0.0
-Patches: sushruth/patches-1.0.0.mpp                                  
+Patches: sushruth/patches-1.0.0.mpp                                    
 
 ### Built versions  
-Letterboxd-mvaishak: 3.6.9
+Brave-dh6k: latest
 Reddit-Morphe-Dev: 2026.48.0
+Reddit-Morphe: 2026.40.0
+Truecaller-heval99: 26.45.5
 YouTube-Morphe-Dev: 21.47.483
-YouTube-Music-Morphe-Dev: 9.47.51  
+YouTube-Morphe: 21.30.216
+YouTube-Music-Morphe-Dev: 9.47.51
+YouTube-Music-Morphe: 9.30.53  
