@@ -80,3 +80,13 @@ rv-brand        = "hxreborn"
 morphe-dlurl    = "com.king.candycrushsodasaga"
 apkpure-dlurl   = "https://apkpure.net/candy-crush-soda-saga/com.king.candycrushsodasaga"
 gplaydl-dlurl   = "com.king.candycrushsodasaga"
+
+[Candy-Crush-Saga-hxreborn]
+patches-source  = "hxreborn/morphe-patches"
+cli-source      = "MorpheApp/morphe-cli"
+rv-brand        = "hxreborn"
+morphe-dlurl    = "com.king.candycrushsaga"
+apkeep-dlurl    = "com.king.candycrushsaga"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/king/candy-crush-saga/"
+apkpure-dlurl   = "https://apkpure.net/candy-crush-saga/com.king.candycrushsaga"
+gplaydl-dlurl   = "com.king.candycrushsaga"
