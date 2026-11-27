@@ -1,11 +1,15 @@
 
-**9 apps built.**
+**50 apps built.**
   
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
 CLI: MorpheApp/morphe-desktop-2.4.0-all.jar  
-Patches: hxreborn/patches-1.89.0.mpp  
-[Changelog](https://github.com/hxreborn/morphe-patches/releases/tag/v1.89.0)
+Patches: bearinmindcat/patches-2.10.1.mpp  
+[Changelog](https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.10.1)
+
+CLI: MorpheApp/morphe-desktop-2.4.0-all.jar  
+Patches: byehi98/patches-1.53.0.mpp  
+[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.53.0)
 
 CLI: MorpheApp/morphe-desktop-2.4.0-all.jar  
 CLI: MorpheApp/morphe-desktop-2.4.0-all.jar  
@@ -15,8 +19,49 @@ CLI: MorpheApp/morphe-desktop-2.4.0-all.jar
 CLI: MorpheApp/morphe-desktop-2.4.0-all.jar  
 CLI: MorpheApp/morphe-desktop-2.4.0-all.jar  
 CLI: MorpheApp/morphe-desktop-2.4.0-all.jar  
-Patches: spicetify/patches-1.3.0.mpp  
-[Changelog](https://github.com/spicetify/morphe-patches/releases/tag/v1.3.0)  
+CLI: MorpheApp/morphe-desktop-2.4.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.4.0-all.jar  
+Patches: byehi98/patches-1.53.1-dev.1.mpp  
+[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.53.1-dev.1)
+
+CLI: MorpheApp/morphe-desktop-2.4.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.4.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.4.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.4.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.4.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.4.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.4.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.4.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.4.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.4.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.4.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.4.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.4.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.4.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.4.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.4.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.4.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.4.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.4.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.4.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.4.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.4.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.4.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.4.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.4.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.4.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.4.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.4.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.4.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.4.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.4.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.4.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.4.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.4.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.4.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.4.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.4.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.4.0-all.jar    
 
 Skipped:  
 Google-Photos-Akash-Sriram: 7.99.0.1007655401
@@ -80,63 +125,10 @@ Patches: arandomhooman/patches-1.53.0.mpp
 FolderSync-hoomans: 4.12.0
 Microsoft-SwiftKey-hoomans: 9.13.13.5
 Poweramp-hoomans: build-1025-bundle-play  
-Google-Maps-bearinmindcat: 26.44.06.1006895251
-Patches: bearinmindcat/patches-2.10.0.mpp  
 Brave-Bufferk: 1.92.140
 Patches: bufferk/patches-1.8.1.mpp  
 Medium-bufferk: 4.5.1784910928
 Truecaller-bufferk: 26.10.6
-20-Minutes-Till-Dawn-okish: 8.7
-Patches: byehi98/patches-1.52.0.mpp  
-Adda247-okish: 12.8.3
-Aliens-Drive-Me-Crazy-okish: 3.2.11
-Alto-Adventure-okish: 1.8.27
-Alto-Odyssey-okish: 1.0.42
-Big-Hunter-okish: 3.1.2
-Burrito-Bison-okish: 3.75
-Crash-of-Cars-okish: 1.9.36
-Crossy-Road-okish: 7.15.0
-Dan-The-Man-okish: 1.14.12
-Dead-Target-okish: 4.186.0
-Patches: byehi98/patches-1.53.0-dev.11.mpp  
-Dead-Trigger-okish: 2.3.4
-Document-Scanner-okish: 6.9.14
-Doodle-Jump-okish: 3.11.40
-Dr-Driving-okish: 1.73
-Earn-to-Die-2-okish: 1.5.6
-Fancy-Pants-okish: 1.0.50
-Freejobalert-okish: 1.0.0
-Fruit-Ninja-okish: 3.98.4
-Grimvalor-okish: 1.2.13
-HAAK-okish: 1.4.3
-Head-Basketball-okish: 4.6.4
-Head-Soccer-okish: 7.1.12
-Hill-Climb-Racing-okish: 1.74.0
-Injustice-okish: 3.5.1
-Into-The-Dead-2-okish: 1.88.0
-Into-The-Dead-okish: 2.9.5
-Jetpack-Joyride-okish: 1.104.2
-Lemmings-Puzzle-Survival-okish: 9.5.1
-Lumina-Walls-okish: 1.0.2.6
-Magic-Survival-okish: 0.9941
-Missiles-okish: 1.43
-Onlyone-okish: 1.3053
-Plagueinc-okish: 1.27.5
-Plants-vs-Zombies-Free-okish: 3.19.0
-Progressbar95-okish: 1.1111
-Rodeo-Stampede-okish: 4.26.0
-Shooty-Skies-okish: 3.441.100105
-Smashit-okish: 1.5.14
-Swamp-Attack-2-okish: 1.5.1
-Swamp-Attack-okish: 4.8.10.0
-Swift-Backup-okish: 5.1.1
-Swordigo-okish: 1.4.13
-Tentaclewars-okish: 2.1.27
-Traffic-Racer-okish: 4.0
-Traffic-Rider-okish: 2.21
-Truecloud-okish: 4.6.5.13
-Vector-okish: 2.10.2
-Vita-Mahjong-okish: 3.48.0  
 Minesweeper-cesbar: 1.21.3
 Patches: cesbar/patches-1.14.0.mpp  
 Solitaire-cesbar: 1.20.3
@@ -163,6 +155,15 @@ Showly-hoo-dles: 3.70.0
 Solid-Explorer-hoo-dles: 3.6.1
 WPS-Office-hoo-dles: 18.24
 Wallcraft-hoo-dles: 3.61.01
+Candy-Crush-Saga-hxreborn: 1.340.0.1
+Patches: hxreborn/patches-1.89.0.mpp  
+Candy-Crush-Soda-Saga-hxreborn: 1.331.3
+Cx-File-Explorer-hxreborn: 2.8.1
+MovieBox-hxreborn: 4.0.03.1020.03
+ProtonVPN-hxreborn: 5.21.57.0
+Protonmail-hxreborn: 7.12.1
+Symfonium-hxreborn: 15.1.0
+TradingView-hxreborn: 1.20.86.0.1002565  
 nzb360-hyzor: 25.3  
 Patches: hyzor/patches-1.10.2.mpp  
 Reddit-Adobo: 2026.47.0
@@ -216,16 +217,59 @@ Torrent-Search-rushiranpise: 2.3.3
 Unimote-rushiranpise: 1.8.1
 Yatri-rushiranpise: 5.0.6
 qBitConnect-rushiranpise: 2.0.6  
+Spotify-spicetify: 9.2.4.2644
+Patches: spicetify/patches-1.3.0.mpp  
 Imgur-sushruth: 7.34.0.0
-Patches: sushruth/patches-1.0.0.mpp                                        
+Patches: sushruth/patches-1.0.0.mpp                                          
 
 ### Built versions  
-Candy-Crush-Saga-hxreborn: 1.340.0.1
-Candy-Crush-Soda-Saga-hxreborn: 1.331.3
-Cx-File-Explorer-hxreborn: 2.8.1
-MovieBox-hxreborn: 4.0.03.1020.03
-ProtonVPN-hxreborn: 5.21.57.0
-Protonmail-hxreborn: 7.12.1
-Spotify-spicetify: 9.2.4.2644
-Symfonium-hxreborn: 15.1.0
-TradingView-hxreborn: 1.20.86.0.1002565  
+20-Minutes-Till-Dawn-okish: 8.7
+Adda247-okish: 12.8.5
+Aliens-Drive-Me-Crazy-okish: 3.2.11
+Alto-Adventure-okish: 1.8.34
+Alto-Odyssey-okish: 1.0.45
+Big-Hunter-okish: 3.1.2
+Burrito-Bison-okish: 3.75
+Crash-of-Cars-okish: 1.9.36
+Crossy-Road-okish: 7.15.0
+Dan-The-Man-okish: 1.14.14
+Dead-Target-okish: 4.186.0
+Dead-Trigger-okish: 2.3.4
+Document-Scanner-okish: 6.9.16
+Doodle-Jump-okish: 3.11.40
+Dr-Driving-okish: 1.73
+Earn-to-Die-2-okish: 1.5.6
+Fancy-Pants-okish: 1.0.50
+Freejobalert-okish: 1.0.0
+Fruit-Ninja-okish: 3.98.4
+Google-Maps-bearinmindcat: 26.44.06.1006895251
+Grimvalor-okish: 1.2.13
+HAAK-okish: 1.4.3
+Head-Basketball-okish: 4.6.4
+Head-Soccer-okish: 7.1.12
+Hill-Climb-Racing-okish: 1.74.0
+Injustice-okish: 3.5.1
+Into-The-Dead-2-okish: 1.89.0
+Into-The-Dead-okish: 2.9.5
+Jetpack-Joyride-okish: 1.104.2
+Lemmings-Puzzle-Survival-okish: 9.5.1
+Lumina-Walls-okish: 1.0.2.6
+Magic-Survival-okish: 0.9941
+Missiles-okish: 1.45
+Onlyone-okish: 1.3053
+Plagueinc-okish: 1.27.5
+Plants-vs-Zombies-Free-okish: 3.19.0
+Progressbar95-okish: 1.1111
+Rodeo-Stampede-okish: 4.27.0
+Shooty-Skies-okish: 3.441.100105
+Smashit-okish: 1.5.14
+Swamp-Attack-2-okish: 1.5.2
+Swamp-Attack-okish: 4.9.0.0
+Swift-Backup-okish: 5.1.1
+Swordigo-okish: 1.4.13
+Tentaclewars-okish: 2.1.27
+Traffic-Racer-okish: 4.0
+Traffic-Rider-okish: 2.21
+Truecloud-okish: 4.6.5.13
+Vector-okish: 2.10.2
+Vita-Mahjong-okish: 3.48.0  
