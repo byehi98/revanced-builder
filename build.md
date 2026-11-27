@@ -1,28 +1,15 @@
 
-**50 apps built.**
+**53 apps built.**
   
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
 CLI: MorpheApp/morphe-desktop-2.4.0-all.jar  
-Patches: bearinmindcat/patches-2.10.1.mpp  
-[Changelog](https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.10.1)
+Patches: bearinmindcat/patches-2.10.2.mpp  
+[Changelog](https://github.com/bearinmindcat/morphe-patches/releases/tag/v2.10.2)
 
 CLI: MorpheApp/morphe-desktop-2.4.0-all.jar  
-Patches: byehi98/patches-1.53.0.mpp  
-[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.53.0)
-
-CLI: MorpheApp/morphe-desktop-2.4.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.4.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.4.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.4.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.4.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.4.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.4.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.4.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.4.0-all.jar  
-CLI: MorpheApp/morphe-desktop-2.4.0-all.jar  
-Patches: byehi98/patches-1.53.1-dev.1.mpp  
-[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.53.1-dev.1)
+Patches: byehi98/patches-1.53.1.mpp  
+[Changelog](https://github.com/byehi98/okish-morphe-patches/releases/tag/v1.53.1)
 
 CLI: MorpheApp/morphe-desktop-2.4.0-all.jar  
 CLI: MorpheApp/morphe-desktop-2.4.0-all.jar  
@@ -60,6 +47,22 @@ CLI: MorpheApp/morphe-desktop-2.4.0-all.jar
 CLI: MorpheApp/morphe-desktop-2.4.0-all.jar  
 CLI: MorpheApp/morphe-desktop-2.4.0-all.jar  
 CLI: MorpheApp/morphe-desktop-2.4.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.4.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.4.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.4.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.4.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.4.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.4.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.4.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.4.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.4.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.4.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.4.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.4.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.4.0-all.jar  
+Patches: MorpheApp/patches-2.5.0-dev.2.mpp  
+[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v2.5.0-dev.2)
+
 CLI: MorpheApp/morphe-desktop-2.4.0-all.jar  
 CLI: MorpheApp/morphe-desktop-2.4.0-all.jar    
 
@@ -100,12 +103,8 @@ The-Battle-of-Polytopia-MiguelNinja19: 18.0.16748
 Zombie-Catchers-MiguelNinja19: latest
 Reddit-Morphe: 2026.40.0
 Patches: MorpheApp/patches-2.4.0.mpp  
-Reddit-Morphe-Dev: 2026.48.0
-Patches: MorpheApp/patches-2.4.0.mpp  
 YouTube-Morphe: 21.30.216
-YouTube-Morphe-Dev: 21.47.483
 YouTube-Music-Morphe: 9.30.53  
-YouTube-Music-Morphe-Dev: 9.47.51
 Adobe-Photoshop-Mix-RookieEnough: 2.6.3
 Patches: RookieEnough/patches-1.6.4.mpp  
 Cricbuzz-RookieEnough: 6.24.01
@@ -220,7 +219,7 @@ qBitConnect-rushiranpise: 2.0.6
 Spotify-spicetify: 9.2.4.2644
 Patches: spicetify/patches-1.3.0.mpp  
 Imgur-sushruth: 7.34.0.0
-Patches: sushruth/patches-1.0.0.mpp                                          
+Patches: sushruth/patches-1.0.0.mpp                                            
 
 ### Built versions  
 20-Minutes-Till-Dawn-okish: 8.7
@@ -260,6 +259,7 @@ Onlyone-okish: 1.3053
 Plagueinc-okish: 1.27.5
 Plants-vs-Zombies-Free-okish: 3.19.0
 Progressbar95-okish: 1.1111
+Reddit-Morphe-Dev: 2026.48.0
 Rodeo-Stampede-okish: 4.27.0
 Shooty-Skies-okish: 3.441.100105
 Smashit-okish: 1.5.14
@@ -272,4 +272,6 @@ Traffic-Racer-okish: 4.0
 Traffic-Rider-okish: 2.21
 Truecloud-okish: 4.6.5.13
 Vector-okish: 2.10.2
-Vita-Mahjong-okish: 3.48.0  
+Vita-Mahjong-okish: 3.48.0
+YouTube-Morphe-Dev: 21.47.483
+YouTube-Music-Morphe-Dev: 9.47.52  
