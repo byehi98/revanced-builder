@@ -44,11 +44,11 @@ Get the [latest CI release](https://github.com/byehi98/revanced-builder/releases
 | :--- | :---: | :---: |
 | `Telegram-Aunali321` ([APK](https://github.com/byehi98/revanced-builder/releases/download/447/telegram-aunali321-aunali321-v13.2.2-all.apk)) | ✅ | [![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22org.telegram.messenger%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Telegram-Aunali321%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22telegram-aunali321-aunali321%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D) |
 
-#### `bearinmindcat/morphe-patches` · `patches-2.10.2.mpp`
+#### `bearinmindcat/morphe-patches` · `patches-2.10.3.mpp`
 
 | App | Status | Obtainium |
 | :--- | :---: | :---: |
-| `Google-Maps-bearinmindcat` ([APK](https://github.com/byehi98/revanced-builder/releases/download/468/google-maps-bearinmindcat-bearinmindcat-v26.44.06.1006895251-all.apk)) | ✅ | [![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.google.android.apps.maps%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Google-Maps-bearinmindcat%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22google-maps-bearinmindcat-bearinmindcat%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D) |
+| `Google-Maps-bearinmindcat` ([APK](https://github.com/byehi98/revanced-builder/releases/download/470/google-maps-bearinmindcat-bearinmindcat-v26.44.06.1006895251-all.apk)) | ✅ | [![Obtainium](https://img.shields.io/badge/Obtainium-4500FF?style=flat-square&logo=obtainium&logoColor=%23FFFFFF)](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.google.android.apps.maps%22%2C%22url%22%3A%22https%3A//github.com/byehi98/revanced-builder%22%2C%22author%22%3A%22byehi98%22%2C%22name%22%3A%22Google-Maps-bearinmindcat%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22google-maps-bearinmindcat-bearinmindcat%5C%22%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%7D%22%7D) |
 
 #### `BholeyKaBhakt/android-patches-xtra` · `patches-2.16.3.mpp`
 
