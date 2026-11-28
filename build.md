@@ -1,15 +1,18 @@
 
-**1 apps built.**
+**3 apps built.**
   
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
 CLI: MorpheApp/morphe-desktop-2.4.0-all.jar  
-Patches: crimera/patches-3.11.1.mpp  
-[Changelog](https://github.com/crimera/piko/releases/tag/v3.11.1)
+Patches: legendsciber/patches-1.59.0.mpp  
+[Changelog](https://github.com/legendsciber/morphe-patches/releases/tag/v1.59.1)
 
 CLI: MorpheApp/morphe-desktop-2.4.0-all.jar  
-Patches: legendsciber/patches-1.59.0.mpp  
-[Changelog](https://github.com/legendsciber/morphe-patches/releases/tag/v1.59.1)  
+Patches: MorpheApp/patches-2.5.0-dev.3.mpp  
+[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v2.5.0-dev.3)
+
+CLI: MorpheApp/morphe-desktop-2.4.0-all.jar  
+CLI: MorpheApp/morphe-desktop-2.4.0-all.jar    
 
 Skipped:  
 Google-Photos-Akash-Sriram: 7.99.0.1007655401
@@ -48,12 +51,8 @@ The-Battle-of-Polytopia-MiguelNinja19: 18.0.16748
 Zombie-Catchers-MiguelNinja19: latest
 Reddit-Morphe: 2026.40.0
 Patches: MorpheApp/patches-2.4.0.mpp  
-Reddit-Morphe-Dev: 2026.48.0
-Patches: MorpheApp/patches-2.5.0-dev.2.mpp  
 YouTube-Morphe: 21.30.216
-YouTube-Morphe-Dev: 21.47.483
 YouTube-Music-Morphe: 9.30.53  
-YouTube-Music-Morphe-Dev: 9.47.52  
 Adobe-Photoshop-Mix-RookieEnough: 2.6.3
 Patches: RookieEnough/patches-1.6.4.mpp  
 Cricbuzz-RookieEnough: 6.24.01
@@ -133,6 +132,8 @@ Vita-Mahjong-okish: 3.48.0
 Minesweeper-cesbar: 1.21.3
 Patches: cesbar/patches-1.14.0.mpp  
 Solitaire-cesbar: 1.20.3
+Twitter-crimera: 12.19.1-release.0  
+Patches: crimera/patches-3.11.1.mpp  
 Brave-Beta-dh6k: 1.101.52
 Patches: dh6k/patches-1.9.0.mpp  
 Brave-Nightly-dh6k: 1.102.23
@@ -218,7 +219,9 @@ qBitConnect-rushiranpise: 2.0.6
 Spotify-spicetify: 9.2.4.2644
 Patches: spicetify/patches-1.3.0.mpp  
 Imgur-sushruth: 7.34.0.0
-Patches: sushruth/patches-1.0.0.mpp                                                    
+Patches: sushruth/patches-1.0.0.mpp                                                      
 
 ### Built versions  
-Twitter-crimera: 12.19.1-release.0  
+Reddit-Morphe-Dev: 2026.48.0
+YouTube-Morphe-Dev: 21.47.483
+YouTube-Music-Morphe-Dev: 9.47.52  
